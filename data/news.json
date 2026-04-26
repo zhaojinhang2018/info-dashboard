@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-26 15:49:45",
+  "updated_at": "2026-04-27 02:04:27",
   "categories": [
     {
       "category": "📊 宏观",
@@ -15,6 +15,13 @@
           "title": "Trump bought at least $51 million in bonds in March, disclosure shows",
           "url": "https://www.investing.com/news/stock-market-news/trump-bought-at-least-51-million-in-bonds-in-march-disclosure-shows-4637386",
           "source": "Investing.com · 04-25 17:36",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Hong Kong maintains IPO dominance, though regulatory headwinds mount",
+          "url": "https://www.investing.com/news/stock-market-news/hong-kong-maintains-ipo-dominance-though-regulatory-headwinds-mount-4637435",
+          "source": "Investing.com · 04-26 07:19",
           "pub_time": "",
           "summary": ""
         },
@@ -117,44 +124,44 @@
           "summary": ""
         },
         {
-          "title": "Goldman expects 100 IPOs totalling $160 billion will come to market in 2026",
-          "url": "https://www.investing.com/news/stock-market-news/goldman-expects-100-ipos-totalling-160-billion-will-come-to-market-in-2026-4637356",
-          "source": "Investing.com · 04-25 13:00",
+          "title": "Here is What Could Unlock Valuation for Commvault Systems (CVLT)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/could-unlock-valuation-commvault-systems-034356114.html",
+          "source": "Yahoo Finance · 04-25 03:43",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "X-Energy (XE) Climbs 36% on Market Debut on Nuclear Demand",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/x-energy-xe-climbs-36-020323246.html",
-          "source": "Yahoo Finance · 04-25 02:03",
+          "title": "Varonis Systems (VRNS) is One of the Best Cybersecurity Stocks to Invest in, Here is Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/varonis-systems-vrns-one-best-034353724.html",
+          "source": "Yahoo Finance · 04-25 03:43",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Organon (OGN) Takeover Bid Climbs to $13B, Shares Soar 30.9%",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/organon-ogn-takeover-bid-climbs-020017548.html",
-          "source": "Yahoo Finance · 04-25 02:00",
+          "title": "Tenable Holdings (TENB) Launched Advanced OT Asset Discovery Engine",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tenable-holdings-tenb-launched-advanced-034351325.html",
+          "source": "Yahoo Finance · 04-25 03:43",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "POET Technologies (POET) Hits 11-Year High as Firm Bags New Orders",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/poet-technologies-poet-hits-11-015643915.html",
-          "source": "Yahoo Finance · 04-25 01:56",
+          "title": "Scotiabank Assigns Outperform Rating to Rubrik Inc. (RBRK)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/scotiabank-assigns-outperform-rating-rubrik-034345918.html",
+          "source": "Yahoo Finance · 04-25 03:43",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Intel Corp. (INTC) Soars to All-Time High as Revenues Climb on AI Demand",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-corp-intc-soars-time-013844036.html",
-          "source": "Yahoo Finance · 04-25 01:38",
+          "title": "Zscaler Inc. (ZS) Garnering Optimistic Views Despite Mixed Sector Sentiment",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/zscaler-inc-zs-garnering-optimistic-034343330.html",
+          "source": "Yahoo Finance · 04-25 03:43",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "3 Under-the-Radar Dividend Stocks Yielding Up to 13% That Wall Street Rates a Strong Buy",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/3-under-radar-dividend-stocks-230002938.html",
-          "source": "Yahoo Finance · 04-24 23:00",
+          "title": "Netskope Inc. (NTSK) Labelled as a High-Quality, Sub-Scale Leader",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/netskope-inc-ntsk-labelled-high-034342463.html",
+          "source": "Yahoo Finance · 04-25 03:43",
           "pub_time": "",
           "summary": ""
         },
@@ -164,19 +171,19 @@
           "source": "Yahoo Finance · 04-24 22:39",
           "pub_time": "",
           "summary": ""
-        },
-        {
-          "title": "Is $1 million still enough for retirement? That depends entirely on you — here's how to figure it out",
-          "url": "https://finance.yahoo.com/markets/articles/1-million-still-enough-retirement-223500605.html",
-          "source": "Yahoo Finance · 04-24 22:35",
-          "pub_time": "",
-          "summary": ""
         }
       ]
     },
     {
       "category": "₿ 加密货币",
       "items": [
+        {
+          "title": "Litecoin says its 13-block reorg was not a 'zero-day, but GitHub commit history shows otherwise",
+          "url": "https://www.coindesk.com/markets/2026/04/26/litecoin-says-its-13-block-reorg-was-not-a-zero-day-but-github-commit-history-shows-otherwise",
+          "source": "CoinDesk · 04-26 08:34",
+          "pub_time": "",
+          "summary": ""
+        },
         {
           "title": "Litecoin rewrites three hours of history to undo its first major privacy-layer exploit",
           "url": "https://www.theblock.co/post/398892/litecoin-rewrites-three-hours-of-history-to-undo-its-first-major-privacy-layer-exploit?utm_source=rss&utm_medium=rss",
@@ -244,13 +251,6 @@
           "title": "Aave, Kelp, LayerZero ask Arbitrum DAO to release $71 million in frozen ETH to rsETH recovery effort",
           "url": "https://www.theblock.co/post/398882/aave-kelp-layerzero-ask-arbitrum-dao-to-release-71-million-in-frozen-eth-to-rseth-recovery-effort?utm_source=rss&utm_medium=rss",
           "source": "The Block · 04-25 14:55",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "Europe’s banks are going all in on crypto",
-          "url": "https://www.coindesk.com/opinion/2026/04/25/europe-s-banks-are-going-all-in-on-crypto",
-          "source": "CoinDesk · 04-25 13:30",
           "pub_time": "",
           "summary": ""
         },
@@ -398,19 +398,19 @@
           "source": "Ars Technica · 04-24 11:00",
           "pub_time": "",
           "summary": ""
-        },
-        {
-          "title": "Health-care AI is here. We don’t know if it actually helps patients.",
-          "url": "https://www.technologyreview.com/2026/04/24/1136352/health-care-ai-dont-know-actually-helps-patients/",
-          "source": "MIT Tech Review · 04-24 09:00",
-          "pub_time": "",
-          "summary": ""
         }
       ]
     },
     {
       "category": "🌍 地缘政治",
       "items": [
+        {
+          "title": "Armed groups launch coordinated attacks across Mali",
+          "url": "https://www.bbc.com/news/articles/clyx7nnrkqdo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World · 04-26 08:56",
+          "pub_time": "",
+          "summary": ""
+        },
         {
           "title": "Netanyahu orders army to 'vigorously attack' Hezbollah in Lebanon",
           "url": "https://www.bbc.com/news/articles/c5yv1nvd4gjo?at_medium=RSS&at_campaign=rss",
@@ -422,13 +422,6 @@
           "title": "Trump cancels US envoys' trip to Pakistan for talks on Iran war",
           "url": "https://www.bbc.com/news/articles/c4g6nyvl29po?at_medium=RSS&at_campaign=rss",
           "source": "BBC World · 04-25 21:34",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "Explosions and gunfire as armed groups launch co-ordinated attacks across Mali",
-          "url": "https://www.bbc.com/news/articles/clyx7nnrkqdo?at_medium=RSS&at_campaign=rss",
-          "source": "BBC World · 04-25 21:13",
           "pub_time": "",
           "summary": ""
         },
