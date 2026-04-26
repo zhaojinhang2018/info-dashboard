@@ -1,0 +1,637 @@
+{
+  "updated_at": "2026-04-26 15:49:45",
+  "users": [
+    {
+      "display_name": "qinbafrank",
+      "username": "@qinbafrank",
+      "tweets": [
+        {
+          "text": "算力和模型的竞争本质是什么？个人角度就是Sam在24年初达沃斯论坛讲到的，竞争本质是认知成本的降低。Sam的原话是这样“当认知成本降低一千倍或一百万倍，且能力得到极大增强时，这将对世界产生何种影响？如果世界上人人都拥有一家，由1万个能力极强的虚拟AI员工、且是各个领域专家，组成的公司，他们不 https://t.co/08rvVDI5Me",
+          "url": "https://pbs.twimg.com/media/HGwixRuawAEEwgA.jpg",
+          "meta": [
+            "🕒 04-25 14:46",
+            "❤️ 34",
+            "🔁 6"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGwixRuawAEEwgA.jpg"
+          ]
+        },
+        {
+          "text": "改变大模型竞争格局的一次投资，昨晚Google宣布对Authropic最高400亿美元新投资承诺：1）立即投入 100 亿美元现金，与26年2月融资轮估值一致，不含后续新募资金； 2）额外 300 亿美元 视 Anthropic 达到特定业绩里程碑后投入； 3）同时支持 Anthropic 大幅扩充算力（Google Cloud 将提供新增 5 https://t.co/ifPXcJiLbh",
+          "url": "https://pbs.twimg.com/media/HGuMvv2bAAAWAnd.jpg",
+          "meta": [
+            "🕒 04-25 03:47",
+            "❤️ 84",
+            "🔁 10"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGuMvv2bAAAWAnd.jpg"
+          ]
+        },
+        {
+          "text": "最唱衰私募信贷的摩根大通，要扩张其私募信贷业务了。彭博前两天报道摩根大通资管正式启动私募信贷扩张计划，先通过机构投资者融资筹集数十亿美元启动资金，再将商业银行的贷款 origination（来源）注入进来，目标是逐步达到数百亿美元规模。 https://t.co/CWqnKaDiji",
+          "url": "https://pbs.twimg.com/media/HGtwtbEbkAA__lL.jpg",
+          "meta": [
+            "🕒 04-25 01:45",
+            "❤️ 37",
+            "🔁 9"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGtwtbEbkAA__lL.jpg"
+          ]
+        },
+        {
+          "text": "来读读论文，第一次从学术的角度明确了在处理阶段cpu占总延迟的比例在大幅度提高的论文，就是这篇佐治亚理工跟英特尔合作的论文，标题《理解、分析与优化代理AI执行：以CPU为中心的视角》 https://t.co/VCF4AW5Rvg",
+          "url": "https://pbs.twimg.com/media/HGthEGQbQAAz5P1.jpg",
+          "meta": [
+            "🕒 04-25 00:36",
+            "❤️ 151",
+            "🔁 26"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGthEGQbQAAz5P1.jpg"
+          ]
+        },
+        {
+          "text": "联邦检察官皮罗宣布其办公室关闭对鲍威尔的刑事调查，改由联邦储备委员会总督察来内部调查。3个月前聊到对鲍威尔的刑事调查大概率虎头蛇尾、草草收场，终于等到这一刻！沃什应该可以在五月如期上任美联储新一任主席。 https://t.co/7hfyWMO6Rn",
+          "url": "https://pbs.twimg.com/media/HGrbCocaUAAJTKx.jpg",
+          "meta": [
+            "🕒 04-24 14:52",
+            "❤️ 22",
+            "🔁 2"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGrbCocaUAAJTKx.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "display_name": "投资TALK君",
+      "username": "@TJ_Research",
+      "tweets": [
+        {
+          "text": "4月份美股狂飙，很多人认为没机会了，好的公司都很贵，其实不然。我25年一直第一大持仓 $GE 今年表现相对较差，但主要都是在战争开打后，开始跑输标普。 https://t.co/DRYDkwqFxr",
+          "url": "https://pbs.twimg.com/media/HGuQvfraMAAoaVA.jpg",
+          "meta": [
+            "🕒 04-25 04:13",
+            "❤️ 151",
+            "🔁 10"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGuQvfraMAAoaVA.jpg"
+          ]
+        },
+        {
+          "text": "比我做得好得很多。 亏损离场的标的21年可太多了：比如TDOC（-75%）。OPEN最后亏得不多，波段做了很多，但那时很上头。很多小黑粉还会拿那些标的出来说，说明这几年确实聊资不多😂 卖飞得也很多：23年初卖飞英伟达，卖飞META，25年卖飞GEV。",
+          "url": "https://x.com/TJ_Research/status/2047830236075606250",
+          "meta": [
+            "🕒 04-25 00:09",
+            "❤️ 84",
+            "🔁 0"
+          ],
+          "photos": []
+        },
+        {
+          "text": "左侧做空是送钱，NVDA, SNDK, MU，哪个不是被埋的？ 做对一次，最多发个截图秀一下，且都不敢上大仓位。 即使通过小波段赚钱了，那为何不一路大仓位做多呢？趋势明显做错了。",
+          "url": "https://x.com/TJ_Research/status/2047818675768480213",
+          "meta": [
+            "🕒 04-24 23:23",
+            "❤️ 69",
+            "🔁 3"
+          ],
+          "photos": []
+        },
+        {
+          "text": "非常有信心，过去1个季度看看SATYA的X发得多卖力。 我没信心和把握的是财报后涨还是跌",
+          "url": "https://x.com/TJ_Research/status/2047817600671895562",
+          "meta": [
+            "🕒 04-24 23:18",
+            "❤️ 57",
+            "🔁 3"
+          ],
+          "photos": []
+        },
+        {
+          "text": "3月底：“英伟达便宜，博通便宜，微软便宜”(短期，中期，长期) 现在：“纳指仍然便宜😂”（中期，长期） HOLD IT，留一些现金让你心态上好一点就够了。",
+          "url": "https://x.com/TJ_Research/status/2047722295519514979",
+          "meta": [
+            "🕒 04-24 17:00",
+            "❤️ 203",
+            "🔁 6"
+          ],
+          "photos": []
+        }
+      ]
+    },
+    {
+      "display_name": "Murphychen888",
+      "username": "@Murphychen888",
+      "tweets": [
+        {
+          "text": "哈....看到这个我就放心了！ 从4月20日开始，LTH净持仓开始减少，直至24日累计花费98,154枚BTC，净减持24,205枚BTC。 截止到4月24日，LTH的7日净持仓已开始转负。 说明“不是不卖，而是价格没到位” —— LTH手上仍然有不坚定的筹码，一旦获利回报不错，就会卖出。 https://t.co/0nqVCUUOWa",
+          "url": "https://pbs.twimg.com/media/HGuHXWCaUAA52zk.jpg",
+          "meta": [
+            "🕒 04-25 03:36",
+            "❤️ 155",
+            "🔁 22"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGuHXWCaUAA52zk.jpg",
+            "https://pbs.twimg.com/media/HGuHaaabAAAg07w.jpg"
+          ]
+        },
+        {
+          "text": "卧槽，真的挺牛逼！ 我们可以来看看，机构信号BSS在过去10年中在牛市主升浪之前的精准提示。 在整个时间线上，绝大多数时间BSS的高点都在0.7-0.72左右。而且几乎都对应着BTC大/小波段的顶部区域。 但唯独有5次，BSS突然大幅攀升，直接超过了0.85。其中1-4全部对应在牛市主升浪启动之前。 https://t.co/repCLCNgGb",
+          "url": "https://pbs.twimg.com/media/HGrCCAeaAAAkm-v.jpg",
+          "meta": [
+            "🕒 04-24 13:04",
+            "❤️ 414",
+            "🔁 51"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGrCCAeaAAAkm-v.jpg"
+          ]
+        },
+        {
+          "text": "BRS从4/16至今，一直被死死的钉在了“0”的位置。在BRS=0的时间段，就是BTC阶段性筑顶的过程。 并不是一回到零就是顶点，但BRS也不可能永远停在零轴，一旦离开就是回调开始，只是我们不知道需要多久。 就像2月3日BRS触及100后意味着BTC进入阶段性的底部区间，这期间BTC到过62，也到过73。 https://t.co/Em6GPu3tHB",
+          "url": "https://pbs.twimg.com/media/HGkjj-nakAAFR0i.jpg",
+          "meta": [
+            "🕒 04-23 06:53",
+            "❤️ 126",
+            "🔁 10"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGkjj-nakAAFR0i.jpg",
+            "https://pbs.twimg.com/media/HGkjmbdbwAA5YYj.jpg"
+          ]
+        },
+        {
+          "text": "7.9w了，为什么我仍不想追空？ 合约市场对空双方持仓量永远 1:1 对称，在不考虑手续费、资金费、滑点等交易成本时，盈亏近似零和，即多头赚的钱就是空头亏的钱。 所以，空单要能开出来，得有同样仓位的空单平仓或多单开仓来作为对手盘。 如果是“新空头开仓 vs 老空头平仓”撮合，OI（Open https://t.co/jxKXFxvMGP",
+          "url": "https://pbs.twimg.com/media/HGj6XvmbwAAEsbX.jpg",
+          "meta": [
+            "🕒 04-23 04:15",
+            "❤️ 228",
+            "🔁 31"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGj6XvmbwAAEsbX.jpg",
+            "https://pbs.twimg.com/media/HGj6bY3agAAqTjQ.jpg"
+          ]
+        },
+        {
+          "text": "理性的讲完了，是不是应该再来个玄学的？ 据老夫夜观星象，在2026.5.9之前确实有一波上升势头。 但看上去，这好像是“最后一弹”..... 哦，对了，你们关心的“最后一跌”， 从卦象上看，如果有，那最有可能发生的时间在5月底到9月底。 其他细节请恕老夫不便细表，天机不可泄露🤣🤣🤣 https://t.co/EeyVy3MYmG",
+          "url": "https://pbs.twimg.com/media/HGfnJXxagAAtj4O.jpg",
+          "meta": [
+            "🕒 04-22 07:49",
+            "❤️ 241",
+            "🔁 38"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGfnJXxagAAtj4O.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "display_name": "_FORAB",
+      "username": "@_FORAB",
+      "tweets": [
+        {
+          "text": "昨天特朗普记者会，老哥有 50 秒直接睡着了。 上一次这种情况，还是时任美国总统的拜登，当时他也在 80 岁那年，变得有些瞌睡和痴呆，而特朗普今年也要 80 岁了。 事实证明，80 岁真的是个坎。 https://t.co/EUuChaws2c",
+          "url": "https://x.com/_FORAB/status/2047996887878582352",
+          "meta": [
+            "🕒 04-25 11:11",
+            "❤️ 554",
+            "🔁 26"
+          ],
+          "photos": []
+        },
+        {
+          "text": "感觉小米快把整个宝马设计团队，给挖没了。 对不起，他给的实在是太多了。 https://t.co/ECI3YfckzM",
+          "url": "https://pbs.twimg.com/media/HGvO4RKa8AAVFcS.jpg",
+          "meta": [
+            "🕒 04-25 08:38",
+            "❤️ 587",
+            "🔁 38"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGvO4RKa8AAVFcS.jpg"
+          ]
+        },
+        {
+          "text": "特朗普金卡，可能要烂尾了。 此前由特朗普大力推崇的 100 万美金，买特朗普金卡，拿美国永久身份项目，如今遭遇了暴冷。 根据商务部长，昨日在国会听证会上的披露，该卡自推出后只有 1 人获得了批准，另有数百人，提交后在排队等待审查。 这与之前卖出上千份的口径不一。 该卡于 2025 https://t.co/yBddDD3LCq",
+          "url": "https://pbs.twimg.com/media/HGuUqcLaUAACtS5.jpg",
+          "meta": [
+            "🕒 04-25 04:24",
+            "❤️ 130",
+            "🔁 9"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGuUqcLaUAACtS5.jpg",
+            "https://pbs.twimg.com/media/HGuVCCaaIAAg-3k.jpg"
+          ]
+        },
+        {
+          "text": "没想到高德地图在台湾火了 看来车道级导航、显示红绿灯倒计时，还是挺有用的 https://t.co/XZiWiJr2xJ",
+          "url": "https://pbs.twimg.com/media/HGuNyLbacAAi_R1.jpg",
+          "meta": [
+            "🕒 04-25 03:54",
+            "❤️ 181",
+            "🔁 1"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGuNyLbacAAi_R1.jpg",
+            "https://pbs.twimg.com/media/HGuN4HibcAA1W0m.jpg",
+            "https://pbs.twimg.com/media/HGuN4HNbAAAaAqf.jpg",
+            "https://pbs.twimg.com/media/HGuN4HMaIAEbRNT.jpg"
+          ]
+        },
+        {
+          "text": "还记得去年币圈的项目方 Believe 么？就是那个叫 LAUNCHCOIN 的 Solana 代币，自最高点 3 亿市值，已跌到现在的 7 万美金。 该项目的创始人 Ben Pasternak，目前在美正式被捕，原因是涉嫌在酒店内，袭击前女友，然后被指控二级勒颈罪、三级袭击罪。 根据刑事诉状，Pasternak https://t.co/8lp7ds0UD8",
+          "url": "https://pbs.twimg.com/media/HGuEKrjbsAAVWol.jpg",
+          "meta": [
+            "🕒 04-25 03:10",
+            "❤️ 151",
+            "🔁 9"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGuEKrjbsAAVWol.jpg",
+            "https://pbs.twimg.com/media/HGuD-4lbgAA0G-i.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "display_name": "fi56622380",
+      "username": "@fi56622380",
+      "tweets": [
+        {
+          "text": "RT @fi56622380: @jukan05 CPU 不能像 memory / optics 那样猛涨价，这个判断在“普通紧缺”场景里是合理的，就像今年年初一样，只有10%的涨价 但他的前提是，每块GPU带几个CPU比例是主要的CPU增量：“如果没有 MI308X，Q4…",
+          "url": "https://x.com/fi56622380/status/2045418294484836726",
+          "meta": [
+            "🕒 04-18 08:24",
+            "❤️ 0",
+            "🔁 78"
+          ],
+          "photos": []
+        },
+        {
+          "text": "今天芯片圈最大的新闻，莫过于Gerard在创立Nuvia CPU被高通收购五年之后，重新出发，新创立了ARM CPU公司，名字也跟之前非常像，叫Nuvacore 现在这个时间点做数据中心CPU，确实是赶上了CPU十年来最好的时代: AI agent带来CPU短缺潮已经经隐隐浮现，AWS多个客户都提出要包揽所有Graviton ARM CPU产能 https://t.co/KkRkPk5qD2",
+          "url": "https://pbs.twimg.com/media/HGAlL4ibAAAUH04.png",
+          "meta": [
+            "🕒 04-16 07:21",
+            "❤️ 461",
+            "🔁 96"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGAlL4ibAAAUH04.png",
+            "https://pbs.twimg.com/media/HGAlfJ6akAAYPe-.jpg",
+            "https://pbs.twimg.com/media/HGAl8zWaYAA0PkM.jpg",
+            "https://pbs.twimg.com/media/HGAmEL3aEAA-ZoV.jpg"
+          ]
+        },
+        {
+          "text": "复盘GTC 2026：Nvidia补上了短板，大幅削弱了各个AI 加速器 startup最大的优势--token速度 回顾这篇GTC前瞻，方向预测和技术路线写的没啥大问题，最后Nvidia给出的解法比我想象的更为精巧：不仅是prefill放在GPU上，decode阶段Attention阶段也放在GPU上(这点没想到)，只把decode的MLP阶段放在LPU上做 https://t.co/0nX5A10pXS",
+          "url": "https://pbs.twimg.com/media/HD_Skn6boAA3axp.png",
+          "meta": [
+            "🕒 03-22 04:44",
+            "❤️ 394",
+            "🔁 92"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HD_Skn6boAA3axp.png",
+            "https://pbs.twimg.com/media/HD_SqNvbMAA9uM9.jpg",
+            "https://pbs.twimg.com/media/HD_SsKkboAApq9V.jpg",
+            "https://pbs.twimg.com/media/HD_TNlTaUAA-5Xo.jpg"
+          ]
+        },
+        {
+          "text": "GTC 2026 preview： 从Groq生态位看AI异构推理(Heterogeneous Inference)新时代 Groq的SRAM路线的生态位在哪里？SRAM会不会替代HBM路线？ Nvidia如何整合groq到现有的产品线？是技术整合还是产品线整合？收购之后会给groq LPU产品带来怎样的升级？ 这里尝试从基本原理出发去拼凑一个逻辑链 https://t.co/oAS2suk2uo",
+          "url": "https://pbs.twimg.com/media/HDBie-haMAIA9mQ.jpg",
+          "meta": [
+            "🕒 03-10 04:59",
+            "❤️ 268",
+            "🔁 74"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HDBie-haMAIA9mQ.jpg"
+          ]
+        },
+        {
+          "text": "AI泡沫论，继循环投资/左脚踩右脚的故事淡化后，终于又迎来了新论据，这次轮到了GPU折旧问题 这次的叙事很简单，在几个主流CSP的财务报表里，GPU折旧年限很多都是平摊到6年来算 但是GPU使用寿命可能只有2~3年，那么这样做账就会让纸面上利润率虚高，而实际上AI云利润太低就是吹泡泡 真的是这样吗？ https://t.co/RbMyF9Oj02",
+          "url": "https://pbs.twimg.com/media/G5dt0tpaoAA9AfL.jpg",
+          "meta": [
+            "🕒 11-11 09:38",
+            "❤️ 839",
+            "🔁 205"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/G5dt0tpaoAA9AfL.jpg",
+            "https://pbs.twimg.com/media/G5dt76AbcAItq42.jpg",
+            "https://pbs.twimg.com/media/G5duHHkbcAcJuf6.jpg",
+            "https://pbs.twimg.com/media/G5duRs7bcAYF-Tk.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "display_name": "ShanghaoJin",
+      "username": "@ShanghaoJin",
+      "tweets": [
+        {
+          "text": "基础模型中国至少落后一代，但医疗方面真不好说鹿死谁手 中国在医疗系统化数据、管理运营上优势太大了。而且降低社会成本的东西，“他们”会不遗余力",
+          "url": "https://x.com/ShanghaoJin/status/2047986593940820181",
+          "meta": [
+            "🕒 04-25 10:30",
+            "❤️ 62",
+            "🔁 4"
+          ],
+          "photos": []
+        },
+        {
+          "text": "美国顶尖医疗机构的研发确实非常厉害，但是中国正用其效率以惊人的速度追赶 而且因为中国有巨多实操案例，加上三甲医院系统化数据、整体管理优势。几年内，不管新药研发、还是治疗整体能力，中国一线医院都会让你们惊掉下巴 好像是2000年TSMC，良率是一片一片搓出来的",
+          "url": "https://x.com/ShanghaoJin/status/2047969178519511044",
+          "meta": [
+            "🕒 04-25 09:21",
+            "❤️ 106",
+            "🔁 4"
+          ],
+          "photos": []
+        },
+        {
+          "text": "强烈怀疑你们看了我前几天在群里传的小作文😂",
+          "url": "https://x.com/ShanghaoJin/status/2047955649162883420",
+          "meta": [
+            "🕒 04-25 08:27",
+            "❤️ 61",
+            "🔁 8"
+          ],
+          "photos": []
+        },
+        {
+          "text": "RT @ShanghaoJin: @ashinagen32 @againwithoutI 日本老百姓被军国主义洗脑是无辜的，中国出厂鸿蒙系统的孩子也是无辜的 我们不该恨日本人，而是让日本兵变成禽兽的国家主义制度、民粹主义 然后想想这个遗毒在哪里横行，自己有没有中毒",
+          "url": "https://x.com/ShanghaoJin/status/2047954553409319423",
+          "meta": [
+            "🕒 04-25 08:23",
+            "❤️ 0",
+            "🔁 3"
+          ],
+          "photos": []
+        },
+        {
+          "text": "RT @ShanghaoJin: @babawoshiniba 现在是招魂特拿着鬼王披风，已经赢麻了 美国以为自己带凤凰放末日很牛，走到哪里都秒杀 碰上墓园骷髅海、lich海，等等屎都被打出来",
+          "url": "https://x.com/ShanghaoJin/status/2047919652333035870",
+          "meta": [
+            "🕒 04-25 06:04",
+            "❤️ 0",
+            "🔁 2"
+          ],
+          "photos": []
+        }
+      ]
+    },
+    {
+      "display_name": "oxpsats",
+      "username": "@oxpsats",
+      "tweets": [
+        {
+          "text": "当下的混乱局面源于伊朗没有一个足够强的人，出来承担艰难妥协的政治代价。 伊朗缺乏一位强有力的、在位的最高领袖来承担做出艰难决定的风险并统一各派系。 凸显了伊朗目前缺乏过去那种能在重大国家安全决策中一锤定音的人物。（来自华尔街日报观点） https://t.co/s5GKysHNFm",
+          "url": "https://pbs.twimg.com/media/HGu8EivbEAA57qu.jpg",
+          "meta": [
+            "🕒 04-25 07:18",
+            "❤️ 4",
+            "🔁 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGu8EivbEAA57qu.jpg"
+          ]
+        },
+        {
+          "text": "费城半导体指数18连涨了，这种12点钟斜率的猛冲最后回调起来都非常惨烈，今年我们从金银、原油上面都见识过。 1月30日的白银单日暴跌31%，同一天黄金暴跌9%，然后是原油，4月8日单日暴跌16%。 下一个故事，现在的半导体指数非常接近。 而半导体指数会连带整个纳斯达克。 https://t.co/etZINHvnrj",
+          "url": "https://pbs.twimg.com/media/HGt3QcfaoAEpXYt.jpg",
+          "meta": [
+            "🕒 04-25 02:13",
+            "❤️ 160",
+            "🔁 17"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGt3QcfaoAEpXYt.jpg",
+            "https://pbs.twimg.com/media/HGt3QcfawAAgJeZ.jpg"
+          ]
+        },
+        {
+          "text": "DeepSeek V4的回复速度是真的快… https://t.co/JNTyXHc0KW",
+          "url": "https://pbs.twimg.com/media/HGqLlxBaEAAeXxy.jpg",
+          "meta": [
+            "🕒 04-24 09:04",
+            "❤️ 0",
+            "🔁 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGqLlxBaEAAeXxy.jpg"
+          ]
+        },
+        {
+          "text": "在Claude Code 里用了DeepSeek-V4-Pro ，等我空了来试试它强不强。 https://t.co/V51Xec8v37",
+          "url": "https://pbs.twimg.com/media/HGqHEUWbsAAeAyd.jpg",
+          "meta": [
+            "🕒 04-24 08:45",
+            "❤️ 0",
+            "🔁 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGqHEUWbsAAeAyd.jpg"
+          ]
+        },
+        {
+          "text": "油价再上涨，世界正在经历一场\"慢性窒息\"；市场最怕的不是一声巨响，而是一条绳索慢慢收紧。 https://youtu.be/3mSAkvWMAZQ",
+          "url": "https://youtu.be/3mSAkvWMAZQ",
+          "meta": [
+            "🕒 04-24 07:43",
+            "❤️ 0",
+            "🔁 0"
+          ],
+          "photos": []
+        }
+      ]
+    },
+    {
+      "display_name": "fupenglondon",
+      "username": "@fupenglondon",
+      "tweets": [
+        {
+          "text": "Commodity Exchange Traded Funds (ETFs) are essentially compliant products that package the business model of \"holding commodities long-term and continuously generating rental income\" and offer it to retail investors. Fund companies receive a share of the rental income earned by",
+          "url": "https://x.com/fupenglondon/status/2047956405752389821",
+          "meta": [
+            "🕒 04-25 08:30",
+            "❤️ 21",
+            "🔁 3"
+          ],
+          "photos": []
+        },
+        {
+          "text": "In the past, China's gold spot exchanges appeared to have low transaction fees, but their profits mainly relied on two sources: spreads (the difference between the buying and selling prices) and overnight fees (also known as deferred fees). Retail investors tended to use leverage",
+          "url": "https://x.com/fupenglondon/status/2047956227267920218",
+          "meta": [
+            "🕒 04-25 08:29",
+            "❤️ 18",
+            "🔁 2"
+          ],
+          "photos": []
+        },
+        {
+          "text": "很多根本不知道我在说什么，但是大规模的btc现货持有者，经历了早期阶段存活下来的这几位都知道我在说什么，呵呵，太阳下没有新鲜事物，到了一定的维度，就能一两句话就知道你在说什么了",
+          "url": "https://x.com/fupenglondon/status/2047912612038664382",
+          "meta": [
+            "🕒 04-25 05:36",
+            "❤️ 242",
+            "🔁 12"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Large investors hold long-term positions and collect rent through hedging transactions, effectively lowering their average cost basis. For them, Bitcoin becomes an asset that generates interest; as long as their total position size doesn't decrease, over time the cost basis",
+          "url": "https://x.com/fupenglondon/status/2047888660469838182",
+          "meta": [
+            "🕒 04-25 04:01",
+            "❤️ 31",
+            "🔁 4"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Back in the day, Chinese gold spot exchanges enforced daily forced liquidation and settlement, with long and short positions paying deferred fees to each other. The exchanges didn't directly collect this money, but when retail investors held a large long position and leveraged",
+          "url": "https://x.com/fupenglondon/status/2047887375570022684",
+          "meta": [
+            "🕒 04-25 03:56",
+            "❤️ 69",
+            "🔁 5"
+          ],
+          "photos": []
+        }
+      ]
+    },
+    {
+      "display_name": "jukan05",
+      "username": "@jukan05",
+      "tweets": [
+        {
+          "text": "Hana Securities’ bull case estimates that next year, NVIDIA alone will account for 72% of total LPDDR supply. Did you hear me, anon? https://t.co/a9MdGHZeXT",
+          "url": "https://pbs.twimg.com/media/HGwjZfdbYAEwI7W.png",
+          "meta": [
+            "🕒 04-25 14:47",
+            "❤️ 355",
+            "🔁 24"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGwjZfdbYAEwI7W.png"
+          ]
+        },
+        {
+          "text": "The most interesting comment I read in today’s report: All of Anthropic's unusual moves around the GPT-5.5 launch ultimately converge on a single conclusion: in order to secure compute, Anthropic must bind itself far more deeply — and far more dependently — to those who possess",
+          "url": "https://x.com/jukan05/status/2047974859125465105",
+          "meta": [
+            "🕒 04-25 09:43",
+            "❤️ 986",
+            "🔁 97"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Thoughts after reading the DeepSeek V4 paper: - NVIDIA really is something else. Remember how back in 2024 people were bashing Blackwell as overspec'd and dismissing FP4 as just marketing? Turns out it was all groundwork for the next generation of models. Maybe NVIDIA's moat is",
+          "url": "https://x.com/jukan05/status/2047861732702662741",
+          "meta": [
+            "🕒 04-25 02:14",
+            "❤️ 1338",
+            "🔁 121"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Our boss caught NVIDIA calls at the most insane perfect timing... Why the hell didn’t I buy any? https://t.co/Luo08YPGqy",
+          "url": "https://pbs.twimg.com/media/HGtqguSasAAC5hG.jpg",
+          "meta": [
+            "🕒 04-25 01:19",
+            "❤️ 628",
+            "🔁 10"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGtqguSasAAC5hG.jpg"
+          ]
+        },
+        {
+          "text": "Elon, is it really okay to give away so much like this? Won’t X go bankrupt at this rate? The payout amount has tripled... https://t.co/2GQ3l8sKSn",
+          "url": "https://pbs.twimg.com/media/HGtdiFoa0AAt564.jpg",
+          "meta": [
+            "🕒 04-25 00:22",
+            "❤️ 1024",
+            "🔁 27"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGtdiFoa0AAt564.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "display_name": "trendforce",
+      "username": "@trendforce",
+      "tweets": [
+        {
+          "text": "💥 Middle East disruptions ripple across chips—Japan’s material suppliers reportedly flag risks to #Samsung and #SKhynix, as &gt;40% reliance on Middle East naphtha may put #EUV #photoresist and #HBM production at risk. 💡More: https://buff.ly/hGIJkaM 🔗",
+          "url": "https://buff.ly/hGIJkaM",
+          "meta": [
+            "🕒 04-24 13:00",
+            "❤️ 43",
+            "🔁 9"
+          ],
+          "photos": []
+        },
+        {
+          "text": "👀 #ASML is reportedly trimming ~1,700 roles, with cuts focused on management. With the U.S. tightening #DUV restrictions on China, the company could face a leaner structure—and a more constrained market outlook. 💡More: https://buff.ly/yMlpu7T 🔗",
+          "url": "https://buff.ly/yMlpu7T",
+          "meta": [
+            "🕒 04-24 12:00",
+            "❤️ 10",
+            "🔁 1"
+          ],
+          "photos": []
+        },
+        {
+          "text": "RT @NEWS2082680: 🔥 #Samsung reportedly hits another milestone, producing a 10a DRAM working die—the first sub-10nm node. Built on 4F square…",
+          "url": "https://x.com/trendforce/status/2047610570015441203",
+          "meta": [
+            "🕒 04-24 09:36",
+            "❤️ 0",
+            "🔁 2"
+          ],
+          "photos": []
+        },
+        {
+          "text": "RT @NEWS2082680: 👓 #Huawei just launched #AIglasses, taking aim at #Meta — but Meta may have bigger worries ahead, with #Apple reportedly e…",
+          "url": "https://x.com/trendforce/status/2047587231611974130",
+          "meta": [
+            "🕒 04-24 08:03",
+            "❤️ 0",
+            "🔁 1"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Intel Beats Expectations for Six Straight Quarters; 1Q26 Revenue Reaches $13.6B Intel reported its 1Q26 financial results on April 23, posting revenue of $13.6B, up 7% YoY. This marks the sixth consecutive quarter in which the company has exceeded market expectations. Non-GAAP https://t.co/rOsACOmAfK",
+          "url": "https://pbs.twimg.com/media/HGp32lCWUAAWPd4.jpg",
+          "meta": [
+            "🕒 04-24 07:37",
+            "❤️ 18",
+            "🔁 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HGp32lCWUAAWPd4.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}
