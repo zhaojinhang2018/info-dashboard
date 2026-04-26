@@ -43,6 +43,7 @@ html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-sys
   <section id="xueqiu" class="page"></section>
   <section id="wechat" class="page"></section>
 </main>
+<script src="data.js"></script>
 <script>
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const load=p=>fetch(p,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
@@ -64,7 +65,11 @@ themeSelect.addEventListener('change',()=>{document.documentElement.dataset.them
 showTab(location.hash.slice(1),false);
 function titleLink(text,url){return url?`<a class="title" href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`:`<div class="title">${esc(text)}</div>`}
 function renderCard(title,body,url,meta=''){return `<article class="card">${titleLink(title,url)}${meta?`<div class="muted">${esc(meta)}</div>`:''}${body?`<div class="text">${esc(body)}</div>`:''}</article>`}
-Promise.all([load('data/news.json'),load('data/tweets.json'),load('data/stocks.json'),load('data/xueqiu.json'),load('data/wechat.json')]).then(([newsData,tweetsData,stocksData,xueqiuData,wechatData])=>{
+const embedded=window.DASHBOARD_DATA;
+const dataPromise=embedded
+  ? Promise.resolve([embedded.news,embedded.tweets,embedded.stocks,embedded.xueqiu,embedded.wechat])
+  : Promise.all([load('data/news.json'),load('data/tweets.json'),load('data/stocks.json'),load('data/xueqiu.json'),load('data/wechat.json')]);
+dataPromise.then(([newsData,tweetsData,stocksData,xueqiuData,wechatData])=>{
   const times=[newsData,tweetsData,stocksData,xueqiuData,wechatData].filter(Boolean).map(x=>x.updated_at).filter(Boolean);
   document.getElementById('updated').textContent='最后更新：'+(times[0]||'未知');
   renderNews(newsData); renderTweets(tweetsData); renderStocks(stocksData); renderXueqiu(xueqiuData); renderWechat(wechatData);
