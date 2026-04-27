@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>市场行情总览</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0d1117; color: #e6edf3; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft YaHei", sans-serif; min-height: 100vh; }
+    .topbar { background: #111820; border-bottom: 1px solid #26313c; padding: 13px 24px; display: flex; justify-content: space-between; align-items: center; gap: 14px; position: sticky; top: 0; z-index: 10; }
+    .topbar h1 { font-size: 18px; font-weight: 700; }
+    .top-right { display: flex; align-items: center; gap: 12px; }
+    .updated { font-size: 12px; color: #8b949e; white-space: nowrap; }
+    .nav { background: #111820; border-bottom: 1px solid #21262d; padding: 8px 24px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .nav a { border: 1px solid #30363d; border-radius: 6px; color: #c9d1d9; background: #0f141b; text-decoration: none; font-size: 13px; padding: 6px 10px; }
+    .nav a:hover { border-color: #58a6ff; color: #fff; }
+    .nav a.active { background: #238636; border-color: #2ea043; color: #fff; font-weight: 700; }
+    .theme-select { border: 1px solid #30363d; border-radius: 6px; background: #0f141b; color: #e6edf3; font-size: 13px; padding: 6px 10px; }
+    .wrap { padding: 14px 18px 32px; overflow-x: auto; }
+    .table-shell { width: fit-content; margin: 0 auto; border: 2px solid #0b0f14; box-shadow: 0 14px 34px rgba(0,0,0,.20); background: #0b0f14; }
+    table { width: 780px; border-collapse: collapse; background: #1b222b; table-layout: fixed; }
+    th, td { border: 0; padding: 3px 6px; font-size: 12px; line-height: 1.08; height: 22px; }
+    th { background: #6b7280; color: #f8fafc; text-align: right; font-weight: 800; }
+    th:first-child { text-align: center; }
+    th:nth-child(1) { width: 110px; }
+    th:nth-child(2) { width: 82px; }
+    th:nth-child(n+3):nth-child(-n+8) { width: 84px; }
+    th:nth-child(9) { width: 84px; }
+    td.name { text-align: center; font-weight: 800; color: #f8fafc; white-space: nowrap; background: #9ca3af; text-shadow: 0 1px 0 rgba(0,0,0,.18); }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    td.last { color: #102033; background: #9fd3f0; font-weight: 900; }
+    td.change { font-weight: 900; color: #102312; }
+    td.good { background: #68a143; }
+    td.bad { background: #ffae67; color: #3a1b00; }
+    td.neutral { background: #d4d8dd; color: #4b5563; }
+    td.code { color: #8b949e; background: #f8fafc; white-space: nowrap; }
+    .tag { display: inline-block; text-align: center; min-width: 38px; border-radius: 0; padding: 2px 6px; color: #1f2937; background: #facc15; font-weight: 900; }
+    .source { display: none; }
+    .section-row { display: none; }
+    tr:last-child td { border-bottom: 0; }
+    [data-theme="light"] body { background: #eef2f6; color: #24292f; }
+    [data-theme="light"] .topbar, [data-theme="light"] .nav { background: #f7f9fb; border-color: #cfd7df; }
+    [data-theme="light"] .nav a, [data-theme="light"] .theme-select { background: #fff; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .nav a.active { background: #e6f4ea; border-color: #2da44e; color: #1a7f37; }
+    [data-theme="light"] .table-shell { border-color: #1f2937; background: #1f2937; box-shadow: 0 16px 42px rgba(15,23,42,.14); }
+    [data-theme="light"] table { background: #fff; }
+    [data-theme="light"] th { background: #7b8491; color: #fff; }
+    [data-theme="light"] td.name { background: #a9b0b8; color: #fff; }
+    [data-theme="light"] td.last { background: #a9d7f1; color: #142033; }
+    [data-theme="light"] td.good { background: #6fa24a; }
+    [data-theme="light"] td.bad { background: #ffb36f; }
+    [data-theme="light"] td.neutral { background: #d8dee6; color: #57606a; }
+    [data-theme="light"] td.code { background: #fff; }
+    [data-theme="light"] .tag { background: #facc15; color: #1f2937; }
+    @media (max-width: 760px) {
+      .topbar { align-items: stretch; flex-direction: column; padding: 12px; }
+      .top-right { justify-content: space-between; }
+      .nav { padding: 8px 12px; }
+      .nav a { flex: 1 1 calc(50% - 8px); text-align: center; }
+      .wrap { padding: 12px; }
+      .table-shell { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>市场行情总览</h1>
+    <div class="top-right">
+      <span class="updated">更新于 2026-04-27 20:53:59</span>
+      <select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select>
+    </div>
+  </div>
+  <div class="nav">
+    <a href="index.html">首页</a>
+    <a href="news.html">新闻</a>
+    <a href="x_feed.html">X 动态</a>
+    <a href="stock_alerts.html">股价异动</a>
+    <a href="xueqiu_user.html">雪球</a>
+    <a href="wechat.html">微信公众号</a>
+    <a class="active" href="market_overview.html">市场总览</a>
+  </div>
+  <main class="wrap">
+    <div class="table-shell">
+      <table>
+        <thead>
+          <tr>
+            <th>名称</th><th>收盘价</th><th>1天</th><th>1周</th><th>1月</th><th>1年</th><th>QTD</th><th>YTD</th><th>代码</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">美元</td><td class="num last">118.08</td><td class="num change bad">-0.24%</td><td class="num change neutral">-</td><td class="num change bad">-2.64%</td><td class="num change bad">-3.78%</td><td class="num change bad">-1.70%</td><td class="num change bad">-1.28%</td><td class="code"><span class="tag">USD</span><span class="source">FRED</span></td></tr>
+<tr><td class="name">2年美债</td><td class="num last">3.83</td><td class="num change good">+0.04</td><td class="num change good">+0.11</td><td class="num change good">+0.01</td><td class="num change good">+0.16</td><td class="num change good">+0.02</td><td class="num change good">+0.36</td><td class="code"><span class="tag">DGS2</span><span class="source">FRED</span></td></tr>
+<tr><td class="name">10年美债</td><td class="num last">4.34</td><td class="num change good">+0.04</td><td class="num change good">+0.08</td><td class="num change bad">-0.01</td><td class="num change good">+0.11</td><td class="num change good">+0.01</td><td class="num change good">+0.15</td><td class="code"><span class="tag">DGS10</span><span class="source">FRED</span></td></tr>
+<tr><td class="name">TLT</td><td class="num last">86.71</td><td class="num change good">+0.18%</td><td class="num change bad">-0.39%</td><td class="num change good">+0.32%</td><td class="num change good">+1.35%</td><td class="num change good">+0.52%</td><td class="num change good">+0.76%</td><td class="code"><span class="tag">TLT</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">PUT/CALL</td><td class="num last">N/A</td><td class="num change neutral">-</td><td class="num change neutral">-</td><td class="num change neutral">-</td><td class="num change neutral">-</td><td class="num change neutral">-</td><td class="num change neutral">-</td><td class="code"><span class="source">占位</span></td></tr>
+<tr><td class="name">垃圾债利差</td><td class="num last">2.86</td><td class="num change bad">+0.02</td><td class="num change good">-0.01</td><td class="num change good">-0.60</td><td class="num change good">-0.87</td><td class="num change good">-0.30</td><td class="num change bad">+0.03</td><td class="code"><span class="tag">HY OAS</span><span class="source">FRED</span></td></tr>
+<tr><td class="name">标普500</td><td class="num last">713.94</td><td class="num change good">+0.77%</td><td class="num change good">+0.74%</td><td class="num change good">+12.97%</td><td class="num change good">+31.09%</td><td class="num change good">+8.96%</td><td class="num change good">+4.79%</td><td class="code"><span class="tag">SPY</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">纳指</td><td class="num last">663.88</td><td class="num change good">+1.91%</td><td class="num change good">+2.64%</td><td class="num change good">+18.92%</td><td class="num change good">+41.21%</td><td class="num change good">+13.62%</td><td class="num change good">+8.42%</td><td class="code"><span class="tag">QQQ</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">道指</td><td class="num last">492.21</td><td class="num change bad">-0.16%</td><td class="num change bad">-0.43%</td><td class="num change good">+8.93%</td><td class="num change good">+24.26%</td><td class="num change good">+5.79%</td><td class="num change good">+2.20%</td><td class="code"><span class="tag">DIA</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">黄金</td><td class="num last">433.25</td><td class="num change good">+0.51%</td><td class="num change bad">-2.00%</td><td class="num change good">+4.50%</td><td class="num change good">+40.18%</td><td class="num change bad">-1.04%</td><td class="num change good">+8.78%</td><td class="code"><span class="tag">US.GLD</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">WTI原油</td><td class="num last">132.40</td><td class="num change bad">-1.72%</td><td class="num change good">+9.13%</td><td class="num change good">+1.98%</td><td class="num change good">+95.40%</td><td class="num change good">+6.70%</td><td class="num change good">+92.00%</td><td class="code"><span class="tag">US.USO</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">VIX</td><td class="num last">19.31</td><td class="num change bad">+2.06%</td><td class="num change bad">+2.33%</td><td class="num change good">-36.92%</td><td class="num change good">-23.22%</td><td class="num change good">-21.31%</td><td class="num change bad">+33.08%</td><td class="code"><span class="tag">VIX</span><span class="source">FRED</span></td></tr>
+<tr><td class="name">IGV</td><td class="num last">85.20</td><td class="num change good">+1.95%</td><td class="num change bad">-1.27%</td><td class="num change good">+9.77%</td><td class="num change bad">-10.20%</td><td class="num change good">+6.81%</td><td class="num change bad">-16.98%</td><td class="code"><span class="tag">IGV</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">罗素2000</td><td class="num last">276.65</td><td class="num change good">+0.41%</td><td class="num change bad">-0.25%</td><td class="num change good">+15.46%</td><td class="num change good">+43.44%</td><td class="num change good">+10.86%</td><td class="num change good">+11.40%</td><td class="code"><span class="tag">IWM</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">比特币</td><td class="num last">77,767.61</td><td class="num change bad">-1.15%</td><td class="num change good">+2.51%</td><td class="num change good">+17.26%</td><td class="num change bad">-17.07%</td><td class="num change good">+14.18%</td><td class="num change bad">-12.36%</td><td class="code"><span class="tag">BTC</span><span class="source">Coinbase</span></td></tr>
+<tr><td class="name">以太坊</td><td class="num last">2,316.53</td><td class="num change bad">-2.28%</td><td class="num change good">+0.08%</td><td class="num change good">+16.23%</td><td class="num change good">+29.28%</td><td class="num change good">+8.24%</td><td class="num change bad">-22.79%</td><td class="code"><span class="tag">ETH</span><span class="source">Coinbase</span></td></tr>
+<tr><td class="name">Solana</td><td class="num last">85.19</td><td class="num change bad">-2.02%</td><td class="num change bad">-0.14%</td><td class="num change good">+3.86%</td><td class="num change bad">-42.45%</td><td class="num change good">+4.95%</td><td class="num change bad">-32.78%</td><td class="code"><span class="tag">SOL</span><span class="source">Coinbase</span></td></tr>
+          <tr class="section-row"><td colspan="9"></td></tr>
+          <tr><td class="name">通讯服务</td><td class="num last">122.57</td><td class="num change good">+0.11%</td><td class="num change bad">-0.46%</td><td class="num change good">+10.02%</td><td class="num change good">+29.41%</td><td class="num change good">+6.18%</td><td class="num change good">+1.41%</td><td class="code"><span class="tag">IXP</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">非必需品消费</td><td class="num last">118.69</td><td class="num change good">+0.81%</td><td class="num change bad">-0.98%</td><td class="num change good">+12.33%</td><td class="num change good">+21.04%</td><td class="num change good">+8.10%</td><td class="num change good">+0.49%</td><td class="code"><span class="tag">XLY</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">必需品消费</td><td class="num last">83.23</td><td class="num change bad">-0.30%</td><td class="num change good">+1.02%</td><td class="num change good">+1.65%</td><td class="num change good">+6.16%</td><td class="num change good">+2.17%</td><td class="num change good">+7.73%</td><td class="code"><span class="tag">XLP</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">能源</td><td class="num last">56.87</td><td class="num change bad">-0.19%</td><td class="num change good">+3.27%</td><td class="num change bad">-8.21%</td><td class="num change good">+41.49%</td><td class="num change bad">-3.56%</td><td class="num change good">+25.39%</td><td class="code"><span class="tag">XLE</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">银行</td><td class="num last">85.78</td><td class="num change bad">-1.37%</td><td class="num change bad">-2.28%</td><td class="num change good">+12.28%</td><td class="num change good">+45.66%</td><td class="num change good">+7.04%</td><td class="num change good">+0.66%</td><td class="code"><span class="tag">KBWB</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">公共事业</td><td class="num last">46.18</td><td class="num change good">+0.20%</td><td class="num change good">+0.94%</td><td class="num change good">+0.57%</td><td class="num change good">+20.71%</td><td class="num change good">+0.15%</td><td class="num change good">+7.70%</td><td class="code"><span class="tag">XLU</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">REITS</td><td class="num last">101.41</td><td class="num change bad">-0.25%</td><td class="num change bad">-1.76%</td><td class="num change good">+8.97%</td><td class="num change good">+11.93%</td><td class="num change good">+6.88%</td><td class="num change good">+8.20%</td><td class="code"><span class="tag">IYR</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">科技</td><td class="num last">160.22</td><td class="num change good">+2.81%</td><td class="num change good">+3.66%</td><td class="num change good">+25.66%</td><td class="num change good">+54.84%</td><td class="num change good">+18.76%</td><td class="num change good">+11.17%</td><td class="code"><span class="tag">XLK</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">医疗</td><td class="num last">144.18</td><td class="num change bad">-1.41%</td><td class="num change bad">-2.20%</td><td class="num change good">+0.25%</td><td class="num change good">+5.88%</td><td class="num change bad">-2.40%</td><td class="num change bad">-6.90%</td><td class="code"><span class="tag">XLV</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">国防</td><td class="num last">215.80</td><td class="num change bad">-1.51%</td><td class="num change bad">-6.92%</td><td class="num change good">+2.38%</td><td class="num change good">+39.32%</td><td class="num change bad">-3.51%</td><td class="num change bad">-2.73%</td><td class="code"><span class="tag">ITA</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">保险板块</td><td class="num last">131.84</td><td class="num change bad">-1.19%</td><td class="num change bad">-1.28%</td><td class="num change good">+3.41%</td><td class="num change good">+3.54%</td><td class="num change good">+3.31%</td><td class="num change bad">-0.86%</td><td class="code"><span class="tag">IAK</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">芯片</td><td class="num last">461.60</td><td class="num change good">+4.67%</td><td class="num change good">+10.55%</td><td class="num change good">+49.00%</td><td class="num change good">+151.82%</td><td class="num change good">+36.35%</td><td class="num change good">+47.24%</td><td class="code"><span class="tag">SOXX</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">罗素1000价值</td><td class="num last">227.65</td><td class="num change good">+0.07%</td><td class="num change good">+0.16%</td><td class="num change good">+8.70%</td><td class="num change good">+27.96%</td><td class="num change good">+5.91%</td><td class="num change good">+7.69%</td><td class="code"><span class="tag">IWD</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">罗素1000成长</td><td class="num last">479.14</td><td class="num change good">+1.29%</td><td class="num change good">+0.93%</td><td class="num change good">+16.60%</td><td class="num change good">+31.96%</td><td class="num change good">+11.40%</td><td class="num change good">+1.65%</td><td class="code"><span class="tag">IWF</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">前7大科技</td><td class="num last">66.57</td><td class="num change good">+1.90%</td><td class="num change good">+1.23%</td><td class="num change good">+20.18%</td><td class="num change good">+46.84%</td><td class="num change good">+13.45%</td><td class="num change good">+1.87%</td><td class="code"><span class="tag">MAGS</span><span class="source">Futu</span></td></tr>
+<tr><td class="name">标普等权指数</td><td class="num last">202.03</td><td class="num change bad">-0.21%</td><td class="num change bad">-0.87%</td><td class="num change good">+7.42%</td><td class="num change good">+22.33%</td><td class="num change good">+4.93%</td><td class="num change good">+5.20%</td><td class="code"><span class="tag">RSP</span><span class="source">Futu</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script>
+    const savedTheme = localStorage.getItem('dashboardTheme') || 'dark';
+    document.documentElement.dataset.theme = savedTheme;
+    const themeSelect = document.getElementById('themeSelect');
+    themeSelect.value = savedTheme;
+    themeSelect.addEventListener('change', () => {
+      document.documentElement.dataset.theme = themeSelect.value;
+      localStorage.setItem('dashboardTheme', themeSelect.value);
+    });
+  </script>
+</body>
+</html>
