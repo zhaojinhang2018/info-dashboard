@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新闻看板</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0d1117; color: #e6edf3; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; min-height: 100vh; }
+    .topbar { background: #161b22; border-bottom: 1px solid #30363d; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
+    .topbar h1 { font-size: 18px; font-weight: 600; }
+    .topbar .updated { font-size: 12px; color: #8b949e; }
+    .nav { background: #161b22; border-bottom: 1px solid #21262d; padding: 8px 24px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .nav a { border: 1px solid #30363d; border-radius: 6px; color: #c9d1d9; background: #0f141b; text-decoration: none; font-size: 13px; padding: 6px 10px; }
+    .nav a:hover { border-color: #58a6ff; color: #fff; }
+    .nav a.active { background: #238636; border-color: #2ea043; color: #fff; font-weight: 700; }
+    .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 20px; align-items: flex-start; }
+    .col { min-width: 0; }
+    .cat-header { background: #1c2128; border: 1px solid #30363d; border-bottom: 2px solid #58a6ff; border-radius: 8px 8px 0 0; padding: 12px 16px; font-size: 16px; font-weight: 600; }
+    .articles { display: flex; flex-direction: column; }
+    .art-card { background: #161b22; border: 1px solid #30363d; border-top: none; padding: 13px 14px; transition: background .15s; }
+    .art-card:last-child { border-radius: 0 0 8px 8px; }
+    .art-card:hover { background: #1c2128; }
+    .art-meta { font-size: 12px; color: #8b949e; margin-bottom: 6px; }
+    .art-title { display: block; color: #e6edf3; text-decoration: none; font-size: 15px; font-weight: 500; line-height: 1.55; margin-bottom: 5px; }
+    .art-title:hover { color: #58a6ff; }
+    .art-summary { font-size: 13px; color: #8b949e; line-height: 1.5; }
+    .empty { padding: 24px; text-align: center; color: #8b949e; font-size: 14px; }
+    .theme-select { border: 1px solid #30363d; border-radius: 6px; background: #0f141b; color: #e6edf3; font-size: 13px; padding: 6px 10px; }
+    [data-theme="light"] body { background: #eef2f6; color: #24292f; }
+    [data-theme="light"] .topbar, [data-theme="light"] .nav, [data-theme="light"] .summary { background: #f7f9fb; border-color: #cfd7df; }
+    [data-theme="light"] .nav a { background: #ffffff; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .nav a.active { background: #e6f4ea; border-color: #2da44e; color: #1a7f37; }
+    [data-theme="light"] .theme-select { background: #ffffff; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .board, [data-theme="light"] .grid { background: #eef2f6; }
+    [data-theme="light"] .cat-header, [data-theme="light"] .user-header, [data-theme="light"] .tweet-card, [data-theme="light"] .art-card, [data-theme="light"] .stock-card { background: #f7f9fb; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .art-title, [data-theme="light"] .tweet-text, [data-theme="light"] .ticker { color: #24292f; }
+    [data-theme="light"] .art-meta, [data-theme="light"] .art-summary, [data-theme="light"] .updated, [data-theme="light"] .username, [data-theme="light"] .tweet-meta, [data-theme="light"] .sname, [data-theme="light"] .price-row, [data-theme="light"] .sum-label { color: #667085; }
+    [data-theme="light"] .analysis { background: #ffffff; color: #24292f; border-left-color: #8aa8c7; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>📰 新闻看板</h1>
+    <span class="updated">更新于 2026-04-26 17:06:11</span>
+    <select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select>
+  </div>
+  <div class="nav">
+    <a href="index.html">首页</a>
+    <a class="active" href="news.html">新闻</a>
+    <a href="x_feed.html">X 动态</a>
+    <a href="stock_alerts.html">股价异动</a>
+    <a href="xueqiu_user.html">雪球</a>
+    <a href="wechat.html">微信公众号</a>
+  </div>
+  <div class="board">
+    
+    <div class="col">
+      <div class="cat-header">📊 宏观</div>
+      <div class="articles">
+          <div class="art-card">
+            <div class="art-meta">Investing.com · 04-25 18:30</div>
+            <a class="art-title" href="https://www.investing.com/news/stock-market-news/trump-disclosures-show-51m-invested-in-bonds-in-march-4637388" target="_blank" rel="noopener">Trump disclosures show $51M+ invested in bonds in March</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Investing.com · 04-25 17:36</div>
+            <a class="art-title" href="https://www.investing.com/news/stock-market-news/trump-bought-at-least-51-million-in-bonds-in-march-disclosure-shows-4637386" target="_blank" rel="noopener">Trump bought at least $51 million in bonds in March, disclosure shows</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Investing.com · 04-26 07:19</div>
+            <a class="art-title" href="https://www.investing.com/news/stock-market-news/hong-kong-maintains-ipo-dominance-though-regulatory-headwinds-mount-4637435" target="_blank" rel="noopener">Hong Kong maintains IPO dominance, though regulatory headwinds mount</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Investing.com · 04-26 03:52</div>
+            <a class="art-title" href="https://www.investing.com/news/stock-market-news/street-calls-of-the-week-4637422" target="_blank" rel="noopener">Street Calls of the Week</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Investing.com · 04-25 23:19</div>
+            <a class="art-title" href="https://www.investing.com/news/stock-market-news/brands-and-retailers-what-is-the-state-of-the-marketing-landscape-4637408" target="_blank" rel="noopener">Brands and Retailers: What is the state of the marketing landscape</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Investing.com · 04-25 21:20</div>
+            <a class="art-title" href="https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4637396" target="_blank" rel="noopener">Russia stocks lower at close of trade; MOEX Russia Index unchanged</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Investing.com · 04-25 20:38</div>
+            <a class="art-title" href="https://www.investing.com/news/stock-market-news/buy-these-memory-stocks-to-play-the-redhot-cpu-trade-analyst-4637393" target="_blank" rel="noopener">Buy these memory stocks to play the red-hot CPU trade: Analyst</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MarketWatch · 04-25 19:05</div>
+            <a class="art-title" href="https://www.marketwatch.com/story/white-house-correspondents-dinner-weekend-gets-hollywoodified-as-companies-from-cnn-to-grindr-host-events-78a4fa10?mod=mw_rss_topstories" target="_blank" rel="noopener">White House Correspondents’ dinner has morphed into a ‘Hollywoodified’ weekend of nonstop parties. Even Grindr is hosting.</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MarketWatch · 04-25 18:44</div>
+            <a class="art-title" href="https://www.marketwatch.com/story/when-dentists-start-getting-cold-calls-about-private-credit-you-know-the-fad-has-peaked-67f1ef78?mod=mw_rss_topstories" target="_blank" rel="noopener">These investments promise high yield with bond-like safety. But what looks too good to be true often is.</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MarketWatch · 04-25 18:28</div>
+            <a class="art-title" href="https://www.marketwatch.com/story/bonds-could-lag-stocks-for-the-rest-of-2026-according-to-this-contrarian-signal-6b6c55de?mod=mw_rss_topstories" target="_blank" rel="noopener">Bonds could lag stocks for the rest of 2026, according to this contrarian signal</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MarketWatch · 04-25 18:27</div>
+            <a class="art-title" href="https://www.marketwatch.com/story/this-is-what-apple-investors-need-to-know-about-whats-next-for-the-company-and-its-new-ceo-9997df15?mod=mw_rss_topstories" target="_blank" rel="noopener">What Apple investors need to know about the next steps for the company and its new CEO</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MarketWatch · 04-25 18:25</div>
+            <a class="art-title" href="https://www.marketwatch.com/story/we-are-not-close-my-brother-says-our-mother-left-no-estate-when-she-died-how-on-earth-can-i-trust-him-0e4b46d9?mod=mw_rss_topstories" target="_blank" rel="noopener">‘We are not close’: My brother says our mother left no estate when she died. How on earth can I trust him?</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MarketWatch · 04-25 17:56</div>
+            <a class="art-title" href="https://www.marketwatch.com/story/is-this-a-new-gilded-age-in-american-commercial-air-travel-airlines-hope-so-48a8a42c?mod=mw_rss_topstories" target="_blank" rel="noopener">From private suites to $20,000 seats: Luxury travelers have more ways to splurge while many passengers can’t afford economy</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Yahoo Finance · 04-25 17:47</div>
+            <a class="art-title" href="https://finance.yahoo.com/markets/stocks/articles/lockheed-martin-ceo-sends-strong-174700950.html" target="_blank" rel="noopener">Lockheed Martin CEO sends strong 2-word message on Middle East</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MarketWatch · 04-25 17:41</div>
+            <a class="art-title" href="https://www.marketwatch.com/story/the-chatbot-era-is-over-these-3-sectors-are-the-real-ai-gold-mines-for-2026-002372c7?mod=mw_rss_topstories" target="_blank" rel="noopener">ChatGPT is so 2025 — here are the real AI gold mines for investors in 2026</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MarketWatch · 04-25 17:13</div>
+            <a class="art-title" href="https://www.marketwatch.com/story/market-chaos-gives-skilled-managers-a-chance-to-beat-index-funds-just-like-theyre-supposed-to-do-b85cfd52?mod=mw_rss_topstories" target="_blank" rel="noopener">Market chaos gives money managers a chance to beat index funds — just like they’re supposed to do</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Investing.com · 04-25 15:49</div>
+            <a class="art-title" href="https://www.investing.com/news/stock-market-news/goldman-says-this-stock-market-is-likely-to-outperform-the-us-equity-market-index-4637384" target="_blank" rel="noopener">Goldman says this stock market is likely to outperform the US equity market index</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Yahoo Finance · 04-25 03:43</div>
+            <a class="art-title" href="https://finance.yahoo.com/markets/stocks/articles/could-unlock-valuation-commvault-systems-034356114.html" target="_blank" rel="noopener">Here is What Could Unlock Valuation for Commvault Systems (CVLT)</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Yahoo Finance · 04-25 03:43</div>
+            <a class="art-title" href="https://finance.yahoo.com/markets/stocks/articles/varonis-systems-vrns-one-best-034353724.html" target="_blank" rel="noopener">Varonis Systems (VRNS) is One of the Best Cybersecurity Stocks to Invest in, Here is Why</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Yahoo Finance · 04-25 03:43</div>
+            <a class="art-title" href="https://finance.yahoo.com/markets/stocks/articles/tenable-holdings-tenb-launched-advanced-034351325.html" target="_blank" rel="noopener">Tenable Holdings (TENB) Launched Advanced OT Asset Discovery Engine</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Yahoo Finance · 04-25 03:43</div>
+            <a class="art-title" href="https://finance.yahoo.com/markets/stocks/articles/scotiabank-assigns-outperform-rating-rubrik-034345918.html" target="_blank" rel="noopener">Scotiabank Assigns Outperform Rating to Rubrik Inc. (RBRK)</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Yahoo Finance · 04-25 03:43</div>
+            <a class="art-title" href="https://finance.yahoo.com/markets/stocks/articles/zscaler-inc-zs-garnering-optimistic-034343330.html" target="_blank" rel="noopener">Zscaler Inc. (ZS) Garnering Optimistic Views Despite Mixed Sector Sentiment</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Yahoo Finance · 04-25 03:43</div>
+            <a class="art-title" href="https://finance.yahoo.com/markets/stocks/articles/netskope-inc-ntsk-labelled-high-034342463.html" target="_blank" rel="noopener">Netskope Inc. (NTSK) Labelled as a High-Quality, Sub-Scale Leader</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Yahoo Finance · 04-24 22:39</div>
+            <a class="art-title" href="https://finance.yahoo.com/sectors/technology/articles/big-four-accounting-chooses-ai-223954685.html" target="_blank" rel="noopener">Big Four accounting chooses AI over humans, cuts benefits &amp; hiring</a>
+            
+          </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="cat-header">₿ 加密货币</div>
+      <div class="articles">
+          <div class="art-card">
+            <div class="art-meta">CoinDesk · 04-26 08:34</div>
+            <a class="art-title" href="https://www.coindesk.com/markets/2026/04/26/litecoin-says-its-13-block-reorg-was-not-a-zero-day-but-github-commit-history-shows-otherwise" target="_blank" rel="noopener">Litecoin says its 13-block reorg was not a 'zero-day, but GitHub commit history shows otherwise</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Block · 04-25 20:51</div>
+            <a class="art-title" href="https://www.theblock.co/post/398892/litecoin-rewrites-three-hours-of-history-to-undo-its-first-major-privacy-layer-exploit?utm_source=rss&utm_medium=rss" target="_blank" rel="noopener">Litecoin rewrites three hours of history to undo its first major privacy-layer exploit</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">CoinDesk · 04-25 19:00</div>
+            <a class="art-title" href="https://www.coindesk.com/tech/2026/04/25/crypto-is-built-for-ai-agents-not-humans-says-alchemy-s-ceo" target="_blank" rel="noopener">Crypto is built for AI agents, not humans, says Alchemy's CEO</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">CoinDesk · 04-25 18:53</div>
+            <a class="art-title" href="https://www.coindesk.com/policy/2026/04/25/trump-defends-crypto-legislation-at-private-event-featuring-boxer-mike-tyson-tether-ceo" target="_blank" rel="noopener">Trump defends crypto legislation at private event featuring boxer Mike Tyson, Tether CEO</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">CoinDesk · 04-25 18:29</div>
+            <a class="art-title" href="https://www.coindesk.com/markets/2026/04/25/blackrock-s-bitcoin-etf-just-hit-a-massive-milestone-that-proves-crypto-is-now-a-mainstream-bet" target="_blank" rel="noopener">BlackRock’s bitcoin ETF just hit a massive milestone that proves crypto is now a mainstream bet</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Block · 04-25 17:42</div>
+            <a class="art-title" href="https://www.theblock.co/post/398886/cftc-sues-new-york-over-prediction-market-crackdown-as-38-ags-back-massachusetts-kalshi-case?utm_source=rss&utm_medium=rss" target="_blank" rel="noopener">CFTC sues New York over prediction market crackdown as 38 AGs back Massachusetts’ Kalshi case</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">CoinDesk · 04-25 17:00</div>
+            <a class="art-title" href="https://www.coindesk.com/tech/2026/04/25/how-anthropic-s-mythos-model-is-forcing-the-crypto-industry-to-rethink-everything-about-security" target="_blank" rel="noopener">How Anthropic’s Mythos model is forcing the crypto industry to rethink everything about security</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">CoinDesk · 04-25 16:20</div>
+            <a class="art-title" href="https://www.coindesk.com/markets/2026/04/25/bitcoin-falls-after-trump-reportedly-canceled-steve-witkoff-and-jared-kushner-s-iran-talks-trip" target="_blank" rel="noopener">Bitcoin falls after Trump reportedly canceled Steve Witkoff and Jared Kushner's Iran-talks trip</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">CoinDesk · 04-25 15:24</div>
+            <a class="art-title" href="https://www.coindesk.com/policy/2026/04/25/mike-tyson-tether-ceo-cathie-wood-among-speakers-at-trump-s-most-exclusive-crypto-conference" target="_blank" rel="noopener">Mike Tyson, Tether CEO, Cathie Wood among speakers at Trump's 'most exclusive' crypto conference</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">CoinDesk · 04-25 15:00</div>
+            <a class="art-title" href="https://www.coindesk.com/markets/2026/04/25/bitcoin-at-usd40-000-would-be-near-unprecedented-statistical-outcome-analyst-says" target="_blank" rel="noopener">Bitcoin at $40,000 would be 'near-unprecedented' statistical outcome, analyst says</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Block · 04-25 14:55</div>
+            <a class="art-title" href="https://www.theblock.co/post/398882/aave-kelp-layerzero-ask-arbitrum-dao-to-release-71-million-in-frozen-eth-to-rseth-recovery-effort?utm_source=rss&utm_medium=rss" target="_blank" rel="noopener">Aave, Kelp, LayerZero ask Arbitrum DAO to release $71 million in frozen ETH to rsETH recovery effort</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Block · 04-24 21:12</div>
+            <a class="art-title" href="https://www.theblock.co/post/398876/jpmorgan-tokenization-will-change-entire-funds-industry-good-use-cases-years-away?utm_source=rss&utm_medium=rss" target="_blank" rel="noopener">JPMorgan says tokenization will drive change across entire funds industry, but ‘good use cases’ still years away</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Block · 04-24 20:37</div>
+            <a class="art-title" href="https://www.theblock.co/post/398870/brazil-blocks-kalshi-polymarket-sweeping-ban-investor-protections?utm_source=rss&utm_medium=rss" target="_blank" rel="noopener">Brazil blocks Kalshi, Polymarket in sweeping ban citing investor protections</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Block · 04-24 20:07</div>
+            <a class="art-title" href="https://www.theblock.co/post/398863/aave-proposes-25000-eth-contribution-defi-united-plug-kelp-dao-exploit-hole?utm_source=rss&utm_medium=rss" target="_blank" rel="noopener">Aave proposes 25,000 ETH contribution to DeFi United to plug Kelp DAO exploit hole</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Block · 04-24 17:23</div>
+            <a class="art-title" href="https://www.theblock.co/post/398847/us-sanctions-iran-linked-crypto-wallets-addresses-344-million-frozen-tether-cnn?utm_source=rss&utm_medium=rss" target="_blank" rel="noopener">US sanctions Iran-linked crypto wallets, including addresses holding $344 million frozen by Tether: CNN</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Block · 04-24 16:22</div>
+            <a class="art-title" href="https://www.theblock.co/post/398800/tennessee-bans-crypto-atms-statewide-joining-indiana-fraud-crackdown?utm_source=rss&utm_medium=rss" target="_blank" rel="noopener">Tennessee bans crypto ATMs statewide, joining Indiana in fraud crackdown</a>
+            
+          </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="cat-header">🤖 AI/科技</div>
+      <div class="articles">
+          <div class="art-card">
+            <div class="art-meta">Bloomberg Tech · 04-26 04:49</div>
+            <a class="art-title" href="https://www.bloomberg.com/news/articles/2026-04-26/deepseek-v4-delay-shows-shift-to-china-chips-cctv-account-says" target="_blank" rel="noopener">DeepSeek V4 Delay Shows Shift to China Chips, CCTV Account Says</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Bloomberg Tech · 04-25 14:00</div>
+            <a class="art-title" href="https://www.bloomberg.com/news/features/2026-04-25/private-sector-sleuthing-becomes-big-business-for-us-tech-startup" target="_blank" rel="noopener">Private-Sector Sleuthing Becomes Big Business for US Tech Startup</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Bloomberg Tech · 04-25 08:31</div>
+            <a class="art-title" href="https://www.bloomberg.com/news/videos/2026-04-25/understanding-the-most-viral-chart-in-ai-video" target="_blank" rel="noopener">Understanding the Most Viral Chart in Artificial Intelligence | Odd Lots</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Bloomberg Tech · 04-25 03:13</div>
+            <a class="art-title" href="https://www.bloomberg.com/news/articles/2026-04-25/china-says-us-export-bills-risk-disrupting-chip-supply-chains" target="_blank" rel="noopener">China Says US Export Bills Risk Disrupting Chip Supply Chains</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Bloomberg Tech · 04-25 00:37</div>
+            <a class="art-title" href="https://www.bloomberg.com/news/articles/2026-04-25/denso-to-withdraw-proposal-to-take-over-rohm-nikkei-says" target="_blank" rel="noopener">Denso to Withdraw Proposal to Take Over Rohm, Nikkei Says</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Bloomberg Tech · 04-25 00:00</div>
+            <a class="art-title" href="https://www.bloomberg.com/news/articles/2026-04-25/oracle-data-center-16-billion-financing-gets-over-the-line" target="_blank" rel="noopener">Oracle Data Center $16 Billion Financing Gets Over The Line</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Bloomberg Tech · 04-25 00:00</div>
+            <a class="art-title" href="https://www.bloomberg.com/news/articles/2026-04-25/ai-chip-surge-elevates-taiwan-korea-in-global-equity-rankings" target="_blank" rel="noopener">AI Chip Surge Elevates Taiwan, Korea in Global Equity Rankings</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Bloomberg Tech · 04-24 23:13</div>
+            <a class="art-title" href="https://www.bloomberg.com/news/videos/2026-04-24/wall-street-week-anthropic-cyber-risk-byd-goes-global-video" target="_blank" rel="noopener">Wall Street Week | Anthropic Cybersecurity Risk, BYD Goes Global, The Billionaire Next Door</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Ars Technica · 04-24 22:05</div>
+            <a class="art-title" href="https://arstechnica.com/ai/2026/04/google-will-invest-as-much-as-40-billion-in-anthropic/" target="_blank" rel="noopener">Google will invest as much as $40 billion in Anthropic</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MIT Tech Review · 04-24 21:40</div>
+            <a class="art-title" href="https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/" target="_blank" rel="noopener">Three reasons why DeepSeek’s new model matters</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Ars Technica · 04-24 16:58</div>
+            <a class="art-title" href="https://arstechnica.com/gadgets/2026/04/samsung-may-be-bracing-for-first-ever-annual-loss-in-smartphone-business/" target="_blank" rel="noopener">Report: Samsung execs worried company could lose money on smartphones for the first time</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Ars Technica · 04-24 15:05</div>
+            <a class="art-title" href="https://arstechnica.com/tech-policy/2026/04/after-wolf-escaped-zoo-man-arrested-for-creating-fake-ai-sighting-for-fun/" target="_blank" rel="noopener">Man faces 5 years in prison for using AI to fake sighting of runaway wolf</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Ars Technica · 04-24 13:40</div>
+            <a class="art-title" href="https://arstechnica.com/gadgets/2026/04/six-things-ill-remember-when-i-think-about-tim-cooks-version-of-apple/" target="_blank" rel="noopener">Six things I'll remember when I think about Tim Cook's version of Apple</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">MIT Tech Review · 04-24 12:10</div>
+            <a class="art-title" href="https://www.technologyreview.com/2026/04/24/1136400/the-download-supercharged-scams-questionable-ai-healthcare/" target="_blank" rel="noopener">The Download: supercharged scams and studying AI healthcare</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Ars Technica · 04-24 11:00</div>
+            <a class="art-title" href="https://arstechnica.com/space/2026/04/rocket-report-some-canadians-dont-want-a-spaceport-falcon-hits-600-landings/" target="_blank" rel="noopener">Rocket Report: Artemis III rocket getting ready; SpaceX is now an AI company</a>
+            
+          </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="cat-header">🌍 地缘政治</div>
+      <div class="articles">
+          <div class="art-card">
+            <div class="art-meta">BBC World · 04-26 08:56</div>
+            <a class="art-title" href="https://www.bbc.com/news/articles/clyx7nnrkqdo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Armed groups launch coordinated attacks across Mali</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">BBC World · 04-26 00:34</div>
+            <a class="art-title" href="https://www.bbc.com/news/articles/c5yv1nvd4gjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Netanyahu orders army to 'vigorously attack' Hezbollah in Lebanon</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">BBC World · 04-25 21:34</div>
+            <a class="art-title" href="https://www.bbc.com/news/articles/c4g6nyvl29po?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Trump cancels US envoys' trip to Pakistan for talks on Iran war</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Guardian World · 04-25 20:22</div>
+            <a class="art-title" href="https://www.theguardian.com/world/2026/apr/25/militants-and-separatists-launch-coordinated-attacks-across-mali" target="_blank" rel="noopener">Militants and separatists launch coordinated attacks across Mali</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">BBC World · 04-25 17:01</div>
+            <a class="art-title" href="https://www.bbc.com/news/articles/cn4vej3x0wxo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Palestinians in West Bank and some in Gaza vote in local elections</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Guardian World · 04-25 02:03</div>
+            <a class="art-title" href="https://www.theguardian.com/us-news/2026/apr/24/us-military-strike-boat-pacific" target="_blank" rel="noopener">US military kills two more people in strike on alleged drug boat in Pacific</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Foreign Policy · 04-24 21:23</div>
+            <a class="art-title" href="https://foreignpolicy.com/2026/04/24/us-pentagon-email-nato-spain-uk-falkland-islands-iran/" target="_blank" rel="noopener">U.S. Floats Punishing NATO Members for Refusing to Join Iran War</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Foreign Policy · 04-24 15:04</div>
+            <a class="art-title" href="https://foreignpolicy.com/2026/04/24/saudi-arabia-israel-united-states-iran-war/" target="_blank" rel="noopener">Why Are the Saudis Sitting Out the War With Iran?</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">BBC World · 04-26 04:22</div>
+            <a class="art-title" href="https://www.bbc.com/news/articles/c62j23wzeqeo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">What it was like in the room as shots rang out at correspondents' dinner</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">BBC World · 04-25 19:22</div>
+            <a class="art-title" href="https://www.bbc.com/news/articles/cd9v1wll8qqo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Orbán steps down from Hungarian parliament after landslide defeat</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">BBC World · 04-25 17:40</div>
+            <a class="art-title" href="https://www.bbc.com/news/articles/cx2491we011o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Mexico says US agents killed in crash weren't permitted to operate there</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">BBC World · 04-25 17:36</div>
+            <a class="art-title" href="https://www.bbc.com/news/articles/c0kr62z7z6lo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Rights groups critical as Venezuela prisoner release scheme 'coming to an end'</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Guardian World · 04-25 14:00</div>
+            <a class="art-title" href="https://www.theguardian.com/world/2026/apr/25/canada-nova-scotia-wildfire-woods-ban" target="_blank" rel="noopener">What counts as the woods? Judge axes Nova Scotia’s ban that defied ‘commonsense definitions’</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Guardian World · 04-25 09:00</div>
+            <a class="art-title" href="https://www.theguardian.com/global-development/2026/apr/25/discovery-children-fatal-disfiguring-disease-noma-unknown-bacteria" target="_blank" rel="noopener">‘Astonishing’ discovery could help save children from deadly disfiguring condition</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Guardian World · 04-25 02:13</div>
+            <a class="art-title" href="https://www.theguardian.com/us-news/2026/apr/25/altman-apologizes-after-openai-failed-to-alert-police-before-fatal-canada-shooting" target="_blank" rel="noopener">Altman apologizes after OpenAI failed to alert police before fatal Canada shooting</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Guardian World · 04-25 01:34</div>
+            <a class="art-title" href="https://www.theguardian.com/uk-news/2026/apr/24/uk-position-falklands-unchanged-leaked-pentagon-memo" target="_blank" rel="noopener">UK position on Falklands will not change, No 10 says after leaked Pentagon memo</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Foreign Policy · 04-24 20:48</div>
+            <a class="art-title" href="https://foreignpolicy.com/2026/04/24/news-quiz-north-korea-taiwan-united-nations-candidates-pope-leo/" target="_blank" rel="noopener">What in the World?</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Foreign Policy · 04-24 20:15</div>
+            <a class="art-title" href="https://foreignpolicy.com/2026/04/24/conservation-environment-extinction-living-planet/" target="_blank" rel="noopener">The Planet Is Doing Better Than You Think</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Foreign Policy · 04-24 19:00</div>
+            <a class="art-title" href="https://foreignpolicy.com/2026/04/24/iron-mountain-hoax-fake-news-trump/" target="_blank" rel="noopener">Hoaxes Keep Escaping Containment</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Foreign Policy · 04-24 18:42</div>
+            <a class="art-title" href="https://foreignpolicy.com/2026/04/24/sudan-united-arab-emirates-gold-war-starvation/" target="_blank" rel="noopener">How Gold and Regional Rivalries Drive the War in Sudan</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Foreign Policy · 04-24 18:20</div>
+            <a class="art-title" href="https://foreignpolicy.com/2026/04/24/how-africa-works-joe-studwell-review-development-economics-asia/" target="_blank" rel="noopener">Can Africa Follow Asia’s Development Model?</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Guardian World · 04-24 18:09</div>
+            <a class="art-title" href="https://www.theguardian.com/us-news/2026/apr/24/millionaire-hunter-dies-elephants-gabon" target="_blank" rel="noopener">US millionaire big-game hunter dies after being crushed by elephants</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">Foreign Policy · 04-24 18:00</div>
+            <a class="art-title" href="https://foreignpolicy.com/2026/04/24/call-me-ishmaelle-xiaolu-guo-review-moby-dick-world-literature/" target="_blank" rel="noopener">Decolonizing ‘Moby-Dick’</a>
+            
+          </div>
+          <div class="art-card">
+            <div class="art-meta">The Guardian World · 04-24 13:56</div>
+            <a class="art-title" href="https://www.theguardian.com/us-news/2026/apr/24/florida-sloth-deaths-tourist-attraction" target="_blank" rel="noopener">Florida officials investigate planned ‘Sloth World’ attraction after 31 sloths die in warehouse</a>
+            
+          </div>
+      </div>
+    </div>
+  </div>
+<script>
+const savedTheme = localStorage.getItem('dashboardTheme') || 'dark';
+document.documentElement.dataset.theme = savedTheme;
+const themeSelect = document.getElementById('themeSelect');
+if (themeSelect) {
+  themeSelect.value = savedTheme;
+  themeSelect.addEventListener('change', () => {
+    document.documentElement.dataset.theme = themeSelect.value;
+    localStorage.setItem('dashboardTheme', themeSelect.value);
+  });
+}
+</script>
+</body>
+</html>
+
+
+

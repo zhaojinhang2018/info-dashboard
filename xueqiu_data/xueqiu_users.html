@@ -1,0 +1,2819 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>雪球看板</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}html,body{margin:0;min-width:100%;height:100%;overflow:hidden;background:#0f1419;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif;line-height:1.6}body{display:flex;flex-direction:column}a{color:inherit}header{flex-shrink:0;background:rgba(15,20,25,.96);border-bottom:1px solid #27313a;backdrop-filter:blur(10px)}.wrap{max-width:none;margin:0;padding:0 24px}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{flex:0 0 auto}.brand h1{margin:0;font-size:22px;line-height:1.2;color:#e6edf3}.brand p{margin:6px 0 0;color:#9fb3c8;font-size:13px}.top-actions{min-width:0;display:flex;align-items:center;gap:12px;justify-content:flex-end;flex:1}.nav-row,.user-nav{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.nav-row{padding:0 24px 10px}.user-nav{min-width:0;max-width:min(980px,calc(100vw - 420px));padding:2px 0}.nav-row::-webkit-scrollbar,.user-nav::-webkit-scrollbar,main.wrap::-webkit-scrollbar{width:14px;height:12px}.nav-row::-webkit-scrollbar-track,.user-nav::-webkit-scrollbar-track,main.wrap::-webkit-scrollbar-track{background:#111820;border-radius:999px}.nav-row::-webkit-scrollbar-thumb,.user-nav::-webkit-scrollbar-thumb,main.wrap::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:999px;border:2px solid #111820}nav a,.user-nav a,.open-link{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 11px;color:#c9d1d9;text-decoration:none;font-size:13px;background:#151b22}.user-nav a{border-radius:999px}nav a:hover,.user-nav a:hover,.open-link:hover{border-color:#58a6ff;color:#fff}nav a.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}.theme-select{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 10px;color:#e6edf3;background:#151b22;font-size:13px}main.wrap{flex:1;width:100%;min-width:0;overflow:auto;padding:26px 24px 42px;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.columns{display:flex;gap:18px;align-items:flex-start;width:max-content;min-width:100%;padding:2px 0 28px}.user-column{flex:0 0 390px;width:390px;min-width:390px;scroll-margin-top:18px}.column-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid #34414c;border-radius:8px;background:linear-gradient(180deg,#17202b,#121922);padding:14px;margin-bottom:10px}.column-head h2{margin:0;color:#79c0ff;font-size:20px;line-height:1.25;text-shadow:0 0 12px rgba(88,166,255,.18)}.column-head p{margin:4px 0 0;color:#9fb3c8;font-size:13px}.column-feed,.feed{display:flex;flex-direction:column;gap:14px}.single-page main.wrap{width:100%;max-width:960px;margin:0 auto}.post-card{border:1px solid #2d3845;border-radius:8px;background:#141b24;padding:16px}.post-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.author{color:#79c0ff;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.22);border-radius:5px;padding:1px 6px;font-weight:700;font-size:15px}time{color:#9fb3c8;font-size:13px}h2{margin:0 0 8px;font-size:17px;line-height:1.35}.post-text{margin:0;white-space:normal;overflow-wrap:anywhere;color:#f0f6fc}.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.badge{display:inline-flex;align-items:center;border-radius:999px;border:1px solid #3a4653;padding:2px 8px;font-size:12px;font-weight:700}.badge.article{color:#f2cc60;background:#2a220f;border-color:#6b5518}.badge.reply{color:#79c0ff;background:#0d2235;border-color:#1f5a83}.badge.image{color:#3fb950;background:#10271a;border-color:#1f6f3a}.quote-block{margin-top:12px;padding:10px 12px;border:1px solid #3a4653;border-left:3px solid #58a6ff;border-radius:6px;background:#101720;color:#c9d1d9}.quote-block p{margin:4px 0 0;font-size:13px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}.quote-label{font-size:12px;color:#79c0ff;font-weight:700}.quote-block.muted{border-left-color:#8b949e;color:#9fb3c8}.notice{display:block;margin-top:10px;border:1px solid #3a4653;border-radius:6px;padding:8px 10px;text-decoration:none;font-size:13px}.article-notice{color:#f2cc60;background:#201a0d}.image-notice{color:#3fb950;background:#0d2116}.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.image-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid #34414c;border-radius:6px;background:#0d1117}.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;color:#9fb3c8;font-size:12px}.metrics span{border:1px solid #2d3845;border-radius:999px;padding:3px 8px;background:#101720}.open-link-inline{margin-left:auto;color:#58a6ff;text-decoration:none;font-size:12px}[data-theme="light"] body{background:#eef2f6;color:#24292f}[data-theme="light"] header{background:#f8fafc;border-bottom-color:#cfd7df;backdrop-filter:none}[data-theme="light"] .brand h1,[data-theme="light"] .post-text{color:#24292f}[data-theme="light"] .brand p,[data-theme="light"] time,[data-theme="light"] .metrics{color:#667085}[data-theme="light"] nav a,[data-theme="light"] .user-nav a,[data-theme="light"] .open-link,[data-theme="light"] .theme-select{background:#fff;border-color:#cfd7df;color:#24292f}[data-theme="light"] nav a.active{background:#e6f4ea;border-color:#2da44e;color:#1a7f37}[data-theme="light"] .column-head{background:#f8fafc;border-color:#d0d7de}[data-theme="light"] .column-head h2{color:#0969da;text-shadow:none}[data-theme="light"] .post-card{background:#fff;border-color:#d0d7de}[data-theme="light"] .author{color:#0969da;background:#ddf4ff;border-color:#b6e3ff}[data-theme="light"] .metrics span,[data-theme="light"] .quote-block{background:#f6f8fa;border-color:#d0d7de;color:#57606a}[data-theme="light"] .article-notice{background:#fff8c5;color:#7d4e00}[data-theme="light"] .image-notice{background:#dafbe1;color:#116329}[data-theme="light"] main.wrap,[data-theme="light"] .nav-row,[data-theme="light"] .user-nav{scrollbar-color:#8aa8c7 #d9e2ec}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column;padding:16px 0}.top-actions{width:100%;justify-content:flex-start}.user-nav{max-width:100%}.user-column{flex-basis:330px;width:330px;min-width:330px}}
+</style></head><body class=""><header><div class="wrap topbar"><div class="brand"><h1>雪球看板</h1><p>抓取时间 2026-04-26 21:52:57</p></div><div class="top-actions"><nav class="user-nav"><a href="#user-3727797950">草帽路飞 <span>19</span></a><a href="#user-3577914518">不疾而速H-宁波 <span>20</span></a><a href="#user-2146830436">简单就好 <span>20</span></a><a href="#user-4930371170">大草驴 <span>20</span></a><a href="#user-4111857140">山行 <span>20</span></a><a href="#user-3338834427">李药师2003 <span>20</span></a><a href="#user-9129183937">石木见 <span>20</span></a><a href="#user-1818342785">lamlap123 <span>6</span></a><a href="#user-9324667748">堡鲨 <span>19</span></a><a href="#user-2678435970">夜间飞行家 <span>20</span></a><a href="#user-8895446470">双格 <span>17</span></a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a class="" href="../index.html">首页</a><a class="" href="../news.html">新闻</a><a class="" href="../x_feed.html">X 动态</a><a class="" href="../stock_alerts.html">股价异动</a><a class="active" href="../xueqiu_user.html">雪球</a><a href="../wechat.html">微信公众号</a></nav></header><main class="wrap"><section id="feed" class="columns"><section class="user-column" id="user-3727797950"><div class="column-head"><div><h2>草帽路飞</h2><p>19 条</p></div><a class="open-link" href="xueqiu_user_3727797950.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-25 20:11:07</time></div>
+      
+      
+      <p class="post-text">今天相同的投资问题提问豆包和DS，豆包的回答繁琐且有核心数据计算错误，DS的回答简洁且计算准确；简直一个学渣的作业又臭又长，一个学霸的作业简洁明了。一目了然。<br><br>大概举例：问题是某海外煤矿的并购过程及价格。<br><br>DS的回答简洁，分三笔收购，时间顺序和价格都是对的；<br><br>豆包的回答至少比DS多了一倍的数字，且回答内容基本讲的就是同一回事。但是在第一次的收购价格问题上出现了核心错误。因为收购价格是印尼盾，豆包换算成人民币时小数点算错了，最终价格是180万，实际真实交易价格是18万，DS计算准确。<br><br>因为验证的时间太短，我不确定DS是否有幻觉问题，如果DS没有幻觉，那豆包基本可以废弃了。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 56</span>
+        <span>评论 33</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/385809544" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-14 15:21:28</time></div>
+      
+      
+      <p class="post-text">期权毁一生。99%的人不适合期权。尤其是sell put。呼吁阿段少宣传期权，担负起价值投资者教育的社会责任</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@不疾而速H-宁波: $泡泡玛特(09992)$ <br><br>很敬佩段总@大道无形我有型 ， 不过如果这次他没有买正股而仅仅卖低位put（比如130的价），多半是买不到了。他将错失一个未来有可能变得非常伟大的公司。虽然也收获了一些权利金，但是和找到一个伟大公司并伴随他成长所获得的成就感来说，这点收益可以忽略不计。</p></div>
+      <div class="metrics">
+        <span>赞 73</span>
+        <span>评论 25</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/383821530" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-11 20:08:37</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>关于“抄作业”</h2>
+      <p class="post-text">关于“抄作业”</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3727797950/383492259" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 139</span>
+        <span>评论 39</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/383492259" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-09 17:33:11</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">任重道远，加油！努力！</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/3727797950/383211844" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 39</span>
+        <span>评论 14</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/383211844" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-08 09:42:59</time></div>
+      
+      
+      <p class="post-text">仓位决定收益，择时决定亏损</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 66</span>
+        <span>评论 13</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/382944887" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-07 19:32:12</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@活力的财富小船只: 这就是基本功不熟练了：豆包直接搜索***业绩会全文。我不能说太多，不然券商要没业务了。//@活力的财富小船只:回复@管我财:财主我找了很久也没有找到2026年管理层的展望，财报中没有明确的指引，网上也找不到任何earnings call的官方script，甚至我不知道有没有earings call，财主这个信息是从哪里找的</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@陈嘉禾: 啤酒行业的商业价值在哪里？</p></div>
+      <div class="metrics">
+        <span>赞 28</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/382885517" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-07 10:09:16</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@sarahalifa: 宣布派发股息，然后又发不出来的，可不止它一家。离谱的很多，还有从除权日日和实际派息日之间隔着1.5年的，当然1.5年后，实际也没派出来，信就输了。//@sarahalifa:回复@管我财:上次路过看见的雷是西王特钢10%的股息除息后再也没发出来，然后就退市了，港股真就是煮熟的鸭子也会飞</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@理士国际(00842): 理士国际 公告及通告 - [分拆] 有关建议分拆及建议分派之最新消息 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 28</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/382802888" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-07 07:30:25</time></div>
+      
+      
+      <p class="post-text">8年的过山车，波动够大。未来是否考虑分仓？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@想猫的人: 退休之后的大危机:2019年底我凭借地产股达到市值高峰，志得意满，觉得自己是投资大师，4年8倍。在迪士尼一掷万分，花100元买套餐，二件，一件是吃顿饭，我选最贵的猪肋排饭，另一件是一盒爆米花。你别小看这爆米花，如果单买能花你40元。你在迪士尼能看见一老头，或怪叔叔，居然独自吃爆米花，一路诱惑小孩。<br>迪士尼赚的是你不去的钱，这套餐买后不能退的，你必须在指定日期去消费，错过这100元迪士尼就赚了。我每次都去，买这个我都先看天气预报的。<br>然后危机来了，残酷的下跌，到2021年11月只剩不足30%了。如果我不果断割肉，放到现在只剩0.6%，其实已经归零，我这几年提取生活费都超过这些了。<br>这次危机史称“奥园之难”。最厉害的一段下跌发生在2021年6月1日，一路跌到11月，几乎每天大跌。这半年实在难熬。在迪士尼都快乐不起来了。<br>这次下跌我靠二次史诗级的机会才基本弥补回来。一次是2022年我重仓煤炭股，遇到俄乌。一次是满仓中海油遇到霍尔木兹。<br>我不需要寻找刺激，股市本身就够刺激了。</p></div>
+      <div class="metrics">
+        <span>赞 35</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/382781777" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-29 18:01:40</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@山行: 朗哥助攻，电解铝泼天富贵来了。//@山行:回复@7X24快讯:电解铝一季度应该纷纷炸裂，四季度各家心思，参差不齐。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@7X24快讯: 【天山铝业：2026年第一季度净利同比预增107.92%】天山铝业(002532.SZ)公告称，预计2026年第一季度归属于上市公司股东的净利润为22亿元，同比增长107.92%。公司业绩增长的主要原因为：140万吨电解铝绿色低碳能效提升项目部分产能投产，电解铝产销量同比增长约10%；同时，电解铝产品销售价格同比上涨约17%，生产成本有效控制同比有所下降，量价协同发力。</p></div>
+      <div class="metrics">
+        <span>赞 34</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/381663912" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-25 10:10:59</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@萨拉丁_CPA: 普通中年人应该抓紧去医院做哪几项筛查以避免心梗？//@萨拉丁_CPA:回复@PoloYu:我一直觉得说话是件非常耗费精力的事情，尤其是不停说，从早到晚</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@PoloYu: 张雪峰收入很高<br>但是你看他的体型（体脂率20%以上）<br>和工作方式（夜班直播猛加餐）<br>你就知道<br>他其实对于健康一无所知<br>不可能做过任何冠状动脉钙化筛查<br>有很多人动脉都是斑块<br>但其实外形看着非常正常<br>加上疯狂马拉松<br>刺激斑块脱落<br>富人很多都是这样<br>对健康没有基本常识<br>活的像个笑话<br>王石王健林肌少症<br>段永平腰围预示脂肪肝和牙周炎<br>雪球V们每天都会<br>自以为是提倡低脂饮食<br>还有医药大V（！）<br>高血脂圆脸小胖子<br>俯卧撑不超过20个<br>从富到穷<br>集体clueless</p></div>
+      <div class="metrics">
+        <span>赞 19</span>
+        <span>评论 10</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/381007594" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-14 18:19:34</time></div>
+      
+      
+      <p class="post-text">39公里，就这距离，走过跨海大桥的老铁们都知道，肉眼就可以封锁啊。川子真是捅了马蜂窝了。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 16</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/379449252" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-13 23:30:26</time></div>
+      
+      
+      <p class="post-text">锁死红海，油价两百？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 金矿暴跌，我看不懂</p></div>
+      <div class="metrics">
+        <span>赞 39</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/379401826" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-13 22:46:01</time></div>
+      
+      
+      <p class="post-text">金矿暴跌，我看不懂</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 36</span>
+        <span>评论 32</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/379397846" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-10 09:00:15</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@NT_CLANNAD: “随着土地资源消耗，美国页岩油成本会进一步抬升”，这个确定吗？会不会是随着技术的进步，页岩油的成本进一步下降？//@NT_CLANNAD:回复@HIS1963:即使他想结束，风险溢价很难再完全消除。最关键的是，今年本该是石油最黑暗的一年，原本我都做好了50的准备。但今年偏偏遇到了这么好的助攻，让石油市场平稳渡过最困难的今年。到了明年，我预计随着土地资源消耗，美国页岩油成本会进一步抬升，opec备用产能几乎耗尽，无法再增产，石油可能获得很好的底部支撑，有机会在未来维持大约70美元布油均价。70美元下，中海油和中石油现价就拥有税后大约7%到8%的fcf收益率，中海油还具备7%左右成长性。所以现价一点都不贵</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@HIS1963: 即使赌，也要有价值投资的底线</p></div>
+      <div class="metrics">
+        <span>赞 16</span>
+        <span>评论 9</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/378717869" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-10 08:56:49</time></div>
+      
+      
+      <p class="post-text">投资收益率是胜率和赔率的乘积。既然选择了高胜率，就不要羡慕别人的高赔率。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 94</span>
+        <span>评论 13</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/378717384" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-04 19:26:16</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@ppqppq: 我就是好奇哈，没别的意思，请问：目前为止，大道拉黑你了吗？//@ppqppq:回复@ST路人乙:如果大道回我，我就冒着暴露隐私的风险放出判决书让你们看看这破公司无耻到什么地步</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@ppqppq: @大道无形我有型 我对您说的本分一直不太理解。我是拼多多的前员工，在职期间兢兢业业工作，但是惨遭裁员。如果裁员是正常商业行为还能接受，接下来发生的事情就和本分背道而驰了。因为赔偿金给的太低不到 0.5N 没谈妥，裁员理由直接改成重大违纪。多么大的讽刺，一个认真工作的员工，仅因为拼多多不愿意付法定赔偿金，就以违纪为由 0 元开除，怕你仲裁还额外送了两年竞业作为谈判筹码。请问黄铮这个行为是本分的么</p></div>
+      <div class="metrics">
+        <span>赞 21</span>
+        <span>评论 12</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/378019721" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-03-04 16:16:56</time></div>
+      
+      
+      <p class="post-text">感觉市场在无差别的下跌。有点无厘头。或许又到了：闪电劈下来你得在场的时候了。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 82</span>
+        <span>评论 16</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/377994943" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-02-28 14:40:16</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@想猫的人: 时间，精力都是助理在操办，我把真实流程展现出来也是做点公益事业吧。一开始预期就不高。//@想猫的人:回复@草帽路飞:你开始就错了，你没损失，硬要违约金。法律上没问题，但不符合国情。就如地铁手机外放违规，但你没招。你为此投入的精力，时间，心情，本质上你已经输了。法官心里并不支持你，觉得你多事，觉得你贪婪。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 缺失的契约精神</p></div>
+      <div class="metrics">
+        <span>赞 47</span>
+        <span>评论 5</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/377374722" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">草帽路飞</span><time>2026-02-28 13:41:12</time></div>
+      
+      
+      <p class="post-text">哎，这事还没完结咋办？一年了。赢了官司，申请执行，系统一直显示：审理中。<br>但是一直联系不到执行法官（固话一直打不通，不接）。打12345，12345说不归他们管。<br>打12368，12368转接至审理法院，审理法院接线回复说：法官可能不在办公室，或出门执行工作了，需要我继续打法官电话，可是我已经连续打了3个多月了，一直没人接。累了。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 缺失的契约精神</p></div>
+      <div class="metrics">
+        <span>赞 66</span>
+        <span>评论 80</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3727797950/377369895" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-3577914518"><div class="column-head"><div><h2>不疾而速H-宁波</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_3577914518.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-26 10:11:04</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$Destiny Tech100(DXYZ)$，当前价 $29.44。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385836925" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-26 09:40:13</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$Poet Technologies(POET)$，当前价 $15.10。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385835001" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-24 20:31:00</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$MaxLinear(MXL)$，当前价 $34.25。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385703334" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-24 19:08:44</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">$东山精密(SZ002384)$ 东山王，左手光模块（光芯片），右手PCB, 超级成长AI硬件股。</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/3577914518/385685493" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 18</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385685493" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-24 11:15:45</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$联想集团(00992)$，当前价 HK$11.93。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385572719" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-24 11:09:34</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">参加了苏州光通信大会，苏州不愧为中国光都，涌现出一大批极其优秀的企业，中级旭创，东山，华光等等。AI带来的光互连的巨大机会，非常震撼。未来几年的机会隐藏在光互连升级的roadmap中，可插拔光模块，LPO，NPO，XPO，CPO，OCS。信息量摄取过大，需要回去好好体会领悟。</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/3577914518/385570472" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 14</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385570472" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-24 10:33:48</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385557255" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-23 19:18:12</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385439821" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-22 23:16:59</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$AMD(AMD)$，当前价 $296.55。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385253320" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-20 22:56:14</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384816999" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-17 21:48:38</time></div>
+      
+      
+      <p class="post-text">$仕佳光子(SH688313)$ 今年涨了41%，在一众小光里也不算多。不过对应这个年报和一季报的业绩，目前的市值严重高估，前两天已经卖飞也许不见的是坏事。最近光确实太热，大光业绩是真好还能扛住，小光大部分都涨的很离谱了，本着不吃最后一口本周全部清了小光，仅保留pcb龙头和光芯片龙头。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 20</span>
+        <span>评论 4</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384481458" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-16 19:48:40</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$中际旭创(SZ300308)$，当前价 ¥809.61。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384249207" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-16 11:44:46</time></div>
+      
+      
+      <p class="post-text">$Nebius Group(NBIS)$ $英伟达(NVDA)$ $胜宏科技(SZ300476)$ <br><br>老黄的5层蛋糕理论，将AI产业自下而上划分为五个层次：能源、芯片、基础设施、模型和应用<br><br>AI需求的大爆炸，对TOKEN的无穷止的需求，这也将是未来5年投资的主线。继续在这条道上死磕深耕。 大家一起讨论有什么大的机会？</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 7</span>
+        <span>评论 5</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384155535" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-16 11:14:15</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$英特尔(INTC)$，当前价 $64.94。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384147805" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-15 15:40:44</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 1</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384012699" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-14 11:28:48</time></div>
+      
+      
+      <p class="post-text">$泡泡玛特(09992)$ <br><br>很敬佩段总@大道无形我有型 ， 不过如果这次他没有买正股而仅仅卖低位put（比如130的价），多半是买不到了。他将错失一个未来有可能变得非常伟大的公司。虽然也收获了一些权利金，但是和找到一个伟大公司并伴随他成长所获得的成就感来说，这点收益可以忽略不计。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 29</span>
+        <span>评论 107</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/383776660" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-14 10:07:39</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/383752141" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-12 11:12:17</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">$Nebius Group(NBIS)$ <br><br>NBIS 收购 AI21&#x27;s 的目的是完成其战略拼图。<br><br> AI21&#x27;s 专注于3B小模型Jamba，其在专门的垂直领域中表现不错，但是在大模型竞赛排名中落后，而目前5000万美金的ARR对应20-30亿美金的收购价似乎是笔很不划算的买卖。<br><br>那NBIS为啥铁了心要买这个英伟达欲购而未成的以色列初创AI公司呢？<br><br>1. 人才<br><br>AI21&#x27;s 的创始人Amnon Shashua，就是大名鼎鼎的mobileye的创始人，这个公司有超过200个顶级AI人才，想想小扎为了顶级人才可以开出几亿美元的支票，就知道现在的科技圈最珍贵的就是人才。<br><br>2. 产品<br><br>除了大模型以外，公司有一个特别的产品Maestro，Maestro是一种与模型无关的编排，它基于成本/延迟/准确性约束，在Claude、GPT、Gemini、Jamba等之间路由企业工作流。简单的说，就是他不拘泥于哪一款大模型，而是自动为客户寻找最合适的大模型。看一下TOKEN FACTORY现在已经有很多的模型可选，未来会更多。<br><br>当NBIS把定制硬件+全栈自研软件+Maestro自动大模型调用等结合在一起整合成的TOKEN FACTORY，可以为各个垂直细分行业提供从训练到推理的各类AI应用需求的一站式服务。这才是挑战那些传统的云巨头谷歌亚马逊的底气和实力。</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/3577914518/383519144" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 13</span>
+        <span>评论 7</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/383519144" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-10 21:46:39</time></div>
+      
+      
+      <p class="post-text">$Nebius Group(NBIS)$ 时隔半年终于新高了</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 18</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/383428961" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-10 17:06:37</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$焦作万方(SZ000612)$，当前价 ¥12.28。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 2</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/383393049" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-2146830436"><div class="column-head"><div><h2>简单就好</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_2146830436.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2026-02-15 20:58:28</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@草帽路飞: 没有特指什么，每个人都有自己熟悉的猎场//@草帽路飞:回复@简单就好:你说的是澳洲加拿大黄金？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@简单就好: 优秀的猎人不是配备多么豪华但准头欠佳的武器（AI工具）四处出击，天天给工具打工，累个半死，而是找到猎物多的地方认准最肥美的猎物，挖好坑，静静的等待猎物入坑，然后，从容的将猎物拎回家，慢慢享用！</p></div>
+      <div class="metrics">
+        <span>赞 1</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/376302603" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2026-02-15 13:51:41</time></div>
+      
+      
+      <p class="post-text">优秀的猎人不是配备多么豪华但准头欠佳的武器（AI工具）四处出击，天天给工具打工，累个半死，而是找到猎物多的地方认准最肥美的猎物，挖好坑，静静的等待猎物入坑，然后，从容的将猎物拎回家，慢慢享用！</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 28</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/376290596" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2026-01-05 05:29:04</time></div>
+      
+      
+      <p class="post-text">厉害！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@不疾而速H-宁波: 2025年投资总结</p></div>
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 3</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/368953591" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2026-01-05 05:26:17</time></div>
+      
+      
+      <p class="post-text">太厉害了！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@自然而然vieq: 2025年年终总结及2026年展望</p></div>
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 1</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/368953559" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-31 06:31:48</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@马毛: 不是预期范围内的事吗，公司明确说了明年Q2左右重新提交NDA//@马毛:回复@马毛:12月30日，又有7个产品（规格）被药监局拒绝批准。<br>和黄医药的1类新药醋酸索乐匹尼布片折戟了，据说是主动撤回，2024年1月提交治疗ITP适应症的上市申请，经历近两年审评，最终遗憾上榜。<br>四环医药的他克莫司胶囊也未获批准。<br>查看图片</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@马毛: 三天118个药品“阵亡”，药监局反内卷开始行动</p></div>
+      <div class="metrics">
+        <span>赞 3</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/368443040" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-28 01:19:03</time></div>
+      
+      
+      <p class="post-text">冰岛是一片神奇的土地，在这里你可以抛却一切杂念，什么都不用想，让心灵静静的被洗涤净化……</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 14</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/367983115" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-12 22:08:39</time></div>
+      
+      
+      <p class="post-text">我怎么买不到这么便宜的，我在京东上买的100左右</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@想猫的人: 拼多多买的自动伞:其实我有伞，就是旧了，容易扎疼手。但看到自动伞只卖6.65元，我买了。今天到货，一试，不错。<br>中国的制造业确实厉害，这自动伞其实挺复杂的，居然包邮才6.65元。这要是出口，确实竞争力太强，别人只能破产了。<br>看新闻，墨西哥要对中国商品征50%的关税。欧盟也要对小包裹征税3欧元。实在打不过中国货了。<br>我还买了二个人体感应灯，7.39元。</p></div>
+      <div class="metrics">
+        <span>赞 3</span>
+        <span>评论 5</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/365831432" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-11 15:51:18</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@珈泽瑞: 有啥费解的，把股份卖给股权激励平台，以后再通过平台免费发给自己做为激励，空手套白狼！//@珈泽瑞:回复@万维天晴:我个人是很费解大股东的行为，不知道这样做的真正目的是什么？至少和沛嘉的张一博士比起来，谢总不够让小股东信服。按照常理，他个人想套现完全有更好的时机更好的价格，即使过去错失机会，也可以等到明年一季度过了，中报的时候把净利润做好看，铁基支架上市等重磅信息放出来，市场抬高股价再做也行。但你说他没有减持套现的私心，其实他知道这样的行为对二级市场散户的伤害很大，至少情绪上是这样的，很有可能带来实质性的损失。他真想激励集体，完全可以去二级市场购买，或者当下部分股权通过二级市场购买，都会是维护资本市场稳定很好的决策。静观其变吧，最好老谢把所有的股份都抛售了，让更有实力的公司来经营或许会更规范些。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@万维天晴: 无边落木萧萧下， 不尽长江滚滚来</p></div>
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/365575151" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-10 22:53:34</time></div>
+      
+      
+      <p class="post-text">这个时刻，维权举报好于割肉</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@过客888: $先健科技(01302)$ 持有他8年，一路走来有高光时刻也有低迷时候，在21年5.98时没有及时收手减仓，待到4.3卖出了三分之一，股价像断了线的风筝，一路下杀最低跌到1.2，那时也并没有什么，因为我一直认为他的铁基是核弹，而且在今年国庆期间他连续拉升，给人一种要启动的样子，节后在2.02元我继续加仓到50万股，但股价就是一路下跌，我一直怀疑自己的判断是否准确，从昨天的一纸公告才撤底告诉自己不要有任何妄想了，这样的公司不是经营上的问题是管理层道德问题，不值得我长期持有他了，不做时间的朋友。上次是因为高令进入才有过的高光时刻，但从他的退出我们是不是应该早有预案，这样的公司是不是一个圈钱掏空公司的大股东，昨天一纸公告撤底粉碎中小股东对企业信心，上市公司不向二级市场回购偏向大股东以1.9的价格买回，而且也不公布具体激励政策与人员，多少存在问题，要知道该企业一年的研发费用都没有4个亿，上一次改变董事会成员也是为了今天回购大股东股份作准备。我们是不是可以怀疑一边用公司的钱回购大股东谢的股份，一边又激励给自己，这样一来他的股份并没有少多少，但4亿钱早就跑到自己的口袋了。如果管理层有信心把企业做大做强，谢是不可能将自己的股价出让出来的，这是非常重要的，其次这家企业上市至今一直没有分红（本来还想着为了企业研发投入）理由还有点现在看他的吃相如此难看，那只能用脚投票，他为我又上了一课，原来可以这样操作，他可是占了港市制度的漏洞。这样的企业不可能成为伟大的企业，心里一直想着如何搞中小投资者的钱，如何掏尽上公司的钱的管理层，有何理由我们为他卖单。早看清早离场也许是最好的一个选择，这是我的认知，也许球友有更好解答或有更多的信息提供。但不管这么说一个一直不分红的企业，一个一心想减持的企业至少他不是一个优秀的企业。自己对自己的企业都没有信心如何让其他投资者树立信心呢？算了，这次应该是我投资股市最大教训，还是回大A，大A相对对中小投资者好一些。至少流动性比港市好的多，还有10%涨跌幅限止，但真需要好好看清企业是这样的一个嘴脸。</p></div>
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/365437563" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-11-27 12:17:38</time></div>
+      
+      
+      <p class="post-text">不忘初心，大爱无疆！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@flcq: $亚盛医药-B(06855)$<br>希望每一个在做全球三期，有着创新性的biotech，都能够取得成功。<br>因为这不仅是凝聚着科学医学工作者和投资人的寄望和数年的心血，更是患者和全社会的期盼，每一个让OS曲线向右移动的三期研究都值得被铭记，每一家能推动这样的三期研究的Biotech都值得被尊敬。<br>做投资研究，风险提示本没有问题，但如果进入到只希望自己看好的公司成功，而希望别的公司都失败，那么对于投资研究创新药真正的价值和意义，就越行越远了。</p></div>
+      <div class="metrics">
+        <span>赞 7</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/363490713" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-17 17:56:54</time></div>
+      
+      
+      <p class="post-text">多么痛的领悟！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 一定要等肚皮都翻不动时候才能进场捡死鱼。那些看似模棱两个的机会，不如不碰。</p></div>
+      <div class="metrics">
+        <span>赞 12</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/353117785" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-17 09:02:29</time></div>
+      
+      
+      <p class="post-text">思维训练一：<br>现有AB两家公司，市值都是60亿。<br>A公司在手净现金60亿，去年盈利10亿，未来业绩稳定不增长，分红率承诺60%。<br>B公司在手净现金20亿，去年盈利6亿，未来业绩维持10-15%年复合增长，分红率承诺70%。<br>你选哪个？</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 3</span>
+        <span>评论 29</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/352979088" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-09 22:36:49</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@NT_CLANNAD: 根本不是这样，时间稍微拉开2-3年，灵宝的估值跟国际巨头还有巨大差距啊//@NT_CLANNAD:回复@NT_CLANNAD:加入了灵宝黄金的数据，灵宝目前资源量确实有点少，资源量/EV只有4，公司披露太差，无法预估未来资源量。产量按照2030年15吨算，产量/EV=0.46。这只股票是个传奇，从烟蒂到现在估值已经几乎看齐国际巨头。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@NT_CLANNAD: 性价比和分红潜力最高的大型金矿股</p></div>
+      <div class="metrics">
+        <span>赞 2</span>
+        <span>评论 1</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/351796946" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-01 21:02:06</time></div>
+      
+      
+      <p class="post-text">还有制冷剂</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@处镜如初: AI和黄金，本轮牛市主线？</p></div>
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 5</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/350379363" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-01 20:53:22</time></div>
+      
+      
+      <p class="post-text">白银</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@处镜如初: AI和黄金，本轮牛市主线？</p></div>
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/350378171" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-08-23 11:56:23</time></div>
+      
+      
+      <p class="post-text">看起来周一又要吃肉了，感谢鲍威尔！</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 12</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/348594709" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-07-31 14:00:46</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@能力圈: 不一样啊，其他币币的供给跟比特币不是等效关系，而是竞争关系，只能一定程度造成分流，就好比白银甚至铜和其他金属都或多或少有一些金融属性，但并不能取代黄金，也不能等效于黄金的供给。//@能力圈:回复@来年再会可期:这么考虑的话，供给确实是无限的。<br>川普发了币。以后所有名人、大公司是不是都可以发个币？比如腾讯币、盖茨币、巴菲特币</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 索罗斯反身性理论的三类公司模型：为什么MSTR是最极致的案例？</p></div>
+      <div class="metrics">
+        <span>赞 1</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/344984331" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-07-31 12:56:32</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@能力圈: 跟历史上的庞氏骗局还是有本质的差别，历史上无论是郁金香还是沙丁鱼啥的，供给实际是不受限的，但比特币有供给的刚性限制，所以这次可能真的不一样！//@能力圈:回复@李药师2003:比特币这种自己买了不卖，然后不断加杠杆买了升值，我怎么有点像是以科技为外衣的庞氏骗局</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 索罗斯反身性理论的三类公司模型：为什么MSTR是最极致的案例？</p></div>
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 11</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/344968862" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-07-31 12:50:53</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@能力圈: 犀利！//@能力圈:回复@李药师2003:比特币这种自己买了不卖，然后不断加杠杆买了升值，我怎么有点像是以科技为外衣的庞氏骗局</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 索罗斯反身性理论的三类公司模型：为什么MSTR是最极致的案例？</p></div>
+      <div class="metrics">
+        <span>赞 1</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/344968073" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-07-28 09:31:32</time></div>
+      
+      
+      <p class="post-text">牛逼格拉斯！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@自然而然vieq: 两年前的2023年7月从一个小县城搬到了中山，事后看这是我人生一个重大的转折点！当时就想着远离小县城的吃喝玩乐打牌赌还有数不清的应酬，对自己也好对小孩也好。这两年因为可以静下来心来好好学习，又刚好港股有数不清的低估机会，又遇到了今年的牛市周末一复盘才发现账户两年时间不自不觉又上了一个大台阶。继续努力翻砖吧，一切实事求是！</p></div>
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/344371424" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-4930371170"><div class="column-head"><div><h2>大草驴</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_4930371170.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-04-08 20:59:28</time></div>
+      
+      
+      <p class="post-text">没想到反弹来的这么快</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 战争预计5月结束，战争带来的底部已经出现，4月应该是加仓的好时机。<br>$腾讯控股(00700)$ $兴业银锡(SZ000426)$ $紫金矿业(02899)$</p></div>
+      <div class="metrics">
+        <span>赞 181</span>
+        <span>评论 17</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/383069490" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-04-04 18:33:13</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@组合穿越牛熊: 不用担心油价，鹅屋22年油价好点，没啥影响//@组合穿越牛熊:回复@大草驴:如果高油价维持到5月，今年全球都会很麻烦。别异想天开了。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 战争预计5月结束，战争带来的底部已经出现，4月应该是加仓的好时机。<br>$腾讯控股(00700)$ $兴业银锡(SZ000426)$ $紫金矿业(02899)$</p></div>
+      <div class="metrics">
+        <span>赞 64</span>
+        <span>评论 7</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/382669249" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-04-04 18:30:18</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@看好股市的新人: 滞涨是经济学家意淫出来的智障//@看好股市的新人:回复@czm1288:资本市场要多大的韧劲才能抵御滞胀</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 战争预计5月结束，战争带来的底部已经出现，4月应该是加仓的好时机。<br>$腾讯控股(00700)$ $兴业银锡(SZ000426)$ $紫金矿业(02899)$</p></div>
+      <div class="metrics">
+        <span>赞 66</span>
+        <span>评论 18</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/382669119" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-04-04 18:28:43</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@沈阳城: 有色可以的//@沈阳城:回复@大草驴:懂王还是受法律约束吧，所以市场交易危机的烈度和时间跨度很有限。赵总今年持仓方向还是AI为主？有色会不会再考虑？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 战争预计5月结束，战争带来的底部已经出现，4月应该是加仓的好时机。<br>$腾讯控股(00700)$ $兴业银锡(SZ000426)$ $紫金矿业(02899)$</p></div>
+      <div class="metrics">
+        <span>赞 54</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/382669060" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-04-04 16:15:42</time></div>
+      
+      
+      <p class="post-text">战争预计5月结束，战争带来的底部已经出现，4月应该是加仓的好时机。<br>$腾讯控股(00700)$ $兴业银锡(SZ000426)$ $紫金矿业(02899)$</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 267</span>
+        <span>评论 146</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/382663124" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-03-31 07:15:54</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@镇定的股指小游戏: 这句话的本质不是胜率或者赔率，而是仓位管理。//@镇定的股指小游戏:回复@大草驴:“赔率远大于胜率”</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 德鲁肯米勒：对的时候要赚够<br>“重要的不是你对还是错，而是当你对的时候你赚了多少，当你错的时候你赔了多少。”<br>(It&#x27;s not whether you&#x27;re right or wrong that&#x27;s important, but how much money you make when you&#x27;re right and how much you lose when you&#x27;re wrong.)</p></div>
+      <div class="metrics">
+        <span>赞 97</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/381895258" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-03-30 18:14:36</time></div>
+      
+      
+      <p class="post-text">德鲁肯米勒：对的时候要赚够<br>“重要的不是你对还是错，而是当你对的时候你赚了多少，当你错的时候你赔了多少。”<br>(It&#x27;s not whether you&#x27;re right or wrong that&#x27;s important, but how much money you make when you&#x27;re right and how much you lose when you&#x27;re wrong.)</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 166</span>
+        <span>评论 20</span>
+        <span>转发 5</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/381812337" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-03-23 15:29:52</time></div>
+      
+      
+      <p class="post-text">黄金作为货币，主要的功能是储备，这么跌，难道是在迎接AI时代的到来？<br>实在是看不懂。<br>$紫金矿业(02899)$ $兴业银锡(SZ000426)$ $招金矿业(01818)$</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 154</span>
+        <span>评论 45</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/380703570" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-03-03 14:43:17</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@理想的尽头: 是的，100亿出头//@理想的尽头:回复@大草驴:驴总好！京东方2027年净利润能看到多少？按照机构估计或在150亿左右。按照当前价格可能11PE，分红承诺35%。也就是说股息率3.4%。看起来没有特别高的性价比，这个净利润可能还是在偏乐观的情况下得到的（个人还没仔细研究）。希望听听驴总想法</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 我刚刚关注了股票$京东方A(SZ000725)$，当前价 ¥4.48。</p></div>
+      <div class="metrics">
+        <span>赞 63</span>
+        <span>评论 7</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/377777823" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-03-03 02:27:17</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@平头哥2025: 没变化//@平头哥2025:回复@大草驴:驴总对腾讯的看法有变化吗</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 我刚刚关注了股票$京东方A(SZ000725)$，当前价 ¥4.48。</p></div>
+      <div class="metrics">
+        <span>赞 67</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/377666965" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-02-27 21:31:59</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$京东方A(SZ000725)$，当前价 ¥4.48。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 32</span>
+        <span>评论 25</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/377308327" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-02-10 20:05:28</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@投资瓜友: 向瓜友和专家致敬//@投资瓜友:回复@重组专家:专家给的持仓任务太艰巨，为了完成专家下达的持仓任务，我天天都在买！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@重组专家: $中广核新能源(01811)$ ：记得“投资瓜友”投资广核新亦有五年光景，随着前海开源基金的退出，瓜友现在应该是广核新最大的公众股东（据说是一亿多股），今年公司不少关联交易议案授权到期，到时瓜友的投票举足轻重，因此，对瓜友的建议和意见，公司还是要有足够的重视。<br>我以为：<br>一、战投需要有合适的退出通道，天经地义。<br>二、国资委要求央企经营性资产尽可能证券化，风电公司庞大资产不考虑上市有违政策要求和股东意愿。<br>三、关于01811是广核集团新能源业务唯一上市平台的承诺具备法律约束，依法方能解约。<br>四、关于01811有集团新能源项目优先选择权，不仅是国家对同一控制人下上市公司和非上市公司间的竞业要求，也是一流央企优先支持上市公司发展的必然选择。相信集团会信守承诺，尽可能避免巨资投招远远海光伏实验性项目的事重演。<br>五、即便风电和01811各自走自己的路，只要01811坚持发展初衷，存量项目坚持提质增效、增量项目优中选优且合理有序控制新增规模，在股东回报上达到行业公司的平均水平。如此，即便股价再萎靡，我们坚持投资01811也无怨无悔</p></div>
+      <div class="metrics">
+        <span>赞 51</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375706312" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-02-06 06:41:50</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@霜瓜西: 卖出就一条，君子不立于危墙之下，合理卖，不贪心//@霜瓜西:回复@大草驴:驴大能否讲讲卖出的纪律或者方法，谢谢</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 股市中树立正确的盈亏观，决定盈亏的是两个点，买入和卖出。中间的都是波动，和盈亏没有关系。</p></div>
+      <div class="metrics">
+        <span>赞 137</span>
+        <span>评论 5</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375131927" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-02-06 00:47:31</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@市场先生的情绪: 特别好的问题，中间的股价波动可以让我们不断审视逻辑和估值，做出是否卖出或者加仓的决策。//@市场先生的情绪:回复@大草驴:马后炮，你怎么知道这是中间的波动还是下跌趋势？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 股市中树立正确的盈亏观，决定盈亏的是两个点，买入和卖出。中间的都是波动，和盈亏没有关系。</p></div>
+      <div class="metrics">
+        <span>赞 113</span>
+        <span>评论 9</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375121009" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-02-05 18:22:16</time></div>
+      
+      
+      <p class="post-text">股市中树立正确的盈亏观，决定盈亏的是两个点，买入和卖出。中间的都是波动，和盈亏没有关系。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 358</span>
+        <span>评论 42</span>
+        <span>转发 5</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375075930" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-02-05 15:05:32</time></div>
+      
+      
+      <p class="post-text">专家的选股思路对我启发很大，感谢</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@重组专家: #雪球时光相册# 感恩陪伴，共同成长~<br>加入港股十年，注册雪球八年。有兴奋、有收获、有快乐、有迷茫。<br>有兴奋：注册雪球后一下发现原来还有那么多低估的标的，还有一大批类似@云蒙 @边城浪子1986 @致远2050@Bruce-lim @大草驴 等等或专业、或坚韧、或志同道合的雪友，真的大开眼界。<br>有收获：加入港股十年，虽就参与了十多家标的买卖，走过华融的华容道，死而复生后从现代牧业起重新出发、一路向上，收获满满。其中贡献最大的依次是中广核新能源、华晨中国、中海油。<br>有快乐：投资赚钱本就是一件快乐的事。再加有了雪球，无论在天南海北、无论是赢是亏，每天总要上雪球看看。雪球已经成为我生活中排忧解难的一部分。<br>有迷茫：港股近十年，除了有一年亏损，其他年度都是赚的，应该说是顺风顺水。只是近一年来，恒指大幅回升，我的投资仅微幅增长。细探持有的标的，即便考虑了各种可能的风险，还是不高估啊🤔可就是表现萎靡，很迷茫。<br>细思之下，有现金流、有不错股息、有大概率整合可能，当初进入的逻辑未变。所以，我还是选择坚持。再说每人认知有限，看最近白银期货的悲喜交加，多少给我个安慰。呵呵😄<br>最后祝愿雪球越办越好，大家一起来加油👏</p></div>
+      <div class="metrics">
+        <span>赞 85</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375041730" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-02-04 15:40:28</time></div>
+      
+      
+      <p class="post-text">刷到了钓鱼的短视频，突然想起芒格的话，到鱼多的地方钓鱼。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 192</span>
+        <span>评论 46</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/374850186" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-02-02 04:54:36</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@山客游: 有疑点的企业和行业果断放弃，宁肯少赚不能亏钱。//@山客游:回复@山客游:要跟赵总学习自上而下选趋势向上的行业，这样确定性就能大幅提高。 我的教训就是：如果选了趋势下行或政策不支持的行业，再便宜或赔率再高都没用。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 掘金股市不确定性：从“确定性”的幻象走向探索的真谛</p></div>
+      <div class="metrics">
+        <span>赞 108</span>
+        <span>评论 7</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/374307098" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-01-30 15:02:54</time></div>
+      
+      
+      <p class="post-text">金银的顶部已经出现</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 358</span>
+        <span>评论 83</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/374027166" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-01-27 16:50:53</time></div>
+      
+      
+      <p class="post-text">腾讯26年3大看点<br>1，ai进阶<br>2，游戏出海<br>3，广告发力</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 231</span>
+        <span>评论 32</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/373298399" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-4111857140"><div class="column-head"><div><h2>山行</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_4111857140.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-26 16:05:43</time></div>
+      
+      
+      <p class="post-text">存储历史上，亏损的年份可不少。铜金一哥上市二十年来，就没有亏损年份。这里差距还是挺大的。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@老曾阿牛: AI改变很多行业的供求，从周期需求变成结构需求，铜是一个，存储也是。</p></div>
+      <div class="metrics">
+        <span>赞 68</span>
+        <span>评论 5</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385863246" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-26 15:59:22</time></div>
+      
+      
+      <p class="post-text">都是瞎扯，厄尔尼诺这还没有来呢。真的有厄尔尼诺来，那发生极端天气事件概率增大的也是次年，1931,1954,1983,1998，都是发生在次年，而不是当年。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@CCTD中国煤炭市场网: 厄尔尼诺来袭，5月煤价看涨！</p></div>
+      <div class="metrics">
+        <span>赞 43</span>
+        <span>评论 9</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385862583" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-26 13:01:32</time></div>
+      
+      
+      <p class="post-text">是不是晚了点？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@郭荆璞: 想不到有一天我还会翻出铌酸锂相关的论文来看</p></div>
+      <div class="metrics">
+        <span>赞 40</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385847610" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-24 21:01:27</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@产业驱动博弈: 高价时候，采选品位低的这种说法，在a股市场谬误流传了很多年。实际上生产中，你看有哪个矿厂，可以采矿时候，尤其是地下矿，不是按照固定的路线往前进，顺着矿脉采，还能跳过去采高品位的或者低品位的。 至于选矿，哪个矿厂为了不同时期价格，设计硕大的堆场。 从经济性角度，那当然是高价时候，产的多卖的多，更划算。哪个傻叉资本家，会这个想不到。//@产业驱动博弈:回复@szsa-大鳄鱼:哈哈，不懂为啥被删，还好我有转发，无所谓了</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 美股第一家纯黄金公司年报，黄金产量同比负增长 15.6%，大a 纯黄金第一家负增长6.8%，今晚出来的第二家负增长10.71%。你们说，黄金价格这么好，都已经连续涨两三年了，这产量咋都是负的。。。他们不想挣钱吗？</p></div>
+      <div class="metrics">
+        <span>赞 155</span>
+        <span>评论 74</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385710124" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-24 20:07:45</time></div>
+      
+      
+      <p class="post-text">美股第一家纯黄金公司年报，黄金产量同比负增长 15.6%，大a 纯黄金第一家负增长6.8%，今晚出来的第二家负增长10.71%。你们说，黄金价格这么好，都已经连续涨两三年了，这产量咋都是负的。。。他们不想挣钱吗？</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 201</span>
+        <span>评论 188</span>
+        <span>转发 18</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385699255" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-24 19:33:29</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@投资有护城河的企业: 耍猴！个单一专门APP，还强品牌，又不用要追求日活月活，非要搞成抢，两次没抢到就没兴趣了或者忘了，换成预定、预约模式，客户体验就好得多。（本人不持有，没有多空观点）//@投资有护城河的企业:i茅台天天抢不到，还以为供不应求呢</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@贵州茅台(SH600519): 贵州茅台：贵州茅台2026年第一季度报告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 186</span>
+        <span>评论 36</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385690972" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-24 13:29:28</time></div>
+      
+      
+      <p class="post-text">昨天自由港下调了年度产量指引（一般都是嘴硬，到三、四季度下调的多），这是继KK之后，全球第二大铜金 矿Grasberg复产不及预期。这意味着，2026年全球的铜产量负增长是大概率的。反过来，我们看GEV在手一千多亿美金的订单，ABB昨天公布的订单增速，台积电，宁德时代，亿纬锂能、金田、这些公司的飞速增长，背后的交汇点就是铜。这也回答了，为什么战争没结束，甚至僵持时间超预期，油价在高位，铜已经完全是首付失地。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 铜价回到开战之前了，说好的担心经济咣当，还是供需格局确实偏紧</p></div>
+      <div class="metrics">
+        <span>赞 220</span>
+        <span>评论 36</span>
+        <span>转发 6</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385601087" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-23 12:37:45</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">期货与现实</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/4111857140/385350890" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 142</span>
+        <span>评论 14</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385350890" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-22 13:18:19</time></div>
+      
+      
+      <p class="post-text">没有光，如死，想死。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 266</span>
+        <span>评论 77</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/385117455" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-21 20:36:30</time></div>
+      
+      
+      <p class="post-text">碳酸锂销售成本3.9万，又是二流资源做出一流的效益。。。。有些老板自己吭哧吭哧的搞，不让卖股权当小股东，舒服还效益更好。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 187</span>
+        <span>评论 22</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384993128" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-21 19:52:21</time></div>
+      
+      
+      <p class="post-text">区位布局不行。。。现在是风光，不远的将来是储能，绝对苦逼一大片</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@风电财经: 中节能风电近3年真实的弃风限电情况如下，弃风限电已经是影响业绩最主要的因素！<br><br>2023 年至 2025 年，公司因“弃风限电”所损失的潜在发电量分别占当期全部可发电量（即实际发电量与“弃风限电”损失电量之和）的9.00%、10.33%、17.41%。$节能风电(SH601016)$</p></div>
+      <div class="metrics">
+        <span>赞 97</span>
+        <span>评论 13</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384984681" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-21 09:55:10</time></div>
+      
+      
+      <p class="post-text">相较于金、铜冶炼加工，碳酸锂冶炼加工企业并没有那么严格的套保，所以在价格上涨和下跌的时候，分别会短期加大、减少其业绩，造成更大的波动。而且，冶炼最终会变成普通且微利的加工制造业，好处是创造就业和充气GDP。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 171</span>
+        <span>评论 13</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384861929" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-20 18:01:12</time></div>
+      
+      
+      <p class="post-text">每次轮到财报集中发布期，当天上交所总要比深交所晚很多，这么多年了，不知道是不打算改进还是很难，改进不了。 港交所终于要t+1了，不过得2027年下半年，唉。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 222</span>
+        <span>评论 21</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384767452" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-20 09:46:30</time></div>
+      
+      
+      <p class="post-text">统计一下，各位投资生涯中，经常听到的一句话“老外不扩产”或者“老外扩产慢”，最后的结局是啥？ 我记得一个是做石英坩埚的石英砂（美国），一个是锂电铜箔的阴极辊（日本），最后都跌成狗了。欢迎添加更多正面负面例子</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 201</span>
+        <span>评论 61</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384667257" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-20 01:15:55</time></div>
+      
+      
+      <p class="post-text">中国每年能体检一次的家庭，不知道有没有1.225亿。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@思之嘉录: 先说结论：<br>“25%家庭一年一瓶茅台”，从收入看未来能实现，但从产能看永远实现不了。<br>一、先算数字（2026年）<br>全国家庭：约 4.9亿户<br>25% = 1.225亿户<br>每户1瓶/年 = 1.225亿瓶 53度飞天<br>二、收入层面：未来能达到<br>现在真正稳定自购茅台的家庭：约 800万～1200万户（占比1.6%～2.4%）<br>能买得起但没买的家庭（年收入≥20万、中产+富裕）：<br>目前约 7000万～8000万户（占比≈15%））<br>2035～2040年中等收入群体扩大，25%（1.2亿户）具备消费能力完全可能<br>只要：<br>收入继续增长<br>茅台官方渠道（i茅台等）普及、真货好买<br>家庭把茅台当节日/仪式感消费（一年1瓶）<br>25%家庭“有条件买”是可以实现的。<br>三、产能层面：永远达不到<br>茅台基酒要 5年 才能变成商品酒<br>2024年茅台酒（含飞天、精品等）成品酒≈1.2亿瓶<br>2028年“十四五”技改满产后：<br>基酒产能约 7.6万吨/年<br>成品酒（53度飞天为主）≈ 1.8亿瓶/年<br>1.8亿瓶 ÷ 1瓶/户/年 = 最多覆盖 1.8亿户<br>1.8亿户 ÷ 未来约6亿家庭 = 仅 30%<br>还要扣掉：商务、礼品、收藏、出口、囤货<br>真正到家庭年度自饮：很难超过1亿瓶/年<br>所以：25%家庭（1.2亿户）一年一瓶，产能永远不够。<br>四、大道原话的真实意思<br>他不是说“未来真会有25%家庭喝”，而是说：<br>中国潜在需求极大，只要一小部分家庭开始自饮，茅台就会长期供不应求。<br>总结<br>收入侧：能实现（2035年后大概率达到）<br>供给侧：不可能实现（产能硬上限）<br>一句话记：<br>未来会有越来越多家庭买得起、买得到茅台，但永远做不到四分之一家庭每年都能买到一瓶。</p></div>
+      <div class="metrics">
+        <span>赞 85</span>
+        <span>评论 12</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384645478" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-19 12:59:24</time></div>
+      
+      
+      <p class="post-text">不是买卡也不是囤光模块。（本人无持仓，没有看空看多观点）</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@智谱(02513): 智谱 公告及通告 - [须予披露的交易] 须予披露交易 收购目标公司100%股权 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 134</span>
+        <span>评论 12</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384601812" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-18 22:09:29</time></div>
+      
+      
+      <p class="post-text">十年老玩家，咋现在才买？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@多伦多的大道信徒: 泡泡玛特：一个十年老玩家的买入逻辑</p></div>
+      <div class="metrics">
+        <span>赞 214</span>
+        <span>评论 59</span>
+        <span>转发 4</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384571371" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-18 18:53:03</time></div>
+      
+      
+      <p class="post-text">为啥？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@7X24快讯: 美国4月17日当周石油钻井总数报410口，前值411口；天然气钻井数125口，前值127口。</p></div>
+      <div class="metrics">
+        <span>赞 104</span>
+        <span>评论 18</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384559142" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-16 23:09:08</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@啊蒜鸟蒜鸟: 别整天矿啊有色啊，我就不能多一嘴AI啥的吗。顶多被人说嫉妒，说不懂//@啊蒜鸟蒜鸟:回复@山行:瞎猜什么呢，锂矿才是短期内供需失衡景气度高的那个，只有极个别的锂成本非常低的可以一看。而铝只要国外没便宜电价国内铝企天然就有外面跨不过的竞争壁垒。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 暂时的两三年供需失衡和真正的壁垒，可见时间内的巨大差距，给的估值应该大不同。不针对任何具体公司，只是自我提醒和安慰。</p></div>
+      <div class="metrics">
+        <span>赞 122</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384282752" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-16 22:01:44</time></div>
+      
+      
+      <p class="post-text">暂时的两三年供需失衡和真正的壁垒，可见时间内的巨大差距，给的估值应该大不同。不针对任何具体公司，只是自我提醒和安慰。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 239</span>
+        <span>评论 48</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384272584" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-3338834427"><div class="column-head"><div><h2>李药师2003</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_3338834427.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-21 07:02:49</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@涨涨涨2016: 这是？//@涨涨涨2016:[该内容现已无法查看]</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 谋生型工作和兴趣型工作</p></div>
+      <div class="metrics">
+        <span>赞 42</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/384835019" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-21 07:02:22</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@山行: 不太同意。<br>龙生九子，各有不同。<br>大部分人是有自己天赋兴趣爱好的，与之对应的是也有自己的短板不擅长不感兴趣的部分。<br>人的一生也可以看成为理解自己，探索自己，发现自己，然后扬长避短的过程。<br>现代市场经济和农业经济相比，一个好处是获取资源的方式是分工然后贸易，不像农业经济自给自足要求自己是个万金油。<br>所以，现代人比古代人，做兴趣型工作的概率已经远远胜于古人了。当然，生存的难题是一以贯之的。//@山行:回复@李药师2003:能负责，认真的做事已经很好，大多数人其实并没有什么爱好，懒惰躺平（尤其是大脑）是常态</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 谋生型工作和兴趣型工作</p></div>
+      <div class="metrics">
+        <span>赞 86</span>
+        <span>评论 10</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/384835009" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-20 18:50:05</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>谋生型工作和兴趣型工作</h2>
+      <p class="post-text">谋生型工作和兴趣型工作</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3338834427/384775194" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 973</span>
+        <span>评论 362</span>
+        <span>转发 109</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/384775194" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-12 12:05:55</time></div>
+      
+      
+      <p class="post-text">有道理。朝不保夕的情况下，所有的思考和行为都服务于即时利益的获得，这样很难发展出来安全感和理性。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@何纯在南国: 穷人为什么这么难？</p></div>
+      <div class="metrics">
+        <span>赞 174</span>
+        <span>评论 9</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/383522330" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-08 15:48:49</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@牛仔很忙418: 张雪说，没钱时先踏实搞钱，有钱了再遵从内心搞爱好。 大部分一辈子都困在了第一阶段，搞钱生存。 好的状态是，父母基本替孩子搞定生存。然后孩子在充足的安全感下探索意义，搞爱好兴趣。//@牛仔很忙418:回复@李药师2003:最近很火的张雪是那种？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 父母解决生存焦虑，孩子探索意义焦虑</p></div>
+      <div class="metrics">
+        <span>赞 167</span>
+        <span>评论 14</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/383027759" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-08 15:34:32</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>父母解决生存焦虑，孩子探索意义焦虑</h2>
+      <p class="post-text">父母解决生存焦虑，孩子探索意义焦虑</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3338834427/383025360" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 478</span>
+        <span>评论 122</span>
+        <span>转发 36</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/383025360" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-09 12:33:28</time></div>
+      
+      
+      <p class="post-text">看对，且看对时仓位重赚了很多，达仁兄两个能力都优秀，且后者尤为突出。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@投资大顽主宜嘉: 逹人知命：敢为天下后</p></div>
+      <div class="metrics">
+        <span>赞 139</span>
+        <span>评论 8</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/378598998" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-05 10:48:54</time></div>
+      
+      
+      <p class="post-text">水泥曾经也爱过。 19年从内房股撤出来后第一个行业就是去水泥，西部水泥中国建材华新水泥祁连山等。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 西部水泥半年报简评和大股东可能的出千行为</p></div>
+      <div class="metrics">
+        <span>赞 127</span>
+        <span>评论 10</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/378103399" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-02 17:41:16</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>美国真正的问题</h2>
+      <p class="post-text">美国真正的问题</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3338834427/377615788" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 734</span>
+        <span>评论 120</span>
+        <span>转发 42</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/377615788" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-02 10:15:50</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@李药师2003: 亚太资源这公司投资能力确实有点小厉害，<br>最大的一个投资组合中小矿产组合，十年年化34%，且没有一年亏损，这业绩直接追德鲁肯米勒了。<br>今年我持有的股票里涨幅最高的，是一个澳洲的钨矿股eqr，涨幅255%，可惜我只有观察仓，没有上有意义的仓位。<br>亚太资源公布的年报里，中小矿产组合里持有这个票，还做了重点说明。<br>结论，这公司投资相当优秀。且迎来了擅长的，以黄金为主的资源时代。//@李药师2003:好。投资半年就赚了15亿。算pe的话一个计算器冒烟，一个不稳定。<br>下面从pb角度，大体计算一下亚太资源现在此时此刻值多少钱。<br>这票两大块资产，一大块投资炒股，一大块联营合营公司。<br>投资，去年年底36亿港币，目前大约36*1.38=50亿港币。<br>联营合营这块，公司按照权益净资产公布净值，实际上用权益市值更合理。因为这部分股份比投资的股份更有可控性，还能重组增值。目前这五个联营合营公司权益市值38亿港币。<br>公司其他的现金和应付款有息负债相抵基本计算为0。<br>所以，从净资产角度，目前价值50+38=88亿港币。88/14.8=5.95港币。<br>昨天收盘价3.58，（5.95-3.58）/3.58=0.66，目前的价值，还有66%涨幅。才能恢复到1pb。<br>这是一个可以溢价的黄金为主的资源etf，如果再考虑黄金etf去年155%的涨幅，再给个20%的溢价，5.95*2.55*1.2=18，未来一年涨到18元，也有可能。<br>$亚太资源(01104)$ $紫金矿业(02899)$ $Vista Gold(VGZ)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@亚太资源(01104): 亚太资源 公告及通告 - [中期业绩] 截至二零二五年十二月三十一日止六个月中期业绩公告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 150</span>
+        <span>评论 7</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/377518439" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-02 09:48:28</time></div>
+      
+      
+      <p class="post-text">好。投资半年就赚了15亿。算pe的话一个计算器冒烟，一个不稳定。<br>下面从pb角度，大体计算一下亚太资源现在此时此刻值多少钱。<br>这票两大块资产，一大块投资炒股，一大块联营合营公司。<br>投资，去年年底36亿港币，目前大约36*1.38=50亿港币。<br>联营合营这块，公司按照权益净资产公布净值，实际上用权益市值更合理。因为这部分股份比投资的股份更有可控性，还能重组增值。目前这五个联营合营公司权益市值38亿港币。<br>公司其他的现金和应付款有息负债相抵基本计算为0。<br>所以，从净资产角度，目前价值50+38=88亿港币。88/14.8=5.95港币。<br>昨天收盘价3.58，（5.95-3.58）/3.58=0.66，目前的价值，还有66%涨幅。才能恢复到1pb。<br>这是一个可以溢价的黄金为主的资源etf，如果再考虑黄金etf去年155%的涨幅，再给个20%的溢价，5.95*2.55*1.2=18，未来一年涨到18元，也有可能。<br>$亚太资源(01104)$ $紫金矿业(02899)$ $Vista Gold(VGZ)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@亚太资源(01104): 亚太资源 公告及通告 - [中期业绩] 截至二零二五年十二月三十一日止六个月中期业绩公告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 143</span>
+        <span>评论 37</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/377507442" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-02-22 10:14:03</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@韭菲特漂流记: 华总，可以。<br>重资产行业，要回避资产价格下行的趋势，原因有二。<br>一个是，重资产一般杠杆率很高，60%-95%（比如绿电房地产），资产价格下行，这意味着资产表，股东价值迅速缩小趋向归零。<br>另一个是，资产价格下行，一般是供给已经远远大于需求，这意味着竞争惨烈，现金流和利润表表也会迅速变差。//@韭菲特漂流记:李药师以前跟我说过一个观点。要回避原本资产不断折价的行业。 打个比方，原本绿电装机2元一瓦，后来1.5元一瓦，现在1元一瓦。现在占到便宜的同时也就意味着原本资产都在贬值。<br>那次之后，我把手上所有的华润龙源协和之类的全部砍光了。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@协合新能源(00182): 协合新能源 公告及通告 - [盈利警告 / 内幕消息] 盈利警告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 393</span>
+        <span>评论 49</span>
+        <span>转发 14</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/376571714" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-02-05 19:51:39</time></div>
+      
+      
+      <p class="post-text">炸裂呀。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@龙资源(01712): 龙资源 公告及通告 - [盈利警告 / 内幕消息] 内幕消息及盈利预告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 125</span>
+        <span>评论 27</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/375086129" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-02-04 11:28:20</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@九公子1900: 说得好//@九公子1900:回复@李药师2003:终于有一道我会的题了。无论什么运动，做到系统级训练（牵一而带动全身肌肉关节韧带等的联动，包括呼吸）就是归宿。力量训练练爆发，软开或者拉伸练灵活性，力量强了灵活度就不够，太灵活了力量就不够，两者互相在矛盾中拉扯前进，然后飞升凝结元婴</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 上周去体验了一次普拉提，感觉好像比力量训练更能改善一个人的身体状态。前者好像是训练系统，后者是肌肉。<br>另外，杭州西湖或者良渚附近，大家有好的普拉提教练推荐不，谢谢。</p></div>
+      <div class="metrics">
+        <span>赞 57</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/374791192" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-02-03 21:11:19</time></div>
+      
+      
+      <p class="post-text">上周去体验了一次普拉提，感觉好像比力量训练更能改善一个人的身体状态。前者好像是训练系统，后者是肌肉。<br>另外，杭州西湖或者良渚附近，大家有好的普拉提教练推荐不，谢谢。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 105</span>
+        <span>评论 41</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/374687424" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-31 16:06:23</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>为什么“缩表 + 降息”在当下美国几乎不可能</h2>
+      <p class="post-text">为什么“缩表 + 降息”在当下美国几乎不可能</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3338834427/374191667" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 1128</span>
+        <span>评论 471</span>
+        <span>转发 102</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/374191667" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-31 12:38:04</time></div>
+      
+      
+      <p class="post-text">fml出了四季报，看了一眼，马马虎虎，简要记录如下。<br>1.总产量2.2万盎司（上个季度2万盎司），0.68吨，年化2.7吨，这个比我预期要低一些。<br>核心原因bon地下矿只采了一个采场1万吨矿石，品味9.58克吨。其他全部4.6万吨全是建设矿石，品味6.49克吨。<br>这意味着还是爬坡期，未来产量有大提升空间。比如每个季度开采3到5个采场矿石比较正常。所以，维持fml26年全年3吨乃至4吨的矿产金产量判断。<br>2.经营现金流和利润率很好，比同行。<br>25.4季度销售了1.8万盎司黄金，收入1.18亿澳元，经营净现金流0.52亿，自由现金流0.46亿。零有息负债，现金1.6亿澳元。<br>这意味着未来扩张，不用像海外大部分小金矿那样频繁稀释股权融资。<br>3.估值3pe左右，虽然去年涨了17倍。<br>26年保守3吨产量的话，5000美元金价，大约每吨0.8亿美元净利润，1.2亿澳元。公司3.6亿澳元利润，目前11.5亿澳元市值。11.5/3.6=3.2pe。<br>4.山金集团董事长最近去视察，山金国际估计上半年港股上市。fml被大股东按照香港市场估值收购的可能性依然存在，且得到加强。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 分享一下我目前能力圈内最便宜的金矿股</p></div>
+      <div class="metrics">
+        <span>赞 114</span>
+        <span>评论 23</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/374175587" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-28 09:14:47</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@雪饮狂刀89866: 这和我的认知不一样。相对来说，做多是快速致富。做空是快速变穷。//@雪饮狂刀89866:回复@李药师2003:做空的人本质上还是想赚快钱，不肯像做多那样慢慢变富</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 衍生品，毁一生</p></div>
+      <div class="metrics">
+        <span>赞 103</span>
+        <span>评论 6</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/373392617" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-27 22:27:25</time></div>
+      
+      
+      <p class="post-text">卖call和卖put，战略上就错了，风险无限收益有限。 反过来操作，才是战略正确。 不是衍生品的问题，是个人的认知需要改变和提升。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 衍生品，毁一生</p></div>
+      <div class="metrics">
+        <span>赞 124</span>
+        <span>评论 35</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/373351123" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-24 09:05:59</time></div>
+      
+      
+      <p class="post-text">呃，一年半前的文章，对金价的基本预测。 第一阶段金价目标基本实现，每盎司5000美元左右，黄金价值不低于美国国债。 第二阶段是，每年新增矿产金不低于新增美债，大约每盎司1.6万美元。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 从美国国债简要推测金价的空间</p></div>
+      <div class="metrics">
+        <span>赞 414</span>
+        <span>评论 87</span>
+        <span>转发 9</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/372792441" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-9129183937"><div class="column-head"><div><h2>石木见</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_9129183937.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-20 23:18:55</time></div>
+      
+      
+      <p class="post-text">我只专注业绩能兑现的，以前的周期股，现在的新质周期股，都是可以兑现利润的，不能兑现利润的，别人说的天花乱坠我都不参与。应该是看的太多了，一个题材到底是玩虚的还是真的能兑现利润，其实一眼就能看懂了。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 76</span>
+        <span>评论 39</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/384819487" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-17 11:16:17</time></div>
+      
+      
+      <p class="post-text">光模块打出了好样，光模块有三雄，存储模组有三傻，今天的光模块就是明天的存储模组。$佰维存储(SH688525)$ $德明利(SZ001309)$ $江波龙(SZ301308)$</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 38</span>
+        <span>评论 15</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/384361592" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-16 06:13:15</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@A广东人字拖: 不是已经涨了很多了吗//@A广东人字拖:回复@石木见:石大，下一个方向燃气轮机可不可以？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: $佰维存储(SH688525)$ 的一季度应该说是非常漂亮的，3月份是环比增加比较多的，而且净利率还在提升，加上4000多万股份支付费用，净利润达到了29.48亿，营收为68亿，净利润达到了43.35%，超过了1-2月的35%到40%的净利率。<br><br>库存方面，依然在持续增加达到了120亿，四季度为78亿，又增加了32亿，而这个存货基本可以确定是以成本作为计价的，随着后续存储价格的上涨，为后来利润的持续高增长奠定了基础。<br><br>费用方面，增加幅度几乎是可以忽略不计的：<br><br>就连财务费用都增加不多。<br><br>唯一的缺点就是没有超过$德明利(SZ001309)$ ，哪怕下限的31.5亿都没有达到，只能说德明利这个老6太猛了。</p></div>
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/384091959" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-16 06:12:55</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@越州尹天仇: 我觉得也还不错//@越州尹天仇:回复@石木见:石大，兆易是不是不行</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: $德明利(SZ001309)$ 硬气，尾盘都要拉红。</p></div>
+      <div class="metrics">
+        <span>赞 2</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/384091950" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-16 06:12:30</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@十一年的老韭菜: 没有研究//@十一年的老韭菜:回复@石木见:石大请教下朗科科技潜力如何。我本是佰维存储。德明利，江波龙的。半路分仓去了朗科科技。我看朗科科技市值小好炒作。有点投机心态。但对朗科科技能否在这波存储模组中炒上去心里也没底。不知道可否点评下朗科科技。 查看图片</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: $佰维存储(SH688525)$ 的一季度应该说是非常漂亮的，3月份是环比增加比较多的，而且净利率还在提升，加上4000多万股份支付费用，净利润达到了29.48亿，营收为68亿，净利润达到了43.35%，超过了1-2月的35%到40%的净利率。<br><br>库存方面，依然在持续增加达到了120亿，四季度为78亿，又增加了32亿，而这个存货基本可以确定是以成本作为计价的，随着后续存储价格的上涨，为后来利润的持续高增长奠定了基础。<br><br>费用方面，增加幅度几乎是可以忽略不计的：<br><br>就连财务费用都增加不多。<br><br>唯一的缺点就是没有超过$德明利(SZ001309)$ ，哪怕下限的31.5亿都没有达到，只能说德明利这个老6太猛了。</p></div>
+      <div class="metrics">
+        <span>赞 2</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/384091942" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-15 20:57:50</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">$佰维存储(SH688525)$ 的一季度应该说是非常漂亮的，3月份是环比增加比较多的，而且净利率还在提升，加上4000多万股份支付费用，净利润达到了29.48亿，营收为68亿，净利润达到了43.35%，超过了1-2月的35%到40%的净利率。<br><br>库存方面，依然在持续增加达到了120亿，四季度为78亿，又增加了32亿，而这个存货基本可以确定是以成本作为计价的，随着后续存储价格的上涨，为后来利润的持续高增长奠定了基础。<br><br>费用方面，增加幅度几乎是可以忽略不计的：<br><br>就连财务费用都增加不多。<br><br>唯一的缺点就是没有超过$德明利(SZ001309)$ ，哪怕下限的31.5亿都没有达到，只能说德明利这个老6太猛了。</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/9129183937/384058867" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 36</span>
+        <span>评论 20</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/384058867" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-15 15:13:46</time></div>
+      
+      
+      <p class="post-text">$德明利(SZ001309)$ 硬气，尾盘都要拉红。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 27</span>
+        <span>评论 18</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/384007348" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-14 11:55:10</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>江波龙新高之际：为何姗姗来迟</h2>
+      <p class="post-text">江波龙新高之际：为何姗姗来迟</p>
+      <a class="notice article-notice" href="https://xueqiu.com/9129183937/383782018" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 67</span>
+        <span>评论 24</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383782018" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-14 10:36:39</time></div>
+      
+      
+      <p class="post-text">恭喜我龙哥$江波龙(SZ301308)$ 创下历史新高</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 42</span>
+        <span>评论 13</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383761808" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 23:30:42</time></div>
+      
+      
+      <p class="post-text">$SanDisk(SNDK)$ 老美真是牛啊，马上就要万亿人民币市值了</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 24</span>
+        <span>评论 7</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383714810" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 19:04:55</time></div>
+      
+      
+      <p class="post-text">$江波龙(SZ301308)$ 其实有个重大利好没有被市场挖掘，这个利好就是它的孪生哥哥$中际旭创(SZ300308)$ 是整个AI领域的总龙头啊。300308、301308</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 26</span>
+        <span>评论 18</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383683160" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 18:12:58</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@John啊: 澜起科技，不完全受益涨价//@John啊:回复@石木见:澜起科技 为什么不在里面 我重仓</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: 专注新质周期股，足够了！</p></div>
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383677230" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 17:32:34</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@A广东人字拖: 等//@A广东人字拖:回复@石木见:石大，请问下一个最看好方向是那个？谢谢</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: 专注新质周期股，足够了！</p></div>
+      <div class="metrics">
+        <span>赞 9</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383671510" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 17:32:23</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@幸运星lucky668: 都是好公司，目前没有模组性感//@幸运星lucky668:回复@石木见:请问澜起科技，赵姨这种在其列吗？后续是不是空间更大？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: 专注新质周期股，足够了！</p></div>
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383671479" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 16:07:19</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@Yannik-: 当然有，不过我港股研究少//@Yannik-:回复@石木见:石大，有没有类似的港股有这样的机会？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: 专注新质周期股，足够了！</p></div>
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383658528" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 14:58:59</time></div>
+      
+      
+      <p class="post-text">$德明利(SZ001309)$ 没涨停就很好，生怕你今天继续涨停了</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 24</span>
+        <span>评论 8</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383646569" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 12:01:15</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>专注新质周期股，足够了！</h2>
+      <p class="post-text">专注新质周期股，足够了！</p>
+      <a class="notice article-notice" href="https://xueqiu.com/9129183937/383616926" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 90</span>
+        <span>评论 31</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383616926" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-10 13:43:34</time></div>
+      
+      
+      <p class="post-text">目前应该还是低估的吧，真的越长越便宜$德明利(SZ001309)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: $德明利(SZ001309)$ 博弈太厉害了，不过我怎么看到是机会呢，市场上总要有勇士吧。</p></div>
+      <div class="metrics">
+        <span>赞 31</span>
+        <span>评论 14</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383351990" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-10 13:33:38</time></div>
+      
+      
+      <p class="post-text">恭喜$德明利(SZ001309)$ 进入千亿俱乐部</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 37</span>
+        <span>评论 7</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383349675" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-10 10:32:04</time></div>
+      
+      
+      <p class="post-text">$德明利(SZ001309)$ 大跌的时候有人恐慌，以为是历史大顶了，真的懂逻辑的就知道这是用盆接财富的机会</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@石木见: 德民利：利润断层还是周期见顶？</p></div>
+      <div class="metrics">
+        <span>赞 33</span>
+        <span>评论 10</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383312801" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-1818342785"><div class="column-head"><div><h2>lamlap123</h2><p>6 条</p></div><a class="open-link" href="xueqiu_user_1818342785.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">lamlap123</span><time>2026-02-25 12:38:31</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>【保持开放的心，长远十分看好智谱等大模型公司】</h2>
+      <p class="post-text">【保持开放的心，长远十分看好智谱等大模型公司】</p>
+      <a class="notice article-notice" href="https://xueqiu.com/1818342785/376864239" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 194</span>
+        <span>评论 43</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/1818342785/376864239" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">lamlap123</span><time>2026-04-20 11:02:59</time></div>
+      <div class="badges"><span class="badge article">专栏</span><span class="badge image">含 1 图</span></div>
+      <h2>股市，实战技巧一 (看穿假像）</h2>
+      <p class="post-text">股市，实战技巧一 (看穿假像）</p>
+      <a class="notice article-notice" href="https://xueqiu.com/1818342785/384691738" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      <a class="notice image-notice" href="https://xueqiu.com/1818342785/384691738" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 295</span>
+        <span>评论 54</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/1818342785/384691738" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">lamlap123</span><time>2026-03-03 04:40:04</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>【为什么沃尔核材】</h2>
+      <p class="post-text">【为什么沃尔核材】</p>
+      <a class="notice article-notice" href="https://xueqiu.com/1818342785/377669770" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 187</span>
+        <span>评论 104</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/1818342785/377669770" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">lamlap123</span><time>2026-02-25 11:48:00</time></div>
+      
+      
+      <p class="post-text">【暂時不要买智谱和Minimax股票】因为Deepseek 最新版本 Deepseek 4 可能在未来几天推出，传闻功能强大，而且收费便宜，低至0.27/token。万一真的对上述公司不利，反之亦言，虽然我组合二仍然持有智谱。提示一下不知道这事情的朋友。<br>$MINIMAX-WP(00100)$ $智谱(02513)$</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 236</span>
+        <span>评论 27</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/1818342785/376858371" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">lamlap123</span><time>2026-02-25 11:25:28</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@大儒辩经: 恒科中的成份股如腾讯和部份软件股受智谱和minimax等的Aⅰ大模型影响，预期某些功能和业务将来会被取代或威胁。但是智谱升幅又过急，因此个人认为恒生科技指数中硬件中芯、华虹等投资价值相对较高。例如智谱训练採用用全国产芯片，基本是由中芯提供。（叫我七兄可以了）//@大儒辩经:回复@lamlap123:7公新年好，最近恒科是怎么了，怎么这么弱啊</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@lamlap123: 【春晚看到机器人的表演】</p></div>
+      <div class="metrics">
+        <span>赞 93</span>
+        <span>评论 12</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/1818342785/376853779" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">lamlap123</span><time>2026-02-22 23:48:23</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>【春晚看到机器人的表演】</h2>
+      <p class="post-text">【春晚看到机器人的表演】</p>
+      <a class="notice article-notice" href="https://xueqiu.com/1818342785/376597064" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 254</span>
+        <span>评论 111</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/1818342785/376597064" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-9324667748"><div class="column-head"><div><h2>堡鲨</h2><p>19 条</p></div><a class="open-link" href="xueqiu_user_9324667748.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-22 10:34:57</time></div>
+      <div class="badges"><span class="badge article">专栏</span><span class="badge image">含 1 图</span></div>
+      <h2>被误解的Warsh：比市场预期的积极的多</h2>
+      <p class="post-text">被误解的Warsh：比市场预期的积极的多</p>
+      <a class="notice article-notice" href="https://xueqiu.com/9324667748/385081721" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      <a class="notice image-notice" href="https://xueqiu.com/9324667748/385081721" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 14</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/385081721" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-17 21:48:40</time></div>
+      
+      
+      <p class="post-text">4.7排除极端情况。 4.13市场领先全面进入risk on。 4.17海峡接近全面开放。 似曾相识吗？ $纳斯达克综合指数(.IXIC)$ $Strategy(MSTR)$ $Coinbase Global(COIN)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 市场重回Risk on的逻辑</p></div>
+      <div class="metrics">
+        <span>赞 11</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/384481472" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-14 11:00:05</time></div>
+      
+      
+      <p class="post-text">行情在犹豫中展开.... $Strategy(MSTR)$ $特斯拉(TSLA)$ $Circle(CRCL)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 市场重回Risk on的逻辑</p></div>
+      <div class="metrics">
+        <span>赞 13</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/383768945" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-12 12:24:31</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>市场重回Risk on的逻辑</h2>
+      <p class="post-text">市场重回Risk on的逻辑</p>
+      <a class="notice article-notice" href="https://xueqiu.com/9324667748/383523225" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 28</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/383523225" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-09 13:28:17</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@落落的存钱小翠鸟: 从预期加息到预期不动，后续可能还有预期降息（服务通胀下行大于商品通胀上行）。即使不降息，从加息到预期不变对市场而言的效果类似边际降息。<br>记住通胀里商品只占30%，70%是服务驱动的。//@落落的存钱小翠鸟:回复@堡鲨:我没搞懂，高油价对于通胀的影响是最直接的，降息从何而来？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 从Fed QE到财政部QE</p></div>
+      <div class="metrics">
+        <span>赞 7</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/383166450" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-08 18:14:45</time></div>
+      
+      
+      <p class="post-text">地缘不确定性逐步解除后，市场会开始逐步计价高增长。油价见顶后，宽松预期也会逐步回归，从预期加息到不动甚至到warsh上任后的1-2次降息。 只要海峡保持恢复流量，各种谈判拉扯将对市场影响很小。 Next chapter。 $纳斯达克综合指数(.IXIC)$ $标普500指数(.INX)$ $Strategy(MSTR)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 从Fed QE到财政部QE</p></div>
+      <div class="metrics">
+        <span>赞 9</span>
+        <span>评论 5</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/383050914" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-02 10:22:00</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@Aquarius30p: 黄金也会回撤，但是大概率是率先见底（在衰退预期大幅上升的阶段）$黄金2X做多-ProShares(UGL)$ $黄金ETF-SPDR(GLD)$//@Aquarius30p:回复@堡鲨:黄金呢</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 从Fed QE到财政部QE</p></div>
+      <div class="metrics">
+        <span>赞 7</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/382323363" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-02 09:47:51</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@堡鲨: 大川子的演讲：<br>1.4月还有最后一攻<br>2.海峡开不开，你们自己去管美国不管。<br>这种情景下， 朝着升级的方向。<br>海峡中断在3月体现为油气价格，4月如果再中断一个月会衍生到化肥、采矿（硫）<br>如果一直延续到5-6月，氦气不足会对整个制造业供给造成显著冲击<br>大幅增加现金是这个阶段最优的办法。$纳斯达克综合指数(.IXIC)$ $标普500指数(.INX)$ $特斯拉(TSLA)$//@堡鲨:回复@堡鲨:《Make it or break it》<br>财政QE的实质性证据，Wells Fargo在2025年往repo市场投入了大约2000亿元，相比2024年接近翻倍。WFC 资产上限于 2025/6/3 解除；2025 年末总资产同比增长 11%，并明确提到增长来自 markets business 中“predominantly lower risk financing and inventories”。而随着2026年eSLR规则的全面松绑，可以预期的各大商业银行将会在2026年大幅增长repo市场的流动性投放，如果假设fed的年华RMP投放为4800亿，我估计商业银行的规模可以达到6000-8000亿，即客观上等于将QE乘以2.5x。<br>当前不管是增长、还是流动性、还是仓位，都支持市场反转新高，唯一的堵点在于海峡什么时候开放，如果拖得越久，那么将会逐步打破增长和流动性的向好趋势。<br>因此4月是一个make it or break it的一个月，要么向上开启新的牛市，如果解决不好则会彻底打破牛市，当前能做的就是保持耐心，等待方向的出现。<br>$纳斯达克综合指数(.IXIC)$ $Strategy(MSTR)$ $标普500指数(.INX)$<br>查看图片</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 从Fed QE到财政部QE</p></div>
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 7</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/382310523" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-04-02 00:17:10</time></div>
+      
+      
+      <p class="post-text">《Make it or break it》<br>财政QE的实质性证据，Wells Fargo在2025年往repo市场投入了大约2000亿元，相比2024年接近翻倍。WFC 资产上限于 2025/6/3 解除；2025 年末总资产同比增长 11%，并明确提到增长来自 markets business 中“predominantly lower risk financing and inventories”。而随着2026年eSLR规则的全面松绑，可以预期的各大商业银行将会在2026年大幅增长repo市场的流动性投放，如果假设fed的年华RMP投放为4800亿，我估计商业银行的规模可以达到6000-8000亿，即客观上等于将QE乘以2.5x。<br>当前不管是增长、还是流动性、还是仓位，都支持市场反转新高，唯一的堵点在于海峡什么时候开放，如果拖得越久，那么将会逐步打破增长和流动性的向好趋势。<br>因此4月是一个make it or break it的一个月，要么向上开启新的牛市，如果解决不好则会彻底打破牛市，当前能做的就是保持耐心，等待方向的出现。<br>$纳斯达克综合指数(.IXIC)$ $Strategy(MSTR)$ $标普500指数(.INX)$查看图片</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 从Fed QE到财政部QE</p></div>
+      <div class="metrics">
+        <span>赞 16</span>
+        <span>评论 9</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/382279386" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-03-22 10:59:10</time></div>
+      
+      
+      <p class="post-text">大川子又开始放狠话后，我估计市场的耐心基本消耗殆尽了，周一开盘前如果没有新的积极变化，估计要朝着20%的向下加速情景演化。 不是没有人能看清3周，而是没有人能看清3天。$纳斯达克综合指数(.IXIC)$ $标普500指数(.INX)$ $特斯拉(TSLA)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 调整了几天很多小散又开始难受了，这里的定语叫“等宏观不确定性落地后”，这也是为什么我一直持有ndx和spx的put的原因，这种情景下，在宏观不确定性阶段，只要加密跑赢核心指数我就是收益的。去回看一下过去10-15天，跑赢了吗？<br><br>最后贴一下最近的分享，投资是一个系统，不是拍脑袋，一会兴奋一会悲观。<br><br>1.NDX和SPX收盘均创下阶段新低，盘中一度有向下加速迹象。这是2024.1以来第二次SPX收盘在200日线以下，第一次是2025.3.10川普开始贸易战时。2025.3.10后，市场开始反弹，而后在自由日后继续大幅崩盘新低。这一次在关键位置，川普发X开始转向，宣布对伊朗需要Wind down（降级）。<br><br>2.为什么在盘前还叫嚣要出动地面部队然后马上降级？核心是国债市场已经出现了崩盘迹象，MOVE脉冲到110，10年债利率脉冲到4.4%。这和2025年4月TACO的背景如出一辙，我也多次提到了美国真正的敌人不是战争而是时间和债务。 从量化信号提示SPX趋势转为-1开始，20个交易日下跌大约5%，NDX也有类似的跌幅。这意味着策略矩阵提示的对冲策略是有效的。这是无脑执行风控的重要性，主观和风控需要分离，因为市场会领先基本面。<br><br>3.从概率角度，我认为未来会重演2025.4月的二次向下加速的概率只有20%，80%的概率是这个位置就是一个阶段底部，因此从下周开始将会逐步主动平仓PUT并转为现金，这部分仓位不会轻易买入，直到量化信号提示SPX和NDX开始恢复+0或者+1。<br>4.图四 可以看到冰糖橙对NDX的比价非常健康，周五全市场risk off的背景下，冰糖橙只是小跌继续显著跑赢NDX，同样继续跑赢黄金。<br><br>5.图5为饼和黄金比价，可以看到一个清晰的周线级别底部。这意味着未来一旦市场重回risk on，我认为很大概率冰糖橙将会继续跑赢NDX和黄金（70%概率），而如果对黄金比价恢复到30x，即对应15w以上的价格。如果到40x，即对应18x以上的价格。 对伊继续降级 - 海峡开放谈判 - 通胀预期下降 - 全年降息次数从0次回升到2-3次 - 核心指数重回+0和+1 - risk on恢复 - 冰糖橙继续大幅跑赢，这是基准情景。 小概率情景是战局继续反复后升级 - 加息预期 - 年债利率冲向4.6% - 波动率继续大幅上升 - 市场崩盘（SPX再向下10%）。<br><br> 这两种情景的核心差异，在于美国主动降级的动力有多强，以及海峡开放的时间表。当前看，是朝着美国意愿加强，海峡开放谈判越来越近的第一种靠近。 <br><br>不管是哪种情景，我建立的策略矩阵会给我们合理的仓位管理指引。当前的宏观环境，没有任何人能说自己能清晰的看到3个月，甚至3周。因此时刻监控趋势至关重要，策略矩阵是应对不确定性的有效工具。<br><br>$Strategy(MSTR)$ $纳斯达克综合指数(.IXIC)$ $Coinbase Global(COIN)$</p></div>
+      <div class="metrics">
+        <span>赞 11</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/380528148" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-03-21 12:06:27</time></div>
+      
+      
+      <p class="post-text">调整了几天很多小散又开始难受了，这里的定语叫“等宏观不确定性落地后”，这也是为什么我一直持有ndx和spx的put的原因，这种情景下，在宏观不确定性阶段，只要加密跑赢核心指数我就是收益的。去回看一下过去10-15天，跑赢了吗？<br><br>最后贴一下最近的分享，投资是一个系统，不是拍脑袋，一会兴奋一会悲观。<br><br>1.NDX和SPX收盘均创下阶段新低，盘中一度有向下加速迹象。这是2024.1以来第二次SPX收盘在200日线以下，第一次是2025.3.10川普开始贸易战时。2025.3.10后，市场开始反弹，而后在自由日后继续大幅崩盘新低。这一次在关键位置，川普发X开始转向，宣布对伊朗需要Wind down（降级）。<br><br>2.为什么在盘前还叫嚣要出动地面部队然后马上降级？核心是国债市场已经出现了崩盘迹象，MOVE脉冲到110，10年债利率脉冲到4.4%。这和2025年4月TACO的背景如出一辙，我也多次提到了美国真正的敌人不是战争而是时间和债务。 从量化信号提示SPX趋势转为-1开始，20个交易日下跌大约5%，NDX也有类似的跌幅。这意味着策略矩阵提示的对冲策略是有效的。这是无脑执行风控的重要性，主观和风控需要分离，因为市场会领先基本面。<br><br>3.从概率角度，我认为未来会重演2025.4月的二次向下加速的概率只有20%，80%的概率是这个位置就是一个阶段底部，因此从下周开始将会逐步主动平仓PUT并转为现金，这部分仓位不会轻易买入，直到量化信号提示SPX和NDX开始恢复+0或者+1。<br>4.图四 可以看到冰糖橙对NDX的比价非常健康，周五全市场risk off的背景下，冰糖橙只是小跌继续显著跑赢NDX，同样继续跑赢黄金。<br><br>5.图5为饼和黄金比价，可以看到一个清晰的周线级别底部。这意味着未来一旦市场重回risk on，我认为很大概率冰糖橙将会继续跑赢NDX和黄金（70%概率），而如果对黄金比价恢复到30x，即对应15w以上的价格。如果到40x，即对应18x以上的价格。 对伊继续降级 - 海峡开放谈判 - 通胀预期下降 - 全年降息次数从0次回升到2-3次 - 核心指数重回+0和+1 - risk on恢复 - 冰糖橙继续大幅跑赢，这是基准情景。 小概率情景是战局继续反复后升级 - 加息预期 - 年债利率冲向4.6% - 波动率继续大幅上升 - 市场崩盘（SPX再向下10%）。<br><br> 这两种情景的核心差异，在于美国主动降级的动力有多强，以及海峡开放的时间表。当前看，是朝着美国意愿加强，海峡开放谈判越来越近的第一种靠近。 <br><br>不管是哪种情景，我建立的策略矩阵会给我们合理的仓位管理指引。当前的宏观环境，没有任何人能说自己能清晰的看到3个月，甚至3周。因此时刻监控趋势至关重要，策略矩阵是应对不确定性的有效工具。<br><br>$Strategy(MSTR)$ $纳斯达克综合指数(.IXIC)$ $Coinbase Global(COIN)$</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 21</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/380478406" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-03-17 09:20:06</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@堡鲨: 加密正式进入右侧。1月是一次假突破，这一次是真突破的概率会更高。<br>等待宏观不确定落地后，大概率将会大幅补涨。<br>Let&#x27;s see.<br>$Circle(CRCL)$ $Strategy(MSTR)$ $Coinbase Global(COIN)$//@堡鲨:回复@堡鲨:连续第二个月大幅超越预期的ISM PMI<br>Time to be risk on again.<br>加密趋势反转越来越近了。<br>$Circle(CRCL)$ $Strategy(MSTR)$ $Coinbase Global(COIN)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: $Strategy(MSTR)$ 去年10月所有问我的人我都说换etf，至今ibit跌了40%,而mstr -70%....<br><br>mstr是我盈利最多的股票之一，2024年100-120建仓，350以上逐步兑现。<br><br>2025年4月抄底作为proxy，但是8-10月dat持续跑输后基本就全部换到etf了。<br><br>现在很多人fud的mstr会破产暴雷，实际上mstr去年年底就建立了一个现金储备可以支付2-3年的利息，后续也会根据有息负债的发行滚动配股来支撑这个利息，因此短期看到mstr实质性暴雷的概率是很低的，更多是市场的预期（实际当前已经price in了部分违约预期）<br><br>最终，对于大饼这类波动率极高的资产，风控大于盈利，当前6-6.5这个位置我认为已经接近一个阶段底部，但是定义为左侧上限是20%以内，20%以内即使再遭遇腰斩也是可控的损失。<br><br>这轮跌幅我认为可以类比2021年年初，全球宏观方向不变，但是流动性边际紧缩（通胀抬头）后大饼领先所有资产领跌（和当前一样大幅背离），高位-60%，此后增长大幅回升后大饼+100%达到新高附近，和其他risk asset一起见顶。<br><br>这一次是由于连续停摆、新主席紧缩预期（虽然最终大概率会被证伪）以及binance黑箱，导致的高位腰斩、<br><br>从宏观方向，流动性的先抑后扬以及市场表现看，和2021年都很类似，所以这个位置我不会过度fud继续说回到5-4-3-2-1......这是不理性的。<br><br>最终，策略大于预测。我会逐步买回仓位。<br><br>Good luck.</p></div>
+      <div class="metrics">
+        <span>赞 19</span>
+        <span>评论 9</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/379704487" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-03-14 16:20:44</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@堡鲨: 从川普近期的行动来看，周一阶段降级（战争会很快结束），此后继续边际升级（装x放狠话），资本市场总体趋势显著恶化，交易“滞涨”成为top trade。尤其是周四周五的利率和波动率。<br>美债波动率大幅放大，10年利率接近4.3%，这是比股票更加重要的变量。<br>如果下周川普继续继续升级，油价继续脉冲，10年利率往4.5%靠近，全球性恐慌将会来到。<br>朗子可以承受油价在120，海峡断供3个月，但是全球资本市场很难承受油价超过120，10Y利率超过4.5%，以及波动率大幅上升3周。<br>届时基本又会重演一次2025.3-4月的剧本：嘴硬 - 拖延 - 崩盘 - TACO。<br>虽然结局是确定的，今年的主线是增长，但是过程很难说会不会更差，以及会不会有类似去年那样的黄金买点。<br>对冲、现金，等待更清晰的信号是合适的。<br>保持耐心。<br>$纳斯达克综合指数(.IXIC)$ $标普500指数(.INX)$ $Strategy(MSTR)$//@堡鲨:回复@堡鲨:所有人都在讨论中东，但是复盘历史地缘冲突很难成为真正的转折点。<br>与此同时美国连续2个月周期复苏信号显著，财政赤字YTD显著扩大1%、PMI新订单连续2个月大幅超预期、capex plan逐步回升、credit 增长逐步回升，这才是今年的主旋律..美国真正意义的周期复苏。<br>接近5个月的横盘后，美国距离新一轮risk on临近，我不知道会不会有最后一跌，但是这个位置已经可以逐步增加risk头寸。<br>小盘成长、加密是首选。<br>$Circle(CRCL)$ $纳斯达克综合指数(.IXIC)$ $特斯拉(TSLA)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 从Fed QE到财政部QE</p></div>
+      <div class="metrics">
+        <span>赞 21</span>
+        <span>评论 1</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/379443048" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-03-04 19:01:05</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@弓长六一: 人民币我会考虑買铜。以前还有油，但是油现在是该退出的时候了。$中国海油(SH600938)$ $紫金矿业(SH601899)$//@弓长六一:回复@堡鲨:鲨啊，牢A是不是不能建仓的，本想轻仓一些现金流的</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 从Fed QE到财政部QE</p></div>
+      <div class="metrics">
+        <span>赞 11</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/378017021" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-03-02 23:22:30</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@Trader_Joes: 4年周期变形了，因为按照所谓的4年周期。2025年应该是收益最高的年份之一，类似2021年，但是最终2025年是一个负收益年。如果正收益不对称，那么负收益也大概率不会对称（2026年不会像2022年一样熊一年）<br>所以我觉得没法用一个时间点匡算，走一步看一步是合理的。//@Trader_Joes:回复@堡鲨:加密4年周期感觉只是被弱化了 但还是得尊重周期</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: $Strategy(MSTR)$ 去年10月所有问我的人我都说换etf，至今ibit跌了40%,而mstr -70%....<br><br>mstr是我盈利最多的股票之一，2024年100-120建仓，350以上逐步兑现。<br><br>2025年4月抄底作为proxy，但是8-10月dat持续跑输后基本就全部换到etf了。<br><br>现在很多人fud的mstr会破产暴雷，实际上mstr去年年底就建立了一个现金储备可以支付2-3年的利息，后续也会根据有息负债的发行滚动配股来支撑这个利息，因此短期看到mstr实质性暴雷的概率是很低的，更多是市场的预期（实际当前已经price in了部分违约预期）<br><br>最终，对于大饼这类波动率极高的资产，风控大于盈利，当前6-6.5这个位置我认为已经接近一个阶段底部，但是定义为左侧上限是20%以内，20%以内即使再遭遇腰斩也是可控的损失。<br><br>这轮跌幅我认为可以类比2021年年初，全球宏观方向不变，但是流动性边际紧缩（通胀抬头）后大饼领先所有资产领跌（和当前一样大幅背离），高位-60%，此后增长大幅回升后大饼+100%达到新高附近，和其他risk asset一起见顶。<br><br>这一次是由于连续停摆、新主席紧缩预期（虽然最终大概率会被证伪）以及binance黑箱，导致的高位腰斩、<br><br>从宏观方向，流动性的先抑后扬以及市场表现看，和2021年都很类似，所以这个位置我不会过度fud继续说回到5-4-3-2-1......这是不理性的。<br><br>最终，策略大于预测。我会逐步买回仓位。<br><br>Good luck.</p></div>
+      <div class="metrics">
+        <span>赞 14</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/377658786" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-03-02 23:17:14</time></div>
+      
+      
+      <p class="post-text">所有人都在讨论中东，但是复盘历史地缘冲突很难成为真正的转折点。<br>与此同时美国连续2个月周期复苏信号显著，财政赤字YTD显著扩大1%、PMI新订单连续2个月大幅超预期、capex plan逐步回升、credit 增长逐步回升，这才是今年的主旋律..美国真正意义的周期复苏。<br>接近5个月的横盘后，美国距离新一轮risk on临近，我不知道会不会有最后一跌，但是这个位置已经可以逐步增加risk头寸。<br>小盘成长、加密是首选。<br>$Circle(CRCL)$ $纳斯达克综合指数(.IXIC)$ $特斯拉(TSLA)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: 从Fed QE到财政部QE</p></div>
+      <div class="metrics">
+        <span>赞 24</span>
+        <span>评论 12</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/377658207" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-03-02 23:09:36</time></div>
+      
+      
+      <p class="post-text">连续第二个月大幅超越预期的ISM PMI Time to be risk on again. 加密趋势反转越来越近了。 $Circle(CRCL)$ $Strategy(MSTR)$ $Coinbase Global(COIN)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@堡鲨: $Strategy(MSTR)$ 去年10月所有问我的人我都说换etf，至今ibit跌了40%,而mstr -70%....<br><br>mstr是我盈利最多的股票之一，2024年100-120建仓，350以上逐步兑现。<br><br>2025年4月抄底作为proxy，但是8-10月dat持续跑输后基本就全部换到etf了。<br><br>现在很多人fud的mstr会破产暴雷，实际上mstr去年年底就建立了一个现金储备可以支付2-3年的利息，后续也会根据有息负债的发行滚动配股来支撑这个利息，因此短期看到mstr实质性暴雷的概率是很低的，更多是市场的预期（实际当前已经price in了部分违约预期）<br><br>最终，对于大饼这类波动率极高的资产，风控大于盈利，当前6-6.5这个位置我认为已经接近一个阶段底部，但是定义为左侧上限是20%以内，20%以内即使再遭遇腰斩也是可控的损失。<br><br>这轮跌幅我认为可以类比2021年年初，全球宏观方向不变，但是流动性边际紧缩（通胀抬头）后大饼领先所有资产领跌（和当前一样大幅背离），高位-60%，此后增长大幅回升后大饼+100%达到新高附近，和其他risk asset一起见顶。<br><br>这一次是由于连续停摆、新主席紧缩预期（虽然最终大概率会被证伪）以及binance黑箱，导致的高位腰斩、<br><br>从宏观方向，流动性的先抑后扬以及市场表现看，和2021年都很类似，所以这个位置我不会过度fud继续说回到5-4-3-2-1......这是不理性的。<br><br>最终，策略大于预测。我会逐步买回仓位。<br><br>Good luck.</p></div>
+      <div class="metrics">
+        <span>赞 12</span>
+        <span>评论 18</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/377657283" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-02-09 23:06:40</time></div>
+      
+      
+      <p class="post-text">$Energy Fuels(UUUU)$  最喜欢的资源股之一，80%的电力+20%的稀土下注，两者都是今年极其确定性的主题。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 18</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/375566477" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">堡鲨</span><time>2026-02-07 23:47:53</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">$IREN(IREN)$ $Cipher Mining(CIFR)$ $Energy Fuels(UUUU)$ <br><br>所有的capex大周期最终都会以一轮惨烈的熊市收场，但是不是现在。<br><br>2026年科技巨头的capex支出同比100%的增长，清晰的方向依旧是AIDC，电力瓶颈。</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/9324667748/375365549" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 16</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9324667748/375365549" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-2678435970"><div class="column-head"><div><h2>夜间飞行家</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_2678435970.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-25 17:19:49</time></div>
+      
+      
+      <p class="post-text">虽然闪迪nand的份额不是第一，但是闪迪的技术好像是第一？最高332层？如果财报再画一下hbf 的饼就好了。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/385798497" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-25 14:33:41</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">我要选择相信AI吗</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/2678435970/385788004" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/385788004" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-25 14:13:38</time></div>
+      
+      
+      <p class="post-text">两倍海力士换成dram</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 目前本人还在存储的这列车上，但是最近美股涨的实在太快了，叠加沃什五月中旬就任，不知道华尔街会不会给沃什一点压力，我准备五月初降低点杠杆，走一步看一步吧，目前的收益已经完全超出了本年度的预期了。</p></div>
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/385786834" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-25 14:05:10</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">目前本人还在存储的这列车上，但是最近美股涨的实在太快了，叠加沃什五月中旬就任，不知道华尔街会不会给沃什一点压力，我准备五月初降低点杠杆，走一步看一步吧，目前的收益已经完全超出了本年度的预期了。</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/2678435970/385786357" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 12</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/385786357" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-25 06:27:53</time></div>
+      
+      
+      <p class="post-text">感觉美股反弹就跟喝水一样简单。。。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/385753145" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-21 09:02:55</time></div>
+      
+      
+      <p class="post-text">怎么办，闪迪这个量又在诱惑我</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/384845050" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-20 06:31:35</time></div>
+      
+      
+      <p class="post-text">不要在我问这种问题，我觉得很搞笑的，你自己炒股对自己的股价负责，我说涨到1万，有意义吗？谁能跟你说个具体数字？今天俄罗斯乌克兰打仗，明天美国伊朗打仗，你炒股只是单向路径，从来不考虑其他因素对股价的扰动的吗？谁能给你准确给你未来股价具体数字？能说出来的，要么拉群卖课的，要么不负责任胡诌的。我记得你经常问这种问题，不要再问了！看着烦。//@高明的涨幅小动物园:夜大南方海力士准备拿到什么时候或者什么价位？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: $罗博特科(SZ300757)$ 看一下戴军去年的采访，不得不佩服他的眼光。并且看萝卜一步一步的发展，也说明公司对版图的布局越来越大。买一家公司，不是买他过去几年的营收，也不是买他靠着大树躺平发展，而是买他的成长性，买他未来的战略，买他经营者的全局思想。萝卜从光伏布局光电，始终围绕着光在前进，就像地球离不开太阳，人类离不开阳光一样。让我们相信光！</p></div>
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/384647953" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-20 06:28:04</time></div>
+      
+      
+      <p class="post-text">都是后视镜看，其实光板块23，24年经历了相当长一段时间调整震荡，如果当时我还在a股，我肯定拿不住的。萝卜都不算什么，我记得当年我有个朋友叫X源，另外一个朋友叫X杰，我让他们俩买他们俩组合的概念股，叫源杰科技，我前段时间看了下去年今年涨疯了，但是回过头23、24年那么长的调整期谁拿的住呢？查看图片//@价投悟道:2023.6.21，当时萝卜才70老师。。。太猛了</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: $罗博特科(SZ300757)$ 看一下戴军去年的采访，不得不佩服他的眼光。并且看萝卜一步一步的发展，也说明公司对版图的布局越来越大。买一家公司，不是买他过去几年的营收，也不是买他靠着大树躺平发展，而是买他的成长性，买他未来的战略，买他经营者的全局思想。萝卜从光伏布局光电，始终围绕着光在前进，就像地球离不开太阳，人类离不开阳光一样。让我们相信光！</p></div>
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/384647911" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-19 18:21:48</time></div>
+      
+      
+      <p class="post-text">对光布局最深的其实是戴军，从光伏到光电（虽然至今没看到啥业绩，但是人家老板有眼光啊）</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: $罗博特科(SZ300757)$ 看一下戴军去年的采访，不得不佩服他的眼光。并且看萝卜一步一步的发展，也说明公司对版图的布局越来越大。买一家公司，不是买他过去几年的营收，也不是买他靠着大树躺平发展，而是买他的成长性，买他未来的战略，买他经营者的全局思想。萝卜从光伏布局光电，始终围绕着光在前进，就像地球离不开太阳，人类离不开阳光一样。让我们相信光！</p></div>
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 8</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/384622102" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-16 09:30:02</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">2月份用gemini预测海力士美股adr发行时间，感觉判断蛮准确的。</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/2678435970/384109183" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/384109183" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-16 06:10:51</time></div>
+      
+      
+      <p class="post-text">美股真的适合跌下去就无脑买纳斯达克差一点就新高了。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 我发现美股跌了以后，雪球一堆马后炮，什么美股高估，美股涨了10年了，巴菲特现金有多少多少。。。说实话，这个位置我并不觉得美股算高估了，尤其七姐妹，虽然AI对微软的业务有冲击，但是你要说现在的美股高估的话，那我只能说你没有做数据对比。目前美股的估值已经接近去年4月份贸易战的时候，虽然没有到22年加息极端杀估值的时候。<br>我觉得你1月份站出来提醒大家，那我挺佩服你的，但是你现在跑出来打马后炮，别管你有多少粉丝，我都觉得你不配。</p></div>
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 9</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/384091883" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-15 03:40:54</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">千万不要以为置身事内觉得了解这家公司，就以为了解这家公司的股票，我觉得大部分中概股的拥趸应该都是中概股的员工，觉得很熟悉自己的公司，就觉得自己公司的股票被低估了。其实不是的，我们应该跳出这个圈子去审视这个行业。</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/2678435970/383902705" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/383902705" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-15 02:20:38</time></div>
+      
+      
+      <p class="post-text">废了？？//@超人纪红俊:美光 已经废了，hbm4遥遥无期</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 其实闪迪涨多了，这个时候可以换成美光的。</p></div>
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/383900970" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-14 19:04:20</time></div>
+      
+      
+      <p class="post-text">其实闪迪涨多了，这个时候可以换成美光的。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 9</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/383856472" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-14 07:22:44</time></div>
+      
+      
+      <p class="post-text">不知道那些马后炮现在又在打什么炮3月底割肉你真的下得去手啊？炒美股就是比耐心。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 我发现美股跌了以后，雪球一堆马后炮，什么美股高估，美股涨了10年了，巴菲特现金有多少多少。。。说实话，这个位置我并不觉得美股算高估了，尤其七姐妹，虽然AI对微软的业务有冲击，但是你要说现在的美股高估的话，那我只能说你没有做数据对比。目前美股的估值已经接近去年4月份贸易战的时候，虽然没有到22年加息极端杀估值的时候。<br>我觉得你1月份站出来提醒大家，那我挺佩服你的，但是你现在跑出来打马后炮，别管你有多少粉丝，我都觉得你不配。</p></div>
+      <div class="metrics">
+        <span>赞 11</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/383726732" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-13 18:27:07</time></div>
+      
+      
+      <p class="post-text">闪迪控盘控的真好。//@夜间飞行家:个人感觉，闪迪快调整到位了，闪迪的量价给我的感觉特别像庄家想卖又不舍得卖的感觉。。。。。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 有一说一，我觉得闪迪美光这轮一直这么大的量，不是很舒服，可能走的没有上一轮顺畅，没准美光财报后还要二次震荡调整。。。</p></div>
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/383678782" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-08 07:10:12</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">这个坑我又要爬出来了！！！跟坐过山车一样</p>
+      
+      <a class="notice image-notice" href="https://xueqiu.com/2678435970/382922481" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 14</span>
+        <span>评论 8</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/382922481" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-08 04:52:15</time></div>
+      
+      
+      <p class="post-text">4月的纳指强到爆炸。。。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 从纳斯达克的技术图上来看，23月可能需要一个再次下探的需求，如果川希望下半年11月中期选举之前别有太大的震荡，那么最好这个震荡发生在上半年。</p></div>
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/382919215" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-07 03:51:04</time></div>
+      
+      
+      <p class="post-text">已经好多天没冒泡了，这段时间帮家里人搞茶叶，已经跟不上世界版本了，等谷雨后再回来</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/382777138" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-03 01:29:10</time></div>
+      
+      
+      <p class="post-text">我觉得美光今天的量有转变了，可能美光要走出最烂的筹码坑了，股价可能快稳定了。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 有一说一，我觉得闪迪美光这轮一直这么大的量，不是很舒服，可能走的没有上一轮顺畅，没准美光财报后还要二次震荡调整。。。</p></div>
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 8</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/382468647" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section><section class="user-column" id="user-8895446470"><div class="column-head"><div><h2>双格</h2><p>17 条</p></div><a class="open-link" href="xueqiu_user_8895446470.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2026-03-24 12:07:38</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>美伊战争需哈尔克岛攻防战来破局</h2>
+      <p class="post-text">美伊战争需哈尔克岛攻防战来破局</p>
+      <a class="notice article-notice" href="https://xueqiu.com/8895446470/380858714" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 79</span>
+        <span>评论 34</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/380858714" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2026-03-11 09:12:53</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@小涛9527: VLA2.0和Fsd14.2方向相同，但差异很小，大体用1/40训练算力,1/10数据、3倍车端算力，实现类似效果 ，当然细节需完善。//@小涛9527:[该内容已被作者删除]</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@双格: VLA2.0发布标志着中国智驾IPHONE4时刻到来，无人驾驶时代拉开序幕，万亿可期。高耗全面困境反转：国内走出五年集采核攻击、加上低国产化率下的国产替代，可望中速增长，而出海业务高速成长，预计三年内超过国内业务，千亿可期。争取清明前做好10个专题预研究，清明后旅居2周，白天研究，晚上讨论，期待各位朋友以文会友、交流认知。$厚积薄发H(ZH1168130)$小鹏汽车-W(09868)$  $微创机器人-B(02252)$</p></div>
+      <div class="metrics">
+        <span>赞 13</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/378885421" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2026-03-11 08:24:40</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@周山民6: 等出来了再看看，他哪儿文化留不下技术大拿，追赶还行，颠覆性创新90%概率不会发生在哪儿。至于芯片，必须和模型等配合才能发挥大作用//@周山民6:回复@双格:请问你怎么看理想的马赫100配合VLA算法，看了下理想最新的算法规划。其实跟小鹏的很像。还结合了最新定制的五纳米车规芯片。体验应该不会比小鹏差吧？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@双格: VLA2.0发布标志着中国智驾IPHONE4时刻到来，无人驾驶时代拉开序幕，万亿可期。高耗全面困境反转：国内走出五年集采核攻击、加上低国产化率下的国产替代，可望中速增长，而出海业务高速成长，预计三年内超过国内业务，千亿可期。争取清明前做好10个专题预研究，清明后旅居2周，白天研究，晚上讨论，期待各位朋友以文会友、交流认知。$厚积薄发H(ZH1168130)$小鹏汽车-W(09868)$  $微创机器人-B(02252)$</p></div>
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/378879238" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2026-03-11 08:18:17</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@天问Billy: 领先未必只有一年，华为啥时候能搞出来车规级芯片，还得看光刻机脸色//@天问Billy:回复@小涛9527:领先一年了，其他厂商不是那么容易追的，即使有本事抄袭到架构，抄袭了后，每个月跑模型成本一个亿以上，多少友商舍得花？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@双格: VLA2.0发布标志着中国智驾IPHONE4时刻到来，无人驾驶时代拉开序幕，万亿可期。高耗全面困境反转：国内走出五年集采核攻击、加上低国产化率下的国产替代，可望中速增长，而出海业务高速成长，预计三年内超过国内业务，千亿可期。争取清明前做好10个专题预研究，清明后旅居2周，白天研究，晚上讨论，期待各位朋友以文会友、交流认知。$厚积薄发H(ZH1168130)$小鹏汽车-W(09868)$  $微创机器人-B(02252)$</p></div>
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/378878690" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2026-03-11 08:17:10</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@Allen一路向北: 看到整个高耗，微创系为主//@Allen一路向北:回复@双格:又重新看好微创了？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@双格: VLA2.0发布标志着中国智驾IPHONE4时刻到来，无人驾驶时代拉开序幕，万亿可期。高耗全面困境反转：国内走出五年集采核攻击、加上低国产化率下的国产替代，可望中速增长，而出海业务高速成长，预计三年内超过国内业务，千亿可期。争取清明前做好10个专题预研究，清明后旅居2周，白天研究，晚上讨论，期待各位朋友以文会友、交流认知。$厚积薄发H(ZH1168130)$小鹏汽车-W(09868)$  $微创机器人-B(02252)$</p></div>
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/378878585" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2026-03-11 08:16:41</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@小涛9527: 物理AI，那是那么容易追赶的//@小涛9527:回复@双格:国产智驾第一梯队是小鹏和地平线。但是这玩意很容易平权，没啥护城河啊</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@双格: VLA2.0发布标志着中国智驾IPHONE4时刻到来，无人驾驶时代拉开序幕，万亿可期。高耗全面困境反转：国内走出五年集采核攻击、加上低国产化率下的国产替代，可望中速增长，而出海业务高速成长，预计三年内超过国内业务，千亿可期。争取清明前做好10个专题预研究，清明后旅居2周，白天研究，晚上讨论，期待各位朋友以文会友、交流认知。$厚积薄发H(ZH1168130)$小鹏汽车-W(09868)$  $微创机器人-B(02252)$</p></div>
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/378878556" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2026-03-11 01:27:35</time></div>
+      
+      
+      <p class="post-text">VLA2.0发布标志着中国智驾IPHONE4时刻到来，无人驾驶时代拉开序幕，万亿可期。高耗全面困境反转：国内走出五年集采核攻击、加上低国产化率下的国产替代，可望中速增长，而出海业务高速成长，预计三年内超过国内业务，千亿可期。争取清明前做好10个专题预研究，清明后旅居2周，白天研究，晚上讨论，期待各位朋友以文会友、交流认知。$厚积薄发H(ZH1168130)$小鹏汽车-W(09868)$  $微创机器人-B(02252)$</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 78</span>
+        <span>评论 28</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/378868091" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2026-03-09 14:06:51</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $AI十年组合B(ZH3593104)$  的仓位。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 3</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/378616173" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2025-09-09 13:28:14</time></div>
+      
+      
+      <p class="post-text">#钠离子电池概念爆发，传艺科技一字涨停#。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 27</span>
+        <span>评论 7</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/351698069" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2025-05-04 15:42:23</time></div>
+      <div class="badges"><span class="badge article">专栏</span><span class="badge image">含 1 图</span></div>
+      <h2>无力回天的美债之《美国增长的起落》读后感</h2>
+      <p class="post-text">无力回天的美债之《美国增长的起落》读后感</p>
+      <a class="notice article-notice" href="https://xueqiu.com/8895446470/334011818" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      <a class="notice image-notice" href="https://xueqiu.com/8895446470/334011818" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
+      
+      <div class="metrics">
+        <span>赞 98</span>
+        <span>评论 55</span>
+        <span>转发 13</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/334011818" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2025-03-07 07:47:20</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了雪球组合 $生物医药港股(ZH1361808)$ ，当前净值 1.2458 。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 11</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/326333035" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2025-02-24 11:39:28</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$港股创新药(CSI931787)$，当前价 850.13。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/324685020" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2025-01-24 15:14:14</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@undead20: 微创机器人反转了//@undead20:回复@双格:格总觉得微创是否有反转的迹象？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@双格: 250121双格指针全面进攻</p></div>
+      <div class="metrics">
+        <span>赞 29</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/321631327" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2025-01-22 15:24:56</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>250121双格指针全面进攻</h2>
+      <p class="post-text">250121双格指针全面进攻</p>
+      <a class="notice article-notice" href="https://xueqiu.com/8895446470/321346850" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 120</span>
+        <span>评论 42</span>
+        <span>转发 6</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/321346850" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2024-12-17 08:01:54</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$拓普集团(SH601689)$，当前价 ¥50.17。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 2</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/317021741" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2024-12-10 20:44:08</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@江菲: 不知道//@江菲:回复@双格:老师，年底发布P7＋5.5版本，这个年底是春节前还是十二月底？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@双格: 今年底P7+5.5版发布将是智能汽车Iphone4时刻——小鹏汽车2024年Q3电话会智驾总结</p></div>
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/316233580" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">双格</span><time>2024-12-05 18:03:22</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@chasing-M: 同样5.4版本，P7+全视觉效果比G6带激光雷达的效果稍微好点。//@chasing-M:回复@双格:核心在于这次的升级，纯视觉驾驶，是否能达到主流市场的性能需求呗</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@双格: 决定未来AI汽车竞争格局的六个疑问及我的猜想</p></div>
+      <div class="metrics">
+        <span>赞 11</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/8895446470/315610630" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></div></section></section></main><script>const savedTheme=localStorage.getItem('dashboardTheme')||'dark';document.documentElement.dataset.theme=savedTheme;const themeSelect=document.getElementById('themeSelect');themeSelect.value=savedTheme;themeSelect.addEventListener('change',()=>{document.documentElement.dataset.theme=themeSelect.value;localStorage.setItem('dashboardTheme',themeSelect.value)});</script></body></html>

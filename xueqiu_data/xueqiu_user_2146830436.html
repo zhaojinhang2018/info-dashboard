@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>简单就好 · 雪球发言看板</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}html,body{margin:0;min-width:100%;height:100%;overflow:hidden;background:#0f1419;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif;line-height:1.6}body{display:flex;flex-direction:column}a{color:inherit}header{flex-shrink:0;background:rgba(15,20,25,.96);border-bottom:1px solid #27313a;backdrop-filter:blur(10px)}.wrap{max-width:none;margin:0;padding:0 24px}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{flex:0 0 auto}.brand h1{margin:0;font-size:22px;line-height:1.2;color:#e6edf3}.brand p{margin:6px 0 0;color:#9fb3c8;font-size:13px}.top-actions{min-width:0;display:flex;align-items:center;gap:12px;justify-content:flex-end;flex:1}.nav-row,.user-nav{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.nav-row{padding:0 24px 10px}.user-nav{min-width:0;max-width:min(980px,calc(100vw - 420px));padding:2px 0}.nav-row::-webkit-scrollbar,.user-nav::-webkit-scrollbar,main.wrap::-webkit-scrollbar{width:14px;height:12px}.nav-row::-webkit-scrollbar-track,.user-nav::-webkit-scrollbar-track,main.wrap::-webkit-scrollbar-track{background:#111820;border-radius:999px}.nav-row::-webkit-scrollbar-thumb,.user-nav::-webkit-scrollbar-thumb,main.wrap::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:999px;border:2px solid #111820}nav a,.user-nav a,.open-link{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 11px;color:#c9d1d9;text-decoration:none;font-size:13px;background:#151b22}.user-nav a{border-radius:999px}nav a:hover,.user-nav a:hover,.open-link:hover{border-color:#58a6ff;color:#fff}nav a.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}.theme-select{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 10px;color:#e6edf3;background:#151b22;font-size:13px}main.wrap{flex:1;width:100%;min-width:0;overflow:auto;padding:26px 24px 42px;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.columns{display:flex;gap:18px;align-items:flex-start;width:max-content;min-width:100%;padding:2px 0 28px}.user-column{flex:0 0 390px;width:390px;min-width:390px;scroll-margin-top:18px}.column-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid #34414c;border-radius:8px;background:linear-gradient(180deg,#17202b,#121922);padding:14px;margin-bottom:10px}.column-head h2{margin:0;color:#79c0ff;font-size:20px;line-height:1.25;text-shadow:0 0 12px rgba(88,166,255,.18)}.column-head p{margin:4px 0 0;color:#9fb3c8;font-size:13px}.column-feed,.feed{display:flex;flex-direction:column;gap:14px}.single-page main.wrap{width:100%;max-width:960px;margin:0 auto}.post-card{border:1px solid #2d3845;border-radius:8px;background:#141b24;padding:16px}.post-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.author{color:#79c0ff;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.22);border-radius:5px;padding:1px 6px;font-weight:700;font-size:15px}time{color:#9fb3c8;font-size:13px}h2{margin:0 0 8px;font-size:17px;line-height:1.35}.post-text{margin:0;white-space:normal;overflow-wrap:anywhere;color:#f0f6fc}.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.badge{display:inline-flex;align-items:center;border-radius:999px;border:1px solid #3a4653;padding:2px 8px;font-size:12px;font-weight:700}.badge.article{color:#f2cc60;background:#2a220f;border-color:#6b5518}.badge.reply{color:#79c0ff;background:#0d2235;border-color:#1f5a83}.badge.image{color:#3fb950;background:#10271a;border-color:#1f6f3a}.quote-block{margin-top:12px;padding:10px 12px;border:1px solid #3a4653;border-left:3px solid #58a6ff;border-radius:6px;background:#101720;color:#c9d1d9}.quote-block p{margin:4px 0 0;font-size:13px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}.quote-label{font-size:12px;color:#79c0ff;font-weight:700}.quote-block.muted{border-left-color:#8b949e;color:#9fb3c8}.notice{display:block;margin-top:10px;border:1px solid #3a4653;border-radius:6px;padding:8px 10px;text-decoration:none;font-size:13px}.article-notice{color:#f2cc60;background:#201a0d}.image-notice{color:#3fb950;background:#0d2116}.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.image-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid #34414c;border-radius:6px;background:#0d1117}.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;color:#9fb3c8;font-size:12px}.metrics span{border:1px solid #2d3845;border-radius:999px;padding:3px 8px;background:#101720}.open-link-inline{margin-left:auto;color:#58a6ff;text-decoration:none;font-size:12px}[data-theme="light"] body{background:#eef2f6;color:#24292f}[data-theme="light"] header{background:#f8fafc;border-bottom-color:#cfd7df;backdrop-filter:none}[data-theme="light"] .brand h1,[data-theme="light"] .post-text{color:#24292f}[data-theme="light"] .brand p,[data-theme="light"] time,[data-theme="light"] .metrics{color:#667085}[data-theme="light"] nav a,[data-theme="light"] .user-nav a,[data-theme="light"] .open-link,[data-theme="light"] .theme-select{background:#fff;border-color:#cfd7df;color:#24292f}[data-theme="light"] nav a.active{background:#e6f4ea;border-color:#2da44e;color:#1a7f37}[data-theme="light"] .column-head{background:#f8fafc;border-color:#d0d7de}[data-theme="light"] .column-head h2{color:#0969da;text-shadow:none}[data-theme="light"] .post-card{background:#fff;border-color:#d0d7de}[data-theme="light"] .author{color:#0969da;background:#ddf4ff;border-color:#b6e3ff}[data-theme="light"] .metrics span,[data-theme="light"] .quote-block{background:#f6f8fa;border-color:#d0d7de;color:#57606a}[data-theme="light"] .article-notice{background:#fff8c5;color:#7d4e00}[data-theme="light"] .image-notice{background:#dafbe1;color:#116329}[data-theme="light"] main.wrap,[data-theme="light"] .nav-row,[data-theme="light"] .user-nav{scrollbar-color:#8aa8c7 #d9e2ec}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column;padding:16px 0}.top-actions{width:100%;justify-content:flex-start}.user-nav{max-width:100%}.user-column{flex-basis:330px;width:330px;min-width:330px}}
+</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>简单就好</h1><p>抓取时间 2026-04-26 21:52:57</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a class="" href="../index.html">首页</a><a class="" href="../news.html">新闻</a><a class="" href="../x_feed.html">X 动态</a><a class="" href="../stock_alerts.html">股价异动</a><a class="active" href="../xueqiu_user.html">雪球</a><a href="../wechat.html">微信公众号</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2026-02-15 20:58:28</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@草帽路飞: 没有特指什么，每个人都有自己熟悉的猎场//@草帽路飞:回复@简单就好:你说的是澳洲加拿大黄金？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@简单就好: 优秀的猎人不是配备多么豪华但准头欠佳的武器（AI工具）四处出击，天天给工具打工，累个半死，而是找到猎物多的地方认准最肥美的猎物，挖好坑，静静的等待猎物入坑，然后，从容的将猎物拎回家，慢慢享用！</p></div>
+      <div class="metrics">
+        <span>赞 1</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/376302603" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2026-02-15 13:51:41</time></div>
+      
+      
+      <p class="post-text">优秀的猎人不是配备多么豪华但准头欠佳的武器（AI工具）四处出击，天天给工具打工，累个半死，而是找到猎物多的地方认准最肥美的猎物，挖好坑，静静的等待猎物入坑，然后，从容的将猎物拎回家，慢慢享用！</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 28</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/376290596" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2026-01-05 05:29:04</time></div>
+      
+      
+      <p class="post-text">厉害！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@不疾而速H-宁波: 2025年投资总结</p></div>
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 3</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/368953591" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2026-01-05 05:26:17</time></div>
+      
+      
+      <p class="post-text">太厉害了！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@自然而然vieq: 2025年年终总结及2026年展望</p></div>
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 1</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/368953559" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-31 06:31:48</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@马毛: 不是预期范围内的事吗，公司明确说了明年Q2左右重新提交NDA//@马毛:回复@马毛:12月30日，又有7个产品（规格）被药监局拒绝批准。<br>和黄医药的1类新药醋酸索乐匹尼布片折戟了，据说是主动撤回，2024年1月提交治疗ITP适应症的上市申请，经历近两年审评，最终遗憾上榜。<br>四环医药的他克莫司胶囊也未获批准。<br>查看图片</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@马毛: 三天118个药品“阵亡”，药监局反内卷开始行动</p></div>
+      <div class="metrics">
+        <span>赞 3</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/368443040" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-28 01:19:03</time></div>
+      
+      
+      <p class="post-text">冰岛是一片神奇的土地，在这里你可以抛却一切杂念，什么都不用想，让心灵静静的被洗涤净化……</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 14</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/367983115" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-12 22:08:39</time></div>
+      
+      
+      <p class="post-text">我怎么买不到这么便宜的，我在京东上买的100左右</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@想猫的人: 拼多多买的自动伞:其实我有伞，就是旧了，容易扎疼手。但看到自动伞只卖6.65元，我买了。今天到货，一试，不错。<br>中国的制造业确实厉害，这自动伞其实挺复杂的，居然包邮才6.65元。这要是出口，确实竞争力太强，别人只能破产了。<br>看新闻，墨西哥要对中国商品征50%的关税。欧盟也要对小包裹征税3欧元。实在打不过中国货了。<br>我还买了二个人体感应灯，7.39元。</p></div>
+      <div class="metrics">
+        <span>赞 3</span>
+        <span>评论 5</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/365831432" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-11 15:51:18</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@珈泽瑞: 有啥费解的，把股份卖给股权激励平台，以后再通过平台免费发给自己做为激励，空手套白狼！//@珈泽瑞:回复@万维天晴:我个人是很费解大股东的行为，不知道这样做的真正目的是什么？至少和沛嘉的张一博士比起来，谢总不够让小股东信服。按照常理，他个人想套现完全有更好的时机更好的价格，即使过去错失机会，也可以等到明年一季度过了，中报的时候把净利润做好看，铁基支架上市等重磅信息放出来，市场抬高股价再做也行。但你说他没有减持套现的私心，其实他知道这样的行为对二级市场散户的伤害很大，至少情绪上是这样的，很有可能带来实质性的损失。他真想激励集体，完全可以去二级市场购买，或者当下部分股权通过二级市场购买，都会是维护资本市场稳定很好的决策。静观其变吧，最好老谢把所有的股份都抛售了，让更有实力的公司来经营或许会更规范些。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@万维天晴: 无边落木萧萧下， 不尽长江滚滚来</p></div>
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/365575151" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-12-10 22:53:34</time></div>
+      
+      
+      <p class="post-text">这个时刻，维权举报好于割肉</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@过客888: $先健科技(01302)$ 持有他8年，一路走来有高光时刻也有低迷时候，在21年5.98时没有及时收手减仓，待到4.3卖出了三分之一，股价像断了线的风筝，一路下杀最低跌到1.2，那时也并没有什么，因为我一直认为他的铁基是核弹，而且在今年国庆期间他连续拉升，给人一种要启动的样子，节后在2.02元我继续加仓到50万股，但股价就是一路下跌，我一直怀疑自己的判断是否准确，从昨天的一纸公告才撤底告诉自己不要有任何妄想了，这样的公司不是经营上的问题是管理层道德问题，不值得我长期持有他了，不做时间的朋友。上次是因为高令进入才有过的高光时刻，但从他的退出我们是不是应该早有预案，这样的公司是不是一个圈钱掏空公司的大股东，昨天一纸公告撤底粉碎中小股东对企业信心，上市公司不向二级市场回购偏向大股东以1.9的价格买回，而且也不公布具体激励政策与人员，多少存在问题，要知道该企业一年的研发费用都没有4个亿，上一次改变董事会成员也是为了今天回购大股东股份作准备。我们是不是可以怀疑一边用公司的钱回购大股东谢的股份，一边又激励给自己，这样一来他的股份并没有少多少，但4亿钱早就跑到自己的口袋了。如果管理层有信心把企业做大做强，谢是不可能将自己的股价出让出来的，这是非常重要的，其次这家企业上市至今一直没有分红（本来还想着为了企业研发投入）理由还有点现在看他的吃相如此难看，那只能用脚投票，他为我又上了一课，原来可以这样操作，他可是占了港市制度的漏洞。这样的企业不可能成为伟大的企业，心里一直想着如何搞中小投资者的钱，如何掏尽上公司的钱的管理层，有何理由我们为他卖单。早看清早离场也许是最好的一个选择，这是我的认知，也许球友有更好解答或有更多的信息提供。但不管这么说一个一直不分红的企业，一个一心想减持的企业至少他不是一个优秀的企业。自己对自己的企业都没有信心如何让其他投资者树立信心呢？算了，这次应该是我投资股市最大教训，还是回大A，大A相对对中小投资者好一些。至少流动性比港市好的多，还有10%涨跌幅限止，但真需要好好看清企业是这样的一个嘴脸。</p></div>
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/365437563" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-11-27 12:17:38</time></div>
+      
+      
+      <p class="post-text">不忘初心，大爱无疆！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@flcq: $亚盛医药-B(06855)$<br>希望每一个在做全球三期，有着创新性的biotech，都能够取得成功。<br>因为这不仅是凝聚着科学医学工作者和投资人的寄望和数年的心血，更是患者和全社会的期盼，每一个让OS曲线向右移动的三期研究都值得被铭记，每一家能推动这样的三期研究的Biotech都值得被尊敬。<br>做投资研究，风险提示本没有问题，但如果进入到只希望自己看好的公司成功，而希望别的公司都失败，那么对于投资研究创新药真正的价值和意义，就越行越远了。</p></div>
+      <div class="metrics">
+        <span>赞 7</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/363490713" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-17 17:56:54</time></div>
+      
+      
+      <p class="post-text">多么痛的领悟！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 一定要等肚皮都翻不动时候才能进场捡死鱼。那些看似模棱两个的机会，不如不碰。</p></div>
+      <div class="metrics">
+        <span>赞 12</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/353117785" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-17 09:02:29</time></div>
+      
+      
+      <p class="post-text">思维训练一：<br>现有AB两家公司，市值都是60亿。<br>A公司在手净现金60亿，去年盈利10亿，未来业绩稳定不增长，分红率承诺60%。<br>B公司在手净现金20亿，去年盈利6亿，未来业绩维持10-15%年复合增长，分红率承诺70%。<br>你选哪个？</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 3</span>
+        <span>评论 29</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/352979088" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-09 22:36:49</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@NT_CLANNAD: 根本不是这样，时间稍微拉开2-3年，灵宝的估值跟国际巨头还有巨大差距啊//@NT_CLANNAD:回复@NT_CLANNAD:加入了灵宝黄金的数据，灵宝目前资源量确实有点少，资源量/EV只有4，公司披露太差，无法预估未来资源量。产量按照2030年15吨算，产量/EV=0.46。这只股票是个传奇，从烟蒂到现在估值已经几乎看齐国际巨头。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@NT_CLANNAD: 性价比和分红潜力最高的大型金矿股</p></div>
+      <div class="metrics">
+        <span>赞 2</span>
+        <span>评论 1</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/351796946" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-01 21:02:06</time></div>
+      
+      
+      <p class="post-text">还有制冷剂</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@处镜如初: AI和黄金，本轮牛市主线？</p></div>
+      <div class="metrics">
+        <span>赞 10</span>
+        <span>评论 5</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/350379363" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-09-01 20:53:22</time></div>
+      
+      
+      <p class="post-text">白银</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@处镜如初: AI和黄金，本轮牛市主线？</p></div>
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/350378171" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-08-23 11:56:23</time></div>
+      
+      
+      <p class="post-text">看起来周一又要吃肉了，感谢鲍威尔！</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 12</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/348594709" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-07-31 14:00:46</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@能力圈: 不一样啊，其他币币的供给跟比特币不是等效关系，而是竞争关系，只能一定程度造成分流，就好比白银甚至铜和其他金属都或多或少有一些金融属性，但并不能取代黄金，也不能等效于黄金的供给。//@能力圈:回复@来年再会可期:这么考虑的话，供给确实是无限的。<br>川普发了币。以后所有名人、大公司是不是都可以发个币？比如腾讯币、盖茨币、巴菲特币</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 索罗斯反身性理论的三类公司模型：为什么MSTR是最极致的案例？</p></div>
+      <div class="metrics">
+        <span>赞 1</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/344984331" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-07-31 12:56:32</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@能力圈: 跟历史上的庞氏骗局还是有本质的差别，历史上无论是郁金香还是沙丁鱼啥的，供给实际是不受限的，但比特币有供给的刚性限制，所以这次可能真的不一样！//@能力圈:回复@李药师2003:比特币这种自己买了不卖，然后不断加杠杆买了升值，我怎么有点像是以科技为外衣的庞氏骗局</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 索罗斯反身性理论的三类公司模型：为什么MSTR是最极致的案例？</p></div>
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 11</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/344968862" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-07-31 12:50:53</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@能力圈: 犀利！//@能力圈:回复@李药师2003:比特币这种自己买了不卖，然后不断加杠杆买了升值，我怎么有点像是以科技为外衣的庞氏骗局</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 索罗斯反身性理论的三类公司模型：为什么MSTR是最极致的案例？</p></div>
+      <div class="metrics">
+        <span>赞 1</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/344968073" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">简单就好</span><time>2025-07-28 09:31:32</time></div>
+      
+      
+      <p class="post-text">牛逼格拉斯！</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@自然而然vieq: 两年前的2023年7月从一个小县城搬到了中山，事后看这是我人生一个重大的转折点！当时就想着远离小县城的吃喝玩乐打牌赌还有数不清的应酬，对自己也好对小孩也好。这两年因为可以静下来心来好好学习，又刚好港股有数不清的低估机会，又遇到了今年的牛市周末一复盘才发现账户两年时间不自不觉又上了一个大台阶。继续努力翻砖吧，一切实事求是！</p></div>
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2146830436/344371424" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></section></main><script>const savedTheme=localStorage.getItem('dashboardTheme')||'dark';document.documentElement.dataset.theme=savedTheme;const themeSelect=document.getElementById('themeSelect');themeSelect.value=savedTheme;themeSelect.addEventListener('change',()=>{document.documentElement.dataset.theme=themeSelect.value;localStorage.setItem('dashboardTheme',themeSelect.value)});</script></body></html>

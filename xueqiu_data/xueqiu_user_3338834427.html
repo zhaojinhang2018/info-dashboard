@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>李药师2003 · 雪球发言看板</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}html,body{margin:0;min-width:100%;height:100%;overflow:hidden;background:#0f1419;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif;line-height:1.6}body{display:flex;flex-direction:column}a{color:inherit}header{flex-shrink:0;background:rgba(15,20,25,.96);border-bottom:1px solid #27313a;backdrop-filter:blur(10px)}.wrap{max-width:none;margin:0;padding:0 24px}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{flex:0 0 auto}.brand h1{margin:0;font-size:22px;line-height:1.2;color:#e6edf3}.brand p{margin:6px 0 0;color:#9fb3c8;font-size:13px}.top-actions{min-width:0;display:flex;align-items:center;gap:12px;justify-content:flex-end;flex:1}.nav-row,.user-nav{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.nav-row{padding:0 24px 10px}.user-nav{min-width:0;max-width:min(980px,calc(100vw - 420px));padding:2px 0}.nav-row::-webkit-scrollbar,.user-nav::-webkit-scrollbar,main.wrap::-webkit-scrollbar{width:14px;height:12px}.nav-row::-webkit-scrollbar-track,.user-nav::-webkit-scrollbar-track,main.wrap::-webkit-scrollbar-track{background:#111820;border-radius:999px}.nav-row::-webkit-scrollbar-thumb,.user-nav::-webkit-scrollbar-thumb,main.wrap::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:999px;border:2px solid #111820}nav a,.user-nav a,.open-link{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 11px;color:#c9d1d9;text-decoration:none;font-size:13px;background:#151b22}.user-nav a{border-radius:999px}nav a:hover,.user-nav a:hover,.open-link:hover{border-color:#58a6ff;color:#fff}nav a.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}.theme-select{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 10px;color:#e6edf3;background:#151b22;font-size:13px}main.wrap{flex:1;width:100%;min-width:0;overflow:auto;padding:26px 24px 42px;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.columns{display:flex;gap:18px;align-items:flex-start;width:max-content;min-width:100%;padding:2px 0 28px}.user-column{flex:0 0 390px;width:390px;min-width:390px;scroll-margin-top:18px}.column-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid #34414c;border-radius:8px;background:linear-gradient(180deg,#17202b,#121922);padding:14px;margin-bottom:10px}.column-head h2{margin:0;color:#79c0ff;font-size:20px;line-height:1.25;text-shadow:0 0 12px rgba(88,166,255,.18)}.column-head p{margin:4px 0 0;color:#9fb3c8;font-size:13px}.column-feed,.feed{display:flex;flex-direction:column;gap:14px}.single-page main.wrap{width:100%;max-width:960px;margin:0 auto}.post-card{border:1px solid #2d3845;border-radius:8px;background:#141b24;padding:16px}.post-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.author{color:#79c0ff;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.22);border-radius:5px;padding:1px 6px;font-weight:700;font-size:15px}time{color:#9fb3c8;font-size:13px}h2{margin:0 0 8px;font-size:17px;line-height:1.35}.post-text{margin:0;white-space:normal;overflow-wrap:anywhere;color:#f0f6fc}.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.badge{display:inline-flex;align-items:center;border-radius:999px;border:1px solid #3a4653;padding:2px 8px;font-size:12px;font-weight:700}.badge.article{color:#f2cc60;background:#2a220f;border-color:#6b5518}.badge.reply{color:#79c0ff;background:#0d2235;border-color:#1f5a83}.badge.image{color:#3fb950;background:#10271a;border-color:#1f6f3a}.quote-block{margin-top:12px;padding:10px 12px;border:1px solid #3a4653;border-left:3px solid #58a6ff;border-radius:6px;background:#101720;color:#c9d1d9}.quote-block p{margin:4px 0 0;font-size:13px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}.quote-label{font-size:12px;color:#79c0ff;font-weight:700}.quote-block.muted{border-left-color:#8b949e;color:#9fb3c8}.notice{display:block;margin-top:10px;border:1px solid #3a4653;border-radius:6px;padding:8px 10px;text-decoration:none;font-size:13px}.article-notice{color:#f2cc60;background:#201a0d}.image-notice{color:#3fb950;background:#0d2116}.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.image-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid #34414c;border-radius:6px;background:#0d1117}.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;color:#9fb3c8;font-size:12px}.metrics span{border:1px solid #2d3845;border-radius:999px;padding:3px 8px;background:#101720}.open-link-inline{margin-left:auto;color:#58a6ff;text-decoration:none;font-size:12px}[data-theme="light"] body{background:#eef2f6;color:#24292f}[data-theme="light"] header{background:#f8fafc;border-bottom-color:#cfd7df;backdrop-filter:none}[data-theme="light"] .brand h1,[data-theme="light"] .post-text{color:#24292f}[data-theme="light"] .brand p,[data-theme="light"] time,[data-theme="light"] .metrics{color:#667085}[data-theme="light"] nav a,[data-theme="light"] .user-nav a,[data-theme="light"] .open-link,[data-theme="light"] .theme-select{background:#fff;border-color:#cfd7df;color:#24292f}[data-theme="light"] nav a.active{background:#e6f4ea;border-color:#2da44e;color:#1a7f37}[data-theme="light"] .column-head{background:#f8fafc;border-color:#d0d7de}[data-theme="light"] .column-head h2{color:#0969da;text-shadow:none}[data-theme="light"] .post-card{background:#fff;border-color:#d0d7de}[data-theme="light"] .author{color:#0969da;background:#ddf4ff;border-color:#b6e3ff}[data-theme="light"] .metrics span,[data-theme="light"] .quote-block{background:#f6f8fa;border-color:#d0d7de;color:#57606a}[data-theme="light"] .article-notice{background:#fff8c5;color:#7d4e00}[data-theme="light"] .image-notice{background:#dafbe1;color:#116329}[data-theme="light"] main.wrap,[data-theme="light"] .nav-row,[data-theme="light"] .user-nav{scrollbar-color:#8aa8c7 #d9e2ec}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column;padding:16px 0}.top-actions{width:100%;justify-content:flex-start}.user-nav{max-width:100%}.user-column{flex-basis:330px;width:330px;min-width:330px}}
+</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>李药师2003</h1><p>抓取时间 2026-04-26 21:52:57</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a class="" href="../index.html">首页</a><a class="" href="../news.html">新闻</a><a class="" href="../x_feed.html">X 动态</a><a class="" href="../stock_alerts.html">股价异动</a><a class="active" href="../xueqiu_user.html">雪球</a><a href="../wechat.html">微信公众号</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-21 07:02:49</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@涨涨涨2016: 这是？//@涨涨涨2016:[该内容现已无法查看]</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 谋生型工作和兴趣型工作</p></div>
+      <div class="metrics">
+        <span>赞 42</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/384835019" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-21 07:02:22</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@山行: 不太同意。<br>龙生九子，各有不同。<br>大部分人是有自己天赋兴趣爱好的，与之对应的是也有自己的短板不擅长不感兴趣的部分。<br>人的一生也可以看成为理解自己，探索自己，发现自己，然后扬长避短的过程。<br>现代市场经济和农业经济相比，一个好处是获取资源的方式是分工然后贸易，不像农业经济自给自足要求自己是个万金油。<br>所以，现代人比古代人，做兴趣型工作的概率已经远远胜于古人了。当然，生存的难题是一以贯之的。//@山行:回复@李药师2003:能负责，认真的做事已经很好，大多数人其实并没有什么爱好，懒惰躺平（尤其是大脑）是常态</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 谋生型工作和兴趣型工作</p></div>
+      <div class="metrics">
+        <span>赞 86</span>
+        <span>评论 10</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/384835009" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-20 18:50:05</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>谋生型工作和兴趣型工作</h2>
+      <p class="post-text">谋生型工作和兴趣型工作</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3338834427/384775194" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 973</span>
+        <span>评论 362</span>
+        <span>转发 109</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/384775194" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-12 12:05:55</time></div>
+      
+      
+      <p class="post-text">有道理。朝不保夕的情况下，所有的思考和行为都服务于即时利益的获得，这样很难发展出来安全感和理性。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@何纯在南国: 穷人为什么这么难？</p></div>
+      <div class="metrics">
+        <span>赞 174</span>
+        <span>评论 9</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/383522330" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-08 15:48:49</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@牛仔很忙418: 张雪说，没钱时先踏实搞钱，有钱了再遵从内心搞爱好。 大部分一辈子都困在了第一阶段，搞钱生存。 好的状态是，父母基本替孩子搞定生存。然后孩子在充足的安全感下探索意义，搞爱好兴趣。//@牛仔很忙418:回复@李药师2003:最近很火的张雪是那种？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 父母解决生存焦虑，孩子探索意义焦虑</p></div>
+      <div class="metrics">
+        <span>赞 167</span>
+        <span>评论 14</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/383027759" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-04-08 15:34:32</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>父母解决生存焦虑，孩子探索意义焦虑</h2>
+      <p class="post-text">父母解决生存焦虑，孩子探索意义焦虑</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3338834427/383025360" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 478</span>
+        <span>评论 122</span>
+        <span>转发 36</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/383025360" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-09 12:33:28</time></div>
+      
+      
+      <p class="post-text">看对，且看对时仓位重赚了很多，达仁兄两个能力都优秀，且后者尤为突出。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@投资大顽主宜嘉: 逹人知命：敢为天下后</p></div>
+      <div class="metrics">
+        <span>赞 139</span>
+        <span>评论 8</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/378598998" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-05 10:48:54</time></div>
+      
+      
+      <p class="post-text">水泥曾经也爱过。 19年从内房股撤出来后第一个行业就是去水泥，西部水泥中国建材华新水泥祁连山等。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 西部水泥半年报简评和大股东可能的出千行为</p></div>
+      <div class="metrics">
+        <span>赞 127</span>
+        <span>评论 10</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/378103399" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-02 17:41:16</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>美国真正的问题</h2>
+      <p class="post-text">美国真正的问题</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3338834427/377615788" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 734</span>
+        <span>评论 120</span>
+        <span>转发 42</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/377615788" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-02 10:15:50</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@李药师2003: 亚太资源这公司投资能力确实有点小厉害，<br>最大的一个投资组合中小矿产组合，十年年化34%，且没有一年亏损，这业绩直接追德鲁肯米勒了。<br>今年我持有的股票里涨幅最高的，是一个澳洲的钨矿股eqr，涨幅255%，可惜我只有观察仓，没有上有意义的仓位。<br>亚太资源公布的年报里，中小矿产组合里持有这个票，还做了重点说明。<br>结论，这公司投资相当优秀。且迎来了擅长的，以黄金为主的资源时代。//@李药师2003:好。投资半年就赚了15亿。算pe的话一个计算器冒烟，一个不稳定。<br>下面从pb角度，大体计算一下亚太资源现在此时此刻值多少钱。<br>这票两大块资产，一大块投资炒股，一大块联营合营公司。<br>投资，去年年底36亿港币，目前大约36*1.38=50亿港币。<br>联营合营这块，公司按照权益净资产公布净值，实际上用权益市值更合理。因为这部分股份比投资的股份更有可控性，还能重组增值。目前这五个联营合营公司权益市值38亿港币。<br>公司其他的现金和应付款有息负债相抵基本计算为0。<br>所以，从净资产角度，目前价值50+38=88亿港币。88/14.8=5.95港币。<br>昨天收盘价3.58，（5.95-3.58）/3.58=0.66，目前的价值，还有66%涨幅。才能恢复到1pb。<br>这是一个可以溢价的黄金为主的资源etf，如果再考虑黄金etf去年155%的涨幅，再给个20%的溢价，5.95*2.55*1.2=18，未来一年涨到18元，也有可能。<br>$亚太资源(01104)$ $紫金矿业(02899)$ $Vista Gold(VGZ)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@亚太资源(01104): 亚太资源 公告及通告 - [中期业绩] 截至二零二五年十二月三十一日止六个月中期业绩公告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 150</span>
+        <span>评论 7</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/377518439" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-03-02 09:48:28</time></div>
+      
+      
+      <p class="post-text">好。投资半年就赚了15亿。算pe的话一个计算器冒烟，一个不稳定。<br>下面从pb角度，大体计算一下亚太资源现在此时此刻值多少钱。<br>这票两大块资产，一大块投资炒股，一大块联营合营公司。<br>投资，去年年底36亿港币，目前大约36*1.38=50亿港币。<br>联营合营这块，公司按照权益净资产公布净值，实际上用权益市值更合理。因为这部分股份比投资的股份更有可控性，还能重组增值。目前这五个联营合营公司权益市值38亿港币。<br>公司其他的现金和应付款有息负债相抵基本计算为0。<br>所以，从净资产角度，目前价值50+38=88亿港币。88/14.8=5.95港币。<br>昨天收盘价3.58，（5.95-3.58）/3.58=0.66，目前的价值，还有66%涨幅。才能恢复到1pb。<br>这是一个可以溢价的黄金为主的资源etf，如果再考虑黄金etf去年155%的涨幅，再给个20%的溢价，5.95*2.55*1.2=18，未来一年涨到18元，也有可能。<br>$亚太资源(01104)$ $紫金矿业(02899)$ $Vista Gold(VGZ)$</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@亚太资源(01104): 亚太资源 公告及通告 - [中期业绩] 截至二零二五年十二月三十一日止六个月中期业绩公告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 143</span>
+        <span>评论 37</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/377507442" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-02-22 10:14:03</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@韭菲特漂流记: 华总，可以。<br>重资产行业，要回避资产价格下行的趋势，原因有二。<br>一个是，重资产一般杠杆率很高，60%-95%（比如绿电房地产），资产价格下行，这意味着资产表，股东价值迅速缩小趋向归零。<br>另一个是，资产价格下行，一般是供给已经远远大于需求，这意味着竞争惨烈，现金流和利润表表也会迅速变差。//@韭菲特漂流记:李药师以前跟我说过一个观点。要回避原本资产不断折价的行业。 打个比方，原本绿电装机2元一瓦，后来1.5元一瓦，现在1元一瓦。现在占到便宜的同时也就意味着原本资产都在贬值。<br>那次之后，我把手上所有的华润龙源协和之类的全部砍光了。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@协合新能源(00182): 协合新能源 公告及通告 - [盈利警告 / 内幕消息] 盈利警告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 393</span>
+        <span>评论 49</span>
+        <span>转发 14</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/376571714" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-02-05 19:51:39</time></div>
+      
+      
+      <p class="post-text">炸裂呀。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@龙资源(01712): 龙资源 公告及通告 - [盈利警告 / 内幕消息] 内幕消息及盈利预告 网页链接</p></div>
+      <div class="metrics">
+        <span>赞 125</span>
+        <span>评论 27</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/375086129" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-02-04 11:28:20</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@九公子1900: 说得好//@九公子1900:回复@李药师2003:终于有一道我会的题了。无论什么运动，做到系统级训练（牵一而带动全身肌肉关节韧带等的联动，包括呼吸）就是归宿。力量训练练爆发，软开或者拉伸练灵活性，力量强了灵活度就不够，太灵活了力量就不够，两者互相在矛盾中拉扯前进，然后飞升凝结元婴</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 上周去体验了一次普拉提，感觉好像比力量训练更能改善一个人的身体状态。前者好像是训练系统，后者是肌肉。<br>另外，杭州西湖或者良渚附近，大家有好的普拉提教练推荐不，谢谢。</p></div>
+      <div class="metrics">
+        <span>赞 57</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/374791192" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-02-03 21:11:19</time></div>
+      
+      
+      <p class="post-text">上周去体验了一次普拉提，感觉好像比力量训练更能改善一个人的身体状态。前者好像是训练系统，后者是肌肉。<br>另外，杭州西湖或者良渚附近，大家有好的普拉提教练推荐不，谢谢。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 105</span>
+        <span>评论 41</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/374687424" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-31 16:06:23</time></div>
+      <div class="badges"><span class="badge article">专栏</span></div>
+      <h2>为什么“缩表 + 降息”在当下美国几乎不可能</h2>
+      <p class="post-text">为什么“缩表 + 降息”在当下美国几乎不可能</p>
+      <a class="notice article-notice" href="https://xueqiu.com/3338834427/374191667" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
+      
+      
+      <div class="metrics">
+        <span>赞 1128</span>
+        <span>评论 471</span>
+        <span>转发 102</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/374191667" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-31 12:38:04</time></div>
+      
+      
+      <p class="post-text">fml出了四季报，看了一眼，马马虎虎，简要记录如下。<br>1.总产量2.2万盎司（上个季度2万盎司），0.68吨，年化2.7吨，这个比我预期要低一些。<br>核心原因bon地下矿只采了一个采场1万吨矿石，品味9.58克吨。其他全部4.6万吨全是建设矿石，品味6.49克吨。<br>这意味着还是爬坡期，未来产量有大提升空间。比如每个季度开采3到5个采场矿石比较正常。所以，维持fml26年全年3吨乃至4吨的矿产金产量判断。<br>2.经营现金流和利润率很好，比同行。<br>25.4季度销售了1.8万盎司黄金，收入1.18亿澳元，经营净现金流0.52亿，自由现金流0.46亿。零有息负债，现金1.6亿澳元。<br>这意味着未来扩张，不用像海外大部分小金矿那样频繁稀释股权融资。<br>3.估值3pe左右，虽然去年涨了17倍。<br>26年保守3吨产量的话，5000美元金价，大约每吨0.8亿美元净利润，1.2亿澳元。公司3.6亿澳元利润，目前11.5亿澳元市值。11.5/3.6=3.2pe。<br>4.山金集团董事长最近去视察，山金国际估计上半年港股上市。fml被大股东按照香港市场估值收购的可能性依然存在，且得到加强。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 分享一下我目前能力圈内最便宜的金矿股</p></div>
+      <div class="metrics">
+        <span>赞 114</span>
+        <span>评论 23</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/374175587" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-28 09:14:47</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@雪饮狂刀89866: 这和我的认知不一样。相对来说，做多是快速致富。做空是快速变穷。//@雪饮狂刀89866:回复@李药师2003:做空的人本质上还是想赚快钱，不肯像做多那样慢慢变富</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 衍生品，毁一生</p></div>
+      <div class="metrics">
+        <span>赞 103</span>
+        <span>评论 6</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/373392617" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-27 22:27:25</time></div>
+      
+      
+      <p class="post-text">卖call和卖put，战略上就错了，风险无限收益有限。 反过来操作，才是战略正确。 不是衍生品的问题，是个人的认知需要改变和提升。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 衍生品，毁一生</p></div>
+      <div class="metrics">
+        <span>赞 124</span>
+        <span>评论 35</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/373351123" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">李药师2003</span><time>2026-01-24 09:05:59</time></div>
+      
+      
+      <p class="post-text">呃，一年半前的文章，对金价的基本预测。 第一阶段金价目标基本实现，每盎司5000美元左右，黄金价值不低于美国国债。 第二阶段是，每年新增矿产金不低于新增美债，大约每盎司1.6万美元。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 从美国国债简要推测金价的空间</p></div>
+      <div class="metrics">
+        <span>赞 414</span>
+        <span>评论 87</span>
+        <span>转发 9</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3338834427/372792441" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article></section></main><script>const savedTheme=localStorage.getItem('dashboardTheme')||'dark';document.documentElement.dataset.theme=savedTheme;const themeSelect=document.getElementById('themeSelect');themeSelect.value=savedTheme;themeSelect.addEventListener('change',()=>{document.documentElement.dataset.theme=themeSelect.value;localStorage.setItem('dashboardTheme',themeSelect.value)});</script></body></html>

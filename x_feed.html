@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X 动态看板</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; overflow: hidden; }
+    body { background: #0d1117; color: #e6edf3; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; flex-direction: column; }
+    .topbar { background: #161b22; border-bottom: 1px solid #21262d; padding: 10px 20px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .topbar h1 { flex: 0 0 auto; font-size: 18px; font-weight: 600; white-space: nowrap; }
+    .updated { font-size: 12px; color: #8b949e; }
+    .title-meta { flex: 0 0 auto; display: flex; align-items: center; gap: 10px; }
+    .nav, .user-nav { display: flex; align-items: center; gap: 10px; overflow-x: auto; scrollbar-color: #58a6ff #111820; scrollbar-width: thin; }
+    .nav { flex: 0 0 auto; }
+    .user-nav { flex: 1 1 auto; min-width: 160px; }
+    .nav a, .user-nav a { flex: 0 0 auto; border: 1px solid #30363d; border-radius: 6px; color: #c9d1d9; background: #0f141b; text-decoration: none; font-size: 13px; padding: 6px 10px; }
+    .user-nav a { border-radius: 999px; }
+    .nav a:hover, .user-nav a:hover { border-color: #58a6ff; color: #fff; }
+    .nav a.active { background: #238636; border-color: #2ea043; color: #fff; font-weight: 700; }
+    .theme-select { border: 1px solid #30363d; border-radius: 6px; background: #0f141b; color: #e6edf3; font-size: 13px; padding: 6px 10px; }
+    [data-theme="light"] body { background: #eef2f6; color: #24292f; scrollbar-color: #8aa8c7 #d9e2ec; }
+    [data-theme="light"] .topbar { background: #f7f9fb; border-color: #cfd7df; }
+    [data-theme="light"] .nav a, [data-theme="light"] .user-nav a { background: #ffffff; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .nav a.active { background: #e6f4ea; border-color: #2da44e; color: #1a7f37; }
+    [data-theme="light"] .theme-select { background: #ffffff; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .user-header, [data-theme="light"] .tweet-card { background: #f7f9fb; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .tweet-text { color: #24292f; }
+    [data-theme="light"] .updated, [data-theme="light"] .username, [data-theme="light"] .tweet-meta { color: #667085; }
+    .board { display: flex; gap: 14px; align-items: flex-start; width: max-content; min-width: 100%; padding: 20px 24px 28px; }
+    .content-scroll { flex: 1; overflow: auto; scrollbar-color: #58a6ff #111820; scrollbar-width: thin; }
+    .content-scroll::-webkit-scrollbar, .nav::-webkit-scrollbar, .user-nav::-webkit-scrollbar { width: 14px; height: 12px; }
+    .content-scroll::-webkit-scrollbar-track, .nav::-webkit-scrollbar-track, .user-nav::-webkit-scrollbar-track { background: #111820; border-radius: 999px; }
+    .content-scroll::-webkit-scrollbar-thumb, .nav::-webkit-scrollbar-thumb, .user-nav::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 999px; border: 2px solid #111820; }
+    .col { flex: 0 0 360px; width: 360px; min-width: 360px; scroll-margin-top: 18px; }
+    .user-header { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 12px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+    .avatar { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; background: #21262d; flex-shrink: 0; }
+    .display-name { font-weight: 600; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .username { font-size: 13px; color: #8b949e; margin-top: 2px; }
+    .tweets { display: flex; flex-direction: column; gap: 7px; }
+    .tweet-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 11px; transition: border-color .15s; }
+    .tweet-card:hover { border-color: #58a6ff; }
+    .tweet-text { font-size: 14px; line-height: 1.65; margin-bottom: 8px; word-break: break-word; white-space: pre-wrap; }
+    .inline-link { color: #58a6ff; text-decoration: none; word-break: break-all; }
+    .inline-link:hover { text-decoration: underline; }
+    .tweet-photos { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+    .tweet-photos img { width: calc(50% - 2px); border-radius: 6px; object-fit: cover; max-height: 120px; cursor: pointer; }
+    .tweet-photos img:only-child { width: 100%; max-height: 160px; }
+    .tweet-meta { display: flex; gap: 10px; font-size: 12px; color: #8b949e; align-items: center; flex-wrap: wrap; }
+    .tweet-meta a { color: #58a6ff; text-decoration: none; margin-left: auto; }
+    .tweet-meta a:hover { text-decoration: underline; }
+    .error-msg { background: #2d1a1a; border: 1px solid #6e2020; border-radius: 6px; padding: 10px 12px; font-size: 13px; color: #f85149; margin-bottom: 8px; }
+    .empty { text-align: center; color: #8b949e; font-size: 14px; padding: 20px 0; }
+    @media (max-width: 920px) { .topbar { flex-wrap: wrap; } .user-nav { order: 4; flex-basis: 100%; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>🐦 X 动态看板</h1>
+    <div class="nav">
+      <a href="index.html">首页</a>
+      <a href="news.html">新闻</a>
+      <a class="active" href="x_feed.html">X 动态</a>
+      <a href="stock_alerts.html">股价异动</a>
+      <a href="xueqiu_user.html">雪球</a>
+      <a href="wechat.html">微信公众号</a>
+    </div>
+    <div class="user-nav">
+      <a href="#user-qinbafrank">qinbafrank <span>10</span></a><a href="#user-TJ_Research">投资TALK君 <span>10</span></a><a href="#user-Murphychen888">Murphy <span>10</span></a><a href="#user-_FORAB">AB Kuai.Dong <span>10</span></a><a href="#user-fi56622380">fin <span>10</span></a><a href="#user-ShanghaoJin">Herman Jin <span>10</span></a><a href="#user-oxpsats">偶像派作手 <span>10</span></a><a href="#user-fupenglondon">付鹏的财经世界 <span>10</span></a><a href="#user-jukan05">Jukan <span>10</span></a><a href="#user-trendforce">trendforce <span>10</span></a><a href="#user-LinQingV">Macro_Lin｜市场观察员 <span>10</span></a>
+    </div>
+    <div class="title-meta">
+      <span class="updated">更新于 2026-04-27 10:13:52</span>
+      <select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select>
+    </div>
+  </div>
+  <div class="content-scroll">
+    <div class="board">
+      
+      <div class="col" id="user-qinbafrank">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">qinbafrank</div>
+            <div class="username">@qinbafrank</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text"><a href="http://x.com/i/article/2048429743050211328" target="_blank" rel="noopener" class="inline-link">http://x.com/i/article/2048429743050211328</a></div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-27 01:02</span>
+        <span>❤️ 16</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/qinbafrank/status/2048568392643465426" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">这也是某一种形式时光机，当然现在因为于AI信息传递很快很迅速，时间差相比以前不算大了，需要快速反应。但不得不说AI真让我们做到了说干就干、立马出结果</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-27 00:45</span>
+        <span>❤️ 9</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/qinbafrank/status/2048564182585626722" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">今天看不少媒体报道贝莱德的IBIT的期权未平仓规模首次超越Deribit上的比特币期权未平仓规模，其实去年十月份就已经超过了，但意义确实不小：大饼从加密原生市场的“边缘衍生品”进入华尔街主流机构资产配置的核心战场，传统资金不再满足于简单买IBIT现货长持，而是通过IBIT的期权，用Covered https://t.co/iFy2CMri6B</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG1rs76a0AEb74x.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG1rs76a0AEb74x.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 14:40</span>
+        <span>❤️ 41</span>
+        <span>🔁 7</span>
+        <a href="https://x.com/qinbafrank/status/2048411831971234230" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">人类历史首次全马破2，塞巴斯蒂安·萨维在2026伦敦马拉松用时1小时59分30秒夺冠，把世界纪录提高了接近1分钟，这是真的创造了人类记录。只能说人类在探索极限的道路上永不停歇 https://t.co/G3BuujxbGH</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 10:54</span>
+        <span>❤️ 181</span>
+        <span>🔁 9</span>
+        <a href="https://x.com/qinbafrank/status/2048354981703823761" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">这不到两年时间川普已经遭遇了5次刺杀未遂：
+2024年7月宾州集会枪击
+2024年9月高尔夫球场未遂
+2024年10月科切拉谷地集会未遂
+2026年2月海湖庄园闯入未遂
+2026年4月白宫记者晚宴枪击
+
+当然最经惊险还是24的宾州聚会枪击，子弹飞来的瞬间川普偏偏一转头，子弹擦着耳朵过去。如果没扭头、人可能都不在了。</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 07:09</span>
+        <span>❤️ 42</span>
+        <span>🔁 2</span>
+        <a href="https://x.com/qinbafrank/status/2048298521405927813" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">四大科技巨头财报看点，下周三美股盘后谷歌、微软、亚马逊、meta四大科技巨头财报公布，应该是这一次财报季最重要的一天，重要性远超其他公司的财报甚至英伟达的财报。无他，核心就是这四家公司的财报特别云业务的收入（meta是广告）是让市场来验证AI商业化收入是不是已到拐点的关键指标，市场热炒算力 https://t.co/paGMU0Fq4U</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGziB3ubUAAOUwj.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGziB3ubUAAOUwj.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGziB3yacAAzo9e.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGziB3yacAAzo9e.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGziB3tbYAEOJsz.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGziB3tbYAEOJsz.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 04:38</span>
+        <span>❤️ 173</span>
+        <span>🔁 31</span>
+        <a href="https://x.com/qinbafrank/status/2048260457996358038" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">算力和模型的竞争本质是什么？个人角度就是Sam在24年初达沃斯论坛讲到的，竞争本质是认知成本的降低。Sam的原话是这样“当认知成本降低一千倍或一百万倍，且能力得到极大增强时，这将对世界产生何种影响？如果世界上人人都拥有一家，由1万个能力极强的虚拟AI员工、且是各个领域专家，组成的公司，他们不 https://t.co/08rvVDI5Me</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGwixRuawAEEwgA.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGwixRuawAEEwgA.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 14:46</span>
+        <span>❤️ 73</span>
+        <span>🔁 10</span>
+        <a href="https://x.com/qinbafrank/status/2048051142975008855" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">改变大模型竞争格局的一次投资，昨晚Google宣布对Authropic最高400亿美元新投资承诺：1）立即投入 100 亿美元现金，与26年2月融资轮估值一致，不含后续新募资金；
+2）额外 300 亿美元 视 Anthropic 达到特定业绩里程碑后投入；
+3）同时支持 Anthropic 大幅扩充算力（Google Cloud 将提供新增 5 https://t.co/ifPXcJiLbh</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGuMvv2bAAAWAnd.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuMvv2bAAAWAnd.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 03:47</span>
+        <span>❤️ 96</span>
+        <span>🔁 12</span>
+        <a href="https://x.com/qinbafrank/status/2047885213179805810" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">最唱衰私募信贷的摩根大通，要扩张其私募信贷业务了。彭博前两天报道摩根大通资管正式启动私募信贷扩张计划，先通过机构投资者融资筹集数十亿美元启动资金，再将商业银行的贷款 origination（来源）注入进来，目标是逐步达到数百亿美元规模。 https://t.co/CWqnKaDiji</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGtwtbEbkAA__lL.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGtwtbEbkAA__lL.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 01:45</span>
+        <span>❤️ 40</span>
+        <span>🔁 9</span>
+        <a href="https://x.com/qinbafrank/status/2047854392330911834" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">来读读论文，第一次从学术的角度明确了在处理阶段cpu占总延迟的比例在大幅度提高的论文，就是这篇佐治亚理工跟英特尔合作的论文，标题《理解、分析与优化代理AI执行：以CPU为中心的视角》 https://t.co/VCF4AW5Rvg</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGthEGQbQAAz5P1.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGthEGQbQAAz5P1.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 00:36</span>
+        <span>❤️ 166</span>
+        <span>🔁 27</span>
+        <a href="https://x.com/qinbafrank/status/2047837189367832714" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-TJ_Research">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">投资TALK君</div>
+            <div class="username">@TJ_Research</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">RT @Cryptobtcmiko: Dear Mr. Musk @elonmusk , I believe your X product manager is highly unprofessional, and I strongly suspect he is a raci…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 21:56</span>
+        <span>❤️ 0</span>
+        <span>🔁 312</span>
+        <a href="https://x.com/TJ_Research/status/2048521660437795291" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">我觉得阻挡AI的不是什么战争，宏观风险，而是社会动荡，贫富差距进一步拉大，和政客的反AI。Dylan P最近的采访说到，Dario和奥特曼应该少接受采访，说越多，社会百姓的反感越多，并认为未来三个月会有大范围游行反AI</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 19:59</span>
+        <span>❤️ 84</span>
+        <span>🔁 9</span>
+        <a href="https://x.com/TJ_Research/status/2048492160945938843" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">又有新的东西可以学了，感叹AI的落地速度</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 19:24</span>
+        <span>❤️ 97</span>
+        <span>🔁 13</span>
+        <a href="https://x.com/TJ_Research/status/2048483402018422953" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">关于付鹏，多聊一句，24年因为分析日元套利交易，经常有人问我怎么看待付鹏闭门会议里的观点，油管传阅度也很高。一种我听到了什么惊天的秘密，还是免费的，逃课君你帮我参考一下。</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 17:51</span>
+        <span>❤️ 146</span>
+        <span>🔁 7</span>
+        <a href="https://x.com/TJ_Research/status/2048459910061649920" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @LinQingV: 把先进封装设备这条线从头到尾分析了一遍，从工艺原理到设备供应商再到各家存储厂的路线选择，信息量比较大，整理一条长推把脉络串起来。
+
+从封装工艺看，目前主流的把die连在一起的方式有三种。Mass… https://t.co/kvcByUsCBW</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG1mJFkbUAA6OmY.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG1mJFkbUAA6OmY.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 17:12</span>
+        <span>❤️ 0</span>
+        <span>🔁 65</span>
+        <a href="https://x.com/TJ_Research/status/2048450208695021675" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">不是，所以我也是币圈的人？24年给我散步carry trade的恐慌。 https://t.co/HZlb5CSRPk</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG0RcRpXgAAJfTT.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG0RcRpXgAAJfTT.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 08:05</span>
+        <span>❤️ 74</span>
+        <span>🔁 2</span>
+        <a href="https://x.com/TJ_Research/status/2048312585078886910" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Dylan Patel最新采访两点值得关注和思考的观察和观点：
+1. 记忆体的价格今年可以再涨2倍甚至3倍，这就是资本主义的结果
+2. ANTHROPIC其实没有增加太多算力，但是他们的毛利润从30%多涨到了现在的70%多！你没见过一家公司这么涨价的
+3.</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 00:51</span>
+        <span>❤️ 255</span>
+        <span>🔁 29</span>
+        <a href="https://x.com/TJ_Research/status/2048203276118528496" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">4月份美股狂飙，很多人认为没机会了，好的公司都很贵，其实不然。我25年一直第一大持仓 $GE 今年表现相对较差，但主要都是在战争开打后，开始跑输标普。 https://t.co/DRYDkwqFxr</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGuQvfraMAAoaVA.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuQvfraMAAoaVA.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 04:13</span>
+        <span>❤️ 179</span>
+        <span>🔁 12</span>
+        <a href="https://x.com/TJ_Research/status/2047891630997311773" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">比我做得好得很多。
+亏损离场的标的21年可太多了：比如TDOC（-75%）。OPEN最后亏得不多，波段做了很多，但那时很上头。很多小黑粉还会拿那些标的出来说，说明这几年确实聊资不多😂
+卖飞得也很多：23年初卖飞英伟达，卖飞META，25年卖飞GEV。</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 00:09</span>
+        <span>❤️ 97</span>
+        <span>🔁 1</span>
+        <a href="https://x.com/TJ_Research/status/2047830236075606250" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">左侧做空是送钱，NVDA, SNDK, MU，哪个不是被埋的？
+做对一次，最多发个截图秀一下，且都不敢上大仓位。
+即使通过小波段赚钱了，那为何不一路大仓位做多呢？趋势明显做错了。</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-24 23:23</span>
+        <span>❤️ 73</span>
+        <span>🔁 4</span>
+        <a href="https://x.com/TJ_Research/status/2047818675768480213" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-Murphychen888">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">Murphy</div>
+            <div class="username">@Murphychen888</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">这次“不一样”，还是这次“也一样”？
+
+真实市场平均价格（TMMP）是包含所有链上活跃筹码的成本均值回归模型；比如ETF买卖，OTC，交易所转入转出等，并剔除了矿工，长期睡眠或丢失的筹码。 https://t.co/DXjjUUeFCn</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG2FG1QbgAADs8w.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG2FG1QbgAADs8w.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-27 01:00</span>
+        <span>❤️ 89</span>
+        <span>🔁 9</span>
+        <a href="https://x.com/Murphychen888/status/2048567806325584209" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">刚刚，一位爷叔走过来问：“小伙子，你玩比特币吗？”，
+
+我一愣，瞬间秒懂：“纪念币？没听说过。”
+
+“哦~~我看你这天幕是币安的，我还以为你是…”
+
+“我闲鱼上淘的，便宜”
+
+他半信半疑看了一眼，走了…
+
+我惊讶不已，不知爷叔是何方高人，拿退休金炒币么？😂😂😂 https://t.co/W1e5ZsWtUv</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG0RJygaIAAC21w.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG0RJygaIAAC21w.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 08:04</span>
+        <span>❤️ 158</span>
+        <span>🔁 2</span>
+        <a href="https://x.com/Murphychen888/status/2048312277846347862" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">叠加3组数据（Options Gamma Exposure、Options Open Interest by Strike Price、Options ATM Implied Volatility），从期权的角度看对BTC的影响：
+
+$80,000是当前BTC上方第一道有效阻力。该位置同时具备高Call OI、正Gamma和低 IV的条件。 https://t.co/MBEWGFDX7A</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGzjvZcaoAARsic.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGzjvZcaoAARsic.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGzjyndbQAA7Pz6.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGzjyndbQAA7Pz6.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGzj2Awa8AA-YQl.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGzj2Awa8AA-YQl.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 04:47</span>
+        <span>❤️ 93</span>
+        <span>🔁 9</span>
+        <a href="https://x.com/Murphychen888/status/2048262591806603644" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">哈....看到这个我就放心了！
+
+从4月20日开始，LTH净持仓开始减少，直至24日累计花费98,154枚BTC，净减持24,205枚BTC。
+
+截止到4月24日，LTH的7日净持仓已开始转负。
+
+说明“不是不卖，而是价格没到位” —— LTH手上仍然有不坚定的筹码，一旦获利回报不错，就会卖出。 https://t.co/0nqVCUUOWa</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGuHXWCaUAA52zk.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuHXWCaUAA52zk.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGuHaaabAAAg07w.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuHaaabAAAg07w.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 03:36</span>
+        <span>❤️ 175</span>
+        <span>🔁 24</span>
+        <a href="https://x.com/Murphychen888/status/2047882376773333128" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">卧槽，真的挺牛逼！
+
+我们可以来看看，机构信号BSS在过去10年中在牛市主升浪之前的精准提示。
+
+在整个时间线上，绝大多数时间BSS的高点都在0.7-0.72左右。而且几乎都对应着BTC大/小波段的顶部区域。
+
+但唯独有5次，BSS突然大幅攀升，直接超过了0.85。其中1-4全部对应在牛市主升浪启动之前。 https://t.co/repCLCNgGb</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGrCCAeaAAAkm-v.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGrCCAeaAAAkm-v.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-24 13:04</span>
+        <span>❤️ 433</span>
+        <span>🔁 52</span>
+        <a href="https://x.com/Murphychen888/status/2047662904204468652" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">BRS从4/16至今，一直被死死的钉在了“0”的位置。在BRS=0的时间段，就是BTC阶段性筑顶的过程。
+
+并不是一回到零就是顶点，但BRS也不可能永远停在零轴，一旦离开就是回调开始，只是我们不知道需要多久。
+
+就像2月3日BRS触及100后意味着BTC进入阶段性的底部区间，这期间BTC到过62，也到过73。 https://t.co/Em6GPu3tHB</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGkjj-nakAAFR0i.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGkjj-nakAAFR0i.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGkjmbdbwAA5YYj.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGkjmbdbwAA5YYj.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-23 06:53</span>
+        <span>❤️ 127</span>
+        <span>🔁 10</span>
+        <a href="https://x.com/Murphychen888/status/2047207223731077263" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">7.9w了，为什么我仍不想追空？
+
+合约市场对空双方持仓量永远 1:1 对称，在不考虑手续费、资金费、滑点等交易成本时，盈亏近似零和，即多头赚的钱就是空头亏的钱。
+
+所以，空单要能开出来，得有同样仓位的空单平仓或多单开仓来作为对手盘。
+
+如果是“新空头开仓 vs 老空头平仓”撮合，OI（Open https://t.co/jxKXFxvMGP</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGj6XvmbwAAEsbX.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGj6XvmbwAAEsbX.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGj6bY3agAAqTjQ.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGj6bY3agAAqTjQ.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-23 04:15</span>
+        <span>❤️ 230</span>
+        <span>🔁 32</span>
+        <a href="https://x.com/Murphychen888/status/2047167439407104185" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">理性的讲完了，是不是应该再来个玄学的？
+
+据老夫夜观星象，在2026.5.9之前确实有一波上升势头。
+
+但看上去，这好像是“最后一弹”.....
+
+哦，对了，你们关心的“最后一跌”，
+
+从卦象上看，如果有，那最有可能发生的时间在5月底到9月底。
+
+其他细节请恕老夫不便细表，天机不可泄露🤣🤣🤣 https://t.co/EeyVy3MYmG</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGfnJXxagAAtj4O.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGfnJXxagAAtj4O.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-22 07:49</span>
+        <span>❤️ 240</span>
+        <span>🔁 38</span>
+        <a href="https://x.com/Murphychen888/status/2046858959454347631" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">数据只是告诉我们一个客观存在的事实：供应端在收缩 —— LTH减少了获利卖出，STH减少了亏损卖出，所以LTH的持有量才会连续2个月净增长。
+
+但我们也应该知道，供应端收缩只能抬高下限，而决定上限的，一定是需求端的快速增长。</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-22 06:53</span>
+        <span>❤️ 112</span>
+        <span>🔁 8</span>
+        <a href="https://x.com/Murphychen888/status/2046844766831485198" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">还能等到“最后一跌”吗？
+先用数据推导逻辑，最后放个人观点。
+
+我想，小伙伴们所期待的“最后一跌”应该是指类似去年11月或今年2月那样，至少20,000万美元以上的大幅下跌，对吧？
+
+这样的下跌是系统性的风险凸现，所谓冰冻三尺非一日之寒 —— https://t.co/itFiyWWWSD</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGeuVbCbsAE0qzf.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGeuVbCbsAE0qzf.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGeuYyubUAEIFFE.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGeuYyubUAEIFFE.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-22 03:45</span>
+        <span>❤️ 201</span>
+        <span>🔁 32</span>
+        <a href="https://x.com/Murphychen888/status/2046797606861594675" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-_FORAB">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">AB Kuai.Dong</div>
+            <div class="username">@_FORAB</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">冷知识。
+
+1. 付鹏去年比特币 12 万的时候，就进入币圈卖过课，年费 1598 人民币。
+
+2. 然而他在 24 年，自己的黄金付费课表示，看空比特币、黄金，当时黄金 2300，比特币 6 万，随即很多订阅者，闹过退款。
+
+3. 同年底，老哥因发表长篇看空中国经济，他的账号被冻结，结果 2 https://t.co/fw9bSXfbO1</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG0vVr5boAAYw31.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG0vVr5boAAYw31.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 10:18</span>
+        <span>❤️ 675</span>
+        <span>🔁 67</span>
+        <a href="https://x.com/_FORAB/status/2048346023718961434" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">哈哈，这次白宫记者晚宴枪击案，混乱过后，有两位姐们趁着人都走光了，直接把酒给顺走了。
+
+但殊不知，有媒体正在现场，开着直播视频，讲解案件情况，然后细心的网友，录制了下来。
+
+https://t.co/tdtNxVyoGV</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 04:08</span>
+        <span>❤️ 1341</span>
+        <span>🔁 117</span>
+        <a href="https://x.com/_FORAB/status/2048252779475694013" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">特朗普该不会有主角光环吧？
+
+大选前，差点被枪击，支持率一下反转领先。
+
+这次中期选举前，身边再次发生枪击，凶手被曝是位给民主党代表哈里斯，捐过钱的老哥。。</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 03:20</span>
+        <span>❤️ 375</span>
+        <span>🔁 6</span>
+        <a href="https://x.com/_FORAB/status/2048240744461447274" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">袭击记者晚宴现场的枪手身份，被曝光。是来自加利福尼亚的 Cole Thomas Allen，他是一名教育机构的教师，曾被评为优秀教师。
+
+他给特朗普之前竞选总统的对手，民主党的代表 Kamala Harris 卡玛拉 · 哈里斯，捐赠过 25 美金。
+
+这老哥之前在社交媒体上，多次反特朗普。 https://t.co/mAb983uNOp</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGzKr23bgAA5W4U.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGzKr23bgAA5W4U.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGzLV_obUAAlgjq.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGzLV_obUAAlgjq.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 03:02</span>
+        <span>❤️ 50</span>
+        <span>🔁 7</span>
+        <a href="https://x.com/_FORAB/status/2048236323639812411" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">随后特朗普在自家平台，公开了当时的录像，视频显示该男子强行闯安检卡后，被联邦特工和特勤局，紧急开枪击毙。
+
+特朗普曾寻求，凶手被击毙后，让现场宴会继续，但被特勤局拒绝，无奈只能离开现场。 https://t.co/wWHEPXn0Tk</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGzGI0sboAEY4WS.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGzGI0sboAEY4WS.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 02:38</span>
+        <span>❤️ 91</span>
+        <span>🔁 3</span>
+        <a href="https://x.com/_FORAB/status/2048230217144259013" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">今天上午，白宫记者晚宴传出枪声，包括特朗普在内的政府班子，被紧急疏散，随后特勤局接管了整个现场。
+
+该枪手被曝在门厅开火，随后死亡。 https://t.co/18ibwaWmte</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 02:28</span>
+        <span>❤️ 73</span>
+        <span>🔁 4</span>
+        <a href="https://x.com/_FORAB/status/2048227658610434558" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">昨天特朗普记者会，老哥有 50 秒直接睡着了。
+
+上一次这种情况，还是时任美国总统的拜登，当时他也在 80 岁那年，变得有些瞌睡和痴呆，而特朗普今年也要 80 岁了。
+
+事实证明，80 岁真的是个坎。
+
+https://t.co/EUuChaws2c</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 11:11</span>
+        <span>❤️ 868</span>
+        <span>🔁 40</span>
+        <a href="https://x.com/_FORAB/status/2047996887878582352" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">感觉小米快把整个宝马设计团队，给挖没了。
+
+对不起，他给的实在是太多了。 https://t.co/ECI3YfckzM</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGvO4RKa8AAVFcS.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGvO4RKa8AAVFcS.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 08:38</span>
+        <span>❤️ 878</span>
+        <span>🔁 60</span>
+        <a href="https://x.com/_FORAB/status/2047958309903483011" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">特朗普金卡，可能要烂尾了。
+
+此前由特朗普大力推崇的 100 万美金，买特朗普金卡，拿美国永久身份项目，如今遭遇了暴冷。
+
+根据商务部长，昨日在国会听证会上的披露，该卡自推出后只有 1 人获得了批准，另有数百人，提交后在排队等待审查。
+
+这与之前卖出上千份的口径不一。
+
+该卡于 2025 https://t.co/yBddDD3LCq</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGuUqcLaUAACtS5.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuUqcLaUAACtS5.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGuVCCaaIAAg-3k.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuVCCaaIAAg-3k.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 04:24</span>
+        <span>❤️ 146</span>
+        <span>🔁 10</span>
+        <a href="https://x.com/_FORAB/status/2047894520407408684" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">没想到高德地图在台湾火了
+
+看来车道级导航、显示红绿灯倒计时，还是挺有用的 https://t.co/XZiWiJr2xJ</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGuNyLbacAAi_R1.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuNyLbacAAi_R1.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGuN4HibcAA1W0m.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuN4HibcAA1W0m.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGuN4HNbAAAaAqf.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuN4HNbAAAaAqf.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGuN4HMaIAEbRNT.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuN4HMaIAEbRNT.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 03:54</span>
+        <span>❤️ 219</span>
+        <span>🔁 1</span>
+        <a href="https://x.com/_FORAB/status/2047886826011255100" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-fi56622380">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">fin</div>
+            <div class="username">@fi56622380</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">RT @fi56622380: @jukan05 CPU 不能像 memory / optics 那样猛涨价，这个判断在“普通紧缺”场景里是合理的，就像今年年初一样，只有10%的涨价
+
+但他的前提是，每块GPU带几个CPU比例是主要的CPU增量：“如果没有 MI308X，Q4…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-18 08:24</span>
+        <span>❤️ 0</span>
+        <span>🔁 80</span>
+        <a href="https://x.com/fi56622380/status/2045418294484836726" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">今天芯片圈最大的新闻，莫过于Gerard在创立Nuvia CPU被高通收购五年之后，重新出发，新创立了ARM CPU公司，名字也跟之前非常像，叫Nuvacore
+
+现在这个时间点做数据中心CPU，确实是赶上了CPU十年来最好的时代:
+
+AI agent带来CPU短缺潮已经经隐隐浮现，AWS多个客户都提出要包揽所有Graviton ARM CPU产能 https://t.co/KkRkPk5qD2</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGAlL4ibAAAUH04.png" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGAlL4ibAAAUH04.png:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGAlfJ6akAAYPe-.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGAlfJ6akAAYPe-.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGAl8zWaYAA0PkM.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGAl8zWaYAA0PkM.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGAmEL3aEAA-ZoV.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGAmEL3aEAA-ZoV.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-16 07:21</span>
+        <span>❤️ 464</span>
+        <span>🔁 96</span>
+        <a href="https://x.com/fi56622380/status/2044677478627868786" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">复盘GTC 2026：Nvidia补上了短板，大幅削弱了各个AI 加速器 startup最大的优势--token速度
+
+回顾这篇GTC前瞻，方向预测和技术路线写的没啥大问题，最后Nvidia给出的解法比我想象的更为精巧：不仅是prefill放在GPU上，decode阶段Attention阶段也放在GPU上(这点没想到)，只把decode的MLP阶段放在LPU上做 https://t.co/0nX5A10pXS</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HD_Skn6boAA3axp.png" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HD_Skn6boAA3axp.png:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HD_SqNvbMAA9uM9.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HD_SqNvbMAA9uM9.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HD_SsKkboAApq9V.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HD_SsKkboAApq9V.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HD_TNlTaUAA-5Xo.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HD_TNlTaUAA-5Xo.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 03-22 04:44</span>
+        <span>❤️ 395</span>
+        <span>🔁 92</span>
+        <a href="https://x.com/fi56622380/status/2035578249024053436" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">GTC 2026 preview： 从Groq生态位看AI异构推理(Heterogeneous Inference)新时代
+
+Groq的SRAM路线的生态位在哪里？SRAM会不会替代HBM路线？
+
+Nvidia如何整合groq到现有的产品线？是技术整合还是产品线整合？收购之后会给groq LPU产品带来怎样的升级？
+
+这里尝试从基本原理出发去拼凑一个逻辑链 https://t.co/oAS2suk2uo</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HDBie-haMAIA9mQ.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HDBie-haMAIA9mQ.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 03-10 04:59</span>
+        <span>❤️ 269</span>
+        <span>🔁 74</span>
+        <a href="https://x.com/fi56622380/status/2031233421884928283" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">AI泡沫论，继循环投资/左脚踩右脚的故事淡化后，终于又迎来了新论据，这次轮到了GPU折旧问题
+
+这次的叙事很简单，在几个主流CSP的财务报表里，GPU折旧年限很多都是平摊到6年来算
+
+但是GPU使用寿命可能只有2~3年，那么这样做账就会让纸面上利润率虚高，而实际上AI云利润太低就是吹泡泡
+
+真的是这样吗？ https://t.co/RbMyF9Oj02</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/G5dt0tpaoAA9AfL.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/G5dt0tpaoAA9AfL.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/G5dt76AbcAItq42.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/G5dt76AbcAItq42.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/G5duHHkbcAcJuf6.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/G5duHHkbcAcJuf6.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/G5duRs7bcAYF-Tk.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/G5duRs7bcAYF-Tk.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 11-11 09:38</span>
+        <span>❤️ 840</span>
+        <span>🔁 205</span>
+        <a href="https://x.com/fi56622380/status/1988179489772499338" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">今天Amazon裁员3万人，比2022年行业收缩期裁的还厉害，原因很简单
+
+买GPU的钱capex不够，导致AWS增速下降，被市场严厉的惩罚了，只能砍工资来省钱买GPU，让财报好看一点，营造一个AWS增速触底的故事
+
+每一个互联网公司的SDE打工人，都应该买入Nvidia/amd作为风险对冲，弥补自己被GPU挤出价值链的风险 https://t.co/nAzA2nsAfi</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/G4VSYoQasAQajxn.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/G4VSYoQasAQajxn.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 10-28 08:07</span>
+        <span>❤️ 1511</span>
+        <span>🔁 338</span>
+        <a href="https://x.com/fi56622380/status/1983083061043692015" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">一个感觉，从商业逻辑来看，未来GPT6/7/8，可能和手机常规升级换代一样，不会再有从GPT1到GPT4的数据量+训练量巨大飞跃了(GPT4.5已经试过了)
+
+让GPT5做了一幅这几年的旗舰模型token定价曲线，发现有很多地方和PC/手机芯片的商业逻辑是非常相像的，这集我看了太多遍，其实能看出很多很有意思的结论 https://t.co/zFqFUMnWNX</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/GynBgkMbgAAHa9-.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/GynBgkMbgAAHa9-.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/GynCVpLa0AAJLKB.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/GynCVpLa0AAJLKB.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/GynCnu_agAAsh31.png" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/GynCnu_agAAsh31.png:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 08-18 05:21</span>
+        <span>❤️ 435</span>
+        <span>🔁 71</span>
+        <a href="https://x.com/fi56622380/status/1957311792994279912" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">AI时代和互联网时代的运行逻辑和模式有什么不一样？（二）
+
+上篇讲到AI和互联网在底层算力特性上的不同出发，那么也许可以推演一下，这会带来什么策略上和商业模式上的变化
+
+首先AI的收费越来越多是以token计费，变现不再是互联网时代的免费流量模式
+因为广告补贴难以覆盖高额的token成本 https://t.co/ycofBv0E2K</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/GxP31ZKaIAgRj1d.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/GxP31ZKaIAgRj1d.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 08-01 07:01</span>
+        <span>❤️ 204</span>
+        <span>🔁 51</span>
+        <a href="https://x.com/fi56622380/status/1951176482136662211" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">AI时代和互联网时代的运行逻辑和模式有什么不一样？
+
+最近一直在思考这个问题，也在尝试从时间线拉长的角度去看一看
+
+两年前的GTX大会，老黄po出来的这张图宣布了时代大幕的拉开，PC时代-&amp;gt;互联网时代-&amp;gt;AI时代，每一个时代前期的硬件大基建时代开始了，可能又是一次cisco时代涨潮退潮的故事重现 https://t.co/PvqPCJgRqi</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/Gw54XX4bMAAOCwe.png" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/Gw54XX4bMAAOCwe.png:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/Gw54koiaMAATLxT.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/Gw54koiaMAATLxT.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 07-28 01:41</span>
+        <span>❤️ 424</span>
+        <span>🔁 98</span>
+        <a href="https://x.com/fi56622380/status/1949646287168778723" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">最近的重新调查来看，从2024到2025，大厂程序员对genAI的利用率提升的很快，有质变的迹象
+
+每周用一次genAI的SDE比例，从大半年前的50%+，已经稳稳的超过了70%
+
+每天都用genAI的SDE比例提升巨大，去年可能还是小众群体不到20%，现在已经逼近50%了
+
+人和AI共同进化的进程还是挺快的</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 05-28 07:30</span>
+        <span>❤️ 153</span>
+        <span>🔁 19</span>
+        <a href="https://x.com/fi56622380/status/1927628631721017510" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-ShanghaoJin">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">Herman Jin</div>
+            <div class="username">@ShanghaoJin</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">RT @ShanghaoJin: @AmberMo79750559 @RYANHINGSHING 我投资了一类新药FDA一期 CFDA三期的新药
+
+名字叫Neuregulin，我在他董事会
+
+你肯定你比我懂？</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 03:50</span>
+        <span>❤️ 0</span>
+        <span>🔁 4</span>
+        <a href="https://x.com/ShanghaoJin/status/2048248358570201387" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">基础模型中国至少落后一代，但医疗方面真不好说鹿死谁手
+
+中国在医疗系统化数据、管理运营上优势太大了。而且降低社会成本的东西，“他们”会不遗余力</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 10:30</span>
+        <span>❤️ 98</span>
+        <span>🔁 7</span>
+        <a href="https://x.com/ShanghaoJin/status/2047986593940820181" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">美国顶尖医疗机构的研发确实非常厉害，但是中国正用其效率以惊人的速度追赶
+
+而且因为中国有巨多实操案例，加上三甲医院系统化数据、整体管理优势。几年内，不管新药研发、还是治疗整体能力，中国一线医院都会让你们惊掉下巴
+
+好像是2000年TSMC，良率是一片一片搓出来的</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 09:21</span>
+        <span>❤️ 137</span>
+        <span>🔁 9</span>
+        <a href="https://x.com/ShanghaoJin/status/2047969178519511044" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">强烈怀疑你们看了我前几天在群里传的小作文😂</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 08:27</span>
+        <span>❤️ 73</span>
+        <span>🔁 8</span>
+        <a href="https://x.com/ShanghaoJin/status/2047955649162883420" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @ShanghaoJin: @ashinagen32 @againwithoutI 日本老百姓被军国主义洗脑是无辜的，中国出厂鸿蒙系统的孩子也是无辜的
+
+我们不该恨日本人，而是让日本兵变成禽兽的国家主义制度、民粹主义
+
+然后想想这个遗毒在哪里横行，自己有没有中毒</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 08:23</span>
+        <span>❤️ 0</span>
+        <span>🔁 3</span>
+        <a href="https://x.com/ShanghaoJin/status/2047954553409319423" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @ShanghaoJin: @babawoshiniba 现在是招魂特拿着鬼王披风，已经赢麻了
+
+美国以为自己带凤凰放末日很牛，走到哪里都秒杀
+
+碰上墓园骷髅海、lich海，等等屎都被打出来</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 06:04</span>
+        <span>❤️ 0</span>
+        <span>🔁 2</span>
+        <a href="https://x.com/ShanghaoJin/status/2047919652333035870" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">早说了USDT USDC都不安全
+
+你们只能用BTC交易，那个谁都没办法</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 04:16</span>
+        <span>❤️ 48</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/ShanghaoJin/status/2047892382642065465" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">显然你并没领悟我我说的、及游戏精髓
+
+墓园彻底伟大，因为有：
+
+骷髅转换场+召唤=骷髅海 😂 https://t.co/xKHa4OGUAd</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGuItIqaMAAp89d.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGuItIqaMAAp89d.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 03:29</span>
+        <span>❤️ 25</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/ShanghaoJin/status/2047880773546676407" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">彻底伟大了
+
+上海医院门口买杯咖啡，听到一个幼儿园小孩跟爸爸说：
+
+“yeah～我们把美国人杀麻了”
+
+“日本马上要被中国吞并了”
+
+“美国马上要被中国吞并了”…
+
+“中国是世界上最大的国家了”
+
+有人在我推下说：雪崩没一片雪花是无辜的，所以日本老百姓支持战争活该被核？
+
+人是环境的产物，墓园造不了大天使</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 02:39</span>
+        <span>❤️ 290</span>
+        <span>🔁 10</span>
+        <a href="https://x.com/ShanghaoJin/status/2047868037429342331" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">我老板也是这样告诉我的
+
+我也是这样告诉别人的……
+
+借花献佛，最后这句赠言送给大家</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-23 21:50</span>
+        <span>❤️ 167</span>
+        <span>🔁 7</span>
+        <a href="https://x.com/ShanghaoJin/status/2047432935771648109" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-oxpsats">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">偶像派作手</div>
+            <div class="username">@oxpsats</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">付鹏的演讲把比特币定义成“具有价值维护功能、可金融化交易的资产”。
+
+但如果一个资产在流动性收紧时经常和高 beta 风险资产一起下跌，它至少不能被轻易称为稳定的价值维护工具。
+
+黄金式避险资产和纳指式流动性资产，不应被同一套叙事同时占有。</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-27 01:36</span>
+        <span>❤️ 0</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/oxpsats/status/2048577037632446884" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">该出手时要敢于出手
+
+最近几周在每周一交易群的图形推演里，讲到比特币时反复在说：在一小时的时间窗口，只要均线被价格带密集起来，随后出现一根大阳线，价格跳到所有均线之上，那么这个时候就可以操作了。
+
+具体的交易逻辑如下：
+1. 以这根 K https://t.co/TL2Agrq1lL</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG37AcWaoAA9J4k.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG37AcWaoAA9J4k.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HG37AcYbQAAPebH.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG37AcYbQAAPebH.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HG37AcZaUAAV5Z-.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG37AcZaUAAV5Z-.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-27 01:06</span>
+        <span>❤️ 1</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/oxpsats/status/2048569397338607863" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">危机只是沿途的风暴，不是旅程的终点。
+
+美股，不是一条平滑向上的“发财线”，而是一条不断被战争、通胀、萧条、金融危机和政策冲击打断的长期上升线。短期看，每一个事件都像悬崖；长期看，它们又变成了曲线上的一个个折点。 https://t.co/LDvrmikxwe</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG1oW2UaMAE2nqo.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG1oW2UaMAE2nqo.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 14:34</span>
+        <span>❤️ 4</span>
+        <span>🔁 2</span>
+        <a href="https://x.com/oxpsats/status/2048410397125058881" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @iPaulCanada: “万物皆可赌” 的Polymarket 最近遭遇了带有“黑色幽默”的金融诈骗。一男子两次押注巴黎最高温达到22℃，两次都中了，获利3.69万美元。他的做法很简单，用便携式吹风机加热戴高乐机场的气候传感器。巴黎气象局已报警。 https://t.…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 06:21</span>
+        <span>❤️ 0</span>
+        <span>🔁 286</span>
+        <a href="https://x.com/oxpsats/status/2048286233915515217" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">美伊谈判进展方面，特朗普取消了美国特使史蒂夫·维特科 夫和贾里德·库什纳前往巴基斯坦与伊朗进行和谈的行程。
+
+目前的尴尬在于，双方都想谈，但都想让对方先跪着进场。
+
+双方都觉得自己还有牌。 https://t.co/P6eaSg3UL3</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGzFwB_acAAI06J.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGzFwB_acAAI06J.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 02:35</span>
+        <span>❤️ 3</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/oxpsats/status/2048229486018371717" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">当下的混乱局面源于伊朗没有一个足够强的人，出来承担艰难妥协的政治代价。
+
+伊朗缺乏一位强有力的、在位的最高领袖来承担做出艰难决定的风险并统一各派系。
+
+凸显了伊朗目前缺乏过去那种能在重大国家安全决策中一锤定音的人物。（来自华尔街日报观点） https://t.co/s5GKysHNFm</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGu8EivbEAA57qu.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGu8EivbEAA57qu.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 07:18</span>
+        <span>❤️ 4</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/oxpsats/status/2047938403606663575" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">费城半导体指数18连涨了，这种12点钟斜率的猛冲最后回调起来都非常惨烈，今年我们从金银、原油上面都见识过。
+
+1月30日的白银单日暴跌31%，同一天黄金暴跌9%，然后是原油，4月8日单日暴跌16%。
+
+下一个故事，现在的半导体指数非常接近。
+
+而半导体指数会连带整个纳斯达克。 https://t.co/etZINHvnrj</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGt3QcfaoAEpXYt.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGt3QcfaoAEpXYt.jpg:small" alt="图片" onerror="this.style.display='none'"></a><a href="https://pbs.twimg.com/media/HGt3QcfawAAgJeZ.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGt3QcfawAAgJeZ.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-25 02:13</span>
+        <span>❤️ 177</span>
+        <span>🔁 20</span>
+        <a href="https://x.com/oxpsats/status/2047861590662545507" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">DeepSeek V4的回复速度是真的快… https://t.co/JNTyXHc0KW</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGqLlxBaEAAeXxy.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGqLlxBaEAAeXxy.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-24 09:04</span>
+        <span>❤️ 0</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/oxpsats/status/2047602491936985163" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">在Claude Code 里用了DeepSeek-V4-Pro ，等我空了来试试它强不强。 https://t.co/V51Xec8v37</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGqHEUWbsAAeAyd.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGqHEUWbsAAeAyd.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-24 08:45</span>
+        <span>❤️ 0</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/oxpsats/status/2047597759394648212" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">油价再上涨，世界正在经历一场"慢性窒息"；市场最怕的不是一声巨响，而是一条绳索慢慢收紧。
+<a href="https://youtu.be/3mSAkvWMAZQ" target="_blank" rel="noopener" class="inline-link">https://youtu.be/3mSAkvWMAZQ</a></div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-24 07:43</span>
+        <span>❤️ 0</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/oxpsats/status/2047582286758203400" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-fupenglondon">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">付鹏的财经世界</div>
+            <div class="username">@fupenglondon</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">Commodity Exchange Traded Funds (ETFs) are essentially compliant products that package the business model of "holding commodities long-term and continuously generating rental income" and offer it to retail investors. Fund companies receive a share of the rental income earned by</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 08:30</span>
+        <span>❤️ 83</span>
+        <span>🔁 11</span>
+        <a href="https://x.com/fupenglondon/status/2047956405752389821" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">In the past, China's gold spot exchanges appeared to have low transaction fees, but their profits mainly relied on two sources: spreads (the difference between the buying and selling prices) and overnight fees (also known as deferred fees). Retail investors tended to use leverage</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 08:29</span>
+        <span>❤️ 58</span>
+        <span>🔁 3</span>
+        <a href="https://x.com/fupenglondon/status/2047956227267920218" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">很多根本不知道我在说什么，但是大规模的btc现货持有者，经历了早期阶段存活下来的这几位都知道我在说什么，呵呵，太阳下没有新鲜事物，到了一定的维度，就能一两句话就知道你在说什么了</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 05:36</span>
+        <span>❤️ 591</span>
+        <span>🔁 32</span>
+        <a href="https://x.com/fupenglondon/status/2047912612038664382" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Large investors hold long-term positions and collect rent through hedging transactions, effectively lowering their average cost basis. For them, Bitcoin becomes an asset that generates interest; as long as their total position size doesn't decrease, over time the cost basis</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 04:01</span>
+        <span>❤️ 65</span>
+        <span>🔁 6</span>
+        <a href="https://x.com/fupenglondon/status/2047888660469838182" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Back in the day, Chinese gold spot exchanges enforced daily forced liquidation and settlement, with long and short positions paying deferred fees to each other. The exchanges didn't directly collect this money, but when retail investors held a large long position and leveraged</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 03:56</span>
+        <span>❤️ 97</span>
+        <span>🔁 8</span>
+        <a href="https://x.com/fupenglondon/status/2047887375570022684" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">2026年付鹏|最新观点|投资第32课：全球能源危机（下集）  #付鹏 #付鹏的财经世界 #金融 #投資 #宏观经济 <a href="https://youtu.be/b9aVwUCFN6Q?si=5q0oX_m2BzVIoBxa" target="_blank" rel="noopener" class="inline-link">https://youtu.be/b9aVwUCFN6Q?si=5q0oX_m2BzVIoBxa</a> 来自 @YouTube</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-15 05:47</span>
+        <span>❤️ 27</span>
+        <span>🔁 6</span>
+        <a href="https://x.com/fupenglondon/status/2044291404663505268" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">2026年付鹏|最新观点|投资第31课：全球能源危机（上集）  #付鹏 #付鹏的财经世界 #金融 #投資 #宏观经济 <a href="https://youtu.be/ntAcFiVDDxs?si=K5wPOZbi1hfzg-4r" target="_blank" rel="noopener" class="inline-link">https://youtu.be/ntAcFiVDDxs?si=K5wPOZbi1hfzg-4r</a> 来自 @YouTube</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-15 05:46</span>
+        <span>❤️ 18</span>
+        <span>🔁 4</span>
+        <a href="https://x.com/fupenglondon/status/2044291274728190451" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">【鹏说】：技术进步 天使和恶魔同在 #付鹏的财经世界 #付鹏 #金融 #投资逻辑 #有鹏自远方来talkshow <a href="https://youtu.be/Rhi_xQMP7tk?si=AYipLTtldIrZoXN8" target="_blank" rel="noopener" class="inline-link">https://youtu.be/Rhi_xQMP7tk?si=AYipLTtldIrZoXN8</a> 来自 @YouTube</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-15 05:44</span>
+        <span>❤️ 8</span>
+        <span>🔁 1</span>
+        <a href="https://x.com/fupenglondon/status/2044290841091727526" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">【鹏说】：姑娘的金句：年轻一代对品牌没有忠诚度 #付鹏的财经世界 #付鹏 #金融 #投资逻辑 #有鹏自远方来 <a href="https://youtu.be/b1FKiSqa-LA?si=9kEwrgP7D_A9i1ge" target="_blank" rel="noopener" class="inline-link">https://youtu.be/b1FKiSqa-LA?si=9kEwrgP7D_A9i1ge</a> 来自 @YouTube</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-15 05:44</span>
+        <span>❤️ 10</span>
+        <span>🔁 2</span>
+        <a href="https://x.com/fupenglondon/status/2044290644999582034" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Without too much explanation, everything is in this picture https://t.co/UEffdtOwo6</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HDQM8KvaQAADIgd.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HDQM8KvaQAADIgd.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 03-13 01:13</span>
+        <span>❤️ 97</span>
+        <span>🔁 10</span>
+        <a href="https://x.com/fupenglondon/status/2032263684085727680" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-jukan05">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">Jukan</div>
+            <div class="username">@jukan05</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">RT @sssjeffpu: # Abstract of HH (2317 TT) &amp;amp; FII (601138 CH) note
+
+Hon Hai (2317 TT) 
+
+Rating: Buy, unchanged TP NT$300
+
+Catalyst # 1: Stron…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-27 00:21</span>
+        <span>❤️ 0</span>
+        <span>🔁 3</span>
+        <a href="https://x.com/jukan05/status/2048557996788367454" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Is this real? Did Nanya actually enter the Vera Rubin LPDDR5 supply chain?
+
+<a href="https://money.udn.com/money/story/5612/9465874?from=edn_maintab_cate" target="_blank" rel="noopener" class="inline-link">https://money.udn.com/money/story/5612/9465874?from=edn_main…</a></div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 23:03</span>
+        <span>❤️ 85</span>
+        <span>🔁 4</span>
+        <a href="https://x.com/jukan05/status/2048538528708182253" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Hyundai Motor Securities Korea:
+
+* Rubin Ultra is highly likely to be delayed to 1H 2028.
+* According to the Taiwanese supply chain, Google TPU shipments are expected to reach 2.8 million units in 2025, 3.6 million units in 2026, and 4.0 million units in 2027.
+* CPO consists of</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 15:23</span>
+        <span>❤️ 219</span>
+        <span>🔁 22</span>
+        <a href="https://x.com/jukan05/status/2048422825698918527" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">These days, I think surviving as a content creator has become incredibly tough.
+
+Dude, you’re now competing for views against people who manufacture DRAM in their own houses.
+
+<a href="https://youtu.be/h6GWikWlAQA?si=yESLbtLWCXQD_TsD" target="_blank" rel="noopener" class="inline-link">https://youtu.be/h6GWikWlAQA?si=yESLbtLWCXQD_TsD</a></div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 12:53</span>
+        <span>❤️ 212</span>
+        <span>🔁 11</span>
+        <a href="https://x.com/jukan05/status/2048384909010755789" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">I feel like I’m seriously short on dopamine during the weekends…
+
+I really hope Nasdaq rolls out 24/7 trading soon. https://t.co/FJToEGF1lR</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG02xozbEAAJEcD.png" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG02xozbEAAJEcD.png:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 10:49</span>
+        <span>❤️ 846</span>
+        <span>🔁 22</span>
+        <a href="https://x.com/jukan05/status/2048353795974025616" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @dnystedt: Some Good Reads (&amp;amp; listens) this weekend:
+
+Thoughts after reading the DeepSeek V4 paper:
+<a href="https://x.com/jukan05/status/2047861732702662741" target="_blank" rel="noopener" class="inline-link">https://x.com/jukan05/status/2047861732702662741</a>
+Nice analysi…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 08:57</span>
+        <span>❤️ 0</span>
+        <span>🔁 9</span>
+        <a href="https://x.com/jukan05/status/2048325555410678203" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Jukan's Truth Time:
+
+Many people have been asking:
+
+"Samsung has its own DRAM division — so why isn't it aggressively pursuing mobile device market share expansion during a memory shortage like this?"
+
+Today, I'll give you the answer.
+
+First, let me clear up a common</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 07:03</span>
+        <span>❤️ 522</span>
+        <span>🔁 38</span>
+        <a href="https://x.com/jukan05/status/2048296841297691096" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">According to Jeff Pu's estimates, Intel is expected to win a portion of the AI6 orders that were previously anticipated to be awarded exclusively to Samsung. https://t.co/cRM1i5BO2q</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGzJxJrbQAAJSzB.png" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGzJxJrbQAAJSzB.png:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 02:53</span>
+        <span>❤️ 314</span>
+        <span>🔁 21</span>
+        <a href="https://x.com/jukan05/status/2048234037433770210" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">《GF Overseas Electronics &amp;amp; Telecom》 
+☄️ Intel (INTC US, Buy): Earnings Beat — From Recovery to Strength
+
+☀️ Price target raised to $94.2: Despite already elevated market expectations, Intel's 1Q results still meaningfully beat, even though 2Q guidance was somewhat conservative.</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 02:50</span>
+        <span>❤️ 111</span>
+        <span>🔁 11</span>
+        <a href="https://x.com/jukan05/status/2048233256961876087" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">"Xiaomi’s MiMo team is around 100 people, but there are no titles, no sub-groups, and no deadlines. Only a handful of people make up the core team training the 1T model. Luo Fuli believes a flat structure is better for innovation — any hierarchy ultimately creates norms and</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 01:37</span>
+        <span>❤️ 346</span>
+        <span>🔁 23</span>
+        <a href="https://x.com/jukan05/status/2048214917128552710" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-trendforce">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">trendforce</div>
+            <div class="username">@trendforce</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">RT @NEWS2082680: 🚀 #China’s Ziener is pushing #GaN further. Its 8-inch GaN-on-sapphire device now reaches just 50μm thickness, cutting ther…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-27 00:48</span>
+        <span>❤️ 0</span>
+        <span>🔁 1</span>
+        <a href="https://x.com/trendforce/status/2048564929788305460" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Additional Investment in Onyang Campus... Expanding Back-End Processing Too.
+📰 News Source: <a href="https://buff.ly/3om1sgL" target="_blank" rel="noopener" class="inline-link">https://buff.ly/3om1sgL</a> https://t.co/Vs9K3HbdL3</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-26 16:00</span>
+        <span>❤️ 4</span>
+        <span>🔁 1</span>
+        <a href="https://x.com/trendforce/status/2048432092149625219" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">💥 Middle East disruptions ripple across chips—Japan’s material suppliers reportedly flag risks to #Samsung and #SKhynix, as &amp;gt;40% reliance on Middle East naphtha may put #EUV #photoresist and #HBM production at risk. 💡More: <a href="https://buff.ly/hGIJkaM" target="_blank" rel="noopener" class="inline-link">https://buff.ly/hGIJkaM</a> 🔗</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-24 13:00</span>
+        <span>❤️ 45</span>
+        <span>🔁 10</span>
+        <a href="https://x.com/trendforce/status/2047661938155360696" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">👀 #ASML is reportedly trimming ~1,700 roles, with cuts focused on management. With the U.S. tightening #DUV restrictions on China, the company could face a leaner structure—and a more constrained market outlook. 💡More: <a href="https://buff.ly/yMlpu7T" target="_blank" rel="noopener" class="inline-link">https://buff.ly/yMlpu7T</a> 🔗</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-24 12:00</span>
+        <span>❤️ 12</span>
+        <span>🔁 1</span>
+        <a href="https://x.com/trendforce/status/2047646800421507191" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @NEWS2082680: 🔥 #Samsung reportedly hits another milestone, producing a 10a DRAM working die—the first sub-10nm node. Built on 4F square…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-24 09:36</span>
+        <span>❤️ 0</span>
+        <span>🔁 2</span>
+        <a href="https://x.com/trendforce/status/2047610570015441203" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @NEWS2082680: 👓 #Huawei just launched #AIglasses, taking aim at #Meta — but Meta may have bigger worries ahead, with #Apple reportedly e…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-24 08:03</span>
+        <span>❤️ 0</span>
+        <span>🔁 1</span>
+        <a href="https://x.com/trendforce/status/2047587231611974130" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Intel Beats Expectations for Six Straight Quarters; 1Q26 Revenue Reaches $13.6B
+
+Intel reported its 1Q26 financial results on April 23, posting revenue of $13.6B, up 7% YoY. This marks the sixth consecutive quarter in which the company has exceeded market expectations. Non-GAAP https://t.co/rOsACOmAfK</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGp32lCWUAAWPd4.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGp32lCWUAAWPd4.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-24 07:37</span>
+        <span>❤️ 18</span>
+        <span>🔁 0</span>
+        <a href="https://x.com/trendforce/status/2047580763726524472" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @NEWS2082680: 💥 #SSD prices are climbing. #Samsung and #Kingston are reportedly raising prices by 10%+, pushing models like the Samsung…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-24 06:39</span>
+        <span>❤️ 0</span>
+        <span>🔁 1</span>
+        <a href="https://x.com/trendforce/status/2047566020634955882" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Overall, while global economic and inflationary pressures suppress the demand for consumer electronics, strong investments in AI agent applications and infrastructure have created a divergent market dynamic. In other words, strong AI demand has effectively offset weak consumer https://t.co/DnqvKuaRUi</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGpGDdlWUAA1GjI.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGpGDdlWUAA1GjI.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-24 04:00</span>
+        <span>❤️ 24</span>
+        <span>🔁 6</span>
+        <a href="https://x.com/trendforce/status/2047526008140541994" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">CPU boom is real — demand is shifting fast.
+From 1:8 to 1:1, the compute mix is being rewritten.</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-24 03:46</span>
+        <span>❤️ 32</span>
+        <span>🔁 5</span>
+        <a href="https://x.com/trendforce/status/2047522502122074162" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+      <div class="col" id="user-LinQingV">
+        <div class="user-header">
+          <img src="" onerror="this.style.display='none'" class="avatar" alt="">
+          <div>
+            <div class="display-name">Macro_Lin｜市场观察员</div>
+            <div class="username">@LinQingV</div>
+          </div>
+        </div>
+        
+        <div class="tweets">
+    <div class="tweet-card">
+      <div class="tweet-text">深南电路1Q26利润同比+73%，毛利率同比+4.4ppt，AI网络设备订单在持续改善产品结构。野村目标价263→391，FY28 PE对应不到19倍。
+
+公司同期公告46亿无锡高端PCB扩产项目，瞄准的是高速高密高层数产品。PCB板块野村给了35% https://t.co/xvKzonmf6V</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG18S0LaAAEZg_q.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG18S0LaAAEZg_q.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 15:52</span>
+        <span>❤️ 56</span>
+        <span>🔁 10</span>
+        <a href="https://x.com/LinQingV/status/2048430096558821585" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Nomura: 生益科技's FY25 numbers (rev +39%, earnings +92%) came alongside a CNY5.2bn Dongguan CCL expansion plan — management is betting the AI CCL/PCB supply gap won't close anytime soon. Two growth engines: CCL segment at 22% revenue CAGR through FY28F, PCB segment at 39% as https://t.co/gnWK5KI1eD</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG127EIbMAAAxcb.png" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG127EIbMAAAxcb.png:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 15:29</span>
+        <span>❤️ 50</span>
+        <span>🔁 12</span>
+        <a href="https://x.com/LinQingV/status/2048424171005501676" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">把先进封装设备这条线从头到尾分析了一遍，从工艺原理到设备供应商再到各家存储厂的路线选择，信息量比较大，整理一条长推把脉络串起来。
+
+从封装工艺看，目前主流的把die连在一起的方式有三种。Mass https://t.co/kvcByUsCBW</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG1mJFkbUAA6OmY.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG1mJFkbUAA6OmY.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 14:17</span>
+        <span>❤️ 204</span>
+        <span>🔁 65</span>
+        <a href="https://x.com/LinQingV/status/2048406011866947979" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">这两天聊了不少先进封装，耗材和设备都过了一遍。正好花旗这周更新了BESI（BE Semiconductor Industries），也来聊聊。
+
+BESI在Hybrid Bonding设备上的垄断地位没什么好争论的，目前全球唯一有量产交付能力的玩家。花旗将BESI https://t.co/OMb8AcXvMG</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HG1LkWibsAANMuh.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HG1LkWibsAANMuh.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 12:19</span>
+        <span>❤️ 90</span>
+        <span>🔁 10</span>
+        <a href="https://x.com/LinQingV/status/2048376511133331691" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @WSTAnalystApe: 地表最強科技股分析師：斷水流黃仁勳 https://t.co/KeFA37DL5F</div>
+      <div class="tweet-photos"><a href="https://pbs.twimg.com/media/HGv3oxpaUAAckrr.jpg" target="_blank" rel="noopener"><img src="https://pbs.twimg.com/media/HGv3oxpaUAAckrr.jpg:small" alt="图片" onerror="this.style.display='none'"></a></div>
+      <div class="tweet-meta">
+        <span>🕒 04-26 06:20</span>
+        <span>❤️ 0</span>
+        <span>🔁 8</span>
+        <a href="https://x.com/LinQingV/status/2048286129808667008" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">今天早上的推我们聊了hybrid bonding为什么会取代micro bump，这条接着往下看：当CMP slurry和电镀铜添加剂变成新的良率咽喉，这条耗材链上的定价权到底在谁手里。
+
+市场目前把所有沾上CMP和特用化学品标签的公司打包成一个概念在炒，但这条链的纵深结构里，利润率分布极不均匀。光是CMP</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 12:04</span>
+        <span>❤️ 98</span>
+        <span>🔁 16</span>
+        <a href="https://x.com/LinQingV/status/2048010256438137218" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">【中文版】Agentic AI正在重新定价整条半导体供应链。Google对Anthropic的400亿美元投资是目前最清晰的信号：顺着钱的流向看下去，终点是台积电和Intel的工厂与封装线。
+
+表面上看，Google先投100亿现金，剩下300亿跟业绩目标挂钩，同时Google Cloud提供5GW的TPU算力，为期五年，加上几周前签的3.5GW</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 08:35</span>
+        <span>❤️ 174</span>
+        <span>🔁 23</span>
+        <a href="https://x.com/LinQingV/status/2047957712705843468" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">RT @QQ_Timmy: SemiAnalysis CEO：模型"近兩年最大能力躍遷"，讓“執行變得極其廉價”，供應鏈"極度短缺"
+
+Patel 重點提示了儲存晶片與晶圓代工環節的驚人預期：
+- 首先是儲存晶片：「真正的增量供應（incremental supply）在 20…</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 04:46</span>
+        <span>❤️ 0</span>
+        <span>🔁 18</span>
+        <a href="https://x.com/LinQingV/status/2047899994578096219" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">Agentic AI is repricing the entire semiconductor supply chain, from inference silicon to advanced packaging to foundry capacity. Google's $40B Anthropic deal is the clearest proof point yet: follow the money, and you end up at TSMC and Intel's fabs and packaging lines.
+
+The</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 04:26</span>
+        <span>❤️ 84</span>
+        <span>🔁 16</span>
+        <a href="https://x.com/LinQingV/status/2047894933936521308" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div>
+    <div class="tweet-card">
+      <div class="tweet-text">$INTC CFO David Zinsner on adanced packaging: Maybe naively I thought these opportunities would come in the hundreds of millions of dollars level, but so far what we are seeing is demand in the billions of dollars per year kind of level. This is going to be a big part of the</div>
+      
+      <div class="tweet-meta">
+        <span>🕒 04-25 03:30</span>
+        <span>❤️ 70</span>
+        <span>🔁 11</span>
+        <a href="https://x.com/LinQingV/status/2047880787761262853" target="_blank" rel="noopener">原文↗</a>
+      </div>
+    </div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const savedTheme = localStorage.getItem('dashboardTheme') || 'dark';
+    document.documentElement.dataset.theme = savedTheme;
+    const themeSelect = document.getElementById('themeSelect');
+    themeSelect.value = savedTheme;
+    themeSelect.addEventListener('change', () => {
+      document.documentElement.dataset.theme = themeSelect.value;
+      localStorage.setItem('dashboardTheme', themeSelect.value);
+    });
+  </script>
+</body>
+</html>

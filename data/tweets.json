@@ -1,17 +1,37 @@
 {
-  "updated_at": "2026-04-27 01:42:27",
+  "updated_at": "2026-04-27 10:13:52",
   "users": [
     {
       "display_name": "qinbafrank",
       "username": "@qinbafrank",
       "tweets": [
         {
+          "text": "https://t.co/jjfSMzrhIO",
+          "url": "https://x.com/qinbafrank/status/2048568392643465426",
+          "meta": [
+            "04-27 01:02",
+            "♥ 16",
+            "↻ 0"
+          ],
+          "photos": []
+        },
+        {
+          "text": "这也是某一种形式时光机，当然现在因为于AI信息传递很快很迅速，时间差相比以前不算大了，需要快速反应。但不得不说AI真让我们做到了说干就干、立马出结果",
+          "url": "https://x.com/qinbafrank/status/2048564182585626722",
+          "meta": [
+            "04-27 00:45",
+            "♥ 9",
+            "↻ 0"
+          ],
+          "photos": []
+        },
+        {
           "text": "今天看不少媒体报道贝莱德的IBIT的期权未平仓规模首次超越Deribit上的比特币期权未平仓规模，其实去年十月份就已经超过了，但意义确实不小：大饼从加密原生市场的“边缘衍生品”进入华尔街主流机构资产配置的核心战场，传统资金不再满足于简单买IBIT现货长持，而是通过IBIT的期权，用Covered https://t.co/iFy2CMri6B",
           "url": "https://x.com/qinbafrank/status/2048411831971234230",
           "meta": [
             "04-26 14:40",
-            "♥ 31",
-            "↻ 3"
+            "♥ 41",
+            "↻ 7"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG1rs76a0AEb74x.jpg"
@@ -22,8 +42,8 @@
           "url": "https://x.com/qinbafrank/status/2048354981703823761",
           "meta": [
             "04-26 10:54",
-            "♥ 158",
-            "↻ 8"
+            "♥ 181",
+            "↻ 9"
           ],
           "photos": []
         },
@@ -32,7 +52,7 @@
           "url": "https://x.com/qinbafrank/status/2048298521405927813",
           "meta": [
             "04-26 07:09",
-            "♥ 39",
+            "♥ 42",
             "↻ 2"
           ],
           "photos": []
@@ -42,8 +62,8 @@
           "url": "https://x.com/qinbafrank/status/2048260457996358038",
           "meta": [
             "04-26 04:38",
-            "♥ 145",
-            "↻ 23"
+            "♥ 173",
+            "↻ 31"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HGziB3ubUAAOUwj.jpg",
@@ -56,7 +76,7 @@
           "url": "https://x.com/qinbafrank/status/2048051142975008855",
           "meta": [
             "04-25 14:46",
-            "♥ 72",
+            "♥ 73",
             "↻ 10"
           ],
           "photos": [
@@ -68,7 +88,7 @@
           "url": "https://x.com/qinbafrank/status/2047885213179805810",
           "meta": [
             "04-25 03:47",
-            "♥ 95",
+            "♥ 96",
             "↻ 12"
           ],
           "photos": [
@@ -80,7 +100,7 @@
           "url": "https://x.com/qinbafrank/status/2047854392330911834",
           "meta": [
             "04-25 01:45",
-            "♥ 39",
+            "♥ 40",
             "↻ 9"
           ],
           "photos": [
@@ -98,32 +118,6 @@
           "photos": [
             "https://pbs.twimg.com/media/HGthEGQbQAAz5P1.jpg"
           ]
-        },
-        {
-          "text": "联邦检察官皮罗宣布其办公室关闭对鲍威尔的刑事调查，改由联邦储备委员会总督察来内部调查。3个月前聊到对鲍威尔的刑事调查大概率虎头蛇尾、草草收场，终于等到这一刻！沃什应该可以在五月如期上任美联储新一任主席。 https://t.co/7hfyWMO6Rn",
-          "url": "https://x.com/qinbafrank/status/2047690165980958946",
-          "meta": [
-            "04-24 14:52",
-            "♥ 22",
-            "↻ 2"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGrbCocaUAAJTKx.jpg"
-          ]
-        },
-        {
-          "text": "美元流动性逆风、稳定币爆发，比较割裂的数据。过去一周因为税收季的抽水银行准备金已经回落到2.91万亿美金相比上周减少了800亿美金，财政部TGA账户则继续上升1.007万美金。但是过去一周USDT新增发行40亿美金，应该USDT历史上单周新增发行量规模最大的一周。USDC发行量则减少10亿美金，整体美元稳定币 https://t.co/BRR2Wn3yng",
-          "url": "https://x.com/qinbafrank/status/2047650950958215591",
-          "meta": [
-            "04-24 12:16",
-            "♥ 49",
-            "↻ 6"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGq3r2TbkAAxPRP.jpg",
-            "https://pbs.twimg.com/media/HGq3r2TbYAAQ8Xd.jpg",
-            "https://pbs.twimg.com/media/HGq3r2WaQAAIIOC.jpg"
-          ]
         }
       ]
     },
@@ -132,12 +126,52 @@
       "username": "@TJ_Research",
       "tweets": [
         {
+          "text": "RT @Cryptobtcmiko: Dear Mr. Musk @elonmusk , I believe your X product manager is highly unprofessional, and I strongly suspect he is a raci…",
+          "url": "https://x.com/TJ_Research/status/2048521660437795291",
+          "meta": [
+            "04-26 21:56",
+            "♥ 0",
+            "↻ 312"
+          ],
+          "photos": []
+        },
+        {
+          "text": "我觉得阻挡AI的不是什么战争，宏观风险，而是社会动荡，贫富差距进一步拉大，和政客的反AI。Dylan P最近的采访说到，Dario和奥特曼应该少接受采访，说越多，社会百姓的反感越多，并认为未来三个月会有大范围游行反AI",
+          "url": "https://x.com/TJ_Research/status/2048492160945938843",
+          "meta": [
+            "04-26 19:59",
+            "♥ 84",
+            "↻ 9"
+          ],
+          "photos": []
+        },
+        {
+          "text": "又有新的东西可以学了，感叹AI的落地速度",
+          "url": "https://x.com/TJ_Research/status/2048483402018422953",
+          "meta": [
+            "04-26 19:24",
+            "♥ 97",
+            "↻ 13"
+          ],
+          "photos": []
+        },
+        {
+          "text": "关于付鹏，多聊一句，24年因为分析日元套利交易，经常有人问我怎么看待付鹏闭门会议里的观点，油管传阅度也很高。一种我听到了什么惊天的秘密，还是免费的，逃课君你帮我参考一下。",
+          "url": "https://x.com/TJ_Research/status/2048459910061649920",
+          "meta": [
+            "04-26 17:51",
+            "♥ 146",
+            "↻ 7"
+          ],
+          "photos": []
+        },
+        {
           "text": "RT @LinQingV: 把先进封装设备这条线从头到尾分析了一遍，从工艺原理到设备供应商再到各家存储厂的路线选择，信息量比较大，整理一条长推把脉络串起来。\n\n从封装工艺看，目前主流的把die连在一起的方式有三种。Mass… https://t.co/kvcByUsCBW",
           "url": "https://x.com/TJ_Research/status/2048450208695021675",
           "meta": [
             "04-26 17:12",
             "♥ 0",
-            "↻ 26"
+            "↻ 65"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG1mJFkbUAA6OmY.jpg"
@@ -148,7 +182,7 @@
           "url": "https://x.com/TJ_Research/status/2048312585078886910",
           "meta": [
             "04-26 08:05",
-            "♥ 65",
+            "♥ 74",
             "↻ 2"
           ],
           "photos": [
@@ -160,8 +194,8 @@
           "url": "https://x.com/TJ_Research/status/2048203276118528496",
           "meta": [
             "04-26 00:51",
-            "♥ 240",
-            "↻ 25"
+            "♥ 255",
+            "↻ 29"
           ],
           "photos": []
         },
@@ -170,7 +204,7 @@
           "url": "https://x.com/TJ_Research/status/2047891630997311773",
           "meta": [
             "04-25 04:13",
-            "♥ 177",
+            "♥ 179",
             "↻ 12"
           ],
           "photos": [
@@ -196,48 +230,6 @@
             "↻ 4"
           ],
           "photos": []
-        },
-        {
-          "text": "非常有信心，过去1个季度看看SATYA的X发得多卖力。\n我没信心和把握的是财报后涨还是跌",
-          "url": "https://x.com/TJ_Research/status/2047817600671895562",
-          "meta": [
-            "04-24 23:18",
-            "♥ 62",
-            "↻ 3"
-          ],
-          "photos": []
-        },
-        {
-          "text": "3月底：“英伟达便宜，博通便宜，微软便宜”(短期，中期，长期)\n现在：“纳指仍然便宜😂”（中期，长期）\nHOLD IT，留一些现金让你心态上好一点就够了。",
-          "url": "https://x.com/TJ_Research/status/2047722295519514979",
-          "meta": [
-            "04-24 17:00",
-            "♥ 216",
-            "↻ 6"
-          ],
-          "photos": []
-        },
-        {
-          "text": "今天的新闻，对鲍威尔撤诉",
-          "url": "https://x.com/TJ_Research/status/2047688716282442143",
-          "meta": [
-            "04-24 14:46",
-            "♥ 66",
-            "↻ 1"
-          ],
-          "photos": []
-        },
-        {
-          "text": "3月31日那期视频下面的对话。现在还有人问我“如果油价保持在150-200，未来会怎么怎么样”这类的假设问题。\n1. 机构聊地缘政治，远离。因为假设都是错的。现在海峡也没开放，股市新高了。充分证明了战争的随机性\n2. 油价去200，股市肯定跌\n3. https://t.co/ABmFwQyr0J",
-          "url": "https://x.com/TJ_Research/status/2047677125591732291",
-          "meta": [
-            "04-24 14:00",
-            "♥ 84",
-            "↻ 5"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGrOFSJXkAActsc.jpg"
-          ]
         }
       ]
     },
@@ -246,11 +238,23 @@
       "username": "@Murphychen888",
       "tweets": [
         {
+          "text": "这次“不一样”，还是这次“也一样”？\n\n真实市场平均价格（TMMP）是包含所有链上活跃筹码的成本均值回归模型；比如ETF买卖，OTC，交易所转入转出等，并剔除了矿工，长期睡眠或丢失的筹码。 https://t.co/DXjjUUeFCn",
+          "url": "https://x.com/Murphychen888/status/2048567806325584209",
+          "meta": [
+            "04-27 01:00",
+            "♥ 89",
+            "↻ 9"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG2FG1QbgAADs8w.jpg"
+          ]
+        },
+        {
           "text": "刚刚，一位爷叔走过来问：“小伙子，你玩比特币吗？”，\n\n我一愣，瞬间秒懂：“纪念币？没听说过。”\n\n“哦~~我看你这天幕是币安的，我还以为你是…”\n\n“我闲鱼上淘的，便宜”\n\n他半信半疑看了一眼，走了…\n\n我惊讶不已，不知爷叔是何方高人，拿退休金炒币么？😂😂😂 https://t.co/W1e5ZsWtUv",
           "url": "https://x.com/Murphychen888/status/2048312277846347862",
           "meta": [
             "04-26 08:04",
-            "♥ 116",
+            "♥ 158",
             "↻ 2"
           ],
           "photos": [
@@ -262,7 +266,7 @@
           "url": "https://x.com/Murphychen888/status/2048262591806603644",
           "meta": [
             "04-26 04:47",
-            "♥ 89",
+            "♥ 93",
             "↻ 9"
           ],
           "photos": [
@@ -276,8 +280,8 @@
           "url": "https://x.com/Murphychen888/status/2047882376773333128",
           "meta": [
             "04-25 03:36",
-            "♥ 171",
-            "↻ 23"
+            "♥ 175",
+            "↻ 24"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HGuHXWCaUAA52zk.jpg",
@@ -289,7 +293,7 @@
           "url": "https://x.com/Murphychen888/status/2047662904204468652",
           "meta": [
             "04-24 13:04",
-            "♥ 432",
+            "♥ 433",
             "↻ 52"
           ],
           "photos": [
@@ -314,8 +318,8 @@
           "url": "https://x.com/Murphychen888/status/2047167439407104185",
           "meta": [
             "04-23 04:15",
-            "♥ 229",
-            "↻ 31"
+            "♥ 230",
+            "↻ 32"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HGj6XvmbwAAEsbX.jpg",
@@ -327,7 +331,7 @@
           "url": "https://x.com/Murphychen888/status/2046858959454347631",
           "meta": [
             "04-22 07:49",
-            "♥ 241",
+            "♥ 240",
             "↻ 38"
           ],
           "photos": [
@@ -356,19 +360,6 @@
             "https://pbs.twimg.com/media/HGeuVbCbsAE0qzf.jpg",
             "https://pbs.twimg.com/media/HGeuYyubUAEIFFE.jpg"
           ]
-        },
-        {
-          "text": "那天和桂林 @Guilin_Chen_ 一起交流了关于本轮熊市走到目前所反映出的信息以及后续走势的思考。我们从技术和数据层面提出了一些与当前主流预期不太相同的观点。 https://t.co/3gbymmCPYE",
-          "url": "https://x.com/Murphychen888/status/2046484079881887877",
-          "meta": [
-            "04-21 07:00",
-            "♥ 73",
-            "↻ 1"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGZo540a8AAHJYH.jpg",
-            "https://pbs.twimg.com/media/HGZpDYhawAEqySA.jpg"
-          ]
         }
       ]
     },
@@ -381,8 +372,8 @@
           "url": "https://x.com/_FORAB/status/2048346023718961434",
           "meta": [
             "04-26 10:18",
-            "♥ 544",
-            "↻ 58"
+            "♥ 675",
+            "↻ 67"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG0vVr5boAAYw31.jpg"
@@ -393,8 +384,8 @@
           "url": "https://x.com/_FORAB/status/2048252779475694013",
           "meta": [
             "04-26 04:08",
-            "♥ 1171",
-            "↻ 99"
+            "♥ 1341",
+            "↻ 117"
           ],
           "photos": []
         },
@@ -403,7 +394,7 @@
           "url": "https://x.com/_FORAB/status/2048240744461447274",
           "meta": [
             "04-26 03:20",
-            "♥ 365",
+            "♥ 375",
             "↻ 6"
           ],
           "photos": []
@@ -413,7 +404,7 @@
           "url": "https://x.com/_FORAB/status/2048236323639812411",
           "meta": [
             "04-26 03:02",
-            "♥ 47",
+            "♥ 50",
             "↻ 7"
           ],
           "photos": [
@@ -426,7 +417,7 @@
           "url": "https://x.com/_FORAB/status/2048230217144259013",
           "meta": [
             "04-26 02:38",
-            "♥ 89",
+            "♥ 91",
             "↻ 3"
           ],
           "photos": [
@@ -438,7 +429,7 @@
           "url": "https://x.com/_FORAB/status/2048227658610434558",
           "meta": [
             "04-26 02:28",
-            "♥ 71",
+            "♥ 73",
             "↻ 4"
           ],
           "photos": []
@@ -448,7 +439,7 @@
           "url": "https://x.com/_FORAB/status/2047996887878582352",
           "meta": [
             "04-25 11:11",
-            "♥ 863",
+            "♥ 868",
             "↻ 40"
           ],
           "photos": []
@@ -458,8 +449,8 @@
           "url": "https://x.com/_FORAB/status/2047958309903483011",
           "meta": [
             "04-25 08:38",
-            "♥ 861",
-            "↻ 58"
+            "♥ 878",
+            "↻ 60"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HGvO4RKa8AAVFcS.jpg"
@@ -470,7 +461,7 @@
           "url": "https://x.com/_FORAB/status/2047894520407408684",
           "meta": [
             "04-25 04:24",
-            "♥ 145",
+            "♥ 146",
             "↻ 10"
           ],
           "photos": [
@@ -483,7 +474,7 @@
           "url": "https://x.com/_FORAB/status/2047886826011255100",
           "meta": [
             "04-25 03:54",
-            "♥ 218",
+            "♥ 219",
             "↻ 1"
           ],
           "photos": [
@@ -505,7 +496,7 @@
           "meta": [
             "04-18 08:24",
             "♥ 0",
-            "↻ 78"
+            "↻ 80"
           ],
           "photos": []
         },
@@ -514,7 +505,7 @@
           "url": "https://x.com/fi56622380/status/2044677478627868786",
           "meta": [
             "04-16 07:21",
-            "♥ 463",
+            "♥ 464",
             "↻ 96"
           ],
           "photos": [
@@ -529,7 +520,7 @@
           "url": "https://x.com/fi56622380/status/2035578249024053436",
           "meta": [
             "03-22 04:44",
-            "♥ 396",
+            "♥ 395",
             "↻ 92"
           ],
           "photos": [
@@ -544,7 +535,7 @@
           "url": "https://x.com/fi56622380/status/2031233421884928283",
           "meta": [
             "03-10 04:59",
-            "♥ 270",
+            "♥ 269",
             "↻ 74"
           ],
           "photos": [
@@ -571,7 +562,7 @@
           "url": "https://x.com/fi56622380/status/1983083061043692015",
           "meta": [
             "10-28 08:07",
-            "♥ 1510",
+            "♥ 1511",
             "↻ 338"
           ],
           "photos": [
@@ -720,8 +711,8 @@
           "url": "https://x.com/ShanghaoJin/status/2047868037429342331",
           "meta": [
             "04-25 02:39",
-            "♥ 289",
-            "↻ 9"
+            "♥ 290",
+            "↻ 10"
           ],
           "photos": []
         },
@@ -742,11 +733,35 @@
       "username": "@oxpsats",
       "tweets": [
         {
+          "text": "付鹏的演讲把比特币定义成“具有价值维护功能、可金融化交易的资产”。\n\n但如果一个资产在流动性收紧时经常和高 beta 风险资产一起下跌，它至少不能被轻易称为稳定的价值维护工具。\n\n黄金式避险资产和纳指式流动性资产，不应被同一套叙事同时占有。",
+          "url": "https://x.com/oxpsats/status/2048577037632446884",
+          "meta": [
+            "04-27 01:36",
+            "♥ 0",
+            "↻ 0"
+          ],
+          "photos": []
+        },
+        {
+          "text": "该出手时要敢于出手\n\n最近几周在每周一交易群的图形推演里，讲到比特币时反复在说：在一小时的时间窗口，只要均线被价格带密集起来，随后出现一根大阳线，价格跳到所有均线之上，那么这个时候就可以操作了。\n\n具体的交易逻辑如下：\n1. 以这根 K https://t.co/TL2Agrq1lL",
+          "url": "https://x.com/oxpsats/status/2048569397338607863",
+          "meta": [
+            "04-27 01:06",
+            "♥ 1",
+            "↻ 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG37AcWaoAA9J4k.jpg",
+            "https://pbs.twimg.com/media/HG37AcYbQAAPebH.jpg",
+            "https://pbs.twimg.com/media/HG37AcZaUAAV5Z-.jpg"
+          ]
+        },
+        {
           "text": "危机只是沿途的风暴，不是旅程的终点。\n\n美股，不是一条平滑向上的“发财线”，而是一条不断被战争、通胀、萧条、金融危机和政策冲击打断的长期上升线。短期看，每一个事件都像悬崖；长期看，它们又变成了曲线上的一个个折点。 https://t.co/LDvrmikxwe",
           "url": "https://x.com/oxpsats/status/2048410397125058881",
           "meta": [
             "04-26 14:34",
-            "♥ 3",
+            "♥ 4",
             "↻ 2"
           ],
           "photos": [
@@ -759,7 +774,7 @@
           "meta": [
             "04-26 06:21",
             "♥ 0",
-            "↻ 283"
+            "↻ 286"
           ],
           "photos": []
         },
@@ -792,7 +807,7 @@
           "url": "https://x.com/oxpsats/status/2047861590662545507",
           "meta": [
             "04-25 02:13",
-            "♥ 176",
+            "♥ 177",
             "↻ 20"
           ],
           "photos": [
@@ -833,29 +848,6 @@
             "↻ 0"
           ],
           "photos": []
-        },
-        {
-          "text": "RT @ValsAI: DeepSeek v4 is now the #1 open-weight model on our Vibe Code Benchmark, and it’s not close.\n\nIt leaves the #2 (Kimi K2.6) in th…",
-          "url": "https://x.com/oxpsats/status/2047573109147148566",
-          "meta": [
-            "04-24 07:07",
-            "♥ 0",
-            "↻ 257"
-          ],
-          "photos": []
-        },
-        {
-          "text": "当日线级别的不同周期均线被价格带密集起来后，然后价格再度站上这些均线时……\n\n看看去年第二季度同样这个结构的华虹半导体和中芯国发生了什么。 https://t.co/FMwSy6xWKt",
-          "url": "https://x.com/oxpsats/status/2047548274392092874",
-          "meta": [
-            "04-24 05:28",
-            "♥ 1",
-            "↻ 0"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGpaTN7bgAAuY84.jpg",
-            "https://pbs.twimg.com/media/HGpaTN1acAAXfYJ.jpg"
-          ]
         }
       ]
     },
@@ -868,8 +860,8 @@
           "url": "https://x.com/fupenglondon/status/2047956405752389821",
           "meta": [
             "04-25 08:30",
-            "♥ 69",
-            "↻ 7"
+            "♥ 83",
+            "↻ 11"
           ],
           "photos": []
         },
@@ -878,8 +870,8 @@
           "url": "https://x.com/fupenglondon/status/2047956227267920218",
           "meta": [
             "04-25 08:29",
-            "♥ 56",
-            "↻ 2"
+            "♥ 58",
+            "↻ 3"
           ],
           "photos": []
         },
@@ -888,8 +880,8 @@
           "url": "https://x.com/fupenglondon/status/2047912612038664382",
           "meta": [
             "04-25 05:36",
-            "♥ 554",
-            "↻ 29"
+            "♥ 591",
+            "↻ 32"
           ],
           "photos": []
         },
@@ -898,7 +890,7 @@
           "url": "https://x.com/fupenglondon/status/2047888660469838182",
           "meta": [
             "04-25 04:01",
-            "♥ 63",
+            "♥ 65",
             "↻ 6"
           ],
           "photos": []
@@ -908,7 +900,7 @@
           "url": "https://x.com/fupenglondon/status/2047887375570022684",
           "meta": [
             "04-25 03:56",
-            "♥ 94",
+            "♥ 97",
             "↻ 8"
           ],
           "photos": []
@@ -918,7 +910,7 @@
           "url": "https://x.com/fupenglondon/status/2044291404663505268",
           "meta": [
             "04-15 05:47",
-            "♥ 26",
+            "♥ 27",
             "↻ 6"
           ],
           "photos": []
@@ -928,7 +920,7 @@
           "url": "https://x.com/fupenglondon/status/2044291274728190451",
           "meta": [
             "04-15 05:46",
-            "♥ 17",
+            "♥ 18",
             "↻ 4"
           ],
           "photos": []
@@ -948,8 +940,8 @@
           "url": "https://x.com/fupenglondon/status/2044290644999582034",
           "meta": [
             "04-15 05:44",
-            "♥ 9",
-            "↻ 1"
+            "♥ 10",
+            "↻ 2"
           ],
           "photos": []
         },
@@ -958,7 +950,7 @@
           "url": "https://x.com/fupenglondon/status/2032263684085727680",
           "meta": [
             "03-13 01:13",
-            "♥ 96",
+            "♥ 97",
             "↻ 10"
           ],
           "photos": [
@@ -972,12 +964,32 @@
       "username": "@jukan05",
       "tweets": [
         {
+          "text": "RT @sssjeffpu: # Abstract of HH (2317 TT) &amp; FII (601138 CH) note\n\nHon Hai (2317 TT) \n\nRating: Buy, unchanged TP NT$300\n\nCatalyst # 1: Stron…",
+          "url": "https://x.com/jukan05/status/2048557996788367454",
+          "meta": [
+            "04-27 00:21",
+            "♥ 0",
+            "↻ 3"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Is this real? Did Nanya actually enter the Vera Rubin LPDDR5 supply chain?\n\nhttps://t.co/00z07zJaKH",
+          "url": "https://x.com/jukan05/status/2048538528708182253",
+          "meta": [
+            "04-26 23:03",
+            "♥ 85",
+            "↻ 4"
+          ],
+          "photos": []
+        },
+        {
           "text": "Hyundai Motor Securities Korea:\n\n* Rubin Ultra is highly likely to be delayed to 1H 2028.\n* According to the Taiwanese supply chain, Google TPU shipments are expected to reach 2.8 million units in 2025, 3.6 million units in 2026, and 4.0 million units in 2027.\n* CPO consists of",
           "url": "https://x.com/jukan05/status/2048422825698918527",
           "meta": [
             "04-26 15:23",
-            "♥ 129",
-            "↻ 11"
+            "♥ 219",
+            "↻ 22"
           ],
           "photos": []
         },
@@ -986,8 +998,8 @@
           "url": "https://x.com/jukan05/status/2048384909010755789",
           "meta": [
             "04-26 12:53",
-            "♥ 181",
-            "↻ 10"
+            "♥ 212",
+            "↻ 11"
           ],
           "photos": []
         },
@@ -996,8 +1008,8 @@
           "url": "https://x.com/jukan05/status/2048353795974025616",
           "meta": [
             "04-26 10:49",
-            "♥ 684",
-            "↻ 19"
+            "♥ 846",
+            "↻ 22"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG02xozbEAAJEcD.png"
@@ -1009,7 +1021,7 @@
           "meta": [
             "04-26 08:57",
             "♥ 0",
-            "↻ 8"
+            "↻ 9"
           ],
           "photos": []
         },
@@ -1018,8 +1030,8 @@
           "url": "https://x.com/jukan05/status/2048296841297691096",
           "meta": [
             "04-26 07:03",
-            "♥ 435",
-            "↻ 31"
+            "♥ 522",
+            "↻ 38"
           ],
           "photos": []
         },
@@ -1028,8 +1040,8 @@
           "url": "https://x.com/jukan05/status/2048234037433770210",
           "meta": [
             "04-26 02:53",
-            "♥ 274",
-            "↻ 19"
+            "♥ 314",
+            "↻ 21"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HGzJxJrbQAAJSzB.png"
@@ -1040,8 +1052,8 @@
           "url": "https://x.com/jukan05/status/2048233256961876087",
           "meta": [
             "04-26 02:50",
-            "♥ 106",
-            "↻ 10"
+            "♥ 111",
+            "↻ 11"
           ],
           "photos": []
         },
@@ -1050,32 +1062,10 @@
           "url": "https://x.com/jukan05/status/2048214917128552710",
           "meta": [
             "04-26 01:37",
-            "♥ 305",
-            "↻ 21"
+            "♥ 346",
+            "↻ 23"
           ],
           "photos": []
-        },
-        {
-          "text": "The impact of the memory supercycle on Korea:\n\n- Korea’s GDP delivered a positive surprise, growing 1.7% QoQ — the fastest pace in five and a half years.\n\n- Admissions cutoffs have risen for university-industry partnership programs that offer direct employment at Samsung",
-          "url": "https://x.com/jukan05/status/2048204526981878081",
-          "meta": [
-            "04-26 00:56",
-            "♥ 406",
-            "↻ 28"
-          ],
-          "photos": []
-        },
-        {
-          "text": "Jeff Pu is someone I really look up to. It feels amazing to be followed by someone like him.\n\nWelcome to X!! https://t.co/Zh3o1M9wV9",
-          "url": "https://x.com/jukan05/status/2048163863611535382",
-          "meta": [
-            "04-25 22:14",
-            "♥ 575",
-            "↻ 15"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGyJ1eHaMAAE0En.jpg"
-          ]
         }
       ]
     },
@@ -1084,11 +1074,21 @@
       "username": "@trendforce",
       "tweets": [
         {
+          "text": "RT @NEWS2082680: 🚀 #China’s Ziener is pushing #GaN further. Its 8-inch GaN-on-sapphire device now reaches just 50μm thickness, cutting ther…",
+          "url": "https://x.com/trendforce/status/2048564929788305460",
+          "meta": [
+            "04-27 00:48",
+            "♥ 0",
+            "↻ 1"
+          ],
+          "photos": []
+        },
+        {
           "text": "Additional Investment in Onyang Campus... Expanding Back-End Processing Too.\n📰 News Source: https://t.co/EhlZJMQVhu https://t.co/Vs9K3HbdL3",
           "url": "https://x.com/trendforce/status/2048432092149625219",
           "meta": [
             "04-26 16:00",
-            "♥ 3",
+            "♥ 4",
             "↻ 1"
           ],
           "photos": []
@@ -1098,7 +1098,7 @@
           "url": "https://x.com/trendforce/status/2047661938155360696",
           "meta": [
             "04-24 13:00",
-            "♥ 44",
+            "♥ 45",
             "↻ 10"
           ],
           "photos": []
@@ -1176,16 +1176,6 @@
             "↻ 5"
           ],
           "photos": []
-        },
-        {
-          "text": "RT @NEWS2082680: 📢 Is #LPDDR6 just around the corner? JEDEC has previewed upcoming enhancements, including a narrower per-die interface, me…",
-          "url": "https://x.com/trendforce/status/2047479496027320449",
-          "meta": [
-            "04-24 00:55",
-            "♥ 0",
-            "↻ 1"
-          ],
-          "photos": []
         }
       ]
     },
@@ -1198,8 +1188,8 @@
           "url": "https://x.com/LinQingV/status/2048430096558821585",
           "meta": [
             "04-26 15:52",
-            "♥ 22",
-            "↻ 3"
+            "♥ 56",
+            "↻ 10"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG18S0LaAAEZg_q.jpg"
@@ -1210,8 +1200,8 @@
           "url": "https://x.com/LinQingV/status/2048424171005501676",
           "meta": [
             "04-26 15:29",
-            "♥ 31",
-            "↻ 7"
+            "♥ 50",
+            "↻ 12"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG127EIbMAAAxcb.png"
@@ -1222,8 +1212,8 @@
           "url": "https://x.com/LinQingV/status/2048406011866947979",
           "meta": [
             "04-26 14:17",
-            "♥ 95",
-            "↻ 26"
+            "♥ 204",
+            "↻ 65"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG1mJFkbUAA6OmY.jpg"
@@ -1234,8 +1224,8 @@
           "url": "https://x.com/LinQingV/status/2048376511133331691",
           "meta": [
             "04-26 12:19",
-            "♥ 66",
-            "↻ 8"
+            "♥ 90",
+            "↻ 10"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG1LkWibsAANMuh.jpg"
@@ -1258,7 +1248,7 @@
           "url": "https://x.com/LinQingV/status/2048010256438137218",
           "meta": [
             "04-25 12:04",
-            "♥ 95",
+            "♥ 98",
             "↻ 16"
           ],
           "photos": []
@@ -1268,7 +1258,7 @@
           "url": "https://x.com/LinQingV/status/2047957712705843468",
           "meta": [
             "04-25 08:35",
-            "♥ 172",
+            "♥ 174",
             "↻ 23"
           ],
           "photos": []
@@ -1288,8 +1278,8 @@
           "url": "https://x.com/LinQingV/status/2047894933936521308",
           "meta": [
             "04-25 04:26",
-            "♥ 77",
-            "↻ 15"
+            "♥ 84",
+            "↻ 16"
           ],
           "photos": []
         },
