@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-26 21:52:57",
+  "updated_at": "2026-04-28 09:54:36",
   "users": [
     {
       "user_id": "3727797950",
@@ -59,6 +59,22 @@
   ],
   "posts": [
     {
+      "id": "386156328",
+      "user_id": "3727797950",
+      "screen_name": "草帽路飞",
+      "created_at": "2026-04-28 08:21:23",
+      "title": "",
+      "text": "从那种动物开始具有了意识？",
+      "quoted_text": "",
+      "like_count": 9,
+      "reply_count": 4,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/3727797950/386156328",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
       "id": "385809544",
       "user_id": "3727797950",
       "screen_name": "草帽路飞",
@@ -66,8 +82,8 @@
       "title": "",
       "text": "今天相同的投资问题提问豆包和DS，豆包的回答繁琐且有核心数据计算错误，DS的回答简洁且计算准确；简直一个学渣的作业又臭又长，一个学霸的作业简洁明了。一目了然。\n\n大概举例：问题是某海外煤矿的并购过程及价格。\n\nDS的回答简洁，分三笔收购，时间顺序和价格都是对的；\n\n豆包的回答至少比DS多了一倍的数字，且回答内容基本讲的就是同一回事。但是在第一次的收购价格问题上出现了核心错误。因为收购价格是印尼盾，豆包换算成人民币时小数点算错了，最终价格是180万，实际真实交易价格是18万，DS计算准确。\n\n因为验证的时间太短，我不确定DS是否有幻觉问题，如果DS没有幻觉，那豆包基本可以废弃了。",
       "quoted_text": "",
-      "like_count": 56,
-      "reply_count": 33,
+      "like_count": 62,
+      "reply_count": 39,
       "retweet_count": 0,
       "url": "https://xueqiu.com/3727797950/385809544",
       "is_article": false,
@@ -151,7 +167,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3727797950/382885517",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -167,7 +183,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3727797950/382802888",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -199,7 +215,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3727797950/381663912",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -215,7 +231,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3727797950/381007594",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -279,7 +295,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3727797950/378717869",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -311,7 +327,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3727797950/378019721",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -343,21 +359,117 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3727797950/377374722",
       "is_article": false,
+      "is_reply": true,
+      "pic_count": 0
+    },
+    {
+      "id": "386095825",
+      "user_id": "3577914518",
+      "screen_name": "不疾而速H-宁波",
+      "created_at": "2026-04-27 21:05:06",
+      "title": "",
+      "text": "$Poet Technologies(POET)$ \n这是来自美利加的杀猪盘啊。",
+      "quoted_text": "",
+      "like_count": 8,
+      "reply_count": 6,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/3577914518/386095825",
+      "is_article": false,
       "is_reply": false,
       "pic_count": 0
     },
     {
-      "id": "377369895",
-      "user_id": "3727797950",
-      "screen_name": "草帽路飞",
-      "created_at": "2026-02-28 13:41:12",
+      "id": "386074518",
+      "user_id": "3577914518",
+      "screen_name": "不疾而速H-宁波",
+      "created_at": "2026-04-27 19:53:16",
       "title": "",
-      "text": "哎，这事还没完结咋办？一年了。赢了官司，申请执行，系统一直显示：审理中。\n但是一直联系不到执行法官（固话一直打不通，不接）。打12345，12345说不归他们管。\n打12368，12368转接至审理法院，审理法院接线回复说：法官可能不在办公室，或出门执行工作了，需要我继续打法官电话，可是我已经连续打了3个多月了，一直没人接。累了。",
-      "quoted_text": "@草帽路飞: 缺失的契约精神",
-      "like_count": 66,
-      "reply_count": 80,
-      "retweet_count": 1,
-      "url": "https://xueqiu.com/3727797950/377369895",
+      "text": "$东山精密(SZ002384)$ \n\n东山的一季报不错，基本落在了预告的上限，仔细看相比去年还计提了1亿多一点的资产减值，多了1亿的汇兑损失，如果没有这两样利润将会更加出色。收入和利润的增长源自增加了索尔思光电和GMD集团纳入合并范围， 尤其是索尔斯的光模块业务收入比去年翻倍，去年一季度索尔斯收入9.7亿，利润1.6亿，今年Q1收入大约20亿，利润在5亿左右。从Q2开始收入和利润将环比大幅度增长，开启超级成长期。",
+      "quoted_text": "",
+      "like_count": 40,
+      "reply_count": 1,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/3577914518/386074518",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "386041705",
+      "user_id": "3577914518",
+      "screen_name": "不疾而速H-宁波",
+      "created_at": "2026-04-27 17:43:26",
+      "title": "",
+      "text": "$三美股份(SH603379)$ \n1季度制冷剂同比去年少卖了2000吨，利润增长了1亿，如果加上这2000吨的话，应该是有6亿的。继续维持今年30亿利润的预期，这个估值还是稳稳的幸福。",
+      "quoted_text": "",
+      "like_count": 34,
+      "reply_count": 5,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/3577914518/386041705",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "386035383",
+      "user_id": "3577914518",
+      "screen_name": "不疾而速H-宁波",
+      "created_at": "2026-04-27 17:17:45",
+      "title": "",
+      "text": "我刚刚关注了股票$曦智科技-P(01879)$，当前价 HK$--。",
+      "quoted_text": "",
+      "like_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/3577914518/386035383",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "386034484",
+      "user_id": "3577914518",
+      "screen_name": "不疾而速H-宁波",
+      "created_at": "2026-04-27 17:13:59",
+      "title": "",
+      "text": "我刚刚关注了股票$禾赛(HSAI)$，当前价 $22.34。",
+      "quoted_text": "",
+      "like_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/3577914518/386034484",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "385966264",
+      "user_id": "3577914518",
+      "screen_name": "不疾而速H-宁波",
+      "created_at": "2026-04-27 11:58:00",
+      "title": "",
+      "text": "我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。",
+      "quoted_text": "",
+      "like_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/3577914518/385966264",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "385884252",
+      "user_id": "3577914518",
+      "screen_name": "不疾而速H-宁波",
+      "created_at": "2026-04-26 20:42:09",
+      "title": "",
+      "text": "我刚刚关注了股票$Arm Holdings(ARM)$，当前价 $234.81。",
+      "quoted_text": "",
+      "like_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/3577914518/385884252",
       "is_article": false,
       "is_reply": false,
       "pic_count": 0
@@ -418,7 +530,7 @@
       "title": "",
       "text": "$东山精密(SZ002384)$ 东山王，左手光模块（光芯片），右手PCB, 超级成长AI硬件股。",
       "quoted_text": "",
-      "like_count": 18,
+      "like_count": 19,
       "reply_count": 0,
       "retweet_count": 0,
       "url": "https://xueqiu.com/3577914518/385685493",
@@ -450,13 +562,13 @@
       "title": "",
       "text": "参加了苏州光通信大会，苏州不愧为中国光都，涌现出一大批极其优秀的企业，中级旭创，东山，华光等等。AI带来的光互连的巨大机会，非常震撼。未来几年的机会隐藏在光互连升级的roadmap中，可插拔光模块，LPO，NPO，XPO，CPO，OCS。信息量摄取过大，需要回去好好体会领悟。",
       "quoted_text": "",
-      "like_count": 14,
+      "like_count": 15,
       "reply_count": 0,
       "retweet_count": 0,
       "url": "https://xueqiu.com/3577914518/385570472",
       "is_article": false,
       "is_reply": false,
-      "pic_count": 1
+      "pic_count": 6
     },
     {
       "id": "385557255",
@@ -571,118 +683,6 @@
       "pic_count": 0
     },
     {
-      "id": "384147805",
-      "user_id": "3577914518",
-      "screen_name": "不疾而速H-宁波",
-      "created_at": "2026-04-16 11:14:15",
-      "title": "",
-      "text": "我刚刚关注了股票$英特尔(INTC)$，当前价 $64.94。",
-      "quoted_text": "",
-      "like_count": 0,
-      "reply_count": 0,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/3577914518/384147805",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "384012699",
-      "user_id": "3577914518",
-      "screen_name": "不疾而速H-宁波",
-      "created_at": "2026-04-15 15:40:44",
-      "title": "",
-      "text": "我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。",
-      "quoted_text": "",
-      "like_count": 1,
-      "reply_count": 0,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/3577914518/384012699",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "383776660",
-      "user_id": "3577914518",
-      "screen_name": "不疾而速H-宁波",
-      "created_at": "2026-04-14 11:28:48",
-      "title": "",
-      "text": "$泡泡玛特(09992)$ \n\n很敬佩段总@大道无形我有型 ， 不过如果这次他没有买正股而仅仅卖低位put（比如130的价），多半是买不到了。他将错失一个未来有可能变得非常伟大的公司。虽然也收获了一些权利金，但是和找到一个伟大公司并伴随他成长所获得的成就感来说，这点收益可以忽略不计。",
-      "quoted_text": "",
-      "like_count": 29,
-      "reply_count": 107,
-      "retweet_count": 1,
-      "url": "https://xueqiu.com/3577914518/383776660",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "383752141",
-      "user_id": "3577914518",
-      "screen_name": "不疾而速H-宁波",
-      "created_at": "2026-04-14 10:07:39",
-      "title": "",
-      "text": "我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。",
-      "quoted_text": "",
-      "like_count": 4,
-      "reply_count": 0,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/3577914518/383752141",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "383519144",
-      "user_id": "3577914518",
-      "screen_name": "不疾而速H-宁波",
-      "created_at": "2026-04-12 11:12:17",
-      "title": "",
-      "text": "$Nebius Group(NBIS)$ \n\nNBIS 收购 AI21's 的目的是完成其战略拼图。\n\n AI21's 专注于3B小模型Jamba，其在专门的垂直领域中表现不错，但是在大模型竞赛排名中落后，而目前5000万美金的ARR对应20-30亿美金的收购价似乎是笔很不划算的买卖。\n\n那NBIS为啥铁了心要买这个英伟达欲购而未成的以色列初创AI公司呢？\n\n1. 人才\n\nAI21's 的创始人Amnon Shashua，就是大名鼎鼎的mobileye的创始人，这个公司有超过200个顶级AI人才，想想小扎为了顶级人才可以开出几亿美元的支票，就知道现在的科技圈最珍贵的就是人才。\n\n2. 产品\n\n除了大模型以外，公司有一个特别的产品Maestro，Maestro是一种与模型无关的编排，它基于成本/延迟/准确性约束，在Claude、GPT、Gemini、Jamba等之间路由企业工作流。简单的说，就是他不拘泥于哪一款大模型，而是自动为客户寻找最合适的大模型。看一下TOKEN FACTORY现在已经有很多的模型可选，未来会更多。\n\n当NBIS把定制硬件+全栈自研软件+Maestro自动大模型调用等结合在一起整合成的TOKEN FACTORY，可以为各个垂直细分行业提供从训练到推理的各类AI应用需求的一站式服务。这才是挑战那些传统的云巨头谷歌亚马逊的底气和实力。",
-      "quoted_text": "",
-      "like_count": 13,
-      "reply_count": 7,
-      "retweet_count": 1,
-      "url": "https://xueqiu.com/3577914518/383519144",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 1
-    },
-    {
-      "id": "383428961",
-      "user_id": "3577914518",
-      "screen_name": "不疾而速H-宁波",
-      "created_at": "2026-04-10 21:46:39",
-      "title": "",
-      "text": "$Nebius Group(NBIS)$ 时隔半年终于新高了",
-      "quoted_text": "",
-      "like_count": 18,
-      "reply_count": 6,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/3577914518/383428961",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "383393049",
-      "user_id": "3577914518",
-      "screen_name": "不疾而速H-宁波",
-      "created_at": "2026-04-10 17:06:37",
-      "title": "",
-      "text": "我刚刚关注了股票$焦作万方(SZ000612)$，当前价 ¥12.28。",
-      "quoted_text": "",
-      "like_count": 2,
-      "reply_count": 0,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/3577914518/383393049",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
       "id": "376302603",
       "user_id": "2146830436",
       "screen_name": "简单就好",
@@ -695,7 +695,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/2146830436/376302603",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -759,7 +759,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/2146830436/368443040",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -807,7 +807,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/2146830436/365575151",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -887,7 +887,7 @@
       "retweet_count": 1,
       "url": "https://xueqiu.com/2146830436/351796946",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -951,7 +951,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/2146830436/344984331",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -967,7 +967,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/2146830436/344968862",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -983,7 +983,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/2146830436/344968073",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1031,7 +1031,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/4930371170/382669249",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1047,7 +1047,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/4930371170/382669119",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1063,7 +1063,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/4930371170/382669060",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1095,7 +1095,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/4930371170/381895258",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1143,7 +1143,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/4930371170/377777823",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1159,7 +1159,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/4930371170/377666965",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1191,7 +1191,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/4930371170/375706312",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1207,7 +1207,7 @@
       "retweet_count": 3,
       "url": "https://xueqiu.com/4930371170/375131927",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1223,7 +1223,7 @@
       "retweet_count": 1,
       "url": "https://xueqiu.com/4930371170/375121009",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1287,7 +1287,7 @@
       "retweet_count": 1,
       "url": "https://xueqiu.com/4930371170/374307098",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1323,6 +1323,70 @@
       "pic_count": 0
     },
     {
+      "id": "386007294",
+      "user_id": "4111857140",
+      "screen_name": "山行",
+      "created_at": "2026-04-27 15:17:52",
+      "title": "",
+      "text": "为啥我的持仓，业绩都很好，就是股价这么弱。",
+      "quoted_text": "@摸啊摸: 2026年1—3月份，全国规模以上工业企业实现利润总额16960.4亿元，同比增长15.5%。",
+      "like_count": 197,
+      "reply_count": 60,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/4111857140/386007294",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "385971617",
+      "user_id": "4111857140",
+      "screen_name": "山行",
+      "created_at": "2026-04-27 12:37:05",
+      "title": "",
+      "text": "外国人不爱扩产",
+      "quoted_text": "@NT_CLANNAD: 三星10a DRAM：首个亚10nm级DRAM的里程碑\n根据The Elec和The Bell的联合报道，三星已于2026年3月成功流片10a DRAM晶圆，并在器件特性测试中确认了工作芯片。这是全球首个实现的亚10nm级DRAM技术。\n三星的10a DRAM开发路线图如下：\n2026年：完成10a DRAM技术开发\n2027年：进行全面的质量和可靠性测试\n2028年：转移至量产线，实现大规模生产\n值得注意的是，三星计划将4F²单元和VCT结构连续应用于三代节点——10a、10b和10c，预计这三代技术将覆盖2028年至2032年的市场需求。从10d节点开始，三星将正式转向3D DRAM架构。\n10a节点被认为是第一个真正意义上的亚10nm级DRAM工艺，行业专家估计其实际电路线宽在9.5-9.7nm范围内。与上一代1d DRAM相比，10a DRAM预计将带来：\n单元密度提升30-50%：在相同的芯片面积上可以集成更多的存储单元\n在DRAM领域，三星的主要竞争对手SK海力士也在积极研发4F²和VCT技术，但采取了不同的技术路线。\n与三星在10a节点就全面采用4F²和VCT技术不同，SK海力士计划在10b节点才引入这些新技术。这意味着SK海力士的4F² DRAM量产时间将比三星晚约1-2年。\n4F² VCT架构的一个关键要求是外围电路晶圆需要使用先进的逻辑工艺制造。然而，SK海力士没有自己的12英寸逻辑生产线，这成为了其技术发展的主要瓶颈。\n目前，SK海力士正在权衡两种方案：\n自建逻辑生产线：需要巨额投资和较长的建设周期\n外包给外部代工厂：主要依赖台积电，但会受到产能限制\n这一短板可能会影响SK海力士在下一代DRAM技术竞争中的地位。\n从10d节点开始，三星将正式转向3D DRAM架构。3D DRAM通过垂直堆叠多个存储单元层，可以在不缩小单元尺寸的情况下大幅提高密度，被认为是DRAM技术的未来发展方向。\n目前，三星、SK海力士和美光都在积极研发3D DRAM技术，但距离大规模量产还有至少5-6年的时间。4F²和VCT技术的出现，为行业争取了宝贵的时间窗口。",
+      "like_count": 89,
+      "reply_count": 3,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/4111857140/385971617",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "385883359",
+      "user_id": "4111857140",
+      "screen_name": "山行",
+      "created_at": "2026-04-26 20:30:43",
+      "title": "",
+      "text": "记得去年下半年，主流声音是应该轮到下游应用，比如软件、互联网公司",
+      "quoted_text": "@中年电竞选手: Opus 4.6 发布之后,对用过 coding agent 改造业务流程的人来说,有种段永平说的\"看到远处有一头大象\"的感觉——不用仔细算,一眼就明白。\n\n区别是，当时的大象就是苹果，现在的比较像一个大浪，具体谁能在浪尖上一直保持很难判断。\n\n过去 3 年，最简单的投资AI 的方法就是 做多 $半导体ETF-VanEck Vectors(SMH)$ ，NVDA 在 25 年开始就没跑赢SMH了。完成了价值发现的 AVGO 和 TSM 也没有显著的跑赢。\n\n市场经过了几轮炒瓶颈，芯片>服务器>核电>电力>光和存储>CPU\n\n赢家不一定会一直赢，输家会不会过两天就变成了赢家比如最近的 INTC AMD和 ARM\n\n但是在看到海浪就要打过来的时候，因为变化太快无法看清终局就不参与，非常浪费这个而美好的时代。SMH是最简单的参与方法。",
+      "like_count": 113,
+      "reply_count": 23,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/4111857140/385883359",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "385882888",
+      "user_id": "4111857140",
+      "screen_name": "山行",
+      "created_at": "2026-04-26 20:24:01",
+      "title": "",
+      "text": "搞储能的公司（我不是说锂电池，材料那些）业绩差异挺大的。",
+      "quoted_text": "",
+      "like_count": 139,
+      "reply_count": 17,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/4111857140/385882888",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
       "id": "385863246",
       "user_id": "4111857140",
       "screen_name": "山行",
@@ -1330,9 +1394,9 @@
       "title": "",
       "text": "存储历史上，亏损的年份可不少。铜金一哥上市二十年来，就没有亏损年份。这里差距还是挺大的。",
       "quoted_text": "@老曾阿牛: AI改变很多行业的供求，从周期需求变成结构需求，铜是一个，存储也是。",
-      "like_count": 68,
-      "reply_count": 5,
-      "retweet_count": 1,
+      "like_count": 168,
+      "reply_count": 16,
+      "retweet_count": 3,
       "url": "https://xueqiu.com/4111857140/385863246",
       "is_article": false,
       "is_reply": false,
@@ -1346,9 +1410,9 @@
       "title": "",
       "text": "都是瞎扯，厄尔尼诺这还没有来呢。真的有厄尔尼诺来，那发生极端天气事件概率增大的也是次年，1931,1954,1983,1998，都是发生在次年，而不是当年。",
       "quoted_text": "@CCTD中国煤炭市场网: 厄尔尼诺来袭，5月煤价看涨！",
-      "like_count": 43,
-      "reply_count": 9,
-      "retweet_count": 0,
+      "like_count": 128,
+      "reply_count": 16,
+      "retweet_count": 2,
       "url": "https://xueqiu.com/4111857140/385862583",
       "is_article": false,
       "is_reply": false,
@@ -1362,7 +1426,7 @@
       "title": "",
       "text": "是不是晚了点？",
       "quoted_text": "@郭荆璞: 想不到有一天我还会翻出铌酸锂相关的论文来看",
-      "like_count": 40,
+      "like_count": 68,
       "reply_count": 1,
       "retweet_count": 0,
       "url": "https://xueqiu.com/4111857140/385847610",
@@ -1378,12 +1442,12 @@
       "title": "",
       "text": "回复@产业驱动博弈: 高价时候，采选品位低的这种说法，在a股市场谬误流传了很多年。实际上生产中，你看有哪个矿厂，可以采矿时候，尤其是地下矿，不是按照固定的路线往前进，顺着矿脉采，还能跳过去采高品位的或者低品位的。 至于选矿，哪个矿厂为了不同时期价格，设计硕大的堆场。 从经济性角度，那当然是高价时候，产的多卖的多，更划算。哪个傻叉资本家，会这个想不到。//@产业驱动博弈:回复@szsa-大鳄鱼:哈哈，不懂为啥被删，还好我有转发，无所谓了",
       "quoted_text": "@山行: 美股第一家纯黄金公司年报，黄金产量同比负增长 15.6%，大a 纯黄金第一家负增长6.8%，今晚出来的第二家负增长10.71%。你们说，黄金价格这么好，都已经连续涨两三年了，这产量咋都是负的。。。他们不想挣钱吗？",
-      "like_count": 155,
+      "like_count": 167,
       "reply_count": 74,
       "retweet_count": 1,
       "url": "https://xueqiu.com/4111857140/385710124",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1394,7 +1458,7 @@
       "title": "",
       "text": "美股第一家纯黄金公司年报，黄金产量同比负增长 15.6%，大a 纯黄金第一家负增长6.8%，今晚出来的第二家负增长10.71%。你们说，黄金价格这么好，都已经连续涨两三年了，这产量咋都是负的。。。他们不想挣钱吗？",
       "quoted_text": "",
-      "like_count": 201,
+      "like_count": 215,
       "reply_count": 188,
       "retweet_count": 18,
       "url": "https://xueqiu.com/4111857140/385699255",
@@ -1410,12 +1474,12 @@
       "title": "",
       "text": "回复@投资有护城河的企业: 耍猴！个单一专门APP，还强品牌，又不用要追求日活月活，非要搞成抢，两次没抢到就没兴趣了或者忘了，换成预定、预约模式，客户体验就好得多。（本人不持有，没有多空观点）//@投资有护城河的企业:i茅台天天抢不到，还以为供不应求呢",
       "quoted_text": "@贵州茅台(SH600519): 贵州茅台：贵州茅台2026年第一季度报告 网页链接",
-      "like_count": 186,
+      "like_count": 195,
       "reply_count": 36,
       "retweet_count": 3,
       "url": "https://xueqiu.com/4111857140/385690972",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1426,9 +1490,9 @@
       "title": "",
       "text": "昨天自由港下调了年度产量指引（一般都是嘴硬，到三、四季度下调的多），这是继KK之后，全球第二大铜金 矿Grasberg复产不及预期。这意味着，2026年全球的铜产量负增长是大概率的。反过来，我们看GEV在手一千多亿美金的订单，ABB昨天公布的订单增速，台积电，宁德时代，亿纬锂能、金田、这些公司的飞速增长，背后的交汇点就是铜。这也回答了，为什么战争没结束，甚至僵持时间超预期，油价在高位，铜已经完全是首付失地。",
       "quoted_text": "@山行: 铜价回到开战之前了，说好的担心经济咣当，还是供需格局确实偏紧",
-      "like_count": 220,
-      "reply_count": 36,
-      "retweet_count": 6,
+      "like_count": 228,
+      "reply_count": 37,
+      "retweet_count": 7,
       "url": "https://xueqiu.com/4111857140/385601087",
       "is_article": false,
       "is_reply": false,
@@ -1442,7 +1506,7 @@
       "title": "",
       "text": "期货与现实",
       "quoted_text": "",
-      "like_count": 142,
+      "like_count": 144,
       "reply_count": 14,
       "retweet_count": 0,
       "url": "https://xueqiu.com/4111857140/385350890",
@@ -1458,7 +1522,7 @@
       "title": "",
       "text": "没有光，如死，想死。",
       "quoted_text": "",
-      "like_count": 266,
+      "like_count": 268,
       "reply_count": 77,
       "retweet_count": 1,
       "url": "https://xueqiu.com/4111857140/385117455",
@@ -1474,7 +1538,7 @@
       "title": "",
       "text": "碳酸锂销售成本3.9万，又是二流资源做出一流的效益。。。。有些老板自己吭哧吭哧的搞，不让卖股权当小股东，舒服还效益更好。",
       "quoted_text": "",
-      "like_count": 187,
+      "like_count": 189,
       "reply_count": 22,
       "retweet_count": 0,
       "url": "https://xueqiu.com/4111857140/384993128",
@@ -1490,7 +1554,7 @@
       "title": "",
       "text": "区位布局不行。。。现在是风光，不远的将来是储能，绝对苦逼一大片",
       "quoted_text": "@风电财经: 中节能风电近3年真实的弃风限电情况如下，弃风限电已经是影响业绩最主要的因素！\n\n2023 年至 2025 年，公司因“弃风限电”所损失的潜在发电量分别占当期全部可发电量（即实际发电量与“弃风限电”损失电量之和）的9.00%、10.33%、17.41%。$节能风电(SH601016)$",
-      "like_count": 97,
+      "like_count": 100,
       "reply_count": 13,
       "retweet_count": 3,
       "url": "https://xueqiu.com/4111857140/384984681",
@@ -1506,7 +1570,7 @@
       "title": "",
       "text": "相较于金、铜冶炼加工，碳酸锂冶炼加工企业并没有那么严格的套保，所以在价格上涨和下跌的时候，分别会短期加大、减少其业绩，造成更大的波动。而且，冶炼最终会变成普通且微利的加工制造业，好处是创造就业和充气GDP。",
       "quoted_text": "",
-      "like_count": 171,
+      "like_count": 174,
       "reply_count": 13,
       "retweet_count": 2,
       "url": "https://xueqiu.com/4111857140/384861929",
@@ -1522,7 +1586,7 @@
       "title": "",
       "text": "每次轮到财报集中发布期，当天上交所总要比深交所晚很多，这么多年了，不知道是不打算改进还是很难，改进不了。 港交所终于要t+1了，不过得2027年下半年，唉。",
       "quoted_text": "",
-      "like_count": 222,
+      "like_count": 224,
       "reply_count": 21,
       "retweet_count": 0,
       "url": "https://xueqiu.com/4111857140/384767452",
@@ -1538,7 +1602,7 @@
       "title": "",
       "text": "统计一下，各位投资生涯中，经常听到的一句话“老外不扩产”或者“老外扩产慢”，最后的结局是啥？ 我记得一个是做石英坩埚的石英砂（美国），一个是锂电铜箔的阴极辊（日本），最后都跌成狗了。欢迎添加更多正面负面例子",
       "quoted_text": "",
-      "like_count": 201,
+      "like_count": 203,
       "reply_count": 61,
       "retweet_count": 3,
       "url": "https://xueqiu.com/4111857140/384667257",
@@ -1554,7 +1618,7 @@
       "title": "",
       "text": "中国每年能体检一次的家庭，不知道有没有1.225亿。",
       "quoted_text": "@思之嘉录: 先说结论：\n“25%家庭一年一瓶茅台”，从收入看未来能实现，但从产能看永远实现不了。\n一、先算数字（2026年）\n全国家庭：约 4.9亿户\n25% = 1.225亿户\n每户1瓶/年 = 1.225亿瓶 53度飞天\n二、收入层面：未来能达到\n现在真正稳定自购茅台的家庭：约 800万～1200万户（占比1.6%～2.4%）\n能买得起但没买的家庭（年收入≥20万、中产+富裕）：\n目前约 7000万～8000万户（占比≈15%））\n2035～2040年中等收入群体扩大，25%（1.2亿户）具备消费能力完全可能\n只要：\n收入继续增长\n茅台官方渠道（i茅台等）普及、真货好买\n家庭把茅台当节日/仪式感消费（一年1瓶）\n25%家庭“有条件买”是可以实现的。\n三、产能层面：永远达不到\n茅台基酒要 5年 才能变成商品酒\n2024年茅台酒（含飞天、精品等）成品酒≈1.2亿瓶\n2028年“十四五”技改满产后：\n基酒产能约 7.6万吨/年\n成品酒（53度飞天为主）≈ 1.8亿瓶/年\n1.8亿瓶 ÷ 1瓶/户/年 = 最多覆盖 1.8亿户\n1.8亿户 ÷ 未来约6亿家庭 = 仅 30%\n还要扣掉：商务、礼品、收藏、出口、囤货\n真正到家庭年度自饮：很难超过1亿瓶/年\n所以：25%家庭（1.2亿户）一年一瓶，产能永远不够。\n四、大道原话的真实意思\n他不是说“未来真会有25%家庭喝”，而是说：\n中国潜在需求极大，只要一小部分家庭开始自饮，茅台就会长期供不应求。\n总结\n收入侧：能实现（2035年后大概率达到）\n供给侧：不可能实现（产能硬上限）\n一句话记：\n未来会有越来越多家庭买得起、买得到茅台，但永远做不到四分之一家庭每年都能买到一瓶。",
-      "like_count": 85,
+      "like_count": 87,
       "reply_count": 12,
       "retweet_count": 2,
       "url": "https://xueqiu.com/4111857140/384645478",
@@ -1570,74 +1634,10 @@
       "title": "",
       "text": "不是买卡也不是囤光模块。（本人无持仓，没有看空看多观点）",
       "quoted_text": "@智谱(02513): 智谱 公告及通告 - [须予披露的交易] 须予披露交易 收购目标公司100%股权 网页链接",
-      "like_count": 134,
+      "like_count": 136,
       "reply_count": 12,
       "retweet_count": 3,
       "url": "https://xueqiu.com/4111857140/384601812",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "384571371",
-      "user_id": "4111857140",
-      "screen_name": "山行",
-      "created_at": "2026-04-18 22:09:29",
-      "title": "",
-      "text": "十年老玩家，咋现在才买？",
-      "quoted_text": "@多伦多的大道信徒: 泡泡玛特：一个十年老玩家的买入逻辑",
-      "like_count": 214,
-      "reply_count": 59,
-      "retweet_count": 4,
-      "url": "https://xueqiu.com/4111857140/384571371",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "384559142",
-      "user_id": "4111857140",
-      "screen_name": "山行",
-      "created_at": "2026-04-18 18:53:03",
-      "title": "",
-      "text": "为啥？",
-      "quoted_text": "@7X24快讯: 美国4月17日当周石油钻井总数报410口，前值411口；天然气钻井数125口，前值127口。",
-      "like_count": 104,
-      "reply_count": 18,
-      "retweet_count": 1,
-      "url": "https://xueqiu.com/4111857140/384559142",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "384282752",
-      "user_id": "4111857140",
-      "screen_name": "山行",
-      "created_at": "2026-04-16 23:09:08",
-      "title": "",
-      "text": "回复@啊蒜鸟蒜鸟: 别整天矿啊有色啊，我就不能多一嘴AI啥的吗。顶多被人说嫉妒，说不懂//@啊蒜鸟蒜鸟:回复@山行:瞎猜什么呢，锂矿才是短期内供需失衡景气度高的那个，只有极个别的锂成本非常低的可以一看。而铝只要国外没便宜电价国内铝企天然就有外面跨不过的竞争壁垒。",
-      "quoted_text": "@山行: 暂时的两三年供需失衡和真正的壁垒，可见时间内的巨大差距，给的估值应该大不同。不针对任何具体公司，只是自我提醒和安慰。",
-      "like_count": 122,
-      "reply_count": 3,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/4111857140/384282752",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "384272584",
-      "user_id": "4111857140",
-      "screen_name": "山行",
-      "created_at": "2026-04-16 22:01:44",
-      "title": "",
-      "text": "暂时的两三年供需失衡和真正的壁垒，可见时间内的巨大差距，给的估值应该大不同。不针对任何具体公司，只是自我提醒和安慰。",
-      "quoted_text": "",
-      "like_count": 239,
-      "reply_count": 48,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/4111857140/384272584",
       "is_article": false,
       "is_reply": false,
       "pic_count": 0
@@ -1655,7 +1655,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3338834427/384835019",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1671,7 +1671,7 @@
       "retweet_count": 1,
       "url": "https://xueqiu.com/3338834427/384835009",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1682,8 +1682,8 @@
       "title": "谋生型工作和兴趣型工作",
       "text": "",
       "quoted_text": "",
-      "like_count": 973,
-      "reply_count": 362,
+      "like_count": 980,
+      "reply_count": 364,
       "retweet_count": 109,
       "url": "https://xueqiu.com/3338834427/384775194",
       "is_article": true,
@@ -1719,7 +1719,7 @@
       "retweet_count": 2,
       "url": "https://xueqiu.com/3338834427/383027759",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1778,7 +1778,7 @@
       "title": "美国真正的问题",
       "text": "",
       "quoted_text": "",
-      "like_count": 734,
+      "like_count": 735,
       "reply_count": 120,
       "retweet_count": 42,
       "url": "https://xueqiu.com/3338834427/377615788",
@@ -1799,7 +1799,7 @@
       "retweet_count": 2,
       "url": "https://xueqiu.com/3338834427/377518439",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1826,12 +1826,12 @@
       "title": "",
       "text": "回复@韭菲特漂流记: 华总，可以。\n重资产行业，要回避资产价格下行的趋势，原因有二。\n一个是，重资产一般杠杆率很高，60%-95%（比如绿电房地产），资产价格下行，这意味着资产表，股东价值迅速缩小趋向归零。\n另一个是，资产价格下行，一般是供给已经远远大于需求，这意味着竞争惨烈，现金流和利润表表也会迅速变差。//@韭菲特漂流记:李药师以前跟我说过一个观点。要回避原本资产不断折价的行业。 打个比方，原本绿电装机2元一瓦，后来1.5元一瓦，现在1元一瓦。现在占到便宜的同时也就意味着原本资产都在贬值。\n那次之后，我把手上所有的华润龙源协和之类的全部砍光了。",
       "quoted_text": "@协合新能源(00182): 协合新能源 公告及通告 - [盈利警告 / 内幕消息] 盈利警告 网页链接",
-      "like_count": 393,
+      "like_count": 394,
       "reply_count": 49,
       "retweet_count": 14,
       "url": "https://xueqiu.com/3338834427/376571714",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1863,7 +1863,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/3338834427/374791192",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1927,7 +1927,7 @@
       "retweet_count": 1,
       "url": "https://xueqiu.com/3338834427/373392617",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -1954,10 +1954,58 @@
       "title": "",
       "text": "呃，一年半前的文章，对金价的基本预测。 第一阶段金价目标基本实现，每盎司5000美元左右，黄金价值不低于美国国债。 第二阶段是，每年新增矿产金不低于新增美债，大约每盎司1.6万美元。",
       "quoted_text": "@李药师2003: 从美国国债简要推测金价的空间",
-      "like_count": 414,
+      "like_count": 415,
       "reply_count": 87,
       "retweet_count": 9,
       "url": "https://xueqiu.com/3338834427/372792441",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "386110514",
+      "user_id": "9129183937",
+      "screen_name": "石木见",
+      "created_at": "2026-04-27 21:55:56",
+      "title": "",
+      "text": "$江波龙(SZ301308)$ 全年净利润200亿有望，目前动态PE也就8倍左右。",
+      "quoted_text": "",
+      "like_count": 45,
+      "reply_count": 11,
+      "retweet_count": 1,
+      "url": "https://xueqiu.com/9129183937/386110514",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "386110097",
+      "user_id": "9129183937",
+      "screen_name": "石木见",
+      "created_at": "2026-04-27 21:54:43",
+      "title": "",
+      "text": "净利润38.62亿，扣非39.42亿，应该说和我预期的40亿比较接近，当然更希望是能去到50亿，财务费用增加了1个多亿，主要用来增加库存了，库存来到了180亿，这个是非常亮眼的，如果算上财务费用，基本也就是40亿的利润了。当然每个人都希望净利润越高越好，比如如果能达到50亿就更好了。但是一个好的公司不只是看一个季度的利润，还要看接下来的发展，总之这个季报我还是比较满意的。25年年报库存为117亿，26年Q1为180亿，直接增加了63亿。还有个亮点就是合同负债的大幅度增加，25年年报为3.54亿，26年Q1直接提升到了22亿，这说明下游需求非常旺盛，下游客户需要预付定金才能拿到货了。\n如果满分100分，我给打个85分吧，对这个一季报。$江波龙(SZ301308)$",
+      "quoted_text": "@江波龙(SZ301308): 江波龙：2026年一季度报告 网页链接",
+      "like_count": 39,
+      "reply_count": 4,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/9129183937/386110097",
+      "is_article": false,
+      "is_reply": false,
+      "pic_count": 0
+    },
+    {
+      "id": "386003495",
+      "user_id": "9129183937",
+      "screen_name": "石木见",
+      "created_at": "2026-04-27 15:05:50",
+      "title": "",
+      "text": "恭喜龙哥$江波龙(SZ301308)$ 创历史新高，今晚的一季报就要揭牌了",
+      "quoted_text": "",
+      "like_count": 40,
+      "reply_count": 13,
+      "retweet_count": 0,
+      "url": "https://xueqiu.com/9129183937/386003495",
       "is_article": false,
       "is_reply": false,
       "pic_count": 0
@@ -1986,7 +2034,7 @@
       "title": "",
       "text": "光模块打出了好样，光模块有三雄，存储模组有三傻，今天的光模块就是明天的存储模组。$佰维存储(SH688525)$ $德明利(SZ001309)$ $江波龙(SZ301308)$",
       "quoted_text": "",
-      "like_count": 38,
+      "like_count": 39,
       "reply_count": 15,
       "retweet_count": 0,
       "url": "https://xueqiu.com/9129183937/384361592",
@@ -2007,7 +2055,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9129183937/384091959",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2023,7 +2071,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9129183937/384091950",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2039,7 +2087,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9129183937/384091942",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2151,7 +2199,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9129183937/383677230",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2167,7 +2215,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9129183937/383671510",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2183,7 +2231,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9129183937/383671479",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2199,7 +2247,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9129183937/383658528",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2235,54 +2283,6 @@
       "pic_count": 0
     },
     {
-      "id": "383351990",
-      "user_id": "9129183937",
-      "screen_name": "石木见",
-      "created_at": "2026-04-10 13:43:34",
-      "title": "",
-      "text": "目前应该还是低估的吧，真的越长越便宜$德明利(SZ001309)$",
-      "quoted_text": "@石木见: $德明利(SZ001309)$ 博弈太厉害了，不过我怎么看到是机会呢，市场上总要有勇士吧。",
-      "like_count": 31,
-      "reply_count": 14,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/9129183937/383351990",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "383349675",
-      "user_id": "9129183937",
-      "screen_name": "石木见",
-      "created_at": "2026-04-10 13:33:38",
-      "title": "",
-      "text": "恭喜$德明利(SZ001309)$ 进入千亿俱乐部",
-      "quoted_text": "",
-      "like_count": 37,
-      "reply_count": 7,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/9129183937/383349675",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
-      "id": "383312801",
-      "user_id": "9129183937",
-      "screen_name": "石木见",
-      "created_at": "2026-04-10 10:32:04",
-      "title": "",
-      "text": "$德明利(SZ001309)$ 大跌的时候有人恐慌，以为是历史大顶了，真的懂逻辑的就知道这是用盆接财富的机会",
-      "quoted_text": "@石木见: 德民利：利润断层还是周期见顶？",
-      "like_count": 33,
-      "reply_count": 10,
-      "retweet_count": 0,
-      "url": "https://xueqiu.com/9129183937/383312801",
-      "is_article": false,
-      "is_reply": false,
-      "pic_count": 0
-    },
-    {
       "id": "376864239",
       "user_id": "1818342785",
       "screen_name": "lamlap123",
@@ -2290,7 +2290,7 @@
       "title": "【保持开放的心，长远十分看好智谱等大模型公司】",
       "text": "",
       "quoted_text": "",
-      "like_count": 194,
+      "like_count": 195,
       "reply_count": 43,
       "retweet_count": 1,
       "url": "https://xueqiu.com/1818342785/376864239",
@@ -2306,8 +2306,8 @@
       "title": "股市，实战技巧一 (看穿假像）",
       "text": "",
       "quoted_text": "",
-      "like_count": 295,
-      "reply_count": 54,
+      "like_count": 303,
+      "reply_count": 55,
       "retweet_count": 3,
       "url": "https://xueqiu.com/1818342785/384691738",
       "is_article": true,
@@ -2354,12 +2354,12 @@
       "title": "",
       "text": "回复@大儒辩经: 恒科中的成份股如腾讯和部份软件股受智谱和minimax等的Aⅰ大模型影响，预期某些功能和业务将来会被取代或威胁。但是智谱升幅又过急，因此个人认为恒生科技指数中硬件中芯、华虹等投资价值相对较高。例如智谱训练採用用全国产芯片，基本是由中芯提供。（叫我七兄可以了）//@大儒辩经:回复@lamlap123:7公新年好，最近恒科是怎么了，怎么这么弱啊",
       "quoted_text": "@lamlap123: 【春晚看到机器人的表演】",
-      "like_count": 93,
+      "like_count": 94,
       "reply_count": 12,
       "retweet_count": 0,
       "url": "https://xueqiu.com/1818342785/376853779",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2370,7 +2370,7 @@
       "title": "【春晚看到机器人的表演】",
       "text": "",
       "quoted_text": "",
-      "like_count": 254,
+      "like_count": 255,
       "reply_count": 111,
       "retweet_count": 0,
       "url": "https://xueqiu.com/1818342785/376597064",
@@ -2392,7 +2392,7 @@
       "url": "https://xueqiu.com/9324667748/385081721",
       "is_article": true,
       "is_reply": false,
-      "pic_count": 1
+      "pic_count": 2
     },
     {
       "id": "384481472",
@@ -2455,7 +2455,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9324667748/383166450",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2487,7 +2487,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9324667748/382323363",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2503,7 +2503,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9324667748/382310523",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2520,7 +2520,7 @@
       "url": "https://xueqiu.com/9324667748/382279386",
       "is_article": false,
       "is_reply": false,
-      "pic_count": 0
+      "pic_count": 1
     },
     {
       "id": "380528148",
@@ -2567,7 +2567,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9324667748/379704487",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2583,7 +2583,7 @@
       "retweet_count": 1,
       "url": "https://xueqiu.com/9324667748/379443048",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2599,7 +2599,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9324667748/378017021",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2615,7 +2615,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/9324667748/377658786",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -2690,7 +2690,7 @@
       "title": "",
       "text": "虽然闪迪nand的份额不是第一，但是闪迪的技术好像是第一？最高332层？如果财报再画一下hbf 的饼就好了。",
       "quoted_text": "",
-      "like_count": 4,
+      "like_count": 6,
       "reply_count": 6,
       "retweet_count": 0,
       "url": "https://xueqiu.com/2678435970/385798497",
@@ -2706,7 +2706,7 @@
       "title": "",
       "text": "我要选择相信AI吗",
       "quoted_text": "",
-      "like_count": 5,
+      "like_count": 6,
       "reply_count": 3,
       "retweet_count": 0,
       "url": "https://xueqiu.com/2678435970/385788004",
@@ -2723,7 +2723,7 @@
       "text": "两倍海力士换成dram",
       "quoted_text": "@夜间飞行家: 目前本人还在存储的这列车上，但是最近美股涨的实在太快了，叠加沃什五月中旬就任，不知道华尔街会不会给沃什一点压力，我准备五月初降低点杠杆，走一步看一步吧，目前的收益已经完全超出了本年度的预期了。",
       "like_count": 6,
-      "reply_count": 4,
+      "reply_count": 5,
       "retweet_count": 0,
       "url": "https://xueqiu.com/2678435970/385786834",
       "is_article": false,
@@ -2739,7 +2739,7 @@
       "text": "目前本人还在存储的这列车上，但是最近美股涨的实在太快了，叠加沃什五月中旬就任，不知道华尔街会不会给沃什一点压力，我准备五月初降低点杠杆，走一步看一步吧，目前的收益已经完全超出了本年度的预期了。",
       "quoted_text": "",
       "like_count": 10,
-      "reply_count": 12,
+      "reply_count": 13,
       "retweet_count": 1,
       "url": "https://xueqiu.com/2678435970/385786357",
       "is_article": false,
@@ -2786,7 +2786,7 @@
       "title": "",
       "text": "不要在我问这种问题，我觉得很搞笑的，你自己炒股对自己的股价负责，我说涨到1万，有意义吗？谁能跟你说个具体数字？今天俄罗斯乌克兰打仗，明天美国伊朗打仗，你炒股只是单向路径，从来不考虑其他因素对股价的扰动的吗？谁能给你准确给你未来股价具体数字？能说出来的，要么拉群卖课的，要么不负责任胡诌的。我记得你经常问这种问题，不要再问了！看着烦。//@高明的涨幅小动物园:夜大南方海力士准备拿到什么时候或者什么价位？",
       "quoted_text": "@夜间飞行家: $罗博特科(SZ300757)$ 看一下戴军去年的采访，不得不佩服他的眼光。并且看萝卜一步一步的发展，也说明公司对版图的布局越来越大。买一家公司，不是买他过去几年的营收，也不是买他靠着大树躺平发展，而是买他的成长性，买他未来的战略，买他经营者的全局思想。萝卜从光伏布局光电，始终围绕着光在前进，就像地球离不开太阳，人类离不开阳光一样。让我们相信光！",
-      "like_count": 10,
+      "like_count": 11,
       "reply_count": 1,
       "retweet_count": 0,
       "url": "https://xueqiu.com/2678435970/384647953",
@@ -2808,7 +2808,7 @@
       "url": "https://xueqiu.com/2678435970/384647911",
       "is_article": false,
       "is_reply": false,
-      "pic_count": 0
+      "pic_count": 1
     },
     {
       "id": "384622102",
@@ -2840,7 +2840,7 @@
       "url": "https://xueqiu.com/2678435970/384109183",
       "is_article": false,
       "is_reply": false,
-      "pic_count": 1
+      "pic_count": 2
     },
     {
       "id": "384091883",
@@ -3031,7 +3031,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/8895446470/378885421",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -3047,7 +3047,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/8895446470/378879238",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -3063,7 +3063,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/8895446470/378878690",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -3079,7 +3079,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/8895446470/378878585",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -3095,7 +3095,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/8895446470/378878556",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -3160,7 +3160,7 @@
       "url": "https://xueqiu.com/8895446470/334011818",
       "is_article": true,
       "is_reply": false,
-      "pic_count": 1
+      "pic_count": 7
     },
     {
       "id": "326333035",
@@ -3207,7 +3207,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/8895446470/321631327",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -3255,7 +3255,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/8895446470/316233580",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     },
     {
@@ -3271,7 +3271,7 @@
       "retweet_count": 0,
       "url": "https://xueqiu.com/8895446470/315610630",
       "is_article": false,
-      "is_reply": false,
+      "is_reply": true,
       "pic_count": 0
     }
   ]

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -14,6 +14,16 @@
     .nav a { border: 1px solid #30363d; border-radius: 6px; color: #c9d1d9; background: #0f141b; text-decoration: none; font-size: 13px; padding: 6px 10px; }
     .nav a:hover { border-color: #58a6ff; color: #fff; }
     .nav a.active { background: #238636; border-color: #2ea043; color: #fff; font-weight: 700; }
+    .theme-select { border: 1px solid #30363d; border-radius: 6px; background: #0f141b; color: #e6edf3; font-size: 13px; padding: 6px 10px; }
+    [data-theme="light"] body { background: #eef2f6; color: #24292f; }
+    [data-theme="light"] .topbar, [data-theme="light"] .nav, [data-theme="light"] .summary { background: #f7f9fb; border-color: #cfd7df; }
+    [data-theme="light"] .nav a { background: #ffffff; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .nav a.active { background: #e6f4ea; border-color: #2da44e; color: #1a7f37; }
+    [data-theme="light"] .theme-select { background: #ffffff; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .grid { background: #eef2f6; }
+    [data-theme="light"] .stock-card { background: #f7f9fb; border-color: #cfd7df; color: #24292f; }
+    [data-theme="light"] .analysis { background: #ffffff; color: #24292f; border-left-color: #8aa8c7; }
+    [data-theme="light"] .updated, [data-theme="light"] .sname, [data-theme="light"] .price-row, [data-theme="light"] .sum-label { color: #667085; }
     .summary { background: #161b22; border-bottom: 1px solid #21262d; padding: 12px 24px; display: flex; gap: 28px; flex-wrap: wrap; }
     .sum-item { display: flex; flex-direction: column; gap: 2px; }
     .sum-label { font-size: 11px; color: #8b949e; }
@@ -38,23 +48,12 @@
     .stock-card.down .analysis { border-left-color: #00c853; }
     .analysis { font-size: 13px; line-height: 1.7; color: #dbe7f3; background: #0d1117; border-radius: 6px; padding: 10px 12px; border-left: 3px solid #30363d; white-space: pre-wrap; word-break: break-word; }
     .no-alerts { grid-column: 1 / -1; text-align: center; padding: 80px 20px; color: #8b949e; font-size: 15px; }
-    .theme-select { border: 1px solid #30363d; border-radius: 6px; background: #0f141b; color: #e6edf3; font-size: 13px; padding: 6px 10px; }
-    [data-theme="light"] body { background: #eef2f6; color: #24292f; }
-    [data-theme="light"] .topbar, [data-theme="light"] .nav, [data-theme="light"] .summary { background: #f7f9fb; border-color: #cfd7df; }
-    [data-theme="light"] .nav a { background: #ffffff; border-color: #cfd7df; color: #24292f; }
-    [data-theme="light"] .nav a.active { background: #e6f4ea; border-color: #2da44e; color: #1a7f37; }
-    [data-theme="light"] .theme-select { background: #ffffff; border-color: #cfd7df; color: #24292f; }
-    [data-theme="light"] .board, [data-theme="light"] .grid { background: #eef2f6; }
-    [data-theme="light"] .cat-header, [data-theme="light"] .user-header, [data-theme="light"] .tweet-card, [data-theme="light"] .art-card, [data-theme="light"] .stock-card { background: #f7f9fb; border-color: #cfd7df; color: #24292f; }
-    [data-theme="light"] .art-title, [data-theme="light"] .tweet-text, [data-theme="light"] .ticker { color: #24292f; }
-    [data-theme="light"] .art-meta, [data-theme="light"] .art-summary, [data-theme="light"] .updated, [data-theme="light"] .username, [data-theme="light"] .tweet-meta, [data-theme="light"] .sname, [data-theme="light"] .price-row, [data-theme="light"] .sum-label { color: #667085; }
-    [data-theme="light"] .analysis { background: #ffffff; color: #24292f; border-left-color: #8aa8c7; }
   </style>
 </head>
 <body>
   <div class="topbar">
     <h1>📈 股价异动看板</h1>
-    <span class="updated">更新于 2026-04-26 17:11:16</span>
+    <span class="updated">更新于 2026-04-28 09:43:02</span>
     <select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select>
   </div>
   <div class="nav">
@@ -63,17 +62,17 @@
     <a href="x_feed.html">X 动态</a>
     <a class="active" href="stock_alerts.html">股价异动</a>
     <a href="xueqiu_user.html">雪球</a>
-    <a href="wechat.html">微信公众号</a>
+    <a href="wechat.html" target="_blank" rel="noopener">微信公众号</a>
     <a href="market_overview.html">市场总览</a>
   </div>
   <div class="summary">
     <div class="sum-item">
       <span class="sum-label">交易日期</span>
-      <span class="sum-value">2026-04-26</span>
+      <span class="sum-value">2026-04-28</span>
     </div>
     <div class="sum-item">
       <span class="sum-label">SPY 当日</span>
-      <span class="sum-value" style="color:#ff4d4f;">+0.77%</span>
+      <span class="sum-value" style="color:#ff4d4f;">+0.17%</span>
     </div>
     <div class="sum-item">
       <span class="sum-label">异动门槛</span>
@@ -85,7 +84,7 @@
     </div>
     <div class="sum-item">
       <span class="sum-label">异动数量</span>
-      <span class="sum-value">23 只</span>
+      <span class="sum-value">6 只</span>
     </div>
   </div>
   <div class="grid">
@@ -93,271 +92,79 @@
     <div class="stock-card up">
       <div class="stock-top">
         <div class="stock-id">
-          <span class="ticker">INTC</span>
-          <span class="sname">Intel</span>
+          <span class="ticker">SNDK</span>
+          <span class="sname">Sandisk</span>
         </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +23.60%</span>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +8.11%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$82.54</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$66.78</b></div>
-      <div class="analysis">4月26日INTC单日飙升23.6%，主要应是财报、业绩指引或重组/代工进展超预期，引发资金抢筹和空头回补。上方相关新闻仅反映市场当时在强化“Intel今年跑赢Nvidia”的补涨与估值修复叙事。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$1070.20</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$989.90</b></div>
+      <div class="analysis">SNDK 当日大涨，主要受两类消息催化：一是财报周临近，市场提前博弈 Q3 业绩与指引；二是分析师看多 Sandisk，上调预期并称其估值仍不贵。叠加纳指创新高、AI/半导体板块整体走强，带动股价单日拉升 8.1%。</div>
     </div>
     <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">ALB</span>
+          <span class="sname">Albemarle Corporation</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.95%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$199.53</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$188.33</b></div>
+      <div class="analysis">ALB当日大涨5.9%，主要受“锂价/锂需求叙事回暖”推动，市场重新评估其锂业务弹性与景气修复预期。所列新闻中，最相关的是对ALB“飙升的锂主题”的重估；其余多为无关或偏滞后的个股点评，并非核心催化。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">MU</span>
+          <span class="sname">Micron Technology</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.60%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$524.56</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$496.72</b></div>
+      <div class="analysis">MU当日大涨5.6%，主要受两重催化：一是市场延续AI乐观情绪，带动纳指、标普创新高，资金继续追捧存储/算力链；二是分析师看多Micron，称其仍“不贵”、股价还有约33%上行空间，强化了业绩与估值修复预期。</div>
+    </div>
+    <div class="stock-card down">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">DLTR</span>
+          <span class="sname">Dollar Tree</span>
+        </div>
+        <span class="pct-badge" style="color:#00c853;">▼ -5.54%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$98.00</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$103.75</b></div>
+      <div class="analysis">4月28日DLTR跌5.5%，主要受财报前谨慎情绪拖累。相关新闻聚焦“财报预期”、年内已跌20%后的再评估，以及税退季消费更偏向汽油等必需支出，市场担心其同店销售和利润承压，叠加折扣零售板块比较与分流，导致股价走弱。</div>
+    </div>
+    <div class="stock-card down">
       <div class="stock-top">
         <div class="stock-id">
           <span class="ticker">ARM</span>
           <span class="sname">Arm Holdings</span>
         </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +14.76%</span>
+        <span class="pct-badge" style="color:#00c853;">▼ -8.06%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$234.81</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$204.61</b></div>
-      <div class="analysis">ARM当日大涨14.8%，主因是公司发布/推进面向AI与数据中心的CPU新品，强化其在AI芯片链条中的成长预期；同时“AI芯片概念+强劲CPU需求”带动板块情绪升温，叠加媒体与市场乐观评价，资金集中追捧。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">AMD</span>
-          <span class="sname">Advanced Micro Devices</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +13.91%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$347.81</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$305.33</b></div>
-      <div class="analysis">AMD当日大涨13.9%，主因更可能是AI板块风险偏好回升与资金从高位龙头向次龙头轮动。上方新闻虽无AMD直接利好，但“科技股大轮动减弱、AI成长股受益”强化了市场对AMD AI GPU与数据中心业务加速追赶英伟达的预期。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">QCOM</span>
-          <span class="sname">Qualcomm</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +11.12%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$148.85</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$133.95</b></div>
-      <div class="analysis">QCOM 4月26日大涨11.1%，主要受半导体板块整体走强带动；同时，相关新闻强调其加码“边缘AI”初创投资、强化端侧AI成长叙事，并叠加稳定分红的防御属性，提升了市场对其增长与估值的预期。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">SNPS</span>
-          <span class="sname">Synopsys</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +9.62%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$500.82</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$456.85</b></div>
-      <div class="analysis">SNPS当日大涨，主要催化更可能来自基本面与预期共振：市场提前交易其季度业绩/指引预期；同时与TSMC合作推进AI芯片IP与EDA、以及与Atomera扩大GaN建模合作，强化了其在AI与先进制程中的增长想象，带动估值上修。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">SMCI</span>
-          <span class="sname">Supermicro</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +8.71%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$29.08</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$26.75</b></div>
-      <div class="analysis">SMCI当日大涨8.7%，主要受AI硬件板块整体走强带动：英伟达、AMD、英特尔等芯片股上涨，提振市场对AI服务器需求预期。尽管甲骨文取消约14亿美元订单属利空，但资金更看重行业景气、公司后续订单与反弹动能，因此股价逆势走高。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">NEM</span>
-          <span class="sname">Newmont</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +8.68%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$120.70</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$111.06</b></div>
-      <div class="analysis">NEM当日大涨主要受财报催化：一季度营收和盈利显著超预期，受益于金价上涨带动业绩改善；同时市场将其视为优质长期金矿股，叠加资金追捧黄金板块，推动股价单日上涨8.7%。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">CEG</span>
-          <span class="sname">Constellation Energy</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +7.09%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$313.53</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$292.77</b></div>
-      <div class="analysis">CEG当日大涨，主要受利好舆论催化：市场聚焦其并购Calpine后规模与估值重塑，以及其核电/清洁电力在AI数据中心用电激增中的受益逻辑。多篇报道将其视为AI电力需求核心受益股，推动资金集中买入。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">BKR</span>
-          <span class="sname">Baker Hughes</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.90%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$68.94</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$64.49</b></div>
-      <div class="analysis">BKR 4月26日大涨6.9%，主要受Q1财报和业绩会提振：公司EBITDA表现强劲、IET订单创纪录，电力系统业务和资产组合调整带动业绩超预期。尽管中东扰动存在，市场仍看好其盈利韧性与后续增长。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">KLAC</span>
-          <span class="sname">KLA Corporation</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.59%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$1935.00</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$1815.43</b></div>
-      <div class="analysis">KLAC当日大涨6.6%，主要受两方面驱动：一是财报/业绩预期偏强，市场从Q3关键指标与业绩电话会中解读为基本面稳健；二是半导体板块整体走强，芯片股集体上涨带动估值扩张，KLAC作为设备龙头被资金追捧。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">NOW</span>
-          <span class="sname">ServiceNow</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.36%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$90.17</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$84.78</b></div>
-      <div class="analysis">NOW在2026-04-26上涨6.4%，主要受财报后利好驱动：市场对其业绩、指引或订单表现反应积极，多家分析师随即重申看好并上调/重设目标价。此前“AI替代担忧”压制股价，利空缓解后出现明显修复性反弹。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">SNDK</span>
-          <span class="sname">Sandisk</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.16%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$989.90</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$932.43</b></div>
-      <div class="analysis">SNDK当日大涨6.2%，主因是市场继续交易“供给短缺/存储涨价”逻辑。新闻中Cramer直言Sandisk走强因“shortages（短缺）”，强化了业绩与定价改善预期；同时新推出的2倍做空ETF也凸显其高波动和高关注度，进一步放大了资金博弈。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">TTD</span>
-          <span class="sname">Trade Desk (The)</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.97%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$23.97</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$22.62</b></div>
-      <div class="analysis">4月26日TTD大涨6%，主要受市场情绪改善带动；相关新闻中“跑赢大盘”与“可能出现空头回补/逼空”强化了交易热度。叠加前期股价低迷后估值修复预期，以及公司公布财报电话会日期，资金提前博弈业绩。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">CDNS</span>
-          <span class="sname">Cadence Design Systems</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.90%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$332.89</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$314.33</b></div>
-      <div class="analysis">CDNS当日大涨5.9%，主要受利好消息催化：公司与台积电深化合作，并发布Agentic AI/强化AI布局；同时与NVIDIA、Google等扩大联盟，提升市场对其中长期增长、估值重估及财报前预期。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">TEAM</span>
-          <span class="sname">Atlassian</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.81%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$71.55</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$67.62</b></div>
-      <div class="analysis">TEAM 4月26日涨5.8%，主要受利好催化：市场看好其与Google Cloud深化AI合作，提升企业客户黏性与长期增长预期；同时，围绕下季财报“有望再超预期”的乐观情绪也推升了买盘。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">EW</span>
-          <span class="sname">Edwards Lifesciences</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.56%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$84.15</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$79.72</b></div>
-      <div class="analysis">EW 4月26日大涨5.6%，主要受一季报提振：盈利超预期、营收基本符合预期，且公司在TAVR等核心业务销售强劲带动下上调2026年全年指引。业绩兑现叠加前景改善，推动市场上修估值。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$215.88</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$234.81</b></div>
+      <div class="analysis">ARM 4月28日跌8.1%，主因是芯片股整体承压：市场受伊朗战争忧虑及科技巨头财报前避险情绪影响，半导体板块普跌；同时ARM此前一年已大涨109%，高估值下更易遭遇获利回吐，放大跌幅。</div>
     </div>
     <div class="stock-card down">
       <div class="stock-top">
         <div class="stock-id">
-          <span class="ticker">EBAY</span>
-          <span class="sname">eBay Inc.</span>
+          <span class="ticker">DPZ</span>
+          <span class="sname">Domino's</span>
         </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -5.28%</span>
+        <span class="pct-badge" style="color:#00c853;">▼ -8.84%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$97.94</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$103.40</b></div>
-      <div class="analysis">EBAY当日下跌5.3%，更可能是此前股价连续走强后的估值回吐与获利了结所致。相关新闻多在讨论“强势上涨后是否仍值得买入”及估值压力，偏利空情绪；旧金山办公室关闭消息也强化了市场对其增长放缓、转向控费的担忧。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">BSX</span>
-          <span class="sname">Boston Scientific</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -5.51%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$62.07</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$65.69</b></div>
-      <div class="analysis">BSX当日大跌5.5%，主因是公司在Q1后下调全年指引，释放增长放缓与利润承压信号；随后华尔街分析师跟进下修预期/评级，放大市场担忧。虽有“回调后是否值得买入”的讨论，但短线情绪明显偏空。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">INSM</span>
-          <span class="sname">Insmed Incorporated</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -6.02%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$135.17</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$143.83</b></div>
-      <div class="analysis">4月26日INSM单日跌6%，从所给新闻看并无明确利空；相反还有Guggenheim上调目标价。更可能是此前涨幅较大后的获利回吐，叠加市场对Brinsupri、ENCORE进展预期分化，令生物科技高波动下股价承压。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">ERIE</span>
-          <span class="sname">Erie Indemnity</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -6.14%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$233.62</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$248.90</b></div>
-      <div class="analysis">ERIE当日大跌，核心应是财报后“利好不及预期”。虽Q1 2026业绩与财务表现总体稳健，但市场更在意增长放缓、承保/赔付压力或指引偏谨慎；叠加此前预期较高，出现典型“卖事实”回调。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">HCA</span>
-          <span class="sname">HCA Healthcare</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -8.77%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$432.46</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$474.03</b></div>
-      <div class="analysis">4月26日HCA股价大跌8.8%，主因是一季报后市场聚焦“量”的走弱：虽营收和盈利仍增长、业绩具韧性，但医院就诊/住院量偏软，令投资者担心后续增长放缓；叠加当日医疗板块整体走弱，跌幅被放大。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">CMCSA</span>
-          <span class="sname">Comcast</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -12.90%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$27.56</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$31.64</b></div>
-      <div class="analysis">CMCSA当日大跌12.9%，主因是财报后市场聚焦宽带业务承压：有线用户流失超预期，Charter疲弱也加剧市场对“有线时代走弱”、光纤与卫星竞争升级的担忧。尽管营收及无线/流媒体用户增长尚可，但不足以抵消核心宽带前景恶化。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">CHTR</span>
-          <span class="sname">Charter Communications</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -25.50%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$180.13</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$241.78</b></div>
-      <div class="analysis">CHTR 4月26日暴跌25.5%，主因是一季报与业绩电话会暴露宽带/有线用户流失加剧，市场担忧“有线时代见顶”。同时光纤与卫星竞争升温，令投资者下调其增长与盈利预期，触发抛售。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$335.30</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$367.83</b></div>
+      <div class="analysis">DPZ当日大跌8.8%，从所给新闻看，主要更像是宏观与情绪驱动，而非明确公司突发利空。标题提到“消费者信心跌至疫情级低位”，市场担忧可选消费走弱、外卖餐饮需求承压；伯克希尔持仓“失利”报道也放大了对DPZ基本面的负面情绪。</div>
     </div>
   </div>
-<script>
-const savedTheme = localStorage.getItem('dashboardTheme') || 'dark';
-document.documentElement.dataset.theme = savedTheme;
-const themeSelect = document.getElementById('themeSelect');
-if (themeSelect) {
-  themeSelect.value = savedTheme;
-  themeSelect.addEventListener('change', () => {
-    document.documentElement.dataset.theme = themeSelect.value;
-    localStorage.setItem('dashboardTheme', themeSelect.value);
-  });
-}
-</script>
+  <script>
+    const savedTheme = localStorage.getItem('dashboardTheme') || 'dark';
+    document.documentElement.dataset.theme = savedTheme;
+    const themeSelect = document.getElementById('themeSelect');
+    themeSelect.value = savedTheme;
+    themeSelect.addEventListener('change', () => {
+      document.documentElement.dataset.theme = themeSelect.value;
+      localStorage.setItem('dashboardTheme', themeSelect.value);
+    });
+  </script>
 </body>
 </html>
-
-
-

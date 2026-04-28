@@ -1,6 +1,1746 @@
 {
-  "updated_at": "2026-04-27 10:21:55",
+  "updated_at": "2026-04-28 11:09:57",
   "articles": [
+    {
+      "id": "3864835480-2247817608_8",
+      "title": "AI芯片，向LPDDR转移",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777339565,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/zHmVc0sFyDYsxCm39mHWxA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817608_7",
+      "title": "美光、闪迪，创历史新高",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777339565,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/MN9lPS9wtjVEpjuLWtjwOw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817608_6",
+      "title": "1nm，巨变",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777339565,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/KE3tvDfhZWOuIcw4EA4oCg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817608_5",
+      "title": "显卡，涨到天价了",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777339565,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/WIhwn4LgenfQjUJplo_vCA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817608_4",
+      "title": "台积电擘画下一代芯片",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777339565,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/7XzOYgjyeDrwt-YTz6O8Zg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817608_3",
+      "title": "射频前端高集成模组：半导体领域的珠峰挑战与技术破局",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777339565,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/AopC4DOScn8yCdnv73utdQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817608_2",
+      "title": "国产算力，兵分三路对抗CUDA",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777339565,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/_WtGzygZT644nIhOr5gQjg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817608_1",
+      "title": "一份专利，暴露OpenAI自研芯片",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777339565,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/tvdN28IyQSbRn6rKchBOYQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275067_2",
+      "title": "算力租赁涨价潮持续蔓延：产业链全景及A股核心标的解析",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777338734,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/6o3gfS4txeDGKIzSPHHjYw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275067_1",
+      "title": "OpenAI产业链全景：从云端到端侧的辐射",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777338734,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/pn7iJjeB8Fmuq3hCEj58wg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275062_2",
+      "title": "固态电池产业链全景梳理及A股核心标的解析",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777337813,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/3nrx9kWbAJlFlV9xZAxh8Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275062_1",
+      "title": "电子特气核心概念布局详细解析",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777337813,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/kdF40K5G1swCWpXv2zysbg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247486024_1",
+      "title": "半导体，国内最核心的15家龙头公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1777336200,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/bP_mearLB9Abt_h8llyTdw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681425_1",
+      "title": "邀请函丨中低频Alpha模型的探究与实践——信研讲堂·对话管理人(第七十四期)",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777335539,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/OMjnwngCpG6K48eXXR0pWQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3248830190-2247514020_1",
+      "title": "肖风 Vitalik 香港对话：如果变得中心化，以太坊就没有意义了",
+      "mp_name": "吴说Real",
+      "publish_time": 1777335120,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/kYFYNWeUg6qiSmw8GolZqg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484428_1",
+      "title": "英伟达正式新高",
+      "mp_name": "2030FY",
+      "publish_time": 1777334962,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/k3U0GznA4mu9Y2umEyqfRA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3593791963-2247484730_1",
+      "title": "光交换机中，波导方案可能是未来",
+      "mp_name": "人见人AI",
+      "publish_time": 1777334400,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/iCFquj372sl9GVfgaFb2IA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681424_6",
+      "title": "工企利润｜价格上行带动利润修复，上游成本传导仍有时滞（2026年3月）",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777334346,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/NEIN70kFgueJninySuFwkA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681424_5",
+      "title": "汽车｜我们看到了怎样的东南亚",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777334346,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/yCzUuXWmhw1MvamcFgWvaw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681424_4",
+      "title": "配置｜跃上三千亿，烈火炼真金",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777334346,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/dlMlAqT0_-Vt90qRAO4Lgg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681424_3",
+      "title": "晨报｜关注部分通行能力恢复",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777334346,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/OyLFO1lQhL4sWfdWLNbzIw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681424_2",
+      "title": "油运｜悲观预期充分释放，关注部分通行能力恢复",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777334346,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/7ejlUkI7GbhX0yo_mpzVbw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681424_1",
+      "title": "邀请函丨超越信念——你的期望如何塑造你的表现、韧性和成果",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777334346,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/FwztJ_4xVGapMpGsv3s9FA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3572653397-2247494575_1",
+      "title": "Nohshad看股债齐涨",
+      "mp_name": "智堡Mikko",
+      "publish_time": 1777331460,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/jLkJCK-HNxEcKTIZif6FBw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522058_1",
+      "title": "钠电池更新：国策加持，储能替代新方向",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/3-RJqyv0CJ5uW1rQGy65UA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754139_8",
+      "title": "【好未来（TAL.N）】控费增效成效显著，其他收入进一步增厚利润——FY26Q4业绩点评（陈彦彤/汪航宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/7iARfJBde77wrtb70Ex35g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754139_7",
+      "title": "【富安娜（002327.SZ）】25年业绩承压，26年一季度初现修复——2025年年报及2026年一季报点评（姜浩/孙未未/朱洁宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/P6H_DTWvc1zbMT_BQBkilw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754139_6",
+      "title": "【欧普照明（603515.SH）】智能照明夯实盈利，特别分红回报股东——2025年报和2026年一季报点评（洪吉然）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/c8D7vpiSS9g2Yhcj28aDxg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754139_5",
+      "title": "【沪光股份（605333.SH）】多因素短期扰动业绩，静待主业修复+新业务加速落地——2025年年报及2026年一季度业绩点评（倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/76IKWIyhGMXPVqtNrSqOEg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754139_4",
+      "title": "【安培龙（301413.SZ）】加大研发投入培育长期竞争力，六维力传感器进展顺利——2025年年报及2026年一季报点评（黄帅斌/庄晓波/陈奇凡）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/-MIZ229Wkz8Iw4qq1hk3eg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754139_3",
+      "title": "【东方电子（000682.SZ）】收入及业绩维持稳健增长，2025年中标规模突破115亿元——2025年年报点评（殷中枢/郝骞）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/fwrSncujXDJQwjnzx9kT2w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754139_2",
+      "title": "【凯伦股份（300715.SZ）】并购带动收入增长，减值压力收敛——2025年报点评（孙伟风/吴钰洁）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/JA032BD-pK2jrWiZ5CiYiw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754139_1",
+      "title": "【光大研究每日速递】20260428",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777330800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/uxGLBjE1bbupZM94Cm0i1g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491546_1",
+      "title": "TEL-TSV超薄晶圆处理关键：临时键合与解键合技术工艺、趋势和优化方向",
+      "mp_name": "芯球",
+      "publish_time": 1777327200,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/ddEZNbYou3locJR42xXDgg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504913_4",
+      "title": "当光有了形状，焦虑便有了出口",
+      "mp_name": "新材社",
+      "publish_time": 1777322947,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/j1WkTWKkijvNHnXoG0D1Cw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504913_3",
+      "title": "破28.00%世界纪录！天合THBC晶硅电池横空出世，光伏新材料登顶效率巅峰",
+      "mp_name": "新材社",
+      "publish_time": 1777322947,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/4OqLDIwXtEMdmrhWqMRL2g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504913_2",
+      "title": "太空算力全产业链核心公司全景研报【新材社】",
+      "mp_name": "新材社",
+      "publish_time": 1777322947,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/qvoCnMPvom9QjKg5yexxJw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504913_1",
+      "title": "科华恒盛(002335)：38年\"不间断\"，算电协同宇宙芯！",
+      "mp_name": "新材社",
+      "publish_time": 1777322947,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/gTtiUieuoiNM1P9dXQsu8Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3927476825-2247488641_1",
+      "title": "一些信息 0427",
+      "mp_name": "渾水調研",
+      "publish_time": 1777305498,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/SGIkJrf1-5prddkIFFp5-g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522060_4",
+      "title": "油轮船舶行业：地缘驱动大周期行情 0423",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777302000,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/M4o6w9RNQvtUr_LL6-O9ug",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522060_3",
+      "title": "光模块PCB需求旺盛，MSAP工艺渗透有望加速",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777302000,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/rCx_gZCtuCBO12m-tXVJHw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522060_2",
+      "title": "纪要：DeepSeekV4全解析 国产算力新突破",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777302000,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/-KOB2g1RfDUdK5yQTgVH9w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522060_1",
+      "title": "交流：从光通信到航天通信",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777302000,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/TORdAZ7V9PGii7HFVPaqiA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484419_1",
+      "title": "今晚几个业绩炸了",
+      "mp_name": "2030FY",
+      "publish_time": 1777300339,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/DgYeSg1lu0AmX9-YLRxyXA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3079356808-2652501071_1",
+      "title": "【招商电子】矽电股份：持续攻坚存储等领域大客户，光通信检测需求拉动成长",
+      "mp_name": "招商电子",
+      "publish_time": 1777296558,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/iDUYZp5QaVtqgDWLyvma7Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522057_1",
+      "title": "纪要：DeepSeekV4全解析 国产算力新突破",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777294800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/KXv7WruY8X-WaqTgRPgQ_Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817531_1",
+      "title": "高通股价暴涨，传与OpenAI合作研发芯片",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777293600,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/noLcz6TiRGJjlG1c_EkuSQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275048_2",
+      "title": "固态电池产业链全景梳理及A股核心标的解析",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777290375,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/VHf0y30T3gQhsw1lYnxwsg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275048_1",
+      "title": "剑桥科技净利暴增 确认光模块景气度",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777290375,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/D6fl5Cv6gKutxx8Z5iZsmQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484414_1",
+      "title": "北美券商又又又上调闪迪",
+      "mp_name": "2030FY",
+      "publish_time": 1777290316,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/zVOfgrouvrv8SpHGs4rLqA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485330_4",
+      "title": "联讯仪器(688808)：Q1预增翻倍！HBM测试放量前为什么值得跟踪？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777287959,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/aIMmu9kGsjHLPoFXLNvGzQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485330_3",
+      "title": "拓荆科技(688072)：94亿订单在手！混合键合放量前为什么先看它？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777287959,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/Qk2JVKo4zj2ULsgzJTOXAA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485330_2",
+      "title": "中微公司(688012)：刻蚀收入98亿！先进制程验证提速后为什么先看它？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777287959,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/2IjJKeSqFInhB7jAtdPpMQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485330_1",
+      "title": "国产半导体设备平台化扩张！刻蚀、薄膜沉积与先进封装谁先受益？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777287959,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/2BHbfiPAWYdRBO15haJsjA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3230844662-2247500826_1",
+      "title": "闪迪三周两次大幅上调 — 大摩 1100 美元叠加伯恩斯坦 1250 美元",
+      "mp_name": "404K",
+      "publish_time": 1777286017,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/K3b_hUN0L6Of0GuqQumWNg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2391566701-2257484009_1",
+      "title": "今天听了场大摩的宏观会，聊聊重点",
+      "mp_name": "亿薪",
+      "publish_time": 1777284900,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/mWN0QavR3KEutQk2OB370w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522056_1",
+      "title": "光模块PCB需求旺盛，MSAP工艺渗透有望加速",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777284000,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/RLg5iktGwmaqH9mIprmutw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817520_1",
+      "title": "PCB，价格暴涨",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777283047,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/wU5SyMj0Eet1bVSCkTlvnw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318683_8",
+      "title": "诺基亚2026Q1光网络营收增长20%并上调全年指引",
+      "mp_name": "光纤在线",
+      "publish_time": 1777282800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/mBG5TDjXPQWbr3idIxabpg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318683_7",
+      "title": "昊衡科技三维形状传感：测量长度与精度答疑",
+      "mp_name": "光纤在线",
+      "publish_time": 1777282800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/NqlY1M5ZA6YfVgVB-FAQQA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318683_6",
+      "title": "重磅喜讯 | 厦门彼格科技荣获「吴文俊人工智能科学技术奖」科技进步奖二等奖",
+      "mp_name": "光纤在线",
+      "publish_time": 1777282800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/RXvX4SlHdBLnXWq5-AVEkg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318683_5",
+      "title": "聚势九峰山，光启新质力｜光电子先导院双中试平台硬核登场",
+      "mp_name": "光纤在线",
+      "publish_time": 1777282800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/bzCQny-KY3UXYBkKOXNXFQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318683_4",
+      "title": "Marvell收购Polariton推进3.2T以上光学性能",
+      "mp_name": "光纤在线",
+      "publish_time": 1777282800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/svWAkU-te0fF22PCgOAiOQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318683_3",
+      "title": "光通信多家企业2025及2026 Q1财报盘点：AI算力驱动增长，传统业务承压",
+      "mp_name": "光纤在线",
+      "publish_time": 1777282800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/GWQz3cxlZRE4_4aFbtCNJQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318683_2",
+      "title": "深耕光电子与半导体材料二十载 Chemoptics 以定制化赋能全球高端半导体制造",
+      "mp_name": "光纤在线",
+      "publish_time": 1777282800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/tshj8qJByc57RCtOyEy-ow",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318683_1",
+      "title": "光驭万物，智算未来 —— 九维光子新一代OCS重构 AI 算力底座",
+      "mp_name": "光纤在线",
+      "publish_time": 1777282800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/fFwpmilv-GUjY5ZWMPtN1g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485654_1",
+      "title": "一枚指尖戒指，正在成为你的AI私人医生",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1777281420,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/wvTZ4piftqk1raOjLMqzsg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817512_1",
+      "title": "刚刚，Manus收购，被要求撤销",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777277362,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/Ejcm9tgNpYqfyxP9pvtb5Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3199196728-2247485283_1",
+      "title": "联想、NetApp、联想凌拓",
+      "mp_name": "闲聊服务器存储",
+      "publish_time": 1777273605,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/FlE_oc1eCT9rPf_5Zq9Vsg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817503_1",
+      "title": "扬杰公告，被欧盟制裁",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777269304,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/PtxQPTyEgzyuc7uctEEuFA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491531_1",
+      "title": "光模块行业深度报告分享",
+      "mp_name": "芯球",
+      "publish_time": 1777263450,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/PKW5IMhQ1nDX1rsJGMcU9A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3694245252-2247484033_1",
+      "title": "磷化铟产业链深度梳理：从矿山到AI光芯片的光速之旅！",
+      "mp_name": "洞见800G",
+      "publish_time": 1777262400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/3KcsdmC8GE5WbN6YbWpmcg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522036_1",
+      "title": "油轮船舶行业：地缘驱动大周期行情 0423",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777260600,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/fRZznSJMxUkLgjgWmljFgg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3230844662-2247500813_1",
+      "title": "CPU 文艺复兴拉动晶圆厂设备 1400 亿超级周期 — 应用材料、拉姆研究、阿斯麦、东京电子四龙头共振",
+      "mp_name": "404K",
+      "publish_time": 1777256549,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/Onv12cB8a9PdER1tWoXGgQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275040_3",
+      "title": "DeepSeek V4 发布 最收益核心公司梳理",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777255073,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/MmIFKg-c3C9-QPT1w3VD2w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275040_2",
+      "title": "固态电池产业链全景梳理及A股核心标的解析",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777255073,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/QP57wi4zgfiuy4zH08Pa0A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275040_1",
+      "title": "薄膜铌酸锂：光模块升级浪潮中的\"材料革命\"",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777255073,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/JeZtAm7n__9QAflvoaLXRQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484406_1",
+      "title": "LX光模块",
+      "mp_name": "2030FY",
+      "publish_time": 1777254760,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/F4NpEoqmsJt5y0FeTFkw1Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817495_8",
+      "title": "这些芯片，传大缺货",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777253846,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/Td82PRSoZRgE2z63c1qj1w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817495_7",
+      "title": "联发科拿下芯片大订单",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777253846,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/kEEog7mneMGYqiL2oRFYOA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817495_6",
+      "title": "SK海力士，发615万奖金？",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777253846,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/60IIYTOdawH7k-nLixSgcg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817495_5",
+      "title": "韩国芯片，面临挑战",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777253846,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/OX9KdinWqDQloE7cTrpe2w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817495_4",
+      "title": "功率芯片规模，超过650亿美元",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777253846,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/6e9NvRUFbsVeNADbKPutTA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817495_3",
+      "title": "CPU，卷土重来",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777253846,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/Ol15YFgmy3DoXgZMas-gFA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817495_2",
+      "title": "全球疯抢EUV光刻机",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777253846,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/rznabf9oGROUimmixo2RMw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817495_1",
+      "title": "这些晶圆厂，重回C位",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777253846,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/xpT831YCAvqvNKf11UOb5Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681352_1",
+      "title": "债市热评｜如何看待允许合格境外投资者参与国债期货交易？",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777250962,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/HnCjXj5dT4xJjUHdPyoRRw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3248830190-2247514013_1",
+      "title": "42 号文破局：中国资产 RWA 出海的合规路径与价值捕获",
+      "mp_name": "吴说Real",
+      "publish_time": 1777249860,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/cShNCqLyn9GoG_ZrVf8xiA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2391566701-2257484002_1",
+      "title": "华虹半导体深度分析：国产晶圆代工龙头的机遇与风险",
+      "mp_name": "亿薪",
+      "publish_time": 1777249800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/FPhtXSmDZAUM0IFhSovhXw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247486019_1",
+      "title": "英特尔，AI产业链全景及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1777249800,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/ntAPxe5ktxCVxZO0wXr3cQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484402_1",
+      "title": "摩尔的业绩",
+      "mp_name": "2030FY",
+      "publish_time": 1777249472,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/FRAB05C8FfmsLkmORYK9ew",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3593791963-2247484729_1",
+      "title": "光交换机的几种结构",
+      "mp_name": "人见人AI",
+      "publish_time": 1777248000,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/SyHJ6hJJOmR2N3jipGSXpQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681351_8",
+      "title": "一周宏观｜新一轮库存周期或已启动",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777247732,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/Rw938wkHwSYp1wJ9ueWpyA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681351_7",
+      "title": "债市启明｜“一路同信”之债见江苏无锡",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777247732,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/EaGsfhe1vm9dJXIyF0jn_w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681351_6",
+      "title": "债市启明｜如何看待资金面宽松与股债同向性",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777247732,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/pTh3QPpcpGanTJy6Laar5A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681351_5",
+      "title": "债市启明｜汇市聚焦：人民币国际化提速，筑实股债双牛根基",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777247732,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/x5374tryYbWnbq3FSzE2Xg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681351_4",
+      "title": "港股策略｜算力效率革命夯实恒科“业绩估值底”",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777247732,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/Dbl0ZM2Fyi-Fhk45CsiYlw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681351_3",
+      "title": "晨报｜硅片进入提价周期/DeepSeek V4详解",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777247732,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/1Rro1UI6ZfBFciRYfQkacw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681351_2",
+      "title": "计算机｜DeepSeek V4详解：降本提效，掘金Agent",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777247732,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/AU9cv_MSpoXPKfUZAiBDMw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681351_1",
+      "title": "新材料｜半导体硅片再迎上行周期，看好12英寸国产替代加速",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777247732,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/rwVH9QmWp7BkRxemSDVE_g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504895_3",
+      "title": "德业股份(605117)：北仑之王焊武帝，焊出光储铁王座",
+      "mp_name": "新材社",
+      "publish_time": 1777247464,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/FkwA2fSSF2QqQAQyR3AtGQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504895_2",
+      "title": "存储芯片黄金时代｜全产业链终极名单（2026.4.27）",
+      "mp_name": "新材社",
+      "publish_time": 1777247464,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/_kWxpT0LAJvr2wc0KfAWLg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504895_1",
+      "title": "8.6万亿重锤广东！2026石化新材料全谱系落地【新材社深度】",
+      "mp_name": "新材社",
+      "publish_time": 1777247464,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/554T_L3lYnzUAXSB1-zQxA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3572653397-2247494567_1",
+      "title": "没价值一样干",
+      "mp_name": "智堡Mikko",
+      "publish_time": 1777245840,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/6fhcj6YdbifiFNoaRN2YEA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504888_3",
+      "title": "德业股份(605117)：北仑之王焊武帝，焊出光储铁王座",
+      "mp_name": "新材社",
+      "publish_time": 1777245439,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/0ySkStnl3cF8LQp2ZAA8_A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504888_2",
+      "title": "存储芯片黄金时代｜全产业链终极名单（2026.4.27）",
+      "mp_name": "新材社",
+      "publish_time": 1777245439,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/DzYCOSoTCa-VRsk5JC03pQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504888_1",
+      "title": "8.6万亿重锤广东！2026石化新材料全谱系落地【新材社深度】",
+      "mp_name": "新材社",
+      "publish_time": 1777245439,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/l9ot9iXH-1aQLHjUB3siRg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754134_8",
+      "title": "【华特达因（000915.SZ）】行业承压不改经营韧性，深耕儿药和大健康稳增可期——2025年年报和2026年一季报点评（黄素青）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777244400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/gUHycuLMaAcq8Ogl3I43DQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754134_7",
+      "title": "【欧派家居（603833.SH）】行业深度调整，公司业绩表现承压，海外业务实现稳健增长——2025年报点评（姜浩/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777244400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/UTjg2wVzrfYOBB9OBm_W_g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754134_6",
+      "title": "【苏泊尔（002032.SZ）】内销韧性凸显，外销符合预期——2026年一季度业绩快报点评（洪吉然）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777244400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/yJO9zTS5LxPx8aGg9sinYA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754134_5",
+      "title": "【长城汽车（601633.SH、2333.HK）】业绩低于预期，高端化驱动产品+盈利结构优化——跟踪报告（倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777244400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/WZKGGdCn0wFqXuUNU84OZg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754134_4",
+      "title": "【科达制造（600499.SH）】碳酸锂涨价推动盈利高增，加码特福国际推动海外建材板块再升级 ——2026年一季报点评（孙伟风/吴钰洁）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777244400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/9E3BwgE-4iSqFTbpLSSCKg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754134_3",
+      "title": "【金石资源（603505.SH）】无水氟化氢量价齐升，25年业绩高增——2025年年报点评（赵乃迪/蔡嘉豪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777244400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/nKJ-pTqx3HOvkV4SsTMczw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754134_2",
+      "title": "【首钢股份（000959.SZ）】产品结构逐年高端化，业绩稳定性强于行业——2025年年报及2026年一季报点评（王招华/戴默/王秋琪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777244400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/wsNoDHTfJv7WfHdgFVDEAQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754134_1",
+      "title": "【光大研究每日速递】20260427",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777244400,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/9K-jbZ1oMMpFmdVZholk3g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491504_1",
+      "title": "CMP与混合键合：是天作之合还是棘手搭档？",
+      "mp_name": "芯球",
+      "publish_time": 1777241160,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/1Tq8XF5wqeerbj48pQI9_g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504887_3",
+      "title": "德业股份(605117)：北仑之王焊武帝，焊出光储铁王座",
+      "mp_name": "新材社",
+      "publish_time": 1777237260,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/zT9AAc72Uqav4PrrI781Vw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504887_2",
+      "title": "存储芯片，AI帝国的绞刑架｜全产业链终极名单（2026.4.27）",
+      "mp_name": "新材社",
+      "publish_time": 1777237260,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/lnHIgupe4jN7BRttPebwzA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504887_1",
+      "title": "8.6万亿重锤广东！2026石化新材料全谱系落地【新材社深度】",
+      "mp_name": "新材社",
+      "publish_time": 1777237260,
+      "date": "2026-04-27",
+      "url": "https://mp.weixin.qq.com/s/I1nY2_kwNxEfRjkwh93Gvw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3927476825-2247488633_1",
+      "title": "一些信息 0426",
+      "mp_name": "渾水調研",
+      "publish_time": 1777216945,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/I_6YvQe2zo82DmklAMBsfA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504878_1",
+      "title": "新材社——新材料产业权威观察与服务平台。",
+      "mp_name": "新材社",
+      "publish_time": 1777216643,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/r8xrp7Uyf3Ew7d7qVp5u7A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522035_4",
+      "title": "载体铜箔专家会 0421",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777215600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/Q4H-s-mHEc3_zjUkWl7r5A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522035_3",
+      "title": "算力 “铜” 道开启：超节点架构引爆高速连接新需求",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777215600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/Kfb4O7ozMPiLUPOCTvnzCA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522035_2",
+      "title": "国产算力突破，持续聚焦通胀线（上游）+ 扩产链（设备）+ 液冷",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777215600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/-wQvU3F2zrlDiScKTnXODQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522035_1",
+      "title": "纪要：双碳算力驱动液冷连接器高增",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777215600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/6-bHOVdnxHH2Ua8cUhjW5A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3708114207-2247518149_3",
+      "title": "【国联民生海外】腾讯控股（0700.HK）2026年一季报前瞻：AI基模产品加速布局，基本面稳健增长",
+      "mp_name": "声鸣海外 Global",
+      "publish_time": 1777210521,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/7xu7PKN5vW540kTVvf4gHQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3708114207-2247518149_2",
+      "title": "【国联民生海外 | 港股周报】DeepSeek V4发布，看好港股国产算力机会！",
+      "mp_name": "声鸣海外 Global",
+      "publish_time": 1777210521,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/W_6cgZuizPB_Q7YIXPJObg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3708114207-2247518149_1",
+      "title": "【国联民生海外 | 美股周报】OpenAI发布GPT-5.5，看好美股全算力链扩散机会",
+      "mp_name": "声鸣海外 Global",
+      "publish_time": 1777210521,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/w2E2Ms-PRCXSz7KOB2l6vA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2391566701-2257484001_1",
+      "title": "智谱比MiniMax市值高54%，凭啥？",
+      "mp_name": "亿薪",
+      "publish_time": 1777208484,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/CTnkV-5mf8HR6AhnKWiAdw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522034_1",
+      "title": "国产算力突破，持续聚焦通胀线（上游）+ 扩产链（设备）+ 液冷",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777208400,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/wXKUrJjKFBHZjSPg1_kG3g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318634_7",
+      "title": "虚位以待：#275  COB封装工艺工程师 Base资阳",
+      "mp_name": "光纤在线",
+      "publish_time": 1777206262,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/OJ9q6OZioTabfhEKwWZ3sg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318634_6",
+      "title": "虚位以待：#255 高速光模块硬件项目经理  Base武汉",
+      "mp_name": "光纤在线",
+      "publish_time": 1777206262,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/jLeBtkf7UdyymL1qRcdC4A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318634_5",
+      "title": "虚位以待：#259 COB工艺工程师  Base武汉",
+      "mp_name": "光纤在线",
+      "publish_time": 1777206262,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/BsGzxGz3yxRja63Cn3I3_Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318634_4",
+      "title": "虚位以待：#263  硅光器件销售   Base上海",
+      "mp_name": "光纤在线",
+      "publish_time": 1777206262,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/sdbshylQt48z_VKzGlKl_g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318634_3",
+      "title": "虚位以待：#270  结构工程师（ 光模块）  Base上海",
+      "mp_name": "光纤在线",
+      "publish_time": 1777206262,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/w28C2nAEiGtiM2MlEAWncg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318634_2",
+      "title": "虚位以待：#241 硅光芯片设计工程师 Base上海",
+      "mp_name": "光纤在线",
+      "publish_time": 1777206262,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/sVOTgyQ2cZvxqSgnBuU4bQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318634_1",
+      "title": "深圳市特发信息光网科技股份有限公司诚聘",
+      "mp_name": "光纤在线",
+      "publish_time": 1777206262,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/3LNELl1sVyXSZL243pSXjQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681278_1",
+      "title": "银行｜如何理解一季度机构持仓变化的逻辑？",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777198137,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/IWCMoQ5Mc8UqXx5y2b_JQw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522033_1",
+      "title": "算力 “铜” 道开启：超节点架构引爆高速连接新需求",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777197855,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/orm1anCFst1GDQqvkG4maA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485653_1",
+      "title": "孤独时代，AI成为新一代“心灵树洞”：我们用算法治愈彼此",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1777193760,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/Tqi35F5uib9StjV4g-VQ0A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485328_4",
+      "title": "中国西电(601179)：合同负债增22.3%，特高压高景气下为什么先看它？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777187872,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/ydLl0L6B4xIdUzw90wjcjw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485328_3",
+      "title": "思源电气(002028)：海外营收增86%，高压设备出海为什么先看它？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777187872,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/1ShPnukEWHCNox7dQ1zx6Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485328_2",
+      "title": "杰瑞股份(002353)：11亿美元北美订单落地，AI缺电主线下为什么先看它？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777187872,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/piXV9_HGeDva8HB7dGjWdA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485328_1",
+      "title": "GEV一季报超预期！北美缺电升温后，谁先吃到电力设备红利？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777187872,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/ODI1xD4Az3O-KNM8TWblIw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681277_1",
+      "title": "策略聚焦｜既非热门，又别对立",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777187291,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/e7oLLtXpsybIGzgJ-TAUNg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3230844662-2247500781_1",
+      "title": "英特尔 INTC 18A 复苏与台积电 TSM COUPE 同日共振 — Rubin 万亿订单、HBM4 量产、AI 算力链 4 月 25 日四节点全解",
+      "mp_name": "404K",
+      "publish_time": 1777185827,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/AQinayknZhhaLPTpcQTuow",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3694245252-2247484025_1",
+      "title": "多家券商罕见齐呼：磷化铟材料站上历史风口，国产替代正迎来窗口期！",
+      "mp_name": "洞见800G",
+      "publish_time": 1777176000,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/o3_f5Edi-jT2geM90jw2KA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275017_2",
+      "title": "一季报密集披露期，净利增速Top50",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777174410,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/xwboHn5gmfCJJr5o0wO-og",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275017_1",
+      "title": "算力租赁涨价潮持续蔓延：产业链全景及A股核心标的解析",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777174410,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/UnnnhVhd7ZiW5vkat2OO7g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522019_1",
+      "title": "载体铜箔专家会 0421",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777174200,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/16lvifGj1tQbkejTo3Th4w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3248830190-2247514015_1",
+      "title": "Coinbase 为什么是 USDC 背后最大的赢家？",
+      "mp_name": "吴说Real",
+      "publish_time": 1777165200,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/Izuhq2B1niDxOtZ-f023sw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817433_8",
+      "title": "英特尔的512核CPU，延期了",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777163539,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/BLJry1t8RLiQVD59XaBEyw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817433_7",
+      "title": "高通将重返数据中心CPU市场",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777163539,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/Gvx6cRjOT1WiSq8Bx8IJDg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817433_6",
+      "title": "台积电高得吓人的毛利背后",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777163539,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/6lPrRlDoWUUNNxxuTrG3jA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817433_5",
+      "title": "面板封装，最强科普",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777163539,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/ZDrvlrGf2nSlwH0mOG5Bfw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817433_4",
+      "title": "DRAM，首次突破10nm",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777163539,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/ZbPcj9T1YkhOb3umL_AiFw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817433_3",
+      "title": "光芯片的真正瓶颈",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777163539,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/UZiYRmkL7i_ZURJeImdFtA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817433_2",
+      "title": "2026北京车展｜佰维高带宽、高可靠车规级UFS 3.1发布！疾速向前，稳应万变",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777163539,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/RXQXiMrp6aH2UmT8qw8vBg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817433_1",
+      "title": "从被动座舱到主动式智能体，联发科开启“AI定义汽车”新纪元",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777163539,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/J9F-LjvH_P0w3F8p-xUVVg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247486014_1",
+      "title": "华为昇腾950 超节点，产业链及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1777163400,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/Q1_oaJdgDkPlt1SfSk0_Uw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754126_8",
+      "title": "【长春高新（000661.SZ）】短期阵痛不改长期战略聚焦，创新引领开启全球化布局——2025年年报和2026年一季报点评（黄素青）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777161600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/p5S6M7aN5nduHDRcBM6b_w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754126_7",
+      "title": "【匠心家居（301061.SZ）】业绩延续逆势高增，渠道结构持续优化，汇兑损失影响表观利润——2025年报点评（姜浩/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777161600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/1ABfl4lciXsXL0UtbZzpTQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754126_6",
+      "title": "【ASMPT（0522.HK）】26Q1订单大超预期，TCB加速放量，布局CPO业务打开长期空间—2026年一季度业绩点评（付天姿/董馨悦）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777161600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/Q4GBzQlf6ltNACqsNbb2LQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754126_5",
+      "title": "【特斯拉（TSLA.O）】1Q26毛利率表现亮眼，静待AI驱动出行与机器人双线落地——2026年一季报业绩点评（倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777161600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/u4cu090n4y23L5n6HNzo-g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754126_4",
+      "title": "【科顺股份（300737.SZ）】报表大幅纾压，Q1经营企稳回升——25年报及26年一季报点评（孙伟风/鲁俊）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777161600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/XlPOoJK9bIn_YNVd9l_bog",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754126_3",
+      "title": "【恩捷股份（002812.SZ）】隔膜量价齐升业绩表现亮眼，技术布局锚定长期发展——2025年年报&2026年一季报点评（赵乃迪/蔡嘉豪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777161600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/e5r_BxlHzm3Ni3O3KxSN0A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754126_2",
+      "title": "【平安银行（000001.SZ）】财富管理高弹性增长，经营向好迹象正在累加——2026年一季报点评（王一峰/刘源）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777161600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/D2Z06KIKPFA6iDLG1OwJTw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754126_1",
+      "title": "阅峰 | 光大研究热门研报阅读榜 20260419-20260425",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777161600,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/ehPITplKAv_xzhCDObKboA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2391566701-2257483995_1",
+      "title": "大摩宏观会笔记：美伊谈判、AI爆发与中国经济的K型分化",
+      "mp_name": "亿薪",
+      "publish_time": 1777160700,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/PRO8zeguHRKht7xmHYF5XA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504705_4",
+      "title": "就像我台灯的颜色……\"重燃性欲的终极密码\"不是烛光晚餐 【情感疗愈】",
+      "mp_name": "新材社",
+      "publish_time": 1777156007,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/1EiCfLgDtzwMo_jmh7HYAg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504705_3",
+      "title": "人形机器人的冰与火之歌｜新材社深度研判：技术突围、材料革命与场景落地的三重博弈",
+      "mp_name": "新材社",
+      "publish_time": 1777156007,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/DdG9KZFAJ8DEsOyU9MYRuA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504705_2",
+      "title": "遥远的呐喊：磷三杰 王者归来",
+      "mp_name": "新材社",
+      "publish_time": 1777156007,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/DvFWb2zxMR5__8p35kBlng",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504705_1",
+      "title": "2026四川一季度GDP全榜｜新材社独家：成都碾压，乐山暴跌，新材料撕碎城市生死线",
+      "mp_name": "新材社",
+      "publish_time": 1777156007,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/uYij-wdRkzCGqDo4ZZ5ShQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491455_1",
+      "title": "EMD热原子层刻蚀（Thermal ALE）：原理、分类和展望，支撑先进芯片微缩的核心工艺",
+      "mp_name": "芯球",
+      "publish_time": 1777154520,
+      "date": "2026-04-26",
+      "url": "https://mp.weixin.qq.com/s/dsAcFM7swFip9sZcLCWyEQ",
+      "summary": "",
+      "keywords": []
+    },
     {
       "id": "3917344524-2247492016_2",
       "title": "近日市场动态分析与小结",
@@ -18,6 +1758,16 @@
       "publish_time": 1777132209,
       "date": "2026-04-25",
       "url": "https://mp.weixin.qq.com/s/YFPyXAxVgzRxkuVGYe3ycw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484396_1",
+      "title": "才过了一晚，价格屠夫继续降价…",
+      "mp_name": "2030FY",
+      "publish_time": 1777130651,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/nkSEUH5qb0huQUoleycIoA",
       "summary": "",
       "keywords": []
     },
@@ -152,6 +1902,26 @@
       "keywords": []
     },
     {
+      "id": "3625385288-2247491502_1",
+      "title": "浅谈CoWoS与HBM如何重塑AI芯片",
+      "mp_name": "芯球",
+      "publish_time": 1777107456,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/ZEeOXGzWthd0F1__lXWmbg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485652_1",
+      "title": "普通人的“AI工资”：花99块雇一个24小时在线的“数字打工人”",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1777105020,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/xkSD33CyqTTHmQ-hDnYMkg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3864835480-2247817384_1",
       "title": "国内首款集成RRAM的车规MCU",
       "mp_name": "半导体行业观察",
@@ -222,6 +1992,16 @@
       "keywords": []
     },
     {
+      "id": "3625385288-2247491501_1",
+      "title": "DRAM超级周期：2026年内存市场全面紧缺，价格与格局双变",
+      "mp_name": "芯球",
+      "publish_time": 1777085434,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/clAadBgvqsfh6NRfgpLDoQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3535174307-2247681260_2",
       "title": "互联网｜Agent Commerce：AI驱动下的商业范式演进",
       "mp_name": "中信证券研究",
@@ -238,6 +2018,16 @@
       "publish_time": 1777080590,
       "date": "2026-04-25",
       "url": "https://mp.weixin.qq.com/s/VKpkFb69MTkqhg0sGRx8OA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3248830190-2247514011_1",
+      "title": "吴说周精选：DeFi 行业集体出手救援、Aave 巨额流出 Spark 获益、香港力推资产代币化与新闻 Top10",
+      "mp_name": "吴说Real",
+      "publish_time": 1777078800,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/SP1Hps8bfRhGijfwDB5kKg",
       "summary": "",
       "keywords": []
     },
@@ -322,12 +2112,152 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247486008_1",
+      "title": "DeepSeek-V4引爆国产算力，核心上市公司汇总（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1777077000,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/__TGFSJemmTM1N_dWRNsNw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754106_8",
+      "title": "【燕京啤酒（000729.SZ）】U8势能强劲，利润大幅增长——2026年一季报点评（陈彦彤/汪航宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777075200,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/6mmkCjguALlER78u0uK7Eg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754106_7",
+      "title": "【劲仔食品（003000.SZ）】积极调整，获取增量——2025年年报及2026年一季报业绩点评（叶倩瑜/董博文/李嘉祺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777075200,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/yCANgahupKG3BU3Ug7FDZw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754106_6",
+      "title": "【老凤祥（600612.SH）】26Q1金价波动下业绩承压，多维度提质增效——2025年年报及2026年一季报点评（姜浩/朱洁宇/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777075200,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/GaAV7f_y_Rng7lzlqIggXA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754106_5",
+      "title": "【华熙生物（688363.SH）】利润端延续修复，强化创新研发基因，夯实生物制造领先优势——2025年报点评（姜浩/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777075200,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/AhZoXUyjJs4ccNEEoM-d5A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754106_4",
+      "title": "【濮耐股份（002225.SZ）】耐材主业承压，关注活性氧化镁放量——2025年年报点评（孙伟风/鲁俊）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777075200,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/DyI8L4SfOCT2xCr3XxXbRA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754106_3",
+      "title": "【东材科技（601208.SH）】26Q1业绩延续高增长，高速电子树脂高景气——2025年年报&2026年一季报点评（赵乃迪/蔡嘉豪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777075200,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/zu3jvOs2QllkMEFrmWCTLA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754106_2",
+      "title": "【房地产】Q1百城宅地成交建面-30%，成交楼面均价-19%——土地市场月度跟踪报告（2026年3月）（何缅南/韦勇强）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777075200,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/yzlJSZk-ZCyZjvxnuaYWiA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754106_1",
+      "title": "【光大研究每日速递】20260425",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777075200,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/HKXMZ3C1UMUiDPnzzwBh0Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "2391566701-2257483975_1",
       "title": "全球EML光芯片市场深度调研：供需缺口60%，谁在卡住AI的脖子？",
       "mp_name": "亿薪",
       "publish_time": 1777075200,
       "date": "2026-04-25",
       "url": "https://mp.weixin.qq.com/s/khbaHkolqzZezzT5g3wuYA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491454_1",
+      "title": "Lam-原子级工艺如何撑起先进芯片制造：ALD与ALE在3D集成中的关键作用",
+      "mp_name": "芯球",
+      "publish_time": 1777068060,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/iir6pZqdKIF2Ylh6dXLrDQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504678_4",
+      "title": "电解液—全产业链重构，新型添加剂+固态电解质成胜负手【新材社】",
+      "mp_name": "新材社",
+      "publish_time": 1777064760,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/aWOIWMqFiJ87fIEl9bWNfA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504678_3",
+      "title": "芯片血液爆了！电子特气全球格局重塑，国产高端替代全产业链全景（新材社独家）",
+      "mp_name": "新材社",
+      "publish_time": 1777064760,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/E8f25Km0v_CeuC-Nwmq08Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504678_2",
+      "title": "2026一季度各省GDP经济大盘真相：谁在赚钱，谁在硬扛",
+      "mp_name": "新材社",
+      "publish_time": 1777064760,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/rp-LxTWn4Q4V2avzOmUYPw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504678_1",
+      "title": "国家级会议！2026年第五届高端电子化学品先进技术与新材料发展研讨会｜5月29-31日·三明市（仅限300席！）",
+      "mp_name": "新材社",
+      "publish_time": 1777064760,
+      "date": "2026-04-25",
+      "url": "https://mp.weixin.qq.com/s/Ow8er2BBOyoHGKxdjbTNvw",
       "summary": "",
       "keywords": []
     },
@@ -552,6 +2482,16 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485651_1",
+      "title": "教育新物种：AI学伴如何打破“鸡娃”内卷，实现“千人千面”？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1777022280,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/xfYrLDTXGXk-1PQO3_exNQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3535174307-2247681259_1",
       "title": "邀请函｜“一路同信”2026年债市策略会（江苏专场）",
       "mp_name": "中信证券研究",
@@ -592,6 +2532,16 @@
       "keywords": []
     },
     {
+      "id": "3946527542-2247504637_1",
+      "title": "国家级会议！2026年第五届高端电子化学品先进技术与新材料发展研讨会｜5月29-31日·三明市（仅限300席！）",
+      "mp_name": "新材社",
+      "publish_time": 1777004160,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/RK8quEp45A3rFTkW4kSrgg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3694245252-2247483994_1",
       "title": "直击2026九峰山论坛：磷化铟，从冷门赛道走向新质半导体“封面主角”！",
       "mp_name": "洞见800G",
@@ -628,6 +2578,16 @@
       "publish_time": 1777000797,
       "date": "2026-04-24",
       "url": "https://mp.weixin.qq.com/s/BWXPIyr9eTzJjSYEx7POsA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491473_1",
+      "title": "TSMC 2026技术研讨会：市场战略、N2U、A12、 SoW 亮点，AI全场景覆盖，制程与封装双线领跑",
+      "mp_name": "芯球",
+      "publish_time": 1776998454,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/TC4j-EsZHIi47g6llJU_RQ",
       "summary": "",
       "keywords": []
     },
@@ -732,6 +2692,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247486001_1",
+      "title": "谷歌TPU ，四大核心赛道及主要上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776990600,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/Nfk8AhtlOB3aHMN_V5PvEg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3622557369-2247484391_1",
       "title": "Intel 电话会纪要",
       "mp_name": "2030FY",
@@ -748,6 +2718,16 @@
       "publish_time": 1776989460,
       "date": "2026-04-24",
       "url": "https://mp.weixin.qq.com/s/fTlUaCEtxjiiFqYMq7IOlA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3248830190-2247514007_1",
+      "title": "Vitalik 香港演讲：展望以太坊未来五年，扩容、抗量子与 zk 验证并进",
+      "mp_name": "吴说Real",
+      "publish_time": 1776989280,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/H4iFjKva2HkgACyyYczYow",
       "summary": "",
       "keywords": []
     },
@@ -832,6 +2812,96 @@
       "keywords": []
     },
     {
+      "id": "3572653397-2247494560_1",
+      "title": "受雇失业",
+      "mp_name": "智堡Mikko",
+      "publish_time": 1776986400,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/Rrx33eP1V433jY0YQkJpfg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754096_8",
+      "title": "【新东方-S（9901.HK）】FY26Q3业绩持续高增，全年收入指引上调——FY26Q3业绩点评（陈彦彤/汪航宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776985200,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/iestJXtNSYtPIGIYRyjOtw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754096_7",
+      "title": "【敷尔佳（301371.SZ）】25年线上亮眼、线下主动收缩，26Q1低基数下业绩高增——25年年报及26年一季报点评（姜浩/孙未未/朱洁宇/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776985200,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/9NyTcPwghpCiVUUTImy8-Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754096_6",
+      "title": "【恒立液压（601100.SH）】海外客户持续突破，液压件与丝杠导轨均快速放量——2025年报点评（陈佳宁/汲萌/夏天宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776985200,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/sUPi3HqgTJYbgckEXht4sg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754096_5",
+      "title": "【中海油服（601808.SH/2883.HK）】26Q1营收、毛利率稳健增长，坚持技术驱动增强经营韧性——2026年一季报点评（赵乃迪/蔡嘉豪/王礼沫）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776985200,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/WfXHN5ax1lAMpMPLrdCN_g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754096_4",
+      "title": "【索通发展（603612.SH）】2026Q1扣非归母净利润环比回升，国内外产能扩张逐步落地——2025年报和2026年一季报点评（王招华/方驭涛）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776985200,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/2I4THXymBOij62566dSpbQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754096_3",
+      "title": "【电新】节能降碳工作高质量推进，顶层设计升级引领绿色转型——碳中和领域动态追踪（一百八十一）（殷中枢/郝骞）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776985200,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/deUcnDXKe4fdVhGjyLsCbw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754096_2",
+      "title": "【有色】2026Q1有色板块重仓股持仓环比下降，锂、金增持明显——有色金属行业基金重仓股数据点评（王招华/方驭涛）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776985200,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/iTmxLRMtCubptCY0HILCCw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754096_1",
+      "title": "【光大研究每日速递】20260424",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776985200,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/ESJF54-4YbpmY0kVajbHZQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3543903495-2247521986_1",
       "title": "锂矿：Q2行情开启？ 0422",
       "mp_name": "调研纪要更新",
@@ -852,12 +2922,82 @@
       "keywords": []
     },
     {
+      "id": "3625385288-2247491365_1",
+      "title": "混合键合（HB）：关键工艺、技术演进和应用，半导体3D集成的下一代核心互连技术",
+      "mp_name": "芯球",
+      "publish_time": 1776981600,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/yyqny5CjU6nOHu9yT11PTw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3230844662-2247500647_1",
       "title": "英特尔Q1'26 财报全面超预期 —与马斯克深度合作， CPU 进 NVIDIA Rubin、AI ASIC 翻倍与英特尔 18A 量产首秀",
       "mp_name": "404K",
       "publish_time": 1776980510,
       "date": "2026-04-24",
       "url": "https://mp.weixin.qq.com/s/Td-IizQtsN6-MKZzyj2Bng",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504493_6",
+      "title": "闪充新突破！晶格磷—氮键工程化黑磷负极快充电池：机理精析、性能验证与新材社产业研判",
+      "mp_name": "新材社",
+      "publish_time": 1776965624,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/BVTvH6uFoLwKNZHEN3r8LA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504493_5",
+      "title": "天津大学｜印尼卡里蒙工业园官方项目布局全拆解：新材料产业落地路径与核心板块精准匹配",
+      "mp_name": "新材社",
+      "publish_time": 1776965624,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/8MaCEOdy_6YF3oaZ3m9JhQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504493_4",
+      "title": "智能共生策略构筑超宽温域锂硫电池：-120℃~60℃服役机理解析与新材社产业学术研判",
+      "mp_name": "新材社",
+      "publish_time": 1776965624,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/xsjEFbsS-KYR7nmtlpyRlA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504493_3",
+      "title": "新材社深度｜浦项制铁43亿美元落子印尼：高端钢铁强链补链，卡里蒙工业园先进制造底座成型",
+      "mp_name": "新材社",
+      "publish_time": 1776965624,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/GpZOzTsbc3YX2FCBFOAxdQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504493_2",
+      "title": "超2005亿！内蒙古煤化工12大巨头投资 BDO/可降解塑料/碳基新材料",
+      "mp_name": "新材社",
+      "publish_time": 1776965624,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/yedFw3HNt29gfyBAH8FSlg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504493_1",
+      "title": "新材社独家｜印尼Q1深加工投资147.5万亿盾、镍领跑！卡里蒙工业园成廖内群岛新材料落地核心载体",
+      "mp_name": "新材社",
+      "publish_time": 1776965624,
+      "date": "2026-04-24",
+      "url": "https://mp.weixin.qq.com/s/iap8rXj2qgnBdA8-c9ITLA",
       "summary": "",
       "keywords": []
     },
@@ -1172,6 +3312,16 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485646_1",
+      "title": "无形的“数字税”：我们正在为AI消耗的每一次Token买单",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776935820,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/yjTVq40DVzX69WW-4Uzg2g",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3572653397-2247494555_1",
       "title": "沃什听证会笔记：绝非总统的走狗",
       "mp_name": "智堡Mikko",
@@ -1198,6 +3348,106 @@
       "publish_time": 1776926760,
       "date": "2026-04-23",
       "url": "https://mp.weixin.qq.com/s/JheRAE_2hC-KFC-d_5qcCQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504461_5",
+      "title": "新材社独家：70%暴跌是烟幕，字节正用算力锚定全球财富秩序",
+      "mp_name": "新材社",
+      "publish_time": 1776922978,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/fyR8Xq5F5nOYdLBOV9L-jg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504461_4",
+      "title": "等离子体法炭黑技术：底层逻辑、商业化进程与产业变革",
+      "mp_name": "新材社",
+      "publish_time": 1776922978,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/P908bQD-9q-DrASPFk1cNg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504461_3",
+      "title": "AI算力的命门爆了！全球磷化铟缺口70%，全产业链中外核心公司全名单",
+      "mp_name": "新材社",
+      "publish_time": 1776922978,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/YXhuKgDO8vTkG2RloY22lw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504461_2",
+      "title": "至纯科技(603690)：微尘之上筑神坛，国产半导体洁净领域的遮天之手",
+      "mp_name": "新材社",
+      "publish_time": 1776922978,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/vbYiGLnuMnZXKC8AkgNEng",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504461_1",
+      "title": "矿山革命！5500家绿色矿山重构万亿产业链，新材料+智能化成核心赛道",
+      "mp_name": "新材社",
+      "publish_time": 1776922978,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/Y8G1S-DLERHsIhcErTA-HQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504460_5",
+      "title": "新材社独家：70%暴跌是烟幕，字节正用算力锚定全球财富秩序",
+      "mp_name": "新材社",
+      "publish_time": 1776922549,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/_UGieZM0a3dio5ttwpFgvg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504460_4",
+      "title": "等离子体法炭黑技术：底层逻辑、商业化进程与产业变革",
+      "mp_name": "新材社",
+      "publish_time": 1776922549,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/E18e0MipGAY1dSauJAGoMg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504460_3",
+      "title": "AI算力的命门爆了！全球磷化铟缺口70%，全产业链中外核心公司全名单",
+      "mp_name": "新材社",
+      "publish_time": 1776922549,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/i_VrNYtzVcU_QMhCyC3e7A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504460_2",
+      "title": "至纯科技(603690)：微尘之上筑神坛，国产半导体洁净领域的遮天之手",
+      "mp_name": "新材社",
+      "publish_time": 1776922549,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/tBhpojedzcazwVZaAc_RUA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504460_1",
+      "title": "矿山革命！5500家绿色矿山重构万亿产业链，新材料+智能化成核心赛道",
+      "mp_name": "新材社",
+      "publish_time": 1776922549,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/XYayb1GzaU3QjMCDnDs4zw",
       "summary": "",
       "keywords": []
     },
@@ -1382,6 +3632,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485993_1",
+      "title": "算力金属，核心上市公司汇总（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776904200,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/i0yjIFzuimIjC0GBonCGZQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3593791963-2247484715_1",
       "title": "磷化铟衬底与激光器",
       "mp_name": "人见人AI",
@@ -1478,6 +3738,96 @@
       "publish_time": 1776899490,
       "date": "2026-04-23",
       "url": "https://mp.weixin.qq.com/s/-k9iUmGI1PUx2wYA-DD38Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754086_8",
+      "title": "【良品铺子（603719.SH）】经营调整，静待改善——2025年报点评（叶倩瑜/董博文/李嘉祺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776898800,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/iDo1UwfUuK1uMEmzJFoFfw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754086_7",
+      "title": "【珀莱雅（603605.SH）】短期业绩调整，多品牌多品类平台化战略推进——2025年年报及2026年一季报点评（姜浩/孙未未/朱洁宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776898800,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/QE8PgovQ2ISWg-5qFP8kdw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754086_6",
+      "title": "【浙江鼎力（603338.SH）】业绩稳健增长，推出差异化产品打开增长空间——2025年报点评（陈佳宁/汲萌/夏天宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776898800,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/iMsLzKuQjasYquoMdDF_pA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754086_5",
+      "title": "【正泰电器（601877.SH）】户用光伏业务维持高质量发展，数据中心领域持续突破——2025年年报&2026年一季报点评（殷中枢/郝骞）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776898800,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/n3pQ_Wbu0XV5bYf9-ytZGg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754086_4",
+      "title": "【奥来德（688378.SH）】26Q1业绩显著改善，持续推进钙钛矿业务布局——2025年报及2026年一季报点评（赵乃迪/周家诺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776898800,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/In_wC_Ydn-3Fp_ybSohsvQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754086_3",
+      "title": "【海外TMT】禾赛+速腾2026技术日：线束升级、芯片自研与RGBD融合驱动场景泛化——智能驾驶系列报告：激光雷达行业动态跟踪七（付天姿）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776898800,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/x8bCU9qywNDTndtynYYCGQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754086_2",
+      "title": "【银行】年内净息差向上拐点基本确立——银行经营专题报告之一（王一峰/赵晨阳）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776898800,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/QhXgjjFnwwOY6_NNgTNFPg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754086_1",
+      "title": "【光大研究每日速递】20260423",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776898800,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/lasJxpAAgcMZdPono48eHw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491364_1",
+      "title": "先进封装全面介绍：全球先进封装的技术路线、分类与产业应用",
+      "mp_name": "芯球",
+      "publish_time": 1776895200,
+      "date": "2026-04-23",
+      "url": "https://mp.weixin.qq.com/s/oVg_laxrMP5ryqHxJJdtGA",
       "summary": "",
       "keywords": []
     },
@@ -1662,12 +4012,32 @@
       "keywords": []
     },
     {
+      "id": "3946527542-2247504434_1",
+      "title": "2026年AI算力商业化元年：光模块与新材料芯片产业链技术演进及景气度研究",
+      "mp_name": "新材社",
+      "publish_time": 1776842106,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/7pP4y_45tPOO37JKMu-XkA",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3622557369-2247484367_1",
       "title": "磷化铟",
       "mp_name": "2030FY",
       "publish_time": 1776835802,
       "date": "2026-04-22",
       "url": "https://mp.weixin.qq.com/s/0_bccVfLnq_1xeC-7tFcjw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485625_1",
+      "title": "别学提示词了！2026年最火AI创作平台灵珠，让你输入想法直接变产品",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776834900,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/7VITn5Su52CoE0dXkxJn3A",
       "summary": "",
       "keywords": []
     },
@@ -1832,6 +4202,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485988_1",
+      "title": "集成光子芯片（PIC），产业链及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776817800,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/1baglwpNyiz_dvFWl6upzg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3593791963-2247484714_1",
       "title": "光模块里紧缺的部件和矿物",
       "mp_name": "人见人AI",
@@ -1908,6 +4288,136 @@
       "publish_time": 1776815658,
       "date": "2026-04-22",
       "url": "https://mp.weixin.qq.com/s/FVV_nDu9zEiu_1B1CPlZQA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754073_8",
+      "title": "【中炬高新（600872.SH）】改革初见成效，26Q1业绩同比改善——2025年年报与26年一季报点评（陈彦彤/汪航宇/聂博雅）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776812400,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/QIZ8CC-d1z2PPUZjFT7hqg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754073_7",
+      "title": "【芒果超媒（300413.SZ）】发力“文化+科技” 融合战略，关注内容储备释放——业务更新点评（付天姿/杨朋沛）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776812400,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/wXJ4ougCB0qiTjKCilc9ng",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754073_6",
+      "title": "【陕鼓动力（601369.SH）】业绩短期承压，气体运营、压缩空气储能领域增长可期——2025年年报点评（陈佳宁/汲萌/夏天宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776812400,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/7j9vNrzzBZI3bLacB5gO3A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754073_5",
+      "title": "【泰胜风能（300129.SZ）】海风装备业务持续承压，积极推进火箭业务布局——2025年年报点评（殷中枢/郝骞/邓怡亮）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776812400,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/9eRl3jOQpDbU9bnbmQkrRA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754073_4",
+      "title": "【华阳国际（002949.SZ）】主营业务承压，转让数字文化业务——2025年年报点评（孙伟风）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776812400,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/gzIRp9tQ3ac8oyZDAXtSAQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754073_3",
+      "title": "【国瓷材料（300285.SZ）】25年经营维持稳健，持续打造新材料平台型公司——2025年报点评（赵乃迪/蔡嘉豪/王礼沫）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776812400,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/Q8BJMgk7yUZ5e1ROOwCLnA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754073_2",
+      "title": "【华友钴业（603799.SH）】镍钴锂三轮驱动，单季度归母净利润再创新高——2026年一季报点评（王招华/方驭涛）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776812400,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/tjTG8S_2CiEzVqUHG-zxQQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754073_1",
+      "title": "【光大研究每日速递】20260422",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776812400,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/hEGfwNTkXYjE4mcnIku9BQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491282_1",
+      "title": "CPO技术壁垒与量产之路如何？技术演进、台积电 COUPE 方案、台湾产业链现状了解",
+      "mp_name": "芯球",
+      "publish_time": 1776808920,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/oAWoA0ZoV1mMxlRUDaJlPw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504425_4",
+      "title": "三部门联合叫停\"开窗关窗\"机械执法！化工新材料企业迎合规松绑【新材社·政策解读】",
+      "mp_name": "新材社",
+      "publish_time": 1776808800,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/KI8UgglYMAkeUBlOqla0EQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504425_3",
+      "title": "860亿！潞安领衔山西煤化工新材料2026重大项目全解：三大煤企860亿砸向卡脖子赛道【新材社·产业工程系列】",
+      "mp_name": "新材社",
+      "publish_time": 1776808800,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/m9q5lah_TNHrhJSdmY-7bw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504425_2",
+      "title": "2018亿！山西：新建60座智能化煤矿+2000万千瓦新能源，2018亿投资打响能源革命【新材社·独家权威】",
+      "mp_name": "新材社",
+      "publish_time": 1776808800,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/xHZstj8pHRrjzcT7xj_fNQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504425_1",
+      "title": "AI的血管｜光纤/光缆/光棒/海缆全产业链核心公司全名单 【新材社独家】",
+      "mp_name": "新材社",
+      "publish_time": 1776808800,
+      "date": "2026-04-22",
+      "url": "https://mp.weixin.qq.com/s/bj5RpPU5DlAlwDZoiR8FXg",
       "summary": "",
       "keywords": []
     },
@@ -2132,6 +4642,26 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485619_1",
+      "title": "AI芯片“全链通胀”：从HBM到液冷，谁在卡位？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776763020,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/RlXDhGui3l3wCnGcFBJ2EQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491399_1",
+      "title": "玻璃基板深度研报分享",
+      "mp_name": "芯球",
+      "publish_time": 1776761439,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/snepxiFIdPtsnSmTQ3gTdA",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3230844662-2247500471_1",
       "title": "中美日 AI 光学产业链三地共振 — 大摩高盛花旗同周上修、1.6T 放量 + CPO 启动",
       "mp_name": "404K",
@@ -2312,6 +4842,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485983_1",
+      "title": "固态电池，产业链全景及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776731400,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/-z9VvbgR6mvxyKd9herHvw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3593791963-2247484713_1",
       "title": "光交换机——让光路独立进行传输",
       "mp_name": "人见人AI",
@@ -2332,12 +4872,162 @@
       "keywords": []
     },
     {
+      "id": "3083484606-2651754067_8",
+      "title": "【舍得酒业（600702.SH）】收入降幅收窄，税金率有所波动——2026年一季报点评（叶倩瑜/李嘉祺/董博文）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776726000,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/7mQzNm7D4mWsASAbhs_EuA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754067_7",
+      "title": "【金徽酒（603919.SH）】收入表现稳健，经营质量较优——2026年一季报点评（叶倩瑜/李嘉祺/董博文）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776726000,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/BwC_ndGzUZLfYL3t3Ar5qg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754067_6",
+      "title": "【金开新能（600821.SH）】减值拖累25年业绩，算电业务陆续落地有望成为重要业绩增量——2025年报点评（殷中枢/宋黎超）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776726000,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/SG88CwM3BUltCNr_D_X9Fw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754067_5",
+      "title": "【思源电气（002028.SZ）】新增订单超预期增长，看好出海持续加速——2025年年报点评（殷中枢/邓怡亮）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776726000,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/-cGfiS9_j6d98mWfA55bAw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754067_4",
+      "title": "【国光股份（002749.SZ）】补税拖累25年业绩，全年高比例分红回馈股东——2025年报及2026年一季报点评（赵乃迪/周家诺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776726000,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/dVG8Z1m6MQT9PkWZ0Essfg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754067_3",
+      "title": "【彤程新材（603650.SH）】电子化学品维持快速增长，拟H股上市推动国际化布局——2025年报及2026一季报点评（赵乃迪/周家诺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776726000,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/Bo9F6lrKkMZUWHCebk24iw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754067_2",
+      "title": "【新凤鸣（603225.SH）】价差收窄Q4业绩承压，行业供需改善景气向好——2025年年报点评（赵乃迪/蔡嘉豪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776726000,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/yaHexjKA-HUEO0Vrr-HN0A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754067_1",
+      "title": "【光大研究每日速递】20260421",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776726000,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/rLCPvxQaCUWUALNjQTY5Aw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504407_1",
+      "title": "45亿加码！云天化弃华友牵手当升磷酸铁锂全链落地，西南正极格局生变【新材社·产业工程调研】",
+      "mp_name": "新材社",
+      "publish_time": 1776725400,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/JOWdS8diPyANoogY-dV_cQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504408_1",
+      "title": "大湾区首台华龙一号投产！太平岭1号机组商运，26项重大改进筑牢核电新标杆【新材社·速递】",
+      "mp_name": "新材社",
+      "publish_time": 1776725040,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/h0vAOZwTFMOVn2X-qcESWQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3864835480-2247816766_1",
       "title": "苹果任命新CEO，库克卸任",
       "mp_name": "半导体行业观察",
       "publish_time": 1776723920,
       "date": "2026-04-21",
       "url": "https://mp.weixin.qq.com/s/gTuOhTiivDC3IfbHYI6Puw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491261_1",
+      "title": "半导体先进封装材料应用与发展报告",
+      "mp_name": "芯球",
+      "publish_time": 1776722760,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/0588UNCzuXRZJHtFSyL4Og",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504309_4",
+      "title": "Ai娃娃情感陪护仿真机器人产业链【新材社】",
+      "mp_name": "新材社",
+      "publish_time": 1776700860,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/CwsqgRk7fQ-1WXTeX7K8aw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504309_3",
+      "title": "九安大帝封神记：靠试剂盒狂赚160亿，转身成AI资本大佬？",
+      "mp_name": "新材社",
+      "publish_time": 1776700860,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/yyHH1pFs9fxzta1b8XIp7Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504309_2",
+      "title": "李强总理：加快新型能源建设…郑珊洁：新型能源体系+民企赋能【新材社·顶层定调】",
+      "mp_name": "新材社",
+      "publish_time": 1776700860,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/tUoE-2-Cy1ipcdj6lCv90g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504309_1",
+      "title": "思源电气(002028)：你是电.你是网.你是唯一的神话！",
+      "mp_name": "新材社",
+      "publish_time": 1776700860,
+      "date": "2026-04-21",
+      "url": "https://mp.weixin.qq.com/s/sNCSa2T37XzR4jMooXFfoQ",
       "summary": "",
       "keywords": []
     },
@@ -2468,6 +5158,16 @@
       "publish_time": 1776683332,
       "date": "2026-04-20",
       "url": "https://mp.weixin.qq.com/s/Kg0FaKBpw4ZBQrcY6_ksrw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485614_1",
+      "title": "人形机器人量产提速：特斯拉Optimus 3今夏投产，目标2027年大规模量产",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776680752,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/CEMxxGxZLPG7Frgc26hLtQ",
       "summary": "",
       "keywords": []
     },
@@ -2612,6 +5312,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485979_1",
+      "title": "高带宽闪存（ HBF)：产业链及A股核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776645000,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/spIN8stGawoqLQqwpiQVDw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3593791963-2247484712_1",
       "title": "光模块产业中，四种类型的公司",
       "mp_name": "人见人AI",
@@ -2648,6 +5358,156 @@
       "publish_time": 1776640080,
       "date": "2026-04-20",
       "url": "https://mp.weixin.qq.com/s/IOcQjBD6fvqHzcYRmVXo3w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754057_8",
+      "title": "【贵州茅台（600519.SH）】主动出清，积极改革——2025年年报点评（叶倩瑜/李嘉祺/董博文）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776639600,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/dZx3lSMQUG_Js5f8dw6Kyg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754057_7",
+      "title": "【春风动力（603129.SH）】四轮车通过关税压力测试，两轮车收入有望提速——2025年报&2026年一季报点评（洪吉然）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776639600,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/rugSZGJaD99j_dDFYUMMxg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754057_6",
+      "title": "【五洲特纸（605007.SH）】涨价函逐步落地，一季度毛利率环比明显提升——2025年报及2026年一季报点评（姜浩/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776639600,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/GkDdJi9soknpoA07QRWWUA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754057_5",
+      "title": "【鼎泰高科（301377.SZ）】营收延续高速增长，利润率边际提升明显——2026年一季报点评（黄帅斌/庄晓波/陈奇凡）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776639600,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/ZxADSvXgZ6qWvxvCw2RqjA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754057_4",
+      "title": "【杰瑞股份（002353.SZ）】26Q1剔除汇兑净利润大幅增长，数据中心发电业务打造新增长极——25年报26年一季报点评（陈佳宁/汲萌/夏天宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776639600,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/Hmh1OYiaRBdHgEE2fJsaUQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754057_3",
+      "title": "【特变电工（600089.SH）】25年国际市场产品签约20亿美元，26年计划实现营业收入1100亿元——2025年年报点评（殷中枢/郝骞）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776639600,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/Fay4KzU3KP9bFnJsDITxnw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754057_2",
+      "title": "【诚志股份（000990.SZ）】26Q1业绩大幅改善，持续深化“一体两翼”发展战略——公告点评（赵乃迪/蔡嘉豪/王礼沫）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776639600,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/315fbqNbl660mDbXWFXR6w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754057_1",
+      "title": "【光大研究每日速递】20260420",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776639600,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/YA-Bv3HK0mtIoFdIvR2obg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491206_1",
+      "title": "TI 2026 ISSCC：从Si、 LDMOS到GaN，功率器件 scaling 之路",
+      "mp_name": "芯球",
+      "publish_time": 1776636480,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/8JFl5WxK-b0M0Xebe8hOKQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504220_6",
+      "title": "【新材社】出海产业链核心公司全名单",
+      "mp_name": "新材社",
+      "publish_time": 1776625238,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/P8stR3pWJWKzW8qm2greJw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504220_5",
+      "title": "新材社｜炭黑反应炉系统压力精准调控与多参数耦合降耗工艺",
+      "mp_name": "新材社",
+      "publish_time": 1776625238,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/oy7-IKfENhX6xxFgJnqTmQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504220_4",
+      "title": "炸裂！2026年一季度净利润断层十倍增速核心公司",
+      "mp_name": "新材社",
+      "publish_time": 1776625238,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/Js68S4voviTkV1lfY4gRyw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504220_3",
+      "title": "千亿重仓！巴斯夫中国2026年重大项目全解：700亿湛江旗舰领航，上海创新园+南京基地扩产同步爆发【新材社·产业工程系列】",
+      "mp_name": "新材社",
+      "publish_time": 1776625238,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/-IRipZuWUo2JyF-dL1Z98g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504220_2",
+      "title": "All in !  【新材社公布】AI应用全产业链核心公司名单",
+      "mp_name": "新材社",
+      "publish_time": 1776625238,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/H1Yaed8ODPduNnlz-Ms2Zg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504220_1",
+      "title": "人生辗转，寻找滋养之地",
+      "mp_name": "新材社",
+      "publish_time": 1776625238,
+      "date": "2026-04-20",
+      "url": "https://mp.weixin.qq.com/s/-ScFIvzb5m3WcG_I4SH9PQ",
       "summary": "",
       "keywords": []
     },
@@ -2792,6 +5652,26 @@
       "keywords": []
     },
     {
+      "id": "3625385288-2247491281_1",
+      "title": "一颗MOS管是怎么造出来的？组装流程入门介绍",
+      "mp_name": "芯球",
+      "publish_time": 1776586140,
+      "date": "2026-04-19",
+      "url": "https://mp.weixin.qq.com/s/vbWa7xT3akaWndPysP_Mxw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485609_1",
+      "title": "苹果AI“迷途”：从自研大模型梦碎，到化身AI分发平台",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776571200,
+      "date": "2026-04-19",
+      "url": "https://mp.weixin.qq.com/s/tm2oRNMnjc99JTQzUOASug",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3864835480-2247816662_8",
       "title": "苹果芯片，陷入供应问题？",
       "mp_name": "半导体行业观察",
@@ -2932,6 +5812,56 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485978_1",
+      "title": "光互联，国内最核心的10家公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776558600,
+      "date": "2026-04-19",
+      "url": "https://mp.weixin.qq.com/s/5sh6i0Y-aWg9JmlQIW3g_Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491170_1",
+      "title": "湿法刻蚀入门讲义：湿法刻蚀原理、参数、配方、安全要点",
+      "mp_name": "芯球",
+      "publish_time": 1776549600,
+      "date": "2026-04-19",
+      "url": "https://mp.weixin.qq.com/s/-reNcuFJbN1XGsCUavlGnQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504045_3",
+      "title": "驰宏锌锗(600497)：当年A股第一神，何时重返青春！",
+      "mp_name": "新材社",
+      "publish_time": 1776533160,
+      "date": "2026-04-19",
+      "url": "https://mp.weixin.qq.com/s/REsPcL0CZaXaWIkixgTuGA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504045_2",
+      "title": "传化×巴斯夫100亿级战略合作落地：化工巨头联手卡位电池材料+绿色供应链【新材社·独家权威】",
+      "mp_name": "新材社",
+      "publish_time": 1776533160,
+      "date": "2026-04-19",
+      "url": "https://mp.weixin.qq.com/s/lex18ZV4cZlfLCEGPLmfxQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504045_1",
+      "title": "大儒曾毓群的--术与道",
+      "mp_name": "新材社",
+      "publish_time": 1776533160,
+      "date": "2026-04-19",
+      "url": "https://mp.weixin.qq.com/s/dfuCwKixlLgvH4s4RoS2Rw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3230844662-2247500440_1",
       "title": "ABF载板涨价潮2万字拆解， T-Glass 卡死 ABF 载板？HBM4 占比与 A 股 T-Glass 追赶链",
       "mp_name": "404K",
@@ -2968,6 +5898,36 @@
       "publish_time": 1776510537,
       "date": "2026-04-18",
       "url": "https://mp.weixin.qq.com/s/ixTNs3DOl8b3669GIHW_pQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504024_1",
+      "title": "源杰科技688498：何以股王？唯有源杰！",
+      "mp_name": "新材社",
+      "publish_time": 1776507290,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/QIoRKZ8C-2W0sL3YRhNyhg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504022_1",
+      "title": "新材社—中国新材料产业权威观察与服务平台",
+      "mp_name": "新材社",
+      "publish_time": 1776507253,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/dsZ_f10FDNxulT81yiEtyg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485604_1",
+      "title": "科技巨头6600亿美元豪赌AI：军备竞赛如火如荼，回报隐忧悄然浮现",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776503820,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/7yNKF3iCFLyEscDAILp1Jw",
       "summary": "",
       "keywords": []
     },
@@ -3092,6 +6052,16 @@
       "keywords": []
     },
     {
+      "id": "3625385288-2247491262_1",
+      "title": "Lam等离子刻蚀（Plasma Etching）入门：刻蚀原理、工艺、等离子和原子层刻蚀技术",
+      "mp_name": "芯球",
+      "publish_time": 1776480686,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/3DKu8TLxDNCMu3dn24NMzw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3248830190-2247513947_1",
       "title": "吴说周精选：德意志交易所入股 Kraken、英国资管机构将 500 亿英镑基金上链、加密矿企抛售比特币与新闻 Top10",
       "mp_name": "吴说Real",
@@ -3102,12 +6072,142 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485971_1",
+      "title": "高速光模块，产业链及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776472200,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/ISCDoXlU6Oedg93KzDxmBg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3622557369-2247484321_1",
       "title": "预计进一步涨价，GS上调所有 PCB 和 CCL 目标价",
       "mp_name": "2030FY",
       "publish_time": 1776471993,
       "date": "2026-04-18",
       "url": "https://mp.weixin.qq.com/s/2EW2wLf706qn29lJjnLXbQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754051_8",
+      "title": "【百隆东方（601339.SH）】利润修复超预期，棉价上行周期中受益——2025年年报点评（姜浩/孙未未/朱洁宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776470400,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/Qn5C9iwDpyQp25wknJd8Tw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754051_7",
+      "title": "【麦澜德（688273.SH）】生殖康复类产品稳步增长，脑机接口技术实现创新突破——2025年年报和2026年一季报点评（黄素青）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776470400,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/N0U0FZdDf5K-5TWZbVfcuA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754051_6",
+      "title": "【运机集团（001288.SZ）】行业出口额两位数增长，公司海外业务持续突破——2025年年报点评（黄帅斌/陈奇凡/庄晓波）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776470400,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/HdVjD9XY3_NJOKCj_lfk_A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754051_5",
+      "title": "【耐普矿机（300818.SZ）】海外业务持续扩张，26Q1订单同比高增——2025年年报&2026年一季度业绩预告点评（黄帅斌/陈奇凡/庄晓波）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776470400,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/HNgax7U_Hmkcc1sGVbZCBQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754051_4",
+      "title": "【华锦股份（000059.SZ）】毛利率改善25年同比减亏，地缘冲突背景下供应链安全价值凸显——跟踪报告（赵乃迪/蔡嘉豪/王礼沫）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776470400,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/j-0LEsU-9jW-EQuZzOzLEA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754051_3",
+      "title": "【海外TMT】覆铜板4月延续价格涨势，关注行业内公司盈利弹性兑现节奏——海外科技观点更新（付天姿/王贇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776470400,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/_IesNrA5WAV5AjTcvL2Y7g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754051_2",
+      "title": "【固收】经济稳中向好，市场关注重回国内——2026年3月经济数据点评兼“固收+”观点（张旭/李枢川）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776470400,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/fgwnV_yGVflIt1ETxSlKeg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754051_1",
+      "title": "研选 | 光大研究每周重点报告 20260411-20260417",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776470400,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/3pZDQfEtXtsDcOiKwD40xQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491107_1",
+      "title": "安世 APEC 2026: GaN/SiC 宽禁带电源技术、CCPAK先进封装，AI 算力革命的幕后英雄",
+      "mp_name": "芯球",
+      "publish_time": 1776463200,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/_GN1EhwQwffxTg_epl5phg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504009_3",
+      "title": "研发成功！1300℃气凝胶\"隔热铠甲\"横空出世，锂电安全革命与产业链全图谱",
+      "mp_name": "新材社",
+      "publish_time": 1776455721,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/-OE5nh4ePKsYt5-W9hYjng",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504009_2",
+      "title": "1.2万亿！出海印尼2026新能源新材料产业布局全解：镍王转铝+电池全链爆发【新材社】",
+      "mp_name": "新材社",
+      "publish_time": 1776455721,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/mKnpCXPn0db1UOzmKna_Jw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247504009_1",
+      "title": "大华股份(002236)：我就是长城！",
+      "mp_name": "新材社",
+      "publish_time": 1776455721,
+      "date": "2026-04-18",
+      "url": "https://mp.weixin.qq.com/s/2B4WzVk_iCaWI1NqSVTMxg",
       "summary": "",
       "keywords": []
     },
@@ -3252,6 +6352,26 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485599_1",
+      "title": "又一起“开源被收编”：OpenClaw创始人加入OpenAI，开源社区的理想还能撑多久？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776412500,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/rfBfH3y6rgBm1bvM3db1OA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491231_1",
+      "title": "矽格谈硅光CPO测试技术：晶圆级、封装级到终测全覆盖",
+      "mp_name": "芯球",
+      "publish_time": 1776410459,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/u_vTHKz8OiaXrErBb7LscQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3622557369-2247484317_1",
       "title": "干货自取",
       "mp_name": "2030FY",
@@ -3282,6 +6402,16 @@
       "keywords": []
     },
     {
+      "id": "3946527542-2247503985_1",
+      "title": "新材社｜中科院超级铜箔破“不可能三角”+PCB全产业链核心龙头一文吃透",
+      "mp_name": "新材社",
+      "publish_time": 1776398441,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/2ORBnObUSsrhxy-uTi-tCw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "2391566701-2257483950_1",
       "title": "Hermes Agent：我测试了5款AI助手创建飞书日程，只有一款让我惊呼\"牛逼\"",
       "mp_name": "亿薪",
@@ -3298,6 +6428,26 @@
       "publish_time": 1776395420,
       "date": "2026-04-17",
       "url": "https://mp.weixin.qq.com/s/vIHjeJE7xLvCw8OX2nsfCQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503975_2",
+      "title": "纳米粉体神王｜博迁新材(605376) 新材社独家深研",
+      "mp_name": "新材社",
+      "publish_time": 1776395033,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/kZXEyEwTYbOnu1oqwrwpfg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503975_1",
+      "title": "AI的神┄液冷｜新材社独家液冷全产业链核心公司全名单",
+      "mp_name": "新材社",
+      "publish_time": 1776395033,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/2uMGETDmGfWKElcFtBtr5Q",
       "summary": "",
       "keywords": []
     },
@@ -3382,6 +6532,46 @@
       "keywords": []
     },
     {
+      "id": "3946527542-2247503962_4",
+      "title": "裂解炭黑：闪蒸石墨烯，低碳水泥强度暴涨161%，双碳建材革命降临",
+      "mp_name": "新材社",
+      "publish_time": 1776390895,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/tCDSKyefw0qQ9q8PTqTL5A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503962_3",
+      "title": "黑猫重磅发布新型炭黑L21",
+      "mp_name": "新材社",
+      "publish_time": 1776390895,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/2S90h7qV52qT9lfGqBIrrA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503962_2",
+      "title": "大族激光（002008）：光铸三十载--光为刃，材为基",
+      "mp_name": "新材社",
+      "publish_time": 1776390895,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/12Sa8hIXqZnAo9KtNv3UiA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503962_1",
+      "title": "超3400亿元！新疆：新材料新能源产业36个重点项目深度解析【新材社·独家权威】",
+      "mp_name": "新材社",
+      "publish_time": 1776390895,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/g2_cDV0VtL3CVJ0iWl1mrg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3230844662-2247500409_1",
       "title": "AMD历史新高，英特尔大涨 — 代理式 AI 驱动 CPU 需求拐点、服务器提价周期启动与英特尔代工故事共振",
       "mp_name": "404K",
@@ -3402,6 +6592,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485965_1",
+      "title": "PCB，业绩增长最快的6家公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776385800,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/kjxkRf22crPVl9s6K1qfAw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3248830190-2247513932_1",
       "title": "《币安人生》里 CZ 总结的十点人生经验",
       "mp_name": "吴说Real",
@@ -3418,6 +6618,96 @@
       "publish_time": 1776384650,
       "date": "2026-04-17",
       "url": "https://mp.weixin.qq.com/s/zWBb_R0_2qYXCtcRqeYwFQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754031_8",
+      "title": "【行动教育（605098.SH）】业绩稳健增长，高分红持续兑现——2025年年报点评（陈彦彤/汪航宇/聂博雅）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776380400,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/KpblmYWtz40y2BtzvNj7MQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754031_7",
+      "title": "【中顺洁柔（002511.SZ）】营收利润双双增长，全年盈利能力显著提升——2025年报点评（姜浩/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776380400,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/_tDz4fKlM_g090422bUdCw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754031_6",
+      "title": "【嵘泰股份（605133.SH）】4Q25营收高增，汽车电子与机器人布局持续完善——2025年年报点评（倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776380400,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/GhAjjhHK8YBD2WEJ9hzlqg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754031_5",
+      "title": "【博众精工（688097.SH）】3C业务全球化初步启动，新能源及半导体业务快速增长——2025年年报点评（黄帅斌/陈奇凡/庄晓波）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776380400,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/JOvjTRLNmdpCsdNItZ1TOQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754031_4",
+      "title": "【许继电气（000400.SZ）】26Q1盈利能力承压，期待特高压订单交付放量——2025年年报及2026年一季报点评（殷中枢/邓怡亮）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776380400,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/CwGFfGypJq9mrMIV5d-N6g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754031_3",
+      "title": "【华润置地（1109.HK）】资产运营品牌龙头，投资结构聚焦核心——动态跟踪（何缅南）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776380400,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/m7T9gcv4DgwWQeVeNxunEw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754031_2",
+      "title": "光大银证期信2026年二季度线上研讨会第四场",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776380400,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/JGXHkE5iYhCiWs9w1OxCaQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754031_1",
+      "title": "【光大研究每日速递】20260417",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776380400,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/xH0zBu_hA5dKGL1_gs2i7w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491048_1",
+      "title": "CPO 共封装光学：光子芯片（PIC）与电子芯片（EIC）的异构集成、玻璃基板",
+      "mp_name": "芯球",
+      "publish_time": 1776377040,
+      "date": "2026-04-17",
+      "url": "https://mp.weixin.qq.com/s/EYwZNQwQ3Xw9Zjz10BdFew",
       "summary": "",
       "keywords": []
     },
@@ -3602,6 +6892,26 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485598_1",
+      "title": "AI编程热背后的“幽灵”：58万个OpenClaw实例暴露，你的企业正在“裸奔”",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776331080,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/7NUXJJ6APy1LLIeYa0FXaA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491162_1",
+      "title": "5nm芯片制程怎么选？一篇看懂EUV带来的工艺大变革",
+      "mp_name": "芯球",
+      "publish_time": 1776327452,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/ho_N02QPqMQbERt8s1jhdg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3230844662-2247500397_1",
       "title": "台积电 2026 年第一季度财报电话会议全文，台积电上调资本支出至560亿美元高端，AI需求持续强劲推动三纳米产能大规模扩张",
       "mp_name": "404K",
@@ -3642,6 +6952,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485955_1",
+      "title": "光互联革命：Scale Across重构AI数据中心网络及核心公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776299400,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/eYoFPGDvJfUOOHr6qkXJZA",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3248830190-2247513921_1",
       "title": "从主动赴美到惊魂离境：CZ 的入狱、狱中生活与出狱经过",
       "mp_name": "吴说Real",
@@ -3658,6 +6978,136 @@
       "publish_time": 1776298567,
       "date": "2026-04-16",
       "url": "https://mp.weixin.qq.com/s/ygad7BYCvR0BaZHtskbgLQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754023_8",
+      "title": "【燕京啤酒（000729.SZ）】量利齐升创新高，“十五五”规划开启新征程——2025年年报点评（陈彦彤/汪航宇/聂博雅）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776294000,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/9-uXpeR3jmodzRnU5NoazQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754023_7",
+      "title": "【安踏体育（2020.HK）】一季度流水表现超预期，开局良好——2026年一季度零售流水表现点评（姜浩/孙未未/朱洁宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776294000,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/J8mUGRF5wUksD0muIqidrw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754023_6",
+      "title": "【冰轮环境（000811.SZ）】扣非业绩基本持平，数据中心温控设备、工业热管理业务潜力巨大——2025年年报点评（陈佳宁/汲萌/夏天宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776294000,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/9114T2NOGwCojPS5UuH-zQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754023_5",
+      "title": "【德业股份（605117.SH）】储能业务持续高增，26Q1业绩超预期——2025年报及26Q1业绩预告点评（殷中枢/和霖）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776294000,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/aY4Hy29nLwUvEY4QzR96uw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754023_4",
+      "title": "【卓兆点胶（920026.BJ）】经营显著修复，关注新市场开拓——2025年年报点评（孙伟风/鲁俊）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776294000,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/1JjEN5VO_KAw1-4c8gKesA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754023_3",
+      "title": "【浙江医药（600216.SH）】维生素价格大涨26年业绩可期，子公司新码生物拟赴港上市——公告点评（赵乃迪/蔡嘉豪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776294000,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/0b5tNYPuEK9aSAKG3paDoA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754023_2",
+      "title": "光大银证期信2026年二季度线上研讨会第三场",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776294000,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/6mPbjBpde0y4jaWdNPX_tw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754023_1",
+      "title": "【光大研究每日速递】20260416",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776294000,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/lTX4sq--UpcmrJ-e7RgtoA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491009_1",
+      "title": "2025 OCP 之 UCIe 的下一代计算即插即用小芯片（Chiplet）创新报告",
+      "mp_name": "芯球",
+      "publish_time": 1776290400,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/78Li_lQd-nUeyQ5N-eRORA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503844_4",
+      "title": "大族激光（002008）：光铸三十载--光为刃，材为基",
+      "mp_name": "新材社",
+      "publish_time": 1776268860,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/MeFHxa9LP61Q-JojYaIaLQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503844_3",
+      "title": "液冷革命：从芯片到算力的热管理终极密码【新材社独家】",
+      "mp_name": "新材社",
+      "publish_time": 1776268860,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/NzXhebwEL8N8PNzLAeieJA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503844_2",
+      "title": "1.2万亿！云贵川2026新能源新材料产业布局全解：1.2万亿绿电驱动，西南成中国第三极【新材社·独家权威】",
+      "mp_name": "新材社",
+      "publish_time": 1776268860,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/yPOkYbY9by0k_wKtVOxxSw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503844_1",
+      "title": "lululemon：一条瑜伽裤统治的运奢帝国，与它的至暗时刻",
+      "mp_name": "新材社",
+      "publish_time": 1776268860,
+      "date": "2026-04-16",
+      "url": "https://mp.weixin.qq.com/s/BYzsLpYnPCuxRhK0vJiRLQ",
       "summary": "",
       "keywords": []
     },
@@ -3708,6 +7158,16 @@
       "publish_time": 1776251308,
       "date": "2026-04-15",
       "url": "https://mp.weixin.qq.com/s/PMkiCMghW2YhrkAjSO7TFQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485597_1",
+      "title": "中国AI登上Nature！DeepRare诊断罕见病首次超越十年临床专家",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776245700,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/h4Smub5ihISnU1nnyfo9ig",
       "summary": "",
       "keywords": []
     },
@@ -3782,6 +7242,16 @@
       "keywords": []
     },
     {
+      "id": "3625385288-2247491105_1",
+      "title": "浅谈英伟达CoWoP：下一代AI封装黑科技的结构、优势和挑战",
+      "mp_name": "芯球",
+      "publish_time": 1776237826,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/qN8fnvYEIHskymuTnzNY_A",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "2391566701-2257483936_1",
       "title": "Transformer架构解析：大模型的\"大脑\"究竟如何工作？",
       "mp_name": "亿薪",
@@ -3832,12 +7302,152 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485950_1",
+      "title": "先进封装，国内最核心的6家公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776213000,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/suGn6zsl6wpnz50PduW3Lg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3248830190-2247513920_1",
       "title": "孙泽宇代投事件受害者：昔日币圈大佬竟成了骗子？",
       "mp_name": "吴说Real",
       "publish_time": 1776212040,
       "date": "2026-04-15",
       "url": "https://mp.weixin.qq.com/s/N2Vxdzye0Bfg2Lg79siMPg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754013_8",
+      "title": "【若羽臣（003010.SZ）】拟收购高端护肤品品牌奥伦纳素，海外并购开启落子——拟收购事项点评（姜浩/孙未未）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776207600,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/M4gBMnH5RSGDihZpnU4Z9A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754013_7",
+      "title": "【杭氧股份（002430.SZ）】业绩实现稳健增长，国际化战略推进带动成长——2025年年报点评（陈佳宁/汲萌/夏天宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776207600,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/_eXzGPIE-IaAHOXlMStMRA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754013_6",
+      "title": "【国能日新（301162.SZ）】功率预测服务电站规模创历史新高，创新类业务稳中有进——2025年年报点评（殷中枢/郝骞）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776207600,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/3lAMBVQmbNrlXMNjHXBpIw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754013_5",
+      "title": "【新城控股（601155.SH）】商业运营稳定发展，融资渠道趋向多元——动态跟踪（何缅南）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776207600,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/7KeA0ys47BBAE8DcqrUeNQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754013_4",
+      "title": "【银行】3月信贷投放更加“平滑”，减轻4月“小月”增长压力——2026年3月份金融数据点评（王一峰/赵晨阳）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776207600,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/cxY9etFuSRAX8CYBYF6Fgg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754013_3",
+      "title": "光大银证期信2026年二季度线上研讨会第二场",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776207600,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/8VOAAH0PYVPEx4dmaJhNEw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754013_2",
+      "title": "虚位以待，职等你来|光大证券研究所招聘一览",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776207600,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/BnIKxekMHhABN_aanf7vzw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754013_1",
+      "title": "【光大研究每日速递】20260415",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776207600,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/ccHEnU7-XOnqJg4oQj2v5Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491008_1",
+      "title": "2025 OCP 之 AMD先进封装：从2.5D到3D，先进封装的过去、现在与未来",
+      "mp_name": "芯球",
+      "publish_time": 1776204660,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/Ou8505GEMTnk1XdajLEL2A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503770_4",
+      "title": "科研级炭黑解析：一次结构体积表征、造粒原理与吸油吸碘的造粒影响",
+      "mp_name": "新材社",
+      "publish_time": 1776184852,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/tqS4n1ZnBj-1YYAwNXZ2tA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503770_3",
+      "title": "3682亿！浙江省2026年高端化工新材料重大项目官方完整名单【新材社·独家权威】",
+      "mp_name": "新材社",
+      "publish_time": 1776184852,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/7EV8mfh0ixNCLdAVCgtfQw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503770_2",
+      "title": "东亚银行贷款放水了",
+      "mp_name": "新材社",
+      "publish_time": 1776184852,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/pgoqyox5lA1kfeBpuynYOw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503770_1",
+      "title": "西部材料(002149)：三线军工大院走出的稀有金属龙头，藏着中国高端制造的硬核底气",
+      "mp_name": "新材社",
+      "publish_time": 1776184852,
+      "date": "2026-04-15",
+      "url": "https://mp.weixin.qq.com/s/AQuUVfoVXLFWqfM6FRYkYQ",
       "summary": "",
       "keywords": []
     },
@@ -3982,12 +7592,32 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485582_1",
+      "title": "AI竞赛“决赛圈”：OpenAI、DeepMind、Anthropic如何甩开所有人？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776144780,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/hbF9gnq-bZUAyVdY3c9upQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3694245252-2247483869_1",
       "title": "当GPU租金暴涨48%，我看懂了磷化铟的不可替代性",
       "mp_name": "洞见800G",
       "publish_time": 1776138411,
       "date": "2026-04-14",
       "url": "https://mp.weixin.qq.com/s/4qsoUdWDoBp02XJyEPDeRw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491085_1",
+      "title": "英飞凌APEC 2026：垂直供电+芯片嵌入新技术，AI数据中心从电网到核心的电源封装革命",
+      "mp_name": "芯球",
+      "publish_time": 1776137111,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/sC3n5m7it5YescZfBzDf9A",
       "summary": "",
       "keywords": []
     },
@@ -4008,6 +7638,146 @@
       "publish_time": 1776126840,
       "date": "2026-04-14",
       "url": "https://mp.weixin.qq.com/s/TNTNxYowxWn9uZS3VRj-bA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247485945_1",
+      "title": "储能电池，国内最核心的5家龙头公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776126600,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/bRhKq_gQvvLW0NNoOixKyw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754005_8",
+      "title": "【太阳纸业（002078.SZ）】四季度毛利率环比修复，全年利润稳步增长——2025年报点评（姜浩/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776121200,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/9IAdyTEagp850uky3XqPxg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754005_7",
+      "title": "【福斯特（603806.SH）】海外销售占比持续提升，全球化与多元化打开长期空间——2025年年报点评（殷中枢/郝骞）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776121200,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/knbGKi82SWGI5gafeJQk7Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754005_6",
+      "title": "【华特气体（688268.SH）】半导体领域盈利逆势提升，江西及南通等新项目有序推进——2025年报点评（赵乃迪/周家诺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776121200,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/SmkeaGXBmRUQu28t5vBjwQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754005_5",
+      "title": "【金达威（002626.SZ）】辅酶Q10龙头，C端布局有望打开新空间——投资价值分析报告（叶倩瑜/李嘉祺/董博文）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776121200,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/bY4-muFV4J3I29b-v8Z81A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754005_4",
+      "title": "【有色】本周国内铜社会库存较年内高点下降45%——铜行业周报（20260406-20260410）（王招华/方驭涛）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776121200,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/9NfQj2L93ckZa6eBCvkyiA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754005_3",
+      "title": "光大银证期信2026年二季度线上研讨会第一场",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776121200,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/uxUjODavsnlSLV4RGEabMg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754005_2",
+      "title": "虚位以待，职等你来|光大证券研究所招聘一览",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776121200,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/WecyEYNVm7Ifo7j3xXHwng",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754005_1",
+      "title": "【光大研究每日速递】20260414",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776121200,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/kaMj3vpSAp95Am80U418ng",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247490930_1",
+      "title": "2025 VLSI之格芯：CPO与硅光互连，Fotonix 硅光平台，算力时代的新突破",
+      "mp_name": "芯球",
+      "publish_time": 1776117660,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/ex-qv3d8TPkAEg5YaG0lig",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503740_4",
+      "title": "AI眼镜产业深度变局：小米入局重构赛道格局，光学新材料破局核心瓶颈，下一代计算终端窗口期正式开启",
+      "mp_name": "新材社",
+      "publish_time": 1776099451,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/1fA9Irmha-Kv6uAMvngchA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503740_3",
+      "title": "新材料两性黑科技 仿生皮肤杰士邦太绝了！",
+      "mp_name": "新材社",
+      "publish_time": 1776099451,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/vvq9vpS_6wj17HxLu7ctkQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503740_2",
+      "title": "胜宏科技(300476.SZ)：戎装著芯，ai之王",
+      "mp_name": "新材社",
+      "publish_time": 1776099451,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/lq_GSakcB49WWspluqw1yQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503740_1",
+      "title": "4892亿！福建省2026年锂电新能源材料重大项目官方完整名单【新材社】",
+      "mp_name": "新材社",
+      "publish_time": 1776099451,
+      "date": "2026-04-14",
+      "url": "https://mp.weixin.qq.com/s/ihYJVy3PNjFpljpgMY9xEQ",
       "summary": "",
       "keywords": []
     },
@@ -4092,6 +7862,26 @@
       "keywords": []
     },
     {
+      "id": "3946527542-2247503710_1",
+      "title": "特朗普：今晚10点封锁！能源变局，锂价单日跳涨6%，游戏板块误读性暴跌不改新材主线｜新材社晚报",
+      "mp_name": "新材社",
+      "publish_time": 1776075919,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/EnlxROyvRzJcCxcSU0cS-g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485576_1",
+      "title": "达沃斯“巅峰对话”：AGI是“明年就来”，还是“十年之后”？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1776071700,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/98Uhbz2UWm9-7X6wN4wxDw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3709123108-2247485026_3",
       "title": "赛微电子(300456)：OCS制造验证提速，MEMS微镜环节为什么值得跟踪？",
       "mp_name": "产业链研究笔记",
@@ -4142,6 +7932,16 @@
       "keywords": []
     },
     {
+      "id": "3625385288-2247491028_1",
+      "title": "DesignCon 2026：汽车电动化的“黄金搭档” 动力学+效率协同控制、AI助攻",
+      "mp_name": "芯球",
+      "publish_time": 1776052826,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/YsujXQ9xT9QopSBAkuAL-Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3694245252-2247483855_1",
       "title": "OFC大会：光芯片进入“抢产能”时代，磷化铟成英伟达等巨头“军备竞赛”核心",
       "mp_name": "洞见800G",
@@ -4158,6 +7958,136 @@
       "publish_time": 1776042000,
       "date": "2026-04-13",
       "url": "https://mp.weixin.qq.com/s/6KcBhaLXBfFul7lkszXuRw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247485940_1",
+      "title": "模块化数据中心(MDC)，产业链及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1776040200,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/6UsVE_hY3XqwkkwPW9WKFw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753993_8",
+      "title": "【九毛九（9922.HK）】太二国内同店收入增速回正，门店调改效果显著——26Q1运营数据点评（陈彦彤/汪航宇/聂博雅）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776034800,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/QRK32fHYYwosw9lcxE7BsQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753993_7",
+      "title": "【巴比食品（605338.SH）】25年稳健收官，新店型规划积极——2025年年报点评（叶倩瑜/李嘉祺/董博文）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776034800,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/G0qoCj9KKOIa8ffRIZhCfA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753993_6",
+      "title": "【长安汽车（000625.SZ）】4Q25毛利率表现亮眼，三大计划持续推进——2025年年报业绩点评（倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776034800,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/DqKxtA3rPheViBuMboz8eQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753993_5",
+      "title": "【中国金茂（0817.HK）】“绿金科技”引领产品，融资结构明显优化——动态跟踪报告（何缅南/韦勇强）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776034800,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/hjwWplNks92wu7hkEql9IQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753993_4",
+      "title": "【机械制造】燃气轮机景气度持续上行，看好热端部件瓶颈环节供应商——机械制造行业跟踪报告（陈佳宁/汲萌/夏天宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776034800,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/kODCyMQMAtnuXTi48w1CHQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753993_3",
+      "title": "光大银证期信2026年二季度线上研讨会即将开幕",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776034800,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/Fq9Qx8jdle3MrMeeZW1BqA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753993_2",
+      "title": "虚位以待，职等你来|光大证券研究所招聘一览",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776034800,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/ukQdL0xoMhV4LXLnDW_l-g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753993_1",
+      "title": "【光大研究每日速递】20260413",
+      "mp_name": "光大证券研究",
+      "publish_time": 1776034800,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/W5N1n5FXpePkLGVDE0Djbg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247490929_1",
+      "title": "APEC 2026 谷歌: 数据中心供电与冷却挑战、±400VDC 机架供电架构、液冷标准",
+      "mp_name": "芯球",
+      "publish_time": 1776031560,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/Vf9WyJKAxxxi0Ag3eP7M4A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503702_3",
+      "title": "什么是炭黑的粒径？以及与软质硬质的关系",
+      "mp_name": "新材社",
+      "publish_time": 1776012271,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/xfp8hnGKF-lShN9EgU6Oug",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503702_2",
+      "title": "新易盛(300502)：光的神谕，算力时代的创世者",
+      "mp_name": "新材社",
+      "publish_time": 1776012271,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/je77lhvDekkWfhAyUQ8s3Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503702_1",
+      "title": "4216亿！广东2026新能源材料重大项目官方全拆解【新材社】",
+      "mp_name": "新材社",
+      "publish_time": 1776012271,
+      "date": "2026-04-13",
+      "url": "https://mp.weixin.qq.com/s/KE2oLXJMZZympdI64WPMug",
       "summary": "",
       "keywords": []
     },
@@ -4322,12 +8252,62 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485935_1",
+      "title": "光模块设备，产业链梳理及国内核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775953800,
+      "date": "2026-04-12",
+      "url": "https://mp.weixin.qq.com/s/vqr1_F-Vt2TNMDLHjuwwGA",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3248830190-2247513836_1",
       "title": "a16z: DeFi 超越 CeFi，可预测性是关键",
       "mp_name": "吴说Real",
       "publish_time": 1775953140,
       "date": "2026-04-12",
       "url": "https://mp.weixin.qq.com/s/vGBvNkNApas3rF14lnnCKg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753981_1",
+      "title": "光大银证期信2026年二季度线上研讨会即将开幕",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775952000,
+      "date": "2026-04-12",
+      "url": "https://mp.weixin.qq.com/s/JI7_RQXvJf7yHZhAoVgfqQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503639_3",
+      "title": "中国新材省域攻坚战③｜山东3550亿化工新材全链突围：UPC破局+POE登顶，齐鲁大地炼就国产替代硬核底气",
+      "mp_name": "新材社",
+      "publish_time": 1775933494,
+      "date": "2026-04-12",
+      "url": "https://mp.weixin.qq.com/s/mhKMk-HSFUwO72MFG3JghQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503639_2",
+      "title": "新材社独家揭秘：炭黑黑度的底层密码与技术革命（2026深度版）",
+      "mp_name": "新材社",
+      "publish_time": 1775933494,
+      "date": "2026-04-12",
+      "url": "https://mp.weixin.qq.com/s/iMxelwX6MIIZlmsW4Oyykg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3946527542-2247503639_1",
+      "title": "坚朗五金(002791)：以铁为骨，以韧为魂，在寒冬中锻造新生",
+      "mp_name": "新材社",
+      "publish_time": 1775933494,
+      "date": "2026-04-12",
+      "url": "https://mp.weixin.qq.com/s/-ecAdHzcCvli00bIT3toQQ",
       "summary": "",
       "keywords": []
     },
@@ -4368,6 +8348,26 @@
       "publish_time": 1775869200,
       "date": "2026-04-11",
       "url": "https://mp.weixin.qq.com/s/io_0lqQxbh0KuG4tsSSa8w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247485930_1",
+      "title": "存储芯片，国内最核心的9家公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775867400,
+      "date": "2026-04-11",
+      "url": "https://mp.weixin.qq.com/s/SZV_kmZLsvfMeHljS-TZBQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753960_1",
+      "title": "虚位以待，职等你来|光大证券研究所招聘一览",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775865600,
+      "date": "2026-04-11",
+      "url": "https://mp.weixin.qq.com/s/t5wXYivyNO9vqM0BSw6Tsw",
       "summary": "",
       "keywords": []
     },
@@ -4452,6 +8452,16 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485571_1",
+      "title": "量子计算进入“双指数级”跃迁：AI算力天花板将被打破？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1775811819,
+      "date": "2026-04-10",
+      "url": "https://mp.weixin.qq.com/s/GkrqL0d6SWuVtDcO8v8rBA",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3694245252-2247483813_1",
       "title": "缺口70%+涨价187.5%，InP凭什么成为AI时代的“光子基石”？",
       "mp_name": "洞见800G",
@@ -4468,6 +8478,66 @@
       "publish_time": 1775782800,
       "date": "2026-04-10",
       "url": "https://mp.weixin.qq.com/s/3WabGqdrC1BOISWcM5IFKg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247485922_1",
+      "title": "光模块，国内最核心的8家公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775781000,
+      "date": "2026-04-10",
+      "url": "https://mp.weixin.qq.com/s/_Z2yiH1rX3jBDkKVoElOOA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753958_5",
+      "title": "【盈康生命（300143.SZ）】扣非归母净利润实现快速增长，医疗服务与器械双轮驱动——2025年报点评（吴佳青）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775775600,
+      "date": "2026-04-10",
+      "url": "https://mp.weixin.qq.com/s/HfINJNHV3gfslh81lcfKrA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753958_4",
+      "title": "【盐津铺子（002847.SZ）】优化产品结构，梳理渠道策略——2025年报点评（叶倩瑜/董博文/李嘉祺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775775600,
+      "date": "2026-04-10",
+      "url": "https://mp.weixin.qq.com/s/EWNWmaRj6EypP-C3X8TjBw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753958_3",
+      "title": "【特锐德（300001.SZ）】电力设备出海加速放量，积极推进SST产品研发——2025年年报点评（殷中枢/陈无忌/邓怡亮）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775775600,
+      "date": "2026-04-10",
+      "url": "https://mp.weixin.qq.com/s/qUSuyGwgc2SzK2WKcEQcxQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753958_2",
+      "title": "虚位以待，职等你来|光大证券研究所招聘一览",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775775600,
+      "date": "2026-04-10",
+      "url": "https://mp.weixin.qq.com/s/JgAUSIVd9RmrP62vUJ4p1Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753958_1",
+      "title": "【光大研究每日速递】20260410",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775775600,
+      "date": "2026-04-10",
+      "url": "https://mp.weixin.qq.com/s/SBtHkW-enEzrAmE8SYQoYA",
       "summary": "",
       "keywords": []
     },
@@ -4622,12 +8692,92 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485917_1",
+      "title": "超节点周期，产业链全梳理及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775694600,
+      "date": "2026-04-09",
+      "url": "https://mp.weixin.qq.com/s/myL8-Z4c2he63uMp9JzzBA",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3248830190-2247513848_1",
       "title": "CZ 自传《币安人生》摘录：无数精彩细节、大量早期照片",
       "mp_name": "吴说Real",
       "publish_time": 1775693040,
       "date": "2026-04-09",
       "url": "https://mp.weixin.qq.com/s/Xt-PqO2uWNab_HysLl8zew",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753947_7",
+      "title": "【固生堂（2273.HK）】海内外扩张持续，名医“AI分身”继续推进——2025年报点评（吴佳青）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775689200,
+      "date": "2026-04-09",
+      "url": "https://mp.weixin.qq.com/s/aYl90Y0j9HqVI0H5xPmPIg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753947_6",
+      "title": "【伟星新材（002372.SZ）】需求延续平淡，经营加快筑底——2025年年报点评（孙伟风/鲁俊）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775689200,
+      "date": "2026-04-09",
+      "url": "https://mp.weixin.qq.com/s/S1sGi_LlrY92eiwA7LyhyA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753947_5",
+      "title": "【兴发集团（600141.SH）】新能源及农药业务盈利改善，拟新建10万吨/年磷酸铁锂产能——公告点评（赵乃迪/周家诺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775689200,
+      "date": "2026-04-09",
+      "url": "https://mp.weixin.qq.com/s/zHh_y8Zetlc_pSNBfcSufQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753947_4",
+      "title": "【有色】氧化镨钕价格本周环比+5.7%——金属新材料高频数据周报（20260330-20260405）（王招华/王秋琪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775689200,
+      "date": "2026-04-09",
+      "url": "https://mp.weixin.qq.com/s/HF59knN_wk_No_92J3Lfsw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753947_3",
+      "title": "【银行】如何看待银行次级债4月发行“放量”？——银行业资本工具供需分析（王一峰/董文欣）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775689200,
+      "date": "2026-04-09",
+      "url": "https://mp.weixin.qq.com/s/SE5_6VeImgZXhswljwpT1Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753947_2",
+      "title": "虚位以待，职等你来|光大证券研究所招聘一览",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775689200,
+      "date": "2026-04-09",
+      "url": "https://mp.weixin.qq.com/s/NPoX08Ly2VYMo93u9o9-Rw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753947_1",
+      "title": "【光大研究每日速递】20260409",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775689200,
+      "date": "2026-04-09",
+      "url": "https://mp.weixin.qq.com/s/sbZ--y0l0i5_bdUW16Ux9A",
       "summary": "",
       "keywords": []
     },
@@ -4772,12 +8922,112 @@
       "keywords": []
     },
     {
+      "id": "3083484606-2651753942_1",
+      "title": "虚位以待，职等你来|光大证券研究所招聘一览",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775613732,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/ilZkEAb6EwMQea8cYoz6Og",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3248830190-2247513829_1",
       "title": "割裂的两个世界：纽约 Digital Asset Summit 见闻，最机构化的一次区块链会议",
       "mp_name": "吴说Real",
       "publish_time": 1775609040,
       "date": "2026-04-08",
       "url": "https://mp.weixin.qq.com/s/jKvmoVc2Nn4pZWqAcaCGFg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247485912_1",
+      "title": "光模块材料:薄膜铌酸锂、磷化铟、高精度陶瓷全解析及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775608200,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/OXkWDr4oge95hHLg0K_USA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753940_8",
+      "title": "虚位以待，职等你来|光大证券研究所招聘一览",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775602800,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/yaZVcUundmMMwr_yWjCjIQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753940_7",
+      "title": "【博雅生物（300294.SZ）】血制品主业稳健，新产品初见成效——跟踪报告（曹聪聪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775602800,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/aMCZ1G6oWeTAeqNE7osI1Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753940_6",
+      "title": "【安徽合力（600761.SH）】海外营收稳健增长，智能物流业务打开第二增长曲线——2025年年报点评（陈佳宁/夏天宇/汲萌）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775602800,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/3ht9ejroEZ0bNLRFa0lrCw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753940_5",
+      "title": "【东方电气（600875.SH & 1072.HK）】新增订单持续增长，毛利率同比改善——2025年年度报告点评（殷中枢/郝骞/和霖）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775602800,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/k9cbgy3puUOS7H_i5zvwjQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753940_4",
+      "title": "【汽车】1Q26特斯拉交付持续走低，3月国内车市环比修复——特斯拉与新势力3月销量跟踪报告（倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775602800,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/X1EMpna5VHkr7rdLrnBnlQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753940_3",
+      "title": "【建筑建材】基建投资靠前发力，“沪七条”新政带来上海“小阳春”行情——建材、建筑及基建公募REITs半月报（孙伟风/吴钰洁）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775602800,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/zrM55XIx1LA8rv0l1mqIWw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753940_2",
+      "title": "【非银】股票仓位大幅提升，债券配置节奏放缓——上市险企2025年资产端综述（王一峰/黄怡婷）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775602800,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/X-AkMm-ko3OUa7zW1DETpg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753940_1",
+      "title": "【光大研究每日速递】20260408",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775602800,
+      "date": "2026-04-08",
+      "url": "https://mp.weixin.qq.com/s/ZaGl6xtUr3wpRPxS0ZcGvg",
       "summary": "",
       "keywords": []
     },
@@ -4922,6 +9172,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485907_1",
+      "title": "OCS（光电路交换机），核心上市公司四小龙全解析（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775521800,
+      "date": "2026-04-07",
+      "url": "https://mp.weixin.qq.com/s/IzDQ95LSX3I9ufUFx3ohuw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3572653397-2247494511_1",
       "title": "可以乐观一点了吗？",
       "mp_name": "智堡Mikko",
@@ -5032,6 +9292,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485902_1",
+      "title": "OCS 光交换机，国内最重要的8家上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775435400,
+      "date": "2026-04-06",
+      "url": "https://mp.weixin.qq.com/s/FJl4as6YugHKnwdXBb2gsg",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3708114207-2247518060_1",
       "title": "【国联民生海外｜消费】名创优品（9896.HK）2025年年度业绩公告点评：全球化战略成效显著，TOP TOY成第二增长极",
       "mp_name": "声鸣海外 Global",
@@ -5068,6 +9338,16 @@
       "publish_time": 1775392825,
       "date": "2026-04-05",
       "url": "https://mp.weixin.qq.com/s/S-EWbEFoaru_n2dzzS03jA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485566_1",
+      "title": "人形机器人2030年规模超2000亿：工业制造与家庭服务双轮驱动",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1775384280,
+      "date": "2026-04-05",
+      "url": "https://mp.weixin.qq.com/s/1hY2Vy5ssaJbBLduMc67lA",
       "summary": "",
       "keywords": []
     },
@@ -5152,6 +9432,16 @@
       "keywords": []
     },
     {
+      "id": "3263272150-2247485897_1",
+      "title": "硅光光模块，国内最核心的9家上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775349000,
+      "date": "2026-04-05",
+      "url": "https://mp.weixin.qq.com/s/tIyeIW62UJAPVBn08790Nw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3206614900-2247493939_1",
       "title": "1000亿元 vs 1000亿美金",
       "mp_name": "走马财经",
@@ -5168,6 +9458,16 @@
       "publish_time": 1775295000,
       "date": "2026-04-04",
       "url": "https://mp.weixin.qq.com/s/eRexCq8FngPjZcinWBTdTw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485560_1",
+      "title": "AI安全从“幻觉”到“欺骗”：当智能学会“耍心机”，我们该如何防御？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1775294220,
+      "date": "2026-04-04",
+      "url": "https://mp.weixin.qq.com/s/gzQ0bkSnVYyhVdIajWymQQ",
       "summary": "",
       "keywords": []
     },
@@ -5218,6 +9518,16 @@
       "publish_time": 1775264160,
       "date": "2026-04-04",
       "url": "https://mp.weixin.qq.com/s/BEfnJRfYS9-eKK54Lxr0_Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247485892_1",
+      "title": "变压器，国内最核心的10家上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775262600,
+      "date": "2026-04-04",
+      "url": "https://mp.weixin.qq.com/s/ffFRoHv2kGgkozPoDTwigQ",
       "summary": "",
       "keywords": []
     },
@@ -5312,6 +9622,16 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485559_1",
+      "title": "AI发展重心东移：亚洲从追随者变为引领者",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1775202900,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/VWLevwOi0wy3uOcG_12tJw",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "2391566701-2257483881_1",
       "title": "同为港股AI龙头，MiniMax和智谱AI到底差在哪？",
       "mp_name": "亿薪",
@@ -5328,6 +9648,96 @@
       "publish_time": 1775178000,
       "date": "2026-04-03",
       "url": "https://mp.weixin.qq.com/s/E1n3p_SWSVI5jCLJ64Ho7w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247485886_1",
+      "title": "PCB，国内最核心的10家公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775176200,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/BUvy0McjdDJRB6Ub9dElmQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753898_8",
+      "title": "【首旅酒店（600258.SH）】25年盈利能力同比提升，26年开店指引积极——2025年年报点评（陈彦彤/聂博雅/汪航宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775170800,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/WP4aQBQ73qzvgja_hqOhLg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753898_7",
+      "title": "【丸美生物（603983.SH）】收入增长而利润承压，26年期待经营质量回升——2025年年报点评（姜浩/孙未未/朱洁宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775170800,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/SiH-4BdigsbLRlr2OjGVmg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753898_6",
+      "title": "【涛涛车业（301345.SZ）】电动高尔夫球车高速增长，整体盈利能力显著提升——2025年报点评（洪吉然）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775170800,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/xKJt8Y5jI2mA3SF6eKAIfg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753898_5",
+      "title": "【极智嘉（2590.HK）】2025年经调整净利润首度扭亏，海外订单高增夯实全球领先地位——2025年度业绩点评（付天姿/黄铮）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775170800,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/GTq3Vv-xOa6XLJdZk-zN0Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753898_4",
+      "title": "【中联重科（000157.SZ、1157.HK）】业绩稳步增长，新兴业务及海外市场支撑公司后续成长——2025年年报点评（陈佳宁/夏天宇/汲萌）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775170800,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/uvfstqZHaKZkY9r4fnmlZQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753898_3",
+      "title": "【帝尔激光（300776.SZ）】计提减值阶段性影响公司业绩，非光伏领域激光设备持续实现突破——2025年年报点评（殷中枢/郝骞）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775170800,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/WRXK4IDomSj8BD8Mv3kEyQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753898_2",
+      "title": "【华鲁恒升（600426.SH）】行业景气触底25年业绩韧性凸显，高油价下煤化工龙头优势显著——2025年报点评（赵乃迪/蔡嘉豪/王礼沫）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775170800,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/Z1J_jEKPN_FhzYJUqc00wA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753898_1",
+      "title": "【光大研究每日速递】20260403",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775170800,
+      "date": "2026-04-03",
+      "url": "https://mp.weixin.qq.com/s/B0hp63tHIMijHpx1Yd58hg",
       "summary": "",
       "keywords": []
     },
@@ -5452,6 +9862,16 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485550_1",
+      "title": "AI供应链“全链紧缺”：从芯片到散热，谁在卡位？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1775116500,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/OQyz3PqDuxw-RD2nOxjCug",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3572653397-2247494499_1",
       "title": "一季度交流纪要",
       "mp_name": "智堡Mikko",
@@ -5478,6 +9898,96 @@
       "publish_time": 1775090400,
       "date": "2026-04-02",
       "url": "https://mp.weixin.qq.com/s/UuokMP8H0EYV8k3LLVXdnQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247485879_1",
+      "title": "光伏设备，产业链全景及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1775089800,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/l5JyX48NlGgpcTf2KpL3hQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753888_8",
+      "title": "【光明乳业（600597.SH）】液态奶有望企稳，利润端表现承压——2025年报点评（叶倩瑜/董博文/李嘉祺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775084400,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/Peqw6PTe7Gj0-0xg1d-ACA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753888_7",
+      "title": "【舜宇光学科技（2382.HK）】26年手机业务目标实现逆势增长，泛IoT、精密光学构建护城河——2025年业绩点评报告（付天姿/王贇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775084400,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/kr_TFccffcQHnZlGTM-JlA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753888_6",
+      "title": "【希迪智驾（3881.HK）】自动驾驶矿卡业务高增，商业化场景持续拓宽——2025年年报业绩点评（付天姿/倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775084400,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/IRq-ikw4hL660mvSSZLIdQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753888_5",
+      "title": "【安东油田服务（3337.HK）】轻资产业务带动公司营收增长，油田开发模式有望打开成长空间——2025年业绩公告点评（陈佳宁/夏天宇/汲萌）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775084400,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/3yZaOOeiK3es98ALM2Ixyg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753888_4",
+      "title": "【科达利（002850.SZ）】Q4利润率环比提升，人形机器人布局双向赋能——2025年年报点评（殷中枢/陈无忌）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775084400,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/yMK23sxV6gohwEQGe7XqAA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753888_3",
+      "title": "【石大胜华（603026.SH）】电解液量价齐升，Q4业绩显著改善——2025年年报点评（赵乃迪/蔡嘉豪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775084400,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/ZP-t_7oZbuoJHSLEFAlyLQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753888_2",
+      "title": "【洛阳钼业（603993.SH）】2025年归母净利润创新高，黄金有望成新增长极——2025年年报点评（王招华/方驭涛）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775084400,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/hkuIHY3_JlEO4cQvF6uu0g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753888_1",
+      "title": "【光大研究每日速递】20260402",
+      "mp_name": "光大证券研究",
+      "publish_time": 1775084400,
+      "date": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/Ezd34_7KUZSDIonB_LbXzA",
       "summary": "",
       "keywords": []
     },
@@ -5592,12 +10102,102 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485543_1",
+      "title": "从“预测下一个词”到“预测世界状态”：AI正在经历一场认知革命",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1775037300,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/hjTA4R8IvUwhu66i7c5DiA",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3248830190-2247513768_1",
       "title": "加密行业为何对 AI 智能体如此狂热？",
       "mp_name": "吴说Real",
       "publish_time": 1775005380,
       "date": "2026-04-01",
       "url": "https://mp.weixin.qq.com/s/k-3u6j9eSJ3y569IU47sTQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753880_8",
+      "title": "【财经月历】光大证券4月重点经济数据备忘录",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774998000,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/jf2npgpvTMT_u45q3dmv2A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753880_7",
+      "title": "【海吉亚医疗（6078.HK）】减值拖累利润，静待26年复苏——2025年业绩点评（吴佳青）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774998000,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/uHb0RZZB0xVbujveTEWUBA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753880_6",
+      "title": "【申洲国际（2313.HK）】业绩低于预期，系毛利率和汇率等多因素影响——2025年度业绩点评（姜浩/孙未未/朱洁宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774998000,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/Iq3HpJnOwN5TpElVURS-7Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753880_5",
+      "title": "【金风科技（002202.SZ&2208.HK）】海外订单快速增长，风机毛利率持续改善——2025年年报点评（殷中枢/郝骞/邓怡亮）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774998000,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/IuB_XL33FywyVAsiB-YJ3w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753880_4",
+      "title": "【科达制造（600499.SH）】海外建材及锂电板块量价齐增推动盈利向上，持续增长可期——2025年年报点评（孙伟风/陈佳宁/吴钰洁）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774998000,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/KHyszQAbbTH7vcN5HqMJhA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753880_3",
+      "title": "【兴福电子（688545.SH）】湿电子化学品持续放量，有序推动产能扩建及平台化布局——2025年报点评（赵乃迪/周家诺）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774998000,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/DAfwwYvd-ncO75l87B8p8A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753880_2",
+      "title": "【农业银行（601288.SH）】业绩增速领跑同业，县域业务优势鲜明——2025年年报点评（王一峰/赵晨阳）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774998000,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/OxBwiALC5JyethWdxcOxJQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753880_1",
+      "title": "【光大研究每日速递】20260401",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774998000,
+      "date": "2026-04-01",
+      "url": "https://mp.weixin.qq.com/s/50ylLe11l13ZmGycDPmgxw",
       "summary": "",
       "keywords": []
     },
@@ -5722,6 +10322,16 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485542_1",
+      "title": "“替我做”经济崛起：AI正在瓦解互联网流量漏斗",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1774941360,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/dak-6M3vCpHgEQZDbrBv_g",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3572653397-2247494478_1",
       "title": "一季度全球市场投资者破防时刻",
       "mp_name": "智堡Mikko",
@@ -5738,6 +10348,86 @@
       "publish_time": 1774925488,
       "date": "2026-03-31",
       "url": "https://mp.weixin.qq.com/s/7OXiunRIvqe_KwTDVJ0Kug",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753866_8",
+      "title": "【潮宏基（002345.SZ）】25年业绩表现亮眼，加盟渠道稳步扩张——2025年年报点评（姜浩/朱洁宇/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774911600,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/wJ68rODyRUu2_x1Wsa03Vw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753866_7",
+      "title": "【小马智行（PONY.O）】广州深圳UE双双盈利，国内+海外双引擎扩张——2025年年报业绩点评（倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774911600,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/r6ywhw5KILBjQiN2AAzImw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753866_6",
+      "title": "【横店东磁（002056.SZ）】业绩稳中有增彰显经营韧性，多元化布局保障长期成长——2025年年报点评（殷中枢/郝骞）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774911600,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/61bRVo8JdPSLnPV-I8zmBQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753866_5",
+      "title": "【中材国际（600970.SH）】境外业务强力驱动收入增长，业务结构持续优化——2025年年报点评（孙伟风/吴钰洁）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774911600,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/QFiMh7Gl2TTN05_3bJIT1g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753866_4",
+      "title": "【中国石油（601857.SH0857.HK）】25年经营业绩保持历史高位，地缘不确定性彰显公司战略价值——2025年报点评（赵乃迪/蔡嘉豪/王礼沫）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774911600,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/90OwbI7YQnpFyM9hoBx2pQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753866_3",
+      "title": "【天齐锂业（002466.SZ）】业绩扭亏为盈，资源产能稳步扩张——2025年年报点评（王招华/方驭涛/王秋琪）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774911600,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/DbZWWhCTUv8Vn1qPszwkdA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753866_2",
+      "title": "【越秀服务（6626.HK）】业务结构调整毛利率下滑，物管核心支柱作用凸显——2025年度业绩点评（何缅南/韦勇强）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774911600,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/dzpWa5MytpuTVwygW--UbA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753866_1",
+      "title": "【光大研究每日速递】20260331",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774911600,
+      "date": "2026-03-31",
+      "url": "https://mp.weixin.qq.com/s/1qpJDZkwnWK4_ndn9bNOng",
       "summary": "",
       "keywords": []
     },
@@ -5882,6 +10572,86 @@
       "keywords": []
     },
     {
+      "id": "3083484606-2651753858_8",
+      "title": "【海天味业（603288.SH）】营收增长稳健，盈利能力提升，龙头势能持续强化——2025年年报点评（陈彦彤/聂博雅/汪航宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774825200,
+      "date": "2026-03-30",
+      "url": "https://mp.weixin.qq.com/s/wOg-hh581QGL5bIFwcuI3g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753858_7",
+      "title": "【美图公司（1357.HK）】影像与设计产品快速增长，生产力场景与全球化共振——2025年业绩点评（付天姿/杨朋沛）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774825200,
+      "date": "2026-03-30",
+      "url": "https://mp.weixin.qq.com/s/XTnqu2Znsojg-HSHX39Zhg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753858_6",
+      "title": "【中国龙工（3339.HK）】利润率显著提升，海外收入有望进入快速增长期——2025年度业绩点评（陈佳宁/聂博雅/汲萌）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774825200,
+      "date": "2026-03-30",
+      "url": "https://mp.weixin.qq.com/s/tglQFawsan-bMqSbETxY5A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753858_5",
+      "title": "【比亚迪（002594.SZ）/比亚迪股份（1211.HK）】2025业绩披露，全球化加速推进——2025年年报业绩点评（倪昱婧/邢萍）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774825200,
+      "date": "2026-03-30",
+      "url": "https://mp.weixin.qq.com/s/bcyfgfRe-b48zWl9-YDzWA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753858_4",
+      "title": "【中国广核（003816.SZ）】政策利好叠加新项目投产，2026年业绩及估值提升均值得期待——2025年报点评（殷中枢/宋黎超）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774825200,
+      "date": "2026-03-30",
+      "url": "https://mp.weixin.qq.com/s/4YKf33n58zu8ukoSY6fiog",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753858_3",
+      "title": "【建发物业（2156.HK）】物管和社区增值高速增长，分红比例提升股息率较高——2025年度业绩点评（何缅南/韦勇强）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774825200,
+      "date": "2026-03-30",
+      "url": "https://mp.weixin.qq.com/s/2C6EWUmOXXEGkeSQrSuMdg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753858_2",
+      "title": "【邮储银行（601658.SH/1658.HK）】营收增速环比改善，储蓄代理费再调降——2025年年报点评（王一峰/董文欣）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774825200,
+      "date": "2026-03-30",
+      "url": "https://mp.weixin.qq.com/s/FGCmYUhVSyFv5Tmp-thAlg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753858_1",
+      "title": "【光大研究每日速递】20260330",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774825200,
+      "date": "2026-03-30",
+      "url": "https://mp.weixin.qq.com/s/3TQn8OVsqw8yvtJEd1T9bA",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3708114207-2247518032_3",
       "title": "【国联民生海外】快手（1024.HK）2025年四季度业绩点评：加大AI投入或致利润承压，关注可灵商业化进展",
       "mp_name": "声鸣海外 Global",
@@ -5958,6 +10728,16 @@
       "publish_time": 1774772426,
       "date": "2026-03-29",
       "url": "https://mp.weixin.qq.com/s/4QtwdFc0ehO-abB2WkK2yQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485532_1",
+      "title": "全球首张侵入式脑机接口证获批：一枚“硬币”入脑，瘫痪患者重获“意念控物”能力",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1774770900,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/v52DkFjFYJrOEuy3Zf02NQ",
       "summary": "",
       "keywords": []
     },
@@ -6052,12 +10832,112 @@
       "keywords": []
     },
     {
+      "id": "3083484606-2651753848_8",
+      "title": "【福瑞医科（300049.SZ）】营收利润双增，全球化布局持续推进——2025年年报点评（黎一江）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774742400,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/o2Omqyb4jKkv7bSRtzruuQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753848_7",
+      "title": "【五粮液（000858.SZ）】旺季动销稳健，营销动作积极——跟踪报告（叶倩瑜/李嘉祺/董博文）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774742400,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/JB2SizhW5BNp9IO03w2lIw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753848_6",
+      "title": "【农夫山泉（9633.HK）】25H2营收增长环比提速，长期发展动力充足——2025年报点评（陈彦彤/聂博雅/汪航宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774742400,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/rnSthkBqq-yUg_MNOr2kpA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753848_5",
+      "title": "【美丽田园医疗健康（2373.HK）】业绩表现靓丽，三大业务板块协同向上 ——2025年报点评（姜浩/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774742400,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/brDcMJIvu1mT98ZfchJujQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753848_4",
+      "title": "【涛涛车业（301345.SZ）】行业格局重塑下全球化布局优势明显，人形机器人布局成长可期——跟踪点评（洪吉然）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774742400,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/7rtSGYqS25m2kaAdfZzSYA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753848_3",
+      "title": "【北新建材（000786.SZ）】压力延续，期待改善——2025年年报点评（孙伟风/鲁俊）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774742400,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/ML1Mg1X7k_yqITnWPL1Mbw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753848_2",
+      "title": "【中国海油（600938.SH0883.HK）】25年油气产储量再创新高，油价下行期业绩韧性凸显——2025年报点评（赵乃迪/蔡嘉豪/王礼沫）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774742400,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/Ci-V6F96xgAw7taidxdolg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651753848_1",
+      "title": "阅峰 | 光大研究热门研报阅读榜 20260322-20260328",
+      "mp_name": "光大证券研究",
+      "publish_time": 1774742400,
+      "date": "2026-03-29",
+      "url": "https://mp.weixin.qq.com/s/1adJBuB3z47uoZDWuhu2PQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3708114207-2247518003_1",
       "title": "【国联民生海外】泡泡玛特（9992.HK）2025年年度业绩公告点评：全球版图稳步扩张，IP持续多元变现",
       "mp_name": "声鸣海外 Global",
       "publish_time": 1774710875,
       "date": "2026-03-28",
       "url": "https://mp.weixin.qq.com/s/O_RsvcCDanhYrbkNwQxCHA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485526_1",
+      "title": "物理AI定调AI下半场：英伟达GTC 2026释放了什么信号？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1774682100,
+      "date": "2026-03-28",
+      "url": "https://mp.weixin.qq.com/s/5cU5QodNopHavcnSihiGuw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485521_1",
+      "title": "“智能体元年”反思：OpenClaw退烧之后，AI落地还有多远？",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1774603020,
+      "date": "2026-03-27",
+      "url": "https://mp.weixin.qq.com/s/ITFLsdler730kXstwdBA-A",
       "summary": "",
       "keywords": []
     },
@@ -6172,6 +11052,16 @@
       "keywords": []
     },
     {
+      "id": "3933774573-2247485514_1",
+      "title": "AI安全对抗白热化：当AI开始“攻击”AI，红队测试成新刚需",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1774430220,
+      "date": "2026-03-25",
+      "url": "https://mp.weixin.qq.com/s/3m1HERggeuac00iFa4rdzQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
       "id": "3572653397-2247494466_1",
       "title": "Rubner看多",
       "mp_name": "智堡Mikko",
@@ -6228,6 +11118,16 @@
       "publish_time": 1774348765,
       "date": "2026-03-24",
       "url": "https://mp.weixin.qq.com/s/eMl-7OBieU67hhBhY_V02Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3933774573-2247485513_1",
+      "title": "当买卖双方的AI开始“私聊”：垂直AI的“多人模式”正在解锁",
+      "mp_name": "天佑AI轻创业",
+      "publish_time": 1774338900,
+      "date": "2026-03-24",
+      "url": "https://mp.weixin.qq.com/s/N_lZMCcj2wpVt3u8Tlu7MQ",
       "summary": "",
       "keywords": []
     },
