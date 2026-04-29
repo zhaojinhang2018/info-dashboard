@@ -1,17 +1,63 @@
 {
-  "updated_at": "2026-04-28 09:41:47",
+  "updated_at": "2026-04-29 10:48:35",
   "users": [
     {
       "display_name": "qinbafrank",
       "username": "@qinbafrank",
       "tweets": [
         {
+          "text": "Sam与其CFO的分歧由来已久，昨天华尔街日报报道，OpenAI最近未能实现新增用户和收入的内部目标，这让其CFO对OpenAI支付未来计算合同的能力感到担忧，也对IPO的时机产生疑虑。一下子打击了市场的风险偏好、需求层面其实看token消耗量的增长就好。其实Sam和他的CFO再关于扩张节奏上，一直都有分歧。Sam也 https://t.co/colVGXBrRN",
+          "url": "https://x.com/qinbafrank/status/2049293689659564130",
+          "meta": [
+            "04-29 01:04",
+            "♥ 19",
+            "↻ 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HHCNvykb0AAjgjI.jpg"
+          ]
+        },
+        {
+          "text": "全球金融的新技术栈，金融系统正在被新基础设施快速重建，稳定币是最大催化剂。已从“小众交易工具”进化成全球金融的基础管道，正在成为新一代金融产品（支付、外汇、信贷、投资等）的底层基础设施。A16Z这篇文章值得看看\n\n稳定币正催生新型 BaaS（Banking-as-a-Service）：\n1）上一代是 fintech https://t.co/NkaoQHF4P9",
+          "url": "https://x.com/qinbafrank/status/2049283840469086230",
+          "meta": [
+            "04-29 00:25",
+            "♥ 19",
+            "↻ 8"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HHCEyEZbkAA0SrM.jpg"
+          ]
+        },
+        {
+          "text": "阿联酋宣布降退出欧佩克和欧佩克+，绝对是全球石油地缘的大事件。阿联酋是欧佩克内部第三大产油国，仅次于沙特和伊拉克，成为欧佩克成员国已经59年了。它的退出不仅是一个欧赔接成员的流失，更标志着该组织内部凝聚力的重大裂痕。聊聊个人看法：\n\n为什么选择这个时间点退出？ https://t.co/h4XpcofWH9",
+          "url": "https://x.com/qinbafrank/status/2049117609472450837",
+          "meta": [
+            "04-28 13:24",
+            "♥ 231",
+            "↻ 26"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG_qr-NbQAAmJrn.jpg"
+          ]
+        },
+        {
+          "text": "美股盘前跌幅不小，昨晚这里聊到的CTA资金应该一个关键因素，高盛模型显示CTA“买入燃料已耗尽”转为潜在卖方，尤其在中线下行情景下压力更大。被动资金熄火、过去三周半这么强势的上涨后主动资金可能这个点也不愿进甚至都有止盈动作。",
+          "url": "https://x.com/qinbafrank/status/2049109914728231081",
+          "meta": [
+            "04-28 12:54",
+            "♥ 44",
+            "↻ 2"
+          ],
+          "photos": []
+        },
+        {
           "text": "纽约时报这篇报道印证了之前关于伊朗当前领导格局的猜想：1、伊朗现在最高领导穆杰塔巴跟当前以瓦希迪为首的革命卫队领导将军们形成了一种政治同盟，相当是联合执政，彼此都有需要。而且穆杰塔巴八十年代在革命卫队的服役和后期在哈梅内伊办公室负责协调，也在IRGC内部也有自己的关系网络和势力范围。 https://t.co/0p1p26n3Dk",
           "url": "https://x.com/qinbafrank/status/2048929540500832679",
           "meta": [
             "04-28 00:57",
-            "♥ 21",
-            "↻ 4"
+            "♥ 102",
+            "↻ 19"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG9CjIrbsAAe6hT.jpg",
@@ -24,8 +70,8 @@
           "url": "https://x.com/qinbafrank/status/2048758415581991142",
           "meta": [
             "04-27 13:37",
-            "♥ 54",
-            "↻ 13"
+            "♥ 66",
+            "↻ 15"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG6m6uObkAARg02.jpg"
@@ -36,8 +82,8 @@
           "url": "https://x.com/qinbafrank/status/2048706610672120261",
           "meta": [
             "04-27 10:11",
-            "♥ 94",
-            "↻ 19"
+            "♥ 109",
+            "↻ 22"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG53zV5aIAArECA.jpg",
@@ -49,8 +95,8 @@
           "url": "https://x.com/qinbafrank/status/2048607694567964767",
           "meta": [
             "04-27 03:38",
-            "♥ 47",
-            "↻ 3"
+            "♥ 49",
+            "↻ 4"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG4d1r3a8AASzFX.jpg"
@@ -73,50 +119,8 @@
           "url": "https://x.com/qinbafrank/status/2048568392643465426",
           "meta": [
             "04-27 01:02",
-            "♥ 75",
+            "♥ 76",
             "↻ 14"
-          ],
-          "photos": []
-        },
-        {
-          "text": "这也是某一种形式时光机，当然现在因为于AI信息传递很快很迅速，时间差相比以前不算大了，需要快速反应。但不得不说AI真让我们做到了说干就干、立马出结果",
-          "url": "https://x.com/qinbafrank/status/2048564182585626722",
-          "meta": [
-            "04-27 00:45",
-            "♥ 23",
-            "↻ 0"
-          ],
-          "photos": []
-        },
-        {
-          "text": "今天看不少媒体报道贝莱德的IBIT的期权未平仓规模首次超越Deribit上的比特币期权未平仓规模，其实去年十月份就已经超过了，但意义确实不小：大饼从加密原生市场的“边缘衍生品”进入华尔街主流机构资产配置的核心战场，传统资金不再满足于简单买IBIT现货长持，而是通过IBIT的期权，用Covered https://t.co/iFy2CMri6B",
-          "url": "https://x.com/qinbafrank/status/2048411831971234230",
-          "meta": [
-            "04-26 14:40",
-            "♥ 52",
-            "↻ 10"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG1rs76a0AEb74x.jpg"
-          ]
-        },
-        {
-          "text": "人类历史首次全马破2，塞巴斯蒂安·萨维在2026伦敦马拉松用时1小时59分30秒夺冠，把世界纪录提高了接近1分钟，这是真的创造了人类记录。只能说人类在探索极限的道路上永不停歇 https://t.co/G3BuujxbGH",
-          "url": "https://x.com/qinbafrank/status/2048354981703823761",
-          "meta": [
-            "04-26 10:54",
-            "♥ 197",
-            "↻ 10"
-          ],
-          "photos": []
-        },
-        {
-          "text": "这不到两年时间川普已经遭遇了5次刺杀未遂：\n2024年7月宾州集会枪击\n2024年9月高尔夫球场未遂\n2024年10月科切拉谷地集会未遂\n2026年2月海湖庄园闯入未遂\n2026年4月白宫记者晚宴枪击\n\n当然最经惊险还是24的宾州聚会枪击，子弹飞来的瞬间川普偏偏一转头，子弹擦着耳朵过去。如果没扭头、人可能都不在了。",
-          "url": "https://x.com/qinbafrank/status/2048298521405927813",
-          "meta": [
-            "04-26 07:09",
-            "♥ 42",
-            "↻ 2"
           ],
           "photos": []
         }
@@ -127,11 +131,41 @@
       "username": "@TJ_Research",
       "tweets": [
         {
+          "text": "亚麻推出了QUICK，DESKTOP的AI AGENT，建立在所有电脑界面APP的上层智能体，竞品是微软的COWORK, CLAUDE, CHATGPT。",
+          "url": "https://x.com/TJ_Research/status/2049285103143043413",
+          "meta": [
+            "04-29 00:30",
+            "♥ 27",
+            "↻ 2"
+          ],
+          "photos": []
+        },
+        {
+          "text": "觉得3月份标普只跌了10%还有空间，然后完美踏空了载入历史的连续上涨，用CAPE ratio Market cap to GDP ratio这些过去十几年早已失效的指标证明美股泡沫。却忽略了最简单且过去几年熊市和下跌里最好的衡量指标forward P/E，3月底指数便宜过25年，个股便宜过20年。",
+          "url": "https://x.com/TJ_Research/status/2049175198419562876",
+          "meta": [
+            "04-28 17:13",
+            "♥ 256",
+            "↻ 24"
+          ],
+          "photos": []
+        },
+        {
+          "text": "这就是分发的护城河\n即使你觉得Copilot再垃圾，一下子卖74万个席位，任何大模型都做不到",
+          "url": "https://x.com/TJ_Research/status/2048975909865054351",
+          "meta": [
+            "04-28 04:01",
+            "♥ 224",
+            "↻ 8"
+          ],
+          "photos": []
+        },
+        {
           "text": "Seat + Token额度。必然的趋势。现在Token太抢手了",
           "url": "https://x.com/TJ_Research/status/2048821642919358502",
           "meta": [
             "04-27 17:48",
-            "♥ 37",
+            "♥ 60",
             "↻ 4"
           ],
           "photos": []
@@ -141,7 +175,7 @@
           "url": "https://x.com/TJ_Research/status/2048802067418947701",
           "meta": [
             "04-27 16:30",
-            "♥ 106",
+            "♥ 147",
             "↻ 9"
           ],
           "photos": []
@@ -151,18 +185,8 @@
           "url": "https://x.com/TJ_Research/status/2048632525812126051",
           "meta": [
             "04-27 05:17",
-            "♥ 154",
+            "♥ 172",
             "↻ 8"
-          ],
-          "photos": []
-        },
-        {
-          "text": "RT @Cryptobtcmiko: Dear Mr. Musk @elonmusk , I believe your X product manager is highly unprofessional, and I strongly suspect he is a raci…",
-          "url": "https://x.com/TJ_Research/status/2048521660437795291",
-          "meta": [
-            "04-26 21:56",
-            "♥ 0",
-            "↻ 350"
           ],
           "photos": []
         },
@@ -171,8 +195,8 @@
           "url": "https://x.com/TJ_Research/status/2048492160945938843",
           "meta": [
             "04-26 19:59",
-            "♥ 142",
-            "↻ 13"
+            "♥ 146",
+            "↻ 14"
           ],
           "photos": []
         },
@@ -181,7 +205,7 @@
           "url": "https://x.com/TJ_Research/status/2048483402018422953",
           "meta": [
             "04-26 19:24",
-            "♥ 192",
+            "♥ 202",
             "↻ 31"
           ],
           "photos": []
@@ -191,8 +215,8 @@
           "url": "https://x.com/TJ_Research/status/2048459910061649920",
           "meta": [
             "04-26 17:51",
-            "♥ 233",
-            "↻ 11"
+            "♥ 239",
+            "↻ 12"
           ],
           "photos": []
         },
@@ -202,33 +226,11 @@
           "meta": [
             "04-26 17:12",
             "♥ 0",
-            "↻ 99"
+            "↻ 101"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG1mJFkbUAA6OmY.jpg"
           ]
-        },
-        {
-          "text": "不是，所以我也是币圈的人？24年给我散步carry trade的恐慌。 https://t.co/HZlb5CSRPk",
-          "url": "https://x.com/TJ_Research/status/2048312585078886910",
-          "meta": [
-            "04-26 08:05",
-            "♥ 81",
-            "↻ 2"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG0RcRpXgAAJfTT.jpg"
-          ]
-        },
-        {
-          "text": "Dylan Patel最新采访两点值得关注和思考的观察和观点：\n1. 记忆体的价格今年可以再涨2倍甚至3倍，这就是资本主义的结果\n2. ANTHROPIC其实没有增加太多算力，但是他们的毛利润从30%多涨到了现在的70%多！你没见过一家公司这么涨价的\n3.",
-          "url": "https://x.com/TJ_Research/status/2048203276118528496",
-          "meta": [
-            "04-26 00:51",
-            "♥ 269",
-            "↻ 31"
-          ],
-          "photos": []
         }
       ]
     },
@@ -237,11 +239,39 @@
       "username": "@Murphychen888",
       "tweets": [
         {
+          "text": "我知道字一多有人脑细胞就不够用了。如果你确实对文字不敏感，阅读理解困难，那为什么不问问Grok呢？\n\n我给你的是一套可验证的决策框架，及其逻辑推导过程。而你希望得到是一句简单的多空预测和点位。 https://t.co/wX52wQfwjW",
+          "url": "https://x.com/Murphychen888/status/2049002734410670359",
+          "meta": [
+            "04-28 05:48",
+            "♥ 63",
+            "↻ 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG-BE55a0AAl8cv.jpg",
+            "https://pbs.twimg.com/media/HG-BlMbaQAAGa5n.png",
+            "https://pbs.twimg.com/media/HG-CF-Aa0AAzVbI.jpg",
+            "https://pbs.twimg.com/media/HG-CKf3bAAAOVba.png"
+          ]
+        },
+        {
+          "text": "STH-RP突然加速下压，在4/25-4/27仅仅2天时间下降了1000美元，目前已至$79,000左右。7日变化率为-2%，而此前很长一段时间都基本维持在-0.5%左右（见图1）。\n\nSTH-RP为什么会突然加速下压？又会带来什么影响？ https://t.co/Ycx0hBAvVf",
+          "url": "https://x.com/Murphychen888/status/2048985560518369370",
+          "meta": [
+            "04-28 04:40",
+            "♥ 116",
+            "↻ 6"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG91N3iasAAW48K.jpg",
+            "https://pbs.twimg.com/media/HG91P6mbAAETlea.jpg"
+          ]
+        },
+        {
           "text": "是的，我也认同这个观点。只不过，这里有一个小问题：\n\n就是如果出现了有可能走一波小牛的信号，比如突破STH-RP，我们要不要去抓？包括在哪里进，上多少仓位，止损设在哪里？都要提前想好。\n\n又比如突破STH-RP失败，BTC再次回调，要选择在哪里上车？",
           "url": "https://x.com/Murphychen888/status/2048760466491777056",
           "meta": [
             "04-27 13:45",
-            "♥ 37",
+            "♥ 50",
             "↻ 0"
           ],
           "photos": []
@@ -251,8 +281,8 @@
           "url": "https://x.com/Murphychen888/status/2048684877281898797",
           "meta": [
             "04-27 08:45",
-            "♥ 102",
-            "↻ 6"
+            "♥ 119",
+            "↻ 8"
           ],
           "photos": []
         },
@@ -261,8 +291,8 @@
           "url": "https://x.com/Murphychen888/status/2048643306473578577",
           "meta": [
             "04-27 06:00",
-            "♥ 140",
-            "↻ 12"
+            "♥ 147",
+            "↻ 13"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG4bod8a4AAtg8c.jpg",
@@ -276,7 +306,7 @@
           "url": "https://x.com/Murphychen888/status/2048567806325584209",
           "meta": [
             "04-27 01:00",
-            "♥ 203",
+            "♥ 206",
             "↻ 28"
           ],
           "photos": [
@@ -288,7 +318,7 @@
           "url": "https://x.com/Murphychen888/status/2048312277846347862",
           "meta": [
             "04-26 08:04",
-            "♥ 193",
+            "♥ 195",
             "↻ 3"
           ],
           "photos": [
@@ -300,7 +330,7 @@
           "url": "https://x.com/Murphychen888/status/2048262591806603644",
           "meta": [
             "04-26 04:47",
-            "♥ 96",
+            "♥ 98",
             "↻ 9"
           ],
           "photos": [
@@ -314,7 +344,7 @@
           "url": "https://x.com/Murphychen888/status/2047882376773333128",
           "meta": [
             "04-25 03:36",
-            "♥ 179",
+            "♥ 180",
             "↻ 24"
           ],
           "photos": [
@@ -327,37 +357,11 @@
           "url": "https://x.com/Murphychen888/status/2047662904204468652",
           "meta": [
             "04-24 13:04",
-            "♥ 433",
+            "♥ 436",
             "↻ 52"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HGrCCAeaAAAkm-v.jpg"
-          ]
-        },
-        {
-          "text": "BRS从4/16至今，一直被死死的钉在了“0”的位置。在BRS=0的时间段，就是BTC阶段性筑顶的过程。\n\n并不是一回到零就是顶点，但BRS也不可能永远停在零轴，一旦离开就是回调开始，只是我们不知道需要多久。\n\n就像2月3日BRS触及100后意味着BTC进入阶段性的底部区间，这期间BTC到过62，也到过73。 https://t.co/Em6GPu3tHB",
-          "url": "https://x.com/Murphychen888/status/2047207223731077263",
-          "meta": [
-            "04-23 06:53",
-            "♥ 127",
-            "↻ 10"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGkjj-nakAAFR0i.jpg",
-            "https://pbs.twimg.com/media/HGkjmbdbwAA5YYj.jpg"
-          ]
-        },
-        {
-          "text": "7.9w了，为什么我仍不想追空？\n\n合约市场对空双方持仓量永远 1:1 对称，在不考虑手续费、资金费、滑点等交易成本时，盈亏近似零和，即多头赚的钱就是空头亏的钱。\n\n所以，空单要能开出来，得有同样仓位的空单平仓或多单开仓来作为对手盘。\n\n如果是“新空头开仓 vs 老空头平仓”撮合，OI（Open https://t.co/jxKXFxvMGP",
-          "url": "https://x.com/Murphychen888/status/2047167439407104185",
-          "meta": [
-            "04-23 04:15",
-            "♥ 230",
-            "↻ 32"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGj6XvmbwAAEsbX.jpg",
-            "https://pbs.twimg.com/media/HGj6bY3agAAqTjQ.jpg"
           ]
         }
       ]
@@ -367,127 +371,121 @@
       "username": "@_FORAB",
       "tweets": [
         {
-          "text": "被大面积使用的快连 VPN，早上发布公告表示，在过去 20 天里，虽然多次调整，但无法解决有效连接问题。因此将对所有用户退款，并关闭中国内地用户支付、开通渠道。\n\n此前，大规模的封禁机场潮，包括快连、少数派、熊猫在内的知名梯子，相继被干，即使每次恢复服务后不到 1 天，再次被干。 https://t.co/2RUnHXICxs",
-          "url": "https://x.com/_FORAB/status/2048938147111952550",
+          "text": "马斯克于今天凌晨，正式现身法庭，与 OpenAI 对决公堂，声称再不阻止，人类就要面临生存危险。这是 1 小时 40 分钟证词的简要总结，他将于明天继续作证。\n\n• 他认为 AI 最快可能明年，就超过人类智能，如果掌握在不可靠的人手里，人类会面临生存风险。\n\n• 他表示，OpenAI https://t.co/xkg19oRFSM",
+          "url": "https://x.com/_FORAB/status/2049314804243058810",
           "meta": [
-            "04-28 01:31",
-            "♥ 23",
-            "↻ 0"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG9JsnnbgAARf4V.jpg"
-          ]
-        },
-        {
-          "text": "今日段子：Meta 寻求退款 20 亿\n\n商家 Manus 和资方真格，拒绝退款\n\n平台强制介入，Meta 仅退款成功。 https://t.co/l2vlWFLquL",
-          "url": "https://x.com/_FORAB/status/2048741628781932796",
-          "meta": [
-            "04-27 12:30",
-            "♥ 599",
-            "↻ 41"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG6XHRIagAEI-BK.jpg"
-          ]
-        },
-        {
-          "text": "太猛了，全世界最大的比特币储备公司 Strategy，上周花了 2.55 亿美金，从市场上又购入了 3273 枚比特币。\n\n现在它们家已经有了 81.83 万枚比特币，占总量的 3.9%，均价 7.5 万美元，已经浮赢。\n\n而这次的子弹来源，则是向市场抛售自家的股票。 https://t.co/vqgSRB9vVw",
-          "url": "https://x.com/_FORAB/status/2048740451122090232",
-          "meta": [
-            "04-27 12:26",
-            "♥ 117",
-            "↻ 7"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG6WRvEaUAAv7LO.png",
-            "https://pbs.twimg.com/media/HG6WWUaa4AAtiPG.jpg"
-          ]
-        },
-        {
-          "text": "OnlyFans 明星 Sophie Rain，去年赚了 8300 万美金，在缴纳 37% 作为税款后，她决定用剩下的钱，买了一块 8 万平米的农场。\n\n12 头牛，从 OnlyFans 到 OnlyFarms，成人影片明星，成了农场大户。\n\n她说她的梦想，是拥有一座牛牛牧场，如今靠搞黄色实现了它。\n\nhttps://t.co/PN0lTYeni0",
-          "url": "https://x.com/_FORAB/status/2048718938633347525",
-          "meta": [
-            "04-27 11:00",
-            "♥ 1147",
-            "↻ 67"
+            "04-29 02:28",
+            "♥ 38",
+            "↻ 3"
           ],
           "photos": []
         },
         {
-          "text": "撤销收购！中国发改委，旗下外商投资安全机制办公室，宣布依法对外资收购 Manus 项目，作出禁止投资决定，要求当事人撤销该收购交易。\n\n此前该 AI 公司，被 Meta 高调宣布 20 亿美金收购，随后相关经营者和资方，先后遭到政府监管调查。 https://t.co/tfYAyVZHWF",
-          "url": "https://x.com/_FORAB/status/2048677676517658827",
+          "text": "除了即将到来，印有特朗普的美元，美国国务院正准备发行，印有特朗普的美国护照，以纪念美国建国 250 周年。\n\n官员表示，纪念护照可以在华盛顿办事处，亲自申请和办理，对于想要普通护照的人，可以通过网络或在华盛顿以外的地方申请获得。 https://t.co/TVoCjObFJH",
+          "url": "https://x.com/_FORAB/status/2049302626794443174",
           "meta": [
-            "04-27 08:16",
-            "♥ 486",
-            "↻ 34"
+            "04-29 01:39",
+            "♥ 30",
+            "↻ 0"
+          ],
+          "photos": []
+        },
+        {
+          "text": "？？？一下子给我脑子整宕机了。\n\n白宫官推说，英国国王查尔斯和美国总统特朗普，是两位国王？ https://t.co/bId5eRM1CC",
+          "url": "https://x.com/_FORAB/status/2049297501757616213",
+          "meta": [
+            "04-29 01:19",
+            "♥ 99",
+            "↻ 0"
           ],
           "photos": [
-            "https://pbs.twimg.com/media/HG5dKyva4AAo21L.jpg",
-            "https://pbs.twimg.com/media/HG5dNYWaYAAu6da.jpg"
+            "https://pbs.twimg.com/media/HHCQ9EEaIAEPQZM.jpg"
           ]
         },
         {
-          "text": "一周 77 万人民币。网红分析师洪灝，于上周在微信，开始更新新的订阅付费合集，目前已发出三篇付费观点。\n\n而想订阅该合集，需支付 1 万枚微信豆，按照微信官方报价，IOS 用户为 1428 元，安卓用户为 1000 元，目前已有 778 人为此付费。\n\n按照安卓报价，约合 77.2 万人民币收入。 https://t.co/mIAmFoxpSi",
-          "url": "https://x.com/_FORAB/status/2048664557951107437",
+          "text": "这下是真见证历史了，阿联酋宣布单方面退出全世界最大的石油联盟 OPEC。\n\n该组织由 12 个石油国组成，占全球 38% 原油产量，其中原油储备占全球 71.8%。过去以来，联盟成员都是一起商量，对原油增产还是减产，从而影响油价。\n\n如今阿联酋单方面宣称退出该组织，并要增产原油，利益联盟分裂了。 https://t.co/NkPgeY5zAT",
+          "url": "https://x.com/_FORAB/status/2049109167257104694",
           "meta": [
-            "04-27 07:24",
-            "♥ 374",
-            "↻ 26"
+            "04-28 12:51",
+            "♥ 773",
+            "↻ 86"
           ],
           "photos": [
-            "https://pbs.twimg.com/media/HG5ReMXbEAEFKQh.jpg",
-            "https://pbs.twimg.com/media/HG5Rf0qbgAAsjyG.jpg"
+            "https://pbs.twimg.com/media/HG_lrnha4AALXmN.jpg",
+            "https://pbs.twimg.com/media/HG_ly2caAAAw3Mf.jpg"
           ]
         },
         {
-          "text": "经确认，付鹏删除了他在上周六，发布的推文。\n\n当时他表示，很多人都不知道他在说什么，只有到了一定维度的人，才能懂他说什么，随后他拉黑屏蔽了大多币圈投资和从业者。 https://t.co/JlCpZkkx6f",
-          "url": "https://x.com/_FORAB/status/2048657829364736197",
+          "text": "以为是段子，搜了下没想到是真的\n\nX 平台的含金量，又提高了很多 https://t.co/FHvf6DDx1B",
+          "url": "https://x.com/_FORAB/status/2049100437404721648",
           "meta": [
-            "04-27 06:57",
-            "♥ 180",
-            "↻ 2"
+            "04-28 12:16",
+            "♥ 126",
+            "↻ 6"
           ],
           "photos": [
-            "https://pbs.twimg.com/media/HG5LPlqbIAAUDo6.jpg",
-            "https://pbs.twimg.com/media/HG5LReGaEAAVPHq.jpg"
+            "https://pbs.twimg.com/media/HG_dvftbwAAHdiy.jpg",
+            "https://pbs.twimg.com/media/HG_d_EcbAAAKp39.png"
           ]
         },
         {
-          "text": "此时的北京，比亚迪老板王传福亲自坐地铁，政府领导频繁参访小米，字节跳动北四环的新园区咖啡厅一直爆满。 https://t.co/it357g2uUM",
-          "url": "https://x.com/_FORAB/status/2048645380297073117",
+          "text": "果然，对 AI 图开始收紧了。网信办发文表示，剪映、猫箱、即梦 AI，存在未有效落实 AI 生成标识规定等问题，导致大量的 AI 假图，近期在互联网流传。\n\n因此对相关平台，采取约谈、责令改正、警告、从严处理责任人等处置措施。\n\n需要说明的是，这三个都是字节跳动系 AI 产品。 https://t.co/KCTZK2bXFm",
+          "url": "https://x.com/_FORAB/status/2049079914364895587",
           "meta": [
-            "04-27 06:08",
-            "♥ 116",
-            "↻ 2"
+            "04-28 10:54",
+            "♥ 115",
+            "↻ 7"
           ],
           "photos": [
-            "https://pbs.twimg.com/media/HG4-8khbYAASOB_.jpg",
-            "https://pbs.twimg.com/media/HG4_7VPaQAEszrY.jpg"
+            "https://pbs.twimg.com/media/HG_K6blbIAA-a9l.jpg"
           ]
         },
         {
-          "text": "被字节内部认为是加班重灾区的飞书，CEO 谢欣发布声明，呼吁大家减少长期加班、熬夜。\n\n图 2 是这位老哥近期的相貌。 https://t.co/GmvAWuM5BE",
-          "url": "https://x.com/_FORAB/status/2048608894424129607",
+          "text": "对大多数人来说，这可能是 PS 当前唯一的用途。\n\n抠掉豆包 AI 水印。 https://t.co/JRRK3US3xY",
+          "url": "https://x.com/_FORAB/status/2049038899436229013",
           "meta": [
-            "04-27 03:43",
-            "♥ 483",
+            "04-28 08:11",
+            "♥ 131",
+            "↻ 3"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG-l7YWb0AAb1bq.png",
+            "https://pbs.twimg.com/media/HG-l8Lob0AALC6N.png"
+          ]
+        },
+        {
+          "text": "DeepSeek v4 Pro 优惠，延长到了 5 月底\n\n小米 MiMo，要在 30 天送 100 万亿 Token\n\n终于到绝对价格战阶段了 https://t.co/EhrG9mcB8j",
+          "url": "https://x.com/_FORAB/status/2049035478570336519",
+          "meta": [
+            "04-28 07:58",
+            "♥ 179",
+            "↻ 10"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG-hmcbaoAA5FsJ.jpg",
+            "https://pbs.twimg.com/media/HG-hmcba4AAKOtl.jpg"
+          ]
+        },
+        {
+          "text": "没想到这插件火了。一位日本开发者，做了个谷歌浏览器 Chrome 插件，当你每浏览网页，长达 60 分钟，就会出现猫咪挤占你的屏幕，强制让你休息 5 分钟。\n\n该设计初衷是提醒人们，不要长时间泡在电脑前，名为 Cat Gatekeeper。\n\nhttps://t.co/Yh80mcw22L",
+          "url": "https://x.com/_FORAB/status/2049011859433599178",
+          "meta": [
+            "04-28 06:24",
+            "♥ 3678",
+            "↻ 376"
+          ],
+          "photos": []
+        },
+        {
+          "text": "天王级公链 Monad 的官方 X 账号，最新显示已被冻结。\n\n此前，该公链向 X 社区上的博主，空投了新一期卡牌活动。 https://t.co/LSbDvzLdKw",
+          "url": "https://x.com/_FORAB/status/2049002134558126381",
+          "meta": [
+            "04-28 05:45",
+            "♥ 177",
             "↻ 8"
           ],
           "photos": [
-            "https://pbs.twimg.com/media/HG4eEcObIAApYY3.jpg",
-            "https://pbs.twimg.com/media/HG4eqLSbEAAjoR1.png"
-          ]
-        },
-        {
-          "text": "记者问特朗普，你怎么看待白宫记者会的枪手，说他因为你是恋童癖、强奸犯、叛徒，所以才去现场枪击的？\n\n结果老哥直接急了，说我就知道你们会看那个枪手的声明，你们真是些愚蠢的人，你应该为读了这份声明感到羞耻，因为我不是那种人，你们赶紧完成这场采访。 https://t.co/ajC7n5purc",
-          "url": "https://x.com/_FORAB/status/2048602625650938116",
-          "meta": [
-            "04-27 03:18",
-            "♥ 68",
-            "↻ 1"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG4ZA-IbMAAevW1.jpg"
+            "https://pbs.twimg.com/media/HG-ElMAaUAAs_uQ.jpg"
           ]
         }
       ]
@@ -511,7 +509,7 @@
           "url": "https://x.com/fi56622380/status/2044677478627868786",
           "meta": [
             "04-16 07:21",
-            "♥ 465",
+            "♥ 466",
             "↻ 96"
           ],
           "photos": [
@@ -526,7 +524,7 @@
           "url": "https://x.com/fi56622380/status/2035578249024053436",
           "meta": [
             "03-22 04:44",
-            "♥ 396",
+            "♥ 395",
             "↻ 93"
           ],
           "photos": [
@@ -568,8 +566,8 @@
           "url": "https://x.com/fi56622380/status/1983083061043692015",
           "meta": [
             "10-28 08:07",
-            "♥ 1512",
-            "↻ 339"
+            "♥ 1511",
+            "↻ 341"
           ],
           "photos": [
             "https://pbs.twimg.com/media/G4VSYoQasAQajxn.jpg"
@@ -580,7 +578,7 @@
           "url": "https://x.com/fi56622380/status/1957311792994279912",
           "meta": [
             "08-18 05:21",
-            "♥ 436",
+            "♥ 435",
             "↻ 72"
           ],
           "photos": [
@@ -594,7 +592,7 @@
           "url": "https://x.com/fi56622380/status/1951176482136662211",
           "meta": [
             "08-01 07:01",
-            "♥ 204",
+            "♥ 203",
             "↻ 51"
           ],
           "photos": [
@@ -606,7 +604,7 @@
           "url": "https://x.com/fi56622380/status/1949646287168778723",
           "meta": [
             "07-28 01:41",
-            "♥ 424",
+            "♥ 423",
             "↻ 98"
           ],
           "photos": [
@@ -631,12 +629,42 @@
       "username": "@ShanghaoJin",
       "tweets": [
         {
+          "text": "RT @ShanghaoJin: 澄清下，AMD非常看好，但并没让你顶着short squeeze/gamma squeeze去Fomo\n\n这周任务只有一个：管住手\n\n可以不卖，但除了“极个别”的都决不能买\n\nps AMZN算“极个别”，但是买大票要上仓位。这周上大仓位很犯怵，…",
+          "url": "https://x.com/ShanghaoJin/status/2049300024077774971",
+          "meta": [
+            "04-29 01:29",
+            "♥ 0",
+            "↻ 27"
+          ],
+          "photos": []
+        },
+        {
+          "text": "属于吃完饭，已经接了账。商家强制仅退款",
+          "url": "https://x.com/ShanghaoJin/status/2049102323922960632",
+          "meta": [
+            "04-28 12:23",
+            "♥ 59",
+            "↻ 2"
+          ],
+          "photos": []
+        },
+        {
+          "text": "RT @bboczeng: 其实这里我想澄清一下，我本身并不憎恶气球\n\n最近SNDK大涨，我这一个星期真有可能把他账户Life Time赚到的钱赚到手\n\n我又有什么可生气的呢？\n\n只是觉得他利用我的流量涨粉，单纯浪费我的时间罢了\n\n只不过这个人，在推特历史上劣迹斑斑，逢人就怼，…",
+          "url": "https://x.com/ShanghaoJin/status/2049100032373412191",
+          "meta": [
+            "04-28 12:14",
+            "♥ 0",
+            "↻ 2"
+          ],
+          "photos": []
+        },
+        {
           "text": "澄清下，AMD非常看好，但并没让你顶着short squeeze/gamma squeeze去Fomo\n\n这周任务只有一个：管住手\n\n可以不卖，但除了“极个别”的都决不能买\n\nps AMZN算“极个别”，但是买大票要上仓位。这周上大仓位很犯怵，即便能涨20%风险性价比也不高\n\n我消失闭关一周，尔等切不可出战",
           "url": "https://x.com/ShanghaoJin/status/2048748171380306218",
           "meta": [
             "04-27 12:56",
-            "♥ 274",
-            "↻ 21"
+            "♥ 308",
+            "↻ 27"
           ],
           "photos": []
         },
@@ -645,8 +673,8 @@
           "url": "https://x.com/ShanghaoJin/status/2048745992846213460",
           "meta": [
             "04-27 12:48",
-            "♥ 125",
-            "↻ 3"
+            "♥ 142",
+            "↻ 4"
           ],
           "photos": []
         },
@@ -655,7 +683,7 @@
           "url": "https://x.com/ShanghaoJin/status/2048674286232297535",
           "meta": [
             "04-27 08:03",
-            "♥ 84",
+            "♥ 89",
             "↻ 0"
           ],
           "photos": []
@@ -665,8 +693,8 @@
           "url": "https://x.com/ShanghaoJin/status/2048619502481625514",
           "meta": [
             "04-27 04:25",
-            "♥ 217",
-            "↻ 15"
+            "♥ 225",
+            "↻ 17"
           ],
           "photos": []
         },
@@ -675,7 +703,7 @@
           "url": "https://x.com/ShanghaoJin/status/2048614979516158009",
           "meta": [
             "04-27 04:07",
-            "♥ 81",
+            "♥ 82",
             "↻ 2"
           ],
           "photos": []
@@ -695,38 +723,8 @@
           "url": "https://x.com/ShanghaoJin/status/2047986593940820181",
           "meta": [
             "04-25 10:30",
-            "♥ 99",
+            "♥ 103",
             "↻ 7"
-          ],
-          "photos": []
-        },
-        {
-          "text": "美国顶尖医疗机构的研发确实非常厉害，但是中国正用其效率以惊人的速度追赶\n\n而且因为中国有巨多实操案例，加上三甲医院系统化数据、整体管理优势。几年内，不管新药研发、还是治疗整体能力，中国一线医院都会让你们惊掉下巴\n\n好像是2000年TSMC，良率是一片一片搓出来的",
-          "url": "https://x.com/ShanghaoJin/status/2047969178519511044",
-          "meta": [
-            "04-25 09:21",
-            "♥ 140",
-            "↻ 10"
-          ],
-          "photos": []
-        },
-        {
-          "text": "强烈怀疑你们看了我前几天在群里传的小作文😂",
-          "url": "https://x.com/ShanghaoJin/status/2047955649162883420",
-          "meta": [
-            "04-25 08:27",
-            "♥ 74",
-            "↻ 8"
-          ],
-          "photos": []
-        },
-        {
-          "text": "RT @ShanghaoJin: @ashinagen32 @againwithoutI 日本老百姓被军国主义洗脑是无辜的，中国出厂鸿蒙系统的孩子也是无辜的\n\n我们不该恨日本人，而是让日本兵变成禽兽的国家主义制度、民粹主义\n\n然后想想这个遗毒在哪里横行，自己有没有中毒",
-          "url": "https://x.com/ShanghaoJin/status/2047954553409319423",
-          "meta": [
-            "04-25 08:23",
-            "♥ 0",
-            "↻ 3"
           ],
           "photos": []
         }
@@ -737,12 +735,58 @@
       "username": "@oxpsats",
       "tweets": [
         {
+          "text": "开始了 https://t.co/ZZlw4hzaGA",
+          "url": "https://x.com/oxpsats/status/2049144656613814308",
+          "meta": [
+            "04-28 15:12",
+            "♥ 4",
+            "↻ 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HHAGLXuaYAA5AXA.jpg"
+          ]
+        },
+        {
+          "text": "比特币1小时线，非常典型的下跌路径。 https://t.co/bX3KKATlB4",
+          "url": "https://x.com/oxpsats/status/2049062669794345289",
+          "meta": [
+            "04-28 09:46",
+            "♥ 6",
+            "↻ 0"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG-7ht0aYAEcDSE.jpg"
+          ]
+        },
+        {
+          "text": "美股在历史新高的位置，等着科技巨头交卷\nhttps://t.co/pgeKzbFu8K",
+          "url": "https://x.com/oxpsats/status/2049053825550684613",
+          "meta": [
+            "04-28 09:11",
+            "♥ 1",
+            "↻ 0"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Kpler 分析师在周一的一份报告中写道，伊朗的未使用储存容量仅够维持 12 至 22 天。\n\n由于美国在霍尔木兹海峡出口对伊朗关联的船只进行封锁，伊朗正迅速耗尽原油储存空间。 https://t.co/pezyuvXXG5",
+          "url": "https://x.com/oxpsats/status/2048946488026554604",
+          "meta": [
+            "04-28 02:04",
+            "♥ 4",
+            "↻ 1"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG9R92uboAA2ZGV.jpg"
+          ]
+        },
+        {
           "text": "说真的，做投资，想要拥有一份好心情就多投美股指数ETF，少玩加密货币。\n\n今年在加密上参与的仓位已经降到低于30%。\n\n对于大部分时间在上涨的资产，好好持有保持在场，对于大部分时间在震荡下跌或者震荡的资产，就是咬几口就跑。",
           "url": "https://x.com/oxpsats/status/2048909271736394157",
           "meta": [
             "04-27 23:36",
-            "♥ 4",
-            "↻ 0"
+            "♥ 5",
+            "↻ 1"
           ],
           "photos": []
         },
@@ -751,7 +795,7 @@
           "url": "https://x.com/oxpsats/status/2048901491847815251",
           "meta": [
             "04-27 23:05",
-            "♥ 1",
+            "♥ 5",
             "↻ 0"
           ],
           "photos": [
@@ -797,59 +841,13 @@
           "url": "https://x.com/oxpsats/status/2048569397338607863",
           "meta": [
             "04-27 01:06",
-            "♥ 3",
+            "♥ 2",
             "↻ 0"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG37AcWaoAA9J4k.jpg",
             "https://pbs.twimg.com/media/HG37AcYbQAAPebH.jpg",
             "https://pbs.twimg.com/media/HG37AcZaUAAV5Z-.jpg"
-          ]
-        },
-        {
-          "text": "危机只是沿途的风暴，不是旅程的终点。\n\n美股，不是一条平滑向上的“发财线”，而是一条不断被战争、通胀、萧条、金融危机和政策冲击打断的长期上升线。短期看，每一个事件都像悬崖；长期看，它们又变成了曲线上的一个个折点。 https://t.co/LDvrmikxwe",
-          "url": "https://x.com/oxpsats/status/2048410397125058881",
-          "meta": [
-            "04-26 14:34",
-            "♥ 4",
-            "↻ 2"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG1oW2UaMAE2nqo.jpg"
-          ]
-        },
-        {
-          "text": "RT @iPaulCanada: “万物皆可赌” 的Polymarket 最近遭遇了带有“黑色幽默”的金融诈骗。一男子两次押注巴黎最高温达到22℃，两次都中了，获利3.69万美元。他的做法很简单，用便携式吹风机加热戴高乐机场的气候传感器。巴黎气象局已报警。 https://t.…",
-          "url": "https://x.com/oxpsats/status/2048286233915515217",
-          "meta": [
-            "04-26 06:21",
-            "♥ 0",
-            "↻ 287"
-          ],
-          "photos": []
-        },
-        {
-          "text": "美伊谈判进展方面，特朗普取消了美国特使史蒂夫·维特科 夫和贾里德·库什纳前往巴基斯坦与伊朗进行和谈的行程。\n\n目前的尴尬在于，双方都想谈，但都想让对方先跪着进场。\n\n双方都觉得自己还有牌。 https://t.co/P6eaSg3UL3",
-          "url": "https://x.com/oxpsats/status/2048229486018371717",
-          "meta": [
-            "04-26 02:35",
-            "♥ 3",
-            "↻ 0"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGzFwB_acAAI06J.jpg"
-          ]
-        },
-        {
-          "text": "当下的混乱局面源于伊朗没有一个足够强的人，出来承担艰难妥协的政治代价。\n\n伊朗缺乏一位强有力的、在位的最高领袖来承担做出艰难决定的风险并统一各派系。\n\n凸显了伊朗目前缺乏过去那种能在重大国家安全决策中一锤定音的人物。（来自华尔街日报观点） https://t.co/s5GKysHNFm",
-          "url": "https://x.com/oxpsats/status/2047938403606663575",
-          "meta": [
-            "04-25 07:18",
-            "♥ 4",
-            "↻ 0"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HGu8EivbEAA57qu.jpg"
           ]
         }
       ]
@@ -859,12 +857,22 @@
       "username": "@fupenglondon",
       "tweets": [
         {
+          "text": "As Bitcoin (BTC) evolved from its initial definition phase to gradually face regulatory constraints and its monetary and asset attributes were clearly defined, it has become a substantial asset class that traditional financial institutions can allocate, accompanied by the",
+          "url": "https://x.com/fupenglondon/status/2049282307245424908",
+          "meta": [
+            "04-29 00:19",
+            "♥ 22",
+            "↻ 0"
+          ],
+          "photos": []
+        },
+        {
           "text": "The Clarity Act (to be passed by the House of Representatives in 2025, with the Senate still pushing forward) further categorizes digital assets into three types: Digital Commodities (such as Bitcoin and Ethereum), which are essentially tied to the functions of the blockchain",
           "url": "https://x.com/fupenglondon/status/2048639492484133315",
           "meta": [
             "04-27 05:44",
-            "♥ 98",
-            "↻ 11"
+            "♥ 110",
+            "↻ 12"
           ],
           "photos": []
         },
@@ -873,7 +881,7 @@
           "url": "https://x.com/fupenglondon/status/2047956405752389821",
           "meta": [
             "04-25 08:30",
-            "♥ 96",
+            "♥ 97",
             "↻ 12"
           ],
           "photos": []
@@ -883,7 +891,7 @@
           "url": "https://x.com/fupenglondon/status/2047956227267920218",
           "meta": [
             "04-25 08:29",
-            "♥ 61",
+            "♥ 62",
             "↻ 3"
           ],
           "photos": []
@@ -903,7 +911,7 @@
           "url": "https://x.com/fupenglondon/status/2047887375570022684",
           "meta": [
             "04-25 03:56",
-            "♥ 100",
+            "♥ 101",
             "↻ 8"
           ],
           "photos": []
@@ -947,18 +955,6 @@
             "↻ 2"
           ],
           "photos": []
-        },
-        {
-          "text": "Without too much explanation, everything is in this picture https://t.co/UEffdtOwo6",
-          "url": "https://x.com/fupenglondon/status/2032263684085727680",
-          "meta": [
-            "03-13 01:13",
-            "♥ 97",
-            "↻ 11"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HDQM8KvaQAADIgd.jpg"
-          ]
         }
       ]
     },
@@ -967,12 +963,84 @@
       "username": "@jukan05",
       "tweets": [
         {
+          "text": "Today, April 29, is Shōwa Day, so the Japanese stock market is closed.",
+          "url": "https://x.com/jukan05/status/2049276322653077998",
+          "meta": [
+            "04-28 23:55",
+            "♥ 77",
+            "↻ 0"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Those selling the stock after reading the WSJ article on OpenAI fall into two categories:\n\n1.Those who had been looking for an excuse to sell and are using this as the opportunity; and\n2.Those who are simply dumb enough to follow the mood.\n\nWhy do you think Sam Altman declared",
+          "url": "https://x.com/jukan05/status/2049104527144747017",
+          "meta": [
+            "04-28 12:32",
+            "♥ 948",
+            "↻ 71"
+          ],
+          "photos": []
+        },
+        {
+          "text": "A team lead at Amkor Technology Korea’s R&amp;D center stated that glass substrates are expected to be commercialized within the next three years.\n\n* Amkor has close ties with Intel, including licensing EMIB-T.\n\n$AMKR \n\nhttps://t.co/BIiVO0ZPwk",
+          "url": "https://x.com/jukan05/status/2049077350781096160",
+          "meta": [
+            "04-28 10:44",
+            "♥ 229",
+            "↻ 16"
+          ],
+          "photos": []
+        },
+        {
+          "text": "The CEO of LPKF Korea stated that the company has supplied commercial equipment to a customer for directly forming 3D optical waveguides — “Direct Light” — on glass substrates for CPO applications.\n\nhttps://t.co/fSBfCkT6WS",
+          "url": "https://x.com/jukan05/status/2049076350464733408",
+          "meta": [
+            "04-28 10:40",
+            "♥ 205",
+            "↻ 14"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Rumor: Google to shift to a COT model starting with TPU v9, downgrading the role of MediaTek/Broadcom.\n\nThis would be a major negative for Broadcom and MTK.\n\nAccording to this rumor, starting with TPU v9, Google plans to move to a model similar to AWS’s Annapurna, where Google https://t.co/Iex3mqVozy",
+          "url": "https://x.com/jukan05/status/2048992506851868780",
+          "meta": [
+            "04-28 05:07",
+            "♥ 684",
+            "↻ 84"
+          ],
+          "photos": [
+            "https://pbs.twimg.com/media/HG96ZsxaAAE5erg.jpg"
+          ]
+        },
+        {
+          "text": "NAND related update:\n\nNVIDIA still does not appear interested in HBF. Its view is that HBF’s high bandwidth can be sufficiently addressed with eSSDs.\n\nThere were recent reports that SanDisk had issued POs related to HBF, and the customer SanDisk is believed to be in discussions",
+          "url": "https://x.com/jukan05/status/2048979088413737219",
+          "meta": [
+            "04-28 04:14",
+            "♥ 318",
+            "↻ 34"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Now I can finally write Korean stock reports, lol.\n\nIBKR is finally supporting Korean stocks.",
+          "url": "https://x.com/jukan05/status/2048957085770203478",
+          "meta": [
+            "04-28 02:46",
+            "♥ 1003",
+            "↻ 25"
+          ],
+          "photos": []
+        },
+        {
           "text": "Chairman Chey Tae-won seems really candid.\n\n“If we can’t supply enough memory, our customers will optimize their algorithms in a way that uses less memory.” https://t.co/ggEnPIayaU",
           "url": "https://x.com/jukan05/status/2048940231857181052",
           "meta": [
             "04-28 01:39",
-            "♥ 4",
-            "↻ 0"
+            "♥ 442",
+            "↻ 45"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG9MFBNbQAA8zy2.png"
@@ -983,8 +1051,8 @@
           "url": "https://x.com/jukan05/status/2048939772333408375",
           "meta": [
             "04-28 01:38",
-            "♥ 22",
-            "↻ 4"
+            "♥ 756",
+            "↻ 98"
           ],
           "photos": []
         },
@@ -993,82 +1061,12 @@
           "url": "https://x.com/jukan05/status/2048934190855684280",
           "meta": [
             "04-28 01:15",
-            "♥ 81",
-            "↻ 16"
+            "♥ 2893",
+            "↻ 363"
           ],
           "photos": [
             "https://pbs.twimg.com/media/HG9GqToaYAEu5ec.jpg"
           ]
-        },
-        {
-          "text": "Oh come on, guys, please. Am I some kind of machine that spits out tickers every time you press a button?\nIf I’ve already spoon-fed you this much, you should at least figure out which specific companies are good on your own....\nAnd honestly, even I feel burdened recommending",
-          "url": "https://x.com/jukan05/status/2048915344123994223",
-          "meta": [
-            "04-28 00:00",
-            "♥ 250",
-            "↻ 4"
-          ],
-          "photos": []
-        },
-        {
-          "text": "FYI: Lead times for power semiconductors have become extremely stretched because of AI servers. According to industry sources, delivery times for some products from major suppliers such as Infineon, TI, and onsemi have extended to as long as 30 weeks.\n\nAs a result, the spillover",
-          "url": "https://x.com/jukan05/status/2048911765279584366",
-          "meta": [
-            "04-27 23:46",
-            "♥ 203",
-            "↻ 20"
-          ],
-          "photos": []
-        },
-        {
-          "text": "I’ve heard that a lot of highly experienced engineers are joining Intel’s EMIB efforts.\n\nTSMC’s move to address demand by increasing the reticle size for CoWoS does make me a bit more cautious about EMIB, but I still think EMIB will take a meaningful share.\n\n$INTC",
-          "url": "https://x.com/jukan05/status/2048893636893680054",
-          "meta": [
-            "04-27 22:34",
-            "♥ 249",
-            "↻ 14"
-          ],
-          "photos": []
-        },
-        {
-          "text": "Two sell side firms I usually pay close attention to came out with a similar view today.\n\nFubon Research: Even if TSMC wants to increase capex next year, EUV shortages may limit how much it can actually raise capex.\n\nMorgan Stanley: Around 2028, memory makers may try to execute",
-          "url": "https://x.com/jukan05/status/2048792853149819225",
-          "meta": [
-            "04-27 15:54",
-            "♥ 642",
-            "↻ 47"
-          ],
-          "photos": []
-        },
-        {
-          "text": "I don’t have any position in $POET, and I never have, but this company is honestly ridiculous.\n\nThey had already been notified by Marvell on the 23rd that the contract was being terminated, yet they sat on it until today?\n\nWhat about the shareholders who bought in while the stock",
-          "url": "https://x.com/jukan05/status/2048777474851610689",
-          "meta": [
-            "04-27 14:53",
-            "♥ 1345",
-            "↻ 89"
-          ],
-          "photos": []
-        },
-        {
-          "text": "What a dumbass CEO — he violated the NDA and went public with the contract himself, and now he’s completely ruined the company. What an absolute moron?",
-          "url": "https://x.com/jukan05/status/2048752304174792887",
-          "meta": [
-            "04-27 13:13",
-            "♥ 1195",
-            "↻ 58"
-          ],
-          "photos": []
-        },
-        {
-          "text": "I didn’t realize this before. I naturally assumed Intel would have a supply advantage over AMD in CPUs.\n\nBut Qualcomm and MediaTek apparently cut their TSMC 4/5nm orders because mid- to low-end smartphone shipments literally collapsed. AMD seems to have taken over that capacity.",
-          "url": "https://x.com/jukan05/status/2048725249722917370",
-          "meta": [
-            "04-27 11:25",
-            "♥ 1065",
-            "↻ 58"
-          ],
-          "photos": []
         }
       ]
     },
@@ -1076,6 +1074,76 @@
       "display_name": "trendforce",
       "username": "@trendforce",
       "tweets": [
+        {
+          "text": "RT @NEWS2082680: 🚀 #DeepSeek recently released a preview of its long-awaited V4 model, with #Huawei Ascend, #Cambricon, Hygon, and #MooreTh…",
+          "url": "https://x.com/trendforce/status/2049290050127724612",
+          "meta": [
+            "04-29 00:49",
+            "♥ 0",
+            "↻ 2"
+          ],
+          "photos": []
+        },
+        {
+          "text": "👀 2Q26 MLCC demand is bifurcated—strong in AI, weak in consumer. As OEM pull-ins lift the near term, will 2H26 demand cool earlier than expected? 💡More analysis from #TrendForce: https://t.co/Tz3Rmoyn8t 🔗",
+          "url": "https://x.com/trendforce/status/2049171940879839574",
+          "meta": [
+            "04-28 17:00",
+            "♥ 5",
+            "↻ 1"
+          ],
+          "photos": []
+        },
+        {
+          "text": "📱 #Xiaomi’s next #foldable may arrive this summer—reportedly featuring its self-developed #XRING O3 on 3nm. With XRING O1 said to have passed 1M shipments, its in-house chip push is accelerating. 💡More: https://t.co/7A0QvNJNf3 🔗",
+          "url": "https://x.com/trendforce/status/2049111476594438383",
+          "meta": [
+            "04-28 13:00",
+            "♥ 2",
+            "↻ 0"
+          ],
+          "photos": []
+        },
+        {
+          "text": "📈  #TSMC’s #CoWoS is reportedly priced at ~$10K per wafer—on par with 7nm nodes. Advanced packaging is said to make up ~10% of its 2025 revenue, with AI demand set to push that higher. 💡More: https://t.co/pPf4Ypwxiu 🔗",
+          "url": "https://x.com/trendforce/status/2049096343851802715",
+          "meta": [
+            "04-28 12:00",
+            "♥ 12",
+            "↻ 1"
+          ],
+          "photos": []
+        },
+        {
+          "text": "RT @NEWS2082680: 💸 #China is doubling down on #AI inference chips — Sunrise, targeting inference #GPUs, has raised over RMB 1B in its lates…",
+          "url": "https://x.com/trendforce/status/2049038387479466354",
+          "meta": [
+            "04-28 08:09",
+            "♥ 0",
+            "↻ 1"
+          ],
+          "photos": []
+        },
+        {
+          "text": "RT @NEWS2082680: 🚀 Beyond HBM, #CXL may be the next memory battleground. #Samsung reportedly showcases a system with up to 10.2× higher dat…",
+          "url": "https://x.com/trendforce/status/2049030504654278675",
+          "meta": [
+            "04-28 07:38",
+            "♥ 0",
+            "↻ 2"
+          ],
+          "photos": []
+        },
+        {
+          "text": "Giants are abandoning legacy memory to feed the AI beast. The resulting supply vacuum is a golden ticket for Taiwan's memory players.",
+          "url": "https://x.com/trendforce/status/2048976835833380881",
+          "meta": [
+            "04-28 04:05",
+            "♥ 31",
+            "↻ 8"
+          ],
+          "photos": []
+        },
         {
           "text": "RT @NEWS2082680: 📈 #MooreThreads reportedly swung to profitability in Q1 2026, posting net profit of RMB 29.36M. After Cambricon turned pro…",
           "url": "https://x.com/trendforce/status/2048925683121021137",
@@ -1091,8 +1159,8 @@
           "url": "https://x.com/trendforce/status/2048809622627078301",
           "meta": [
             "04-27 17:00",
-            "♥ 2",
-            "↻ 1"
+            "♥ 5",
+            "↻ 2"
           ],
           "photos": []
         },
@@ -1101,78 +1169,8 @@
           "url": "https://x.com/trendforce/status/2048749113353683369",
           "meta": [
             "04-27 13:00",
-            "♥ 28",
-            "↻ 0"
-          ],
-          "photos": []
-        },
-        {
-          "text": "👀 #TokyoElectron may have faced growing headwinds over recent months: its former China operations executive reportedly exited over links to a Chinese chip equipment startup developing track systems—a segment where TEL holds ~90% global share.💡More: https://t.co/pEl2Og8bdh 🔗",
-          "url": "https://x.com/trendforce/status/2048733939733274855",
-          "meta": [
-            "04-27 12:00",
-            "♥ 7",
-            "↻ 1"
-          ],
-          "photos": []
-        },
-        {
-          "text": "RT @NEWS2082680: 📈 #TSMC’s 3nm is in full sprint — monthly output is set to climb to about 180K wafers by end-2026, up over 40% YoY. Longer…",
-          "url": "https://x.com/trendforce/status/2048689453808615792",
-          "meta": [
-            "04-27 09:03",
-            "♥ 0",
-            "↻ 11"
-          ],
-          "photos": []
-        },
-        {
-          "text": "RT @NEWS2082680: 📢 Is #MicroLED emerging as the next growth driver as the LED industry faces margin pressure and slowing demand? Seoul Semi…",
-          "url": "https://x.com/trendforce/status/2048674408945119606",
-          "meta": [
-            "04-27 08:03",
-            "♥ 0",
-            "↻ 1"
-          ],
-          "photos": []
-        },
-        {
-          "text": "#Samsung's upcoming 18-day strike looms as a critical wildcard for memory price trends.",
-          "url": "https://x.com/trendforce/status/2048610558858117287",
-          "meta": [
-            "04-27 03:49",
-            "♥ 21",
-            "↻ 3"
-          ],
-          "photos": []
-        },
-        {
-          "text": "RT @NEWS2082680: 🚀 #China’s Ziener is pushing #GaN further. Its 8-inch GaN-on-sapphire device now reaches just 50μm thickness, cutting ther…",
-          "url": "https://x.com/trendforce/status/2048564929788305460",
-          "meta": [
-            "04-27 00:48",
-            "♥ 0",
-            "↻ 1"
-          ],
-          "photos": []
-        },
-        {
-          "text": "Additional Investment in Onyang Campus... Expanding Back-End Processing Too.\n📰 News Source: https://t.co/EhlZJMQVhu https://t.co/Vs9K3HbdL3",
-          "url": "https://x.com/trendforce/status/2048432092149625219",
-          "meta": [
-            "04-26 16:00",
-            "♥ 4",
-            "↻ 1"
-          ],
-          "photos": []
-        },
-        {
-          "text": "💥 Middle East disruptions ripple across chips—Japan’s material suppliers reportedly flag risks to #Samsung and #SKhynix, as &gt;40% reliance on Middle East naphtha may put #EUV #photoresist and #HBM production at risk. 💡More: https://t.co/aGjDPxmDkx 🔗",
-          "url": "https://x.com/trendforce/status/2047661938155360696",
-          "meta": [
-            "04-24 13:00",
-            "♥ 45",
-            "↻ 10"
+            "♥ 50",
+            "↻ 4"
           ],
           "photos": []
         }
@@ -1183,114 +1181,106 @@
       "username": "@LinQingV",
       "tweets": [
         {
-          "text": "RT @SemiAnalysis_: While Intel gains external customers using EMIB – Google's TPU being the big one – they're moving away from it for their…",
-          "url": "https://x.com/LinQingV/status/2048903429070926222",
+          "text": "很赞同郭宇这个判断。技术主义者的悲观和乐观从来就是一体的。\n\n过去半年多，我在AI的帮助下完成了一颗以LLM为target workload的推理芯片的端到端设计。参考某家的架构，从high level simulator到C-model到RTL，现在马上进入验证。我之前写过一个半吊子编译器，但SystemVerilog的RTL一行都没写过。",
+          "url": "https://x.com/LinQingV/status/2049312744126693411",
           "meta": [
-            "04-27 23:13",
-            "♥ 0",
-            "↻ 16"
+            "04-29 02:20",
+            "♥ 14",
+            "↻ 0"
           ],
           "photos": []
         },
         {
-          "text": "大摩硬科技分析师Charlie：智能体（Agent）的普及是重大拐点，将驱动算力需求。超配（Overweight）寒武纪、天数智芯；同时看好作为产业链代理的北方华创等半导体设备公司。存储领域短期景气无忧，但需关注中国长江存储、长鑫存储未来扩产对全球格局的潜在影响。",
-          "url": "https://x.com/LinQingV/status/2048804291142652325",
+          "text": "我们来看看Bernstein对中微Q1财报的看法：1Q26收入miss了5%，利润靠卖拓荆股份的投资收益撑住，但Bernstein维持Outperform，给460目标价，还把中微列为2Q26首选标的。核心观点：国产存储扩产是2026年最大的设备采购周期，中微作为国内刻蚀龙头，技术参数已经够到先进制程门槛，是这轮周期里确定性最高",
+          "url": "https://x.com/LinQingV/status/2049142550351781920",
           "meta": [
-            "04-27 16:39",
-            "♥ 26",
-            "↻ 2"
+            "04-28 15:03",
+            "♥ 27",
+            "↻ 4"
           ],
           "photos": []
         },
         {
-          "text": "今晚，锂电产业链四家公司一起发了一季报，非常明显地看到锂电上游和中游业绩集体井喷，下游储能环节有压力。",
-          "url": "https://x.com/LinQingV/status/2048775601641980220",
+          "text": "接上一条，聊聊中微跟国际一线大厂的差距和其主要客户。\n\nCCP差距最小，局部已经追平。5nm节点上进了国际一线客户的量产线，深宽比做到90:1，跟泛林同代产品在同一档。但泛林在3D",
+          "url": "https://x.com/LinQingV/status/2049102835841970670",
           "meta": [
-            "04-27 14:45",
-            "♥ 99",
-            "↻ 9"
-          ],
-          "photos": []
-        },
-        {
-          "text": "RT @jukan05: I didn’t realize this before. I naturally assumed Intel would have a supply advantage over AMD in CPUs.\n\nBut Qualcomm and Medi…",
-          "url": "https://x.com/LinQingV/status/2048729100337176847",
-          "meta": [
-            "04-27 11:40",
-            "♥ 0",
-            "↻ 58"
-          ],
-          "photos": []
-        },
-        {
-          "text": "铜箔在走玻纤布走过的路。高阶先涨，挤掉低阶供给，低阶跟着涨。\n\n三大CSP的AI服务器平台同时转向HVLP4。英伟达Rubin平台全线导入，亚马逊Trainium 3的UBB和switch tray升级，Google从V8x开始所有新平台全面转向。券商的需求测算，英伟达CCL需求从Q1的50万张/月到年底90万张，亚马逊30到80万张，Google https://t.co/Jc4mlLLrtX",
-          "url": "https://x.com/LinQingV/status/2048594244596826429",
-          "meta": [
-            "04-27 02:45",
-            "♥ 119",
-            "↻ 20"
-          ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG4Rms1bsAAo4ao.jpg"
-          ]
-        },
-        {
-          "text": "RT @mingchikuo: https://t.co/CzUVPck1Zx",
-          "url": "https://x.com/LinQingV/status/2048587473991958690",
-          "meta": [
-            "04-27 02:18",
-            "♥ 0",
-            "↻ 86"
-          ],
-          "photos": []
-        },
-        {
-          "text": "深南电路1Q26利润同比+73%，毛利率同比+4.4ppt，AI网络设备订单在持续改善产品结构。野村目标价263→391，FY28 PE对应不到19倍。\n\n公司同期公告46亿无锡高端PCB扩产项目，瞄准的是高速高密高层数产品。PCB板块野村给了35% https://t.co/xvKzonmf6V",
-          "url": "https://x.com/LinQingV/status/2048430096558821585",
-          "meta": [
-            "04-26 15:52",
-            "♥ 87",
+            "04-28 12:26",
+            "♥ 78",
             "↻ 19"
           ],
+          "photos": []
+        },
+        {
+          "text": "很多人知道中微做刻蚀设备，但不太清楚CCP、ICP、LPCVD、ALD分别是什么。简单聊一下。\n\n刻蚀是把材料去掉，薄膜沉积是把材料加上去。芯片制造就是在这两个动作之间反复循环，制程越先进，循环次数越多，精度要求越高。",
+          "url": "https://x.com/LinQingV/status/2049095569771999359",
+          "meta": [
+            "04-28 11:57",
+            "♥ 64",
+            "↻ 12"
+          ],
+          "photos": []
+        },
+        {
+          "text": "上一条聊了中微Q1的工艺验证进展，这条说说差距。触到先进制程的边界和站稳是两回事。",
+          "url": "https://x.com/LinQingV/status/2049070326592741775",
+          "meta": [
+            "04-28 10:16",
+            "♥ 27",
+            "↻ 7"
+          ],
+          "photos": []
+        },
+        {
+          "text": "中微公司的刻蚀设备开始触到先进制程的边界了。\n\n两个工艺验证节点值得关注。90:1超高深宽比低温CCP刻蚀设备已经交付客户端验证，给下一代逻辑和存储芯片用的。第二代ICP刻蚀设备Primo Angova在3D https://t.co/oL6IDPgXhw",
+          "url": "https://x.com/LinQingV/status/2049064434812043409",
+          "meta": [
+            "04-28 09:53",
+            "♥ 89",
+            "↻ 11"
+          ],
           "photos": [
-            "https://pbs.twimg.com/media/HG18S0LaAAEZg_q.jpg"
+            "https://pbs.twimg.com/media/HG-9PT0aAAAJqRG.jpg"
           ]
         },
         {
-          "text": "Nomura: 生益科技's FY25 numbers (rev +39%, earnings +92%) came alongside a CNY5.2bn Dongguan CCL expansion plan — management is betting the AI CCL/PCB supply gap won't close anytime soon. Two growth engines: CCL segment at 22% revenue CAGR through FY28F, PCB segment at 39% as https://t.co/gnWK5KI1eD",
-          "url": "https://x.com/LinQingV/status/2048424171005501676",
+          "text": "ASIC设计服务正在从\"帮客户画版图\"变成\"帮客户定义系统架构\"。台积电子公司创意电子最新的技术清单，看下来就是这个转变的缩影。\n\n四条技术线同时在推。CPO，3nm EIC加65nm PIC加硅光子引擎做3D封装，下半年进客户设计定案阶段。UCIe晶片互连两条并行，3nm UCIe",
+          "url": "https://x.com/LinQingV/status/2049017166465536357",
           "meta": [
-            "04-26 15:29",
-            "♥ 68",
-            "↻ 14"
+            "04-28 06:45",
+            "♥ 56",
+            "↻ 13"
           ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG127EIbMAAAxcb.png"
-          ]
+          "photos": []
         },
         {
-          "text": "把先进封装设备这条线从头到尾分析了一遍，从工艺原理到设备供应商再到各家存储厂的路线选择，信息量比较大，整理一条长推把脉络串起来。\n\n从封装工艺看，目前主流的把die连在一起的方式有三种。Mass https://t.co/kvcByUsCBW",
-          "url": "https://x.com/LinQingV/status/2048406011866947979",
+          "text": "Goldman Sachs on 松发股份（恒力重工） - 1Q26 result largely in-line – Buy. \nPost market close on April 27th, Songfa/Hengli Heavy Industry released 1Q26 with net profit of Rmb1.1bn(-21% QoQ) and a net margin of 12.4% (-1.6ppts QoQ). We believe the result was largely in-line with a",
+          "url": "https://x.com/LinQingV/status/2048988405435191636",
           "meta": [
-            "04-26 14:17",
-            "♥ 344",
-            "↻ 99"
+            "04-28 04:51",
+            "♥ 17",
+            "↻ 4"
           ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG1mJFkbUAA6OmY.jpg"
-          ]
+          "photos": []
         },
         {
-          "text": "这两天聊了不少先进封装，耗材和设备都过了一遍。正好花旗这周更新了BESI（BE Semiconductor Industries），也来聊聊。\n\nBESI在Hybrid Bonding设备上的垄断地位没什么好争论的，目前全球唯一有量产交付能力的玩家。花旗将BESI https://t.co/OMb8AcXvMG",
-          "url": "https://x.com/LinQingV/status/2048376511133331691",
+          "text": "Goldman Sachs Healthcare on 药明康德\nWuXi AppTec - First take: Clean beat for 1Q26; full year guidance maintained – Buy\nWe expect a positive market reaction to WuXi AppTec’s 1Q26 results, with both revenue and earnings coming in ahead of GSe and VA consensus. 1Q26 revenue reached",
+          "url": "https://x.com/LinQingV/status/2048982784472158555",
           "meta": [
-            "04-26 12:19",
-            "♥ 110",
-            "↻ 14"
+            "04-28 04:28",
+            "♥ 8",
+            "↻ 3"
           ],
-          "photos": [
-            "https://pbs.twimg.com/media/HG1LkWibsAANMuh.jpg"
-          ]
+          "photos": []
+        },
+        {
+          "text": "先进封装越来越会是产业链上高利润和强需求的重要环节。",
+          "url": "https://x.com/LinQingV/status/2048948645584846979",
+          "meta": [
+            "04-28 02:13",
+            "♥ 78",
+            "↻ 6"
+          ],
+          "photos": []
         }
       ]
     }

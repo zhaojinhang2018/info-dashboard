@@ -1,6 +1,726 @@
 {
-  "updated_at": "2026-04-28 11:09:57",
+  "updated_at": "2026-04-29 13:00:05",
   "articles": [
+    {
+      "id": "3694245252-2247484052_1",
+      "title": "磷化铟出口：件件涉刑，从业者必看",
+      "mp_name": "洞见800G",
+      "publish_time": 1777435200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/TXdpcSw4Tt9b5x1Q0L1m2Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817835_1",
+      "title": "矽力杰官宣收购",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777433755,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/_Zwexe4lel5eOeFuU8wUXA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522090_1",
+      "title": "五一海外市场前瞻：油价联储双主线",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777433400,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/de28o5R2gkT0tfsyYwMEew",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484442_1",
+      "title": "厚道人买厚道公司",
+      "mp_name": "2030FY",
+      "publish_time": 1777431365,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/JahVZrY7hr3nnz1u_P-Plg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3199196728-2247485291_1",
+      "title": "企业级 SSD 1.6TB 为何比 1.92TB 更贵",
+      "mp_name": "闲聊服务器存储",
+      "publish_time": 1777429921,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/P3v3YtHpdE-bZmtjfxH9uA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275088_2",
+      "title": "电子特气核心概念布局详细解析",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777424578,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/uwERExRf8uNfnAY4epBVPw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275088_1",
+      "title": "PCB产业链梳理及A股核心标的解析",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777424578,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/XCLMy7bMHISMJeScQFj3hw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817745_8",
+      "title": "一家光芯片公司，浮出水面",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777423955,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/wyAoMYWacn_btYeGFbUc4A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817745_7",
+      "title": "Jim Keller，推出重磅新品",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777423955,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/5a9oGgjo6X_dcDzhSbk1kg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817745_6",
+      "title": "谷歌对互联的最新思考",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777423955,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/2hTMNjTO9PtJ2xaDXuDSjw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817745_5",
+      "title": "DRAM价格飙升，HBM陷入困境",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777423955,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/VjtseV1v8TnwZGvOggbCGA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817745_4",
+      "title": "台积电扩产，太猛了",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777423955,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/pJVdPbuyxPHQURfMRLLe2Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817745_3",
+      "title": "国产全CPU超算发布：2 Exaflops算力",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777423955,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/MTez-_8ecOr8nxZW7atGIg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817745_2",
+      "title": "当GPU不再够用，英伟达开始押注另一种计算",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777423955,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/ByzbA7x33zpLGmpM7jAQ3Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817745_1",
+      "title": "英特尔，又赌对了？",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777423955,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/MVl3j4WavBvOgbpgbDU_mw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3248830190-2247514026_1",
+      "title": "何一香港 AMA：想要成功，第一是勇气，不要羞于谈野心",
+      "mp_name": "吴说Real",
+      "publish_time": 1777422600,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/N1O62tjOBF7Wdt7R3hPJCw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3263272150-2247486029_1",
+      "title": "特斯拉Optimus 机器人，产业链全景及核心上市公司（转发留存）",
+      "mp_name": "预见预研",
+      "publish_time": 1777422600,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/2gVtQXvMNedVhC9O2NHz_w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3593791963-2247484731_1",
+      "title": "光模块、LPO、NPO、CPO都是什么",
+      "mp_name": "人见人AI",
+      "publish_time": 1777420800,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/SBiizNr_oxTi7gLQ4UO_2Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681557_7",
+      "title": "电商｜寒潮平尽，春归可期：25Q4财报总结",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777420613,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/652Zar2ZoZNZYqAlP1d--w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681557_6",
+      "title": "主题聚焦｜关注筹码健康的资金辐射板块",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777420613,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/qpoe5T2YdZs7GgJyd55ebA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681557_5",
+      "title": "债市启明｜美国《战争权力决议》能否限制特朗普在美伊冲突中的行动？",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777420613,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/tETpz40LMgItKVolX4E52Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681557_4",
+      "title": "海外宏观｜日本央行：加息在望",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777420613,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/PDDv3ooVdiYJcgeo1m53Ng",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681557_3",
+      "title": "亚洲股市｜冲击趋缓，分化寻机",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777420613,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/5X0BxGRIwiNKpd0XJvwesg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681557_2",
+      "title": "晨报｜聚焦4月政治局会议",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777420613,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/RjLWTB7v-5Sb7_ekVnEVEw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681557_1",
+      "title": "中信证券｜经济起步有力，坚持稳中求进：2026年4月28日政治局会议学习体会",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777420613,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/Lw4w_nMrhsNhAuA13Vdw5A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522089_1",
+      "title": "纪要：1.6T 驱动增量 载体铜箔替代提速",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/f1Ky7DEeuFa7bTbS8a6gHA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754152_8",
+      "title": "【安图生物（603658.SH）】25年业绩短期承压，海外市场表现亮眼——2025年年报及2026年一季报点评（黎一江）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/2EcvMvft45jeHtpB3lhy1A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754152_7",
+      "title": "【妙可蓝多（600882.SH）】收入高增利润短期承压，BC 双轮驱动成效凸显——2026年一季报点评（陈彦彤/汪航宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/jt3ec6sI0qECoL9FRs6OiA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754152_6",
+      "title": "【立高食品（300973.SZ）】26Q1受基数扰动，渠道拓展积极推进——2025年年报与2026年一季报点评（叶倩瑜/李嘉祺/董博文）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/6Qt74TAGdt6lfC8n52C_bA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754152_5",
+      "title": "【源飞宠物（001222.SZ）】25年及26Q1收入增速亮眼，代工与自有品牌双轮驱动——2025年年报及2026年一季报点评（姜浩/朱洁宇/吴子倩）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/OwZVI9JmVkWydt8Zfgmq2A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754152_4",
+      "title": "【杭叉集团（603298.SH）】业绩稳健增长，国际化+智能物流打开成长空间——2025年报、2026年一季报点评（陈佳宁/汲萌/夏天宇）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/-Lu4bX7EVHxzyjv2ryJIAA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754152_3",
+      "title": "【旗滨集团（601636.SH）】降价保销量，成本压降显著——2025年年报及2026年一季报点评（孙伟风/鲁俊）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/lWhmLQezmAaI9hDjwWWG5Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754152_2",
+      "title": "【保利发展（600048.SH）】销售维持龙头地位，探索多元路径发展——2025年报及2026年一季报点评（何缅南）",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/pA-22dtSvrZXntHOMqKYJA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3083484606-2651754152_1",
+      "title": "【光大研究每日速递】20260429",
+      "mp_name": "光大证券研究",
+      "publish_time": 1777417200,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/y5Pplz3VIUVnTQZM8q6swQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491585_1",
+      "title": "Intel 突破CMOS极限：后CMOS新型逻辑器件器件原理、分类与技术瓶颈",
+      "mp_name": "芯球",
+      "publish_time": 1777413660,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/o-O-eswe5BISMlyxsOf6oA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3230844662-2247500892_1",
+      "title": "希捷STX财报深度解读｜存储行业全员进入超级周期，HDD 走进数据中心，营收占比超 80%, 毛利率超 47%",
+      "mp_name": "404K",
+      "publish_time": 1777410607,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/yNMvvJgxpGDZ2x4hE80WSQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3917344524-2247492081_2",
+      "title": "近日市场动态分析与小结",
+      "mp_name": "投融一隅",
+      "publish_time": 1777393487,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/yc1fUYitUr7a0Ip8I8i5MQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3917344524-2247492081_1",
+      "title": "这场涨价潮不会戛然而止，供应链如何修复？",
+      "mp_name": "投融一隅",
+      "publish_time": 1777393487,
+      "date": "2026-04-29",
+      "url": "https://mp.weixin.qq.com/s/ZgF7RvJPkcXgm07CbWGQdw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484438_1",
+      "title": "今晚几个业绩",
+      "mp_name": "2030FY",
+      "publish_time": 1777390270,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/k1yDDBATbJnFTyugowy3-Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522088_4",
+      "title": "推理需求爆发下的机会 0424",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777388400,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/OTLmYNkl8u5GoC-eKDx9JQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522088_3",
+      "title": "AI芯片赛道：替代周期下的标的筛选与行业洞察",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777388400,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/HSwoZCeFYrPjMGaV9KCNeA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522088_2",
+      "title": "TPUv8 架构升级 光波导OCS将放量",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777388400,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/n6F8O1GL92d0Dm1G1ozLpg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522088_1",
+      "title": "纪要：供需缺口刚性扩大 算力租赁格局重塑",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777388400,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/pjXXCiqRy6uTEz9HfloxxA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3708114207-2247518162_1",
+      "title": "财联社专访 | 国联民生孔蓉：去泡沫！需求爆炸！AI进入“真赚钱”阶段！",
+      "mp_name": "声鸣海外 Global",
+      "publish_time": 1777387239,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/HUl53Uo8YaUZZh63JZKhAA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3079356808-2652501081_2",
+      "title": "【招商电子】思瑞浦：26Q1营收环比持续增长，光模块和服务器等AI业务起量",
+      "mp_name": "招商电子",
+      "publish_time": 1777385727,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/HGBwI4mxZ-r-I62UtbdlZg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3079356808-2652501081_1",
+      "title": "【招商电子】江波龙：26Q1 营收和利润环比高增，存货规模持续大幅提升",
+      "mp_name": "招商电子",
+      "publish_time": 1777385727,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/QAoo-Yoxbe3JY7StQwcYYg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3230844662-2247500861_1",
+      "title": "甲骨文 — Neocloud 创新高、自身半年腰斩 ，5530 亿订单与 3800 亿债务",
+      "mp_name": "404K",
+      "publish_time": 1777382099,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/B96282yobR9xUx1ESjo-6A",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3864835480-2247817703_1",
+      "title": "初创公司，要干掉内存墙",
+      "mp_name": "半导体行业观察",
+      "publish_time": 1777381725,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/Wu66Hr6p6ud0oIWcB_k1jg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522087_1",
+      "title": "TPUv8 架构升级 光波导OCS将放量",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777381200,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/0IHkm_msEWgOP3vVmzPOQA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681495_1",
+      "title": "中信证券｜经济起步有力，坚持稳中求进：2026年4月28日政治局会议学习体会",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777378668,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/5DPh6PLhPLPhosY1KVvcKg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2391566701-2257484015_1",
+      "title": "感谢曦智科技",
+      "mp_name": "亿薪",
+      "publish_time": 1777375641,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/42WcH56UTcqlt4t0f1ffAw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485332_4",
+      "title": "中恒电气(002364)：合同负债翻倍后，800VDC升级为什么先看它？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777374126,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/_Jt8zxmsCGFdVY-Or8Nvsw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485332_3",
+      "title": "麦格米特(002851)：1510亿AI电源空间打开后，英伟达链为什么先看它？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777374126,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/raGZgkyiSEM46tUQYT8cOA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485332_2",
+      "title": "科士达(002518)：63%利润预增后，UPS升级为什么先看它？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777374126,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/YzYdy3ZhHgpp1yKHG1UOSQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3709123108-2247485332_1",
+      "title": "数据中心电源架构升级！超90%仍用UPS，谁先吃到高压供电红利？",
+      "mp_name": "产业链研究笔记",
+      "publish_time": 1777374126,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/Js5Ar9yOFgAugxPE6M75-w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3543903495-2247522086_1",
+      "title": "AI芯片赛道：替代周期下的标的筛选与行业洞察",
+      "mp_name": "调研纪要更新",
+      "publish_time": 1777371086,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/3SZ0YU5fCSWPsnO0O55u_Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318755_8",
+      "title": "中兴通讯：一季度营收350亿元，算力营收占比提升至27%",
+      "mp_name": "光纤在线",
+      "publish_time": 1777368600,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/cREJ_BhlJNNe21T_uhc2gQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318755_7",
+      "title": "日本NTT面向AI需求大举提升其数据中心容量",
+      "mp_name": "光纤在线",
+      "publish_time": 1777368600,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/2CqfrHseZTvGvxae_0wU9g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318755_6",
+      "title": "AI 算力驱动光模块市场爆发  光为通信 400G OSFP DR4 表现亮眼",
+      "mp_name": "光纤在线",
+      "publish_time": 1777368600,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/YEG-yi-3SCHJLdibhVnhZw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318755_5",
+      "title": "算力赴星河｜华工正源 100G 星载光模块重磅发布",
+      "mp_name": "光纤在线",
+      "publish_time": 1777368600,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/IpfQjr_1K3rzMaD5OvO0oA",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318755_4",
+      "title": "邀请函 | 2026 凌云光 × VPI 高速光互联与光子集成仿真研讨会——面向 CPO 与 LPO 的光传输系统及光子集成电路仿真设计",
+      "mp_name": "光纤在线",
+      "publish_time": 1777368600,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/k2Tnhnk1pUo09NqncC9qQg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318755_3",
+      "title": "锚定AI时代高速互联 | 亨通光电新一代G.654E光纤完成800G测试验证",
+      "mp_name": "光纤在线",
+      "publish_time": 1777368600,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/8uGghGV4Rw41Z_IAW4IV1g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318755_2",
+      "title": "让“毫赫兹世界”不再遥不可及：彼格科技新品——1550nm保偏超窄光源X15",
+      "mp_name": "光纤在线",
+      "publish_time": 1777368600,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/HJzLVQ3hCOFw9mbE7ccK8Q",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395754600-2650318755_1",
+      "title": "专访斯瑞：3D打印铜合金散热鳍片实现批量出货，筑牢 800G/1.6T 及XPO光模块散热底座",
+      "mp_name": "光纤在线",
+      "publish_time": 1777368600,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/TEQD_bXhSLarp5X5UkY78g",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3625385288-2247491631_1",
+      "title": "台湾半导体、IP、IC设计产业报告分享",
+      "mp_name": "芯球",
+      "publish_time": 1777364129,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/eUM5a8E2vGjNTc0CvynOQw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "2395503041-2649275077_1",
+      "title": "重磅！政治局会议力推六大网络基建，受益方向梳理！",
+      "mp_name": "旖旎陌上花",
+      "publish_time": 1777360415,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/rsuw6lgL95xP1hrH9d0Djg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3230844662-2247500851_1",
+      "title": "Anthropic 与 Claude 加速企业 AI — 30 倍 ARR 与 15GW 算力承诺万字全解",
+      "mp_name": "404K",
+      "publish_time": 1777357875,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/42EjJvq8DdrWJ1aMuqnhvw",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3927476825-2247488643_1",
+      "title": "钙钛矿市场应用场景现状与趋势洞察",
+      "mp_name": "渾水調研",
+      "publish_time": 1777353608,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/63Y5UdRt7pnqPc9MrRdx5w",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3622557369-2247484432_1",
+      "title": "租赁价格已经进入上升通道",
+      "mp_name": "2030FY",
+      "publish_time": 1777349407,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/GLimLy97ACYnHzFoNMooPg",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3694245252-2247484045_1",
+      "title": "磷化铟驱动PIC革命：一座“光路城”，如何被装进芯片？",
+      "mp_name": "洞见800G",
+      "publish_time": 1777348800,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/om0lzRV_4zAPREY8pqqnAQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681461_1",
+      "title": "邀请函丨从地缘冲击到景气回归：A股市场展望和ETF配置策略分享——信研讲堂·对话管理人(第七十五期)",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777345630,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/21msZpWPWEt-9pBRkUUURQ",
+      "summary": "",
+      "keywords": []
+    },
+    {
+      "id": "3535174307-2247681456_1",
+      "title": "邀请函｜公募FOF的市场现状与趋势展望：中信证券配置策略研讨会（第二十四期）",
+      "mp_name": "中信证券研究",
+      "publish_time": 1777344662,
+      "date": "2026-04-28",
+      "url": "https://mp.weixin.qq.com/s/Ol6JxB7QS8O5aFAApjVQiw",
+      "summary": "",
+      "keywords": []
+    },
     {
       "id": "3864835480-2247817608_8",
       "title": "AI芯片，向LPDDR转移",

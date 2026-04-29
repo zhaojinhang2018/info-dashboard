@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>雪球看板</title>
 <style>
 *,*::before,*::after{box-sizing:border-box}html,body{margin:0;min-width:100%;height:100%;overflow:hidden;background:#0f1419;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif;line-height:1.6}body{display:flex;flex-direction:column}a{color:inherit}header{flex-shrink:0;background:rgba(15,20,25,.96);border-bottom:1px solid #27313a;backdrop-filter:blur(10px)}.wrap{max-width:none;margin:0;padding:0 24px}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{flex:0 0 auto}.brand h1{margin:0;font-size:22px;line-height:1.2;color:#e6edf3}.brand p{margin:6px 0 0;color:#9fb3c8;font-size:13px}.top-actions{min-width:0;display:flex;align-items:center;gap:12px;justify-content:flex-end;flex:1}.nav-row,.user-nav{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.nav-row{padding:0 24px 10px}.user-nav{min-width:0;max-width:min(980px,calc(100vw - 420px));padding:2px 0}.nav-row::-webkit-scrollbar,.user-nav::-webkit-scrollbar,main.wrap::-webkit-scrollbar{width:14px;height:12px}.nav-row::-webkit-scrollbar-track,.user-nav::-webkit-scrollbar-track,main.wrap::-webkit-scrollbar-track{background:#111820;border-radius:999px}.nav-row::-webkit-scrollbar-thumb,.user-nav::-webkit-scrollbar-thumb,main.wrap::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:999px;border:2px solid #111820}nav a,.user-nav a,.open-link{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 11px;color:#c9d1d9;text-decoration:none;font-size:13px;background:#151b22}.user-nav a{border-radius:999px}nav a:hover,.user-nav a:hover,.open-link:hover{border-color:#58a6ff;color:#fff}nav a.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}.theme-select{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 10px;color:#e6edf3;background:#151b22;font-size:13px}main.wrap{flex:1;width:100%;min-width:0;overflow:auto;padding:26px 24px 42px;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.columns{display:flex;gap:18px;align-items:flex-start;width:max-content;min-width:100%;padding:2px 0 28px}.user-column{flex:0 0 390px;width:390px;min-width:390px;scroll-margin-top:18px}.column-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid #34414c;border-radius:8px;background:linear-gradient(180deg,#17202b,#121922);padding:14px;margin-bottom:10px}.column-head h2{margin:0;color:#79c0ff;font-size:20px;line-height:1.25;text-shadow:0 0 12px rgba(88,166,255,.18)}.column-head p{margin:4px 0 0;color:#9fb3c8;font-size:13px}.column-feed,.feed{display:flex;flex-direction:column;gap:14px}.single-page main.wrap{width:100%;max-width:960px;margin:0 auto}.post-card{border:1px solid #2d3845;border-radius:8px;background:#141b24;padding:16px}.post-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.author{color:#79c0ff;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.22);border-radius:5px;padding:1px 6px;font-weight:700;font-size:15px}time{color:#9fb3c8;font-size:13px}h2{margin:0 0 8px;font-size:17px;line-height:1.35}.post-text{margin:0;white-space:normal;overflow-wrap:anywhere;color:#f0f6fc}.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.badge{display:inline-flex;align-items:center;border-radius:999px;border:1px solid #3a4653;padding:2px 8px;font-size:12px;font-weight:700}.badge.article{color:#f2cc60;background:#2a220f;border-color:#6b5518}.badge.reply{color:#79c0ff;background:#0d2235;border-color:#1f5a83}.badge.image{color:#3fb950;background:#10271a;border-color:#1f6f3a}.quote-block{margin-top:12px;padding:10px 12px;border:1px solid #3a4653;border-left:3px solid #58a6ff;border-radius:6px;background:#101720;color:#c9d1d9}.quote-block p{margin:4px 0 0;font-size:13px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}.quote-label{font-size:12px;color:#79c0ff;font-weight:700}.quote-block.muted{border-left-color:#8b949e;color:#9fb3c8}.notice{display:block;margin-top:10px;border:1px solid #3a4653;border-radius:6px;padding:8px 10px;text-decoration:none;font-size:13px}.article-notice{color:#f2cc60;background:#201a0d}.image-notice{color:#3fb950;background:#0d2116}.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.image-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid #34414c;border-radius:6px;background:#0d1117}.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;color:#9fb3c8;font-size:12px}.metrics span{border:1px solid #2d3845;border-radius:999px;padding:3px 8px;background:#101720}.open-link-inline{margin-left:auto;color:#58a6ff;text-decoration:none;font-size:12px}[data-theme="light"] body{background:#eef2f6;color:#24292f}[data-theme="light"] header{background:#f8fafc;border-bottom-color:#cfd7df;backdrop-filter:none}[data-theme="light"] .brand h1,[data-theme="light"] .post-text{color:#24292f}[data-theme="light"] .brand p,[data-theme="light"] time,[data-theme="light"] .metrics{color:#667085}[data-theme="light"] nav a,[data-theme="light"] .user-nav a,[data-theme="light"] .open-link,[data-theme="light"] .theme-select{background:#fff;border-color:#cfd7df;color:#24292f}[data-theme="light"] nav a.active{background:#e6f4ea;border-color:#2da44e;color:#1a7f37}[data-theme="light"] .column-head{background:#f8fafc;border-color:#d0d7de}[data-theme="light"] .column-head h2{color:#0969da;text-shadow:none}[data-theme="light"] .post-card{background:#fff;border-color:#d0d7de}[data-theme="light"] .author{color:#0969da;background:#ddf4ff;border-color:#b6e3ff}[data-theme="light"] .metrics span,[data-theme="light"] .quote-block{background:#f6f8fa;border-color:#d0d7de;color:#57606a}[data-theme="light"] .article-notice{background:#fff8c5;color:#7d4e00}[data-theme="light"] .image-notice{background:#dafbe1;color:#116329}[data-theme="light"] main.wrap,[data-theme="light"] .nav-row,[data-theme="light"] .user-nav{scrollbar-color:#8aa8c7 #d9e2ec}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column;padding:16px 0}.top-actions{width:100%;justify-content:flex-start}.user-nav{max-width:100%}.user-column{flex-basis:330px;width:330px;min-width:330px}}
-</style></head><body class=""><header><div class="wrap topbar"><div class="brand"><h1>雪球看板</h1><p>抓取时间 2026-04-28 09:54:36</p></div><div class="top-actions"><nav class="user-nav"><a href="#user-3727797950">草帽路飞 <span>19</span></a><a href="#user-3577914518">不疾而速H-宁波 <span>20</span></a><a href="#user-2146830436">简单就好 <span>20</span></a><a href="#user-4930371170">大草驴 <span>20</span></a><a href="#user-4111857140">山行 <span>20</span></a><a href="#user-3338834427">李药师2003 <span>20</span></a><a href="#user-9129183937">石木见 <span>20</span></a><a href="#user-1818342785">lamlap123 <span>6</span></a><a href="#user-9324667748">堡鲨 <span>19</span></a><a href="#user-2678435970">夜间飞行家 <span>20</span></a><a href="#user-8895446470">双格 <span>17</span></a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a class="" href="../index.html">首页</a><a class="" href="../news.html">新闻</a><a class="" href="../x_feed.html">X 动态</a><a class="" href="../stock_alerts.html">股价异动</a><a class="active" href="../xueqiu_user.html">雪球</a><a href="../wechat.html">微信公众号</a><a class="" href="../market_overview.html">市场总览</a></nav></header><main class="wrap"><section id="feed" class="columns"><section class="user-column" id="user-3727797950"><div class="column-head"><div><h2>草帽路飞</h2><p>19 条</p></div><a class="open-link" href="xueqiu_user_3727797950.html">单人页</a></div><div class="column-feed"><article class="post-card">
+</style></head><body class=""><header><div class="wrap topbar"><div class="brand"><h1>雪球看板</h1><p>抓取时间 2026-04-29 11:05:44</p></div><div class="top-actions"><nav class="user-nav"><a href="#user-3727797950">草帽路飞 <span>19</span></a><a href="#user-3577914518">不疾而速H-宁波 <span>20</span></a><a href="#user-2146830436">简单就好 <span>20</span></a><a href="#user-4930371170">大草驴 <span>20</span></a><a href="#user-4111857140">山行 <span>20</span></a><a href="#user-3338834427">李药师2003 <span>20</span></a><a href="#user-9129183937">石木见 <span>20</span></a><a href="#user-1818342785">lamlap123 <span>6</span></a><a href="#user-9324667748">堡鲨 <span>19</span></a><a href="#user-2678435970">夜间飞行家 <span>20</span></a><a href="#user-8895446470">双格 <span>17</span></a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a class="" href="../index.html">首页</a><a class="" href="../news.html">新闻</a><a class="" href="../x_feed.html">X 动态</a><a class="" href="../stock_alerts.html">股价异动</a><a class="active" href="../xueqiu_user.html">雪球</a><a href="../wechat.html">微信公众号</a><a class="" href="../market_overview.html">市场总览</a></nav></header><main class="wrap"><section id="feed" class="columns"><section class="user-column" id="user-3727797950"><div class="column-head"><div><h2>草帽路飞</h2><p>19 条</p></div><a class="open-link" href="xueqiu_user_3727797950.html">单人页</a></div><div class="column-feed"><article class="post-card">
       <div class="post-head"><span class="author">草帽路飞</span><time>2026-04-28 08:21:23</time></div>
       
       
@@ -11,9 +11,9 @@
       
       
       <div class="metrics">
-        <span>赞 9</span>
-        <span>评论 4</span>
-        <span>转发 0</span>
+        <span>赞 13</span>
+        <span>评论 7</span>
+        <span>转发 1</span>
         <a class="open-link-inline" href="https://xueqiu.com/3727797950/386156328" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
@@ -26,7 +26,7 @@
       
       <div class="metrics">
         <span>赞 62</span>
-        <span>评论 39</span>
+        <span>评论 40</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/3727797950/385809544" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -67,7 +67,7 @@
       <div class="image-grid"><a href="https://xqimg.imedao.com/19d719668791be53fa93f319.jpg!thumb.jpg" target="_blank" rel="noopener"><img src="https://xqimg.imedao.com/19d719668791be53fa93f319.jpg!thumb.jpg" loading="lazy"></a></div>
       
       <div class="metrics">
-        <span>赞 39</span>
+        <span>赞 40</span>
         <span>评论 14</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/3727797950/383211844" target="_blank" rel="noopener">原文 ↗</a>
@@ -81,7 +81,7 @@
       
       
       <div class="metrics">
-        <span>赞 66</span>
+        <span>赞 67</span>
         <span>评论 13</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/3727797950/382944887" target="_blank" rel="noopener">原文 ↗</a>
@@ -263,12 +263,68 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@草帽路飞: 缺失的契约精神</p></div>
       <div class="metrics">
-        <span>赞 47</span>
+        <span>赞 48</span>
         <span>评论 5</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/3727797950/377374722" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></div></section><section class="user-column" id="user-3577914518"><div class="column-head"><div><h2>不疾而速H-宁波</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_3577914518.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-28 20:38:55</time></div>
+      
+      
+      <p class="post-text">$胜宏科技(SZ300476)$ <br>胜宏一季报感觉还可以，同比环比都还行，之前预期就是13亿+，现在出来个12.88，看来陈总还是个喜欢吉祥数字的人。收入55.2亿，明显还是没有放量，毛利率34.5%，净利率23.3%基本上还是令人满意的。三费率加起来8.32%同比略有增长，主要是财务费用因为负债的增长和汇兑损益（6800万，比起光模块几个公司还是控制的非常可以）。固定资产104.7比去年底又增加了12亿多，在建工程52亿，比去年底又增加了16亿，这些都会转化为新增的产能，二季度正常的话应该能释放80-90的收入和20亿以上的利润。<br>接下来的胜宏财报会一个季度比一个季度更好，耐心持有并等待。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 32</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386354409" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-28 20:07:48</time></div>
+      
+      
+      <p class="post-text">$巨化股份(SH600160)$ <br>1季报如期而出，收入60亿同比略增，净利润11.7亿同比大增，毛利率和净利率都创了自配额制实行以来的新高。制冷剂销售7.06吨，同比去年Q1微微增长，相比三美却是好多了。这份财报对得起制冷剂龙头，制冷剂销售均价已经到了4.45万/吨（不含税），相比同期主力品种6万以上的含税销售价格还是有一定的滞后。去年二季度的销售数量是8.48吨，均价我估计会接近5万不到，而净利润也将会创纪录的达到单季19-20亿。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 33</span>
+        <span>评论 7</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386346195" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-28 10:26:52</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$伟测科技(SH688372)$，当前价 ¥150.22。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386194078" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-28 10:04:20</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386184740" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
       <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-27 21:05:06</time></div>
       
       
@@ -291,7 +347,7 @@
       
       
       <div class="metrics">
-        <span>赞 40</span>
+        <span>赞 43</span>
         <span>评论 1</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/3577914518/386074518" target="_blank" rel="noopener">原文 ↗</a>
@@ -491,62 +547,6 @@
         <span>评论 0</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/3577914518/385253320" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-20 22:56:14</time></div>
-      
-      
-      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 4</span>
-        <span>评论 0</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384816999" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-17 21:48:38</time></div>
-      
-      
-      <p class="post-text">$仕佳光子(SH688313)$ 今年涨了41%，在一众小光里也不算多。不过对应这个年报和一季报的业绩，目前的市值严重高估，前两天已经卖飞也许不见的是坏事。最近光确实太热，大光业绩是真好还能扛住，小光大部分都涨的很离谱了，本着不吃最后一口本周全部清了小光，仅保留pcb龙头和光芯片龙头。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 20</span>
-        <span>评论 4</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384481458" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-16 19:48:40</time></div>
-      
-      
-      <p class="post-text">我刚刚关注了股票$中际旭创(SZ300308)$，当前价 ¥809.61。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 0</span>
-        <span>评论 0</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384249207" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-16 11:44:46</time></div>
-      
-      
-      <p class="post-text">$Nebius Group(NBIS)$ $英伟达(NVDA)$ $胜宏科技(SZ300476)$ <br><br>老黄的5层蛋糕理论，将AI产业自下而上划分为五个层次：能源、芯片、基础设施、模型和应用<br><br>AI需求的大爆炸，对TOKEN的无穷止的需求，这也将是未来5年投资的主线。继续在这条道上死磕深耕。 大家一起讨论有什么大的机会？</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 7</span>
-        <span>评论 5</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/384155535" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></div></section><section class="user-column" id="user-2146830436"><div class="column-head"><div><h2>简单就好</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_2146830436.html">单人页</a></div><div class="column-feed"><article class="post-card">
       <div class="post-head"><span class="author">简单就好</span><time>2026-02-15 20:58:28</time></div>
@@ -949,7 +949,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 我刚刚关注了股票$京东方A(SZ000725)$，当前价 ¥4.48。</p></div>
       <div class="metrics">
-        <span>赞 63</span>
+        <span>赞 64</span>
         <span>评论 7</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4930371170/377777823" target="_blank" rel="noopener">原文 ↗</a>
@@ -1109,6 +1109,48 @@
         <a class="open-link-inline" href="https://xueqiu.com/4930371170/373298399" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></div></section><section class="user-column" id="user-4111857140"><div class="column-head"><div><h2>山行</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_4111857140.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-28 23:57:15</time></div>
+      
+      
+      <p class="post-text">大胆猜想一下：未来三年，五年，十年，白电三傻跑赢光模块三俊吗？ 目前白电三傻，合计市值1万亿，光模块三俊1.7万亿市值。本人没有观点，只是留个帖子，几年后再看</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 308</span>
+        <span>评论 63</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386408670" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-28 15:48:43</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@三千点保卫战的战士: 哈哈哈，又菜又爱玩。。。//@三千点保卫战的战士:回复@省心省力:我什么也没看到 查看图片</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@省心省力: 梭了，怕个蛋蛋，手风顺的时候就得接着赌，晚上海油必超预期！</p></div>
+      <div class="metrics">
+        <span>赞 116</span>
+        <span>评论 17</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386272292" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-04-28 12:34:34</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">无正文</p>
+      
+      <div class="image-grid"><a href="https://xqimg.imedao.com/19dd25e112321a383fedbc2f.jpeg!thumb.jpg" target="_blank" rel="noopener"><img src="https://xqimg.imedao.com/19dd25e112321a383fedbc2f.jpeg!thumb.jpg" loading="lazy"></a></div>
+      
+      <div class="metrics">
+        <span>赞 136</span>
+        <span>评论 19</span>
+        <span>转发 2</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386227193" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
       <div class="post-head"><span class="author">山行</span><time>2026-04-27 15:17:52</time></div>
       
       
@@ -1117,8 +1159,8 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@摸啊摸: 2026年1—3月份，全国规模以上工业企业实现利润总额16960.4亿元，同比增长15.5%。</p></div>
       <div class="metrics">
-        <span>赞 197</span>
-        <span>评论 60</span>
+        <span>赞 212</span>
+        <span>评论 63</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/386007294" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -1131,7 +1173,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@NT_CLANNAD: 三星10a DRAM：首个亚10nm级DRAM的里程碑<br>根据The Elec和The Bell的联合报道，三星已于2026年3月成功流片10a DRAM晶圆，并在器件特性测试中确认了工作芯片。这是全球首个实现的亚10nm级DRAM技术。<br>三星的10a DRAM开发路线图如下：<br>2026年：完成10a DRAM技术开发<br>2027年：进行全面的质量和可靠性测试<br>2028年：转移至量产线，实现大规模生产<br>值得注意的是，三星计划将4F²单元和VCT结构连续应用于三代节点——10a、10b和10c，预计这三代技术将覆盖2028年至2032年的市场需求。从10d节点开始，三星将正式转向3D DRAM架构。<br>10a节点被认为是第一个真正意义上的亚10nm级DRAM工艺，行业专家估计其实际电路线宽在9.5-9.7nm范围内。与上一代1d DRAM相比，10a DRAM预计将带来：<br>单元密度提升30-50%：在相同的芯片面积上可以集成更多的存储单元<br>在DRAM领域，三星的主要竞争对手SK海力士也在积极研发4F²和VCT技术，但采取了不同的技术路线。<br>与三星在10a节点就全面采用4F²和VCT技术不同，SK海力士计划在10b节点才引入这些新技术。这意味着SK海力士的4F² DRAM量产时间将比三星晚约1-2年。<br>4F² VCT架构的一个关键要求是外围电路晶圆需要使用先进的逻辑工艺制造。然而，SK海力士没有自己的12英寸逻辑生产线，这成为了其技术发展的主要瓶颈。<br>目前，SK海力士正在权衡两种方案：<br>自建逻辑生产线：需要巨额投资和较长的建设周期<br>外包给外部代工厂：主要依赖台积电，但会受到产能限制<br>这一短板可能会影响SK海力士在下一代DRAM技术竞争中的地位。<br>从10d节点开始，三星将正式转向3D DRAM架构。3D DRAM通过垂直堆叠多个存储单元层，可以在不缩小单元尺寸的情况下大幅提高密度，被认为是DRAM技术的未来发展方向。<br>目前，三星、SK海力士和美光都在积极研发3D DRAM技术，但距离大规模量产还有至少5-6年的时间。4F²和VCT技术的出现，为行业争取了宝贵的时间窗口。</p></div>
       <div class="metrics">
-        <span>赞 89</span>
+        <span>赞 90</span>
         <span>评论 3</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385971617" target="_blank" rel="noopener">原文 ↗</a>
@@ -1145,7 +1187,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@中年电竞选手: Opus 4.6 发布之后,对用过 coding agent 改造业务流程的人来说,有种段永平说的&quot;看到远处有一头大象&quot;的感觉——不用仔细算,一眼就明白。<br><br>区别是，当时的大象就是苹果，现在的比较像一个大浪，具体谁能在浪尖上一直保持很难判断。<br><br>过去 3 年，最简单的投资AI 的方法就是 做多 $半导体ETF-VanEck Vectors(SMH)$ ，NVDA 在 25 年开始就没跑赢SMH了。完成了价值发现的 AVGO 和 TSM 也没有显著的跑赢。<br><br>市场经过了几轮炒瓶颈，芯片&gt;服务器&gt;核电&gt;电力&gt;光和存储&gt;CPU<br><br>赢家不一定会一直赢，输家会不会过两天就变成了赢家比如最近的 INTC AMD和 ARM<br><br>但是在看到海浪就要打过来的时候，因为变化太快无法看清终局就不参与，非常浪费这个而美好的时代。SMH是最简单的参与方法。</p></div>
       <div class="metrics">
-        <span>赞 113</span>
+        <span>赞 114</span>
         <span>评论 23</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385883359" target="_blank" rel="noopener">原文 ↗</a>
@@ -1159,7 +1201,7 @@
       
       
       <div class="metrics">
-        <span>赞 139</span>
+        <span>赞 144</span>
         <span>评论 17</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385882888" target="_blank" rel="noopener">原文 ↗</a>
@@ -1173,7 +1215,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@老曾阿牛: AI改变很多行业的供求，从周期需求变成结构需求，铜是一个，存储也是。</p></div>
       <div class="metrics">
-        <span>赞 168</span>
+        <span>赞 174</span>
         <span>评论 16</span>
         <span>转发 3</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385863246" target="_blank" rel="noopener">原文 ↗</a>
@@ -1187,7 +1229,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@CCTD中国煤炭市场网: 厄尔尼诺来袭，5月煤价看涨！</p></div>
       <div class="metrics">
-        <span>赞 128</span>
+        <span>赞 133</span>
         <span>评论 16</span>
         <span>转发 2</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385862583" target="_blank" rel="noopener">原文 ↗</a>
@@ -1201,7 +1243,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@郭荆璞: 想不到有一天我还会翻出铌酸锂相关的论文来看</p></div>
       <div class="metrics">
-        <span>赞 68</span>
+        <span>赞 71</span>
         <span>评论 1</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385847610" target="_blank" rel="noopener">原文 ↗</a>
@@ -1215,7 +1257,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 美股第一家纯黄金公司年报，黄金产量同比负增长 15.6%，大a 纯黄金第一家负增长6.8%，今晚出来的第二家负增长10.71%。你们说，黄金价格这么好，都已经连续涨两三年了，这产量咋都是负的。。。他们不想挣钱吗？</p></div>
       <div class="metrics">
-        <span>赞 167</span>
+        <span>赞 168</span>
         <span>评论 74</span>
         <span>转发 1</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385710124" target="_blank" rel="noopener">原文 ↗</a>
@@ -1229,8 +1271,8 @@
       
       
       <div class="metrics">
-        <span>赞 215</span>
-        <span>评论 188</span>
+        <span>赞 220</span>
+        <span>评论 191</span>
         <span>转发 18</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385699255" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -1244,7 +1286,7 @@
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@贵州茅台(SH600519): 贵州茅台：贵州茅台2026年第一季度报告 网页链接</p></div>
       <div class="metrics">
         <span>赞 195</span>
-        <span>评论 36</span>
+        <span>评论 37</span>
         <span>转发 3</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/385690972" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -1346,48 +1388,6 @@
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4111857140/384767452" target="_blank" rel="noopener">原文 ↗</a>
       </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-20 09:46:30</time></div>
-      
-      
-      <p class="post-text">统计一下，各位投资生涯中，经常听到的一句话“老外不扩产”或者“老外扩产慢”，最后的结局是啥？ 我记得一个是做石英坩埚的石英砂（美国），一个是锂电铜箔的阴极辊（日本），最后都跌成狗了。欢迎添加更多正面负面例子</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 203</span>
-        <span>评论 61</span>
-        <span>转发 3</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384667257" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-20 01:15:55</time></div>
-      
-      
-      <p class="post-text">中国每年能体检一次的家庭，不知道有没有1.225亿。</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@思之嘉录: 先说结论：<br>“25%家庭一年一瓶茅台”，从收入看未来能实现，但从产能看永远实现不了。<br>一、先算数字（2026年）<br>全国家庭：约 4.9亿户<br>25% = 1.225亿户<br>每户1瓶/年 = 1.225亿瓶 53度飞天<br>二、收入层面：未来能达到<br>现在真正稳定自购茅台的家庭：约 800万～1200万户（占比1.6%～2.4%）<br>能买得起但没买的家庭（年收入≥20万、中产+富裕）：<br>目前约 7000万～8000万户（占比≈15%））<br>2035～2040年中等收入群体扩大，25%（1.2亿户）具备消费能力完全可能<br>只要：<br>收入继续增长<br>茅台官方渠道（i茅台等）普及、真货好买<br>家庭把茅台当节日/仪式感消费（一年1瓶）<br>25%家庭“有条件买”是可以实现的。<br>三、产能层面：永远达不到<br>茅台基酒要 5年 才能变成商品酒<br>2024年茅台酒（含飞天、精品等）成品酒≈1.2亿瓶<br>2028年“十四五”技改满产后：<br>基酒产能约 7.6万吨/年<br>成品酒（53度飞天为主）≈ 1.8亿瓶/年<br>1.8亿瓶 ÷ 1瓶/户/年 = 最多覆盖 1.8亿户<br>1.8亿户 ÷ 未来约6亿家庭 = 仅 30%<br>还要扣掉：商务、礼品、收藏、出口、囤货<br>真正到家庭年度自饮：很难超过1亿瓶/年<br>所以：25%家庭（1.2亿户）一年一瓶，产能永远不够。<br>四、大道原话的真实意思<br>他不是说“未来真会有25%家庭喝”，而是说：<br>中国潜在需求极大，只要一小部分家庭开始自饮，茅台就会长期供不应求。<br>总结<br>收入侧：能实现（2035年后大概率达到）<br>供给侧：不可能实现（产能硬上限）<br>一句话记：<br>未来会有越来越多家庭买得起、买得到茅台，但永远做不到四分之一家庭每年都能买到一瓶。</p></div>
-      <div class="metrics">
-        <span>赞 87</span>
-        <span>评论 12</span>
-        <span>转发 2</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384645478" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-19 12:59:24</time></div>
-      
-      
-      <p class="post-text">不是买卡也不是囤光模块。（本人无持仓，没有看空看多观点）</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@智谱(02513): 智谱 公告及通告 - [须予披露的交易] 须予披露交易 收购目标公司100%股权 网页链接</p></div>
-      <div class="metrics">
-        <span>赞 136</span>
-        <span>评论 12</span>
-        <span>转发 3</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/384601812" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
     </article></div></section><section class="user-column" id="user-3338834427"><div class="column-head"><div><h2>李药师2003</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_3338834427.html">单人页</a></div><div class="column-feed"><article class="post-card">
       <div class="post-head"><span class="author">李药师2003</span><time>2026-04-21 07:02:49</time></div>
       <div class="badges"><span class="badge reply">回复</span></div>
@@ -1397,7 +1397,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 谋生型工作和兴趣型工作</p></div>
       <div class="metrics">
-        <span>赞 42</span>
+        <span>赞 43</span>
         <span>评论 2</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/3338834427/384835019" target="_blank" rel="noopener">原文 ↗</a>
@@ -1412,7 +1412,7 @@
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@李药师2003: 谋生型工作和兴趣型工作</p></div>
       <div class="metrics">
         <span>赞 86</span>
-        <span>评论 10</span>
+        <span>评论 11</span>
         <span>转发 1</span>
         <a class="open-link-inline" href="https://xueqiu.com/3338834427/384835009" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -1426,8 +1426,8 @@
       
       <div class="metrics">
         <span>赞 980</span>
-        <span>评论 364</span>
-        <span>转发 109</span>
+        <span>评论 369</span>
+        <span>转发 110</span>
         <a class="open-link-inline" href="https://xueqiu.com/3338834427/384775194" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
@@ -1439,7 +1439,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@何纯在南国: 穷人为什么这么难？</p></div>
       <div class="metrics">
-        <span>赞 174</span>
+        <span>赞 175</span>
         <span>评论 9</span>
         <span>转发 2</span>
         <a class="open-link-inline" href="https://xueqiu.com/3338834427/383522330" target="_blank" rel="noopener">原文 ↗</a>
@@ -1468,8 +1468,8 @@
       
       <div class="metrics">
         <span>赞 478</span>
-        <span>评论 122</span>
-        <span>转发 36</span>
+        <span>评论 123</span>
+        <span>转发 37</span>
         <a class="open-link-inline" href="https://xueqiu.com/3338834427/383025360" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
@@ -1669,6 +1669,20 @@
         <a class="open-link-inline" href="https://xueqiu.com/3338834427/372792441" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></div></section><section class="user-column" id="user-9129183937"><div class="column-head"><div><h2>石木见</h2><p>20 条</p></div><a class="open-link" href="xueqiu_user_9129183937.html">单人页</a></div><div class="column-feed"><article class="post-card">
+      <div class="post-head"><span class="author">石木见</span><time>2026-04-28 12:02:42</time></div>
+      
+      
+      <p class="post-text">我觉得都挺便宜的，那就让聪明人先走吧。$$江波龙(SZ301308)$ $德明利(SZ001309)$</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 38</span>
+        <span>评论 11</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/9129183937/386222648" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
       <div class="post-head"><span class="author">石木见</span><time>2026-04-27 21:55:56</time></div>
       
       
@@ -1677,8 +1691,8 @@
       
       
       <div class="metrics">
-        <span>赞 45</span>
-        <span>评论 11</span>
+        <span>赞 47</span>
+        <span>评论 17</span>
         <span>转发 1</span>
         <a class="open-link-inline" href="https://xueqiu.com/9129183937/386110514" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -1691,7 +1705,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@江波龙(SZ301308): 江波龙：2026年一季度报告 网页链接</p></div>
       <div class="metrics">
-        <span>赞 39</span>
+        <span>赞 42</span>
         <span>评论 4</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/9129183937/386110097" target="_blank" rel="noopener">原文 ↗</a>
@@ -1705,8 +1719,8 @@
       
       
       <div class="metrics">
-        <span>赞 40</span>
-        <span>评论 13</span>
+        <span>赞 41</span>
+        <span>评论 14</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/9129183937/386003495" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -1934,20 +1948,6 @@
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/9129183937/383646569" target="_blank" rel="noopener">原文 ↗</a>
       </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">石木见</span><time>2026-04-13 12:01:15</time></div>
-      <div class="badges"><span class="badge article">专栏</span></div>
-      <h2>专注新质周期股，足够了！</h2>
-      <p class="post-text">专注新质周期股，足够了！</p>
-      <a class="notice article-notice" href="https://xueqiu.com/9129183937/383616926" target="_blank" rel="noopener">专栏正文可能未完整收录，打开原文阅读</a>
-      
-      
-      <div class="metrics">
-        <span>赞 90</span>
-        <span>评论 31</span>
-        <span>转发 3</span>
-        <a class="open-link-inline" href="https://xueqiu.com/9129183937/383616926" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
     </article></div></section><section class="user-column" id="user-1818342785"><div class="column-head"><div><h2>lamlap123</h2><p>6 条</p></div><a class="open-link" href="xueqiu_user_1818342785.html">单人页</a></div><div class="column-feed"><article class="post-card">
       <div class="post-head"><span class="author">lamlap123</span><time>2026-02-25 12:38:31</time></div>
       <div class="badges"><span class="badge article">专栏</span></div>
@@ -1972,7 +1972,7 @@
       
       <div class="metrics">
         <span>赞 303</span>
-        <span>评论 55</span>
+        <span>评论 53</span>
         <span>转发 3</span>
         <a class="open-link-inline" href="https://xueqiu.com/1818342785/384691738" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -1985,8 +1985,8 @@
       
       
       <div class="metrics">
-        <span>赞 187</span>
-        <span>评论 104</span>
+        <span>赞 188</span>
+        <span>评论 107</span>
         <span>转发 3</span>
         <a class="open-link-inline" href="https://xueqiu.com/1818342785/377669770" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -2327,34 +2327,6 @@
         <a class="open-link-inline" href="https://xueqiu.com/2678435970/385788004" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-25 14:13:38</time></div>
-      
-      
-      <p class="post-text">两倍海力士换成dram</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 目前本人还在存储的这列车上，但是最近美股涨的实在太快了，叠加沃什五月中旬就任，不知道华尔街会不会给沃什一点压力，我准备五月初降低点杠杆，走一步看一步吧，目前的收益已经完全超出了本年度的预期了。</p></div>
-      <div class="metrics">
-        <span>赞 6</span>
-        <span>评论 5</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/385786834" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-25 14:05:10</time></div>
-      <div class="badges"><span class="badge image">含 1 图</span></div>
-      
-      <p class="post-text">目前本人还在存储的这列车上，但是最近美股涨的实在太快了，叠加沃什五月中旬就任，不知道华尔街会不会给沃什一点压力，我准备五月初降低点杠杆，走一步看一步吧，目前的收益已经完全超出了本年度的预期了。</p>
-      
-      <div class="image-grid"><a href="https://xqimg.imedao.com/19dc33db1581cd913fc556ca.jpg!thumb.jpg" target="_blank" rel="noopener"><img src="https://xqimg.imedao.com/19dc33db1581cd913fc556ca.jpg!thumb.jpg" loading="lazy"></a></div>
-      
-      <div class="metrics">
-        <span>赞 10</span>
-        <span>评论 13</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/385786357" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
       <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-25 06:27:53</time></div>
       
       
@@ -2577,6 +2549,34 @@
         <span>评论 8</span>
         <span>转发 1</span>
         <a class="open-link-inline" href="https://xueqiu.com/2678435970/382468647" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-04-01 14:27:40</time></div>
+      
+      
+      <p class="post-text">三星这几天跌的比海力士少涨的比海力士多，可能有两个因素，一个可能是下周三星要发财报了，另外一个可能是之前我说的传言，就是海力士hbm4的base die好像适配有点问题影响rubin的出货，当然我也是听传言的。不过，有一说一，海外存储反弹起来也是挺猛的。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 7</span>
+        <span>评论 10</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/382191910" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-03-31 22:21:03</time></div>
+      
+      
+      <p class="post-text">闪迪最近的量一直比美光好，在股价上也比美光走的好，按理说盘子小应该波动更大才对。我想有两方面原因：1、大摩最近一直在看高nand，看低dram，闪迪是纯nand就不说了，美光可能被当做美股dram标在炒，虽然美光啥都有；2、美光已经出了财报，而闪迪还没有出，出了的当做短期利好出尽吧，没出的当做埋伏财报。//@夜间飞行家:闪迪量缩的比美光快，已经快100亿以下了。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 有一说一，我觉得闪迪美光这轮一直这么大的量，不是很舒服，可能走的没有上一轮顺畅，没准美光财报后还要二次震荡调整。。。</p></div>
+      <div class="metrics">
+        <span>赞 9</span>
+        <span>评论 4</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/382073078" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></div></section><section class="user-column" id="user-8895446470"><div class="column-head"><div><h2>双格</h2><p>17 条</p></div><a class="open-link" href="xueqiu_user_8895446470.html">单人页</a></div><div class="column-feed"><article class="post-card">
       <div class="post-head"><span class="author">双格</span><time>2026-03-24 12:07:38</time></div>

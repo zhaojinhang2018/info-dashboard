@@ -1,174 +1,118 @@
 {
-  "updated_at": "2026-04-28 11:09:55",
+  "updated_at": "2026-04-29 13:00:03",
   "categories": [
     {
       "category": "📊 宏观",
       "items": [
         {
-          "title": "For the average price of a car in the US, you could buy 5 new Chinese EVs",
-          "url": "https://www.investing.com/news/stock-market-news/for-the-average-price-of-a-car-in-the-us-you-could-buy-5-new-chinese-evs-4640210",
-          "source": "Investing.com · 04-28 02:06",
+          "title": "Goldman Sachs bars Hong Kong bankers from using Anthropic AI, source says",
+          "url": "https://www.investing.com/news/stock-market-news/goldman-sachs-bars-hong-kong-bankers-from-anthropic-ai-use-ft-reports-4643442",
+          "source": "Investing.com · 04-29 02:24",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Nvidia supplier Advantest shares fall as outlook misses expectations",
-          "url": "https://www.investing.com/news/stock-market-news/nvidia-supplier-advantest-shares-fall-as-outlook-misses-expectations-4640214",
-          "source": "Investing.com · 04-28 01:59",
+          "title": "Amazon targets mass hiring with agentic software, goal to humanize AI",
+          "url": "https://www.investing.com/news/stock-market-news/amazon-targets-mass-hiring-with-agentic-software-goal-to-humanize-ai-4642354",
+          "source": "Investing.com · 04-29 02:18",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Indonesia train crash toll rises to 7, rescuers work to remove trapped passengers",
-          "url": "https://www.investing.com/news/stock-market-news/indonesia-train-crash-toll-rises-to-7-rescuers-work-to-remove-trapped-passengers-4640209",
-          "source": "Investing.com · 04-28 01:36",
+          "title": "Hua Hong shares drop after report of US curbs on chip tool shipments",
+          "url": "https://www.investing.com/news/stock-market-news/hua-hong-shares-drop-after-report-of-us-curbs-on-chip-tool-shipments-4643482",
+          "source": "Investing.com · 04-29 02:17",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Foreign carmakers threaten to pull cheapest models from US without trade deal, WSJ reports",
-          "url": "https://www.investing.com/news/stock-market-news/foreign-carmakers-threaten-to-pull-cheapest-models-from-us-without-trade-deal-wsj-reports-4640208",
-          "source": "Investing.com · 04-28 01:36",
+          "title": "Purdue Pharma receives $5.5 billion sentence, paving way for opioid settlement",
+          "url": "https://www.investing.com/news/stock-market-news/purdue-pharma-to-be-sentenced-paving-way-for-opioid-settlement-4640784",
+          "source": "Investing.com · 04-29 02:07",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Star Entertainment reports quarterly loss on lower table games revenue",
-          "url": "https://www.investing.com/news/stock-market-news/australias-star-entertainment-narrows-thirdquarter-losses-4640143",
-          "source": "Investing.com · 04-28 01:30",
+          "title": "Stocks retreat on Iran, AI concerns as Fed meeting looms",
+          "url": "https://www.investing.com/news/stock-market-news/stocks-retreat-on-iran-ai-concerns-as-fed-meeting-looms-4643470",
+          "source": "Investing.com · 04-29 01:54",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Nissan shares jump after swinging to FY profit outlook",
-          "url": "https://www.investing.com/news/stock-market-news/nissan-shares-jump-after-swinging-to-fy-profit-outlook-4640200",
-          "source": "Investing.com · 04-28 01:25",
+          "title": "Spirit Airlines’ talks on $500 million US rescue financing stall, Bloomberg News reports",
+          "url": "https://www.investing.com/news/stock-market-news/spirit-airlines-talks-on-500-million-us-rescue-financing-stall-bloomberg-news-reports-4643460",
+          "source": "Investing.com · 04-29 01:42",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "US Supreme Court split over Bayer’s fight against Roundup lawsuits",
-          "url": "https://www.investing.com/news/stock-market-news/us-supreme-court-hears-bayers-fight-against-roundup-lawsuits-4638178",
-          "source": "Investing.com · 04-28 01:24",
+          "title": "Accenture to roll out Copilot to 743,000 employees in boost for Microsoft (April 27)",
+          "url": "https://www.investing.com/news/stock-market-news/accenture-to-roll-out-copilot-to-743000-employees-in-boost-for-microsoft-april-27-4643459",
+          "source": "Investing.com · 04-29 01:42",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "California is one step closer to America’s first billionaire wealth tax — and the divide between red and blue state taxes is getting deeper",
-          "url": "https://www.marketwatch.com/story/california-is-one-step-closer-to-americas-first-billionaire-wealth-tax-and-the-divide-between-red-and-blue-state-taxes-is-getting-deeper-18ef3232?mod=mw_rss_topstories",
-          "source": "MarketWatch · 04-28 00:56",
+          "title": "Brazilian regulator probes airlines LATAM, Gol over potential price alignment",
+          "url": "https://www.investing.com/news/stock-market-news/brazilian-regulator-probes-airlines-latam-gol-over-potential-price-alignment-4643390",
+          "source": "Investing.com · 04-29 00:36",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Dynatrace shares rise on report of activist Starboard stake",
-          "url": "https://www.investing.com/news/stock-market-news/dynatrace-shares-rise-on-report-of-activist-starboard-stake-4640163",
-          "source": "Investing.com · 04-28 00:38",
+          "title": "J&J sees AI halving the time to generate drug development leads",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/j-j-sees-ai-halving-150527193.html",
+          "source": "Yahoo Finance · 04-27 15:05",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Bed Bath & Beyond is seeing new life, as rare sales growth lifts stock more than 25%",
-          "url": "https://www.marketwatch.com/story/bed-bath-beyond-is-seeing-new-life-as-rare-sales-growth-lifts-stock-more-than-30-3e1ee945?mod=mw_rss_topstories",
-          "source": "MarketWatch · 04-28 00:34",
+          "title": "Western Union to Launch Solana-Based USDPT Stablecoin Next Month",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/western-union-launch-solana-based-150400882.html",
+          "source": "Yahoo Finance · 04-27 15:04",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Higher inflation is on the way. The Fed needs to make this clear before it raises rates.",
-          "url": "https://www.marketwatch.com/story/higher-inflation-is-on-the-way-the-fed-needs-to-make-this-clearer-before-it-raises-rates-142c6884?mod=mw_rss_topstories",
-          "source": "MarketWatch · 04-28 00:20",
+          "title": "Gas prices are expected to keep rising in the absence of a US-Iran deal",
+          "url": "https://finance.yahoo.com/markets/article/gas-prices-are-expected-to-keep-rising-in-the-absence-of-a-us-iran-deal-145957903.html",
+          "source": "Yahoo Finance · 04-27 14:59",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "It’s China’s duty-free retail mecca and a tropical oasis, to boot. For Beijing that’s no longer enough.",
-          "url": "https://www.marketwatch.com/story/hainan-was-chinas-shopping-paradise-for-beijing-thats-no-longer-enough-c2535a40?mod=mw_rss_topstories",
-          "source": "MarketWatch · 04-28 00:00",
+          "title": "AI casts existential shadow over legacy software companies, Bridgewater CIOs warn",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/ai-casts-existential-shadow-over-145920203.html",
+          "source": "Yahoo Finance · 04-27 14:59",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "‘We believe it’s real’: My mom received a check from a class-action lawsuit. It bounced. Could this be a scam?",
-          "url": "https://www.marketwatch.com/story/we-believe-its-real-my-mom-received-a-check-from-a-class-action-lawsuit-it-bounced-could-this-be-a-scam-cffa7bdb?mod=mw_rss_topstories",
-          "source": "MarketWatch · 04-27 22:30",
+          "title": "PKF Smith Cooper appoints Beverley Scott as new corporate tax partner",
+          "url": "https://finance.yahoo.com/economy/policy/articles/pkf-smith-cooper-appoints-beverley-145318214.html",
+          "source": "Yahoo Finance · 04-27 14:53",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Arm’s stock snaps a seven-day winning streak as it loses some of its AI glow",
-          "url": "https://www.marketwatch.com/story/arms-stock-snaps-a-seven-day-winning-streak-as-it-loses-some-of-its-ai-glow-8d390975?mod=mw_rss_topstories",
-          "source": "MarketWatch · 04-27 22:09",
+          "title": "Shell reverses course in Canada and buys ARC Resources for $14 billion, doubling down on oil and gas",
+          "url": "https://finance.yahoo.com/sectors/energy/articles/shell-reverses-course-canada-buys-144949730.html",
+          "source": "Yahoo Finance · 04-27 14:49",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "‘I hope to retire early’: I’m 56 and have 80% in a traditional IRA and 20% in a Roth. Am I in trouble?",
-          "url": "https://www.marketwatch.com/story/i-hope-to-retire-early-im-56-and-have-80-in-a-traditional-ira-and-20-in-a-roth-am-i-in-trouble-8ec58195?mod=mw_rss_topstories",
-          "source": "MarketWatch · 04-27 22:01",
+          "title": "As Intel Triggers a Major Rally in Semiconductor Companies, DA Davidson Hikes Its AMD Stock Price Target by More Than 70%",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-triggers-major-rally-semiconductor-144754958.html",
+          "source": "Yahoo Finance · 04-27 14:47",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Qualcomm’s stock gains as an AI opportunity emerges",
-          "url": "https://www.marketwatch.com/story/qualcomms-stock-soars-as-an-ai-opportunity-emerges-14a6ed98?mod=mw_rss_topstories",
-          "source": "MarketWatch · 04-27 21:23",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "AT&T CEO hopes new offers will restore customer loyalty",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/t-hopes-latest-strategy-slow-170700426.html",
-          "source": "Yahoo Finance · 04-26 17:07",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "American Express, Chase set a new precedent for credit card fees",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/american-express-chase-set-precedent-144700033.html",
-          "source": "Yahoo Finance · 04-26 14:47",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "Want to Buy OpenAI Stock? Invest in This 1 Robinhood ETF",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/want-buy-openai-stock-invest-143002211.html",
-          "source": "Yahoo Finance · 04-26 14:30",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "‘You gotta do it’: Charlie Munger said once you reach this money milestone, you can ‘ease off the gas a bit’",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/gotta-charlie-munger-said-once-143000965.html",
-          "source": "Yahoo Finance · 04-26 14:30",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "Public Service Enterprise Group (PEG) Declares Dividend of $0.67 per Share",
-          "url": "https://finance.yahoo.com/sectors/energy/articles/public-enterprise-group-peg-declares-141844973.html",
-          "source": "Yahoo Finance · 04-26 14:18",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "NRC Renews License for Duke Energy’s Robinson Nuclear Plant",
-          "url": "https://finance.yahoo.com/sectors/energy/articles/nrc-renews-license-duke-energy-141832333.html",
-          "source": "Yahoo Finance · 04-26 14:18",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "Dominion Energy (D) Price Target Cut by $1 at Morgan Stanley",
-          "url": "https://finance.yahoo.com/sectors/energy/articles/dominion-energy-d-price-target-141814655.html",
-          "source": "Yahoo Finance · 04-26 14:18",
-          "pub_time": "",
-          "summary": ""
-        },
-        {
-          "title": "Evercore ISI Resumes Coverage of Constellation Energy (CEG) with a Bullish Stance",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/evercore-isi-resumes-coverage-constellation-141704241.html",
-          "source": "Yahoo Finance · 04-26 14:17",
+          "title": "How Nvidia Stock Could Be the Biggest Loser From the SpaceX IPO",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-could-biggest-loser-144344837.html",
+          "source": "Yahoo Finance · 04-27 14:43",
           "pub_time": "",
           "summary": ""
         }
@@ -178,114 +122,114 @@
       "category": "₿ 加密货币",
       "items": [
         {
-          "title": "ZetaChain halts cross-chain transactions following attack on smart contract",
-          "url": "https://www.theblock.co/post/399092/zetachain-attack-smart-contract?utm_source=rss&utm_medium=rss",
-          "source": "The Block · 04-28 01:41",
+          "title": "Pump.fun burns $370 million in PUMP token, commits 50% of future revenue for buyback-burn program",
+          "url": "https://www.theblock.co/post/399288/pump-fun-burns-370-million-pump?utm_source=rss&utm_medium=rss",
+          "source": "The Block · 04-29 02:25",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Industry leaders are pouring hundreds of millions into a rescue plan for Aave users after massive crypto hack",
-          "url": "https://www.coindesk.com/tech/2026/04/27/industry-leaders-are-pouring-hundreds-of-millions-into-a-rescue-plan-for-aave-users-after-massive-crypto-hack",
-          "source": "CoinDesk · 04-27 21:40",
+          "title": "Judge rejects Sam Bankman-Fried’s new trial request, slams claims as ‘wildly conspiratorial’",
+          "url": "https://www.theblock.co/post/399283/judge-rejects-sam-bankman-fried-new-trial-request-slams-claims-wildly-conspiratorial?utm_source=rss&utm_medium=rss",
+          "source": "The Block · 04-28 22:34",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "White House crypto advisor hints at ‘big announcement’ on Trump’s strategic bitcoin reserve in coming weeks",
-          "url": "https://www.theblock.co/post/399087/white-house-crypto-advisor-trump-strategic-bitcoin-reserve-coming-weeks?utm_source=rss&utm_medium=rss",
-          "source": "The Block · 04-27 21:25",
+          "title": "Robinhood’s Q1 crypto revenue and trading volume fall nearly 50%",
+          "url": "https://www.theblock.co/post/399274/robinhoods-q1-crypto-revenue-and-trading-volume-fall-nearly-50?utm_source=rss&utm_medium=rss",
+          "source": "The Block · 04-28 20:54",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Bitcoin rally shows signs of fatigue as key indicators turn bearish",
-          "url": "https://www.coindesk.com/markets/2026/04/27/bitcoin-rally-shows-signs-of-fatigue-as-key-indicators-turn-bearish",
-          "source": "CoinDesk · 04-27 21:00",
+          "title": "LayerZero commits 10,000 ETH to DeFi United effort",
+          "url": "https://www.theblock.co/post/399275/layerzero-commits-10000-eth-to-defi-united-effort?utm_source=rss&utm_medium=rss",
+          "source": "The Block · 04-28 20:50",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "‘We don’t take Satoshi’s bitcoin’: eCash fork sparks backlash over ‘reassigned’ coins",
-          "url": "https://www.theblock.co/post/399054/we-dont-take-satoshis-bitcoin-ecash-fork-backlash-reassigned-coins?utm_source=rss&utm_medium=rss",
-          "source": "The Block · 04-27 20:48",
+          "title": "Robinhood stock falls 8% after big earnings miss due to weak crypto trading revenue",
+          "url": "https://www.coindesk.com/markets/2026/04/28/robinhood-stock-shrugs-off-a-47-crash-in-crypto-revenue-thanks-to-a-massive-surge-in-event-betting",
+          "source": "CoinDesk · 04-28 20:28",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Acting AG Blanche: DOJ has ‘fundamentally changed the game’ for developers",
-          "url": "https://www.theblock.co/post/399078/acting-ag-blanche-doj-has-fundamentally-changed-the-game-for-developers?utm_source=rss&utm_medium=rss",
-          "source": "The Block · 04-27 20:38",
+          "title": "Paul Tudor Jones calls bitcoin the 'best inflation hedge,' warns of overvalued stocks",
+          "url": "https://www.coindesk.com/markets/2026/04/28/paul-tudor-jones-calls-bitcoin-the-best-inflation-hedge-warns-of-overvalued-stocks",
+          "source": "CoinDesk · 04-28 19:56",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Western Union eyeing stablecoin launch to settle global transactions without SWIFT, CEO says",
-          "url": "https://www.coindesk.com/business/2026/04/27/western-union-eyeing-stablecoin-launch-to-settle-global-transactions-without-swift-ceo-says",
-          "source": "CoinDesk · 04-27 20:35",
+          "title": "Ostium upgrades backend, adds offchain institutional liquidity providers like Jump",
+          "url": "https://www.theblock.co/post/399269/ostium-upgrades-backend-adds-offchain-institutional-liquidity-providers-jump?utm_source=rss&utm_medium=rss",
+          "source": "The Block · 04-28 19:43",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "MARA Foundation to foster long-term adoption of Bitcoin, including resilience against quantum and security budget risks",
-          "url": "https://www.theblock.co/post/399069/mara-foundation-adoption-bitcoin-resilience-quantum-security-budget-risks?utm_source=rss&utm_medium=rss",
-          "source": "The Block · 04-27 19:22",
+          "title": "Strategy-fueled bitcoin rally could last ‘for some time to come,’ Bitwise CIO says",
+          "url": "https://www.theblock.co/post/399254/strategy-fueled-bitcoin-rally-could-last-for-some-time-to-come-bitwise-cio-says?utm_source=rss&utm_medium=rss",
+          "source": "The Block · 04-28 18:40",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Rep. Begich plans revival of bitcoin strategic reserve bill under new name to codify Trump’s executive order",
-          "url": "https://www.theblock.co/post/399056/rep-begich-plans-revival-of-bitcoin-strategic-reserve-bill-under-new-name-to-codify-trumps-executive-order?utm_source=rss&utm_medium=rss",
-          "source": "The Block · 04-27 18:26",
+          "title": "Alchemy and Privy roll out technical integration to smooth pain points of ‘onchain finance’",
+          "url": "https://www.theblock.co/post/399239/alchemy-and-privy-roll-out-technical-integration-to-smooth-pain-points-of-onchain-finance?utm_source=rss&utm_medium=rss",
+          "source": "The Block · 04-28 18:30",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "MARA Holdings targets bitcoin quantum threat and network resilience with new foundation",
-          "url": "https://www.coindesk.com/markets/2026/04/27/mara-holdings-targets-bitcoin-quantum-threat-and-network-resilience-with-new-foundation",
-          "source": "CoinDesk · 04-27 17:49",
+          "title": "CFTC sues Wisconsin in agency's legal campaign defending prediction markets authority",
+          "url": "https://www.coindesk.com/policy/2026/04/28/cftc-sues-wisconsin-in-agency-s-legal-campaign-defending-prediction-markets-authority",
+          "source": "CoinDesk · 04-28 18:22",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Sen. Tillis becomes ‘latest roadblock’ for crypto bill as he pushes ethics provisions, TD Cowen says",
-          "url": "https://www.theblock.co/post/399044/sen-tillis-latest-roadblock-crypto-bill-ethics-provisions-td-cowen?utm_source=rss&utm_medium=rss",
-          "source": "The Block · 04-27 17:39",
+          "title": "CFTC sues Wisconsin escalating federal-state clash over prediction market oversight",
+          "url": "https://www.theblock.co/post/399253/cftc-sues-wisconsin-federal-state-clash-prediction-market-oversight?utm_source=rss&utm_medium=rss",
+          "source": "The Block · 04-28 18:10",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Bitcoin pulls back to $76,600 as rising oil price and Iran risks stall the rally",
-          "url": "https://www.coindesk.com/markets/2026/04/27/bitcoin-pulls-back-to-usd76-600-as-rising-oil-price-and-iran-risks-stall-the-rally",
-          "source": "CoinDesk · 04-27 17:17",
+          "title": "World Cup fever: Chiliz expands to Solana and Base to supercharge fan token trading",
+          "url": "https://www.coindesk.com/business/2026/04/28/world-cup-fever-chiliz-expands-to-solana-and-base-to-supercharge-fan-token-trading",
+          "source": "CoinDesk · 04-28 17:03",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Aven bitcoin Visa card will offer BTC-backed line of credit of up to $1 million",
-          "url": "https://www.theblock.co/post/399027/aven-bitcoin-visa-card-btc-backed-line-credit-1-million?utm_source=rss&utm_medium=rss",
-          "source": "The Block · 04-27 17:05",
+          "title": "The age of Agentic Commerce has arrived. Consensus 2026 is where you can experience it IRL",
+          "url": "https://www.coindesk.com/opinion/2026/04/28/the-age-of-agentic-commerce-has-arrived-consensus-2026-is-where-you-can-experience-it-irl",
+          "source": "CoinDesk · 04-28 17:00",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Curve founder pitches market-based fix for $700K bad debt in contrast to Aave bailout",
-          "url": "https://www.coindesk.com/markets/2026/04/27/curve-founder-pitches-market-based-fix-for-usd700k-bad-debt-in-contrast-to-aave-bailout",
-          "source": "CoinDesk · 04-27 16:38",
+          "title": "Polymarket reportedly seeking CFTC approval to reopen main exchange to U.S. traders",
+          "url": "https://www.coindesk.com/policy/2026/04/28/polymarket-seeks-cftc-approval-to-reopen-main-exchange-to-u-s-traders",
+          "source": "CoinDesk · 04-28 16:35",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Solana developers outline plan to protect network from quantum threats",
-          "url": "https://www.coindesk.com/tech/2026/04/27/solana-developers-outline-plan-to-protect-network-from-quantum-threats",
-          "source": "CoinDesk · 04-27 16:30",
+          "title": "Riot extends $200 million Coinbase credit facility, and bitcoin weakness could mean more sales",
+          "url": "https://www.coindesk.com/markets/2026/04/28/riot-extends-usd200-million-coinbase-credit-facility-and-bitcoin-weakness-could-mean-more-sales",
+          "source": "CoinDesk · 04-28 16:30",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Bitcoin is climbing on thin volume, leaving rally vulnerable to macro shock",
-          "url": "https://www.coindesk.com/markets/2026/04/27/bitcoin-is-climbing-on-thin-volume-leaving-this-rally-vulnerable-to-macro-shock",
-          "source": "CoinDesk · 04-27 16:22",
+          "title": "Microsoft says legacy banks are hitting a breaking point as AI takes over the heavy lifting",
+          "url": "https://www.coindesk.com/business/2026/04/28/microsoft-says-legacy-banks-are-hitting-a-breaking-point-as-ai-takes-over-the-heavy-lifting",
+          "source": "CoinDesk · 04-28 16:10",
           "pub_time": "",
           "summary": ""
         }
@@ -295,107 +239,121 @@
       "category": "🤖 AI/科技",
       "items": [
         {
-          "title": "China blocks Meta-Manus deal, signaling tougher stance as unwinding poses complex fallout",
-          "url": "https://www.digitimes.com/news/a20260428VL203/meta-manus-ai-acquisition-beijing-technology.html",
-          "source": "DigiTimes Semis · 04-28 01:58",
+          "title": "Taiwan logs record chip exports, AI demand outpaces geopolitical risk",
+          "url": "https://www.digitimes.com/news/a20260427PD221/taiwan-growth-israel-market-demand.html",
+          "source": "DigiTimes Semis · 04-29 02:00",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Radiant Opto-Electronics delays optical communications push by 2&ndash;3 years",
-          "url": "https://www.digitimes.com/news/a20260427PD211/radiant-communications-investment-cpo-business.html",
-          "source": "DigiTimes Semis · 04-28 01:45",
+          "title": "Meta reportedly to cancel Manus acquisition as China clamps down on 'Singapore washing' in AI",
+          "url": "https://www.digitimes.com/news/a20260428PD242/meta-manus-acquisition-beijing-investment-policy-singapore.html",
+          "source": "DigiTimes Semis · 04-29 01:53",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Strong demand and advanced packaging execution drive Amkor's upbeat quarter",
-          "url": "https://www.digitimes.com/news/a20260428VL201/amkor-advanced-packaging-revenue-demand-2026.html",
-          "source": "DigiTimes Semis · 04-28 01:40",
+          "title": "Osense develops baseball hawk-eye system to capture US$10 billion sports tech market",
+          "url": "https://www.digitimes.com/news/a20260427PD248/market-technology-software-training-3d.html",
+          "source": "DigiTimes Semis · 04-29 01:45",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Kakao Mobility launches Level 4 robotaxi, scales AI mobility platform",
-          "url": "https://www.digitimes.com/news/a20260427PD205/kakao-robotaxi-data-commercial-2026.html",
-          "source": "DigiTimes Semis · 04-28 01:35",
+          "title": "Taiwan makes its quantum move, rallying 18 companies",
+          "url": "https://www.digitimes.com/news/a20260427PD238/taiwan-moea-quantum-development-market.html",
+          "source": "DigiTimes Semis · 04-29 01:30",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "AI-driven demand and record backlog fuel Cadence's strong start to 2026",
-          "url": "https://www.digitimes.com/news/a20260428VL202/cadence-eda-revenue-2026.html",
-          "source": "DigiTimes Semis · 04-28 01:32",
+          "title": "NXP advances VSMC and ESMC projects with ramp timelines on track",
+          "url": "https://www.digitimes.com/news/a20260429VL202/nxp-vis-ic-manufacturing-esmc-management.html",
+          "source": "DigiTimes Semis · 04-29 01:13",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "TSMC 2nm leak case results in NT$150M fine for TEL; company says no confidential data was leaked and discussions are underway",
-          "url": "https://www.digitimes.com/news/a20260427PD239/tokyo-electron-tsmc-2nm-taiwan-subsidiary.html",
-          "source": "DigiTimes Semis · 04-27 23:33",
+          "title": "Kemflo bets on BIM and recycling tech to target US$100 billion semiconductor water market",
+          "url": "https://www.digitimes.com/news/a20260429PD205/water-recycling-market-industrial-design.html",
+          "source": "DigiTimes Semis · 04-29 01:00",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Why the AI boom still runs through Taiwan &mdash; and why that won't change",
-          "url": "https://www.digitimes.com/news/a20260427PD227/tsmc-taiwan-chairman-demand-chips.html",
-          "source": "DigiTimes Semis · 04-27 23:30",
+          "title": "Huizuan Technology breaks ground on Thailand plant to scale high-end CPO, AI HDD and cooling",
+          "url": "https://www.digitimes.com/news/a20260429PD203/high-end-hdd-plant-cooling-cpo.html",
+          "source": "DigiTimes Semis · 04-29 00:55",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Commentary: What Amap reveals about AI navigation, data control",
-          "url": "https://www.digitimes.com/news/a20260427VL205/data-competition-governance-taiwan-adoption.html",
-          "source": "DigiTimes Semis · 04-27 23:30",
+          "title": "Faraday Technology posts profit decline in the first quarter as gross margin hits 13-quarter high",
+          "url": "https://www.digitimes.com/news/a20260429PD202/revenue-faraday-technology-gross-margin-earnings-development.html",
+          "source": "DigiTimes Semis · 04-29 00:49",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "OpenAI Misses Its Own User and Sales Goals, WSJ Reports",
-          "url": "https://www.bloomberg.com/news/articles/2026-04-28/openai-misses-its-own-user-and-sales-goals-wsj-reports",
-          "source": "Bloomberg Tech · 04-28 01:50",
+          "title": "AI Rally Ripples Through Chip Supply Chain, Minting New Winners",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-29/ai-rally-ripples-through-chip-supply-chain-minting-new-winners",
+          "source": "Bloomberg Tech · 04-29 02:00",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "BofA's Mensah on Business Strategy, Role of AI",
-          "url": "https://www.bloomberg.com/news/videos/2026-04-28/bofa-s-mensah-on-business-strategy-role-of-ai-video",
-          "source": "Bloomberg Tech · 04-28 01:37",
+          "title": "Goldman Staff in Hong Kong Lose Access to Anthropic’s Claude",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-29/goldman-staff-in-hong-kong-lose-access-to-anthropic-s-claude",
+          "source": "Bloomberg Tech · 04-29 01:26",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Advantest Shares Decline After Outlook Misses on Tight Capacity",
-          "url": "https://www.bloomberg.com/news/articles/2026-04-28/advantest-shares-decline-after-outlook-misses-on-tight-capacity",
-          "source": "Bloomberg Tech · 04-28 00:27",
+          "title": "China’s Meta Backlash Renders Manus Model ‘Officially Dead’",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-29/china-s-meta-backlash-renders-manus-model-officially-dead",
+          "source": "Bloomberg Tech · 04-29 01:25",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Musk v. Altman Jurors ‘Rose Up to the Plate,’ Judge Seats Nine",
-          "url": "https://www.bloomberg.com/news/articles/2026-04-28/musk-v-altman-jurors-rose-up-to-the-plate-judge-seats-nine",
-          "source": "Bloomberg Tech · 04-28 00:17",
+          "title": "TDK CEO on Business Strategy, AI Boom Impact",
+          "url": "https://www.bloomberg.com/news/videos/2026-04-29/tdk-ceo-on-business-strategy-ai-boom-impact-video",
+          "source": "Bloomberg Tech · 04-29 01:13",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Dynatrace Rallies on Report That Starboard Value Took a Stake",
-          "url": "https://www.bloomberg.com/news/articles/2026-04-28/dynatrace-rallies-on-report-that-starboard-value-took-a-stake",
-          "source": "Bloomberg Tech · 04-28 00:04",
+          "title": "Samsung Dynasty’s Wealth Doubles to $45 Billion in Just One Year",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-28/ai-boom-doubles-samsung-dynasty-s-wealth-to-45-billion-in-just-one-year",
+          "source": "Bloomberg Tech · 04-28 21:00",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "BYD, Geely Results to Provide Pointers in China EV Stock Rivalry",
-          "url": "https://www.bloomberg.com/news/articles/2026-04-27/byd-geely-results-to-provide-pointers-in-china-ev-stock-rivalry",
-          "source": "Bloomberg Tech · 04-27 23:30",
+          "title": "Musk Testifies He’s Suing OpenAI to Stop Altman’s ‘Looting’",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-28/musk-lawyer-says-altman-made-mockery-of-openai-public-mission",
+          "source": "Bloomberg Tech · 04-28 18:26",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Optical Computing Firm Lightelligence Jumps 400% in HK Debut",
-          "url": "https://www.bloomberg.com/news/articles/2026-04-27/optical-computing-firm-lightelligence-set-for-hk-debut-after-ipo",
-          "source": "Bloomberg Tech · 04-27 23:00",
+          "title": "Nvidia-Supplier Victory Giant’s Sales Surge on AI Demand",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-28/nvidia-supplier-victory-giant-s-sales-surge-on-solid-ai-demand",
+          "source": "Bloomberg Tech · 04-28 12:48",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Google signs classified AI deal with Pentagon, The Information reports - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNa0tiY2FGdlFmVGxXcnI4Wjl1VmdNcFgtOW9YOGZNenhfMW5ZSms0b0RJRG5NNlZYb2xPSC1JM3ZkenlicV8xMHYzLWtFb096WUJmMXg3LVJpTm1jRk1zcVV1YkZnR0NSZnpVYmpWOG12S1Q5OERtRE1MQjBQbWp2ekJtR2ZmampnZC1XNm4yMDd2eUxsZU5ZaUhkZlp6S3BEMlV2Y0ZFdHM5aUdlSk4yR2RB?oc=5",
+          "source": "Reuters Semis · 04-28 11:29",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "GoTo Shares Have Biggest Jump in Four Months on First Net Income",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-28/goto-posts-first-ever-net-income-after-cost-cuts-bear-fruit",
+          "source": "Bloomberg Tech · 04-28 10:37",
           "pub_time": "",
           "summary": ""
         },
@@ -407,65 +365,156 @@
           "summary": ""
         },
         {
-          "title": "Xi Tests China’s Reach by Blocking Already-Done Meta Deal",
-          "url": "https://www.bloomberg.com/news/articles/2026-04-27/xi-tests-china-s-reach-by-blocking-meta-deal-that-s-already-done",
-          "source": "Bloomberg Tech · 04-27 17:38",
+          "title": "Nvidia quietly launches 12GB RTX 5070 laptop GPU — midrange mobile gaming gets more VRAM amid the RAMpocalypse",
+          "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-quietly-launches-12gb-rtx-5070-laptop-gpu-midrange-mobile-gaming-gets-more-vram-amid-the-rampocalypse",
+          "source": "Tom's Hardware · 04-28 19:17",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "AMD Ryzen 9950X3D tops Amazon best sellers as it falls to all-time low price of $573.99 — 32-core X3D chip is now 18% off its launch price",
-          "url": "https://www.tomshardware.com/pc-components/cpus/amd-ryzen-9950x3d-tops-amazon-best-sellers-as-it-falls-to-all-time-low-price-of-usd573-99-32-core-x3d-chip-is-now-18-percent-off-its-launch-price",
-          "source": "Tom's Hardware · 04-27 19:05",
+          "title": "Market slumps as OpenAI reportedly misses internal targets for active users and revenue — Nvidia, Oracle, AMD, and CoreWeave shares all tremble on the news",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/market-slumps-as-openai-reportedly-misses-internal-targets-for-active-users-and-revenue-nvidia-oracle-amd-and-coreweave-shares-all-tremble-on-the-news",
+          "source": "Tom's Hardware · 04-28 15:50",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Russian-Chinese Irtysh 32-core CPU runs The Witcher 3 at 30+ FPS — heavyweight chip still imposes CPU bottleneck despite impressive specs",
-          "url": "https://www.tomshardware.com/pc-components/cpus/russian-chinese-irtysh-32-core-cpu-runs-the-witcher-3-at-30-fps-heavyweight-chip-still-imposes-cpu-bottleneck-despite-impressive-specs",
-          "source": "Tom's Hardware · 04-27 18:27",
+          "title": "China announces CPU-only exascale supercomputer with 47,000 homemade processors, record 2 Exaflops of performance without GPUs — Lingshen super said to use Huawei Kunpeng servers and no foreign-made components",
+          "url": "https://www.tomshardware.com/tech-industry/china-plans-cpu-only-exascale-supercomputer-with-47000-domestic-processors",
+          "source": "Tom's Hardware · 04-28 15:26",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Inside Google's TPU V8 strategy, delivering two chips for two crucial tasks at incredible scale — network scales up to 1 million TPUs per cluster, an advantage over Nvidia AI accelerators",
-          "url": "https://www.tomshardware.com/tech-industry/semiconductors/google-splits-its-tpu-into-two-chips-for-the-first-time-with-training-and-inference-variants",
-          "source": "Tom's Hardware · 04-27 17:12",
+          "title": "Ubuntu's AI roadmap revealed, universal AI 'kill switch' and forced AI integration are not part of the plan — cloud tracking, local inference, and agentic system tools take center stage",
+          "url": "https://www.tomshardware.com/software/operating-systems/ubuntus-ai-roadmap-revealed-universal-ai-kill-switch-and-forced-ai-integration-are-not-part-of-the-plan-cloud-tracking-local-inference-and-agentic-system-tools-take-center-stage",
+          "source": "Tom's Hardware · 04-28 14:53",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Microsoft and OpenAI end exclusivity agreement, opening up potential partnerships with Amazon and Google — Microsoft will continue to receive revenue share through 2030",
-          "url": "https://www.tomshardware.com/tech-industry/microsoft-and-openai-end-exclusivity-agreement-opening-up-potential-partnerships-with-amazon-and-google-microsoft-will-continue-to-receive-revenue-share-through-2030",
-          "source": "Tom's Hardware · 04-27 16:13",
+          "title": "Legendary ZSNES Nintendo emulator rewritten from scratch with GPU-acceleration, no vibe coding — new Super ZSNES has ‘far more accurate CPU and audio cores than the original’",
+          "url": "https://www.tomshardware.com/video-games/nintendo/legendary-zsnes-nintendo-emulator-rewritten-from-scratch-with-gpu-acceleration-no-vibe-coding-new-super-zsnes-has-far-more-accurate-cpu-and-audio-cores-than-the-original",
+          "source": "Tom's Hardware · 04-28 14:43",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Complex that supplies 70% of global critical PCB base targeted in Iranian strike — attack could fracture the already disrupted electronics supply chain",
-          "url": "https://www.tomshardware.com/tech-industry/complex-that-supplies-70-percent-of-global-critical-pcb-base-targeted-in-iranian-strike-attack-could-fracture-the-already-disrupted-electronics-supply-chain",
-          "source": "Tom's Hardware · 04-27 15:47",
+          "title": "OpenAI and Microsoft's alliance fractures as cloud exclusivity deal ends — Azure's single-provider monopoly for ChatGPT is officially over",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-and-microsofts-alliance-fractures-as-cloud-exclusivity-deal-ends-azures-single-provider-monopoly-for-chatgpt-is-officially-over",
+          "source": "Tom's Hardware · 04-28 13:56",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Claude-powered AI coding agent deletes entire company database in 9 seconds — backups zapped, after Cursor tool powered by Anthropic's Claude goes rogue",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-powered-ai-coding-agent-deletes-entire-company-database-in-9-seconds-backups-zapped-after-cursor-tool-powered-by-anthropics-claude-goes-rogue",
-          "source": "Tom's Hardware · 04-27 15:20",
+          "title": "Six AI data centers proposed for a small town of 7,000, equal to 51 Walmart Supercenters in 17 square mile area — four out of the seven town council members have resigned from their positions as town fights back",
+          "url": "https://www.tomshardware.com/desktops/servers/six-ai-data-centers-proposed-for-a-small-town-of-7-000-equal-to-51-walmart-supercenters-in-17-square-mile-area-four-out-of-the-seven-town-council-members-have-resigned-from-their-positions-as-town-fights-back",
+          "source": "Tom's Hardware · 04-28 13:15",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "New AI data center in Utah will generate and consume more than twice the amount of power the entire state uses — Kevin O'Leary's 9 Gigawatt Utah data center campus approved",
-          "url": "https://www.tomshardware.com/tech-industry/kevin-o-learys-9-gw-utah-data-center-campus-approved",
-          "source": "Tom's Hardware · 04-27 14:58",
+          "title": "Tenstorrent Unveils Next-Gen Servers for Fast Tokens, No Disaggregation Needed",
+          "url": "https://www.eetimes.com/tenstorrent-unveils-next-gen-servers-for-fast-tokens-no-disaggregation-needed/",
+          "source": "EE Times · 04-28 13:00",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "TSMC's details next-gen CoWoS roadmap: over 14-reticle packages and 48x leap in compute power expected by 2029 — massive size enables 24 HBM5E stacks and additional memory bandwidth jump",
-          "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmcs-details-next-gen-cowos-roadmap-over-14-reticle-packages-and-48x-leap-in-compute-power-expected-by-2029-massive-size-enables-24-hbm5e-stacks-and-additional-memory-bandwidth-jump",
-          "source": "Tom's Hardware · 04-27 11:56",
+          "title": "Gigabyte X870E Aorus Xtreme X3D AI Top motherboard review: The latest and greatest Xtreme",
+          "url": "https://www.tomshardware.com/pc-components/motherboards/gigabyte-x870e-aorus-xtreme-x3d-ai-top-motherboard-review",
+          "source": "Tom's Hardware · 04-28 12:26",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "OpenAI Prepares AI-First Smartphone for 2028",
+          "url": "https://www.eetimes.com/openai-prepares-ai-first-smartphone-for-2028/",
+          "source": "EE Times · 04-28 11:07",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "What the DRAM Crunch Teaches Us About System Design",
+          "url": "https://www.eetimes.com/what-the-dram-crunch-teaches-us-about-system-design/",
+          "source": "EE Times · 04-28 08:00",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Cisco’s Universal Quantum Switch Ushers in Quantum Networking",
+          "url": "https://www.eetimes.com/ciscos-universal-quantum-switch-ushers-in-quantum-networking/",
+          "source": "EE Times · 04-27 21:44",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "SUSE Launches Industrial Edge Platform Following Losant Acquisition",
+          "url": "https://www.eetimes.com/suse-launches-industrial-edge-platform-following-losant-acquisition/",
+          "source": "EE Times · 04-27 13:59",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Is Copper Sintering the Key to Advancing Wide Band Gap Semiconductors?",
+          "url": "https://www.eetimes.com/is-copper-sintering-the-key-to-advancing-wide-band-gap-semiconductors/",
+          "source": "EE Times · 04-27 13:00",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Why Data Centers Must Become System‑Aware",
+          "url": "https://www.eetimes.com/why-data-centers-must-become-system%e2%80%91aware/",
+          "source": "EE Times · 04-27 07:38",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Flesh-eating bacteria devour man's arm and leg in just three days",
+          "url": "https://arstechnica.com/health/2026/04/flesh-eating-bacteria-devour-mans-arm-and-leg-in-just-three-days/",
+          "source": "Ars Technica · 04-28 20:15",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Humanoid robots start sorting luggage in Tokyo airport test amid labor shortage",
+          "url": "https://arstechnica.com/ai/2026/04/japan-airlines-tests-having-robots-instead-of-humans-handle-travelers-luggage/",
+          "source": "Ars Technica · 04-28 18:01",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "GitHub will start charging Copilot users based on their actual AI usage",
+          "url": "https://arstechnica.com/ai/2026/04/github-will-start-charging-copilot-users-based-on-their-actual-ai-usage/",
+          "source": "Ars Technica · 04-28 15:41",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "The great American data center divide",
+          "url": "https://arstechnica.com/ai/2026/04/rural-america-is-resisting-the-surge-in-data-center-construction/",
+          "source": "Ars Technica · 04-28 14:15",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "A billion miles in less than a decade: GM's Super Cruise reaches a milestone",
+          "url": "https://arstechnica.com/cars/2026/04/gms-super-cruise-passes-a-billion-driven-miles-since-2017/",
+          "source": "Ars Technica · 04-28 14:00",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "The Download: Musk and Altman’s legal showdown, and AI’s profit problem",
+          "url": "https://www.technologyreview.com/2026/04/28/1136479/the-download-musk-altman-openai-trial-ai-profit-problem/",
+          "source": "MIT Tech Review · 04-28 12:10",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Elon Musk and Sam Altman are going to court over OpenAI’s future",
+          "url": "https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future/",
+          "source": "MIT Tech Review · 04-27 22:52",
           "pub_time": "",
           "summary": ""
         },
@@ -491,9 +540,23 @@
           "summary": ""
         },
         {
-          "title": "China kills Meta’s acquisition of Manus as US-China AI rivalry deepens",
-          "url": "https://arstechnica.com/ai/2026/04/china-kills-metas-acquisition-of-manus-as-us-china-ai-rivalry-deepens/",
-          "source": "Ars Technica · 04-27 18:12",
+          "title": "The missing step between hype and profit",
+          "url": "https://www.technologyreview.com/2026/04/27/1136456/the-missing-step-between-hype-and-profit/",
+          "source": "MIT Tech Review · 04-27 16:13",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Rebuilding the data stack for AI",
+          "url": "https://www.technologyreview.com/2026/04/27/1136322/rebuilding-the-data-stack-for-ai/",
+          "source": "MIT Tech Review · 04-27 13:00",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "The Download: DeepSeek’s latest AI breakthrough, and the race to build world models",
+          "url": "https://www.technologyreview.com/2026/04/27/1136438/the-download-deepseek-v4-ai-world-models/",
+          "source": "MIT Tech Review · 04-27 12:10",
           "pub_time": "",
           "summary": ""
         }
@@ -503,51 +566,114 @@
       "category": "🌍 地缘政治",
       "items": [
         {
-          "title": "Iran Offers to Reopen the Strait of Hormuz",
-          "url": "https://foreignpolicy.com/2026/04/27/iran-reopen-strait-hormuz-postpone-nuclear-talks-us-blockade/",
-          "source": "Foreign Policy · 04-27 20:50",
+          "title": "Why Iran Isn’t Blinking Yet",
+          "url": "https://foreignpolicy.com/2026/04/28/iran-war-hormuz-trump-oil-storage-blockade-energy/",
+          "source": "Foreign Policy · 04-28 17:40",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Israel and Syria’s Shared Fight Against Hezbollah",
-          "url": "https://foreignpolicy.com/2026/04/27/israel-syria-hezbollah-iran-sharaa-terrorism-lebanon/",
-          "source": "Foreign Policy · 04-27 15:34",
+          "title": "Iran Is More Unified Than Ever",
+          "url": "https://foreignpolicy.com/2026/04/28/iran-leadership-government-unified-khamenei-qalibaf-public/",
+          "source": "Foreign Policy · 04-28 10:29",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Escaping the Hormuz Trap",
-          "url": "https://foreignpolicy.com/2026/04/27/hormuz-trap-oil-pipeline-iran-war-united-states-arab-israel/",
-          "source": "Foreign Policy · 04-27 13:45",
+          "title": "King Charles III: ‘A Partnership Born Out of Dispute’",
+          "url": "https://foreignpolicy.com/2026/04/28/king-charles-speech-us-congress-full-text-transcript/",
+          "source": "Foreign Policy · 04-28 22:23",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "The Hormuz Hit to Helium",
-          "url": "https://foreignpolicy.com/2026/04/27/iran-war-hormuz-strait-helium-semiconductors-chips-supply-chain-prices/",
-          "source": "Foreign Policy · 04-27 09:00",
+          "title": "King Charles III Delivers Pointed Message in Address to U.S. Congress",
+          "url": "https://foreignpolicy.com/2026/04/28/king-charles-speech-congress-trump-nato-ukraine-diversity/",
+          "source": "Foreign Policy · 04-28 22:14",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "The U.S. Shouldn’t Rule the Seas Forever",
-          "url": "https://foreignpolicy.com/2026/04/27/iran-us-war-hormuz-strait-blockade-trade-maritime-navy-strategy/",
-          "source": "Foreign Policy · 04-27 21:16",
+          "title": "China Pulls the Plug on Meta’s AI Acquisition",
+          "url": "https://foreignpolicy.com/2026/04/28/china-blocks-ai-meta-manus-deal-national-security/",
+          "source": "Foreign Policy · 04-28 21:24",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "Beijing Is Using Influencers to Burnish Its Image",
-          "url": "https://foreignpolicy.com/2026/04/27/china-influencers-dubai-propaganda-chinamaxxing/",
-          "source": "Foreign Policy · 04-27 16:02",
+          "title": "US soldier pleads not guilty to charges of betting on Nicolás Maduro’s ouster",
+          "url": "https://www.theguardian.com/us-news/2026/apr/28/us-soldier-maduro-betting-charges-plea",
+          "source": "The Guardian World · 04-28 18:05",
           "pub_time": "",
           "summary": ""
         },
         {
-          "title": "What Five Decades of Summits Reveal About U.S.-China Relations",
-          "url": "https://foreignpolicy.com/2026/04/27/trump-xi-summit-us-china-trade-deal-taiwan-geopolitics/",
-          "source": "Foreign Policy · 04-27 15:33",
+          "title": "Japan and China Are Edging Dangerously Close to Conflict",
+          "url": "https://foreignpolicy.com/2026/04/28/japan-china-taiwan-okinawa-history/",
+          "source": "Foreign Policy · 04-28 17:07",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Russia claims its Africa Corps group prevented coup in Mali after rebels seize towns",
+          "url": "https://www.theguardian.com/world/2026/apr/28/russia-claims-its-africa-corps-group-prevented-coup-in-mali-after-rebels-seize-towns",
+          "source": "The Guardian World · 04-28 17:07",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Fears of resurgence in Somali piracy after three vessels hijacked in a week",
+          "url": "https://www.theguardian.com/world/2026/apr/28/fears-resurgence-somalia-piracy-three-vessels-hijacked-past-week",
+          "source": "The Guardian World · 04-28 16:20",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Russia’s War Boom Masks an Economic Implosion",
+          "url": "https://foreignpolicy.com/2026/04/28/russia-putin-war-ukraine-economy-industry-labor-shortage-demographic-implosion/",
+          "source": "Foreign Policy · 04-28 12:11",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Mexican special forces arrest top commander of cartel and his alleged money launderer",
+          "url": "https://www.theguardian.com/world/2026/apr/28/mexican-special-forces-arrest-top-commander-audias-flores-el-jardinero-of-powerful-cartel",
+          "source": "The Guardian World · 04-28 11:00",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Taking power in Mali might be a stretch but insurgents can force hand of weakened regime",
+          "url": "https://www.theguardian.com/world/2026/apr/28/taking-power-in-mali-might-be-a-stretch-but-insurgents-can-force-hand-of-weakened-regime",
+          "source": "The Guardian World · 04-28 06:00",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Latin America’s Anti-Women Movement Is Spreading",
+          "url": "https://foreignpolicy.com/2026/04/28/chile-kast-latin-america-anti-women-movement-spreading/",
+          "source": "Foreign Policy · 04-28 05:17",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Gunmen kill at least 29 at football pitch in north-east Nigeria, governor says",
+          "url": "https://www.theguardian.com/world/2026/apr/27/gunmen-kill-at-least-29-at-football-pitch-in-north-east-nigeria-governor-says",
+          "source": "The Guardian World · 04-27 22:50",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "Mexico warns US involvement in anti-drug operation should not be repeated",
+          "url": "https://www.theguardian.com/world/2026/apr/27/mexico-us-anti-drug-operation",
+          "source": "The Guardian World · 04-27 17:45",
+          "pub_time": "",
+          "summary": ""
+        },
+        {
+          "title": "German tourist dies after being bitten at snake show on family holiday in Egypt",
+          "url": "https://www.theguardian.com/world/2026/apr/27/german-tourist-dies-bite-snake-show-holiday-egypt",
+          "source": "The Guardian World · 04-27 17:26",
           "pub_time": "",
           "summary": ""
         }
