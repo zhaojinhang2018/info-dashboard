@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SP500 + NDX100 股票看板</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d1117;
+    --card-bg: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --red: #f85149;
+    --yellow: #d29922;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 13px;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header h1 { font-size: 15px; font-weight: 600; white-space: nowrap; }
+  .header h1 span { color: var(--text-muted); font-weight: 400; font-size: 12px; margin-left: 8px; }
+  .header-spacer { flex: 1; }
+  .updated { color: var(--text-muted); font-size: 11px; white-space: nowrap; }
+
+  /* ── Toolbar ── */
+  .toolbar {
+    padding: 12px 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 49px;
+    z-index: 99;
+  }
+  .toolbar input[type=text] {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 180px;
+    outline: none;
+  }
+  .toolbar input[type=text]:focus { border-color: var(--accent); }
+  .toolbar select {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    padding: 5px 8px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+  }
+  .count-badge {
+    color: var(--text-muted);
+    font-size: 11px;
+    margin-left: 4px;
+  }
+
+  /* ── Table ── */
+  .table-wrap {
+    overflow-x: auto;
+    padding: 0 20px 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1100px;
+  }
+  thead th {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-muted);
+    font-size: 11px;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    position: sticky;
+    top: 90px;
+    z-index: 90;
+  }
+  thead th:hover { color: var(--text); }
+  thead th.sorted-asc::after { content: " ↑"; color: var(--accent); }
+  thead th.sorted-desc::after { content: " ↓"; color: var(--accent); }
+
+  tbody tr {
+    border-bottom: 1px solid #21262d;
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  tbody tr:hover { background: #1c2128; }
+  tbody tr.selected { background: #1f2d3d; }
+
+  td {
+    padding: 7px 10px;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  td.ticker { font-weight: 600; color: var(--accent); font-size: 13px; }
+  td.name { color: var(--text); max-width: 140px; overflow: hidden; text-overflow: ellipsis; }
+  td.name-en { color: var(--text-muted); font-size: 11px; max-width: 120px; overflow: hidden; text-overflow: ellipsis; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td.num.pos { color: var(--green); }
+  td.num.neg { color: var(--red); }
+  td.rating-buy { color: var(--green); font-weight: 500; }
+  td.rating-hold { color: var(--yellow); font-weight: 500; }
+  td.rating-sell { color: var(--red); font-weight: 500; }
+
+  /* ── Detail Panel ── */
+  .panel-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 200;
+  }
+  .panel-overlay.open { display: block; }
+  .panel {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: min(480px, 100vw);
+    background: var(--card-bg);
+    border-left: 1px solid var(--border);
+    overflow-y: auto;
+    z-index: 201;
+    transform: translateX(100%);
+    transition: transform 0.2s ease;
+    padding: 24px;
+  }
+  .panel.open { transform: translateX(0); }
+  .panel-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .panel-close:hover { color: var(--text); border-color: var(--text-muted); }
+  .panel-ticker { font-size: 22px; font-weight: 700; color: var(--accent); }
+  .panel-name-zh { font-size: 16px; font-weight: 600; margin-top: 2px; }
+  .panel-name-en { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .panel-meta { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
+
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .kpi {
+    background: #0d1117;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .kpi-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .kpi-value { font-size: 18px; font-weight: 700; margin-top: 2px; }
+  .kpi-value.buy { color: var(--green); }
+  .kpi-value.hold { color: var(--yellow); }
+  .kpi-value.sell { color: var(--red); }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 20px 0 8px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+  .field-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #21262d;
+    font-size: 12px;
+  }
+  .field-label { color: var(--text-muted); }
+  .field-value { font-weight: 500; }
+
+  .desc-box {
+    background: #0d1117;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #8b949e;
+    margin-top: 8px;
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  /* ── Loading ── */
+  .loading {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-muted);
+  }
+  .spinner {
+    width: 32px; height: 32px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── KPI Summary bar ── */
+  .summary-bar {
+    display: flex;
+    gap: 24px;
+    padding: 10px 20px;
+    background: #0d1117;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .summary-item { font-size: 12px; }
+  .summary-item .sv { font-weight: 700; color: var(--accent); margin-right: 4px; }
+  .summary-item .sl { color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📊 SP500 + NDX100 <span id="updated-time"></span></h1>
+  <div class="header-spacer"></div>
+  <a href="./index.html" style="color:var(--text-muted);font-size:12px;text-decoration:none;">← 返回主看板</a>
+</div>
+
+<div class="toolbar">
+  <input type="text" id="search" placeholder="搜索代码 / 公司名…" oninput="applyFilters()">
+  <select id="filter-index" onchange="applyFilters()">
+    <option value="">全部指数</option>
+    <option value="SP500">SP500</option>
+    <option value="NDX100">NDX100</option>
+  </select>
+  <select id="filter-sector" onchange="applyFilters()">
+    <option value="">全部行业</option>
+  </select>
+  <select id="filter-rating" onchange="applyFilters()">
+    <option value="">全部评级</option>
+    <option value="strong_buy">Strong Buy</option>
+    <option value="buy">Buy</option>
+    <option value="hold">Hold</option>
+    <option value="sell">Sell</option>
+    <option value="underperform">Underperform</option>
+  </select>
+  <span class="count-badge" id="count-label"></span>
+</div>
+
+<div class="summary-bar" id="summary-bar"></div>
+
+<div id="loading" class="loading">
+  <div class="spinner"></div>
+  <div>加载数据中…</div>
+</div>
+
+<div class="table-wrap" id="table-wrap" style="display:none">
+  <table id="stocks-table">
+    <thead>
+      <tr>
+        <th data-col="ticker">代码</th>
+        <th data-col="name_zh">中文名</th>
+        <th data-col="sector">行业</th>
+        <th data-col="index">指数</th>
+        <th data-col="last_price" class="num">现价</th>
+        <th data-col="market_cap" class="num">总市值</th>
+        <th data-col="pe_ttm" class="num">PE(TTM)</th>
+        <th data-col="forward_pe" class="num">前瞻PE</th>
+        <th data-col="pb" class="num">PB</th>
+        <th data-col="ps_ratio" class="num">PS</th>
+        <th data-col="beta" class="num">Beta</th>
+        <th data-col="roe" class="num">ROE%</th>
+        <th data-col="gross_margin" class="num">毛利率%</th>
+        <th data-col="net_margin" class="num">净利润率%</th>
+        <th data-col="recommend_key">评级</th>
+        <th data-col="recommend_mean" class="num">评级值</th>
+        <th data-col="target_mean" class="num">目标价</th>
+        <th data-col="analyst_count" class="num">分析师</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+<!-- Detail Panel -->
+<div class="panel-overlay" id="overlay" onclick="closePanel()"></div>
+<div class="panel" id="panel">
+  <button class="panel-close" onclick="closePanel()">✕ 关闭</button>
+  <div id="panel-content"></div>
+</div>
+
+<script>
+const DATA_URL = './data.json';
+
+let allStocks = [];
+let filtered = [];
+let sortCol = 'market_cap';
+let sortDir = -1; // -1 = desc
+let selectedTicker = null;
+
+// ── Fetch data ────────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    const json = await res.json();
+    allStocks = json.stocks || [];
+    document.getElementById('updated-time').textContent = '数据时间：' + (json.updated || '');
+    initSectors();
+    applyFilters();
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('table-wrap').style.display = 'block';
+  } catch(e) {
+    document.getElementById('loading').innerHTML =
+      '<div style="color:#f85149">数据加载失败: ' + e.message + '</div>';
+  }
+}
+
+// ── Sectors ───────────────────────────────────────────────────────────────────
+function initSectors() {
+  const sectors = [...new Set(allStocks.map(s => s.sector).filter(Boolean))].sort();
+  const sel = document.getElementById('filter-sector');
+  sectors.forEach(s => {
+    const opt = document.createElement('option');
+    opt.value = s; opt.textContent = s;
+    sel.appendChild(opt);
+  });
+}
+
+// ── Filter + Sort ─────────────────────────────────────────────────────────────
+function applyFilters() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const idx = document.getElementById('filter-index').value;
+  const sec = document.getElementById('filter-sector').value;
+  const rat = document.getElementById('filter-rating').value;
+
+  filtered = allStocks.filter(s => {
+    if (q && !( (s.ticker||'').toLowerCase().includes(q) ||
+                (s.name_zh||'').toLowerCase().includes(q) ||
+                (s.company||'').toLowerCase().includes(q))) return false;
+    if (idx && !(s.index||'').includes(idx)) return false;
+    if (sec && s.sector !== sec) return false;
+    if (rat && s.recommend_key !== rat) return false;
+    return true;
+  });
+
+  sortData();
+  renderTable();
+  renderSummary();
+}
+
+function sortData() {
+  filtered.sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (va == null && vb == null) return 0;
+    if (va == null) return 1;
+    if (vb == null) return -1;
+    if (typeof va === 'number') return (va - vb) * sortDir;
+    return String(va).localeCompare(String(vb)) * sortDir;
+  });
+}
+
+// ── Render Table ──────────────────────────────────────────────────────────────
+function renderTable() {
+  document.getElementById('count-label').textContent = `${filtered.length} 只`;
+
+  const tbody = document.getElementById('tbody');
+  const frag = document.createDocumentFragment();
+
+  filtered.forEach(s => {
+    const tr = document.createElement('tr');
+    if (s.ticker === selectedTicker) tr.classList.add('selected');
+    tr.onclick = () => openPanel(s.ticker);
+
+    tr.innerHTML = `
+      <td class="ticker">${esc(s.ticker)}</td>
+      <td class="name">${esc(s.name_zh || s.company || '')}</td>
+      <td class="name-en">${esc(s.sector || '')}</td>
+      <td>${esc(s.index || '')}</td>
+      <td class="num">${fmt(s.last_price, 2)}</td>
+      <td class="num">${fmtCap(s.market_cap)}</td>
+      <td class="num ${peColor(s.pe_ttm)}">${fmt(s.pe_ttm, 1)}</td>
+      <td class="num ${peColor(s.forward_pe)}">${fmt(s.forward_pe, 1)}</td>
+      <td class="num">${fmt(s.pb, 2)}</td>
+      <td class="num">${fmt(s.ps_ratio, 2)}</td>
+      <td class="num">${fmt(s.beta, 2)}</td>
+      <td class="num ${pctColor(s.roe)}">${fmt(s.roe, 1)}</td>
+      <td class="num ${pctColor(s.gross_margin)}">${fmt(s.gross_margin, 1)}</td>
+      <td class="num ${pctColor(s.net_margin)}">${fmt(s.net_margin, 1)}</td>
+      <td class="${ratingClass(s.recommend_key)}">${fmtRating(s.recommend_key)}</td>
+      <td class="num">${fmt(s.recommend_mean, 2)}</td>
+      <td class="num">${fmt(s.target_mean, 0)}</td>
+      <td class="num">${s.analyst_count != null ? s.analyst_count : '—'}</td>
+    `;
+    frag.appendChild(tr);
+  });
+
+  tbody.innerHTML = '';
+  tbody.appendChild(frag);
+
+  // Update sort indicators
+  document.querySelectorAll('thead th').forEach(th => {
+    th.classList.remove('sorted-asc', 'sorted-desc');
+    if (th.dataset.col === sortCol) {
+      th.classList.add(sortDir === 1 ? 'sorted-asc' : 'sorted-desc');
+    }
+  });
+}
+
+// ── Summary Bar ───────────────────────────────────────────────────────────────
+function renderSummary() {
+  const nums = f => filtered.map(s => s[f]).filter(v => v != null && !isNaN(v));
+  const median = arr => {
+    if (!arr.length) return null;
+    const s = [...arr].sort((a,b) => a-b);
+    const m = Math.floor(s.length/2);
+    return s.length % 2 ? s[m] : (s[m-1]+s[m])/2;
+  };
+  const fpeArr = nums('forward_pe');
+  const roeArr = nums('roe');
+  const buys = filtered.filter(s => s.recommend_key === 'buy' || s.recommend_key === 'strong_buy').length;
+
+  document.getElementById('summary-bar').innerHTML = `
+    <div class="summary-item"><span class="sv">${filtered.length}</span><span class="sl">只股票</span></div>
+    <div class="summary-item"><span class="sv">${median(fpeArr) != null ? median(fpeArr).toFixed(1) : '—'}</span><span class="sl">中位前瞻PE</span></div>
+    <div class="summary-item"><span class="sv">${median(nums('pb')) != null ? median(nums('pb')).toFixed(1) : '—'}</span><span class="sl">中位PB</span></div>
+    <div class="summary-item"><span class="sv">${median(roeArr) != null ? median(roeArr).toFixed(1)+'%' : '—'}</span><span class="sl">中位ROE</span></div>
+    <div class="summary-item"><span class="sv">${filtered.length ? Math.round(buys/filtered.length*100)+'%' : '—'}</span><span class="sl">买入评级</span></div>
+    <div class="summary-item"><span class="sv">${median(nums('gross_margin')) != null ? median(nums('gross_margin')).toFixed(1)+'%' : '—'}</span><span class="sl">中位毛利率</span></div>
+  `;
+}
+
+// ── Detail Panel ──────────────────────────────────────────────────────────────
+function openPanel(ticker) {
+  selectedTicker = ticker;
+  const s = allStocks.find(x => x.ticker === ticker);
+  if (!s) return;
+
+  const priceChange = s.last_price != null && s.prev_close != null
+    ? ((s.last_price - s.prev_close) / s.prev_close * 100).toFixed(2)
+    : null;
+  const upside = s.target_mean != null && s.last_price != null
+    ? ((s.target_mean - s.last_price) / s.last_price * 100).toFixed(1)
+    : null;
+
+  document.getElementById('panel-content').innerHTML = `
+    <div class="panel-ticker">${esc(s.ticker)}</div>
+    <div class="panel-name-zh">${esc(s.name_zh || '')}</div>
+    <div class="panel-name-en">${esc(s.company || '')}</div>
+    <div class="panel-meta">${esc(s.sector || '')} &nbsp;|&nbsp; ${esc(s.index || '')}</div>
+
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="kpi-label">现价</div>
+        <div class="kpi-value">$${s.last_price != null ? s.last_price.toFixed(2) : '—'}</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:2px">
+          昨收 $${s.prev_close != null ? s.prev_close.toFixed(2) : '—'}
+          ${priceChange != null ? `<span style="color:${+priceChange>=0?'var(--green)':'var(--red)'}">${+priceChange>=0?'+':''}${priceChange}%</span>` : ''}
+        </div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">总市值</div>
+        <div class="kpi-value">${fmtCap(s.market_cap)}</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">分析师评级</div>
+        <div class="kpi-value ${s.recommend_key || ''}">${fmtRating(s.recommend_key)}</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:2px">${s.analyst_count || 0} 位分析师 · 均值 ${s.recommend_mean != null ? s.recommend_mean.toFixed(2) : '—'}</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">目标价</div>
+        <div class="kpi-value">$${s.target_mean != null ? s.target_mean.toFixed(0) : '—'}</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:2px">
+          区间 $${s.target_low != null ? s.target_low.toFixed(0) : '?'}–$${s.target_high != null ? s.target_high.toFixed(0) : '?'}
+          ${upside != null ? `<span style="color:${+upside>=0?'var(--green)':'var(--red)'}">(${+upside>=0?'+':''}${upside}%)</span>` : ''}
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">估值</div>
+    ${fieldRow('PE (TTM)', fmt(s.pe_ttm, 2))}
+    ${fieldRow('前瞻 PE', fmt(s.forward_pe, 2))}
+    ${fieldRow('前瞻 EPS', fmt(s.forward_eps, 2))}
+    ${fieldRow('PB', fmt(s.pb, 2))}
+    ${fieldRow('PS', fmt(s.ps_ratio, 2))}
+
+    <div class="section-title">盈利能力</div>
+    ${fieldRow('ROE', s.roe != null ? s.roe.toFixed(1)+'%' : '—')}
+    ${fieldRow('毛利率', s.gross_margin != null ? s.gross_margin.toFixed(1)+'%' : '—')}
+    ${fieldRow('净利润率', s.net_margin != null ? s.net_margin.toFixed(1)+'%' : '—')}
+
+    <div class="section-title">风险</div>
+    ${fieldRow('Beta', fmt(s.beta, 2))}
+    ${fieldRow('总股本', s.issued_shares != null ? (s.issued_shares/1e6).toFixed(0)+'M' : '—')}
+
+    ${s.description ? `
+    <div class="section-title">主营业务</div>
+    <div class="desc-box">${esc(s.description)}</div>
+    ` : ''}
+  `;
+
+  document.getElementById('overlay').classList.add('open');
+  document.getElementById('panel').classList.add('open');
+
+  // Highlight selected row
+  document.querySelectorAll('tbody tr').forEach(tr => tr.classList.remove('selected'));
+  const rows = document.querySelectorAll('tbody tr');
+  filtered.forEach((fs, i) => { if (fs.ticker === ticker) rows[i]?.classList.add('selected'); });
+}
+
+function closePanel() {
+  document.getElementById('overlay').classList.remove('open');
+  document.getElementById('panel').classList.remove('open');
+  selectedTicker = null;
+  document.querySelectorAll('tbody tr').forEach(tr => tr.classList.remove('selected'));
+}
+
+// ── Sort on header click ──────────────────────────────────────────────────────
+document.querySelectorAll('thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (sortCol === col) { sortDir *= -1; }
+    else { sortCol = col; sortDir = -1; }
+    sortData();
+    renderTable();
+  });
+});
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+function fmt(v, d) {
+  if (v == null || isNaN(v)) return '—';
+  return Number(v).toFixed(d);
+}
+function fmtCap(v) {
+  if (v == null) return '—';
+  if (v >= 1e12) return (v/1e12).toFixed(1) + 'T';
+  if (v >= 1e9)  return (v/1e9).toFixed(1) + 'B';
+  if (v >= 1e6)  return (v/1e6).toFixed(0) + 'M';
+  return v;
+}
+function fmtRating(r) {
+  const map = { strong_buy:'Strong Buy', buy:'Buy', hold:'Hold',
+                sell:'Sell', underperform:'Underperform', none:'None' };
+  return r ? (map[r] || r) : '—';
+}
+function ratingClass(r) {
+  if (!r) return '';
+  if (r === 'buy' || r === 'strong_buy') return 'rating-buy';
+  if (r === 'hold') return 'rating-hold';
+  if (r === 'sell' || r === 'underperform') return 'rating-sell';
+  return '';
+}
+function peColor(v) {
+  if (v == null) return '';
+  if (v < 0) return 'neg';
+  if (v > 50) return 'neg';
+  return '';
+}
+function pctColor(v) {
+  if (v == null) return '';
+  return v < 0 ? 'neg' : '';
+}
+function fieldRow(label, value) {
+  return `<div class="field-row"><span class="field-label">${label}</span><span class="field-value">${value}</span></div>`;
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
