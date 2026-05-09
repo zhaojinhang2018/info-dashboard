@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知识星球看板</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0d1117;--panel:#161b22;--panel2:#0f141b;--text:#e6edf3;--muted:#8b949e;--border:#30363d;--link:#58a6ff}
+[data-theme="light"]{--bg:#eef2f6;--panel:#fff;--panel2:#f7f9fb;--text:#24292f;--muted:#667085;--border:#cfd7df;--link:#0969da}
+body{min-height:100vh;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif}
+.top{position:sticky;top:0;z-index:10;background:var(--panel);border-bottom:1px solid var(--border);padding:14px 20px}
+.top-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:10px}
+.brand{color:var(--text);text-decoration:none;font-size:18px;font-weight:700}
+.theme-select{border:1px solid var(--border);background:var(--panel2);color:var(--text);border-radius:7px;padding:8px 10px;font-size:14px}
+.tabs{display:flex;gap:8px;overflow-x:auto}.tab{flex:0 0 auto;border:1px solid var(--border);background:var(--panel2);color:var(--text);text-decoration:none;border-radius:7px;padding:8px 12px;font-size:14px}
+.tab:hover{border-color:var(--link)}.tab.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}
+.wrap{width:min(1120px,calc(100% - 32px));margin:0 auto;padding:20px 0 44px}
+.head{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;margin-bottom:14px;flex-wrap:wrap}
+h1{font-size:22px;line-height:1.3}.meta{color:var(--muted);font-size:13px}
+.feed{display:grid;gap:12px}.post{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:16px 18px}
+.post-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:13px;margin-bottom:10px;line-height:1.5;flex-wrap:wrap}
+.author{color:var(--text);font-weight:700}.content{white-space:pre-wrap;word-break:break-word;line-height:1.72;font-size:15px}
+.empty{border:1px solid var(--border);border-radius:8px;color:var(--muted);padding:32px;text-align:center;background:var(--panel)}
+@media(max-width:720px){.top{padding:12px}.wrap{width:calc(100% - 24px);padding-top:14px}.tab{flex:1 1 calc(50% - 8px);text-align:center}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-row"><a class="brand" href="index.html">财经看板</a><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div>
+<nav class="tabs" aria-label="看板菜单"><a class="tab" href="index.html">首页</a><a class="tab" href="news.html">新闻</a><a class="tab" href="x_feed.html">X 动态</a><a class="tab" href="stock_alerts.html">股价异动</a><a class="tab" href="xueqiu_user.html">雪球</a><a class="tab active" href="zsxq.html">知识星球</a><a class="tab" href="wechat.html">微信公众号</a><a class="tab" href="market_overview.html">市场总览</a></nav></header>
+<main class="wrap"><div class="head"><h1>知识星球</h1><div class="meta">10 条 · 更新于 2026-05-09 22:21:01</div></div><section class="feed"><article class="post"><div class="post-meta"><span class="author">俞焕</span><time>2026-05-08T21:44:12.481+0800</time></div><div class="content">提问：
+迪总，rocket lab 最近你怎么看？
+
+回答：
+我正好明天要打点评</div></article><article class="post"><div class="post-meta"><span class="author">pocoyo</span><time>2026-05-08T13:51:32.860+0800</time></div><div class="content">提问：
+迪神，昨天coin电话会来看，circle跟coin的卖身契条款是不是今年8月也没得谈了。这个市场有预期吗
+
+回答：
+的确没得谈， 这个我一年前就写过了， 看合作协议条款就知道了。 我觉得跌了这么多， 应该没多少重谈的幻想了吧</div></article><article class="post"><div class="post-meta"><span class="author">didier</span><time>2026-05-08T13:35:11.892+0800</time></div><div class="content">不要问女人的年龄， 不要问男人的薪水，不要问价投的半导体仓位。</div></article><article class="post"><div class="post-meta"><span class="author">didier</span><time>2026-05-08T10:59:27.911+0800</time></div><div class="content">NVIDIA 为什么用期权下注 IREN
+买的是已锁电力的 AI Factory 看涨期权
+
+先给结论：NVIDIA 投 IREN，核心是看上一个拿到大量可交付电力、但尚未被完全按 AIDC 资产重估的电力平台。
+
+而它选择用 5 年期、70 美元行权价、最多 3000 万股的期权式投资，而不是直接大额入股，本质上是在说：我认可你的电力资产和转型路径，但我只愿意在你把电力合同逐步变成可计费算力产能之后，再支付更高估值。
+
+这是一笔非常典型的 AI 基建时代交易：客户合同锁收入，期权锁上行，DSX 架构锁生态，避免直接承担矿工转型和电网建设的全部执行风险。
+
+
+一、IREN 的锁定电力很强
+IREN 现在已经不是当初在BC省只有几百 MW 的小矿工。 而是一个公开口径上拥有 超过4.5GW 锁定电力的北美电力平台，其中正在运营810MW，2.1GW （德州Sweetwater 项目） 正在建设中， 1.6GW俄克拉荷马项目正在开发中（已通过电网可研， 等待联网）
+
+但锁定电力 ≠ 通电 ≠ 可运行IT负载 ≠ 可稳定计费的 GPU 云收入。这四层差别，是理解 IREN 估值和 NVIDIA 期权结构的关键。
+
+1. BC 省：160MW，是真正的老资产、运营资产
+BC 三个站点分别是 Canal Flats 30MW、Mackenzie 80MW、Prince George 50MW，合计 160MW，均直接接入 BC Hydro，且是 IREN 最早期的稳定运营资产。 
+
+这部分价值最清楚：它不是故事，不是排队，不是待开发，而是已经跑过多年矿业负载的数据中心和电网连接资产。缺点也很明显：规模不够大，且在 AI 高密度集群时代，BC 站点的战略意义不如德州和俄克拉荷马。 
+
+2. 德州：2.75GW，是 IREN 当前最核心的 AIDC 资产
+德州是 IREN 真正被英伟达看上的核心。公司在西得克萨斯有 2.75GW 电力， 已签电网连接协议，其中 750MW 已通电， 另有约 2GW 将在 2026–2027 年 energize（Sweetwater 一期1.4GW 刚刚通电， 二期600MW 2027年通电）
+
+这里分两块看：
+Childress：750MW site capacity。
+Childress 是 IREN 现在最现实的 AI 云落地点。官网写明 Childress 总电力容量 750MW，576 英亩，直接接入 ERCOT（德州电网）， 并通过 IREN 自有变电站连接。  NVIDIA 这次 34 亿美元、5 年期 AI Cloud 合同，就是部署在 Childress 现有数据中心约 60MW 容量里，预计 2027 年初开始 ramp。 
+
+Sweetwater：2GW，是真正的大期权。
+Sweetwater 分 Sweetwater 1 的 1.4GW 和 Sweetwater 2 的 600MW。官网显示 Sweetwater 1 目标 2026 年 substation energization，Sweetwater 2 目标 2027 年 substation energization。  更关键的是，2026 年 5 月，IREN 已公告 Sweetwater 1 的 1.4GW 高压变电站成功 energize，也就是已连接 ERCOT 电网；但公告同时说明，实际电力交付会随着数据中心建设和 commissioning 分阶段 ramp。 
+
+这句话很重要：1.4GW 通电是重大去风险，但不是 1.4GW GPU 已经开始计费。
+
+3. Oklahoma：1.6GW，官方称亿锁定电力。 但仍处于 development/post-study 阶段
+
+Oklahoma 是最需要批判性处理的部分。IREN 官网 Oklahoma 页面写得很直接：1,600MW of power secured across 2,000 acres，状态是 IN DEVELOPMENT，并标注 2028 Substation Energization。  IREN 在 Q2 FY26 公告中也说，新的 Oklahoma 1.6GW 园区把公司 secured grid-connected power 提升到 &gt;4.5GW，且 grid-studies complete，电力计划从 2028 年开始 ramp。 
+
+公开材料足以支持“company-secured、grid-studies complete、2028 energization schedule”，但我不能直接等同为已经通电或已经具备完整可售 IT load。
+
+SPP 确实在 2026 年 1 月获得 FERC 批准推出 High Impact Large Load 机制，目标是为 AI 数据中心等大型负荷提供更快研究和审批路径；SPP 自己也说 HILL/CHILL/HILLGA 可以在约 90 天内形成协议路径。  但电网侧的 fast track 不等于没有升级成本、没有建设风险、没有 curtailment 风险。尤其是 CHILL 类路径本身就可能用“更快接入”交换“系统压力时可被限制”的条件。 
+
+因此对 Oklahoma项目 的看法是：强 secured 开发资产，不是空中楼阁；但仍低于 Sweetwater 1 通电后的确定性。
+
+4. Spain / Nostrum：490MW，是全球 5GW 叙事的一部分，但还要看交割
+IREN 还公告拟收购西班牙 Nostrum，增加约 490MW secured grid-connected power，使全球电力组合提升到约 5GW；但该交易仍需满足 customary closing conditions。 
+
+所以，严格说：
+北美官网口径是 &gt;4.5GW secured power；叠加 Nostrum 后，公司讲的是约 5GW 全球电力管线。
+
+
+二、AIDC 的资产价值，不是有多少瓦电， 而是多少瓦能多快变成可售算力
+
+AI 数据中心的底层经济式其实很简单：
+价值 = 可交付电力 × 上电速度 × GPU 密度 × 网络效率 × 利用率 × 客户单价 − 电费 − Capex − 融资成本 − 折旧 − 运维风险
+
+所以 AIDC 不应该只问多少电， 而要问五个问题：
+
+第一，这个电是签了协议，还是已经 energize？
+第二，这个电能不能变成高密度 GPU IT load？
+第三，变电站、长周期设备、冷却、网络、机电工程能不能按期完成？
+第四，有没有客户愿意为这批 GPU capacity 签长约？
+第五，资本成本会不会在建设过程中吞掉股东回报？
+
+2026 年的数据中心市场，最大的瓶颈已经不是有没有人想买 AI 算力， 而是从电力到算力的转换速度。JLL 的 2026 数据中心展望提到，AI 数据中心的 tech fit-out 成本可高达 2500 万美元/MW，且 speed-to-power 已成为选址的首要因素之一。  IEA 也预计全球数据中心用电将从 2024 年约 415TWh 增长到 2030 年约 945TWh，AI 是其中的重要驱动。 
+
+这就是 IREN 的特殊性：它原来是矿工，市场天然给它周期性、矿业、转型风险的折价；但从第一性原理看，矿工恰恰拥有 AI 时代最稀缺的一类前置资产：土地、电网连接、变电站经验、低成本电力采购、快速建设大功率负载的能力。 NVIDIA 就是在买矿工留下来的电力和工程基础设施期权。 
+
+
+三、为什么是 IREN：它可能是每瓦电估值偏低的最大可转型平台之一
+
+截至 2026 年 5 月 8 日，IREN 股价约 56.85 美元，市值约 172亿美元。 如果按 &gt;4.5GW secured power 粗算，市场给的是约 3.8 美元/W secured power；如果按 Nostrum 后约 5GW 全球组合粗算，则约 3.4 美元/W。
+
+当然，这不是精确估值，因为 IREN 不是纯电力壳：它还有比特币挖矿、AI cloud 合同、GPU 采购、债务、现金、在建工程和潜在摊薄。按公司 Q3 FY26 披露，IREN 4 月底现金约 26 亿美元；截至 3 月底，可转换票据约 36.9 亿美元，资产负债表正在快速扩张。  粗略看，按企业价值除以 secured power，也仍大致落在 3.7–4.1 美元/W这个区间。
+
+这就是 NVIDIA 感兴趣的地方：IREN 的每瓦电估值，仍然带着矿工折价， 但它的客户合同和电力组合，已经开始向AI factory 平台迁移。
+
+对比一下 CoreWeave 之前试图收购 Core Scientific 的逻辑会更清楚。CoreWeave 要约收购Core Scientific 的公告显示，交易隐含股权价值约 90 亿美元，对应 Core Scientific 约 1.3GW gross power 和额外约 1GW 潜在扩展。  这不是完全可比的交易，因为 Core Scientific 已经与 CoreWeave 深度绑定，且是并购控制权交易；但它说明一件事：市场正在重新定价矿工电力资产到 AI 基建资产的转化权。
+
+IREN 的优势是电更多、更分散，且已经拿到 Microsoft 和 NVIDIA 两个超级锚定客户。Microsoft 此前与 IREN 签了 97 亿美元、5 年期合同，使用 NVIDIA GB300 相关算力；IREN 自己也披露 Microsoft 平均年化收入贡献约 19 亿美元。  NVIDIA 这次又给了 34 亿美元、5 年期 AI Cloud 合同，平均年化约 6.8 亿美元。 
+
+但折价也不是没有道理。IREN Q3 FY26 总收入 1.448 亿美元，其中 Bitcoin mining 仍有 1.112 亿美元，AI Cloud Services 只有 3360 万美元；同季净亏损 2.478 亿美元，投资现金流流出 14.77 亿美元。 
+
+这说明 IREN 还在从矿工变成AI 云基础设施商的中途。它的电是真的，但利润模型还没完全证明。
+
+
+四、为什么 NVIDIA 不直接买，而是用期权？
+这才是这笔交易最关键的地方。
+
+NVIDIA 给 IREN 的不是传统我今天砸 21 亿美元买你股票， 而是一个 5 年期投资权：未来可按 70 美元/股购买最多 3000 万股，完全行权才对应约 21 亿美元。  70 美元高于 IREN 当时 56.85 美元的市场价，这不是折价输血，而是一个带战略绑定的上行期权。
+
+为什么这么设计？我认为有六层原因。
+
+第一，NVIDIA 买的是执行成功后的上行， 不是替 IREN 承担全部建设风险
+IREN 的核心资产是 secured power，但 secured power 到 AI revenue 中间还有很多风险：变电站、变压器、液冷、网络、GPU 交付、客户验收、SLA、融资成本、监管和电网升级。
+如果 NVIDIA 今天直接大额入股，相当于提前承担这些未完成 MW 的执行风险。用期权，它可以把风险定价得更聪明：
+
+IREN 执行成功，股价超过 70 美元，NVIDIA 行权，拿到上行；IREN 执行失败，NVIDIA 主要损失是战略合作机会，而不是马上沉没 21 亿美元资本。
+
+这就是第一性原理里的“风险匹配”：
+未 energize、未 commissioned、未 revenue 的 MW，本质上应该用 option value 定价，而不是用成熟数据中心 REIT 的现金流倍数定价。
+
+
+第二，NVIDIA 真正需要的是 “time-to-compute”，不是拥有矿工
+
+NVIDIA 现在最大的约束已经不是只卖 GPU，而是让 GPU 尽快变成可用算力。Jensen Huang 在 IREN 合作公告中的表述也很清楚：双方会围绕 compute、networking、software、power 和 operations 做深度整合。 
+
+NVIDIA 没必要亲自去做土地、变电站、ERCOT/SPP 连接、地方许可、冷却施工、园区运维这些脏活累活。它更理性的做法是：
+
+让 IREN 承担开发和运营复杂度；
+用 NVIDIA DSX 架构锁定技术路线；
+用 AI Cloud 合同锁定近期算力；
+用期权锁定股权上行。
+
+这是一种轻资产的产业链控制，而不是重资产并表。
+
+第三，期权可以把 IREN 绑定进 NVIDIA DSX 生态
+
+IREN 和 NVIDIA 不只是签了一个云服务合同。双方还宣布战略合作，目标是在 IREN 全球管线中逐步部署最多 5GW NVIDIA DSX-aligned AI infrastructure，未来重点会放在 Sweetwater 2GW 园区。 
+
+这意味着 NVIDIA 看中的不是一个 60MW 合同，而是未来几 GW 的标准化 AI factory 复制能力。
+DSX 一旦成为 IREN 后续园区的参考架构，NVIDIA 获得的就不仅是 GPU 销售，而是整套 compute、networking、software、fleet management 的系统地位。
+
+换句话说，NVIDIA 用期权绑定的是 IREN 未来 5GW 的架构选择权。
+
+第四，期权比直接投资更能降低“循环融资”争议
+
+NVIDIA 过去两年已经多次投资 neocloud / AI infra 伙伴。例如 CoreWeave 公告中，NVIDIA 投资 20 亿美元，双方目标到 2030 年建设超过 5GW AI factories。  Nebius 也公告 NVIDIA 投资 20 亿美元，并计划到 2030 年部署超过 5GW NVIDIA 系统。 
+
+市场对此一直有一个担忧：NVIDIA 投资客户，客户再买 NVIDIA GPU，这会不会变成 circular financing？Reuters 在报道 CoreWeave 和 Nebius 时也都提到过类似市场质疑。 
+
+IREN 这次用 70 美元行权价的期权结构，可以缓和一部分争议：
+它不是低价救助，也不是今天直接把现金打给 IREN 再让 IREN 买 NVIDIA GPU；它更像是 “你把资产跑出来，我再参与上行”。
+
+当然，这不能完全消除循环交易疑问。NVIDIA 同时是供应商、客户、投资权持有人，这种结构天然需要投资人持续审视真实第三方需求、现金回款质量和 GPU 利用率。
+
+第五，IREN 需要的不是一次性股权钱，而是“可融资性”
+
+AI 数据中心不是轻资产生意。IREN Q3 FY26 的投资现金流流出已经达到 14.77 亿美元，公司还明确提到后续会结合 operating cash flows、GPU financing 和 additional financing 来支持扩张。 
+
+在这种资本密集型模型里，最关键的不是某一个投资人今天给多少钱，而是银行、设备融资方、债券市场、股权市场是否相信：
+这批 MW 有客户、有架构、有 GPU、有收入可见度。
+
+NVIDIA 的 34 亿美元合同和 70 美元期权，给 IREN 的最大价值可能不是直接现金，而是信用背书。它会帮助 IREN 对融资方说：
+
+我的电不是空置矿场电；
+我的园区不是 speculative shell；
+我的客户不是小云厂；
+我的架构不是拼装货；
+NVIDIA 自己愿意买我的容量，也愿意在更高股价参与上行。
+
+这才是期权的金融杠杆。
+
+第六，NVIDIA 用期权买到低成本电力资产重估的不对称性
+
+如果 IREN 真的把 &gt;4.5GW secured power 逐步变成 AI Cloud capacity，它的估值中枢就不该再按矿工看，而会向 AI infra / neocloud / power-constrained data center 平台靠拢。
+
+但如果失败，它仍可能暴露出矿工转型的老问题：重 Capex、高债务、客户集中、GPU 折旧快、矿业收入下滑、股权摊薄。
+
+所以最合理的工具就是期权。
+IREN 自己像一张电力资产的 call option；NVIDIA 又在 IREN 股票上买了一张 call option。
+
+这是嵌套期权。
+
+
+五、这笔交易真正说明了什么？
+它说明 AI 基建竞争已经从谁有 GPU进入到谁能把电、地、变电站、GPU、网络、软件和客户合同整合成可复制工厂。 
+
+过去市场看矿工，主要看 hash rate、电价、币价、减半周期。现在市场开始重新看矿工：谁有大规模电网连接？谁能拿到变压器？谁有土地？谁靠近低成本电力？谁能把 ASIC hall 改造成 GPU hall？谁能承接 hyperscaler 和 NVIDIA 的 AI workload？
+
+IREN 刚好处在这个交叉点上。它的电力资产确实强：BC 160MW 老资产，Texas 2.75GW 核心资产，Oklahoma 1.6GW 后续资产，Nostrum 490MW 欧洲扩展。但它的商业模型还在证明期：AI Cloud 收入刚起步，矿业收入仍占大头，亏损和 Capex 压力都很真实。 
+
+所以我对 IREN的判断是， 它是 AIDC 时代最值得研究的电力期权之一，但还不是完全成熟的 AI 数据中心现金流资产。
+
+
+六、最后给一个投资框架：看 IREN，不能只看 GW，要看 MW 转化率
+未来 6–24 个月，我会盯七个指标：
+
+第一，Sweetwater 1 的 1.4GW energize 后，实际有多少 MW 变成 data center shell、critical IT load 和 commissioned GPU。
+高压变电站通电是第一步，不是终点。
+
+第二，Childress 的 Microsoft 和 NVIDIA 合同是否按期 ramp。
+NVIDIA 60MW 合同、Microsoft 约 200MW critical IT load，是验证 IREN AI 云执行力的第一批样板。
+
+第三，Oklahoma 1.6GW 是否从 secured/post-study 顺利进入实质 EPC、设备采购和 2028 energization。
+Oklahoma 是 IREN 从 2.9GW 时代进入 &gt;4.5GW 时代的关键，但目前仍不能按已运营资产估值。
+
+第四，GPU financing 条款。
+AI 云收入高，但 GPU 折旧也高。融资成本和残值假设会决定股东真正赚不赚钱。
+
+第五，客户集中度。
+NVIDIA 和 Microsoft 背书很强，但如果收入高度集中在少数大客户，议价权未必在 IREN 手上。
+
+第六，单位经济学。
+34 亿美元 / 5 年 / 60MW，看似收入密度极高，约等于 1130 万美元/MW/年。但这背后不是普通机柜租金，而是 GPU、网络、软件、融资和折旧的综合收入。高 ARR 不自动等于高 ROIC。
+
+第七，股权摊薄。
+NVIDIA 的 3000 万股期权如果未来行权，是利好还是摊薄，取决于 IREN 当时是否已经把电变成高利润 AI 云现金流。
+
+
+
+结语
+
+NVIDIA 投 IREN 的本质，可以压缩成一句话：
+
+NVIDIA 用一个高行权价期权，买入 IREN 从低估值矿工电力资产重估为GW 级 AI factory 平台的上行，同时避免为未完全交付的 MW 提前买单。
+
+这不是简单看多矿工，也不是单纯财务投资。
+这是 AI 基础设施战争里，GPU 龙头对电力瓶颈的结构化下注。
+
+IREN 的最大优点是：它拿到的电足够多，而且不少电已经从纸面走向 energization。
+IREN 的最大风险是：市场最终不会为 secured GW 付钱，只会为 commissioned GPU capacity、客户回款和真实 ROIC 付钱。
+
+所以这笔交易最准确的描述是NVIDIA 买了一张 IREN 电力资产 AI 化的看涨期权。IREN 买到了一张从矿工变成 AI factory 平台的入场券。
+最后谁赚大钱，取决于电能不能按时变成 token。</div></article><article class="post"><div class="post-meta"><span class="author">didier</span><time>2026-05-07T08:02:31.183+0800</time></div><div class="content">Codex GPT-5.5 的真实单价约等于：输入 $5/M token，缓存输入 $0.5/M token，输出 $30/M token；但普通 Plus/Pro 用户先消耗套餐内 usage，超过后才用 credits， 所以体感上不像 API 那样每次都在烧钱。
+
+GPT-5.5 在 Codex 里目前主要是 local messages，可用量按套餐限额走；cloud tasks 和 code review 对 GPT-5.5 显示为 not available。 官方 Codex pricing 页显示，Plus 下 GPT-5.5 local messages 为每 5 小时约 15–80 条；Pro 5x 为 80–400 条；Pro 20x 为 300–1600 条。</div></article><article class="post"><div class="post-meta"><span class="author">didier</span><time>2026-05-06T22:36:46.872+0800</time></div><div class="content">SemiAnalysis创始人Dylan Patel指出，他们公司年花700万美元用Claude，占工资支出25%，因为AI能一人完成过去团队的工作：芯片分析、能源数据系统等复杂任务，效率提升显著。
+
+前沿模型单价高但总成本可能更低，因更聪明的模型需要更少token。企业竞争正转向谁能获取更多优质token并用于高价值任务。 
+
+随着需求激增，整个AI产业链从GPU到PCB材料都在涨价，未来公司将通过AI效率而非人力规模决胜。</div></article><article class="post"><div class="post-meta"><span class="author">didier</span><time>2026-05-06T21:50:55.844+0800</time></div><div class="content">去年11月15日讲了签约电1GW以上，还没签单因此低估可以埋伏的四个名字， hut8， riot, clsk, btdr. 
+
+今天发现hut8 又签单了 涨了30%， 较去年11月中旬我讲的时候讲了200%。</div></article><article class="post"><div class="post-meta"><span class="author">didier</span><time>2026-05-06T08:49:48.781+0800</time></div><div class="content">Michael Saylor 只是在安抚市场
+
+有人问， Michael Saylor 说要卖BTC 来付优先股股息是怎么回事？ 难道没钱付息了？ 但实际上， 微策略的透明度一直很高， 公司账上现金就高达22亿美元， 足以支付18个月的股息和利息。 
+
+原话和背景来自 Strategy2026 年 Q1 财报电话会议。 Michael Saylor 的核心原话是：
+
+“You buy Bitcoin with credit, you let it appreciate, and then you sell Bitcoin to pay the dividend.”
+（你用信贷买比特币，让它升值，然后卖掉一部分比特币来支付股息。）
+
+“We will probably sell some Bitcoin to fund a dividend just to inoculate the market — just to send the message that we did it.”
+（我们可能会卖掉一些比特币来支付股息，只是为了给市场“接种”——只是为了传递“我们做过这件事”的信息。）
+
+完整背景
+Strategy 过去几年通过发行高收益 perpetual preferred stock（优先股，如 STRC，当前股息率约 11.5%）筹集资金，大举买入比特币（目前持有超 78 万枚 BTC）。这些优先股需要定期支付现金股息，这是公司资本结构的一部分。 
+Saylor 此前一直强调“永不卖 BTC”，并多次表示：公司有大量 USD 现金储备， BTC 只要每年增长约 2.05%（breakeven ARR），其增值就足以永久覆盖所有优先股股息，无需发行新普通股或卖 BTC。 
+
+但在 Q1 财报中（公司报告了巨额会计净亏损，主要受 BTC 价格波动等因素影响），Saylor 主动提及卖少量 BTC 支付股息作为可选策略之一，目的是：
+1.  向市场证明可行性（inoculate the market）：打消空头和质疑者的顾虑（“万一要付股息就得崩盘？”），展示即使卖一点 BTC 也不会出问题。
+2.  展示商业模式灵活性：这不是被迫清仓，而是“买 → 升值 → 卖少量付息 → 继续净买入更多 BTC”的循环。
+3.  强调核心不变：公司仍是 BTC 的净买入者（per share BTC 持续增加），卖 BTC 只是“战略性操作”，不是放弃 HODL 策略。
+
+这番表态是为了回应市场对“高股息优先股可持续性”的担忧，同时继续用优先股等工具扩大 BTC 持仓。Saylor 一贯的风格就是用这种“极端透明+数学逻辑”的方式沟通，让投资者理解他们的“数字信贷”模式（Digital Credit Theory）。 
+简单说，这次不是“被迫要卖 BTC 救命”，而是主动展示“我们甚至可以卖 BTC 付股息，但我们其实不需要”，进一步巩固信心。</div></article><article class="post"><div class="post-meta"><span class="author">didier</span><time>2026-05-05T10:13:19.007+0800</time></div><div class="content">(本文来自Indigo) 
+
+模型公司为什么开始搞 JV + FDE？Anthropic、Blackstone、Hellman &amp; Friedman 和高盛宣布成立一家新的 AI 服务（JV）公司，该公司将与各行业的中型企业合作，将 Claude 应用于其最重要的运营环节。OpenAI 几乎同时宣布与 PE 财团合资，做类似的服务公司，采用 Palantir 的 FDE（驻场工程师）模式👀
+
+为什么不找 Accenture/Deloitte 这种本来就有客户关系和实施能力的公司？
+
+1. 因为 PE 自己就是最大的客户聚合体：Blackstone 全球被投企业 ~250 家；Apollo ~200+ 家；TPG / Brookfield / Bain Capital / Advent 各有几百家 portcos。
+
+2. JV 拿到的是&quot;对所有 PE portfolio company 的优先销售权&quot;，一笔交易等于打开几百家中型企业大门。PE 一边拿到 JV 股权（contract 收益），一边在自己 portfolio 里推 AI 提升 EBITDA（退出估值）。激励完美对齐——这是 PE 最擅长的&quot;自家系统内套利&quot;模式。
+
+3. 中型企业 AI 部署的最大瓶颈不是技术，是说服 CIO + 走 procurement + RFP——12-18 个月。如果 PE 直接告诉 CEO &quot;用这个，加 EBITDA 5 个点，估值多 30%&quot;——周期会被压到几周。
+
+另外，这是一个资本结构 + IPO 估值架构的设计：
+
+FDE 服务业务毛利率 30-50%（Palantir 的 services 段），跟 SaaS API 的 80%+ 毛利率有 30-50 个百分点差距。如果 Anthropic 自己 in-house 做 FDE，整个公司的毛利率会被摊薄——等到 IPO 路演时，市场会按&quot;软件 + 服务&quot;的混合 multiple 给估值，而不是&quot;纯软件&quot;。差别可能是 10× revenue vs 25× revenue——按 Anthropic $ 50B 营收预期，是 $ 500B vs $ 1.25T 估值的差别。
+
+Anthropic IPO 路演时，Dario 可以站着说&quot;我们是纯软件公司，毛利率 80%，给我 25× revenue&quot;——同时 JV 已经在地面跑 FDE 抓 mid-market 收入。这是给一级和二级市场各讲一个最有利的故事的双轨结构！
+
+OpenAI JV 是 Anthropic JV 的 6.7×（$10B vs $1.5B）。但 Anthropic JV 有两个独特参与者：Goldman Sachs 和 Sequoia Capital。
+
+Anthropic 选择更窄、更战略；OpenAI 选择更宽、更资本密集。这跟两家在 frontier model 战略上的差异是一致的——Anthropic 一直更&quot;挑客户、做窄而深&quot;；OpenAI 一直更&quot;all-out, all-comers&quot;。
+
+2026 年的前沿 AI 公司不再只是模型公司——它们正在用 PE 资本和 Palantir 模式把自己改造成&quot;高 margin 软件主体 + 独立服务子公司&quot;的双层结构，为 IPO 路演前后量身定制✨</div></article><article class="post"><div class="post-meta"><span class="author">SamL</span><time>2026-05-05T09:39:27.518+0800</time></div><div class="content">提问：
+请问strc目前主要的买家是机构还是散户，足够撑起一轮btc的牛市吗？
+
+回答：
+Saylor 讲过， 70% 是散户。 STRC 只是托底， 撑到牛市到来。 我感觉59000 是大底底概率越来越高了， 对他们来说， 只好等着就可以了。 
+
+它目前CB 存量6笔， 金额82亿美元：
+
+1. 最早可能需要赎回的那笔30亿美元， 2026年12月4日是最早赎回日， 转股价433.8美元； 
+
+2. 还有两笔CB则是2027年3月就被最早赎回， 但按照最新股价， 其中一笔8亿美元转股价是105美元， 大概率转股; 另一笔本金20亿美元， 最早赎回日2027年3月5日，转股价321.05美元； 
+
+3. 剩下的四笔CB， 总金额54亿美元， 转股价分别为 130.85、105.1、162、151.35， 全部已经在价内， 如果目前股价延续到到期日， 非常可能转股（从而不必还钱）。 
+
+因此我们发现对于CB， 核心就是解决今年底和明年3月的两笔总金额50亿美元CB 可能提前赎回的问题， 而需要预作打算。 
+
+目前美元储备22.5亿美元， 可以覆盖18.1个月的利息和股息支付（主要是永续优先股股息）， 公司指引是最低不低于12个月， 理想状态24个月， 因此按照这个指引， 公司继续大力ATM STRC 买BTC的空间也是有限的（简单计算，还可以增加66亿美元左右的ATM）。 
+
+当然好消息是目前EV/NAV 溢价已经达到了28%， 那么目前股票ATM 是可以用来还本付息的， 可以进一步提升STRC ATM的空间。
+
+STRC ATM 还有一个制约，就是要看价格是否偏离100 太多， 因为如果不能回归100， 就要调升利率， 会背上更重的股息负担， 所以这时候一般ATM就会停， 等待市场价格回归，就像上周看到的那样。</div></article></section></main>
+<script>
+const savedTheme=localStorage.getItem('dashboardTheme')||'dark';
+document.documentElement.dataset.theme=savedTheme;
+const themeSelect=document.getElementById('themeSelect');
+themeSelect.value=savedTheme;
+themeSelect.addEventListener('change',()=>{document.documentElement.dataset.theme=themeSelect.value;localStorage.setItem('dashboardTheme',themeSelect.value);});
+</script>
+</body>
+</html>
