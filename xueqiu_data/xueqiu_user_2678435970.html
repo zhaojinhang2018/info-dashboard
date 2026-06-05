@@ -2,291 +2,296 @@
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>夜间飞行家 · 雪球发言看板</title>
 <style>
 *,*::before,*::after{box-sizing:border-box}html,body{margin:0;min-width:100%;height:100%;overflow:hidden;background:#0f1419;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif;line-height:1.6}body{display:flex;flex-direction:column}a{color:inherit}header{flex-shrink:0;background:rgba(15,20,25,.96);border-bottom:1px solid #27313a;backdrop-filter:blur(10px)}.wrap{max-width:none;margin:0;padding:0 24px}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{flex:0 0 auto}.brand h1{margin:0;font-size:22px;line-height:1.2;color:#e6edf3}.brand p{margin:6px 0 0;color:#9fb3c8;font-size:13px}.top-actions{min-width:0;display:flex;align-items:center;gap:12px;justify-content:flex-end;flex:1}.nav-row,.user-nav{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.nav-row{padding:0 24px 10px}.user-nav{min-width:0;max-width:min(980px,calc(100vw - 420px));padding:2px 0}.nav-row::-webkit-scrollbar,.user-nav::-webkit-scrollbar,main.wrap::-webkit-scrollbar{width:14px;height:12px}.nav-row::-webkit-scrollbar-track,.user-nav::-webkit-scrollbar-track,main.wrap::-webkit-scrollbar-track{background:#111820;border-radius:999px}.nav-row::-webkit-scrollbar-thumb,.user-nav::-webkit-scrollbar-thumb,main.wrap::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:999px;border:2px solid #111820}nav a,.user-nav a,.open-link{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 11px;color:#c9d1d9;text-decoration:none;font-size:13px;background:#151b22}.user-nav a{border-radius:999px}nav a:hover,.user-nav a:hover,.open-link:hover{border-color:#58a6ff;color:#fff}nav a.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}.theme-select{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 10px;color:#e6edf3;background:#151b22;font-size:13px}main.wrap{flex:1;width:100%;min-width:0;overflow:auto;padding:26px 24px 42px;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.columns{display:flex;gap:18px;align-items:flex-start;width:max-content;min-width:100%;padding:2px 0 28px}.user-column{flex:0 0 390px;width:390px;min-width:390px;scroll-margin-top:18px}.column-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid #34414c;border-radius:8px;background:linear-gradient(180deg,#17202b,#121922);padding:14px;margin-bottom:10px}.column-head h2{margin:0;color:#79c0ff;font-size:20px;line-height:1.25;text-shadow:0 0 12px rgba(88,166,255,.18)}.column-head p{margin:4px 0 0;color:#9fb3c8;font-size:13px}.column-feed,.feed{display:flex;flex-direction:column;gap:14px}.single-page main.wrap{width:100%;max-width:960px;margin:0 auto}.post-card{border:1px solid #2d3845;border-radius:8px;background:#141b24;padding:16px}.post-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.author{color:#79c0ff;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.22);border-radius:5px;padding:1px 6px;font-weight:700;font-size:15px}time{color:#9fb3c8;font-size:13px}h2{margin:0 0 8px;font-size:17px;line-height:1.35}.post-text{margin:0;white-space:normal;overflow-wrap:anywhere;color:#f0f6fc}.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.badge{display:inline-flex;align-items:center;border-radius:999px;border:1px solid #3a4653;padding:2px 8px;font-size:12px;font-weight:700}.badge.article{color:#f2cc60;background:#2a220f;border-color:#6b5518}.badge.reply{color:#79c0ff;background:#0d2235;border-color:#1f5a83}.badge.image{color:#3fb950;background:#10271a;border-color:#1f6f3a}.quote-block{margin-top:12px;padding:10px 12px;border:1px solid #3a4653;border-left:3px solid #58a6ff;border-radius:6px;background:#101720;color:#c9d1d9}.quote-block p{margin:4px 0 0;font-size:13px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}.quote-label{font-size:12px;color:#79c0ff;font-weight:700}.quote-block.muted{border-left-color:#8b949e;color:#9fb3c8}.notice{display:block;margin-top:10px;border:1px solid #3a4653;border-radius:6px;padding:8px 10px;text-decoration:none;font-size:13px}.article-notice{color:#f2cc60;background:#201a0d}.image-notice{color:#3fb950;background:#0d2116}.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.image-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid #34414c;border-radius:6px;background:#0d1117}.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;color:#9fb3c8;font-size:12px}.metrics span{border:1px solid #2d3845;border-radius:999px;padding:3px 8px;background:#101720}.open-link-inline{margin-left:auto;color:#58a6ff;text-decoration:none;font-size:12px}[data-theme="light"] body{background:#eef2f6;color:#24292f}[data-theme="light"] header{background:#f8fafc;border-bottom-color:#cfd7df;backdrop-filter:none}[data-theme="light"] .brand h1,[data-theme="light"] .post-text{color:#24292f}[data-theme="light"] .brand p,[data-theme="light"] time,[data-theme="light"] .metrics{color:#667085}[data-theme="light"] nav a,[data-theme="light"] .user-nav a,[data-theme="light"] .open-link,[data-theme="light"] .theme-select{background:#fff;border-color:#cfd7df;color:#24292f}[data-theme="light"] nav a.active{background:#e6f4ea;border-color:#2da44e;color:#1a7f37}[data-theme="light"] .column-head{background:#f8fafc;border-color:#d0d7de}[data-theme="light"] .column-head h2{color:#0969da;text-shadow:none}[data-theme="light"] .post-card{background:#fff;border-color:#d0d7de}[data-theme="light"] .author{color:#0969da;background:#ddf4ff;border-color:#b6e3ff}[data-theme="light"] .metrics span,[data-theme="light"] .quote-block{background:#f6f8fa;border-color:#d0d7de;color:#57606a}[data-theme="light"] .article-notice{background:#fff8c5;color:#7d4e00}[data-theme="light"] .image-notice{background:#dafbe1;color:#116329}[data-theme="light"] main.wrap,[data-theme="light"] .nav-row,[data-theme="light"] .user-nav{scrollbar-color:#8aa8c7 #d9e2ec}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column;padding:16px 0}.top-actions{width:100%;justify-content:flex-start}.user-nav{max-width:100%}.user-column{flex-basis:330px;width:330px;min-width:330px}}
-</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>夜间飞行家</h1><p>抓取时间 2026-05-09 06:29:58</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a href="../index.html">首页</a>
+</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>夜间飞行家</h1><p>抓取时间 2026-06-04 14:34:44</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a href="../index.html">首页</a>
     <a href="../news.html">新闻</a>
     <a href="../x_feed.html">X 动态</a>
     <a href="../stock_alerts.html">股价异动</a>
+    <a href="../etf_monitor.html">IGV/SOXX</a>
+    <a href="../japan_alerts.html">日本</a>
+    <a href="../korea_alerts.html">韩国</a>
     <a class="active" href="../xueqiu_user.html">雪球</a>
     <a href="../zsxq.html">知识星球</a>
-    <a href="../wechat.html" target="_blank" rel="noopener">微信公众号</a>
-    <a href="../market_overview.html">市场总览</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-09 05:47:23</time></div>
+    <a href="../wechat.html">微信公众号</a>
+    <a href="../market_overview.html">市场总览</a>
+    <a href="../liquidity_monitor.html">流动性</a>
+    <a href="../server_price.html">芯片服务器</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-06-04 09:46:05</time></div>
       
       
-      <p class="post-text">我滴妈，这是在干嘛啊😲😲😲</p>
+      <p class="post-text">没准可能调整到 6 月底，等美光下一轮财报带。</p>
       
       
       
       <div class="metrics">
-        <span>赞 1</span>
-        <span>评论 1</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387899586" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-08 16:08:07</time></div>
-      <div class="badges"><span class="badge image">含 1 图</span></div>
-      
-      <p class="post-text">这玩意当初朋友推荐给我才10几块，我当时都不知道是干嘛的，没想到居然这么猛，虽然我至今还没去研究这个股$建滔积层板(01888)$<br>查看图片</p>
-      
-      <a class="notice image-notice" href="https://xueqiu.com/2678435970/387817992" target="_blank" rel="noopener">这条发言包含 1 张图片，打开原文查看</a>
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 看到港股有个叫$建滔积层板(01888)$ 的，有个想法，就是明后年，存储这些厂家扩产开始，那么到时候存储价格肯定要滞涨的，甚至可能会下跌，那时候存储厂家的股价大概率是高位波动，很难像今年这样单边上涨。<br>如果存储扩产，其实最利好的是上游产业，做覆铜板这些的，但是我觉得资金肯定会提前埋伏。</p></div>
-      <div class="metrics">
-        <span>赞 8</span>
+        <span>赞 10</span>
         <span>评论 4</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387817992" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/392756388" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-08 07:17:28</time></div>
-      <div class="badges"><span class="badge image">含 1 图</span></div>
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-06-04 09:40:18</time></div>
       
-      <p class="post-text">持有闪迪快10年了。</p>
       
-      <div class="image-grid"><a href="https://xqimg.imedao.com/19e04bb4dee2fbfa3f81b93f.jpg!thumb.jpg" target="_blank" rel="noopener"><img src="https://xqimg.imedao.com/19e04bb4dee2fbfa3f81b93f.jpg!thumb.jpg" loading="lazy"></a></div>
+      <p class="post-text">希望大 B 别跌这么快，最好能慢慢跌到存储涨完</p>
+      
+      
       
       <div class="metrics">
-        <span>赞 11</span>
-        <span>评论 4</span>
+        <span>赞 6</span>
+        <span>评论 8</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387694416" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/392753444" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-08 06:04:39</time></div>
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-06-03 10:41:50</time></div>
       
       
-      <p class="post-text">调整调整，缩一缩量挺好的</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 有一说一，美光的量太大了，大到我无从下手，换不到就不换吧。如果一直这么大量甚至更高的话，我可能要准备慢慢减仓存储了，交易太拥挤了。</p></div>
-      <div class="metrics">
-        <span>赞 7</span>
-        <span>评论 2</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387691914" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-06 12:19:18</time></div>
-      <div class="badges"><span class="badge image">含 1 图</span></div>
-      
-      <p class="post-text">切勿FOMO，市场永远在这里，找准自己的节奏更重要。</p>
-      
-      <div class="image-grid"><a href="https://xqimg.imedao.com/19dfb82da0d2db1b3fa0e899.jpg" target="_blank" rel="noopener"><img src="https://xqimg.imedao.com/19dfb82da0d2db1b3fa0e899.jpg" loading="lazy"></a></div>
-      
-      <div class="metrics">
-        <span>赞 14</span>
-        <span>评论 3</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387348696" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-06 11:26:25</time></div>
-      
-      
-      <p class="post-text">再仔细研究了下，罗杰斯还停留在画饼阶段，产品交付还要等今年下半年，英特格是已经体现利润了。//@夜间飞行家:AI帮我选的股，存储芯片的上游企业，美股就选了两个一个英特格，一个罗杰斯，先观察下吧，毕竟存储扩张上量也是27年的事了</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: $英特格(ENTG)$ 拉入自选</p></div>
-      <div class="metrics">
-        <span>赞 8</span>
-        <span>评论 0</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387338070" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-06 09:52:51</time></div>
-      
-      
-      <p class="post-text">市场对白酒太宽容了，五粮液这都能拉起来。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 4</span>
-        <span>评论 4</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387305096" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-06 09:43:21</time></div>
-      
-      
-      <p class="post-text">不要再问我这么细致的问题，自己的交易自己负责。。。//@空物语:老大 那你现在准备切dram吗？ 还是再等等</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 有一说一，cpu的需求其实也带动了芯片代工，所以三星电子的代工产业可能也会开始变好。（虽然三星的良率一般，但是架不住台积电搞不过来啊）</p></div>
-      <div class="metrics">
-        <span>赞 4</span>
-        <span>评论 1</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387300992" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-06 09:28:16</time></div>
-      
-      
-      <p class="post-text">有一说一，cpu的需求其实也带动了芯片代工，所以三星电子的代工产业可能也会开始变好。（虽然三星的良率一般，但是架不住台积电搞不过来啊）</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 4</span>
-        <span>评论 4</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387294942" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-06 06:51:09</time></div>
-      
-      
-      <p class="post-text">如果前面没上车的，现在也别fomo了，说实话存储甚至整个半导体有点加速拉升的感觉，我觉得最快下周可能就要震荡了，美光这一晚上快400亿，我觉得持续不了的，可以等等下波调整再进来。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 17</span>
-        <span>评论 6</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387280274" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-05 19:24:08</time></div>
-      
-      
-      <p class="post-text">有一说一，美光的量太大了，大到我无从下手，换不到就不换吧。如果一直这么大量甚至更高的话，我可能要准备慢慢减仓存储了，交易太拥挤了。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 12</span>
-        <span>评论 11</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387244142" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-05 19:20:21</time></div>
-      
-      
-      <p class="post-text">闪迪还没来得及换美光，美光怎么不等等我</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 接下来闪迪换美光，海力士换三星，也可能是个错误的选择。闪迪换美光，主要因为美光6月份又要出财报了，想提前埋伏一波，虽然美光最近的量非常大，如果只看量的话，其实是可以慢慢卖了，但是美光这个奇葩总是跟别人错开出财报。三星的话，这段时间因为罢工的影响，股价严重滞涨，落后海力士太多，我觉得罢工这件事已经体现在股价里面了，一旦事情缓和，股价可能会出现反弹。</p></div>
-      <div class="metrics">
-        <span>赞 5</span>
-        <span>评论 0</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387243933" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-05 09:41:07</time></div>
-      
-      
-      <p class="post-text">AI帮我选的股，存储芯片的上游企业，美股就选了两个一个英特格，一个罗杰斯，先观察下吧，毕竟存储扩张上量也是27年的事了</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: $英特格(ENTG)$ 拉入自选</p></div>
-      <div class="metrics">
-        <span>赞 7</span>
-        <span>评论 2</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387202873" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-05 08:05:46</time></div>
-      
-      
-      <p class="post-text">$英特格(ENTG)$ 拉入自选</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 4</span>
-        <span>评论 4</span>
-        <span>转发 2</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387197921" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-04 11:42:27</time></div>
-      
-      
-      <p class="post-text">海力士换到三星换完了，就这样吧</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 三星这个罢工，说实话，三星也挺棘手的。因为三星电子不仅仅只有半导体部门，还有手机部门、面板部门等等。就是如果要求涨薪的话，那也可能只有半导体部门可以涨涨薪，毕竟像面板部门这些，利润那么低，没准还是亏损的，怎么给你涨薪呀？这也是我当初没买三星的原因，因为三星电子说实话不是一个纯存储公司，不能只按照存储的业绩来算估值。不像海力士，海力士上市的这个公司，它就是一个纯存储公司，所以他在员工的管理上，就是能统一化绩效。</p></div>
-      <div class="metrics">
-        <span>赞 5</span>
-        <span>评论 10</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387141373" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-04 11:38:15</time></div>
-      
-      
-      <p class="post-text">看到港股有个叫$建滔积层板(01888)$ 的，有个想法，就是明后年，存储这些厂家扩产开始，那么到时候存储价格肯定要滞涨的，甚至可能会下跌，那时候存储厂家的股价大概率是高位波动，很难像今年这样单边上涨。<br>如果存储扩产，其实最利好的是上游产业，做覆铜板这些的，但是我觉得资金肯定会提前埋伏。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 27</span>
-        <span>评论 20</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387141050" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-04 09:56:24</time></div>
-      
-      
-      <p class="post-text">我给本轮几大存储厂商的目标价，三星两万亿美元，海力士如果不上美股是1.2万亿美元，上美股是1.5万亿美元，美光1万亿美元，闪迪3000亿美元。<br>以上纯拍脑袋想的，三大厂可能还有点保守。</p>
+      <p class="post-text">闪迪什么时候公告个拆股，惊艳四座？</p>
       
       
       
       <div class="metrics">
         <span>赞 9</span>
-        <span>评论 11</span>
+        <span>评论 3</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387132867" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/392537863" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-03 08:27:34</time></div>
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-06-01 14:16:56</time></div>
       
       
-      <p class="post-text">我才发现BE今年居然也涨了两倍了，比我买的存储涨的还多。。。。。。？</p>
+      <p class="post-text">耐心也是交易中的一环，三星今天证明了自己。</p>
       
       
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 如果赌一波电力反弹，可能$Bloom Energy(BE)$ 是个不错的选择</p></div>
+      
       <div class="metrics">
-        <span>赞 10</span>
+        <span>赞 19</span>
+        <span>评论 9</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/392122585" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-26 09:05:36</time></div>
+      
+      
+      <p class="post-text">再次说明一点，雪球是我自己用来记录自己的思考和过程，从来不是用来答疑解惑的，自己对自己的股票负责。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 16</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387080924" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/390893234" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-02 20:53:10</time></div>
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-26 09:03:51</time></div>
       
       
-      <p class="post-text">有一说一，闪迪这个60亿回购的规模相较于它的市值，还真的挺大的，如果按照同样的比例，就等于英伟达回购1700亿，而英伟达26年财年回购规模是400亿。</p>
+      <p class="post-text">我不是客服。//@九四_或跃在渊:夜大怎么看三星比海力士还是弱一些。海力士有adr资金注入预期，三星没有，主要是补涨预期</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 三星今天的量，让我把剩下的一点现金全打进去了。。。</p></div>
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/390892900" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-22 18:42:05</time></div>
+      
+      
+      <p class="post-text">还有个原因，就是你根本没办法预判突然哪天会发生什么。。。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 我之所以现在不爱买中概股，一方面是因为 21 年买中概栽了个大跟头，另外一方面是因为我看透了大部分中概都不会管二级市场投资人的死活。<br>说个不恰当的例子，拼夕夕，你说这几年，要利润有利润，要业务增长有业务增长，手上现在现金都够可以去私有化了，但是人家就不管你股价涨跌，每次财报发出来都还不错，但是财报会议管理层都会出来恐吓你，你说你不分红不回购不画饼就算了，你出来恐吓投资人算什么回事？要么就是说未来增长不确定，要么就是说国际业务会遇到监管不确定，反正言外之意就是你别买我们家公司的股票。无非不就是黄 Z 某几天因为当了首富，害怕枪打出头鸟呗。<br>反正，我看透了，你不想股价涨，我就如你所愿不碰你呗。</p></div>
+      <div class="metrics">
+        <span>赞 18</span>
+        <span>评论 10</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/390467784" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-22 16:56:34</time></div>
+      
+      
+      <p class="post-text">天塌了！！</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 9</span>
+        <span>评论 28</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/390446671" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-22 12:17:59</time></div>
+      
+      
+      <p class="post-text">三星今天的量，让我把剩下的一点现金全打进去了。。。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 5</span>
+        <span>评论 9</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/390371264" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-21 17:38:53</time></div>
+      
+      
+      <p class="post-text">三星今天没有破前高，没摸30万让我有点失望。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 9</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/390216314" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-20 19:05:10</time></div>
+      
+      
+      <p class="post-text">美光盘前高开其实可以先走的，我个人的感受是，美光的量没有下来，就很难有前面那种持续的行情，应该还会调整的，我猜反弹应该是博英伟达的财报。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 13</span>
+        <span>评论 6</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389986198" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-20 10:49:18</time></div>
+      
+      
+      <p class="post-text">罢工落地，把之前卖掉的一半加仓到三星了，还有一半后面再看。</p>
       
       
       
       <div class="metrics">
         <span>赞 11</span>
-        <span>评论 1</span>
+        <span>评论 4</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387065854" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389866773" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-02 20:17:15</time></div>
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-19 17:35:47</time></div>
       
       
-      <p class="post-text">接下来闪迪换美光，海力士换三星，也可能是个错误的选择。闪迪换美光，主要因为美光6月份又要出财报了，想提前埋伏一波，虽然美光最近的量非常大，如果只看量的话，其实是可以慢慢卖了，但是美光这个奇葩总是跟别人错开出财报。三星的话，这段时间因为罢工的影响，股价严重滞涨，落后海力士太多，我觉得罢工这件事已经体现在股价里面了，一旦事情缓和，股价可能会出现反弹。</p>
+      <p class="post-text">美股半导体的高动量其实已经下来了，如果不是太大的宏观影响或者达子的财报不及预期的话，没必要在这里减仓割肉了，甚至如果这里还能下探，可以buy dip。</p>
       
       
       
       <div class="metrics">
-        <span>赞 10</span>
+        <span>赞 16</span>
+        <span>评论 5</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389731023" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-19 17:25:52</time></div>
+      
+      
+      <p class="post-text">闪迪的量还是比美光好，美光真的像是一个菜市场一样</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 8</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389729146" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-19 11:57:01</time></div>
+      
+      
+      <p class="post-text">为什么一定要有一个爆款应用出来才能体现AI的价值呢？为什么不是AI可以在未来创造无数的爆款应用呢？<br>我觉得很多人觉得AI目前没有出现一个爆款应用来收割市场就就是泡沫这种结论，太过于依赖过去的路径。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 15</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389652581" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-19 09:26:47</time></div>
+      
+      
+      <p class="post-text">韩国指数也进去日线死叉，进入调整震荡期。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389598059" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-19 09:25:52</time></div>
+      
+      
+      <p class="post-text">三星看样子也补涨不了了，那就三星留着吧，回头等美光的动量下来，再考虑把钱打进三星里面去，昨晚美光还是有400亿成交额，还是很大。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 我觉得目前存储除了三星，其他都有点像拥挤，市场有点过于兴奋了，我现在手上就留着三星，其他走完了，当然可能后面还会涨，但是跟我没关系，三星等罢工落地，看看能不能补涨，不能就算了。</p></div>
+      <div class="metrics">
+        <span>赞 9</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389597822" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-18 22:36:33</time></div>
+      
+      
+      <p class="post-text">闪迪死叉，该休整一阵子了。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@夜间飞行家: 感觉像是hedge fund在英伟达财报之前减高动量仓位。</p></div>
+      <div class="metrics">
+        <span>赞 6</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389559926" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-18 22:34:10</time></div>
+      
+      
+      <p class="post-text">感觉像是hedge fund在英伟达财报之前减高动量仓位。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 9</span>
         <span>评论 6</span>
         <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/2678435970/387064175" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389559504" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">夜间飞行家</span><time>2026-05-18 21:51:18</time></div>
+      
+      
+      <p class="post-text">我怎么感觉市场已经准备炒沃什上任后的政策了，缩表降息？不然这个FAS和DPST怎么开始涨了。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 4</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/2678435970/389552731" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></section></main><script>const savedTheme=localStorage.getItem('dashboardTheme')||'dark';document.documentElement.dataset.theme=savedTheme;const themeSelect=document.getElementById('themeSelect');themeSelect.value=savedTheme;themeSelect.addEventListener('change',()=>{document.documentElement.dataset.theme=themeSelect.value;localStorage.setItem('dashboardTheme',themeSelect.value)});</script></body></html>

@@ -53,7 +53,7 @@
 <body>
   <div class="topbar">
     <h1>📈 股价异动看板</h1>
-    <span class="updated">更新于 2026-05-09 06:18:55</span>
+    <span class="updated">更新于 2026-06-05 10:16:04</span>
     <select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select>
   </div>
   <div class="nav">
@@ -61,19 +61,24 @@
     <a href="news.html">新闻</a>
     <a href="x_feed.html">X 动态</a>
     <a class="active" href="stock_alerts.html">股价异动</a>
+    <a href="etf_monitor.html">IGV/SOXX</a>
+    <a href="japan_alerts.html">日本</a>
+    <a href="korea_alerts.html">韩国</a>
     <a href="xueqiu_user.html">雪球</a>
     <a href="zsxq.html">知识星球</a>
-    <a href="wechat.html" target="_blank" rel="noopener">微信公众号</a>
+    <a href="wechat.html">微信公众号</a>
     <a href="market_overview.html">市场总览</a>
+    <a href="liquidity_monitor.html">流动性</a>
+    <a href="server_price.html">芯片服务器</a>
   </div>
   <div class="summary">
     <div class="sum-item">
       <span class="sum-label">交易日期</span>
-      <span class="sum-value">2026-05-09</span>
+      <span class="sum-value">2026-06-05</span>
     </div>
     <div class="sum-item">
       <span class="sum-label">SPY 当日</span>
-      <span class="sum-value" style="color:#ff4d4f;">+0.83%</span>
+      <span class="sum-value" style="color:#ff4d4f;">+0.38%</span>
     </div>
     <div class="sum-item">
       <span class="sum-label">异动门槛</span>
@@ -81,11 +86,11 @@
     </div>
     <div class="sum-item">
       <span class="sum-label">监控范围</span>
-      <span class="sum-value">517 只</span>
+      <span class="sum-value">516 只</span>
     </div>
     <div class="sum-item">
       <span class="sum-label">异动数量</span>
-      <span class="sum-value">34 只</span>
+      <span class="sum-value">21 只</span>
     </div>
   </div>
   <div class="grid">
@@ -93,113 +98,13 @@
     <div class="stock-card up">
       <div class="stock-top">
         <div class="stock-id">
-          <span class="ticker">AKAM</span>
-          <span class="sname">Akamai Technologies</span>
+          <span class="ticker">BX</span>
+          <span class="sname">Blackstone Inc.</span>
         </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +26.58%</span>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +7.50%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$147.71</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$116.69</b></div>
-      <div class="analysis">AKAM（Akamai）5月9日大涨26.6%，现有信息下，最明确催化剂来自所给标题：UBS称其“大型计算业务交易”有望提振收入，偏向 `ANA+ / GUIDE` 叙事。股价已处52周区间97%分位，且成交量放大至30日均量4.07倍，说明资金在集中追价。  
-但目前未见财报、正式指引或交易条款细节，基本面验证仍未确认；若无更多公告，这次上涨更像“机构解读放大”的重定价，而非已被完整证实的业绩拐点。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">SNDK</span>
-          <span class="sname">Sandisk</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +16.60%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$1562.34</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$1339.96</b></div>
-      <div class="analysis">SNDK（Sandisk）5月9日涨16.6%，更像是`SECT`+`ANA+`驱动，基本面强度偏中等，信息意外度中高。已知新闻集中在“AI存储超级周期”叙事带动存储板块走强，且有标题称分析师大幅上调SNDK预期；同日Micron也大涨，说明存在明显板块共振。未见财报、正式指引或并购等更硬的公司级催化细节，因此目前不能确认是基本面单独重估，更可能是存储主题升温叠加卖方乐观预期放大。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">MU</span>
-          <span class="sname">Micron Technology</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +15.49%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$746.81</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$646.63</b></div>
-      <div class="analysis">MU 5月9日大涨15.5%，从所给标题看，较可能由`SECT`+`MACRO`驱动：市场强化“AI需求”叙事，带动纳指上行，且“内存芯片股受关注”直接利多MU这类HBM/DRAM链标的。量能放大至30日均量1.53倍，说明资金确认度不低；但目前未见财报、指引上调或分析师升级等公司特异催化剂，故更像板块重估而非MU单独基本面突变。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">INTC</span>
-          <span class="sname">Intel</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +13.96%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$124.92</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$109.62</b></div>
-      <div class="analysis">INTC 5月9日大涨14%，现有标题里最直接的催化是“Apple与Intel达成芯片制造协议”，若属实应归类为 `OTHER/SECT`：市场在交易其代工业务拿下关键客户、AI链条外溢受益。量能放大至30日均量2.07倍，股价已处52周区间95%，说明资金追价明显；但除标题外，未见协议金额、产能、利润影响与发布时间，基本面改善幅度仍未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">MNST</span>
-          <span class="sname">Monster Beverage</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +13.58%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$86.29</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$75.97</b></div>
-      <div class="analysis">MNST 5月9日大涨13.6%，主要催化看起来是`ERN+`：据新闻标题，Monster Q1 earnings beat，且能量饮料业务销量增长27.6%，直接缓解了市场对“energy-drink fatigue”的担忧。成交量达30日均量2.72倍、股价位于52周区间92%，说明资金确认度较强。估值前瞻P/E 34.2x偏高，意味着这更像“业绩验证后再定价”。但EPS、营收及一致预期差值未提供，属未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">DELL</span>
-          <span class="sname">Dell Technologies</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +13.11%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$260.46</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$230.27</b></div>
-      <div class="analysis">DELL 5月9日大涨13.1%，从所给标题看，最直接催化剂是据Yahoo标题“Trump makes bullish comments”，属 `OTHER/TECH` 偏情绪驱动，次因是大盘走强、风险偏好回升（`MACRO`）。量能放大至30日均量1.48倍，且股价已处52周区间98%分位，说明资金追涨明显；但目前未见你提供的Dell财报、指引或分析师上调细节，因此尚不能确认基本面出现实质性重估。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">CPAY</span>
-          <span class="sname">Corpay</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +12.51%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$343.99</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$305.75</b></div>
-      <div class="analysis">CPAY（Corpay）5月9日大涨12.5%，从现有标题看，主要催化剂偏向 `ERN+`：Q1业绩与营收“高于预期”，且企业支付业务表现较强，市场据此上修其中长期复利增长预期。基本面强度评估为⭐⭐⭐☆，信息意外度中等；但由于未提供EPS、营收与一致预期的具体数值，也未见指引细节，超预期幅度仍未确认。估值仅11.4x远期PE、股价处52周区间84%、成交量1.25倍，说明上涨有基本面支撑且获量能确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">GEN</span>
-          <span class="sname">Gen Digital</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +12.33%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$22.68</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$20.19</b></div>
-      <div class="analysis">GEN 5月9日涨12.3%，从给定标题看，主因大概率是财报/业绩展望驱动：`ERN+`+`GUD+`。关键线索是“FY26营收突破50亿美元、增速加快至双位数”，说明市场上修对增长持续性的预期；当日成交量达30日均量2.3倍，也支持并非纯技术反弹。公司前瞻PE仅6.9x、股价处52周区间34%，低估值可能放大了利好弹性。未见EPS与一致预期对比数据，超预期幅度仍未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">MRNA</span>
-          <span class="sname">Moderna</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +11.97%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$54.35</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$48.54</b></div>
-      <div class="analysis">MRNA（Moderna）5月9日上涨12.0%，现有标题显示主要催化剂偏向 `OTHER`：市场将其与汉坦病毒相关mRNA疫苗想象、以及流感项目“突破”叙事重新定价。成交量达30日均量2.66倍，且股价处于52周区间86%位置，说明资金追逐明显。但仅凭标题，未确认是否有正式临床、监管或订单公告；未见财报/指引数字支撑，因此本次更像消息驱动叠加情绪放大，而非已被验证的基本面拐点。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">AMD</span>
-          <span class="sname">Advanced Micro Devices</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +11.44%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$455.19</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$408.46</b></div>
-      <div class="analysis">AMD 2026-05-09上涨11.4%，从现有标题看，未找到公司当日财报、指引、评级上调或重大交易等明确基本面催化剂。更可能是`SECT/TECH`：相关新闻集中在CPU与AI算力主题、Apple/Intel芯片合作预期带动半导体情绪扩散，AMD受板块联动提振。股价已处52周区间顶部，成交量仅为30日均量1.5倍，说明有资金追涨，但不足以单独证明基本面重估；35.3x远期PE也显示估值弹性放大了涨幅。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$118.55</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$110.28</b></div>
+      <div class="analysis">BX（Blackstone）6月5日涨7.5%，就所给标题看，未找到明确公司级利好，主因更像`SECT/TECH`：金融股午后走强带动估值修复。量能仅为30日均量1.08倍、股价仍处52周区间19%低位，说明更像低位反弹而非强基本面重定价。与“private credit”相关标题仅显示资金流动压力，是否构成当日利空/利多未确认。</div>
     </div>
     <div class="stock-card up">
       <div class="stock-top">
@@ -207,263 +112,219 @@
           <span class="ticker">HUM</span>
           <span class="sname">Humana</span>
         </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +11.27%</span>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.80%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$274.96</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$247.12</b></div>
-      <div class="analysis">HUM 2026-05-09上涨11.3%，现有标题里未见Humana自身财报、指引或评级变动，缺乏可直接确认的公司级催化剂。较可能的解释是医保板块联动：`CVS Health Stock Jumps After Earnings` 显示同业财报后情绪改善，HUM或受`SECT`带动上行，但这仅为推断、未确认。量能放大至30日均量1.65倍，说明买盘参与较强；按前瞻PE 18.0x看，若无新增基本面信息，更像情绪/板块重估驱动。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$349.80</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$327.54</b></div>
+      <div class="analysis">HUM（Humana）6月5日涨6.8%，主要催化更像`SECT`+`ANA+`：据所给新闻标题，市场因“医疗成本/利用率趋势走软”而上调医保股预期，Humana与UNH、CI同步走强，且Morgan Stanley提到相关公司受益。该上涨更偏板块与分析师情绪驱动，未见你提供财报、指引或监管新消息，明确基本面催化剂仍未确认。估值22.3x前瞻PE不低，股价已处52周区间99%，而成交量仅0.93倍30日均量，说明追涨虽强，但放量确认有限。</div>
     </div>
     <div class="stock-card up">
       <div class="stock-top">
         <div class="stock-id">
-          <span class="ticker">QCOM</span>
-          <span class="sname">Qualcomm</span>
+          <span class="ticker">HOOD</span>
+          <span class="sname">Robinhood Markets</span>
         </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +8.17%</span>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.61%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$219.09</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$202.55</b></div>
-      <div class="analysis">QCOM 5月9日涨8.2%，现有标题下更像 `SECT` + `TECH` 驱动，基本面强度偏低到中等，信息意外度低。可确认的相关线索主要是“SOX盘中创新高”，说明半导体板块风险偏好升温；另有“Qualcomm一个月涨70%”更像事后评论，不足以证明当天新增基本面催化。结合成交量放大至30日均量2.52倍、股价处于52周区间92%，本次更像板块共振与动量资金推动；未找到明确财报、指引或评级上调标题，核心催化剂仍未确认。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$88.33</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$82.85</b></div>
+      <div class="analysis">`HOOD` 2026-06-05上涨6.6%，从所给标题看，未找到足以单独解释大涨的明确公司级催化剂；更像`TECH`/情绪修复，次级可算`SECT`，因标题提到“MicroStrategy、Robinhood、Circle尝试反弹”，或反映加密相关交易情绪回暖。量能仅为30日均量1.06倍，说明并非强确认型突破；当前股价仅处52周区间27%，但前瞻PE 32.2x，估值不低，持续性仍待确认。</div>
     </div>
     <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">HPQ</span>
-          <span class="sname">HP Inc.</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +8.05%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$22.68</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$20.99</b></div>
-      <div class="analysis">HPQ（HP Inc.）5月9日单日涨8.1%，目前更像`TECH/SECT`驱动，未找到可确认的公司级明确催化剂。给定新闻标题多为估值、走势回顾和远期财报预告，缺乏当日业绩、指引、并购或分析师上调证据。结合前瞻P/E仅7.6x、股价处52周区间43%、成交量仅1.15倍均量，较像低估值反弹或AI旧科技题材带动，基本面强度⭐，信息意外度Low。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">XYZ</span>
-          <span class="sname">Block, Inc.</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.72%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$74.85</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$70.14</b></div>
-      <div class="analysis">XYZ（Block, Inc.）5月9日涨6.7%，从现有标题看，较可能是财报后市场聚焦其“AI驱动重组/效率提升”叙事，属公司特异性催化，而非板块共振；当日金融股新闻反而偏弱。成交量为30日均量1.52倍，说明上涨有一定确认，股价处于52周区间78%位置。未见标题提供EPS、营收或指引与共识的具体对比，因此“财报超预期”这一核心催化剂仍未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">MRVL</span>
-          <span class="sname">Marvell Technology</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.32%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$170.13</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$160.01</b></div>
-      <div class="analysis">MRVL 5月9日涨6.3%，现有标题更像`SECT/TECH`主导：市场可能围绕“Nvidia加持”“新AI合作”重估其AI敞口，叠加半导体强势带来情绪跟涨。未见明确财报、指引上修或分析师升级标题，故缺乏已确认的硬催化。量能仅为30日均量0.90倍，且股价已处52周区间95%高位，更像主题强化而非基本面突变；31.3x远期PE也说明估值已不低。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">DDOG</span>
-          <span class="sname">Datadog</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.06%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$200.16</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$188.73</b></div>
-      <div class="analysis">DDOG 2026-05-09涨6.1%，主要催化剂偏向 `ERN+`，次要可能是 `ANA+`。从所给标题看，公司Q1盈利与营收“超过预期”，且RBC、BofA均强调AI与非AI客户需求走强、执行改善，强化了基本面修复预期。量能放大至30日均量2.08倍，说明上涨获资金确认；但因未提供EPS、营收与一致预期的具体数值，超预期幅度及是否存在指引上修仍未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">AMAT</span>
-          <span class="sname">Applied Materials</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.04%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$435.44</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$410.64</b></div>
-      <div class="analysis">AMAT（Applied Materials）5月9日涨6.0%，现有信息看，最接近的催化是`ANA+ / SECT`：新闻仅显示其获“Street-High”目标价上调，理由是AI产业链中地位“几乎不可替代”。但未见财报、指引或订单数据，基本面催化未确认。股价处于52周区间99%高位、成交量仅1.03倍均量，说明更像情绪与AI半导体设备板块共振推动，而非强烈新基本面重估。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">KLAC</span>
-          <span class="sname">KLA Corporation</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.01%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$1869.19</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$1763.25</b></div>
-      <div class="analysis">KLAC 5月9日涨6.0%，现有标题看，最可能催化是`OTHER/TECH`：公司宣布10比1拆股、上调股息并强调资本回报，往往会改善散户情绪并放大资金参与。成交量仅1.32倍30日均量、股价处52周区间94%分位，说明更像情绪与趋势强化，而非已确认的业绩重估。未见你提供财报、指引或分析师上调的明确数字，因此本次异动的基本面主因目前未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">PANW</span>
-          <span class="sname">Palo Alto Networks</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.78%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$207.88</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$196.53</b></div>
-      <div class="analysis">PANW 5月9日上涨5.8%，但仅凭所给 Yahoo 标题，未找到可确认的单日明确催化剂；这些内容更像板块讨论与观点文章，不足以证明财报、指引或评级变动驱动。初步归类偏 `TECH/SECT`，基本面强度⭐，信息意外度Low。成交量仅为30日均量1.11倍，放量不算显著；股价处52周区间81%位置、前瞻P/E 52.4x，说明市场仍在交易高估值与网络安全主题热度，单日上冲更像情绪/仓位推动，原因未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">FTNT</span>
-          <span class="sname">Fortinet</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.65%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$114.07</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$107.97</b></div>
-      <div class="analysis">FTNT 5月9日上涨5.6%，从现有标题看，主催化更像 `ERN+`，次要可能是 `ANA+`：市场将其财报解读为缓解“软件需求恶化”担忧，随后又有“Upgraded to Buy”标题强化情绪。量能放大至30日均量1.56倍、股价接近52周高位，说明资金确认度较强。但目前仅有标题，未见财报具体EPS、营收及一致预期对比，故“超预期”幅度与重评级是否合理仍未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">HPE</span>
-          <span class="sname">Hewlett Packard Enterprise</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.56%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$31.35</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$29.70</b></div>
-      <div class="analysis">HPE 2026-05-09上涨5.6%，现价处于52周高位（100%），但成交量仅为30日均量0.84倍，说明追涨确认度一般。结合所给标题，较相关的是AI数据中心扩容、Super Micro因AI需求强劲而大涨，以及HPE发布面向AI推理的ProLiant Edge新品，较像`SECT+OTHER`驱动。未见财报、指引上修或分析师上调等明确当日催化，基本面利多仍属未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">SMCI</span>
-          <span class="sname">Supermicro</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.21%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$35.37</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$33.62</b></div>
-      <div class="analysis">SMCI 2026-05-09上涨5.2%，更可能由`GUD+`+`TECH`驱动。已见相关新闻标题指向“利润率优于预期、指引强劲”，并再次点燃空头回补讨论；成交量49.1百万股、约为30日均量1.33倍，也支持资金放大行情。与此同时，Forward P/E仅11.0x、股价处于52周区间37%位置，说明此前定价不高，利好更易放大。但仅凭标题，具体EPS/营收/指引数据与发布时间均未确认。</div>
-    </div>
-    <div class="stock-card up">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">COHR</span>
-          <span class="sname">Coherent Corp.</span>
-        </div>
-        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.03%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$335.26</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$319.19</b></div>
-      <div class="analysis">COHR（Coherent）5月9日涨5.0%，现有信息下更像`ERN+ / SECT`混合驱动。已见新闻称其Q3 2026营收高于预期，且“AI需求加速”提供基本面支撑；但同时又有“optics trade降温、盘中下跌”的标题，说明当天走势并非单一利好直线驱动。量能仅为30日均量1.01倍、股价处52周区间90%位置，显示更偏财报后继续消化与板块情绪波动。由于缺少EPS/营收一致预期、指引及新闻时间戳，主催化剂仍属未完全确认。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">TECH</span>
-          <span class="sname">Bio-Techne</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -5.01%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$48.36</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$50.91</b></div>
-      <div class="analysis">`TECH`（Bio-Techne）2026-05-09下跌5.0%，但就你提供的信息看，未找到可确认的负面催化剂。现有标题多指向Q3财报/电话会，且一则明确写“上涨5.9%”，与当日下跌相矛盾，说明新闻时点或交易日可能不匹配。量能约为30日均量1.58倍、股价处于52周区间12%低位，显示抛压存在，但更像财报解读分歧或技术性走弱；在缺少EPS/营收对一致预期数据前，暂不能确认属于`ERN-`还是`TECH`主导。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">ZTS</span>
-          <span class="sname">Zoetis</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -5.13%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$82.83</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$87.31</b></div>
-      <div class="analysis">ZTS 5月9日跌5.1%，从现有标题看，主要催化剂更像 `GUD-`，次要为 `SECT`。较明确的信息是：公司此前下调2026年指引，且美国宠物需求走弱，说明市场在重新下修增长预期；医疗板块当日下午整体偏弱也可能放大跌幅。量能达30日均量3.58倍、股价处于52周区间仅约2%，反映抛压确认。财报细项、共识差异未确认，因此不能进一步断言基本面恶化幅度。</div>
-    </div>
-    <div class="stock-card down">
       <div class="stock-top">
         <div class="stock-id">
           <span class="ticker">AXON</span>
           <span class="sname">Axon Enterprise</span>
         </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -5.47%</span>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.59%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$403.54</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$426.89</b></div>
-      <div class="analysis">AXON 5月9日下跌5.5%，主要催化更像 `ERN-`：已见新闻标题指向“Q1 earnings miss estimates”，且原因被归因于关税拖累利润率；在前瞻PE仍达38.6x的高估值下，利润率瑕疵更易触发估值压缩。虽有“国际化Taser增长”和券商偏多表态，但当天市场显然更在意盈利兑现。成交量1.56倍、股价仅处52周区间12%，说明抛压有确认；但因未见EPS、营收与指引明细，次级催化仍未完全确认。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$513.20</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$481.48</b></div>
+      <div class="analysis">AXON 6月5日涨6.6%，就所给标题看，未找到可确认的当日硬催化剂，如财报、指引、评级上调或重大合同公告。更可能是“新防务/公共安全科技”主题情绪带动，相关报道提到其无人机雷达合作与“defensive moat”叙事，但是否为当日直接驱动未确认。结合成交量仅为30日均量1.17倍、股价仍处52周区间32%位置，这次上涨更像SECT/TECH主导的情绪性走强，而非明确基本面重定价。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">AMT</span>
+          <span class="sname">American Tower</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.40%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$193.91</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$182.24</b></div>
+      <div class="analysis">AMT 2026-06-05单日涨6.4%，但基于所给Yahoo标题，未找到可确认的当日公司级明确催化剂；更像`SECT/TECH`驱动，且仅属低置信度判断。可参考的是REIT情绪偏暖：`XLRE`年内涨11%、`DLR`近6个月走强，但这不足以直接解释AMT单日急涨。量能仅为30日均量的0.84倍、股价处52周区间42%，也不支持“强基本面重估”结论；现阶段应标注为“原因未确认，可能是板块带动或技术性补涨”。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">ARES</span>
+          <span class="sname">Ares Management</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +6.01%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$130.50</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$123.10</b></div>
+      <div class="analysis">ARES 2026-06-05上涨6.0%，但就所给标题看，未找到与当日上涨直接对应的明确公司级催化剂。较相关的是“Blackstone Fund Caps Withdrawals. Why Private-Credit Stocks Are Surging This Time.”，若属当日新闻，更像私募信贷板块情绪带动，暂归类 `SECT/TECH`。但同时又有“Ares下跌”的标题，信息相互矛盾，时点未确认。量能仅为30日均量0.60倍，且股价仍处52周区间35%，更像低成交下的板块性反弹，非强基本面重定价。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">ERIE</span>
+          <span class="sname">Erie Indemnity</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.92%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$219.51</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$207.24</b></div>
+      <div class="analysis">ERIE 6月5日上涨5.9%，但基于所给Yahoo标题，未找到与当日股价异动直接对应的明确催化剂；这些内容更像常规选股/估值评论，且未见财报、指引、评级上调或并购标题可确认驱动。结合当日成交量仅为30日均量的0.97倍、股价仍处52周区间约8%位置，本次上涨更偏情绪或技术性反弹判断，但该结论未确认。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">CCI</span>
+          <span class="sname">Crown Castle</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.83%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$93.79</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$88.62</b></div>
+      <div class="analysis">CCI 2026-06-05上涨5.8%，但基于所给Yahoo标题，未找到与当日异动直接对应的明确催化剂。现有标题仅见“CCI vs. SBA Communications 哪个更值得买”的比较稿，缺乏时间戳、评级变动或财报/指引细节，不能确认为主因。结合放量至30日均量1.59倍、股价仍处52周区间约45%位置，更像`SECT/TECH`驱动，但这一定性仅属未确认判断。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">SBAC</span>
+          <span class="sname">SBA Communications</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.73%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$207.85</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$196.58</b></div>
+      <div class="analysis">SBAC 6月5日上涨5.7%，目前更像`SECT`主导、次因或有`ANA+`情绪外溢。已给新闻里未见SBAC当日财报、指引或公司公告；较相关的是“Bernstein上调American Tower并看多塔楼REIT”，可能带动SBAC/Crown Castle板块联动，但该传导仅属有限佐证，发布时间未确认。量能仅0.67倍30日均量，说明上涨缺乏强成交确认；以25.6x Forward P/E看，估值不低，单日走强更像板块重估而非明确基本面突变。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">KKR</span>
+          <span class="sname">KKR &amp; Co.</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.45%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$95.46</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$90.53</b></div>
+      <div class="analysis">KKR 2026-06-05 单日涨5.4%，但仅凭所给标题，未找到公司层面的明确新催化剂，暂不能确认是财报、指引或评级变化驱动。较相关的信息是“私募信贷股上涨”与另类资管流动性讨论，指向板块情绪修复或资金回流，催化剂更接近 `SECT/TECH` 而非基本面重估。佐证也偏弱：成交量仅为30日均量0.80倍，现价仍处52周区间18%低位，说明更像反弹而非强确认上行。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">NCLH</span>
+          <span class="sname">Norwegian Cruise Line Holdings</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.40%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$19.13</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$18.15</b></div>
+      <div class="analysis">NCLH 6月5日上涨5.4%，目前更像`TECH/SECT`而非已确认的基本面催化。给定新闻里，未见当日明确利好：Bernstein仅给NCLH“market-perform”，不算升级催化；“自上次财报后涨7%”也不是当日新信息，且时效未确认。结合前瞻PE仅9.5x、股价处52周区间36%位置、成交量仅1.18倍，判断更可能是邮轮板块情绪修复或低估值反弹，基本面驱动证据未确认。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">CNC</span>
+          <span class="sname">Centene Corporation</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.29%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$62.70</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$59.55</b></div>
+      <div class="analysis">CNC 2026-06-05上涨5.3%，现有信息看更像`SECT`+`ERN+`混合驱动。可确认线索有限：同日多条标题指向医保板块走强，UNH、CVS、Cigna受医疗利用率改善与AI预期提振；另有标题称Centene因Q1 2026业绩优于预期及新增多年期Medicaid合同获关注。但因缺少正文、时间戳与一致数据，尚不能确认哪一项是当日主催化。14.1x前瞻PE不高，且股价接近52周高位，说明资金更偏向板块重估而非纯技术反弹。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">BEN</span>
+          <span class="sname">Franklin Resources</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.27%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$31.97</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$30.37</b></div>
+      <div class="analysis">BEN 2026-06-05涨5.3%，更像`SECT/OTHER`偏基本面催化。已知信息里，最相关的是5月AUM环比增1.9%，且由净流入与市场上涨共同推动，这通常利好管理费收入预期；股价同时逼近52周高位区间96%，成交量放大至1.55倍，也说明资金在放大这一利多。未见标题提供EPS、指引或分析师上调，故暂不能确认`ERN+`或`ANA+`，本次上涨的明确主催化仍属有限确认。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">SOLV</span>
+          <span class="sname">Solventum</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.18%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$82.42</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$78.36</b></div>
+      <div class="analysis">SOLV 6月5日上涨5.2%，但仅从所给新闻标题看，未找到与当日上涨直接对应的明确利好催化剂。相反，“HCIT业务受AI扰动担忧”偏利空，且时效性未确认，不能解释当日走强。结合成交量仅放大至1.47倍、股价处52周区间78%、前瞻PE约11.7x，较像低估值修复或仓位/技术性推动，暂归类为 `TECH/SECT`，基本面驱动未确认。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">UNH</span>
+          <span class="sname">UnitedHealth Group</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.16%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$396.47</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$377.00</b></div>
+      <div class="analysis">UNH 6月5日上涨5.2%，从所给标题看，未找到明确的公司特异性催化剂（如财报、指引、评级或并购）。更接近 `SECT/MACRO`：当日“Healthcare stocks climb late afternoon”，且资金从走弱的芯片/科技股切向防御性板块。量能仅为30日均量0.96倍、股价已处52周区间95%位置，说明更像板块轮动推动，而非强基本面重估；该判断仍属未确认。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">MRNA</span>
+          <span class="sname">Moderna</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.16%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$51.59</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$49.06</b></div>
+      <div class="analysis">MRNA 6月5日上涨5.2%，从现有标题看，较可能的主因是市场提前交易“下周关键更新”的预期，偏 `GUIDE/TECH`，而非已被确认的财报或监管落地。支持这一判断的是：相关新闻仅提到“ahead of next week’s key updates”和“gets good news”，但未给出可核实的具体数据；当日成交量仅为30日均量的0.95倍，说明并非强确认型放量上涨。结合负Forward P/E（-12.3x）与股价处于52周区间79%，本次更像情绪与事件前博弈，明确基本面催化剂未确认。</div>
+    </div>
+    <div class="stock-card up">
+      <div class="stock-top">
+        <div class="stock-id">
+          <span class="ticker">MDT</span>
+          <span class="sname">Medtronic</span>
+        </div>
+        <span class="pct-badge" style="color:#ff4d4f;">▲ +5.11%</span>
+      </div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price up">$81.93</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$77.95</b></div>
+      <div class="analysis">MDT 6月5日上涨5.1%，现有标题里未见明确、已确认的单一利好催化剂。与公司最相关的是“Hugo机器人扩张与心血管器械召回并存”的报道，但仅凭标题难判断其对当日股价偏正面还是中性；另有华尔街研究电话会标题提及Medtronic，可能涉及评级/目标价变化，但未确认具体内容。结合成交量放大至30日均量2.02倍、股价仍处52周区间26%低位，更像消息面叠加低位反弹或仓位驱动，主因未确认。</div>
     </div>
     <div class="stock-card down">
       <div class="stock-top">
         <div class="stock-id">
-          <span class="ticker">APP</span>
-          <span class="sname">AppLovin</span>
+          <span class="ticker">APTV</span>
+          <span class="sname">Aptiv</span>
         </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -6.08%</span>
+        <span class="pct-badge" style="color:#00c853;">▼ -5.08%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$468.55</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$498.87</b></div>
-      <div class="analysis">APP 2026-05-09下跌6.1%，现有标题里未见公司当日明确利空，暂难确认是`ERN-`或`GUD-`。较可能的已知线索是广告技术板块财报后分化：`Trade Desk`重挫拖累情绪，而标题显示APP相对抗跌，说明其下跌更像`SECT/TECH`驱动而非新增基本面恶化。量能1.44倍放大，显示抛压真实；但仅凭这些标题，主要催化剂仍属未确认。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$72.92</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$76.82</b></div>
+      <div class="analysis">APTV 2026-06-05下跌5.1%，就所给新闻看，未找到与当日下跌直接对应的明确利空催化剂；现有标题多偏正面（AI合作、产品发布、Wall Street看多汽车AI），且是否为当日发布未确认。更可能是`TECH`/`SECT`主导的回吐或板块分化，但这仅为推测。量能放大至30日均量1.91倍，说明抛压真实；57%位于52周区间中部、前瞻P/E仅10.7x，单日跌幅暂难用估值过高解释。</div>
     </div>
     <div class="stock-card down">
       <div class="stock-top">
         <div class="stock-id">
-          <span class="ticker">APH</span>
-          <span class="sname">Amphenol</span>
+          <span class="ticker">MU</span>
+          <span class="sname">Micron Technology</span>
         </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -6.29%</span>
+        <span class="pct-badge" style="color:#00c853;">▼ -7.74%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$128.03</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$136.62</b></div>
-      <div class="analysis">APH（Amphenol）5月9日跌6.3%，目前未找到与当日下跌直接对应的明确催化剂。所给标题“How Do Amphenol’s Euro Notes and Dividend Moves Reflect Its Evolving Capital Strategy?”更像资本结构解读，未确认是当天利空。催化剂暂标注`OTHER/TECH`，基本面强度⭐，信息意外度Low；但成交量达30日均量2.08倍，说明抛压真实，可能是资金调仓或情绪性回落，仍待更实时财报/指引/评级信息确认。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$996.00</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$1079.57</b></div>
+      <div class="analysis">MU 6月5日下跌7.7%，现有信息更像`SECT/MACRO`而非公司特异利空。可确认的仅是6月4日多条标题指向科技股、尤其芯片板块走弱拖累Nasdaq；同时“摩根士丹利对MU作出大胆新判断”未披露评级方向，无法作为明确催化。量能仅1.11倍、股价处52周区间91%，说明更像高位回撤；未找到MU当日明确基本面负面消息。</div>
     </div>
     <div class="stock-card down">
       <div class="stock-top">
         <div class="stock-id">
-          <span class="ticker">CSGP</span>
-          <span class="sname">CoStar Group</span>
+          <span class="ticker">AVGO</span>
+          <span class="sname">Broadcom</span>
         </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -6.32%</span>
+        <span class="pct-badge" style="color:#00c853;">▼ -12.59%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$32.77</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$34.98</b></div>
-      <div class="analysis">CSGP 5月9日跌6.3%，从现有标题看，未找到能直接解释当日下跌的明确新催化剂。已知消息里“earnings beat”“CEO增持”偏正面，而租赁空置率预测上调仅可能压制地产数据业务情绪，但这一点未确认。结合股价已处52周区间底部、成交量仅1.06倍均量，更像`TECH/SECT`主导的延续性抛压，而非强基本面利空。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$418.91</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$479.23</b></div>
+      <div class="analysis">AVGO 6月5日大跌12.6%，现有标题里最明确的线索是“guidance disappointment”，因此主因更像 `GUD-`，而非纯技术性回调；同时成交量达30日均量3.30倍，说明抛压有资金确认。估值看远期P/E约22x、股价处52周区间约70%位置，回撤更像市场下修对AI/盈利预期的定价。未见EPS、营收或指引具体数字，财报细节仍未确认。</div>
     </div>
     <div class="stock-card down">
       <div class="stock-top">
         <div class="stock-id">
-          <span class="ticker">FIS</span>
-          <span class="sname">Fidelity National Information Services</span>
+          <span class="ticker">CIEN</span>
+          <span class="sname">Ciena</span>
         </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -7.96%</span>
+        <span class="pct-badge" style="color:#00c853;">▼ -13.66%</span>
       </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$43.49</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$47.25</b></div>
-      <div class="analysis">FIS（Fidelity National Information Services）5月9日跌8.0%，从已给标题看，财报层面更像`ERN+`：Q1 EPS与营收均高于预期，且管理层重申全年指引，并无明显利空 headline。若属实，这说明下跌主因目前未确认，较可能是“利好兑现后卖出”、市场对指引未上调失望，或仓位/技术性抛压；但这些都缺少新闻直接证实。量能1.88倍放大，显示抛压真实。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">EXPE</span>
-          <span class="sname">Expedia Group</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -9.02%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$229.98</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$252.79</b></div>
-      <div class="analysis">EXPE（Expedia Group）5月9日跌9.0%，主因更像 `GUD-` 叠加 `ERN+`：从标题看，公司Q1业绩与营收虽高于预期，但管理层后续展望偏弱，市场更在意指引下修而非当季 beat。成交量约为30日均量1.68倍，说明抛压较明确；股价位于52周区间约52%，并非极端低位。由于仅有新闻标题，EPS、营收及指引与共识的具体差距均未确认。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">MSI</span>
-          <span class="sname">Motorola Solutions</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -11.36%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$383.99</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$433.20</b></div>
-      <div class="analysis">MSI（Motorola Solutions）5月9日跌11.4%，主因更像“ERN+/GUD-”式错配：从标题看，公司Q1业绩与营收均好于预期，且上调全年展望，但市场更在意指引“未能打动投资者”，说明此前预期可能已偏高，利好兑现不足。成交量达30日均量2.72倍，显示抛压确认；股价处于52周区间19%分位，也反映情绪偏弱。由于缺少财报具体数值、共识与新闻时间戳，以上判断仍属有限确认。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">MELI</span>
-          <span class="sname">Mercado Libre</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -12.70%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$1632.52</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$1870.01</b></div>
-      <div class="analysis">MELI 5月9日跌12.7%，主因更像 `ERN-/GUD-` 混合：据标题，Q1营收同比增长且高于部分预期，但EPS低于预期，且市场明显聚焦利润率承压，“以规模换利润”的担忧触发重定价。量能达30日均量4.49倍，说明抛压真实；股价处于52周区间仅4%位置，反映情绪偏弱。由于仅有新闻标题，具体EPS、营收与指引差额未确认。</div>
-    </div>
-    <div class="stock-card down">
-      <div class="stock-top">
-        <div class="stock-id">
-          <span class="ticker">MTD</span>
-          <span class="sname">Mettler Toledo</span>
-        </div>
-        <span class="pct-badge" style="color:#00c853;">▼ -14.77%</span>
-      </div>
-      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$1124.46</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$1319.29</b></div>
-      <div class="analysis">MTD 2026-05-09大跌14.8%，现有标题里唯一明确基本面信息是Q1业绩与营收均“超预期”，因此与股价下跌并不一致。结合股价处于52周区间仅10%位置、成交量放大至30日均量3.18倍，说明抛压真实且偏事件驱动；但仅凭所给新闻，未确认是否存在指引下调、管理层口径转弱或估值去评级。初步判断：已知信息不足，明确催化剂未确认，暂更像“业绩虽好但市场关注点更差”的负面解读。</div>
+      <div class="price-row"><span>&#25910;&#30424;</span> <b class="price down">$535.63</b> <span class="sep">|</span> <span>&#21069;&#25910;</span> <b class="prev-price">$620.37</b></div>
+      <div class="analysis">CIEN 6月5日大跌13.7%，现有标题看，主因更像财报后失望交易叠加科技股走弱。可确认的是公司当日有Q2 2026业绩/电话会相关新闻，且市场报道明确提到“Ciena slammed”；但仅凭标题，未确认是EPS、营收还是指引低于预期。成交量放大至30日均量2.82倍，说明抛压真实；股价仍处52周区间82%位置，意味着此前预期可能较高，利空更易触发估值压缩。</div>
     </div>
   </div>
   <script>

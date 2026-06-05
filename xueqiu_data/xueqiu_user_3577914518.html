@@ -2,46 +2,23 @@
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>不疾而速H-宁波 · 雪球发言看板</title>
 <style>
 *,*::before,*::after{box-sizing:border-box}html,body{margin:0;min-width:100%;height:100%;overflow:hidden;background:#0f1419;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif;line-height:1.6}body{display:flex;flex-direction:column}a{color:inherit}header{flex-shrink:0;background:rgba(15,20,25,.96);border-bottom:1px solid #27313a;backdrop-filter:blur(10px)}.wrap{max-width:none;margin:0;padding:0 24px}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{flex:0 0 auto}.brand h1{margin:0;font-size:22px;line-height:1.2;color:#e6edf3}.brand p{margin:6px 0 0;color:#9fb3c8;font-size:13px}.top-actions{min-width:0;display:flex;align-items:center;gap:12px;justify-content:flex-end;flex:1}.nav-row,.user-nav{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.nav-row{padding:0 24px 10px}.user-nav{min-width:0;max-width:min(980px,calc(100vw - 420px));padding:2px 0}.nav-row::-webkit-scrollbar,.user-nav::-webkit-scrollbar,main.wrap::-webkit-scrollbar{width:14px;height:12px}.nav-row::-webkit-scrollbar-track,.user-nav::-webkit-scrollbar-track,main.wrap::-webkit-scrollbar-track{background:#111820;border-radius:999px}.nav-row::-webkit-scrollbar-thumb,.user-nav::-webkit-scrollbar-thumb,main.wrap::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:999px;border:2px solid #111820}nav a,.user-nav a,.open-link{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 11px;color:#c9d1d9;text-decoration:none;font-size:13px;background:#151b22}.user-nav a{border-radius:999px}nav a:hover,.user-nav a:hover,.open-link:hover{border-color:#58a6ff;color:#fff}nav a.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}.theme-select{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 10px;color:#e6edf3;background:#151b22;font-size:13px}main.wrap{flex:1;width:100%;min-width:0;overflow:auto;padding:26px 24px 42px;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.columns{display:flex;gap:18px;align-items:flex-start;width:max-content;min-width:100%;padding:2px 0 28px}.user-column{flex:0 0 390px;width:390px;min-width:390px;scroll-margin-top:18px}.column-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid #34414c;border-radius:8px;background:linear-gradient(180deg,#17202b,#121922);padding:14px;margin-bottom:10px}.column-head h2{margin:0;color:#79c0ff;font-size:20px;line-height:1.25;text-shadow:0 0 12px rgba(88,166,255,.18)}.column-head p{margin:4px 0 0;color:#9fb3c8;font-size:13px}.column-feed,.feed{display:flex;flex-direction:column;gap:14px}.single-page main.wrap{width:100%;max-width:960px;margin:0 auto}.post-card{border:1px solid #2d3845;border-radius:8px;background:#141b24;padding:16px}.post-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.author{color:#79c0ff;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.22);border-radius:5px;padding:1px 6px;font-weight:700;font-size:15px}time{color:#9fb3c8;font-size:13px}h2{margin:0 0 8px;font-size:17px;line-height:1.35}.post-text{margin:0;white-space:normal;overflow-wrap:anywhere;color:#f0f6fc}.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.badge{display:inline-flex;align-items:center;border-radius:999px;border:1px solid #3a4653;padding:2px 8px;font-size:12px;font-weight:700}.badge.article{color:#f2cc60;background:#2a220f;border-color:#6b5518}.badge.reply{color:#79c0ff;background:#0d2235;border-color:#1f5a83}.badge.image{color:#3fb950;background:#10271a;border-color:#1f6f3a}.quote-block{margin-top:12px;padding:10px 12px;border:1px solid #3a4653;border-left:3px solid #58a6ff;border-radius:6px;background:#101720;color:#c9d1d9}.quote-block p{margin:4px 0 0;font-size:13px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}.quote-label{font-size:12px;color:#79c0ff;font-weight:700}.quote-block.muted{border-left-color:#8b949e;color:#9fb3c8}.notice{display:block;margin-top:10px;border:1px solid #3a4653;border-radius:6px;padding:8px 10px;text-decoration:none;font-size:13px}.article-notice{color:#f2cc60;background:#201a0d}.image-notice{color:#3fb950;background:#0d2116}.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.image-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid #34414c;border-radius:6px;background:#0d1117}.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;color:#9fb3c8;font-size:12px}.metrics span{border:1px solid #2d3845;border-radius:999px;padding:3px 8px;background:#101720}.open-link-inline{margin-left:auto;color:#58a6ff;text-decoration:none;font-size:12px}[data-theme="light"] body{background:#eef2f6;color:#24292f}[data-theme="light"] header{background:#f8fafc;border-bottom-color:#cfd7df;backdrop-filter:none}[data-theme="light"] .brand h1,[data-theme="light"] .post-text{color:#24292f}[data-theme="light"] .brand p,[data-theme="light"] time,[data-theme="light"] .metrics{color:#667085}[data-theme="light"] nav a,[data-theme="light"] .user-nav a,[data-theme="light"] .open-link,[data-theme="light"] .theme-select{background:#fff;border-color:#cfd7df;color:#24292f}[data-theme="light"] nav a.active{background:#e6f4ea;border-color:#2da44e;color:#1a7f37}[data-theme="light"] .column-head{background:#f8fafc;border-color:#d0d7de}[data-theme="light"] .column-head h2{color:#0969da;text-shadow:none}[data-theme="light"] .post-card{background:#fff;border-color:#d0d7de}[data-theme="light"] .author{color:#0969da;background:#ddf4ff;border-color:#b6e3ff}[data-theme="light"] .metrics span,[data-theme="light"] .quote-block{background:#f6f8fa;border-color:#d0d7de;color:#57606a}[data-theme="light"] .article-notice{background:#fff8c5;color:#7d4e00}[data-theme="light"] .image-notice{background:#dafbe1;color:#116329}[data-theme="light"] main.wrap,[data-theme="light"] .nav-row,[data-theme="light"] .user-nav{scrollbar-color:#8aa8c7 #d9e2ec}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column;padding:16px 0}.top-actions{width:100%;justify-content:flex-start}.user-nav{max-width:100%}.user-column{flex-basis:330px;width:330px;min-width:330px}}
-</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>不疾而速H-宁波</h1><p>抓取时间 2026-05-09 06:20:33</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a href="../index.html">首页</a>
+</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>不疾而速H-宁波</h1><p>抓取时间 2026-06-04 13:17:49</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a href="../index.html">首页</a>
     <a href="../news.html">新闻</a>
     <a href="../x_feed.html">X 动态</a>
     <a href="../stock_alerts.html">股价异动</a>
+    <a href="../etf_monitor.html">IGV/SOXX</a>
+    <a href="../japan_alerts.html">日本</a>
+    <a href="../korea_alerts.html">韩国</a>
     <a class="active" href="../xueqiu_user.html">雪球</a>
     <a href="../zsxq.html">知识星球</a>
-    <a href="../wechat.html" target="_blank" rel="noopener">微信公众号</a>
-    <a href="../market_overview.html">市场总览</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-08 21:25:54</time></div>
+    <a href="../wechat.html">微信公众号</a>
+    <a href="../market_overview.html">市场总览</a>
+    <a href="../liquidity_monitor.html">流动性</a>
+    <a href="../server_price.html">芯片服务器</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-06-03 19:10:25</time></div>
       
       
-      <p class="post-text">我刚刚关注了股票$英唐智控(SZ300131)$，当前价 ¥18.02。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 0</span>
-        <span>评论 0</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/387864945" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-08 20:47:01</time></div>
-      
-      
-      <p class="post-text">$CoreWeave(CRWV)$ $IREN LIMITED ORD(IREN)$ <br><br>两个财报昨晚亮相，一个比一个烂，Iren的财报更烂，英伟达的突击入股挽救了他，不然估计要跌15%以上。越发觉得在新云中NBIS和其他的就完全是两种生物。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 10</span>
-        <span>评论 1</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/387860136" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-08 11:23:56</time></div>
-      
-      
-      <p class="post-text">我刚刚关注了股票$盛合晶微(SH688820)$，当前价 ¥126.48。</p>
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
       
       
       
@@ -49,27 +26,13 @@
         <span>赞 0</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/387755252" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/392672720" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-06 11:17:47</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-06-02 10:54:05</time></div>
       
       
-      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 4</span>
-        <span>评论 0</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/387335535" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-01 19:02:02</time></div>
-      
-      
-      <p class="post-text">我刚刚关注了股票$华工科技(SZ000988)$，当前价 ¥119.53。</p>
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
       
       
       
@@ -77,27 +40,55 @@
         <span>赞 0</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386990895" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/392303073" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-30 20:42:13</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-06-01 21:48:06</time></div>
       
       
-      <p class="post-text">$Nebius Group(NBIS)$ <br><br>Roman又接受Daniel Koss的采访了，值得好好看看。Roman的每一次访谈都应该看，他真是NBIS的代言人，好棒。<br><br>UPDATE: Nebius Roman Chernin Interview – Key Takeaways!! <br>  Huge thanks to <br>@DanielKoss<br> &amp; <br>@romanchernin<br> for this latest Nebius deep dive.  My takeaways:  1/ Training + Inference = The Real Play Everyone thought inference would kill training demand. Wrong. Inference is growing faster from a smaller base, but training keeps expanding. Long-term, inference will dwarf training.  Roman: Inference is existential for Nebius. Serving both creates stable utilization and a diversified cloud business (not just a few hyperscale training customers).  2/ Token Factory is a Monster  Nebius’ elite managed inference platform. Customers are outsourcing because Nebius optimizes better than they can themselves.  •  Revolut: Coming back every month with bigger needs. Massive inference customer loading up.  •  One sophisticated customer: Nebius delivered 25% better performance than their own in-house setup. Even after seeing the optimizations, they couldn’t replicate it. Now running their whole business on Token Factory and scaling faster with the same budget.  In today’s capacity crunch, even customers locked in elsewhere are coming to Nebius for a second leg.  Frontier performance + elite optimization + massive scale = winning combo.  The ROI flywheel is real: Token Factory margins → more capex → more capacity.  3/ Agentic Future  Tavily acquisition already paying off — elite team that knows agent tooling like few others.  Nebius is expanding from bare metal → cloud → full agentic layer. They’re building ahead of what customers even know they’ll need (just like they did with search at Yandex).  4/ Bottom line:  Customer base evolving fast — from pure training labs to enterprises, startups, and agent builders. Nebius is stacking the layers to stay relevant and compound as they scale.  Strong execution in a tough capital market.   What a time to be building AI infrastructure, Nebius is building the future right now</p>
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
       
       
       
       <div class="metrics">
-        <span>赞 10</span>
-        <span>评论 4</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386900832" target="_blank" rel="noopener">原文 ↗</a>
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/392211692" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-30 19:50:24</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-06-01 15:05:25</time></div>
       
       
-      <p class="post-text">我刚刚关注了股票$蓝特光学(SH688127)$，当前价 ¥76.80。</p>
+      <p class="post-text">$英伟达(NVDA)$ <br><br>1. agentic AI 到來，token 轉收入，AI factory 需求升溫。<br>2. Vera Rubin full production。<br>3. AI 延伸至 PC、自駕車與機器人。<br><br>※ 論壇內容：<br>1. NVIDIA 生態系已由過去偏向軟體堆疊與開發者社群，擴大至上游供應鏈、資料中心、AI factory 與終端使用者。台灣位於 NVIDIA 生態系的上游起點，涵蓋晶片製造、先進封裝、系統組裝、機架、散熱、電力與資料中心基礎設施等關鍵環節。本次 keynote 的主軸不只是產品發表，而是呈現 AI 時代下 NVIDIA full-stack 生態系與台灣供應鏈的深度綁定。<br><br>2. AI 已由 generative AI 進入 agentic AI 階段，useful AI 已經到來。過去 AI 多數用途是生成文字、圖片或回答問題，但 agentic AI 能理解任務、觀察環境、推理、制定計畫、使用工具並完成工作，代表 AI 的價值不再只停留在模型能力展示，而是開始轉化為實際生產力。<br><br>3. 軟體開發是 agentic AI 最早落地的應用之一。GitHub commits 從 2023 年約 3 億次、2024 年約 4 億次、2025 年約 5 億次，到 2026 年前幾個月幾乎增加至接近三倍，顯示 AI coding agent 已開始顯著提升軟體開發產出。若 AI 能讓軟體工程師產出提高，企業反而更有誘因聘用更多工程師，而不是單純減少人力。<br><br>4. 從經濟角度來看，AI 的重點在於放大人力產出。若全球約 3,000 萬名軟體工程師對應約 3 兆美元薪資產出，透過 AI 將生產力提高至接近三倍，等同於由 3 兆美元薪資創造約 9 兆美元生產力。從產業角度來看，當 AI agent 能協助企業完成實際工作，token 便成為可變現的收入單位，AI 公司因此需要產生更多 token、建置更多 AI factories，並推升 compute 需求。<br><br>5. Compute pattern 已經改變。過去使用者開啟應用程式、點擊、輸入，由應用程式完成特定任務；未來則是使用者向 AI 描述 intent，由 agent 產生程式碼、調用工具或直接完成輸出。這代表過去以應用程式為中心的運算模式，將逐步轉向以使用者意圖與 agent 為中心的運算模式。<br><br>6. agent 由 model、harness、tools、skills 與 runtime 組成。model 負責思考與推理，harness 負責協調流程與記憶體管理，tools 負責執行特定任務，skills 類似讓 agent 理解工具使用方式的操作手冊，runtime 則承載整個執行環境。這種架構不同於傳統應用程式，也不同於單純的大型語言模型。<br><br>7. tool use 是 agentic AI 的重大突破。agent 可調用試算表、網頁瀏覽器、資料處理引擎、資料庫引擎、C compiler、Python、JavaScript 或加速運算函式庫等工具。這代表軟體公司不一定會被 agent 取代，反而可能因 agent 數量遠高於人類使用者，使軟體工具被更多 agent 調用，使用量進一步擴大。<br><br>8. NVIDIA 將 CUDA-X libraries 定位為 agent 可使用的工具層。CUDA-X libraries 涵蓋 CULitho、CUOpt、CUDSS、AIQ、Arial、Warp、Parabricks 等，用於計算光刻、決策最佳化、稀疏矩陣求解、深度研究、AI-RAN、可微分物理與基因體學等領域。未來若 agent 能更有效使用這些 libraries，NVIDIA 軟體生態系價值將進一步擴大。<br><br>9. agentic computing 是解耦、分散且異質的運算模型。每一次 agent 處理上下文、觀察環境、推理、制定計畫、調用工具與採取行動，都會啟動不同運算資源，包含 GPU、CPU、DPU、儲存與網路。資料中心不再只是堆疊 GPU，而是需要從晶片、機架、網路、記憶體、儲存、安全與電力散熱進行系統級設計。<br><br>10. 記憶系統是 agentic AI 的核心瓶頸之一。agent 需要管理 working memory、long-term memory、KV cache、資料整理與壓縮、結構化與非結構化資料檢索，以及資料之間的關聯。AI memory system 將重新定義儲存系統，未來儲存設備不只是保存資料，而是 agent 能否快速理解、檢索與使用知識的關鍵基礎設施。<br><br>11. Vera Rubin 是為 agentic AI 打造的下一代 AI infrastructure system，不是單一 GPU 或單一晶片。系統包含 Vera Rubin GPU、Vera Rubin NVL72、Vera CPU、ConnectX-9、BlueField、DOCA 軟體堆疊、安全處理器與儲存系統，並支援機密運算，讓模型與資料在靜止、傳輸與使用中都能加密保護。<br><br>12. NVIDIA 已由 GPU 公司演進為系統公司，並進一步轉型為 AI infrastructure company。客戶要建置的是 AI factory，而非單純採購 GPU。AI factory 涉及晶片、機架、網路、電力、散熱與電網，每一層都需要端到端設計，因為 compute 已經直接對應收入與利潤。<br><br>13. NVIDIA DSX 是 AI factory 的 blueprint 與 reference design。DSXSim 可在實體機架進場前，透過 Omniverse 與 digital twin 先行設計、模擬與驗證 AI factory，包括機房配置、電力、散熱、網路與系統整合；DSXOS 則在 AI factory 啟動後負責配置、營運、監控與修復，將硬體轉化為可營運的 AI-ready capacity。<br><br>14. AI factory 的電力與散熱效率直接影響收入。現有 AI factory 可能因穩定性考量而 over-provision power up to 40%，DSXMax LPS 可在相同電力預算內部署更多 GPU；45°C hot liquid cooling 可降低用水與能源消耗，讓更多電力用於 revenue-generating compute。動態電力分配、機架內電力平滑與 AI agents 協同調度，將成為 AI factory 營運效率的核心。<br><br>15. AI factory 將成為可與電網協作的 flexible energy asset。DSXFlex 可讀取即時電網訊號，在電網需要支援時動態調整 AI factory 用電。2030 年前預計將有 100GW AI factories 上線，代表 AI 基礎設施不只是資料中心投資，也會進一步牽動電力、能源管理、散熱與電網韌性需求。<br><br>16. GW 級 AI factory 的資本投入快速升高。早期每 GW 約 200 至 300 億美元，現在約 500 至 600 億美元，未來可能達每 GW 800 至 1,000 億美元。由於資本成本與系統複雜度極高，AI factory 必須一次建置成功；time to first token、time to first inference、time to training start、tokens per watt、可靠性與系統使用壽命，都會直接影響投資報酬率。<br><br>17. 「算力等於收入」是本次 keynote 的核心概念。當 token 具備商業價值，資料中心每瓦吞吐量就直接轉換成收入。若資料中心只有 1GW 電力，每瓦可生成多少 token 便決定營收能力，因此不能只比較晶片採購價格，而要比較整體架構能否在相同電力下創造更高 revenue per watt。<br><br>18. Vera Rubin 已進入 full production，且 fully operational，供應鏈規模為 Grace Blackwell 的兩倍。過去組裝一個 Grace Blackwell rack 需要約兩小時，Vera Rubin 透過新的模組化設計與 PCB midplane，組裝時間縮短至約五分鐘，代表新系統不只提高運算效能，也改善製造效率、可靠性與可維修性。<br><br>19. Vera Rubin 是第一個為 agentic age 打造的 multi-rack pod-scale supercomputer。系統由七顆新晶片組成，採用台積電(2330) 3nm 製程、CoWoS-R 與 CoWoS-L 封裝，搭配 Micron、SK Hynix、Samsung 的 HBM4。Vera Rubin compute board 擁有約 6 兆顆電晶體與超過 18,000 個元件，負責思考、理解 prompt 與上下文、推理及規劃。<br><br>20. Vera Rubin 系統包含 18 個 compute trays、9 個可熱插拔的 NVLink switch trays、高效率 manifolds 與液冷 busbars，單一第三代 MGX rack design 合計約 130 萬個元件。Microsoft(MSFT US) 已有 operational Vera Rubin NVL72 engineering rack，Dell(DELL US) 與 CoreWeave(CRWV US) 也已建立 Vera Rubin NVL72 engineering racks，顯示新平台已進入客戶工程驗證階段。<br><br>21. Vera Rubin 由五個 connected rack-scale systems 組成，包含 AI agents supercomputer、Vera CPU rack、Vera BlueField 儲存處理與安全系統、Mellanox 網路系統與 CPO Ethernet switch 等。整體系統結合台灣約 150 家供應鏈夥伴、數百萬平方英尺工廠面積、數百個生產與資料中心據點，並將晶片、封裝、系統與資料中心推向規模、功耗與複雜度極限。<br><br>22. Vera CPU 是針對 agent 設計的新 CPU。過去 CPU 以人類使用者與雲端租賃經濟為核心，時間尺度以秒計算；但 agent 使用工具、查詢資料庫與協調任務時，等待時間以奈秒計算，因此需要極低延遲與高互動性。Vera CPU 在 Vera Rubin rack 中負責協調 GPU、管理 KV cache 與軟體，並支援 AI 模型協調、工具使用與資料庫存取。<br><br>23. CPU 在 agentic AI 中的角色由傳統運算核心轉為 conductor，GPU 則是 orchestra。若 CPU 延遲過高，會直接拖累 GPU 使用率，進而影響 token 吞吐量、延遲與使用者體驗。Vera CPU 強調單執行緒效能、每核心頻寬、整體頻寬與能源效率，目標是在不占用過多電力的情況下，支援大量 agent 對工具與資料的快速調用。<br><br>24. Vera CPU 採用 NVIDIA Olympus core，強調高每時脈週期可執行指令數、頻寬與低記憶體延遲。Vera 是 NVIDIA 為 agentic loop 設計的 CPU，適用大量 Python runtime 分支、工具調用、沙盒化程式碼執行、資料檢索、分析與資料庫存取等工作負載。這代表 CPU 將成為 AI factory 中新的 growth driver，而不是單純附屬於 GPU 的配角。<br><br>25. 網路與儲存同樣是 agentic AI 的重要環節。Vera BlueField for STX 負責 AI memory 與儲存處理，BlueField 4 連接記憶體、儲存與晶片內安全機制。Spectrum-X Ethernet Photonics switch 則強調 co-packaged optics，顯示 CPO、光通訊、高速網路與先進封裝在 AI factory 架構中的重要性持續提升。<br><br>26. NVIDIA enterprise AI toolkit 目標是讓企業與企業軟體公司建立自己的 agents。企業需要四個核心組成：模型、harness、工具/skills 與 runtime。NVIDIA 提供 Nemotron open models、OpenShell runtime、安全與權限管理、CUDA-X tools，以及可部署在雲端、地端或裝置端的 agentic runtime，讓企業能建立專屬 agents。<br><br>27. Cadence 與 NVIDIA 合作的 chip design super agent 是 enterprise AI 的重要範例。晶片設計驗證需要處理架構規格、RTL、testbench、regression testing 與 formal verification，過去 verification cycle 可能需要數週。透過 Cadence tools、Codex 或 Claude Code orchestration、NVIDIA runtime 與 expert sub-agents，部分 verification workflow 可由數週壓縮至數小時，顯示 agentic AI 在高價值工程流程中的應用潛力。<br><br>28. Nemotron 3 Ultra 是 NVIDIA 推動 enterprise AI agents 的 open model，定位於長時間推理、工具使用、coding、研究與企業工作流程。NVIDIA 強調 open model 不只開放模型本身，也開放訓練資料與訓練方法，讓企業可在其基礎上加入自身資料與專有知識，建立專屬 agents。Nemotron 3 Ultra 採用 hybrid architecture，結合 state space models 與 mixture-of-experts，目標是在相同成本下讓模型思考更快、推理更久，並作為 NVIDIA agentic toolkit 的模型基礎。<br><br>29. RTX Spark 是 NVIDIA 與 Microsoft 重新定義 PC 的核心產品。NVIDIA 將 PC 由傳統以應用程式為中心的裝置，轉向可執行 local agent 的 personal AI computer；agent 可在本地模型或雲端模型之間運作，並以 sandbox 方式保持安全。RTX Spark 採 Blackwell RTX GPU，具備 6,144 CUDA cores、1 petaflop AI performance，並與聯發科(2454) 合作客製 20-core Grace CPU；GPU 與 CPU 透過 NVLink連接，具備 128GB unified memory、台積電(2330) 3nm 製程與 700 億顆電晶體，並與 Microsoft 合作打造 Windows platform for agents。<br><br>30. RTX Spark 的核心意義在於讓 PC 可以執行 local agents。agent 可在 RTX Spark laptop 上調用本機工具，並連接雲端模型或本地 Nemotron 3 Ultra、Nemotron 3 Super 等模型。示範案例中，agent 可透過 OpenShell sandbox、Hermes harness 與 Claude Sonnet 協作，使用 Rhino、Blender 與 generative AI tools 協助完成住宅設計流程，將過去複雜工作流程轉為由 agent 引導與簡化。<br><br>31. Adobe 也將 Photoshop 與 Premiere 的核心架構重新設計，並針對 RTX Spark 發布，速度將提升至約兩倍，同時透過 MCP server 讓軟體更適合與 agent 互動，可與 laptop 上的 agents 協作。Microsoft 與 NVIDIA 不只重新定義 laptop，而是宣布涵蓋 desktop、laptop 與 workstation 的全新 Windows machines 產品線，具備 100% Windows compatible、100% CUDA-enabled 與 NVIDIA AI Tensor Cores。NVIDIA 將這視為 PC 40 年來第一次完整重新設計，未來 personal AI computer 可能像 home theater、game console 一樣，成為家中長時間運行的 AI agent computer。<br><br>32. RTX Spark 對台灣供應鏈意義在於，AI PC 不再只看 NPU TOPS，而是走向 local agent、CUDA-enabled AI computing、unified memory、Windows agent platform 與 GPU/CPU 異質整合。若後續生態系成熟，受惠範圍可能由晶圓代工、SoC design 延伸至 NB/desktop/workstation ODM、散熱、電源、記憶體與高速連接。<br><br>33. physical AI 是 agentic AI 往實體世界延伸的下一階段。語言模型可使用網路文字訓練，但機器人與自駕車需要從機器人視角理解物理世界，而現有 video data 多為第三人稱視角，缺乏機器人第一人稱操作資料。因此 physical AI 最大瓶頸是 data，NVIDIA 透過 teleoperation、simulation、reinforcement learning、synthetic data 與 world foundation model 建立資料飛輪。<br><br>34. Cosmos 3 是 NVIDIA 推動 physical AI 的 foundation model。Cosmos 3 可理解、推理、生成與模擬，並可作為策略訓練與評估的基礎。對 physical AI 而言，真實世界資料難以規模化，因此 compute is data；透過 Cosmos 3 生成符合物理邏輯的 synthetic video 與 simulation data，可協助機器人、自駕車與工業設備訓練模型。<br><br>35. Cosmos 3 是 NVIDIA 推動 physical AI 的開放式前沿全模態模型，採用新的混合式 Transformer 架構，可將影像、動作、聲音與語言等資料輸入自回歸 Transformer，由模型進行推理與規劃，再透過擴散式 Transformer 生成後續畫面或下一步狀態。Cosmos 可作為視覺語言模型、world model、模擬器與依動作條件生成的 world model，支援從影像、文字或影片生成符合物理邏輯的合成影片。<br><br>36. Alpamayo 是 NVIDIA 用於自駕車的 reasoning model，讓自駕車不只是感知環境，而是能以推理方式理解道路狀況、車道變化、行人、障礙物與交通標誌。自駕車本質上也是 physical AI agent，需要模型、模擬器、runtime 與車用平台整合，並與 DRIVE Hyperion 生態系連結。<br><br>37. NVIDIA 表示，已簽入 DRIVE Hyperion 的汽車品牌約代表全球 80% 汽車製造商，並與約 97% 全球 mobility services 連結。Alpamayo 可在 Hyperion runtime 與車用作業系統上部署，並與 mobility services 連接，顯示 NVIDIA 在自駕車領域不只提供晶片，而是建立從模型、runtime、車用平台到服務生態的完整架構。<br><br>38. Isaac GR00T 是 NVIDIA 的 humanoid robot platform，整合模型、資料生成、模擬、runtime 與 robot computer。NVIDIA 推出 Isaac GR00T reference humanoid robot，目標是降低高等教育與大學研究機構開發人形機器人的門檻，讓研究者不必從模擬器、teleoperation、資料管線與訓練基礎設施重新開始。<br><br>39. Isaac GR00T reference humanoid robot 具備雙手各 25 個自由度、機器人本體 31 個自由度，並搭載 Jetson Thor 與完整軟體堆疊。開發流程可透過 Isaac Lab 建立模擬環境、用 Isaac Teleop 捕捉示範、透過 Omniverse 與 Cosmos 生成 synthetic data，再於 Isaac Lab 訓練與評估策略，最後透過 Isaac ROS 部署至 Jetson Thor。<br><br>40. 從雲端、企業端、PC、自駕車到機器人，NVIDIA 的策略是複製同一套 agentic computing pattern。模型負責推理，harness 負責協調，工具/skills 負責執行，runtime 則依部署環境不同而改變。這代表 NVIDIA 不只提供硬體，而是試圖將 agentic AI computing architecture 橫向覆蓋資料中心、企業端、個人電腦與實體世界。<br><br>41. 對台灣供應鏈而言，本次 keynote 強化三個中長期方向：第一，AI factory 將推升先進製程、CoWoS、HBM、CPO、網路、電力與散熱需求；第二，RTX Spark 將 AI PC 由規格競賽推向 local agent 與 CUDA 生態整合；第三，Cosmos、Alpamayo 與 Isaac GR00T 將 physical AI 納入 NVIDIA 生態系，帶動機器人、自駕車與 edge AI 的長期硬體需求。<br><br>42. 後續觀察重點包括 Vera Rubin full production 後供應鏈 ramp-up 速度、CoWoS-R/CoWoS-L 與 HBM4 供給、CPO 與 Spectrum-X 導入進度、AI factory 電力與散熱瓶頸、Vera CPU 是否發展為新 growth driver、RTX Spark 實際產品上市節奏、Windows agent platform 生態成熟度，以及 physical AI 是否帶動機器人、自駕車與 edge AI 平台化需求。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 7</span>
+        <span>评论 3</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/392138099" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-30 21:52:53</time></div>
+      <div class="badges"><span class="badge image">含 1 图</span></div>
+      
+      <p class="post-text">$Nebius Group(NBIS)$ Top choice。</p>
+      
+      <div class="image-grid"><a href="https://xqimg.imedao.com/19e7928593e59f133fd79dc0.png!thumb.jpg" target="_blank" rel="noopener"><img src="https://xqimg.imedao.com/19e7928593e59f133fd79dc0.png!thumb.jpg" loading="lazy"></a></div>
+      
+      <div class="metrics">
+        <span>赞 21</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/391942564" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-29 10:11:32</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
       
       
       
@@ -105,55 +96,111 @@
         <span>赞 1</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386892285" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/391674145" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-30 19:44:19</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-29 10:10:35</time></div>
       
       
-      <p class="post-text">$五粮液(SZ000858)$ <br> 大A股民说我们可以不看财报乱炒，不代表你就可以当我们是傻子，这公司也太没有底线了。</p>
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
       
       
       
       <div class="metrics">
-        <span>赞 14</span>
+        <span>赞 0</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386891255" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/391673589" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-28 20:38:55</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-28 17:58:38</time></div>
       
       
-      <p class="post-text">$胜宏科技(SZ300476)$ <br>胜宏一季报感觉还可以，同比环比都还行，之前预期就是13亿+，现在出来个12.88，看来陈总还是个喜欢吉祥数字的人。收入55.2亿，明显还是没有放量，毛利率34.5%，净利率23.3%基本上还是令人满意的。三费率加起来8.32%同比略有增长，主要是财务费用因为负债的增长和汇兑损益（6800万，比起光模块几个公司还是控制的非常可以）。固定资产104.7比去年底又增加了12亿多，在建工程52亿，比去年底又增加了16亿，这些都会转化为新增的产能，二季度正常的话应该能释放80-90的收入和20亿以上的利润。<br>接下来的胜宏财报会一个季度比一个季度更好，耐心持有并等待。</p>
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$。</p>
       
       
       
       <div class="metrics">
-        <span>赞 32</span>
+        <span>赞 3</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/391548166" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-27 10:06:05</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $不疾而速H(ZH2385182)$  的仓位。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/391153130" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-27 10:04:40</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/391152432" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-26 10:51:38</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 1</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390937823" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-25 12:14:59</time></div>
+      
+      
+      <p class="post-text">我刚刚关注了股票$云赛智联(SH600602)$，当前价 ¥20.62。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
+        <span>评论 0</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390746056" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-25 10:26:12</time></div>
+      
+      
+      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 0</span>
         <span>评论 3</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386354409" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390714540" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-28 20:07:48</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-24 17:20:09</time></div>
       
       
-      <p class="post-text">$巨化股份(SH600160)$ <br>1季报如期而出，收入60亿同比略增，净利润11.7亿同比大增，毛利率和净利率都创了自配额制实行以来的新高。制冷剂销售7.06吨，同比去年Q1微微增长，相比三美却是好多了。这份财报对得起制冷剂龙头，制冷剂销售均价已经到了4.45万/吨（不含税），相比同期主力品种6万以上的含税销售价格还是有一定的滞后。去年二季度的销售数量是8.48吨，均价我估计会接近5万不到，而净利润也将会创纪录的达到单季19-20亿。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 33</span>
-        <span>评论 7</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386346195" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-28 10:26:52</time></div>
-      
-      
-      <p class="post-text">我刚刚关注了股票$伟测科技(SH688372)$，当前价 ¥150.22。</p>
+      <p class="post-text">我刚刚关注了股票$东方国信(SZ300166)$，当前价 ¥19.17。</p>
       
       
       
@@ -161,13 +208,13 @@
         <span>赞 0</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386194078" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390643400" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-28 10:04:20</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-24 10:48:37</time></div>
       
       
-      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
+      <p class="post-text">我刚刚关注了股票$海兰信(SZ300065)$，当前价 ¥24.71。</p>
       
       
       
@@ -175,55 +222,27 @@
         <span>赞 0</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386184740" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390617573" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-27 21:05:06</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-24 10:47:56</time></div>
       
       
-      <p class="post-text">$Poet Technologies(POET)$ <br>这是来自美利加的杀猪盘啊。</p>
+      <p class="post-text">我刚刚关注了股票$弘信电子(SZ300657)$，当前价 ¥50.25。</p>
       
       
       
       <div class="metrics">
-        <span>赞 8</span>
-        <span>评论 6</span>
+        <span>赞 1</span>
+        <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386095825" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390617513" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-27 19:53:16</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-24 10:47:20</time></div>
       
       
-      <p class="post-text">$东山精密(SZ002384)$ <br><br>东山的一季报不错，基本落在了预告的上限，仔细看相比去年还计提了1亿多一点的资产减值，多了1亿的汇兑损失，如果没有这两样利润将会更加出色。收入和利润的增长源自增加了索尔思光电和GMD集团纳入合并范围， 尤其是索尔斯的光模块业务收入比去年翻倍，去年一季度索尔斯收入9.7亿，利润1.6亿，今年Q1收入大约20亿，利润在5亿左右。从Q2开始收入和利润将环比大幅度增长，开启超级成长期。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 43</span>
-        <span>评论 1</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386074518" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-27 17:43:26</time></div>
-      
-      
-      <p class="post-text">$三美股份(SH603379)$ <br>1季度制冷剂同比去年少卖了2000吨，利润增长了1亿，如果加上这2000吨的话，应该是有6亿的。继续维持今年30亿利润的预期，这个估值还是稳稳的幸福。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 34</span>
-        <span>评论 5</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386041705" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-27 17:17:45</time></div>
-      
-      
-      <p class="post-text">我刚刚关注了股票$曦智科技-P(01879)$，当前价 HK$--。</p>
+      <p class="post-text">我刚刚关注了股票$润建股份(SZ002929)$，当前价 ¥84.33。</p>
       
       
       
@@ -231,13 +250,13 @@
         <span>赞 0</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386035383" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390617464" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-27 17:13:59</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-24 10:31:15</time></div>
       
       
-      <p class="post-text">我刚刚关注了股票$禾赛(HSAI)$，当前价 $22.34。</p>
+      <p class="post-text">我刚刚关注了股票$旺能环境(SZ002034)$，当前价 ¥21.18。</p>
       
       
       
@@ -245,34 +264,20 @@
         <span>赞 0</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/386034484" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390616298" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-27 11:58:00</time></div>
+      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-05-24 10:30:16</time></div>
       
       
-      <p class="post-text">我刚刚调整了雪球组合 $A股AI星辰大海(ZH3397313)$  的仓位。</p>
+      <p class="post-text">我刚刚关注了股票$利通电子(SH603629)$，当前价 ¥195.65。</p>
       
       
       
       <div class="metrics">
-        <span>赞 0</span>
+        <span>赞 1</span>
         <span>评论 0</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385966264" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">不疾而速H-宁波</span><time>2026-04-26 20:42:09</time></div>
-      
-      
-      <p class="post-text">我刚刚关注了股票$Arm Holdings(ARM)$，当前价 $234.81。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 0</span>
-        <span>评论 0</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/3577914518/385884252" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/3577914518/390616214" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></section></main><script>const savedTheme=localStorage.getItem('dashboardTheme')||'dark';document.documentElement.dataset.theme=savedTheme;const themeSelect=document.getElementById('themeSelect');themeSelect.value=savedTheme;themeSelect.addEventListener('change',()=>{document.documentElement.dataset.theme=themeSelect.value;localStorage.setItem('dashboardTheme',themeSelect.value)});</script></body></html>

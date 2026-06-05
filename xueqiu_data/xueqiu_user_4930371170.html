@@ -2,14 +2,173 @@
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>大草驴 · 雪球发言看板</title>
 <style>
 *,*::before,*::after{box-sizing:border-box}html,body{margin:0;min-width:100%;height:100%;overflow:hidden;background:#0f1419;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif;line-height:1.6}body{display:flex;flex-direction:column}a{color:inherit}header{flex-shrink:0;background:rgba(15,20,25,.96);border-bottom:1px solid #27313a;backdrop-filter:blur(10px)}.wrap{max-width:none;margin:0;padding:0 24px}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{flex:0 0 auto}.brand h1{margin:0;font-size:22px;line-height:1.2;color:#e6edf3}.brand p{margin:6px 0 0;color:#9fb3c8;font-size:13px}.top-actions{min-width:0;display:flex;align-items:center;gap:12px;justify-content:flex-end;flex:1}.nav-row,.user-nav{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.nav-row{padding:0 24px 10px}.user-nav{min-width:0;max-width:min(980px,calc(100vw - 420px));padding:2px 0}.nav-row::-webkit-scrollbar,.user-nav::-webkit-scrollbar,main.wrap::-webkit-scrollbar{width:14px;height:12px}.nav-row::-webkit-scrollbar-track,.user-nav::-webkit-scrollbar-track,main.wrap::-webkit-scrollbar-track{background:#111820;border-radius:999px}.nav-row::-webkit-scrollbar-thumb,.user-nav::-webkit-scrollbar-thumb,main.wrap::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:999px;border:2px solid #111820}nav a,.user-nav a,.open-link{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 11px;color:#c9d1d9;text-decoration:none;font-size:13px;background:#151b22}.user-nav a{border-radius:999px}nav a:hover,.user-nav a:hover,.open-link:hover{border-color:#58a6ff;color:#fff}nav a.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}.theme-select{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 10px;color:#e6edf3;background:#151b22;font-size:13px}main.wrap{flex:1;width:100%;min-width:0;overflow:auto;padding:26px 24px 42px;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.columns{display:flex;gap:18px;align-items:flex-start;width:max-content;min-width:100%;padding:2px 0 28px}.user-column{flex:0 0 390px;width:390px;min-width:390px;scroll-margin-top:18px}.column-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid #34414c;border-radius:8px;background:linear-gradient(180deg,#17202b,#121922);padding:14px;margin-bottom:10px}.column-head h2{margin:0;color:#79c0ff;font-size:20px;line-height:1.25;text-shadow:0 0 12px rgba(88,166,255,.18)}.column-head p{margin:4px 0 0;color:#9fb3c8;font-size:13px}.column-feed,.feed{display:flex;flex-direction:column;gap:14px}.single-page main.wrap{width:100%;max-width:960px;margin:0 auto}.post-card{border:1px solid #2d3845;border-radius:8px;background:#141b24;padding:16px}.post-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.author{color:#79c0ff;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.22);border-radius:5px;padding:1px 6px;font-weight:700;font-size:15px}time{color:#9fb3c8;font-size:13px}h2{margin:0 0 8px;font-size:17px;line-height:1.35}.post-text{margin:0;white-space:normal;overflow-wrap:anywhere;color:#f0f6fc}.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.badge{display:inline-flex;align-items:center;border-radius:999px;border:1px solid #3a4653;padding:2px 8px;font-size:12px;font-weight:700}.badge.article{color:#f2cc60;background:#2a220f;border-color:#6b5518}.badge.reply{color:#79c0ff;background:#0d2235;border-color:#1f5a83}.badge.image{color:#3fb950;background:#10271a;border-color:#1f6f3a}.quote-block{margin-top:12px;padding:10px 12px;border:1px solid #3a4653;border-left:3px solid #58a6ff;border-radius:6px;background:#101720;color:#c9d1d9}.quote-block p{margin:4px 0 0;font-size:13px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}.quote-label{font-size:12px;color:#79c0ff;font-weight:700}.quote-block.muted{border-left-color:#8b949e;color:#9fb3c8}.notice{display:block;margin-top:10px;border:1px solid #3a4653;border-radius:6px;padding:8px 10px;text-decoration:none;font-size:13px}.article-notice{color:#f2cc60;background:#201a0d}.image-notice{color:#3fb950;background:#0d2116}.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.image-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid #34414c;border-radius:6px;background:#0d1117}.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;color:#9fb3c8;font-size:12px}.metrics span{border:1px solid #2d3845;border-radius:999px;padding:3px 8px;background:#101720}.open-link-inline{margin-left:auto;color:#58a6ff;text-decoration:none;font-size:12px}[data-theme="light"] body{background:#eef2f6;color:#24292f}[data-theme="light"] header{background:#f8fafc;border-bottom-color:#cfd7df;backdrop-filter:none}[data-theme="light"] .brand h1,[data-theme="light"] .post-text{color:#24292f}[data-theme="light"] .brand p,[data-theme="light"] time,[data-theme="light"] .metrics{color:#667085}[data-theme="light"] nav a,[data-theme="light"] .user-nav a,[data-theme="light"] .open-link,[data-theme="light"] .theme-select{background:#fff;border-color:#cfd7df;color:#24292f}[data-theme="light"] nav a.active{background:#e6f4ea;border-color:#2da44e;color:#1a7f37}[data-theme="light"] .column-head{background:#f8fafc;border-color:#d0d7de}[data-theme="light"] .column-head h2{color:#0969da;text-shadow:none}[data-theme="light"] .post-card{background:#fff;border-color:#d0d7de}[data-theme="light"] .author{color:#0969da;background:#ddf4ff;border-color:#b6e3ff}[data-theme="light"] .metrics span,[data-theme="light"] .quote-block{background:#f6f8fa;border-color:#d0d7de;color:#57606a}[data-theme="light"] .article-notice{background:#fff8c5;color:#7d4e00}[data-theme="light"] .image-notice{background:#dafbe1;color:#116329}[data-theme="light"] main.wrap,[data-theme="light"] .nav-row,[data-theme="light"] .user-nav{scrollbar-color:#8aa8c7 #d9e2ec}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column;padding:16px 0}.top-actions{width:100%;justify-content:flex-start}.user-nav{max-width:100%}.user-column{flex-basis:330px;width:330px;min-width:330px}}
-</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>大草驴</h1><p>抓取时间 2026-05-09 06:22:26</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a href="../index.html">首页</a>
+</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>大草驴</h1><p>抓取时间 2026-06-04 14:03:49</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a href="../index.html">首页</a>
     <a href="../news.html">新闻</a>
     <a href="../x_feed.html">X 动态</a>
     <a href="../stock_alerts.html">股价异动</a>
+    <a href="../etf_monitor.html">IGV/SOXX</a>
+    <a href="../japan_alerts.html">日本</a>
+    <a href="../korea_alerts.html">韩国</a>
     <a class="active" href="../xueqiu_user.html">雪球</a>
     <a href="../zsxq.html">知识星球</a>
-    <a href="../wechat.html" target="_blank" rel="noopener">微信公众号</a>
-    <a href="../market_overview.html">市场总览</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
+    <a href="../wechat.html">微信公众号</a>
+    <a href="../market_overview.html">市场总览</a>
+    <a href="../liquidity_monitor.html">流动性</a>
+    <a href="../server_price.html">芯片服务器</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-06-03 14:11:57</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@溪南老曾: 创新药和黄金，需要等美联储再次开启降息，短期没戏。//@溪南老曾:回复@大草驴:哥你说说创新药</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: $腾讯控股(00700)$ 腾讯大概率见底了</p></div>
+      <div class="metrics">
+        <span>赞 105</span>
+        <span>评论 5</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/392601564" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-06-03 13:46:29</time></div>
+      
+      
+      <p class="post-text">$腾讯控股(00700)$ 腾讯大概率见底了</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 128</span>
+        <span>评论 32</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/392592923" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-19 09:44:10</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@股往金来_xy: 按照索罗斯老师波普尔的科学哲学，证真比证伪难的多。股市中，正确的方法只能无限逼近，需要反复试错。//@股往金来_xy:回复@大草驴:也就是普通投资者很难掌握什么是正确的方法，什么是错误的方法。他表达的意思应该是侥幸一次用错误的方法赚过钱便会复制这种方法，造成后面用3倍的钱去纠正这个错误。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@股往金来_xy: 刚看到一位老师视频里说的这几句话，非常认同：你用正确的方法能赚钱，用错误的方法也能赚钱，但是这个错误的方法一旦被你复制，那么你一定会用错误的方法赚的3倍以上的钱来纠正你这个错误，所以说错误的时候不要去伸手。</p></div>
+      <div class="metrics">
+        <span>赞 62</span>
+        <span>评论 2</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/389605328" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-19 09:30:41</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@张宇6672: 财主大智慧//@张宇6672:回复@大草驴:想起了财主的这句话：最容易虧錢的方法是趁回吐買入，比追高要危險十倍百倍</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 以后再也不买已经翻倍且从顶部往下调整的股票了，华能是这样，腾讯又犯了相同的错误，以后再犯这样的错误，我不是驴我是猪。</p></div>
+      <div class="metrics">
+        <span>赞 95</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/389599258" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-19 09:26:54</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@traveller69: 股市赚钱是个副产品，更重要的是修为//@traveller69:回复@大草驴:你赚这么多，还自我要求这么严格。。。。。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 以后再也不买已经翻倍且从顶部往下调整的股票了，华能是这样，腾讯又犯了相同的错误，以后再犯这样的错误，我不是驴我是猪。</p></div>
+      <div class="metrics">
+        <span>赞 77</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/389598086" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-19 09:25:10</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@笨笨的投资者2: 最近貌似学会了分散，再花两三年稳固一下境界。//@笨笨的投资者2:回复@大草驴:还是应该适当分散一些，这样即使看错了也不至于损失太惨重</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 以后再也不买已经翻倍且从顶部往下调整的股票了，华能是这样，腾讯又犯了相同的错误，以后再犯这样的错误，我不是驴我是猪。</p></div>
+      <div class="metrics">
+        <span>赞 49</span>
+        <span>评论 1</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/389597636" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-19 09:23:37</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@炒股不亏钱2024: 左侧或者上升//@炒股不亏钱2024:回复@大草驴:以后只做上升趋势吗</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 以后再也不买已经翻倍且从顶部往下调整的股票了，华能是这样，腾讯又犯了相同的错误，以后再犯这样的错误，我不是驴我是猪。</p></div>
+      <div class="metrics">
+        <span>赞 53</span>
+        <span>评论 3</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/389597254" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-19 09:21:57</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@George0123: 如果已经涨了很多并且开始调整，又是自己没做过的板块，风险大于机遇。//@George0123:回复@大草驴:这个总结有问题的。下次要遇到了翻倍之后没买，结果又翻了好几倍的，又会拍断腿</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 以后再也不买已经翻倍且从顶部往下调整的股票了，华能是这样，腾讯又犯了相同的错误，以后再犯这样的错误，我不是驴我是猪。</p></div>
+      <div class="metrics">
+        <span>赞 64</span>
+        <span>评论 0</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/389596904" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-19 09:16:04</time></div>
+      
+      
+      <p class="post-text">以后再也不买已经翻倍且从顶部往下调整的股票了，华能是这样，腾讯又犯了相同的错误，以后再犯这样的错误，我不是驴我是猪。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 289</span>
+        <span>评论 103</span>
+        <span>转发 5</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/389595575" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-19 09:08:48</time></div>
+      
+      
+      <p class="post-text">这个命题的基础是正确的和错误的方法。股市里，有做短中长的流派，定义正确的方法和错误的方法，难度极大。这个命题的好处是看起来很简洁，貌似有道理。坏处是把最难的地方隐藏起来了，其实什么都没说。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@股往金来_xy: 刚看到一位老师视频里说的这几句话，非常认同：你用正确的方法能赚钱，用错误的方法也能赚钱，但是这个错误的方法一旦被你复制，那么你一定会用错误的方法赚的3倍以上的钱来纠正你这个错误，所以说错误的时候不要去伸手。</p></div>
+      <div class="metrics">
+        <span>赞 64</span>
+        <span>评论 8</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/389593802" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">大草驴</span><time>2026-05-15 08:54:44</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@东升西降ba: 跌的不想说话了//@东升西降ba:回复@大草驴:驴总，好久没看发言了，依然坚定看好腾讯吗？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 战争预计5月结束，战争带来的底部已经出现，4月应该是加仓的好时机。<br>$腾讯控股(00700)$ $兴业银锡(SZ000426)$ $紫金矿业(02899)$</p></div>
+      <div class="metrics">
+        <span>赞 98</span>
+        <span>评论 10</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4930371170/388987725" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
       <div class="post-head"><span class="author">大草驴</span><time>2026-04-08 20:59:28</time></div>
       
       
@@ -18,8 +177,8 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 战争预计5月结束，战争带来的底部已经出现，4月应该是加仓的好时机。<br>$腾讯控股(00700)$ $兴业银锡(SZ000426)$ $紫金矿业(02899)$</p></div>
       <div class="metrics">
-        <span>赞 182</span>
-        <span>评论 17</span>
+        <span>赞 183</span>
+        <span>评论 28</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4930371170/383069490" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -74,8 +233,8 @@
       
       
       <div class="metrics">
-        <span>赞 267</span>
-        <span>评论 146</span>
+        <span>赞 270</span>
+        <span>评论 159</span>
         <span>转发 2</span>
         <a class="open-link-inline" href="https://xueqiu.com/4930371170/382663124" target="_blank" rel="noopener">原文 ↗</a>
       </div>
@@ -88,7 +247,7 @@
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 德鲁肯米勒：对的时候要赚够<br>“重要的不是你对还是错，而是当你对的时候你赚了多少，当你错的时候你赔了多少。”<br>(It&#x27;s not whether you&#x27;re right or wrong that&#x27;s important, but how much money you make when you&#x27;re right and how much you lose when you&#x27;re wrong.)</p></div>
       <div class="metrics">
-        <span>赞 97</span>
+        <span>赞 98</span>
         <span>评论 1</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4930371170/381895258" target="_blank" rel="noopener">原文 ↗</a>
@@ -102,7 +261,7 @@
       
       
       <div class="metrics">
-        <span>赞 166</span>
+        <span>赞 165</span>
         <span>评论 20</span>
         <span>转发 5</span>
         <a class="open-link-inline" href="https://xueqiu.com/4930371170/381812337" target="_blank" rel="noopener">原文 ↗</a>
@@ -116,7 +275,7 @@
       
       
       <div class="metrics">
-        <span>赞 155</span>
+        <span>赞 156</span>
         <span>评论 45</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4930371170/380703570" target="_blank" rel="noopener">原文 ↗</a>
@@ -134,159 +293,5 @@
         <span>评论 7</span>
         <span>转发 0</span>
         <a class="open-link-inline" href="https://xueqiu.com/4930371170/377777823" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-03-03 02:27:17</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@平头哥2025: 没变化//@平头哥2025:回复@大草驴:驴总对腾讯的看法有变化吗</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 我刚刚关注了股票$京东方A(SZ000725)$，当前价 ¥4.48。</p></div>
-      <div class="metrics">
-        <span>赞 67</span>
-        <span>评论 1</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/377666965" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-02-27 21:31:59</time></div>
-      
-      
-      <p class="post-text">我刚刚关注了股票$京东方A(SZ000725)$，当前价 ¥4.48。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 32</span>
-        <span>评论 25</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/377308327" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-02-10 20:05:28</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@投资瓜友: 向瓜友和专家致敬//@投资瓜友:回复@重组专家:专家给的持仓任务太艰巨，为了完成专家下达的持仓任务，我天天都在买！</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@重组专家: $中广核新能源(01811)$ ：记得“投资瓜友”投资广核新亦有五年光景，随着前海开源基金的退出，瓜友现在应该是广核新最大的公众股东（据说是一亿多股），今年公司不少关联交易议案授权到期，到时瓜友的投票举足轻重，因此，对瓜友的建议和意见，公司还是要有足够的重视。<br>我以为：<br>一、战投需要有合适的退出通道，天经地义。<br>二、国资委要求央企经营性资产尽可能证券化，风电公司庞大资产不考虑上市有违政策要求和股东意愿。<br>三、关于01811是广核集团新能源业务唯一上市平台的承诺具备法律约束，依法方能解约。<br>四、关于01811有集团新能源项目优先选择权，不仅是国家对同一控制人下上市公司和非上市公司间的竞业要求，也是一流央企优先支持上市公司发展的必然选择。相信集团会信守承诺，尽可能避免巨资投招远远海光伏实验性项目的事重演。<br>五、即便风电和01811各自走自己的路，只要01811坚持发展初衷，存量项目坚持提质增效、增量项目优中选优且合理有序控制新增规模，在股东回报上达到行业公司的平均水平。如此，即便股价再萎靡，我们坚持投资01811也无怨无悔</p></div>
-      <div class="metrics">
-        <span>赞 51</span>
-        <span>评论 2</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375706312" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-02-06 06:41:50</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@霜瓜西: 卖出就一条，君子不立于危墙之下，合理卖，不贪心//@霜瓜西:回复@大草驴:驴大能否讲讲卖出的纪律或者方法，谢谢</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 股市中树立正确的盈亏观，决定盈亏的是两个点，买入和卖出。中间的都是波动，和盈亏没有关系。</p></div>
-      <div class="metrics">
-        <span>赞 137</span>
-        <span>评论 5</span>
-        <span>转发 3</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375131927" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-02-06 00:47:31</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@市场先生的情绪: 特别好的问题，中间的股价波动可以让我们不断审视逻辑和估值，做出是否卖出或者加仓的决策。//@市场先生的情绪:回复@大草驴:马后炮，你怎么知道这是中间的波动还是下跌趋势？</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 股市中树立正确的盈亏观，决定盈亏的是两个点，买入和卖出。中间的都是波动，和盈亏没有关系。</p></div>
-      <div class="metrics">
-        <span>赞 113</span>
-        <span>评论 9</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375121009" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-02-05 18:22:16</time></div>
-      
-      
-      <p class="post-text">股市中树立正确的盈亏观，决定盈亏的是两个点，买入和卖出。中间的都是波动，和盈亏没有关系。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 358</span>
-        <span>评论 42</span>
-        <span>转发 5</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375075930" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-02-05 15:05:32</time></div>
-      
-      
-      <p class="post-text">专家的选股思路对我启发很大，感谢</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@重组专家: #雪球时光相册# 感恩陪伴，共同成长~<br>加入港股十年，注册雪球八年。有兴奋、有收获、有快乐、有迷茫。<br>有兴奋：注册雪球后一下发现原来还有那么多低估的标的，还有一大批类似@云蒙 @边城浪子1986 @致远2050@Bruce-lim @大草驴 等等或专业、或坚韧、或志同道合的雪友，真的大开眼界。<br>有收获：加入港股十年，虽就参与了十多家标的买卖，走过华融的华容道，死而复生后从现代牧业起重新出发、一路向上，收获满满。其中贡献最大的依次是中广核新能源、华晨中国、中海油。<br>有快乐：投资赚钱本就是一件快乐的事。再加有了雪球，无论在天南海北、无论是赢是亏，每天总要上雪球看看。雪球已经成为我生活中排忧解难的一部分。<br>有迷茫：港股近十年，除了有一年亏损，其他年度都是赚的，应该说是顺风顺水。只是近一年来，恒指大幅回升，我的投资仅微幅增长。细探持有的标的，即便考虑了各种可能的风险，还是不高估啊🤔可就是表现萎靡，很迷茫。<br>细思之下，有现金流、有不错股息、有大概率整合可能，当初进入的逻辑未变。所以，我还是选择坚持。再说每人认知有限，看最近白银期货的悲喜交加，多少给我个安慰。呵呵😄<br>最后祝愿雪球越办越好，大家一起来加油👏</p></div>
-      <div class="metrics">
-        <span>赞 85</span>
-        <span>评论 1</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/375041730" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-02-04 15:40:28</time></div>
-      
-      
-      <p class="post-text">刷到了钓鱼的短视频，突然想起芒格的话，到鱼多的地方钓鱼。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 192</span>
-        <span>评论 46</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/374850186" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-02-02 04:54:36</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@山客游: 有疑点的企业和行业果断放弃，宁肯少赚不能亏钱。//@山客游:回复@山客游:要跟赵总学习自上而下选趋势向上的行业，这样确定性就能大幅提高。 我的教训就是：如果选了趋势下行或政策不支持的行业，再便宜或赔率再高都没用。</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@大草驴: 掘金股市不确定性：从“确定性”的幻象走向探索的真谛</p></div>
-      <div class="metrics">
-        <span>赞 108</span>
-        <span>评论 7</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/374307098" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-01-30 15:02:54</time></div>
-      
-      
-      <p class="post-text">金银的顶部已经出现</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 359</span>
-        <span>评论 82</span>
-        <span>转发 2</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/374027166" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">大草驴</span><time>2026-01-27 16:50:53</time></div>
-      
-      
-      <p class="post-text">腾讯26年3大看点<br>1，ai进阶<br>2，游戏出海<br>3，广告发力</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 231</span>
-        <span>评论 32</span>
-        <span>转发 2</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4930371170/373298399" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></section></main><script>const savedTheme=localStorage.getItem('dashboardTheme')||'dark';document.documentElement.dataset.theme=savedTheme;const themeSelect=document.getElementById('themeSelect');themeSelect.value=savedTheme;themeSelect.addEventListener('change',()=>{document.documentElement.dataset.theme=themeSelect.value;localStorage.setItem('dashboardTheme',themeSelect.value)});</script></body></html>

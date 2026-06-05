@@ -2,291 +2,296 @@
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>山行 · 雪球发言看板</title>
 <style>
 *,*::before,*::after{box-sizing:border-box}html,body{margin:0;min-width:100%;height:100%;overflow:hidden;background:#0f1419;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",sans-serif;line-height:1.6}body{display:flex;flex-direction:column}a{color:inherit}header{flex-shrink:0;background:rgba(15,20,25,.96);border-bottom:1px solid #27313a;backdrop-filter:blur(10px)}.wrap{max-width:none;margin:0;padding:0 24px}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{flex:0 0 auto}.brand h1{margin:0;font-size:22px;line-height:1.2;color:#e6edf3}.brand p{margin:6px 0 0;color:#9fb3c8;font-size:13px}.top-actions{min-width:0;display:flex;align-items:center;gap:12px;justify-content:flex-end;flex:1}.nav-row,.user-nav{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.nav-row{padding:0 24px 10px}.user-nav{min-width:0;max-width:min(980px,calc(100vw - 420px));padding:2px 0}.nav-row::-webkit-scrollbar,.user-nav::-webkit-scrollbar,main.wrap::-webkit-scrollbar{width:14px;height:12px}.nav-row::-webkit-scrollbar-track,.user-nav::-webkit-scrollbar-track,main.wrap::-webkit-scrollbar-track{background:#111820;border-radius:999px}.nav-row::-webkit-scrollbar-thumb,.user-nav::-webkit-scrollbar-thumb,main.wrap::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:999px;border:2px solid #111820}nav a,.user-nav a,.open-link{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 11px;color:#c9d1d9;text-decoration:none;font-size:13px;background:#151b22}.user-nav a{border-radius:999px}nav a:hover,.user-nav a:hover,.open-link:hover{border-color:#58a6ff;color:#fff}nav a.active{background:#238636;border-color:#2ea043;color:#fff;font-weight:700}.theme-select{flex:0 0 auto;border:1px solid #34414c;border-radius:6px;padding:7px 10px;color:#e6edf3;background:#151b22;font-size:13px}main.wrap{flex:1;width:100%;min-width:0;overflow:auto;padding:26px 24px 42px;scrollbar-color:#58a6ff #111820;scrollbar-width:thin}.columns{display:flex;gap:18px;align-items:flex-start;width:max-content;min-width:100%;padding:2px 0 28px}.user-column{flex:0 0 390px;width:390px;min-width:390px;scroll-margin-top:18px}.column-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid #34414c;border-radius:8px;background:linear-gradient(180deg,#17202b,#121922);padding:14px;margin-bottom:10px}.column-head h2{margin:0;color:#79c0ff;font-size:20px;line-height:1.25;text-shadow:0 0 12px rgba(88,166,255,.18)}.column-head p{margin:4px 0 0;color:#9fb3c8;font-size:13px}.column-feed,.feed{display:flex;flex-direction:column;gap:14px}.single-page main.wrap{width:100%;max-width:960px;margin:0 auto}.post-card{border:1px solid #2d3845;border-radius:8px;background:#141b24;padding:16px}.post-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.author{color:#79c0ff;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.22);border-radius:5px;padding:1px 6px;font-weight:700;font-size:15px}time{color:#9fb3c8;font-size:13px}h2{margin:0 0 8px;font-size:17px;line-height:1.35}.post-text{margin:0;white-space:normal;overflow-wrap:anywhere;color:#f0f6fc}.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.badge{display:inline-flex;align-items:center;border-radius:999px;border:1px solid #3a4653;padding:2px 8px;font-size:12px;font-weight:700}.badge.article{color:#f2cc60;background:#2a220f;border-color:#6b5518}.badge.reply{color:#79c0ff;background:#0d2235;border-color:#1f5a83}.badge.image{color:#3fb950;background:#10271a;border-color:#1f6f3a}.quote-block{margin-top:12px;padding:10px 12px;border:1px solid #3a4653;border-left:3px solid #58a6ff;border-radius:6px;background:#101720;color:#c9d1d9}.quote-block p{margin:4px 0 0;font-size:13px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}.quote-label{font-size:12px;color:#79c0ff;font-weight:700}.quote-block.muted{border-left-color:#8b949e;color:#9fb3c8}.notice{display:block;margin-top:10px;border:1px solid #3a4653;border-radius:6px;padding:8px 10px;text-decoration:none;font-size:13px}.article-notice{color:#f2cc60;background:#201a0d}.image-notice{color:#3fb950;background:#0d2116}.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.image-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid #34414c;border-radius:6px;background:#0d1117}.metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;color:#9fb3c8;font-size:12px}.metrics span{border:1px solid #2d3845;border-radius:999px;padding:3px 8px;background:#101720}.open-link-inline{margin-left:auto;color:#58a6ff;text-decoration:none;font-size:12px}[data-theme="light"] body{background:#eef2f6;color:#24292f}[data-theme="light"] header{background:#f8fafc;border-bottom-color:#cfd7df;backdrop-filter:none}[data-theme="light"] .brand h1,[data-theme="light"] .post-text{color:#24292f}[data-theme="light"] .brand p,[data-theme="light"] time,[data-theme="light"] .metrics{color:#667085}[data-theme="light"] nav a,[data-theme="light"] .user-nav a,[data-theme="light"] .open-link,[data-theme="light"] .theme-select{background:#fff;border-color:#cfd7df;color:#24292f}[data-theme="light"] nav a.active{background:#e6f4ea;border-color:#2da44e;color:#1a7f37}[data-theme="light"] .column-head{background:#f8fafc;border-color:#d0d7de}[data-theme="light"] .column-head h2{color:#0969da;text-shadow:none}[data-theme="light"] .post-card{background:#fff;border-color:#d0d7de}[data-theme="light"] .author{color:#0969da;background:#ddf4ff;border-color:#b6e3ff}[data-theme="light"] .metrics span,[data-theme="light"] .quote-block{background:#f6f8fa;border-color:#d0d7de;color:#57606a}[data-theme="light"] .article-notice{background:#fff8c5;color:#7d4e00}[data-theme="light"] .image-notice{background:#dafbe1;color:#116329}[data-theme="light"] main.wrap,[data-theme="light"] .nav-row,[data-theme="light"] .user-nav{scrollbar-color:#8aa8c7 #d9e2ec}@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column;padding:16px 0}.top-actions{width:100%;justify-content:flex-start}.user-nav{max-width:100%}.user-column{flex-basis:330px;width:330px;min-width:330px}}
-</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>山行</h1><p>抓取时间 2026-05-09 06:23:53</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a href="../index.html">首页</a>
+</style></head><body class="single-page"><header><div class="wrap topbar"><div class="brand"><h1>山行</h1><p>抓取时间 2026-06-04 14:05:57</p></div><div class="top-actions"><nav class="user-nav"><a href="xueqiu_users.html">雪球合并</a></nav><select id="themeSelect" class="theme-select" aria-label="背景颜色"><option value="dark">深色</option><option value="light">浅色</option></select></div></div><nav class="nav-row"><a href="../index.html">首页</a>
     <a href="../news.html">新闻</a>
     <a href="../x_feed.html">X 动态</a>
     <a href="../stock_alerts.html">股价异动</a>
+    <a href="../etf_monitor.html">IGV/SOXX</a>
+    <a href="../japan_alerts.html">日本</a>
+    <a href="../korea_alerts.html">韩国</a>
     <a class="active" href="../xueqiu_user.html">雪球</a>
     <a href="../zsxq.html">知识星球</a>
-    <a href="../wechat.html" target="_blank" rel="noopener">微信公众号</a>
-    <a href="../market_overview.html">市场总览</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-05-08 17:16:18</time></div>
+    <a href="../wechat.html">微信公众号</a>
+    <a href="../market_overview.html">市场总览</a>
+    <a href="../liquidity_monitor.html">流动性</a>
+    <a href="../server_price.html">芯片服务器</a></nav></header><main class="wrap"><section class="feed"><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-06-03 19:30:50</time></div>
       
       
-      <p class="post-text">既然大家都知道不行，那为啥塞进去还能拔估值，投资人都是来大a进修过的吗？</p>
+      <p class="post-text">AI不需要吃药，啊哈</p>
       
       
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@陆家嘴幽灵: 老马宣布xAI将不再作为独立公司运营，而是并入SpaceX成为产品线。解散的同一天，SpaceX将xAI耗巨资建成的全球最大超算集群Colossus 1（有22万块英伟达GPU）整体租给了Anthropic。这事意义挺大的：<br><br>首先，解散是为了止损。现在xAI已经成了财务黑洞，每个月要烧掉10亿美元，结果Grok还只是勉强追赶头部几家大模型，而且还要掉队的趋势。另外它在开发者生态里完全没有存在感，核心竞争力远不如御三家，算力利用率更是低到只有11%。<br><br>既然模型打不赢，继续烧钱就是无底洞。老马选择不挖金子，改卖铲子了。把闲置又亏钱的算力打包租给Anthropic，把重资产转化为稳定现金流。这笔交易算是一箭三雕，既缓解了xAI的财务危机、又把弹药递给了OA最大的竞争对手，在模型大战里实施对冲、还在为即将到来的史上最大IPO做准备。现在SpaceX估值高达2万亿美元，单讲火箭和星链，撑不起这个数字。但如果把xAI的算力基建塞进去，再配上轨道太阳能数据中心，这个叙事就宏伟了。<br><br>另外这事也反映了AI竞争的下半场逻辑：模型能力固然重要，但底层算力基础设施才是关键。过去两年都在比谁的模型更聪明，现在是看谁能稳定、低成本、大规模地获得算力和电力。Anthropic的Claude虽然厉害，但经常遭遇降速和限流，原因就是算力不足，系统只能让请求排队。接入Colossus 1的22万块GPU后，Anthropic立刻宣布使用限额翻倍。<br><br>所以在当下的AI竞赛里，算力和基础设施已经成为了决定模型能否转化为可用产品的核心护城河。老马放弃xAI的独立地位，也是他认识到Grok已经很难再模型层面追赶了，但在基础设施层面，他握有调动算力、电力和发射的资源。<br><br>$英伟达(NVDA)$ $特斯拉(TSLA)$</p></div>
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@LTLyra: 铁一般的事实，竟然需要发公开信澄清......<br><br>也是， 喜事丧办，不是第一次了。<br><br>一个充满疯子和傻子的市场.......</p></div>
       <div class="metrics">
-        <span>赞 93</span>
-        <span>评论 21</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/387830466" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-05-05 15:32:40</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@静夜思: 已经差不多赢了三把，平庸或者失误一次，也依然赚大发了，更何况，这并没有失败呢。 年赚30亿和年赚1亿的公司，能做的事情大不一样。一个买，一个卖，还不知道最后是谁错了。。优秀的团队，以及现在强大十倍的额资产负债表，天天在行业里面给各家服务，未来五年大概率还能找到机会收购吧。 //@静夜思:回复@山行:哥伦比亚铜矿的环评已经超期，还没有啥说法，合作的公司都等不及了直接把股份卖给公司退出了，所以20万吨预期有点悬。</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 不同公司之间的能力及日积月累后的成果，真是差异大。<br><br>J公司的老板，据说祖上数辈都是挖矿，自己及儿子也是数十年坚持的就是挖矿，把公司做到上市。J公司以自己对矿业的专业能力，花了275万刀（合计不到2000万人民币）买了一个非洲小铜矿，准备自己当业主，试试水。 这真是个小矿，称作D矿吧，储量矿石才50多万吨，铜金属量才3.6万吨，设计年产量1万吨，也就可以干3.6年。公司21年接手后，第二年就把矿给投产了，产铜2400吨，23年就搞到9800吨，差不多达产了。24年呢，干到1.48万吨，超过设计，25年一看，好家伙年产1.79万吨。今年一季度产了5000吨（全年指引1.8万吨）。。。不是说好只是设计产能1万吨吗，这都年产量都快翻倍了， 然后当初别人手中3.6万吨资源，怎么这已经挖出来5万多吨，然后2025年年报显示，还是能再采三年。 如果按照现在5000的成本，1.3万的售价，单吨毛利7500-8000美金，一年就能搞到1.35亿刀毛利出来。当年可是只花了275万刀。<br><br>公司接手的第二个，L矿，一共花了3400万刀，也就是两个多亿人民币。然后24年首年投产，收获2.72万吨矿产铜，第二年也就是25年5.3万吨，远超老外当初计划的西区3万吨，然后今年一季度又产了1.2万吨，计划全年5.9万吨。这还不算啥，公司已经对L矿实施扩建工程，待2028年就能到9万吨。。。内部目标是年产10万吨铜，嘿，按照目前5500的成本话，一年7亿刀毛利。<br><br>公司接手的第三个矿,LB矿，这个是个在产但是年年亏的矿，所以只象征性花了1美金购买。这个矿25年已经实现盈亏平衡，今年产量能有10%的增长，年产2.2万吨，估计还是微利吧。但是到27年技术改造完成（公司认为原矿系统设计有很多问题），产量就能提高到3.5万吨，成本从目前10000+降低到6300左右，那样吨矿毛利又是6000+，年毛利2亿刀+。远期，这个矿能扩产到6万吨/年，化腐朽为宝。<br><br>至此，我们用五年时间，见到一个乙方打工仔，凭自己的专业，务实，花小钱办大事，步步稳扎稳打，成了年挣几十亿的矿主，没错，这公司五年业绩增长是5.3倍。当下及未来，至少还有两倍增长空间。<br><br>写这个，只是感叹下一下，一部分中国企业骨子里的干劲真让人拜服，以及提醒自己应该怎么看 先天资源和后天能力努力的权衡。</p></div>
-      <div class="metrics">
-        <span>赞 145</span>
+        <span>赞 113</span>
         <span>评论 8</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/387226682" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/392675352" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-05-05 15:08:29</time></div>
+      <div class="post-head"><span class="author">山行</span><time>2026-06-02 22:06:35</time></div>
       
       
-      <p class="post-text">当下年产10万吨铜，年赚20多亿，未来年产20万吨铜，年赚50-60亿，老板购买这些股权一共花了股东的钱是多少呢，275万+1+3400万=3700万美金。关键，这些货，在别人手里不赚钱或者亏钱的。。。</p>
+      <p class="post-text">其实也要问，如果大买家都缺钱的话，那些代工的，组装的，暂时的高利润率能持续多久呢？还是等产能扩出来，自己主动就降价了。大多数零部件和组装环节，能做到以量补价吗？</p>
       
       
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 不同公司之间的能力及日积月累后的成果，真是差异大。<br><br>J公司的老板，据说祖上数辈都是挖矿，自己及儿子也是数十年坚持的就是挖矿，把公司做到上市。J公司以自己对矿业的专业能力，花了275万刀（合计不到2000万人民币）买了一个非洲小铜矿，准备自己当业主，试试水。 这真是个小矿，称作D矿吧，储量矿石才50多万吨，铜金属量才3.6万吨，设计年产量1万吨，也就可以干3.6年。公司21年接手后，第二年就把矿给投产了，产铜2400吨，23年就搞到9800吨，差不多达产了。24年呢，干到1.48万吨，超过设计，25年一看，好家伙年产1.79万吨。今年一季度产了5000吨（全年指引1.8万吨）。。。不是说好只是设计产能1万吨吗，这都年产量都快翻倍了， 然后当初别人手中3.6万吨资源，怎么这已经挖出来5万多吨，然后2025年年报显示，还是能再采三年。 如果按照现在5000的成本，1.3万的售价，单吨毛利7500-8000美金，一年就能搞到1.35亿刀毛利出来。当年可是只花了275万刀。<br><br>公司接手的第二个，L矿，一共花了3400万刀，也就是两个多亿人民币。然后24年首年投产，收获2.72万吨矿产铜，第二年也就是25年5.3万吨，远超老外当初计划的西区3万吨，然后今年一季度又产了1.2万吨，计划全年5.9万吨。这还不算啥，公司已经对L矿实施扩建工程，待2028年就能到9万吨。。。内部目标是年产10万吨铜，嘿，按照目前5500的成本话，一年7亿刀毛利。<br><br>公司接手的第三个矿,LB矿，这个是个在产但是年年亏的矿，所以只象征性花了1美金购买。这个矿25年已经实现盈亏平衡，今年产量能有10%的增长，年产2.2万吨，估计还是微利吧。但是到27年技术改造完成（公司认为原矿系统设计有很多问题），产量就能提高到3.5万吨，成本从目前10000+降低到6300左右，那样吨矿毛利又是6000+，年毛利2亿刀+。远期，这个矿能扩产到6万吨/年，化腐朽为宝。<br><br>至此，我们用五年时间，见到一个乙方打工仔，凭自己的专业，务实，花小钱办大事，步步稳扎稳打，成了年挣几十亿的矿主，没错，这公司五年业绩增长是5.3倍。当下及未来，至少还有两倍增长空间。<br><br>写这个，只是感叹下一下，一部分中国企业骨子里的干劲真让人拜服，以及提醒自己应该怎么看 先天资源和后天能力努力的权衡。</p></div>
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@非典型伪价值投机: 谷歌要增发800亿股票，这可能是美股30年来，最有转折意义的事情。美股从2020年开始，平均每年分红回购大约是1.5万亿美元。<br><br>如果一个市场，每年问投资者只拿1000亿，回馈给投资者1.5万亿，这个股市必定长期上涨。随着AI资本开支的不断扩大，连美股最挣钱的谷歌都开始要问市场拿钱了。原来每年给市场分1000亿，到问市场要800亿。美股长期上涨的根基就没了。<br><br>$谷歌C(GOOG)$</p></div>
       <div class="metrics">
-        <span>赞 170</span>
-        <span>评论 20</span>
-        <span>转发 2</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/387225057" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-05-05 15:01:36</time></div>
-      
-      
-      <p class="post-text">不同公司之间的能力及日积月累后的成果，真是差异大。<br><br>J公司的老板，据说祖上数辈都是挖矿，自己及儿子也是数十年坚持的就是挖矿，把公司做到上市。J公司以自己对矿业的专业能力，花了275万刀（合计不到2000万人民币）买了一个非洲小铜矿，准备自己当业主，试试水。 这真是个小矿，称作D矿吧，储量矿石才50多万吨，铜金属量才3.6万吨，设计年产量1万吨，也就可以干3.6年。公司21年接手后，第二年就把矿给投产了，产铜2400吨，23年就搞到9800吨，差不多达产了。24年呢，干到1.48万吨，超过设计，25年一看，好家伙年产1.79万吨。今年一季度产了5000吨（全年指引1.8万吨）。。。不是说好只是设计产能1万吨吗，这都年产量都快翻倍了， 然后当初别人手中3.6万吨资源，怎么这已经挖出来5万多吨，然后2025年年报显示，还是能再采三年。 如果按照现在5000的成本，1.3万的售价，单吨毛利7500-8000美金，一年就能搞到1.35亿刀毛利出来。当年可是只花了275万刀。<br><br>公司接手的第二个，L矿，一共花了3400万刀，也就是两个多亿人民币。然后24年首年投产，收获2.72万吨矿产铜，第二年也就是25年5.3万吨，远超老外当初计划的西区3万吨，然后今年一季度又产了1.2万吨，计划全年5.9万吨。这还不算啥，公司已经对L矿实施扩建工程，待2028年就能到9万吨。。。内部目标是年产10万吨铜，嘿，按照目前5500的成本话，一年7亿刀毛利。<br><br>公司接手的第三个矿,LB矿，这个是个在产但是年年亏的矿，所以只象征性花了1美金购买。这个矿25年已经实现盈亏平衡，今年产量能有10%的增长，年产2.2万吨，估计还是微利吧。但是到27年技术改造完成（公司认为原矿系统设计有很多问题），产量就能提高到3.5万吨，成本从目前10000+降低到6300左右，那样吨矿毛利又是6000+，年毛利2亿刀+。远期，这个矿能扩产到6万吨/年，化腐朽为宝。<br><br>至此，我们用五年时间，见到一个乙方打工仔，凭自己的专业，务实，花小钱办大事，步步稳扎稳打，成了年挣几十亿的矿主，没错，这公司五年业绩增长是5.3倍。当下及未来，至少还有两倍增长空间。<br><br>写这个，只是感叹下一下，一部分中国企业骨子里的干劲真让人拜服，以及提醒自己应该怎么看 先天资源和后天能力努力的权衡。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 473</span>
-        <span>评论 149</span>
-        <span>转发 25</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/387224695" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-05-03 20:41:24</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@Captain-船长: 所以，那你得想想奢侈品常见于哪些品类，有啥特征，以及该品类的奢侈品市场空间。//@Captain-船长:回复@山行:这句里把泡泡的冰箱换成任何一个奢侈品，或豪车都行吧？生活中理性与感性从来都不是同一种思考方式，过于极端都不好</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 42000的挖孔机盖，6000-1的加图案冰箱，本质上没啥区别，当然号称炒到2万还是8万，这个是必然，因为这就是安排中的一部分，必须宣传，如同查干湖的头鱼，也必须卖几十万，而且一定有人买，最关键的，这条新闻稿必须推出来，哪怕花点代价。</p></div>
-      <div class="metrics">
-        <span>赞 98</span>
-        <span>评论 24</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/387112388" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-05-03 19:45:30</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@NeoAG: 普通人花六七百买个差不多大冰箱，再花两千加一部空调，剩下的钱，请家人聚一次，再买一个Labubu，还能存一千…… 情绪价值是价值，但情绪价值实现方式有很多，某一方面极端那么效用是急剧下降的。另外， 普通人或者绝大多数人购买情绪价值的钱是有限的，不能只说情绪无价。//@NeoAG:回复@山行:提个问题，普通人自用的话，宁愿选泡泡玛特的冰箱，还是3瓶茅台</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 42000的挖孔机盖，6000-1的加图案冰箱，本质上没啥区别，当然号称炒到2万还是8万，这个是必然，因为这就是安排中的一部分，必须宣传，如同查干湖的头鱼，也必须卖几十万，而且一定有人买，最关键的，这条新闻稿必须推出来，哪怕花点代价。</p></div>
-      <div class="metrics">
-        <span>赞 152</span>
-        <span>评论 63</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/387109965" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-05-03 17:30:14</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@大黄蚬子hgx: 哈哈哈哈//@大黄蚬子hgx:回复@切了个菜:陈发没有买过紫金，他是以设备和工程款转股被迫接受紫金股份，可以说是老天爷硬塞给他的财富，刚刚解禁他就把紫金清仓了，然后误以为自己有股市投资的天赋，后面投什么赔什么。<br>小故事就是当年陈接手了一批二手工程设备，不料事先找好的下家项目黄了，这批设备砸手里了，刚好紫金陈景河开发紫金山矿缺钱买新设备，就连买二手设备也拿不出现金，陈发只能用设备给紫金干工程，设备和工程款不给现金，给股份，不要也没有别的，硬着头皮接的股份，后面上市解禁了，他就第一时间变现了，他根本就不看好紫金的发展。<br>他如果真有眼光拿到现在，每年分红的钱就超过当年变现的全部资金了。</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@切了个菜: 大多数人看空消费股，但福建首富陈发树大手笔买入伊利，成为伊利的前十大股东。看看陈发树的投资水平，很早就买入紫金矿业，紫金矿业涨了100倍。他的买入依据，金子到了一定的时候就会暴涨，果然金价暴涨兑现了他的认知。投资云南白药，虽没有赚到钱，但投资眼光、水平依旧摆在那里。现在开始买入伊利，说明牛奶还是有人喝的。喝牛奶的人减少了吗？反正我自己的消费，牛奶从来没有断过。陈发树的投资方向，说明未来5年，白酒、牛奶等消费股将有大机会。 @此生远离白 @丹书铁券 $五粮液(SZ000858)$ $紫金矿业(SH601899)$ $伊利股份(SH600887)$</p></div>
-      <div class="metrics">
-        <span>赞 158</span>
-        <span>评论 21</span>
-        <span>转发 3</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/387104844" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-05-01 18:13:14</time></div>
-      
-      
-      <p class="post-text">42000的挖孔机盖，6000-1的加图案冰箱，本质上没啥区别，当然号称炒到2万还是8万，这个是必然，因为这就是安排中的一部分，必须宣传，如同查干湖的头鱼，也必须卖几十万，而且一定有人买，最关键的，这条新闻稿必须推出来，哪怕花点代价。</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 270</span>
-        <span>评论 127</span>
+        <span>赞 226</span>
+        <span>评论 27</span>
         <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386988249" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/392446567" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-30 21:54:23</time></div>
+      <div class="post-head"><span class="author">山行</span><time>2026-06-02 21:15:26</time></div>
       
       
-      <p class="post-text">我看多ai，不过得说一句。巨头们增加那点资本开支，好像还不够硬件和人工涨价的比例呀。资本开支上修，建设成的实物资产数量跟计划的不变多</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 213</span>
-        <span>评论 18</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386912286" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-30 19:26:56</time></div>
-      
-      
-      <p class="post-text">我年轻好学的同事想问问各位：报表大幅调整了，收入利润脚跟斩了，那已经交的税，咋处理，退吗？</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 295</span>
-        <span>评论 127</span>
-        <span>转发 2</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386888343" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-29 20:55:34</time></div>
-      
-      
-      <p class="post-text">看25年年报和26年一季报，至少业绩基本光伏发电的业绩都崩了。</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 部分电力企业，没完没了的大额减值，估计火电搞完，差不多光伏可以接上了。</p></div>
-      <div class="metrics">
-        <span>赞 134</span>
-        <span>评论 8</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386645392" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-29 20:43:52</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@Mario: 没问题啊。但是一帮企业家在协会的组织下，嚷嚷着收储，那就不知道是啥了。 收储 vs 倒牛奶，截然相反啊。//@Mario:回复@山行:这才是市场经济，不是计划说了算。市场主体不愿意退出，就僵持着呗。</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 产能过剩，远没有市场想象的那么容易解决。光伏，猪，喊了好几年见底，到现在依然是烂泥坑。</p></div>
-      <div class="metrics">
-        <span>赞 110</span>
-        <span>评论 13</span>
-        <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386642606" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-29 20:39:50</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@山行: 没骗你们吧//@山行:回复@攻城狮123:注销式回购需要开股东大会审议，股权激励只需要董事会审批，现在市场很弱，所以先灵活过流程尽快开始回购，后面回购大部分会注销。 观察一个人，不是他做了一件好事就是好人，而是历史上他干了很多好事。 一个企业，观察他好不好，也不是一件事，一段时间就能判断。 后面再讨论这个的，一律拉黑。</p>
+      <p class="post-text">短短两个月，两头部保险公司至少增持了1.1亿股，公司自己回购了4300万股。</p>
       
       
       <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 什么是好公司，一年赚了439亿，分红回购了439亿，股东回报比例是100%，然后把下一年的回购又丢出来了。什么是牛逼的好公司，一年分红回购百分之百之后，有息负债还少了200亿，结果是账上净现金保持跟上年差不多。如果是牛逼pro max的话，大概是超越同行的增长、自由现金流和roic。</p></div>
       <div class="metrics">
-        <span>赞 212</span>
+        <span>赞 199</span>
         <span>评论 24</span>
-        <span>转发 2</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386641523" target="_blank" rel="noopener">原文 ↗</a>
+        <span>转发 4</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/392436258" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-29 20:31:47</time></div>
+      <div class="post-head"><span class="author">山行</span><time>2026-06-02 15:28:05</time></div>
       
       
-      <p class="post-text">产能过剩，远没有市场想象的那么容易解决。光伏，猪，喊了好几年见底，到现在依然是烂泥坑。</p>
+      <p class="post-text">过份了</p>
       
       
-      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 铜价回到开战之前了，说好的担心经济咣当，还是供需格局确实偏紧</p></div>
       <div class="metrics">
-        <span>赞 289</span>
-        <span>评论 174</span>
-        <span>转发 17</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386639408" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-29 19:41:23</time></div>
-      <div class="badges"><span class="badge reply">回复</span></div>
-      
-      <p class="post-text">回复@亲爱的阿兰: 可以换了，俩挖参的，一个产量增长8.6%，一个0.7%，这种增速迟早反应到利润后劲和长期价值。//@亲爱的阿兰:回复@Simplebest:中石油最值得看是 2022 年报，体现一个刻意为之。而这份一季报主要是天然气的利润，油是没怎么赚钱的。一年 9.7 亿桶油，其他业务也在全面开花。董事长即将退休，你是管理层后续会怎样释放呢。我想说关于利润弹性这块很多人理解是错的。</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@中国石油(SH601857): 中国石油：中国石油天然气股份有限公司2026年第一季度报告 网页链接</p></div>
-      <div class="metrics">
-        <span>赞 111</span>
-        <span>评论 12</span>
+        <span>赞 155</span>
+        <span>评论 14</span>
         <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386624760" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/392376110" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-29 13:28:14</time></div>
+      <div class="post-head"><span class="author">山行</span><time>2026-06-01 19:06:06</time></div>
       
       
-      <p class="post-text">战争和高油价爆发后，市场对经济担心，首先做空的就是工业金属，典型代表就是铜。但是我现在隐约觉得，就算对经济有负面影响，进而影响一部分需求，但是这个影响远不及供应端的紧缺现实。意思是，就算需求差一点，依然会是紧缺。 朋友兼导师提醒，现在看多铜是七尺栏杆，提醒的很是。现在这价位，能维持住，也是很强的表示。最后，本人不做期货。</p>
+      <p class="post-text">创新药也算老登了吗？今天这一刀好惨好恶心</p>
       
       
       
       <div class="metrics">
-        <span>赞 306</span>
-        <span>评论 58</span>
+        <span>赞 207</span>
+        <span>评论 37</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386523500" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/392187528" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-28 23:57:15</time></div>
-      
-      
-      <p class="post-text">大胆猜想一下：未来三年，五年，十年，白电三傻跑赢光模块三俊吗？ 目前白电三傻，合计市值1万亿，光模块三俊1.7万亿市值。本人没有观点，只是留个帖子，几年后再看</p>
-      
-      
-      
-      <div class="metrics">
-        <span>赞 373</span>
-        <span>评论 69</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386408670" target="_blank" rel="noopener">原文 ↗</a>
-      </div>
-    </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-28 15:48:43</time></div>
+      <div class="post-head"><span class="author">山行</span><time>2026-05-27 23:27:54</time></div>
       <div class="badges"><span class="badge reply">回复</span></div>
       
-      <p class="post-text">回复@三千点保卫战的战士: 哈哈哈，又菜又爱玩。。。//@三千点保卫战的战士:回复@省心省力:我什么也没看到 查看图片</p>
+      <p class="post-text">回复@TT-Fly519: 那以后到底是先买一个GPU等着半年后再插HBM，还是买个HBM自己手搓一个液冷板，再等三个月后GPU倒货呢//@TT-Fly519:回复@山行:已经是老登了，至少是中凳。已经成存储的血包。不知道下一个热点是啥。到时存储也是它的血包</p>
       
       
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@省心省力: 梭了，怕个蛋蛋，手风顺的时候就得接着赌，晚上海油必超预期！</p></div>
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: $英伟达(NVDA)$这是带头大哥该有的样子吗？</p></div>
       <div class="metrics">
-        <span>赞 124</span>
-        <span>评论 17</span>
-        <span>转发 1</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386272292" target="_blank" rel="noopener">原文 ↗</a>
+        <span>赞 108</span>
+        <span>评论 4</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/391349032" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-28 12:34:34</time></div>
+      <div class="post-head"><span class="author">山行</span><time>2026-05-27 23:01:37</time></div>
+      
+      
+      <p class="post-text">$英伟达(NVDA)$这是带头大哥该有的样子吗？</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 123</span>
+        <span>评论 53</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/391345524" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-26 13:39:42</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@乌龟好运: 可能是性格原因，我总喜欢先看长，再看短。 短期涨价，利润率/回报率高的吓人的东西，最后都会归于正常，尤其是短期产能不足，但长期并不是出不来的。用更长时间的均值算账，哪个安全边际够，我更愿意持有。//@乌龟好运:回复@山行:那你要认可这张图，那不更应该上存储和光模块吗</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 在我眼里，这些共同特征就是含铜，耗铜，不仅这些耗铜，连结柜外的，也还是铜和光纤，光纤是神经，铜缆是血管。给他供血、输血的，发电厂，储能，输配电，还是铜。 硅不缺，所以硅片、光纤、mlcc迟早会出来，但是铜，超过2%的需求增速，谁也满不足不了。</p></div>
+      <div class="metrics">
+        <span>赞 236</span>
+        <span>评论 22</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390979689" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-26 13:36:38</time></div>
+      
+      
+      <p class="post-text">而且需要强调的是，碳基对他的需求和利用，已经几千年，让铜已经面临持续的品位下滑，开采难度加大。碳基想要过得好，比如三哥那么热的天气，空调普及率只有中国的十分之一。非洲人还在四处找手机充电的地方，欧洲和澳洲人为高电价买单，用不起空调，这些未来会被中国制造送福利。意思是，没有硅基的争夺，碳基人本身就缺。最后，AI其实目前占比还很低，现在火热是因为涨价，一旦开始降价，那个量还有很大空间。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 在我眼里，这些共同特征就是含铜，耗铜，不仅这些耗铜，连结柜外的，也还是铜和光纤，光纤是神经，铜缆是血管。给他供血、输血的，发电厂，储能，输配电，还是铜。 硅不缺，所以硅片、光纤、mlcc迟早会出来，但是铜，超过2%的需求增速，谁也满不足不了。</p></div>
+      <div class="metrics">
+        <span>赞 195</span>
+        <span>评论 30</span>
+        <span>转发 5</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390978875" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-26 13:30:00</time></div>
       <div class="badges"><span class="badge image">含 1 图</span></div>
       
-      <p class="post-text">无正文</p>
+      <p class="post-text">在我眼里，这些共同特征就是含铜，耗铜，不仅这些耗铜，连结柜外的，也还是铜和光纤，光纤是神经，铜缆是血管。给他供血、输血的，发电厂，储能，输配电，还是铜。 硅不缺，所以硅片、光纤、mlcc迟早会出来，但是铜，超过2%的需求增速，谁也满不足不了。</p>
       
-      <div class="image-grid"><a href="https://xqimg.imedao.com/19dd25e112321a383fedbc2f.jpeg!thumb.jpg" target="_blank" rel="noopener"><img src="https://xqimg.imedao.com/19dd25e112321a383fedbc2f.jpeg!thumb.jpg" loading="lazy"></a></div>
+      <div class="image-grid"><a href="https://xqimg.imedao.com/19e62bfa3884f4693fdee3a8.png!thumb.jpg" target="_blank" rel="noopener"><img src="https://xqimg.imedao.com/19e62bfa3884f4693fdee3a8.png!thumb.jpg" loading="lazy"></a></div>
       
       <div class="metrics">
-        <span>赞 140</span>
-        <span>评论 18</span>
-        <span>转发 2</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386227193" target="_blank" rel="noopener">原文 ↗</a>
+        <span>赞 322</span>
+        <span>评论 104</span>
+        <span>转发 18</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390976913" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article><article class="post-card">
-      <div class="post-head"><span class="author">山行</span><time>2026-04-27 15:17:52</time></div>
+      <div class="post-head"><span class="author">山行</span><time>2026-05-25 19:05:06</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@山野茶客: τ定律，台积电用的比咱们还好吧，先进封装等。//@山野茶客:回复@山行:韬定律来了，学吧</p>
       
       
-      <p class="post-text">为啥我的持仓，业绩都很好，就是股价这么弱。</p>
-      
-      
-      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@摸啊摸: 2026年1—3月份，全国规模以上工业企业实现利润总额16960.4亿元，同比增长15.5%。</p></div>
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@山行: 感觉已经被市场淘汰，好惨</p></div>
       <div class="metrics">
-        <span>赞 214</span>
-        <span>评论 64</span>
+        <span>赞 150</span>
+        <span>评论 42</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390835739" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-25 11:48:01</time></div>
+      
+      
+      <p class="post-text">感觉已经被市场淘汰，好惨</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 524</span>
+        <span>评论 248</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390741171" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-23 15:42:57</time></div>
+      
+      
+      <p class="post-text">什么时候编程能力能上来。。赶超国际巨头，我的美好愿望</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@7X24快讯: 【DeepSeek-V4-ProAPI永久降价 调整为原定价的1/4】《科创板日报》23日讯，DeepSeek官方宣布，DeepSeek-V4-Pro模型API价格将于2026年5月31日结束2.5折优惠活动后，正式调整为原定价的1/4。这一API2.5折优惠活动，原定6月起恢复原价，但最新公告确认，DeepSeek-V4-ProAPI将永久降为原价的1/4（相当于2.5折），即：每百万tokens输入（缓存命中）0.025元，输入（缓存未命中）3元，输出6元。（记者黄心怡）</p></div>
+      <div class="metrics">
+        <span>赞 201</span>
+        <span>评论 69</span>
+        <span>转发 1</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390568720" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-22 23:59:48</time></div>
+      
+      
+      <p class="post-text">我能问两个大不敬的问题吗？  1、苹果和企鹅的模型/AI能力谁更胜一筹 。2、Walmart在中国没有请喝奶茶，怎么线上零售反而增长有30%多呢？</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 246</span>
+        <span>评论 359</span>
+        <span>转发 7</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390516473" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-22 22:19:22</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@再买杂毛我剁手: 呃，其实按照国内的法律，也是违法的。//@再买杂毛我剁手:回复@山行:要干你还需要证据，干的好就不干你了？</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@7X24快讯: 【中集集团：美国司法部指控公司及部分高管谋划限制特定非冷藏运输集装箱的产量并操纵价格】中集集团(000039.SZ)公告称，公司于今日知悉美国司法部公开宣布对中集集团、董事长麦伯良、副总裁黄田化及员工万永波提出指控，指控其谋划限制特定非冷藏运输集装箱的产量并操纵价格。截至公告日，公司及上述人士均未收到相关法律程序文件。公司对该事项高度重视，后续将密切关注并积极应对。</p></div>
+      <div class="metrics">
+        <span>赞 81</span>
+        <span>评论 11</span>
         <span>转发 0</span>
-        <a class="open-link-inline" href="https://xueqiu.com/4111857140/386007294" target="_blank" rel="noopener">原文 ↗</a>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390504984" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-22 22:07:40</time></div>
+      
+      
+      <p class="post-text">活干的太糙，对比下，光伏行业那就更是草莽了</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@7X24快讯: 【中集集团：美国司法部指控公司及部分高管谋划限制特定非冷藏运输集装箱的产量并操纵价格】中集集团(000039.SZ)公告称，公司于今日知悉美国司法部公开宣布对中集集团、董事长麦伯良、副总裁黄田化及员工万永波提出指控，指控其谋划限制特定非冷藏运输集装箱的产量并操纵价格。截至公告日，公司及上述人士均未收到相关法律程序文件。公司对该事项高度重视，后续将密切关注并积极应对。</p></div>
+      <div class="metrics">
+        <span>赞 89</span>
+        <span>评论 19</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390503253" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-22 19:53:13</time></div>
+      <div class="badges"><span class="badge reply">回复</span></div>
+      
+      <p class="post-text">回复@往外走别回头: //@往外走别回头:回复@昆山法律:上证50标准接盘侠了。兆易创新21年纳入，24年底剔除，马上又要纳入， 下一轮周期又要剔除，这个指数目前看的宿命就是高点越来越低，用来接货</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@汤诗语: $智谱(02513)$ 目前5800亿港币市值，$美的集团(00300)$ 目前6800亿港币市值。前者目前看还没什么收入和利润，虽然预期增速非常快；后者则有4585亿人民币的收入和439亿元的净利润（去年），净利润里的324亿元用于派息，剩下100多亿元用于回购注销股票。但两者的市值差不了多少，这样看，时代真的变了。碳基真的完蛋了，碳基的消费，不管是吃喝还是家电，还是车，还是手机，真都没法看。</p></div>
+      <div class="metrics">
+        <span>赞 127</span>
+        <span>评论 17</span>
+        <span>转发 4</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390480511" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-22 14:46:24</time></div>
+      
+      
+      <p class="post-text">铜是一帮看看逻辑，凭经验的人在做空，但是认真看基本面的，应该会发现这格局和估值都很好，事实上，期货已经比开战前要高了，非常坚挺。产业上，稍微跌一下，立马补货意愿大增，体现为去库。相对而言，我对铜信心足得多。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@老曾阿牛: @山行 与我今天下午的微信</p></div>
+      <div class="metrics">
+        <span>赞 249</span>
+        <span>评论 49</span>
+        <span>转发 3</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390411746" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-21 13:51:57</time></div>
+      
+      
+      <p class="post-text">皮查伊透露，目前谷歌已有13款产品拥有超过10亿用户。其中，谷歌搜索、Gmail邮箱、安卓、谷歌浏览器以及YouTube五大产品的全球用户规模均已突破30亿。 本次大会最受关注的更新之一，是谷歌搜索迎来25年来最大规模改版。不同于此前单独推出AI工具的做法，谷歌此次选择将AI直接整合进核心搜索框。 未来，用户不仅能够输入更长、更复杂的问题，还可以上传图片、视频、文件，甚至Chrome标签页，而AI将实时帮助用户构建搜索内容与问题逻辑。 谷歌高管表示，公司目标是彻底消除传统搜索与AI对话模式之间的切换障碍。谷歌搜索负责人Elizabeth Reid称，用户已经不希望再刻意区分“传统搜索”与“AI模式”。</p>
+      
+      
+      
+      <div class="metrics">
+        <span>赞 174</span>
+        <span>评论 30</span>
+        <span>转发 8</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/390147372" target="_blank" rel="noopener">原文 ↗</a>
+      </div>
+    </article><article class="post-card">
+      <div class="post-head"><span class="author">山行</span><time>2026-05-20 18:20:58</time></div>
+      
+      
+      <p class="post-text">有便宜电，还得量大管够，然后还不偷偷割电缆或者被威胁割电缆，还愿意二十小时看护好好的，那就少了。。</p>
+      
+      
+      <div class="quote-block"><div class="quote-label">引用 / 原帖</div><p>@何纯在南国: 很多自媒体喜欢自嗨，说中国相对于美国在人工智能上的优势是电力价格便宜，因此，即使中国算力卡性能不如美国，但可以凭借电力价格的优势，最终实现超越。<br>不过，资本无国界。就像中国把很多算力中心布置在电价便宜的云贵，利用东数西算一样，美国也可以把算力布置在全球电价便宜的地方，而不一定只选择在美国建算力中心。<br>一些能源丰富的国家，电价比中国还低。</p></div>
+      <div class="metrics">
+        <span>赞 254</span>
+        <span>评论 17</span>
+        <span>转发 0</span>
+        <a class="open-link-inline" href="https://xueqiu.com/4111857140/389979044" target="_blank" rel="noopener">原文 ↗</a>
       </div>
     </article></section></main><script>const savedTheme=localStorage.getItem('dashboardTheme')||'dark';document.documentElement.dataset.theme=savedTheme;const themeSelect=document.getElementById('themeSelect');themeSelect.value=savedTheme;themeSelect.addEventListener('change',()=>{document.documentElement.dataset.theme=themeSelect.value;localStorage.setItem('dashboardTheme',themeSelect.value)});</script></body></html>
